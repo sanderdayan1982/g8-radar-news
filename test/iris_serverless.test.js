@@ -2,6 +2,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { classifyIrisItem, computeItemSha256, deduplicateAndFilterWindow } from '../src/irisCollector.js';
+import { classifyAgent, MMT_SOVEREIGNTY, computeCalendarLock } from '../src/classifyCurrencies.js';
+import { OP_VERSION } from '../src/shadowCalibration.js';
 
 test('IRIS Classifier: detecta las 9 divisas (G8 + XAU) y las 6 categorías institucionales en < 1ms sin LLMs', () => {
   const t0 = performance.now();
@@ -101,4 +103,104 @@ test('Candado Anti-Cobro Netlify ([skip netlify]) presente en workflow y netlify
   assert.match(toml, /\[skip netlify\]/);
   assert.match(toml, /\/api\/iris-feed/);
   assert.match(toml, /\/api\/radar-full/);
+});
+
+test('mmt-agent-op-v4.0-G8: Regla 1 (PMI < 50 contracción + AiG negativos en AUD) y Reglas 2-4 (MMT + Matriz v6.0 + Candado 48h)', () => {
+  assert.equal(OP_VERSION, 'mmt-agent-op-v4.0-G8');
+  assert.equal(MMT_SOVEREIGNTY.USD, 'SOBERANO_EMISOR');
+  assert.equal(MMT_SOVEREIGNTY.EUR, 'USUARIO_MONEDA');
+
+  const now = Date.now();
+  const pubIso = new Date(now - 30 * 60_000).toISOString();
+
+  // Caso real AUD: Services PMI 48.5 (prev 47.9) + AiG Manufacturing -20.1 + AiG Construction -26.9
+  const audPmiSub50 = {
+    title: 'AUSTRALIAN SERVICES PMI FINAL ACTUAL 48.5 (FORECAST -, PREVIOUS 47.9)',
+    actual: '48.5',
+    previous: '47.9',
+    currencies: ['AUD'],
+    category: 'dato_macro',
+    source_type: 'breaking',
+    published_at: pubIso,
+    fingerprint: 'aud-pmi-485',
+  };
+  const audAigMfg = {
+    title: 'AUSTRALIAN AIG MANUFACTURING INDEX ACTUAL -20.1 (PREVIOUS -8.3)',
+    actual: '-20.1',
+    previous: '-8.3',
+    currencies: ['AUD'],
+    category: 'dato_macro',
+    source_type: 'breaking',
+    published_at: pubIso,
+    fingerprint: 'aud-aig-mfg',
+  };
+  const audAigConst = {
+    title: 'AUSTRALIAN AIG CONSTRUCTION INDEX ACTUAL -26.9 (PREVIOUS -18.4)',
+    actual: '-26.9',
+    previous: '-18.4',
+    currencies: ['AUD'],
+    category: 'dato_macro',
+    source_type: 'breaking',
+    published_at: pubIso,
+    fingerprint: 'aud-aig-const',
+  };
+
+  // Incluso si saliera solo el PMI 48.5 vs 47.9, su impacto máximo es <= +5 y jamás "Dato real fuerte"
+  const soloRows = classifyAgent([audPmiSub50], now);
+  const audSolo = soloRows.find((r) => r.currency === 'AUD');
+  assert.ok(audSolo.score <= 5, `PMI 48.5 < 50 aislado no puede superar +5 (obtuvo ${audSolo.score})`);
+  assert.ok(!audSolo.drivers.some((d) => /Dato real fuerte/i.test(d)), 'Prohibido etiquetar PMI < 50 como Dato real fuerte');
+
+  // Combinado con AiG -20.1 y -26.9 en la misma ventana, el neto de actividad real queda negativo
+  const clusterRows = classifyAgent([audPmiSub50, audAigMfg, audAigConst], now);
+  const audCluster = clusterRows.find((r) => r.currency === 'AUD');
+  assert.ok(audCluster.score < 0, `AUD con PMI 48.5 + AiG -20.1/-26.9 debe quedar en terreno negativo (obtuvo ${audCluster.score})`);
+  assert.equal(audCluster.ficha_v6, 'B2');
+
+  // Regla 2: Aranceles PM Carney EE.UU.-Canadá -> COST_PUSH / RIESGO EA-1 (STAG_TRAP)
+  const carneyTariff = classifyIrisItem({
+    title: 'PM Carney warns US-Canada trade tariffs risk supply-chain inflation shock',
+    url: 'https://example.com/carney-tariff',
+    currencies: ['CAD'],
+    published_at: pubIso,
+  });
+  assert.equal(carneyTariff.ficha_v6, 'EA-1');
+  assert.equal(carneyTariff.mmt_lens, 'COST_PUSH_STAG_TRAP');
+
+  // Regla 2: EUR B12 EUR_FRAG en spreads BTP-Bund / OAT-Bund
+  const eurFragItem = classifyIrisItem({
+    title: 'Eurozone BTP-Bund and OAT-Bund sovereign spreads widen on French deficit concerns',
+    url: 'https://example.com/eur-frag',
+    currencies: ['EUR'],
+    published_at: pubIso,
+  });
+  assert.equal(eurFragItem.ficha_v6, 'B12');
+  assert.equal(eurFragItem.mmt_lens, 'USUARIO_MONEDA_EUR_FRAG');
+  assert.equal(eurFragItem.sovereignty_mmt, 'USUARIO_MONEDA');
+
+  // Regla 4: Candado de Agenda ⚑BC <48h (Candado CIRO) y ✓ POST-EVENTO
+  const calEvents = [
+    {
+      id: 'boe-1',
+      currency: 'GBP',
+      title: 'Official Bank Rate',
+      impact: 'High',
+      event_at: new Date(now + 18 * 3600_000).toISOString(),
+    },
+    {
+      id: 'nzd-1',
+      currency: 'NZD',
+      title: 'Unemployment Rate',
+      impact: 'High',
+      actual: '5.7%',
+      forecast: '5.3%',
+      previous: '5.2%',
+      event_at: new Date(now - 4 * 3600_000).toISOString(),
+    },
+  ];
+  const gbpLock = computeCalendarLock('GBP', calEvents, now);
+  assert.equal(gbpLock.calendar_lock, '⚑BC <48h (Candado CIRO)');
+  const nzdLock = computeCalendarLock('NZD', calEvents, now);
+  assert.equal(nzdLock.calendar_lock, '✓ POST-EVENTO');
+  assert.match(nzdLock.post_event_status, /5\.7%.*5\.3%/);
 });

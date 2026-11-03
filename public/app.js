@@ -278,6 +278,8 @@ function renderTape() {
       n.impact >= 4 ? `<span class="tag-hot">${n.impact >= 5 ? 'Crítico' : 'Breaking'}</span>` : '',
       `<span>${esc(n.source)}</span>`,
       n.iris_category ? `<span class="ccy" title="Categoría determinista IRIS">${esc(n.iris_category)}</span>` : `<span>${CATEGORY_LABEL[n.category] || n.category}</span>`,
+      n.ficha_v6 ? `<span class="ficha-pill-sm" title="Ficha Matriz Macro v6.0 · Lente MMT: ${esc(n.mmt_lens || 'MMT')}">Ficha ${esc(n.ficha_v6)}</span>` : '',
+      n.mmt_lens && n.mmt_lens !== 'NEUTRAL_OBSERVACION' ? `<span class="mmt-lens-sm" title="Clasificación Curso Maestro MMT">${esc(n.mmt_lens)}</span>` : '',
       n.currencies?.length ? `<span class="ccy">${n.currencies.join(' · ')}</span>` : '',
       macroHtml(n),
       calChip,
@@ -372,7 +374,41 @@ function cleanRationale(s) {
 
 function ledgerHtml(row) {
   if (!row.ledger?.length) return '';
-  return `<details><summary>Contribuciones MMT (${row.ledger.length} noticias)</summary>${row.ledger.map((x) => `<p>${esc(x.published_at)} · ${esc(x.channel)} · bruto ${Number(x.raw).toFixed(2)} · tras antigüedad/tope ${Number(x.contribution).toFixed(2)} · ${esc(x.title)}</p>`).join('')}</details>`;
+  return `<details><summary>Contribuciones MMT v4.0-G8 (${row.ledger.length} noticias)</summary>${row.ledger.map((x) => `<p>${esc(x.published_at)} · ${esc(x.channel)}${x.ficha_v6 ? ` · <b>Ficha ${esc(x.ficha_v6)}</b>` : ''}${x.mmt_lens ? ` (${esc(x.mmt_lens)})` : ''} · bruto ${Number(x.raw).toFixed(2)} · tras antigüedad/tope ${Number(x.contribution).toFixed(2)} · ${esc(x.title)}</p>`).join('')}</details>`;
+}
+
+const CB_UI_RE = /\b(official bank rate|monetary policy|fomc|rate decision|rate statement|cash rate|interest rate|policy rate|policy assessment|mpc\b|press conference|projections|gov(?:ernor)?\s+\w+\s+speaks|president\s+\w+\s+speaks|bailey speaks|lagarde speaks|powell speaks|ueda speaks|bullock speaks|orr speaks|macklem speaks|schlegel speaks)\b/i;
+
+function computeLiveCalendarBadge(currency, row, calEvents = []) {
+  const nowMs = Date.now();
+  const ccyEvents = (calEvents || []).filter((e) => e && e.currency === currency && (e.impact === 'High' || CB_UI_RE.test(e.title || '')));
+  const up48 = ccyEvents
+    .map((e) => ({ ...e, dtH: (Date.parse(e.event_at) - nowMs) / 3600_000 }))
+    .filter((e) => Number.isFinite(e.dtH) && e.dtH > 0 && e.dtH <= 48)
+    .sort((a, b) => a.dtH - b.dtH);
+  const rec24 = ccyEvents
+    .map((e) => ({ ...e, dtH: (nowMs - Date.parse(e.event_at)) / 3600_000 }))
+    .filter((e) => Number.isFinite(e.dtH) && e.dtH >= 0 && e.dtH <= 24)
+    .sort((a, b) => a.dtH - b.dtH);
+
+  const nextEv = up48.find((e) => CB_UI_RE.test(e.title || '')) || up48[0];
+  const prevEv = rec24.find((e) => e.actual != null) || rec24[0];
+
+  const pills = [];
+  if (nextEv) {
+    const hTxt = nextEv.dtH < 1 ? `${Math.max(1, Math.round(nextEv.dtH * 60))}m` : `${nextEv.dtH.toFixed(1)}h`;
+    pills.push(`<span class="cal-lock-pill lock" title="Candado de Agenda 48h: ${esc(nextEv.title)} en ${hTxt}">⚑BC &lt;48h (Candado CIRO) · ${esc(nextEv.title.slice(0, 24))} (${hTxt})</span>`);
+  } else if (row.calendar_lock === '⚑BC <48h (Candado CIRO)') {
+    pills.push(`<span class="cal-lock-pill lock" title="${esc(row.calendar_lock_detail || 'Evento BC <48h')}">⚑BC &lt;48h (Candado CIRO)</span>`);
+  }
+
+  if (prevEv) {
+    const actVsEst = prevEv.actual ? `Act ${prevEv.actual}${prevEv.forecast ? ` vs Est ${prevEv.forecast}` : ''}` : 'Publicado';
+    pills.push(`<span class="cal-lock-pill post" title="Evento publicado hace ${prevEv.dtH.toFixed(1)}h: ${esc(prevEv.title)} (${esc(actVsEst)})">✓ POST-EVENTO · ${esc(prevEv.title.slice(0, 22))} (${esc(actVsEst)})</span>`);
+  } else if (row.post_event_status) {
+    pills.push(`<span class="cal-lock-pill post" title="${esc(row.post_event_status)}">✓ POST-EVENTO</span>`);
+  }
+  return pills.join('');
 }
 
 function renderBoard() {
@@ -387,9 +423,10 @@ function renderBoard() {
     return;
   }
 
+  const opVer = ui.data?.engine_meta?.op_version || 'mmt-agent-op-v4.0-G8';
   $('#batch-time').textContent = view.snapshot_at
-    ? `${ENGINE_NAME} · ${fmtTime(view.snapshot_at)} · Score narrativo descriptivo, no probabilidad · umbral ±${BIAS_THRESHOLD}`
-    : `${ENGINE_NAME} · Escala MMT descriptiva`;
+    ? `${ENGINE_NAME} (${opVer}) · ${fmtTime(view.snapshot_at)} · Curso Maestro MMT + Matriz v6.0 · umbral ±${BIAS_THRESHOLD}`
+    : `${ENGINE_NAME} (${opVer}) · Escala MMT descriptiva`;
 
   const cov = liveCoverage();
   if (cov.degraded) {
@@ -419,6 +456,11 @@ function renderBoard() {
     const fxHtml = typeof bPct === 'number' && bPct !== 0
       ? `<span class="fx-pct ${bPct > 0 ? 'up' : 'down'}" title="${spotTitle}">${spotLabel} ${bPct > 0 ? '+' : ''}${bPct.toFixed(2)}%</span>`
       : '';
+    const fichaV6 = r.ficha_v6 || 'A1 / B2';
+    const fichaHtml = `<span class="ficha-pill" title="Escenario Matriz Macro Institucional v6.0">Ficha ${esc(fichaV6)}</span>`;
+    const sovMmt = r.sovereignty_mmt || (r.currency === 'EUR' ? 'USUARIO_MONEDA' : 'SOBERANO_EMISOR');
+    const sovHtml = `<span class="mmt-sov-pill ${sovMmt === 'USUARIO_MONEDA' ? 'user' : 'sov'}" title="Naturaleza Monetaria Curso Maestro MMT (Regla #1 y #9)">${sovMmt === 'USUARIO_MONEDA' ? 'USUARIO_MONEDA' : 'SOBERANO_EMISOR'}</span>`;
+    const calLockHtml = computeLiveCalendarBadge(r.currency, r, ui.data?.calendar || []);
     const biasText = r.noEvidence ? 'N/D' : pressureLabel(r);
     const drvText = r.drivers?.[0] || 'Sin catalizadores claros';
     const rankLabel = r.noEvidence ? '<span class="rank" title="Sin evidencia medida en la ventana">—</span>' : `<span class="rank" title="${r.tied ? 'Empate' : 'Posición'}">${r.tied ? '=' : ''}${r.rank}</span>`;
@@ -431,8 +473,9 @@ function renderBoard() {
       <div class="bar" aria-hidden="true"><span class="mid"></span><span class="fill ${cls}" style="width:${w}%"></span></div>
       <div class="ccy-meta">
         <span class="bias ${r.noEvidence ? 'nd' : r.bias}" title="${r.noEvidence ? 'Sin catalizadores medidos en la ventana actual' : ''}">${biasText}</span>
+        ${fichaHtml}${sovHtml}
         <span class="vec-pill" title="Impulso táctico últimas 3 horas. n/d = sin prints en la ventana">Imp 3h <b class="${impCls}">${fmtImpulse(r.impulse)}</b></span>
-        ${setupHtml}${fxHtml}
+        ${setupHtml}${fxHtml}${calLockHtml}
       </div>
       <p class="driver" title="${esc(drvText)}">${esc(drvText)}</p>
       <div class="ccy-detail" id="detail-${r.currency}">${detail}${sparkline(r.series)}</div>

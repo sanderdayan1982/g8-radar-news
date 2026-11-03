@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { SOURCES, UA, ENGINE_NAME } from './config.js';
 import { enrichRaw, parseRss, parseTelegram, parseHtmlList } from './enrich.js';
 import { selectEvidence, evidenceContract } from './evidence.js';
-import { classifyAgent, attachRanks } from './classifyCurrencies.js';
+import { classifyAgent, attachRanks, classifyItemMmtV4, MMT_SOVEREIGNTY, biasFor, clamp } from './classifyCurrencies.js';
 import { classifyAgentShadow, OP_VERSION, SHADOW_VERSION } from './shadowCalibration.js';
 import { fetchCalendar, linkNewsToCalendar, turboEvent } from './calendar.js';
 import { fetchMarket } from './market.js';
@@ -29,7 +29,7 @@ export const IRIS_CURRENCY_RULES = {
 export const IRIS_CATEGORY_RULES = [
   {
     id: 'Intervencion_EA4',
-    regex: /\b(mof\b|ministry of finance|kanda|mimura|katayama|snb intervention|fx intervention|currency intervention|rate check|verbal warning|verbal intervention|excessive moves|one-sided|disorderly|speculative moves|smoothing operation|sight deposits|forex reserves intervention)\b/i,
+    regex: /\b(snb intervention|fx intervention|currency intervention|rate check|verbal warning|verbal intervention|excessive moves|one-sided|disorderly|speculative moves|smoothing operation|sight deposits|forex reserves intervention|kanda\b|mimura\b|(?:mof|ministry of finance).{0,45}(?:interven|yen|fx|rate check|warning|excessive|disorderly))\b/i,
   },
   {
     id: 'BC',
@@ -97,8 +97,7 @@ export function classifyIrisItem(rawItem) {
   // Las 8 divisas soberanas G8 para el motor MMT, manteniendo XAU en iris_currencies / currencies para IRIS
   const g8Currencies = allCurrencies.filter((c) => c !== 'XAU');
   const sha256 = computeItemSha256(rawItem.url, rawItem.title);
-
-  return {
+  const baseObj = {
     ...rawItem,
     id: sha256.slice(0, 16),
     sha256,
@@ -110,6 +109,14 @@ export function classifyIrisItem(rawItem) {
     iris_categories: matchedCategories,
     category_iris: matchedCategories[0],
     categories_iris: matchedCategories,
+  };
+  const mmtMeta = classifyItemMmtV4(baseObj);
+
+  return {
+    ...baseObj,
+    ficha_v6: mmtMeta.ficha_v6,
+    mmt_lens: mmtMeta.mmt_lens,
+    sovereignty_mmt: mmtMeta.sovereignty_mmt,
   };
 }
 
@@ -257,7 +264,7 @@ export function deduplicateAndFilterWindow(items, existingItems = [], nowMs = Da
   const allInput = [...items, ...existingItems];
   for (const raw of allInput) {
     if (!raw?.title) continue;
-    const item = raw.sha256 ? raw : classifyIrisItem(raw);
+    const item = (raw.sha256 && raw.ficha_v6 && raw.mmt_lens) ? raw : classifyIrisItem(raw);
     const pubMs = Date.parse(item.published_at || '');
     const isOfficial = item.source_type === 'oficial';
     const minAllowedMs = isOfficial ? officialCutoffMs : windowCutoffMs;
@@ -332,7 +339,7 @@ export async function collectRadarAndIrisData({
   const shadowByCcy = new Map(shadowRows.map((s) => [s.currency, s]));
   const finishedAt = new Date().toISOString();
 
-  const agentRows = attachRanks(classifyAgent(eligibleEvidence, nowMs)).map((r) => {
+  const agentRows = attachRanks(classifyAgent(eligibleEvidence, nowMs, calendarEvents)).map((r) => {
     const sh = shadowByCcy.get(r.currency);
     return {
       ...r,
@@ -373,7 +380,7 @@ export async function collectRadarAndIrisData({
     .map((n, idx) => ({
       id: idx + 1,
       title: `${n.currencies?.length ? `[${n.currencies.join('/')}] ` : ''}${n.title}`.slice(0, 180),
-      body: `${n.source} · Categoría IRIS: ${n.iris_category}${n.actual ? ` · Act ${n.actual}` : ''}`,
+      body: `${n.source} · Categoría IRIS: ${n.iris_category} · Ficha v6.0: ${n.ficha_v6 || 'A1 / B2'}${n.actual ? ` · Act ${n.actual}` : ''}`,
       level: n.impact >= 5 ? 'critico' : n.impact >= 4 ? 'alto' : 'medio',
       alert_type: n.category === 'dato_macro' ? 'dato_macro' : 'breaking',
       currency: (n.currencies || [])[0] || null,
@@ -396,6 +403,9 @@ export async function collectRadarAndIrisData({
     category: n.iris_category,
     categories: n.iris_categories || [n.iris_category],
     legacy_category: n.category,
+    ficha_v6: n.ficha_v6 || 'A1 / B2',
+    mmt_lens: n.mmt_lens || 'REPRICING_MONETARIO',
+    sovereignty_mmt: n.sovereignty_mmt || 'SOBERANO_EMISOR',
     impact: n.impact ?? 1,
     actual: n.actual ?? null,
     forecast: n.forecast ?? null,
@@ -404,6 +414,59 @@ export async function collectRadarAndIrisData({
     z: n.z ?? null,
   }));
 
+  // Ventana de Agenda (-24h a +48h) para el agente externo IRIS
+  const agendaWindow = (calendarEvents || [])
+    .filter((e) => {
+      const ms = Date.parse(e?.event_at || '');
+      if (!Number.isFinite(ms)) return false;
+      const diff = ms - nowMs;
+      return diff >= -24 * 3600_000 && diff <= 48 * 3600_000;
+    })
+    .map((e) => {
+      const diffH = Math.round(((Date.parse(e.event_at) - nowMs) / 3600_000) * 10) / 10;
+      const isUpcoming = diffH > 0;
+      return {
+        id: e.id,
+        currency: e.currency,
+        title: e.title,
+        event_at: e.event_at,
+        impact: e.impact,
+        actual: e.actual ?? null,
+        forecast: e.forecast ?? null,
+        previous: e.previous ?? null,
+        hours_from_now: diffH,
+        window_status: isUpcoming ? '⚑BC <48h (Candado CIRO)' : '✓ POST-EVENTO',
+      };
+    });
+
+  // Fila determinista adicional para XAU (Oro) en currency_ranking_mmt
+  const xauItems = irisWindowItems.filter((n) => (n.currencies || []).includes('XAU'));
+  const xauRawSum = xauItems.reduce((acc, n) => {
+    const t = `${n.title || ''} ${n.body || ''}`;
+    if (/\b(rises?|jumps?|surges?|record high|safe[- ]haven|bullion up|gains?)\b/i.test(t)) return acc + 8;
+    if (/\b(falls?|drops?|slumps?|retreats?|declines?)\b/i.test(t)) return acc - 8;
+    return acc + 2;
+  }, 0);
+  const xauScore = xauItems.length ? clamp(Math.round(xauRawSum), -60, 60) : 0;
+  const xauRowMmt = {
+    currency: 'XAU',
+    rank: null,
+    score: xauScore,
+    bias: xauItems.length ? biasFor(xauScore) : 'N/D',
+    structural: xauScore,
+    impulse: null,
+    ficha_v6: 'A6 / EA-7',
+    sovereignty_mmt: MMT_SOVEREIGNTY.XAU,
+    calendar_lock: null,
+    calendar_lock_detail: null,
+    post_event_status: null,
+    no_evidence: xauItems.length === 0,
+    drivers: xauItems.length
+      ? xauItems.slice(0, 2).map((n) => `Oro refugio / MDP: ${n.title.slice(0, 42)}`)
+      : ['Sin catalizadores directos XAU en ventana'],
+    rationale: `${xauItems.length} titulares XAU · Ficha A6 / EA-7 (${MMT_SOVEREIGNTY.XAU}) · Score ${xauScore >= 0 ? '+' : ''}${xauScore}.`,
+  };
+
   const g8RankingSummary = agentRows.map((r) => ({
     currency: r.currency,
     rank: r.rank,
@@ -411,14 +474,23 @@ export async function collectRadarAndIrisData({
     bias: r.noEvidence ? 'N/D' : r.bias,
     structural: r.structural ?? r.score,
     impulse: r.impulse ?? null,
+    ficha_v6: r.ficha_v6 || 'A1 / B2',
+    sovereignty_mmt: r.sovereignty_mmt || MMT_SOVEREIGNTY[r.currency] || 'SOBERANO_EMISOR',
+    calendar_lock: r.calendar_lock || null,
+    calendar_lock_detail: r.calendar_lock_detail || null,
+    post_event_status: r.post_event_status || null,
     no_evidence: !!r.noEvidence,
     drivers: r.drivers || [],
+    rationale: r.rationale || '',
   }));
 
+  const currencyRankingMmt = [...g8RankingSummary, xauRowMmt];
+
   const irisFeed = {
-    schema: 'iris-g8-feed/v1',
+    schema: 'iris-g8-feed/v2-mmt-v4.0',
     version: RELEASE,
     engine: ENGINE_NAME,
+    engine_version: OP_VERSION,
     classification_mode: 'deterministic_regex_keywords_zero_llm',
     llm_calls: 0,
     generated_at: finishedAt,
@@ -427,7 +499,9 @@ export async function collectRadarAndIrisData({
     sources_ok: sourcesHealth.filter((s) => s.status === 'ok').length,
     sources_total: sourcesHealth.length,
     count: irisItemsFormatted.length,
+    currency_ranking_mmt: currencyRankingMmt,
     g8_ranking: g8RankingSummary,
+    agenda_window: agendaWindow,
     market_basket_pct: market?.basketPct || {},
     items: irisItemsFormatted,
     news: irisItemsFormatted,
@@ -469,7 +543,9 @@ export async function collectRadarAndIrisData({
     sources: sourcesHealth,
     news: tapeNews,
     items: irisItemsFormatted,
+    currency_ranking_mmt: currencyRankingMmt,
     g8_ranking: g8RankingSummary,
+    agenda_window: agendaWindow,
     engines: [engineSnapshot],
     market,
     calendar: calendarEvents,
