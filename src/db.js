@@ -1,0 +1,1223 @@
+import { mkdirSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { DatabaseSync } from 'node:sqlite';
+import { DATA_DIR, ENGINE_NAME, SOURCES } from './config.js';
+import { dedupeNews, fingerprint, isSameReleaseDuplicate, normalizeStoredNews, surpriseZ, urlSpecificity } from './enrich.js';
+import { addBusinessDays, businessDaysBetween, entryFixingDateForSignal, computeCodeHash } from './calibrationEval.js';
+import { OP_VERSION, SHADOW_VERSION } from './shadowCalibration.js';
+
+function ensureColumn(db, table, col, typeDef) {
+  const cols = db.prepare(`PRAGMA table_info(${table})`).all();
+  if (!cols.some((c) => c.name === col)) {
+    db.exec(`ALTER TABLE ${table} ADD COLUMN ${col} ${typeDef}`);
+  }
+}
+
+export function openDb(file = join(DATA_DIR, 'radarnews.db')) {
+  if (file !== ':memory:') mkdirSync(dirname(file), { recursive: true });
+  const db = new DatabaseSync(file);
+  db.exec('PRAGMA journal_mode=WAL');
+  db.exec('PRAGMA foreign_keys=ON');
+  db.exec('PRAGMA busy_timeout=5000');
+  db.exec('PRAGMA cache_size=-32768');
+  db.exec('PRAGMA mmap_size=67108864');
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS news (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT NOT NULL,
+      body TEXT,
+      source TEXT,
+      source_id TEXT,
+      source_type TEXT,
+      url TEXT,
+      published_at TEXT,
+      currencies TEXT,
+      impact INTEGER,
+      category TEXT,
+      actual TEXT,
+      forecast TEXT,
+      previous TEXT,
+      calendar_title TEXT,
+      fingerprint TEXT UNIQUE,
+      z REAL,
+      absZ REAL,
+      alert_created INTEGER DEFAULT 0,
+      created_at TEXT DEFAULT (datetime('now'))
+    );
+    CREATE TABLE IF NOT EXISTS scores (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      currency TEXT,
+      score INTEGER,
+      bias TEXT,
+      drivers TEXT,
+      rationale TEXT,
+      rank INTEGER,
+      batch_id TEXT,
+      regime_note TEXT,
+      engine TEXT,
+      snapshot_at TEXT,
+      structural INTEGER,
+      impulse INTEGER,
+      setup TEXT
+    );
+    CREATE TABLE IF NOT EXISTS alerts (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT,
+      body TEXT,
+      level TEXT,
+      alert_type TEXT,
+      currency TEXT,
+      news_item_id INTEGER,
+      is_read INTEGER DEFAULT 0,
+      occurred_at TEXT
+    );
+    CREATE TABLE IF NOT EXISTS calendar (
+      id TEXT PRIMARY KEY,
+      title TEXT,
+      currency TEXT,
+      event_at TEXT,
+      impact TEXT,
+      forecast TEXT,
+      previous TEXT,
+      actual TEXT,
+      news_item_id INTEGER,
+      prealerted INTEGER DEFAULT 0,
+      week_start TEXT
+    );
+    CREATE TABLE IF NOT EXISTS push_devices (
+      id TEXT PRIMARY KEY,
+      label TEXT,
+      subscription TEXT,
+      created_at TEXT,
+      last_ok_at TEXT,
+      last_error TEXT,
+      last_error_at TEXT
+    );
+    CREATE TABLE IF NOT EXISTS meta (
+      key TEXT PRIMARY KEY,
+      value TEXT
+    );
+    CREATE TABLE IF NOT EXISTS market_snapshots (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      snapshot_at TEXT,
+      updated_at TEXT,
+      reference_date TEXT,
+      prev_reference_date TEXT,
+      source TEXT,
+      basket_json TEXT,
+      pairs_json TEXT
+    );
+    CREATE TABLE IF NOT EXISTS calibration_log (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      snapshot_at TEXT,
+      evidence_set TEXT,
+      as_of TEXT,
+      currency TEXT,
+      op_version TEXT,
+      shadow_version TEXT,
+      code_hash TEXT,
+      is_new_contract INTEGER DEFAULT 0,
+      currency_evidence_hash TEXT,
+      is_new_currency_event INTEGER DEFAULT 0,
+      transition_type TEXT,
+      eligible_for_calibration INTEGER DEFAULT 1,
+      ineligible_reason TEXT,
+      op_agent_score INTEGER,
+      op_agent_bias TEXT,
+      shadow_agent_score INTEGER,
+      shadow_agent_bias TEXT,
+      gemini_score INTEGER,
+      gemini_bias TEXT,
+      gemini_model TEXT,
+      gemini_evaluated_at TEXT,
+      gemini_reused INTEGER DEFAULT 0,
+      discrepancy_op_vs_gemini INTEGER,
+      discrepancy_shadow_vs_gemini INTEGER,
+      ecb_base_date TEXT,
+      prior_fixing_date TEXT,
+      entry_fixing_date TEXT,
+      expected_t1_date TEXT,
+      expected_t3_date TEXT,
+      outcome_t1_date TEXT,
+      outcome_t1_basket_pct REAL,
+      outcome_t3_date TEXT,
+      outcome_t3_basket_pct REAL,
+      horizon_status TEXT,
+      gap_dates_json TEXT,
+      citations_json TEXT,
+      details_json TEXT
+    );
+    CREATE INDEX IF NOT EXISTS news_pub ON news(published_at DESC);
+    CREATE INDEX IF NOT EXISTS news_source_pub ON news(source_id, published_at DESC);
+    CREATE INDEX IF NOT EXISTS scores_snap ON scores(engine, snapshot_at);
+    CREATE INDEX IF NOT EXISTS scores_eng_ccy_snap ON scores(engine, currency, snapshot_at DESC, id DESC);
+    CREATE INDEX IF NOT EXISTS alerts_unread ON alerts(is_read, id DESC);
+    CREATE INDEX IF NOT EXISTS alerts_news_id ON alerts(news_item_id);
+    CREATE INDEX IF NOT EXISTS alerts_title_occ ON alerts(title, occurred_at DESC);
+    CREATE INDEX IF NOT EXISTS mkt_snap_at ON market_snapshots(snapshot_at);
+    CREATE INDEX IF NOT EXISTS mkt_ref_date ON market_snapshots(reference_date);
+    CREATE INDEX IF NOT EXISTS cal_log_ev ON calibration_log(evidence_set, snapshot_at);
+    CREATE INDEX IF NOT EXISTS cal_log_elig ON calibration_log(eligible_for_calibration, horizon_status, entry_fixing_date);
+    CREATE INDEX IF NOT EXISTS cal_log_elig_ver ON calibration_log(eligible_for_calibration, op_version, shadow_version, code_hash);
+    CREATE TABLE IF NOT EXISTS source_state (
+      source_id TEXT PRIMARY KEY,
+      name TEXT,
+      url TEXT,
+      type TEXT,
+      kind TEXT,
+      poll_ms INTEGER DEFAULT 60000,
+      cursor_id TEXT,
+      pending_items_json TEXT,
+      last_attempt_at TEXT,
+      last_success_at TEXT,
+      last_news_published_at TEXT,
+      last_captured_at TEXT,
+      last_fetched_count INTEGER DEFAULT 0,
+      last_new_count INTEGER DEFAULT 0,
+      total_inserted INTEGER DEFAULT 0,
+      pending_count INTEGER DEFAULT 0,
+      consecutive_empty INTEGER DEFAULT 0,
+      last_http_status INTEGER,
+      status TEXT DEFAULT 'pending',
+      last_error TEXT,
+      last_delay_sec INTEGER,
+      channel_note TEXT
+    );
+    CREATE TABLE IF NOT EXISTS push_queue (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      alert_id INTEGER NOT NULL,
+      news_item_id INTEGER,
+      device_id TEXT NOT NULL,
+      notification_tag TEXT NOT NULL,
+      payload_json TEXT NOT NULL,
+      status TEXT NOT NULL DEFAULT 'pending',
+      attempts INTEGER NOT NULL DEFAULT 0,
+      max_attempts INTEGER NOT NULL DEFAULT 5,
+      next_retry_at TEXT,
+      http_status INTEGER,
+      created_at TEXT NOT NULL,
+      last_attempt_at TEXT,
+      accepted_at TEXT,
+      displayed_at TEXT,
+      last_error TEXT,
+      UNIQUE(alert_id, device_id)
+    );
+    CREATE INDEX IF NOT EXISTS push_q_status ON push_queue(status, next_retry_at);
+    CREATE INDEX IF NOT EXISTS push_q_device ON push_queue(device_id, id DESC);
+  `);
+
+  const alertsSql = db.prepare("SELECT sql FROM sqlite_master WHERE type='table' AND name='alerts'").get()?.sql || '';
+  if (/REFERENCES\s+news_items/i.test(alertsSql)) {
+    db.exec('PRAGMA foreign_keys=OFF');
+    db.exec(`
+      BEGIN;
+      CREATE TABLE alerts_migrated (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT,
+        body TEXT,
+        level TEXT,
+        alert_type TEXT,
+        currency TEXT,
+        news_item_id INTEGER,
+        is_read INTEGER DEFAULT 0,
+        occurred_at TEXT
+      );
+      INSERT INTO alerts_migrated (id, title, body, level, alert_type, currency, news_item_id, is_read, occurred_at)
+        SELECT id, title, body, level, alert_type, currency, news_item_id, is_read, occurred_at FROM alerts;
+      DROP TABLE alerts;
+      ALTER TABLE alerts_migrated RENAME TO alerts;
+      COMMIT;
+    `);
+    db.exec('PRAGMA foreign_keys=ON');
+  }
+
+  ensureColumn(db, 'push_devices', 'last_accepted_at', 'TEXT');
+  ensureColumn(db, 'push_devices', 'last_displayed_at', 'TEXT');
+  ensureColumn(db, 'push_devices', 'last_http_status', 'INTEGER');
+  ensureColumn(db, 'push_devices', 'status', "TEXT DEFAULT 'active'");
+
+  ensureColumn(db, 'scores', 'audit_json', 'TEXT');
+  ensureColumn(db, 'market_snapshots', 'reference_date', 'TEXT');
+  ensureColumn(db, 'market_snapshots', 'prev_reference_date', 'TEXT');
+  ensureColumn(db, 'market_snapshots', 'source', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'op_version', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'shadow_version', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'code_hash', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'is_new_contract', 'INTEGER DEFAULT 0');
+  ensureColumn(db, 'calibration_log', 'currency_evidence_hash', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'is_new_currency_event', 'INTEGER DEFAULT 0');
+  ensureColumn(db, 'calibration_log', 'transition_type', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'eligible_for_calibration', 'INTEGER DEFAULT 1');
+  ensureColumn(db, 'calibration_log', 'ineligible_reason', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'gemini_evaluated_at', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'discrepancy_op_vs_gemini', 'INTEGER');
+  ensureColumn(db, 'calibration_log', 'discrepancy_shadow_vs_gemini', 'INTEGER');
+  ensureColumn(db, 'calibration_log', 'ecb_base_date', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'prior_fixing_date', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'entry_fixing_date', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'expected_t1_date', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'expected_t3_date', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'outcome_t1_date', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'outcome_t1_basket_pct', 'REAL');
+  ensureColumn(db, 'calibration_log', 'outcome_t3_date', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'outcome_t3_basket_pct', 'REAL');
+  ensureColumn(db, 'calibration_log', 'horizon_status', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'gap_dates_json', 'TEXT');
+  ensureColumn(db, 'calibration_log', 'citations_json', 'TEXT');
+
+  return db;
+}
+
+const json = (v) => JSON.stringify(v ?? null);
+const parseJson = (v, fallback) => {
+  try { return v ? JSON.parse(v) : fallback; } catch { return fallback; }
+};
+
+export function getMeta(db, key, fallback = null) {
+  const row = db.prepare('SELECT value FROM meta WHERE key=?').get(key);
+  return row ? parseJson(row.value, fallback) : fallback;
+}
+
+export function setMeta(db, key, val) {
+  db.prepare(`INSERT INTO meta (key, value) VALUES (?,?)
+    ON CONFLICT(key) DO UPDATE SET value=excluded.value`).run(key, json(val));
+}
+
+export function saveMarketSnapshot(db, market, snapshotAt = new Date().toISOString()) {
+  if (!market || !market.pairs || !Object.keys(market.pairs).length) return;
+  const refDate = market.reference_date || null;
+  const prevRefDate = market.prev_reference_date || null;
+  const source = market.source || 'ecb_frankfurter_daily';
+  const basketStr = json(market.basketPct || {});
+  const pairsStr = json(market.pairs || {});
+
+  if (refDate) {
+    const existing = db.prepare('SELECT id FROM market_snapshots WHERE reference_date = ? OR (reference_date IS NULL AND pairs_json = ?) ORDER BY id ASC LIMIT 1').get(refDate, pairsStr);
+    if (existing) {
+      db.prepare(`UPDATE market_snapshots
+        SET updated_at=?, reference_date=?, prev_reference_date=COALESCE(?, prev_reference_date), source=?, basket_json=?, pairs_json=?
+        WHERE id=?`).run(market.updated_at || snapshotAt, refDate, prevRefDate, source, basketStr, pairsStr, existing.id);
+      // Remove any extra duplicate rows of the exact same daily fixing
+      db.prepare('DELETE FROM market_snapshots WHERE id != ? AND (reference_date = ? OR (reference_date IS NULL AND pairs_json = ?))').run(existing.id, refDate, pairsStr);
+      backfillDailyOutcomes(db);
+      return;
+    }
+  }
+
+  db.prepare(`INSERT INTO market_snapshots (snapshot_at, updated_at, reference_date, prev_reference_date, source, basket_json, pairs_json)
+    VALUES (?,?,?,?,?,?,?)`).run(
+    snapshotAt,
+    market.updated_at || snapshotAt,
+    refDate,
+    prevRefDate,
+    source,
+    basketStr,
+    pairsStr,
+  );
+  if (refDate) backfillDailyOutcomes(db);
+}
+
+/**
+ * Computes compound daily basket return (%) between two daily ECB fixings
+ * by comparing pair rates at targetDate vs entryFixingDate (T0 >= signal).
+ */
+export function computeDailyBasketReturn(basePairs, targetPairs, currency) {
+  if (!basePairs || !targetPairs) return null;
+  let sum = 0;
+  let n = 0;
+  for (const [key, tObj] of Object.entries(targetPairs)) {
+    const bObj = basePairs[key];
+    if (!bObj?.rate || !tObj?.rate) continue;
+    const [base, quote] = key.split('/');
+    if (base !== currency && quote !== currency) continue;
+    const pairPct = ((tObj.rate / bObj.rate) - 1) * 100;
+    sum += base === currency ? pairPct : ((bObj.rate / tObj.rate) - 1) * 100;
+    n += 1;
+  }
+  return n ? Math.round((sum / n) * 100) / 100 : null;
+}
+
+/**
+ * Evaluates and backfills daily T+1 and T+3 outcomes strictly anchored to `entry_fixing_date` (T0 >= signal).
+ * Never substitutes the next available row when an expected business day fixing is missing; instead
+ * records `horizon_status = 'gap_*'` and the exact missing dates in `gap_dates_json`.
+ */
+export function backfillDailyOutcomes(db) {
+  const snaps = db.prepare(`SELECT reference_date, basket_json, pairs_json FROM market_snapshots
+    WHERE reference_date IS NOT NULL ORDER BY reference_date ASC`).all().map((s) => ({
+    reference_date: s.reference_date,
+    basketPct: parseJson(s.basket_json, {}),
+    pairs: parseJson(s.pairs_json, {}),
+  }));
+  if (!snaps.length) return 0;
+
+  const byDate = new Map(snaps.map((s) => [s.reference_date, s]));
+  const dates = [...byDate.keys()].sort();
+  const latestRefDate = dates[dates.length - 1];
+
+  const rows = db.prepare(`SELECT id, snapshot_at, currency, ecb_base_date, prior_fixing_date,
+    entry_fixing_date, expected_t1_date, expected_t3_date, outcome_t1_date, outcome_t1_basket_pct,
+    outcome_t3_date, outcome_t3_basket_pct, horizon_status, gap_dates_json
+    FROM calibration_log
+    WHERE COALESCE(eligible_for_calibration, 0) = 1
+      AND (outcome_t1_date IS NULL OR outcome_t3_date IS NULL OR entry_fixing_date IS NULL)`).all();
+
+  if (!rows.length) return 0;
+
+  const upd = db.prepare(`UPDATE calibration_log
+    SET prior_fixing_date=?, entry_fixing_date=?, expected_t1_date=?, expected_t3_date=?,
+        outcome_t1_date=?, outcome_t1_basket_pct=?, outcome_t3_date=?, outcome_t3_basket_pct=?,
+        horizon_status=?, gap_dates_json=?
+    WHERE id=?`);
+
+  let updated = 0;
+
+  db.exec('BEGIN');
+  try {
+    for (const row of rows) {
+      const policy = entryFixingDateForSignal(row.snapshot_at);
+      const entryDate = row.entry_fixing_date || policy?.entry_fixing_date || null;
+      if (!entryDate) continue;
+
+      const expectedT1 = row.expected_t1_date || policy?.expected_t1_date || addBusinessDays(entryDate, 1);
+      const expectedT3 = row.expected_t3_date || policy?.expected_t3_date || addBusinessDays(entryDate, 3);
+      const priorDate = row.prior_fixing_date || (row.ecb_base_date && row.ecb_base_date < entryDate ? row.ecb_base_date : null);
+
+      let outT1Date = null;
+      let outT1Pct = null;
+      let outT3Date = null;
+      let outT3Pct = null;
+      let status = 'pending_entry_fixing';
+      const gapSet = new Set();
+
+      if (latestRefDate < entryDate) {
+        status = 'pending_entry_fixing';
+      } else if (!byDate.has(entryDate)) {
+        status = 'gap_entry_missing';
+        gapSet.add(entryDate);
+      } else {
+        const entrySnap = byDate.get(entryDate);
+        status = 'anchored_entry_pending_t1';
+
+        if (expectedT1 && latestRefDate >= expectedT1) {
+          const reqDaysT1 = businessDaysBetween(entryDate, expectedT1);
+          const missingT1 = reqDaysT1.filter((d) => !byDate.has(d));
+          if (missingT1.length > 0) {
+            for (const m of missingT1) gapSet.add(m);
+            status = 'gap_t1_missing';
+          } else {
+            const t1Snap = byDate.get(expectedT1);
+            const ret1 = computeDailyBasketReturn(entrySnap.pairs, t1Snap.pairs, row.currency);
+            if (ret1 != null) {
+              outT1Date = expectedT1;
+              outT1Pct = ret1;
+              status = 'matured_t1_pending_t3';
+            }
+          }
+        }
+
+        if (expectedT3 && latestRefDate >= expectedT3) {
+          const reqDaysT3 = businessDaysBetween(entryDate, expectedT3);
+          const missingT3 = reqDaysT3.filter((d) => !byDate.has(d));
+          if (missingT3.length > 0) {
+            for (const m of missingT3) gapSet.add(m);
+            status = status === 'gap_t1_missing' ? 'gap_t1_and_t3_missing' : 'gap_t3_missing';
+          } else {
+            const t3Snap = byDate.get(expectedT3);
+            const ret3 = computeDailyBasketReturn(entrySnap.pairs, t3Snap.pairs, row.currency);
+            if (ret3 != null) {
+              outT3Date = expectedT3;
+              outT3Pct = ret3;
+              if (!status.startsWith('gap_')) status = 'complete_t1_t3';
+            }
+          }
+        }
+      }
+
+      const gapList = [...gapSet].sort();
+      const gapJson = json(gapList);
+      const nextPrior = priorDate ?? null;
+      const nextEntry = entryDate ?? null;
+      const nextExpT1 = expectedT1 ?? null;
+      const nextExpT3 = expectedT3 ?? null;
+      const nextOutT1 = outT1Date ?? null;
+      const nextOutT1Pct = outT1Pct ?? null;
+      const nextOutT3 = outT3Date ?? null;
+      const nextOutT3Pct = outT3Pct ?? null;
+
+      if (
+        row.prior_fixing_date !== nextPrior ||
+        row.entry_fixing_date !== nextEntry ||
+        row.expected_t1_date !== nextExpT1 ||
+        row.expected_t3_date !== nextExpT3 ||
+        row.outcome_t1_date !== nextOutT1 ||
+        row.outcome_t1_basket_pct !== nextOutT1Pct ||
+        row.outcome_t3_date !== nextOutT3 ||
+        row.outcome_t3_basket_pct !== nextOutT3Pct ||
+        row.horizon_status !== status ||
+        row.gap_dates_json !== gapJson
+      ) {
+        upd.run(
+          nextPrior,
+          nextEntry,
+          nextExpT1,
+          nextExpT3,
+          nextOutT1,
+          nextOutT1Pct,
+          nextOutT3,
+          nextOutT3Pct,
+          status,
+          gapJson,
+          row.id,
+        );
+      }
+      if (outT1Date || outT3Date || gapList.length > 0 || !row.entry_fixing_date) {
+        updated += 1;
+      }
+    }
+    db.exec('COMMIT');
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  }
+  return updated;
+}
+
+/**
+ * Marks historical `calibration_log` rows produced prior to `OP_VERSION` / `SHADOW_VERSION`
+ * as `eligible_for_calibration = 0` with an explicit audit reason, preserving all original records.
+ */
+export function markHistoricalEvaluationsIneligible(db) {
+  const res = db.prepare(`UPDATE calibration_log
+    SET eligible_for_calibration = 0,
+        ineligible_reason = COALESCE(ineligible_reason, 'pre_v4_methodology: transition_state_or_fixing_anchor_not_validated')
+    WHERE (op_version IS NULL OR op_version != ? OR shadow_version IS NULL OR shadow_version != ?
+      OR code_hash IS NULL OR code_hash != ?)
+      AND COALESCE(eligible_for_calibration, 1) = 1`).run(OP_VERSION, SHADOW_VERSION, computeCodeHash());
+  // Preserve historical dates/returns. Ineligible observations are never backfilled.
+  return res.changes;
+}
+
+export function saveCalibrationLog(db, entries) {
+  if (!entries?.length) return;
+  const activeCodeHash = computeCodeHash();
+  const stmt = db.prepare(`INSERT INTO calibration_log
+    (snapshot_at, evidence_set, as_of, currency, op_version, shadow_version, code_hash,
+     is_new_contract, currency_evidence_hash, is_new_currency_event, transition_type,
+     eligible_for_calibration, ineligible_reason,
+     op_agent_score, op_agent_bias, shadow_agent_score, shadow_agent_bias,
+     gemini_score, gemini_bias, gemini_model, gemini_evaluated_at, gemini_reused,
+     discrepancy_op_vs_gemini, discrepancy_shadow_vs_gemini,
+     ecb_base_date, prior_fixing_date, entry_fixing_date, expected_t1_date, expected_t3_date,
+     horizon_status, gap_dates_json, citations_json, details_json)
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`);
+  db.exec('BEGIN');
+  try {
+    for (const e of entries) {
+      const policy = entryFixingDateForSignal(e.snapshot_at);
+      if (!policy) throw new Error('Calibration signal requires an explicit, valid timezone-aware timestamp');
+      for (const key of ['entry_fixing_date', 'expected_t1_date', 'expected_t3_date']) {
+        if (e[key] != null && e[key] !== policy[key]) throw new Error(`Invalid ${key}: differs from conservative ECB/TARGET policy`);
+      }
+      const entryFixingDate = policy.entry_fixing_date;
+      const expectedT1Date = policy.expected_t1_date;
+      const expectedT3Date = policy.expected_t3_date;
+      const priorFixingDate = e.prior_fixing_date ?? (e.ecb_base_date && entryFixingDate && e.ecb_base_date < entryFixingDate ? e.ecb_base_date : null);
+
+      stmt.run(
+        e.snapshot_at,
+        e.evidence_set || null,
+        e.as_of || null,
+        e.currency,
+        e.op_version || OP_VERSION,
+        e.shadow_version || SHADOW_VERSION,
+        e.code_hash || activeCodeHash,
+        e.is_new_contract ? 1 : 0,
+        e.currency_evidence_hash || null,
+        e.is_new_currency_event ? 1 : 0,
+        e.transition_type || (e.is_new_currency_event ? 'new_event' : 'unchanged_decay_only'),
+        e.eligible_for_calibration == null ? 1 : (e.eligible_for_calibration ? 1 : 0),
+        e.ineligible_reason || null,
+        e.op_agent_score ?? null,
+        e.op_agent_bias || null,
+        e.shadow_agent_score ?? null,
+        e.shadow_agent_bias || null,
+        e.gemini_score ?? null,
+        e.gemini_bias || null,
+        e.gemini_model || null,
+        e.gemini_evaluated_at || null,
+        e.gemini_reused ? 1 : 0,
+        e.discrepancy_op_vs_gemini ?? null,
+        e.discrepancy_shadow_vs_gemini ?? null,
+        e.ecb_base_date ?? entryFixingDate ?? null,
+        priorFixingDate,
+        entryFixingDate,
+        expectedT1Date,
+        expectedT3Date,
+        e.horizon_status || 'pending_entry_fixing',
+        json(e.gap_dates || []),
+        json(e.citations || []),
+        json(e.details || {}),
+      );
+    }
+    db.exec('COMMIT');
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  }
+  backfillDailyOutcomes(db);
+}
+
+export function markGeminiSnapshotReused(db, snapshotAt, calibrationPatch) {
+  if (!snapshotAt || !calibrationPatch) return;
+  const rows = db.prepare('SELECT id, audit_json FROM scores WHERE engine=? AND snapshot_at=?').all('gemini', snapshotAt);
+  const upd = db.prepare('UPDATE scores SET audit_json=? WHERE id=?');
+  for (const r of rows) {
+    const audit = parseJson(r.audit_json, {});
+    const prevCal = audit.calibration || {};
+    audit.calibration = {
+      ...prevCal,
+      ...calibrationPatch,
+      asOf: prevCal.evaluatedAt || prevCal.asOf || snapshotAt,
+      generatedAt: prevCal.generatedAt || snapshotAt,
+      evaluatedAt: prevCal.evaluatedAt || prevCal.asOf || snapshotAt,
+    };
+    upd.run(json(audit), r.id);
+  }
+}
+
+export function insertNewsWithStatus(db, item) {
+  const fp = item.fingerprint || fingerprint(item.title, item.url);
+  const existingByFp = db.prepare('SELECT * FROM news WHERE fingerprint=?').get(fp);
+  if (existingByFp) {
+    return maybeUpdateExistingNews(db, existingByFp, item, fp);
+  }
+
+  // Also check recent rows within 14 days for same-release duplicate or official correction
+  const recentRows = db.prepare('SELECT * FROM news ORDER BY id DESC LIMIT 400').all();
+  for (const r of recentRows) {
+    const mapped = mapNews(r);
+    if (isSameReleaseDuplicate(mapped, item)) {
+      return maybeUpdateExistingNews(db, r, item, r.fingerprint);
+    }
+  }
+
+  const stmt = db.prepare(`INSERT INTO news
+    (title, body, source, source_id, source_type, url, published_at, currencies, impact, category, actual, forecast, previous, calendar_title, fingerprint, z, absZ)
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`);
+  const info = stmt.run(
+    item.title, item.body || '', item.source || '', item.source_id || '', item.source_type || 'breaking',
+    item.url || '', item.published_at, json(item.currencies || []),
+    item.impact ?? 1, item.category || 'otro',
+    item.actual ?? null, item.forecast ?? null, item.previous ?? null, item.calendar_title ?? null,
+    fp, item.z ?? null, item.absZ ?? null,
+  );
+  const insertedId = Number(info.lastInsertRowid);
+  return {
+    inserted: true,
+    updated: false,
+    id: insertedId,
+    item: { ...item, id: insertedId, fingerprint: fp },
+  };
+}
+
+function maybeUpdateExistingNews(db, row, item, fp) {
+  let changed = false;
+  let newUrl = row.url;
+  if (urlSpecificity(item.url) > urlSpecificity(row.url)) {
+    newUrl = item.url;
+    changed = true;
+  }
+  const incoming = Date.parse(item.published_at);
+  const stored = Date.parse(row.published_at);
+  let newPub = row.published_at;
+  if (Number.isFinite(incoming) && Number.isFinite(stored) && stored - incoming > 12 * 3600_000) {
+    newPub = item.published_at;
+    changed = true;
+  }
+  const actualChanged = item.actual != null && String(item.actual) !== String(row.actual ?? '');
+  const forecastChanged = item.forecast != null && !row.forecast;
+  const previousChanged = item.previous != null && !row.previous;
+  const sourceIdMissing = (!row.source_id && item.source_id) || (item.source_id === 'snb-cycle' && row.source_id !== 'snb-cycle');
+  if (actualChanged || forecastChanged || previousChanged || sourceIdMissing) {
+    changed = true;
+  }
+  if (changed) {
+    const nextSourceId = sourceIdMissing ? item.source_id : (row.source_id || item.source_id || '');
+    db.prepare(`UPDATE news
+      SET url=?, published_at=?, source_id=?,
+          actual=COALESCE(?, actual),
+          forecast=COALESCE(?, forecast),
+          previous=COALESCE(?, previous)
+      WHERE id=?`).run(newUrl, newPub, nextSourceId, item.actual ?? null, item.forecast ?? null, item.previous ?? null, row.id);
+  }
+  return {
+    inserted: false,
+    updated: changed,
+    id: row.id,
+    item: { ...item, id: row.id, fingerprint: fp, url: newUrl, published_at: newPub },
+  };
+}
+
+export function insertNews(db, item) {
+  return insertNewsWithStatus(db, item).inserted;
+}
+
+export function listNews(db, limit = 250) {
+  return dedupeNews(db.prepare('SELECT * FROM news ORDER BY published_at DESC, id DESC LIMIT ?').all(limit).map(mapNews));
+}
+
+export function recentNews(db, sinceIso) {
+  const sinceMs = Date.parse(sinceIso);
+  if (Number.isFinite(sinceMs)) {
+    const isoCutoff = new Date(sinceMs).toISOString();
+    const rows = db.prepare('SELECT * FROM news WHERE published_at >= ? ORDER BY published_at DESC, id DESC LIMIT 600').all(isoCutoff).map(mapNews);
+    return dedupeNews(rows).filter((n) => Date.parse(n.published_at) >= sinceMs);
+  }
+  return dedupeNews(db.prepare('SELECT * FROM news ORDER BY published_at DESC, id DESC LIMIT 600').all().map(mapNews));
+}
+
+function mapNews(r) {
+  return normalizeStoredNews({
+    ...r,
+    currencies: parseJson(r.currencies, []),
+    alert_created: !!r.alert_created,
+    captured_at: r.created_at,
+  });
+}
+
+export function saveScores(db, engine, rows, batchId, snapshotAt, regimeNote = '') {
+  const stmt = db.prepare(`INSERT INTO scores
+    (currency, score, bias, drivers, rationale, rank, batch_id, regime_note, engine, snapshot_at, structural, impulse, setup, audit_json)
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)`);
+  db.exec('BEGIN');
+  try {
+    for (const r of rows) {
+      stmt.run(
+        r.currency, r.score, r.bias, json(r.drivers), r.rationale,
+        r.rank, batchId, regimeNote, engine, snapshotAt,
+        r.structural ?? r.score, r.impulse == null ? null : r.impulse, r.setup || '', json({ noEvidence: !!r.noEvidence, citations: r.citations || [], ledger: r.ledger || [], calibration: r.calibration || null, shadow: r.shadow || null }),
+      );
+    }
+    db.exec('COMMIT');
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  }
+}
+
+export function latestEngine(db, engine = 'agente') {
+  if (engine !== 'agente') return null;
+  const snap = db.prepare('SELECT snapshot_at, regime_note, batch_id FROM scores WHERE engine=? ORDER BY snapshot_at DESC LIMIT 1').get('agente');
+  if (!snap) return null;
+  const rows = db.prepare('SELECT * FROM scores WHERE engine=? AND snapshot_at=?').all('agente', snap.snapshot_at).map((r) => ({
+    ...r,
+    ...parseJson(r.audit_json, {}),
+    audit_json: undefined,
+    drivers: parseJson(r.drivers, []),
+  }));
+  const history = {};
+  const histStmt = db.prepare('SELECT currency, snapshot_at, score, rank FROM scores WHERE engine=? AND currency=? ORDER BY snapshot_at DESC, id DESC LIMIT 48');
+  for (const r of rows) {
+    const ccyHist = histStmt.all('agente', r.currency).reverse();
+    history[r.currency] = ccyHist.map((h) => [h.snapshot_at, h.score, h.rank]);
+  }
+  return { engine: 'agente', label: ENGINE_NAME, snapshot_at: snap.snapshot_at, regime_note: snap.regime_note || '', rows, history };
+}
+
+export function insertAlert(db, a) {
+  if (a.news_item_id) {
+    const existing = db.prepare('SELECT * FROM alerts WHERE news_item_id=? ORDER BY id DESC LIMIT 1').get(a.news_item_id);
+    if (existing) {
+      return { ...existing, is_read: !!existing.is_read, alreadyExisted: true };
+    }
+    if (a.title) {
+      const cutoff = new Date(Date.now() - 72 * 3600_000).toISOString();
+      const existingByTitle = db.prepare('SELECT * FROM alerts WHERE title=? AND body=? AND occurred_at >= ? ORDER BY id DESC LIMIT 1').get(a.title, a.body || '', cutoff);
+      if (existingByTitle) {
+        db.prepare('UPDATE news SET alert_created=1 WHERE id=?').run(a.news_item_id);
+        return { ...existingByTitle, is_read: !!existingByTitle.is_read, alreadyExisted: true };
+      }
+    }
+  }
+  const occurredAt = a.occurred_at || new Date().toISOString();
+  const info = db.prepare(`INSERT INTO alerts (title, body, level, alert_type, currency, news_item_id, occurred_at)
+    VALUES (?,?,?,?,?,?,?)`).run(
+    a.title, a.body || '', a.level || 'alto', a.alert_type || 'titular', a.currency || null,
+    a.news_item_id || null, occurredAt,
+  );
+  if (a.news_item_id) {
+    db.prepare('UPDATE news SET alert_created=1 WHERE id=?').run(a.news_item_id);
+  }
+  const alertId = Number(info.lastInsertRowid);
+  return {
+    id: alertId,
+    title: a.title,
+    body: a.body || '',
+    level: a.level || 'alto',
+    alert_type: a.alert_type || 'titular',
+    currency: a.currency || null,
+    news_item_id: a.news_item_id || null,
+    is_read: false,
+    occurred_at: occurredAt,
+  };
+}
+
+export function listAlerts(db, limit = 50) {
+  return db.prepare("SELECT * FROM alerts WHERE title NOT LIKE 'Gemini no disponible%' ORDER BY id DESC LIMIT ?").all(limit).map((a) => ({ ...a, is_read: !!a.is_read }));
+}
+
+export function unreadCount(db) {
+  return db.prepare("SELECT COUNT(*) AS n FROM alerts WHERE is_read=0 AND title NOT LIKE 'Gemini no disponible%'").get().n;
+}
+
+export function markAlertsRead(db) {
+  db.exec('UPDATE alerts SET is_read=1');
+}
+
+export function upsertCalendar(db, events, weekStart) {
+  const stmt = db.prepare(`INSERT INTO calendar (id, title, currency, event_at, impact, forecast, previous, actual, news_item_id, prealerted, week_start)
+    VALUES (?,?,?,?,?,?,?,?,?,?,?)
+    ON CONFLICT(id) DO UPDATE SET
+      title=excluded.title,
+      forecast=COALESCE(excluded.forecast, forecast),
+      previous=COALESCE(excluded.previous, previous),
+      actual=COALESCE(excluded.actual, actual),
+      news_item_id=COALESCE(excluded.news_item_id, news_item_id),
+      impact=excluded.impact,
+      event_at=excluded.event_at,
+      week_start=excluded.week_start`);
+  db.exec('BEGIN');
+  try {
+    for (const e of events) {
+      stmt.run(e.id, e.title, e.currency, e.event_at, e.impact, e.forecast, e.previous, e.actual, e.news_item_id, e.prealerted || 0, weekStart);
+    }
+    db.exec('COMMIT');
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  }
+}
+
+export function persistCalendarLinks(db, events) {
+  const stmt = db.prepare(`UPDATE calendar SET
+    actual=COALESCE(?, actual),
+    news_item_id=COALESCE(?, news_item_id)
+    WHERE id=?`);
+  db.exec('BEGIN');
+  try {
+    for (const e of events) {
+      if (!e.actual && !e.news_item_id) continue;
+      stmt.run(e.actual || null, e.news_item_id || null, e.id);
+    }
+    db.exec('COMMIT');
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  }
+}
+
+export function persistNewsLinks(db, news) {
+  const stmt = db.prepare(`UPDATE news SET calendar_title=COALESCE(?, calendar_title), actual=COALESCE(?, actual), forecast=COALESCE(?, forecast), previous=COALESCE(?, previous) WHERE id=?`);
+  db.exec('BEGIN');
+  try {
+    for (const n of news) {
+      if (!n.id || (!n.calendar_title && !n.actual && !n.forecast && !n.previous)) continue;
+      stmt.run(n.calendar_title || null, n.actual || null, n.forecast || null, n.previous || null, n.id);
+    }
+    db.exec('COMMIT');
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  }
+}
+
+export function repairPersistedNews(db) {
+  const rows = db.prepare('SELECT * FROM news ORDER BY id DESC LIMIT 400').all().reverse();
+  const upd = db.prepare(`UPDATE news SET title=?, url=?, published_at=?, currencies=?, category=?, actual=COALESCE(?, actual), forecast=COALESCE(?, forecast), previous=COALESCE(?, previous), fingerprint=?, z=?, absZ=?, impact=? WHERE id=?`);
+  const merge = db.prepare(`UPDATE news SET url=?, published_at=?, fingerprint=?, actual=COALESCE(actual, ?), forecast=COALESCE(forecast, ?), previous=COALESCE(previous, ?) WHERE id=?`);
+  const del = db.prepare('DELETE FROM news WHERE id=?');
+  const keptRows = [];
+  db.exec('BEGIN');
+  try {
+    for (const raw of rows) {
+      const n = mapNews(raw);
+      const z = surpriseZ(n);
+      const fp = fingerprint(n.title, n.url);
+      n.fingerprint = fp;
+
+      const existing = keptRows.find((k) => isSameReleaseDuplicate(k, n));
+      if (existing) {
+        const bestUrl = urlSpecificity(n.url) > urlSpecificity(existing.url) ? n.url : existing.url;
+        const tExist = Date.parse(existing.published_at);
+        const tNew = Date.parse(n.published_at);
+        const bestPub = (Number.isFinite(tExist) && Number.isFinite(tNew))
+          ? (tNew < tExist ? n.published_at : existing.published_at)
+          : (Number.isFinite(tNew) ? n.published_at : existing.published_at);
+        const bestFp = fingerprint(existing.title, bestUrl);
+        del.run(n.id);
+        merge.run(bestUrl, bestPub, bestFp, n.actual, n.forecast, n.previous, existing.id);
+        existing.url = bestUrl;
+        existing.published_at = bestPub;
+        existing.fingerprint = bestFp;
+        if (n.actual && !existing.actual) existing.actual = n.actual;
+        if (n.forecast && !existing.forecast) existing.forecast = n.forecast;
+        if (n.previous && !existing.previous) existing.previous = n.previous;
+        continue;
+      }
+      const ccyJson = json(n.currencies);
+      const nextImpact = n.impact ?? raw.impact;
+      const needsUpdate = (
+        n.title !== raw.title
+        || n.url !== raw.url
+        || n.published_at !== raw.published_at
+        || ccyJson !== raw.currencies
+        || n.category !== raw.category
+        || fp !== raw.fingerprint
+        || nextImpact !== raw.impact
+      );
+      if (!needsUpdate) {
+        keptRows.push(n);
+        continue;
+      }
+      try {
+        upd.run(
+          n.title, n.url, n.published_at, ccyJson, n.category,
+          n.actual, n.forecast, n.previous, fp, z.z, z.absZ, nextImpact, n.id,
+        );
+        keptRows.push(n);
+      } catch {
+        const keep = db.prepare('SELECT id, title, url, published_at, source, source_id, actual, forecast, previous, currencies FROM news WHERE fingerprint=?').get(fp);
+        if (keep && keep.id !== n.id) {
+          const keepMapped = mapNews(keep);
+          if (isSameReleaseDuplicate(keepMapped, n)) {
+            const bestUrl = urlSpecificity(n.url) > urlSpecificity(keep.url) ? n.url : keep.url;
+            const tExist = Date.parse(keep.published_at);
+            const tNew = Date.parse(n.published_at);
+            const bestPub = (Number.isFinite(tExist) && Number.isFinite(tNew) && tNew < tExist) ? n.published_at : keep.published_at;
+            const bestFp = fingerprint(keep.title, bestUrl);
+            del.run(n.id);
+            merge.run(bestUrl, bestPub, bestFp, n.actual, n.forecast, n.previous, keep.id);
+          }
+        }
+      }
+    }
+    db.exec('COMMIT');
+  } catch (err) {
+    db.exec('ROLLBACK');
+    throw err;
+  }
+}
+
+export function listCalendar(db) {
+  return db.prepare('SELECT * FROM calendar ORDER BY event_at ASC').all();
+}
+
+export function saveDevice(db, { id, label, subscription }) {
+  const now = new Date().toISOString();
+  const ep = subscription?.endpoint || '';
+  if (ep) {
+    // Deduplicate stale device rows that share the exact same PushManager endpoint
+    // Different subscriptions often share a long provider prefix. Match the
+    // complete endpoint and retain the existing ID and delivery history.
+    const existing = db.prepare('SELECT id, subscription FROM push_devices').all()
+      .find((d) => parseJson(d.subscription, {})?.endpoint === ep);
+    if (existing) id = existing.id;
+  }
+  db.prepare(`INSERT INTO push_devices (id, label, subscription, created_at, status) VALUES (?,?,?,?,'active')
+    ON CONFLICT(id) DO UPDATE SET label=excluded.label, subscription=excluded.subscription, status='active'`).run(id, label, json(subscription), now);
+  return id;
+}
+
+export function listDevices(db, includeInactive = false) {
+  return db.prepare(includeInactive ? "SELECT * FROM push_devices" : "SELECT * FROM push_devices WHERE COALESCE(status, 'active') = 'active'").all().map((d) => ({
+    ...d,
+    subscription: parseJson(d.subscription, null),
+  }));
+}
+
+export function removeDevice(db, id) {
+  db.prepare('DELETE FROM push_devices WHERE id=?').run(id);
+}
+
+export function touchDeviceOk(db, id, httpStatus = 201) {
+  const now = new Date().toISOString();
+  db.prepare(`UPDATE push_devices SET last_ok_at=?, last_accepted_at=?, last_http_status=?, last_error=NULL, status='active' WHERE id=?`).run(now, now, httpStatus, id);
+}
+
+export function touchDeviceDisplayed(db, id, displayedAt = new Date().toISOString()) {
+  db.prepare(`UPDATE push_devices SET last_displayed_at=?, status='active' WHERE id=?`).run(displayedAt, id);
+}
+
+export function touchDeviceErr(db, id, err, httpStatus = null) {
+  db.prepare(`UPDATE push_devices SET last_error=?, last_error_at=?, last_http_status=COALESCE(?, last_http_status) WHERE id=?`).run(String(err).slice(0, 300), new Date().toISOString(), httpStatus, id);
+}
+
+export function enqueuePushForAlerts(db, alerts) {
+  if (!alerts?.length) return [];
+  const devices = listDevices(db);
+  if (!devices.length) return [];
+  const now = new Date().toISOString();
+  const stmt = db.prepare(`INSERT OR IGNORE INTO push_queue
+    (alert_id, news_item_id, device_id, notification_tag, payload_json, status, attempts, max_attempts, next_retry_at, created_at)
+    VALUES (?,?,?,?,?,'pending',0,5,?,?)`);
+  const enqueuedIds = [];
+  for (const a of alerts) {
+    if (!a?.id) continue;
+    const tag = a.news_item_id ? `rn-news-${a.news_item_id}` : `rn-alert-${a.id}`;
+    for (const d of devices) {
+      if (!d.subscription?.endpoint) continue;
+      const basePayload = {
+        alertId: a.id,
+        newsItemId: a.news_item_id || null,
+        deviceId: d.id,
+        title: a.title,
+        body: a.body || '',
+        tag,
+        url: a.news_item_id ? `/?news=${a.news_item_id}` : '/?view=alerts',
+        occurredAt: a.occurred_at || now,
+      };
+      const info = stmt.run(
+        a.id,
+        a.news_item_id || null,
+        d.id,
+        tag,
+        json(basePayload),
+        now,
+        now,
+      );
+      if (info.changes > 0) {
+        const qid = Number(info.lastInsertRowid);
+        basePayload.queueId = qid;
+        db.prepare('UPDATE push_queue SET payload_json=? WHERE id=?').run(json(basePayload), qid);
+        enqueuedIds.push(qid);
+      }
+    }
+  }
+  return enqueuedIds;
+}
+
+export function listDuePushQueue(db, nowIso = new Date().toISOString(), limit = 100, onlyIds = null) {
+  const ids = Array.isArray(onlyIds) ? onlyIds.filter(Number.isSafeInteger) : [];
+  const clause = ids.length ? `AND q.id IN (${ids.map(() => '?').join(',')})` : '';
+  return db.prepare(`SELECT q.*, d.label AS device_label, d.subscription AS device_subscription_json
+    FROM push_queue q
+    JOIN push_devices d ON d.id = q.device_id
+    WHERE q.status IN ('pending', 'retrying')
+      AND (q.next_retry_at IS NULL OR q.next_retry_at <= ?)
+      AND COALESCE(d.status, 'active') = 'active'
+    ${clause}
+    ORDER BY q.id ASC
+    LIMIT ?`).all(nowIso, ...ids, limit).map((row) => ({
+    ...row,
+    payload: parseJson(row.payload_json, {}),
+    subscription: parseJson(row.device_subscription_json, null),
+  }));
+}
+
+export function markPushQueueAccepted(db, queueId, deviceId, httpStatus = 201) {
+  const now = new Date().toISOString();
+  db.prepare(`UPDATE push_queue
+    SET status = CASE WHEN status = 'displayed_on_device' THEN 'displayed_on_device' ELSE 'accepted_by_push_service' END,
+        attempts = attempts + 1,
+        http_status = ?,
+        last_attempt_at = ?,
+        accepted_at = COALESCE(accepted_at, ?),
+        last_error = NULL
+    WHERE id = ?`).run(httpStatus, now, now, queueId);
+  if (deviceId) touchDeviceOk(db, deviceId, httpStatus);
+}
+
+export function markPushQueueDisplayed(db, { queueId, tag, deviceId, displayedAt }) {
+  const ts = displayedAt || new Date().toISOString();
+  let row = null;
+  if (queueId && deviceId) {
+    row = db.prepare('SELECT id, device_id FROM push_queue WHERE id=? AND device_id=?').get(Number(queueId),deviceId);
+  } else if (tag && deviceId) {
+    row = db.prepare('SELECT id, device_id FROM push_queue WHERE notification_tag=? AND device_id=? ORDER BY id DESC LIMIT 1').get(tag, deviceId);
+
+  }
+  if (!row) return false;
+  db.prepare(`UPDATE push_queue
+    SET status = 'displayed_on_device',
+        displayed_at = COALESCE(displayed_at, ?),
+        accepted_at = COALESCE(accepted_at, ?)
+    WHERE id = ?`).run(ts, ts, row.id);
+  touchDeviceDisplayed(db, row.device_id, ts);
+  return true;
+}
+
+export function markPushQueueFailure(db, queueId, deviceId, err, httpStatus = null) {
+  const now = new Date().toISOString();
+  const row = db.prepare('SELECT attempts, max_attempts FROM push_queue WHERE id=?').get(queueId);
+  const attempts = (row?.attempts || 0) + 1;
+  const maxAttempts = row?.max_attempts || 5;
+  const errStr = String(err || 'push_failed').slice(0, 300);
+
+  if (httpStatus === 404 || httpStatus === 410) {
+    db.prepare(`UPDATE push_queue
+      SET status = 'expired_subscription',
+          attempts = ?,
+          http_status = ?,
+          last_attempt_at = ?,
+          last_error = ?
+      WHERE id = ?`).run(attempts, httpStatus, now, errStr, queueId);
+    if (deviceId) {
+      touchDeviceErr(db, deviceId, errStr, httpStatus);
+      db.prepare("UPDATE push_devices SET status='expired' WHERE id=?").run(deviceId);
+      db.prepare("UPDATE push_queue SET status='expired_subscription', last_error=? WHERE device_id=? AND status IN ('pending','retrying')").run(errStr, deviceId);
+    }
+    return { status: 'expired_subscription', attempts };
+  }
+
+  const isRetryable = (!httpStatus || httpStatus === 429 || httpStatus >= 500) && attempts < maxAttempts;
+  if (isRetryable) {
+    const backoffMs = Math.min(15 * 60_000, 15_000 * (2 ** (attempts - 1)));
+    const nextRetry = new Date(Date.now() + backoffMs).toISOString();
+    db.prepare(`UPDATE push_queue
+      SET status = 'retrying',
+          attempts = ?,
+          http_status = ?,
+          last_attempt_at = ?,
+          next_retry_at = ?,
+          last_error = ?
+      WHERE id = ?`).run(attempts, httpStatus, now, nextRetry, errStr, queueId);
+    if (deviceId) touchDeviceErr(db, deviceId, errStr, httpStatus);
+    return { status: 'retrying', attempts, next_retry_at: nextRetry };
+  }
+
+  db.prepare(`UPDATE push_queue
+    SET status = 'failed',
+        attempts = ?,
+        http_status = ?,
+        last_attempt_at = ?,
+        last_error = ?
+    WHERE id = ?`).run(attempts, httpStatus, now, errStr, queueId);
+  if (deviceId) touchDeviceErr(db, deviceId, errStr, httpStatus);
+  return { status: 'failed', attempts };
+}
+
+export function getPushQueueSummary(db, limit = 30) {
+  const counts = db.prepare(`SELECT status, COUNT(*) AS c FROM push_queue GROUP BY status`).all();
+  const byStatus = Object.fromEntries(counts.map((r) => [r.status, r.c]));
+  const recent = db.prepare(`SELECT q.id, q.alert_id, q.news_item_id, q.device_id, d.label AS device_label,
+      q.notification_tag, q.status, q.attempts, q.http_status, q.created_at, q.last_attempt_at,
+      q.accepted_at, q.displayed_at, q.next_retry_at, q.last_error
+    FROM push_queue q
+    LEFT JOIN push_devices d ON d.id = q.device_id
+    ORDER BY q.id DESC LIMIT ?`).all(limit);
+  return {
+    counts: {
+      pending: byStatus.pending || 0,
+      retrying: byStatus.retrying || 0,
+      accepted_by_push_service: byStatus.accepted_by_push_service || 0,
+      displayed_on_device: byStatus.displayed_on_device || 0,
+      failed: byStatus.failed || 0,
+      expired_subscription: byStatus.expired_subscription || 0,
+    },
+    recent,
+  };
+}
+
+export function getSourceState(db, sourceId) {
+  const row = db.prepare('SELECT * FROM source_state WHERE source_id=?').get(sourceId);
+  if (!row) return null;
+  return {
+    ...row,
+    pending_items: parseJson(row.pending_items_json, []),
+  };
+}
+
+export function saveSourceState(db, state) {
+  const pendingItems = Array.isArray(state.pending_items) ? state.pending_items : [];
+  db.prepare(`INSERT INTO source_state (
+      source_id, name, url, type, kind, poll_ms, cursor_id, pending_items_json,
+      last_attempt_at, last_success_at, last_news_published_at, last_captured_at,
+      last_fetched_count, last_new_count, total_inserted, pending_count,
+      consecutive_empty, last_http_status, status, last_error, last_delay_sec, channel_note
+    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+    ON CONFLICT(source_id) DO UPDATE SET
+      name=excluded.name,
+      url=excluded.url,
+      type=excluded.type,
+      kind=excluded.kind,
+      poll_ms=excluded.poll_ms,
+      cursor_id=COALESCE(excluded.cursor_id, source_state.cursor_id),
+      pending_items_json=excluded.pending_items_json,
+      last_attempt_at=excluded.last_attempt_at,
+      last_success_at=COALESCE(excluded.last_success_at, source_state.last_success_at),
+      last_news_published_at=COALESCE(excluded.last_news_published_at, source_state.last_news_published_at),
+      last_captured_at=COALESCE(excluded.last_captured_at, source_state.last_captured_at),
+      last_fetched_count=excluded.last_fetched_count,
+      last_new_count=excluded.last_new_count,
+      total_inserted=COALESCE(source_state.total_inserted, 0) + COALESCE(excluded.last_new_count, 0),
+      pending_count=excluded.pending_count,
+      consecutive_empty=excluded.consecutive_empty,
+      last_http_status=excluded.last_http_status,
+      status=excluded.status,
+      last_error=excluded.last_error,
+      last_delay_sec=COALESCE(excluded.last_delay_sec, source_state.last_delay_sec),
+      channel_note=excluded.channel_note`).run(
+    state.source_id,
+    state.name,
+    state.url,
+    state.type,
+    state.kind,
+    state.poll_ms || 60_000,
+    state.cursor_id || null,
+    json(pendingItems),
+    state.last_attempt_at || new Date().toISOString(),
+    state.last_success_at || null,
+    state.last_news_published_at || null,
+    state.last_captured_at || null,
+    state.last_fetched_count ?? 0,
+    state.last_new_count ?? 0,
+    state.last_new_count ?? 0,
+    pendingItems.length,
+    state.consecutive_empty ?? 0,
+    state.last_http_status ?? null,
+    state.status || 'ok',
+    state.last_error || null,
+    state.last_delay_sec ?? null,
+    state.channel_note || null,
+  );
+}
+
+export function listSourceStates(db) {
+  const rows = db.prepare('SELECT * FROM source_state').all();
+  const byId = new Map(rows.map((r) => [r.source_id, r]));
+  const countsRows = db.prepare('SELECT source_id, COUNT(*) AS c, MAX(published_at) AS max_pub FROM news GROUP BY source_id').all();
+  const dbCounts = new Map(countsRows.map((r) => [r.source_id, r]));
+  const configured = new Set(SOURCES.map(s => s.id));
+  const live = rows.filter(r => r.kind === 'live' && !configured.has(r.source_id) && (r.status === 'ok' || (dbCounts.get(r.source_id)?.c ?? 0) > 0)).map(r => ({...r, id:r.source_id}));
+  return [...SOURCES, ...live].map((s) => {
+    const st = byId.get(s.id);
+    const dbc = dbCounts.get(s.id);
+    return {
+      id: s.id,
+      source_id: s.id,
+      name: s.name,
+      url: s.url,
+      type: s.type,
+      kind: s.kind,
+      currency: s.currency || null,
+      poll_ms: s.pollMs || 60_000,
+      channel_note: s.channel_note || st?.channel_note || null,
+      cursor_id: st?.cursor_id || null,
+      last_attempt_at: st?.last_attempt_at || null,
+      last_success_at: st?.last_success_at || null,
+      last_news_published_at: st?.last_news_published_at || dbc?.max_pub || null,
+      last_captured_at: st?.last_captured_at || null,
+      last_fetched_count: st?.last_fetched_count ?? 0,
+      last_new_count: st?.last_new_count ?? 0,
+      stored_count: dbc?.c ?? 0,
+      pending_count: st?.pending_count ?? 0,
+      consecutive_empty: st?.consecutive_empty ?? 0,
+      last_http_status: st?.last_http_status ?? null,
+      status: st?.status || 'pending',
+      ok: st?.status === 'ok',
+      last_error: st?.last_error || null,
+      last_delay_sec: st?.last_delay_sec ?? null,
+    };
+  });
+}

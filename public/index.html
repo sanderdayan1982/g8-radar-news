@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a0d11" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="RadarNews" />
+  <title>RadarNews · Agente MMT</title>
+  <link rel="icon" href="/icon.svg?v=2" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="/icon.svg?v=2" alt="" class="brand-icon" width="30" height="30" />
+      <div class="brand-text">
+        <span class="name">RadarNews</span>
+        <span class="sub">Macro FX · Agente MMT</span>
+      </div>
+    </div>
+
+    <div id="sessions" class="sessions" aria-label="Sesiones de mercado"></div>
+
+    <div class="actions">
+      <button id="live" class="live loading" data-state="loading" title="Estado de la sincronización">
+        <span class="dot"></span><span id="live-text">Conectando…</span>
+      </button>
+      <div class="bell-wrap">
+        <button id="bell" class="icon-btn" aria-label="Alertas" aria-expanded="false" title="Alertas (A)">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span id="badge" class="badge" hidden>0</span>
+        </button>
+        <section id="alerts-panel" class="alerts-panel" hidden>
+          <div class="alerts-head">
+            <strong>Alertas</strong>
+            <button id="read-all" class="link">Marcar todas leídas</button>
+          </div>
+          <div id="notif-hint" class="notif-hint" hidden>
+            <span>Recibe cada noticia nueva aunque RadarNews esté cerrada.</span>
+            <button id="notif-hint-btn" class="btn small primary">Activar</button>
+          </div>
+          <ul id="alerts-list" class="alerts-list"></ul>
+        </section>
+      </div>
+      <button id="refresh" class="icon-btn" aria-label="Actualizar" title="Actualizar ahora (R)">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+      </button>
+      <button id="settings-btn" class="icon-btn" aria-label="Ajustes" title="Ajustes (,)">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="desk-summary"><span class="desk-label">MESA MACRO · G8</span><span id="desk-status" role="status">Conectando con la mesa…</span><span class="private-label">Acceso protegido · HTTPS</span></div>
+  <div id="error-band" class="error-band" role="alert" hidden></div>
+
+  <main class="layout">
+    <section class="panel tape" data-view="tape">
+      <div class="panel-head">
+        <h2>Cinta</h2>
+        <input id="tape-search" class="tape-search" type="search" placeholder="Buscar titular… (/)" aria-label="Buscar en la cinta" autocomplete="off" />
+        <div class="seg" id="filters" role="group" aria-label="Categoría de noticias">
+          <button data-filter="all" class="active">Todo</button>
+          <button data-filter="breaking">Breaking</button>
+          <button data-filter="dato_macro">Datos</button>
+          <button data-filter="banco_central">Bancos</button>
+          <button data-filter="geopolitica">Geo</button>
+        </div>
+        <select id="ccy-filter" class="select" aria-label="Filtrar por divisa"></select>
+      </div>
+      <div id="tape" class="tape-body">
+        <div class="state-msg"><span class="spinner"></span>Cargando titulares…</div>
+      </div>
+    </section>
+
+    <section class="panel board" data-view="board">
+      <div class="panel-head">
+        <h2>Ranking de divisas · Agente MMT</h2>
+        <div class="seg" id="engine-tabs"></div>
+      </div>
+      <div class="board-meta"><span id="batch-time"></span></div>
+      <ol id="board" class="board-list"><li class="state-msg">Cargando evidencia y ranking…</li></ol>
+      <div id="regime" class="regime" hidden></div>
+
+      <div class="section-title">Cruces con mayor diferencial · clic para ficha</div>
+      <div id="top-pairs" class="top-pairs"></div>
+      <div id="pair-sheet" class="pair-sheet" hidden></div>
+      <details class="matrix-wrap">
+        <summary>Ver matriz completa 8×8</summary>
+        <div id="matrix" class="matrix"></div>
+        <p class="footnote">Diferencial narrativo fila − columna (Agente MMT). Pulsa cualquier cruce para abrir su ficha comparativa de mesa.</p>
+      </details>
+    </section>
+
+    <section class="panel agenda" data-view="agenda">
+      <div class="panel-head">
+        <h2>Agenda de la semana</h2>
+        <div class="seg" id="cal-filter">
+          <button data-impact="High">Alto</button>
+          <button data-impact="Medium" class="active">Alto + Medio</button>
+          <button data-impact="all">Todo</button>
+        </div>
+      </div>
+      <div id="next-event" class="next-event" hidden></div>
+      <div id="calendar" class="calendar-body"><div class="state-msg">Cargando agenda…</div></div>
+    </section>
+  </main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Secciones">
+    <button data-view="board"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h10M4 12h16M4 18h7"/></svg><span>Ranking</span></button>
+    <button data-view="tape"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><span>Cinta</span></button>
+    <button data-view="agenda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Agenda</span></button>
+    <button data-view="alerts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span>Alertas</span><i id="tab-badge" class="badge" hidden>0</i></button>
+  </nav>
+
+  <footer class="statusbar">
+    <button id="health" class="health" data-open-settings="sources" title="Ver estado de las fuentes"></button>
+    <span id="engines-status" class="engines-status"></span>
+    <span class="shortcuts">R actualizar · A alertas · 1–5 filtros · , ajustes</span>
+  </footer>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <dialog id="settings" class="modal">
+    <div class="modal-head">
+      <strong>Ajustes</strong>
+      <button class="icon-btn" data-close aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <nav class="tabs" id="settings-tabs">
+        <button data-tab="notif" class="active">Notificaciones</button>
+        <button data-tab="sources">Fuentes</button>
+        <button data-tab="mmt">Motor Agente MMT</button>
+        <button data-tab="devices">iPhone y iPad</button>
+        <button data-tab="about">Acerca de</button>
+      </nav>
+
+      <section class="tab" data-pane="notif">
+        <h3>Alertas en tus cuatro dispositivos</h3>
+        <p class="muted">Activa RadarNews por separado en tus dos iPhone, el Mac y el iPad. Cada dispositivo necesita su propia suscripción y permiso del sistema.</p>
+        <label class="device-label" for="device-label">Nombre de este dispositivo</label>
+        <input id="device-label" class="device-name-input" maxlength="80" placeholder="Ej.: iPhone personal, iPhone trabajo, Mac o iPad" autocomplete="off" />
+        <p class="muted small">El nombre se guarda al activar o revalidar Push.</p>
+        <p class="muted">Cada noticia nueva recibida de las fuentes configuradas genera su propia alerta y notificación push individual, aunque RadarNews esté cerrada (con Service Worker y suscripción Push activa).</p>
+        <div id="ios-install" class="hint ios" hidden>
+          <span>En iPhone y iPad las notificaciones con la app cerrada exigen instalar RadarNews en la pantalla de inicio: pulsa <b>Compartir</b> <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 7l4-4 4 4"/><path d="M5 12v8h14v-8"/></svg> y luego <b>Añadir a pantalla de inicio</b>.</span>
+        </div>
+        <div class="card">
+          <div class="card-row">
+            <div>
+              <div class="card-title">Este dispositivo (verificación real en navegador y servidor)</div>
+              <div id="notif-state" class="muted">—</div>
+            </div>
+            <button id="notif-btn" class="btn primary">Activar</button>
+          </div>
+          <div id="notif-diag" class="muted small" style="margin-top:8px;"></div>
+        </div>
+        <h4>Dispositivos suscritos y estado de entrega</h4>
+        <p class="muted small">Se distingue entre <b>Aceptada por servicio push</b> (relay Apple/Google), <b>Mostrada en dispositivo</b> (confirmada por el Service Worker tras <code>showNotification</code>) y <b>Fallida / Reintentando</b>.</p>
+        <p id="device-count" class="muted"></p>
+        <ul id="device-list" class="device-list"></ul>
+        <div class="about-actions">
+          <button id="notif-test" class="btn">Enviar prueba inmediata</button>
+          <button id="notif-schedule-test" class="btn" type="button">Programar prueba en 30 s (cerrar app)</button>
+          <button id="sound-test" class="btn" type="button">Probar sonido con app abierta</button>
+        </div>
+        <div id="test-result" class="muted small" style="margin-top:6px;"></div>
+        <div id="push-queue-summary" class="muted small" style="margin-top:8px;"></div>
+        <div class="notification-guide">
+          <h4>Si el aviso no suena</h4>
+          <p>En iPhone/iPad: abre la app desde la pantalla de inicio y revisa Ajustes → Notificaciones → RadarNews → Permitir notificaciones y Sonidos. Comprueba el modo silencio y Concentración.</p>
+          <p>En Mac: Ajustes del Sistema → Notificaciones → RadarNews (o Chrome) → Permitir notificaciones y Reproducir sonido. El sonido con la app cerrada lo controla el sistema; Web Push no puede forzarlo.</p>
+          <p>La aceptación de Apple/Google no confirma que hayas visto u oído el aviso. El aviso push no necesita que mantengas RadarNews abierta.</p>
+        </div>
+        <h4>Qué genera una alerta</h4>
+        <ul class="rules">
+          <li><b>Cada noticia nueva</b> recibida de cualquiera de las 25 fuentes seleccionadas (con identificador único por noticia, sin truncar ni agrupar)</li>
+          <li><b>Agenda</b>: aviso 15 minutos antes de cada dato de alto impacto</li>
+          <li><b>Cambio de ranking o régimen</b> detectado por el <b>Agente MMT</b></li>
+        </ul>
+      </section>
+
+      <section class="tab" data-pane="sources" hidden>
+        <h3>Fuentes seleccionadas</h3>
+        <p class="muted">Se conservan todas las noticias publicadas por cada fuente en la cinta y alertas; los filtros de relevancia macro/MMT se aplican únicamente a la capa de análisis del Agente MMT. Un HTTP 200 con 0 titulares se reporta como cobertura vacía.</p>
+        <table class="sources-table">
+          <thead>
+            <tr>
+              <th>Fuente</th>
+              <th>Último intento / éxito</th>
+              <th>Última noticia / retraso</th>
+              <th>Nuevas / Pend.</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="sources-body"></tbody>
+        </table>
+      </section>
+
+      <section class="tab" data-pane="mmt" hidden>
+        <h3>Motor determinista Agente MMT</h3>
+        <p class="muted">El <b>Agente MMT</b> (Soft Currency Economics · Mosler / NFA) es el motor único activo de RadarNews. Evalúa la evidencia con reglas deterministas auditables (umbral ±12 para Soporte / Presión, <code>empirical: false</code>, hipótesis económicas en sombra conservadas para evaluación prospectiva y sin pesos por divisa activados).</p>
+        <div class="card">
+          <div class="card-row">
+            <div>
+              <div class="card-title">Agente MMT</div>
+              <div id="mmt-engine-state" class="muted">Operativo · Reglas deterministas Mosler/MMT</div>
+            </div>
+            <span class="pill ok">Activo</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab" data-pane="devices" hidden>
+        <h3>iPhone y iPad</h3>
+        <p class="muted">Todos tus dispositivos acceden por HTTPS con su sesión protegida. No necesitas VPN.</p>
+        <div id="devices-body" class="devices"><span class="spinner"></span></div>
+      </section>
+
+      <section class="tab" data-pane="about" hidden>
+        <h3>RadarNews · Agente MMT</h3>
+        <p class="muted">Terminal privado de noticias macro y FX. Recibe y notifica cada noticia nueva de las fuentes seleccionadas y puntúa de −100 a +100 la fuerza narrativa de USD, EUR, GBP, JPY, CHF, CAD, AUD y NZD bajo Soft Currency Economics (Mosler / MMT): déficit ≠ presión automática; overnight = precio del dinero; CPI alto con economía débil ≠ soporte.</p>
+        <div class="about-actions">
+          <button id="spec-btn" class="btn">Leer la especificación</button>
+        </div>
+        <h4>Atajos de teclado</h4>
+        <table class="keys">
+          <tr><td><kbd>R</kbd></td><td>Actualizar ahora</td></tr>
+          <tr><td><kbd>A</kbd></td><td>Abrir alertas</td></tr>
+          <tr><td><kbd>1</kbd>–<kbd>5</kbd></td><td>Filtros de la cinta</td></tr>
+          <tr><td><kbd>,</kbd></td><td>Ajustes</td></tr>
+          <tr><td><kbd>Esc</kbd></td><td>Cerrar</td></tr>
+        </table>
+      </section>
+    </div>
+  </dialog>
+
+  <dialog id="spec-dialog" class="modal wide">
+    <div class="modal-head">
+      <strong>Especificación del producto</strong>
+      <button class="icon-btn" data-close aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <article id="spec-body" class="spec-body">Cargando…</article>
+  </dialog>
+
+  <script type="module" src="/app.js?v=3.0.0"></script>
+</body>
+</html>

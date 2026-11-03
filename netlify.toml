@@ -1,0 +1,51 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+  command = "echo 'Static + Serverless Functions deploy (0 build minutes)'"
+  ignore = "git log -1 --pretty=%B | grep -Fq '[skip netlify]'"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["public/data/*.json", "SPEC.md"]
+
+[[redirects]]
+  from = "/api/iris-feed"
+  to = "/.netlify/functions/radar_live"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/radar-full"
+  to = "/.netlify/functions/radar_live"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/state"
+  to = "/.netlify/functions/radar_live"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/refresh"
+  to = "/.netlify/functions/radar_live?refresh=1"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/health"
+  to = "/.netlify/functions/radar_live"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/spec"
+  to = "/.netlify/functions/radar_live"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "no-store, no-cache, must-revalidate"
