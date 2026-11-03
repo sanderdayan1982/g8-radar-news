@@ -53,7 +53,18 @@ async function fetchCalendarRemote() {
 const CAL_MIN_INTERVAL_MS = 1800_000;
 const CAL_BACKOFF_START_MS = 15 * 60_000;
 const CAL_BACKOFF_MAX_MS = 6 * 3600_000;
-const CAL_CACHE = join(process.env.RADARNEWS_DATA_DIR || join(dirname(fileURLToPath(import.meta.url)), '..', 'data'), 'ff_calendar_cache.json');
+const CAL_BASE_DIR = (() => {
+  if (process.env.RADARNEWS_DATA_DIR) return process.env.RADARNEWS_DATA_DIR;
+  try {
+    if (import.meta && import.meta.url) {
+      return join(dirname(fileURLToPath(import.meta.url)), '..', 'data');
+    }
+  } catch {
+    // bundled CJS fallback
+  }
+  return '/tmp';
+})();
+const CAL_CACHE = join(CAL_BASE_DIR, 'ff_calendar_cache.json');
 const calState = { loaded: false, last: null, lastOk: 0, backoff: 0, nextTry: 0 };
 
 function loadCalCache() {

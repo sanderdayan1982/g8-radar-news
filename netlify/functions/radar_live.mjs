@@ -3,8 +3,16 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { collectRadarAndIrisData } from '../../src/irisCollector.js';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..', '..');
+const ROOT = (() => {
+  try {
+    if (import.meta && import.meta.url) {
+      return join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+    }
+  } catch {
+    // bundled CJS fallback
+  }
+  return process.cwd();
+})();
 const SEED_FULL_PATH = join(ROOT, 'public', 'data', 'radar_news_full.json');
 const SEED_IRIS_PATH = join(ROOT, 'public', 'data', 'iris_g8_feed.json');
 const SPEC_PATH = join(ROOT, 'SPEC.md');
