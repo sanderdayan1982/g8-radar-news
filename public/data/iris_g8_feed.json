@@ -4,12 +4,12 @@
   "engine": "Agente MMT",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-03T21:01:04.686Z",
-  "started_at": "2026-11-03T21:01:01.239Z",
+  "generated_at": "2026-11-03T21:27:36.639Z",
+  "started_at": "2026-11-03T21:27:32.761Z",
   "window_hours": 72,
-  "sources_ok": 24,
+  "sources_ok": 25,
   "sources_total": 25,
-  "count": 118,
+  "count": 144,
   "g8_ranking": [
     {
       "currency": "CHF",
@@ -17,21 +17,35 @@
       "score": 37,
       "bias": "alcista",
       "structural": 37,
-      "impulse": 5,
+      "impulse": 15,
       "no_evidence": false,
       "drivers": [
-        "Demanda de refugio",
         "Acuerdo comercial / sector exterior",
+        "Demanda de refugio",
+        "CPI sin sorpresa"
+      ]
+    },
+    {
+      "currency": "EUR",
+      "rank": 2,
+      "score": 30,
+      "bias": "alcista",
+      "structural": 30,
+      "impulse": 17,
+      "no_evidence": false,
+      "drivers": [
+        "Precio del dinero al alza",
+        "Riesgo geopolítico",
         "CPI sin sorpresa"
       ]
     },
     {
       "currency": "USD",
-      "rank": 2,
+      "rank": 3,
       "score": 27,
       "bias": "alcista",
       "structural": 27,
-      "impulse": 5,
+      "impulse": 15,
       "no_evidence": false,
       "drivers": [
         "Demanda de refugio",
@@ -41,28 +55,14 @@
     },
     {
       "currency": "JPY",
-      "rank": 3,
+      "rank": 4,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 5,
+      "impulse": 15,
       "no_evidence": false,
       "drivers": [
         "Demanda de refugio",
-        "CPI sin sorpresa"
-      ]
-    },
-    {
-      "currency": "EUR",
-      "rank": 4,
-      "score": 18,
-      "bias": "alcista",
-      "structural": 18,
-      "impulse": 8,
-      "no_evidence": false,
-      "drivers": [
-        "Precio del dinero al alza",
-        "Riesgo geopolítico",
         "CPI sin sorpresa"
       ]
     },
@@ -108,7 +108,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": -5,
+      "impulse": null,
       "no_evidence": false,
       "drivers": [
         "Beta: riesgo off"
@@ -126,6 +126,212 @@
     "NZD": 0.11
   },
   "items": [
+    {
+      "id": "e2ba875cb959ecf3a333bc8a27b5708892a49b639728646233369020cee3ece2",
+      "sha256": "e2ba875cb959ecf3a333bc8a27b5708892a49b639728646233369020cee3ece2",
+      "title": "Booking holdings shares slide as q3 revenue misses despite earnings and bookings beat",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:25:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8dce05425a8006ded10c666a074013309091efafdc814a8d8af4104a6249ce20",
+      "sha256": "8dce05425a8006ded10c666a074013309091efafdc814a8d8af4104a6249ce20",
+      "title": "DIRECTO CHOQUE GEOPOLÍTICO | ELECCIONES EN EEUU, PULSO NUCLEAR CON IRÁN Y TENSIÓN MILITAR EN EUROPA",
+      "url": "https://t.me/negociostv/60313",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:22:42.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "bc74d8bfb0cb1e969ac1c56460d6f87590b061b185f673c927fc65d8d8ce1c52",
+      "sha256": "bc74d8bfb0cb1e969ac1c56460d6f87590b061b185f673c927fc65d8d8ce1c52",
+      "title": "$AMD Q3 Earnings Revenue $13.38B, est. $13.08B Adjusted EPS $2.09, est. $1.97 Adjusted Operating Income $3.92B, est. $3.68B Adjusted Operating Margin 29%, est. 28% R&D Expenses $2.80B, est. $2.72B Capex $648M, est. $647M Sees Q4 Revenue of ~$17B, ±3%",
+      "url": "https://t.me/FinancialJuice/144592",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:17:25.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2927e844db07446e14169125dda8ecbe2f35b7bdef815d405318b9f8e02776fe",
+      "sha256": "2927e844db07446e14169125dda8ecbe2f35b7bdef815d405318b9f8e02776fe",
+      "title": "ECB's Kocher: Dec. rate hike likely if situation doesn't change.",
+      "url": "https://t.me/FinancialJuice/144591",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:15:24.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "30234e4b68dc567fa24d46dda10461509a0c889f676dc1372ce1ff96c59aee90",
+      "sha256": "30234e4b68dc567fa24d46dda10461509a0c889f676dc1372ce1ff96c59aee90",
+      "title": "ECB's Kocher: ECB will continue to react on inflation when necessary.",
+      "url": "https://t.me/FinancialJuice/144590",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:14:55.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "351d067ddf44c0811b8c0f0f47ba405d09c70cbfc7487403806c2ffd8775b5bb",
+      "sha256": "351d067ddf44c0811b8c0f0f47ba405d09c70cbfc7487403806c2ffd8775b5bb",
+      "title": "ECB's Kocher: Risks to inflation remain elevated",
+      "url": "https://t.me/FinancialJuice/144589",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:13:41.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "af176b079c0382f1466b96bedbf923549cf920cae5e1e3c7fa63b26114e8bdda",
+      "sha256": "af176b079c0382f1466b96bedbf923549cf920cae5e1e3c7fa63b26114e8bdda",
+      "title": "Amd earnings preview adjusted eps seen rising 62.5 as shares trade below key moving averages",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:10:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
+      "sha256": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
+      "title": "Americans vote in election that doubles as referendum on Trump’s presidency",
+      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:09:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "5a819282ba80c4a445e2feb9c117b7d79ae48300e639e427f4fa3f2aaaf3ebdc",
       "sha256": "5a819282ba80c4a445e2feb9c117b7d79ae48300e639e427f4fa3f2aaaf3ebdc",
@@ -167,6 +373,29 @@
       "category": "Riesgo_Sistemico",
       "categories": [
         "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3d379321a05e1bd26110144b052acedb8685853d578edb63a50845d26eacd6ef",
+      "sha256": "3d379321a05e1bd26110144b052acedb8685853d578edb63a50845d26eacd6ef",
+      "title": "ÚLTIMA HORA | ÓSCAR PUENTE DIMITE como ministro de Transportes tras la tragedia ferroviaria de Urda",
+      "url": "https://t.me/negociostv/60312",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T20:33:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
       ],
       "legacy_category": "otro",
       "impact": 1,
@@ -365,6 +594,33 @@
       "z": null
     },
     {
+      "id": "419b3597da4010b51f54b52f3ab72659282ac7168d5a183a2c5a5471a9b2a012",
+      "sha256": "419b3597da4010b51f54b52f3ab72659282ac7168d5a183a2c5a5471a9b2a012",
+      "title": "NOTICIAS DEL DÍA: Trump se somete a un juicio histórico, Irán frena en seco un acuerdo y Putin avisa",
+      "url": "https://t.me/negociostv/60311",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T19:30:34.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "7c5e96bfbc1f9b4405d0e19995dc62c436864040020eca5f4c87d6f1a2d01f7e",
       "sha256": "7c5e96bfbc1f9b4405d0e19995dc62c436864040020eca5f4c87d6f1a2d01f7e",
       "title": "If you squint the odds are improving slightly for republican senate control",
@@ -395,7 +651,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-03T19:22:47.000Z",
+      "published_at": "2026-11-03T19:22:55.000Z",
       "currencies": [
         "CAD"
       ],
@@ -408,6 +664,52 @@
       ],
       "legacy_category": "otro",
       "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fcec2ae0e0b51391ea6c6bedfa745448e3475e98a5b0b6a9cfddb96c445c775d",
+      "sha256": "fcec2ae0e0b51391ea6c6bedfa745448e3475e98a5b0b6a9cfddb96c445c775d",
+      "title": "ÚLTIMA HORA | China cerca a Taiwán: Despliegue masivo de 49 cazas de combate y 12 buques de guerra",
+      "url": "https://t.me/negociostv/60310",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T19:17:27.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4304ef9be59ee23e56c093995be8f9470b23ae92bced927cf1398bb64708d7eb",
+      "sha256": "4304ef9be59ee23e56c093995be8f9470b23ae92bced927cf1398bb64708d7eb",
+      "title": "El petróleo en montaña rusa: se hunde un 7% y rebota en horas. ¿Quién mueve el precio?",
+      "url": "https://t.me/negociostv/60309",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T19:06:18.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -465,6 +767,29 @@
       "z": null
     },
     {
+      "id": "a2459fbce3163c1d3773c0fbbacf609123e7fa75712e50ac15b3d3c8961184aa",
+      "sha256": "a2459fbce3163c1d3773c0fbbacf609123e7fa75712e50ac15b3d3c8961184aa",
+      "title": "WALL STREET: NOCHE ELECTORAL EN EEUU, TRUMP SE LA JUEGA CON LA GASOLINA EN RÉCORD Y AMD A EXAMEN",
+      "url": "https://t.me/negociostv/60308",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T18:55:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "107800fc5cc1d64c62ee2a51061f95c29c5db64e24555521c3c5113cd33541c8",
       "sha256": "107800fc5cc1d64c62ee2a51061f95c29c5db64e24555521c3c5113cd33541c8",
       "title": "US officials have held up approval for American chipmaking equipment needed by SK Hynix to expand production in China - Sources.",
@@ -473,6 +798,29 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-03T18:50:20.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3b5308a9b965ac62fb68670e273edfd3de949daee8ef865c19159591290a1874",
+      "sha256": "3b5308a9b965ac62fb68670e273edfd3de949daee8ef865c19159591290a1874",
+      "title": "ÚLTIMA HORA | El voto anticipado PULVERIZA TODOS LOS RÉCORDS y dispara la alerta electoral de Trump",
+      "url": "https://t.me/negociostv/60307",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T18:50:19.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -653,6 +1001,29 @@
       "z": null
     },
     {
+      "id": "608707663a500c8c1127616ec2809df59c23c5ecddbdc19b573dff19b724a937",
+      "sha256": "608707663a500c8c1127616ec2809df59c23c5ecddbdc19b573dff19b724a937",
+      "title": "ARÍSTEGUI: ¿Ha ganado EEUU la guerra a Irán? El pacto secreto de Ormuz y el petróleo",
+      "url": "https://t.me/negociostv/60306",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T18:28:14.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "58f9d38b2a570b665d5a596f2042bee1e9dc61155c7dc57a4e922e3e6de85c35",
       "sha256": "58f9d38b2a570b665d5a596f2042bee1e9dc61155c7dc57a4e922e3e6de85c35",
       "title": "ECB's Sleijpen: The Iran shock is more persistent than earlier thought.",
@@ -787,6 +1158,29 @@
       "z": null
     },
     {
+      "id": "7eaf7bdb4f2a725ea3f179475b3c42fa103030d25f7abf2a0ee7e6bfb3b45425",
+      "sha256": "7eaf7bdb4f2a725ea3f179475b3c42fa103030d25f7abf2a0ee7e6bfb3b45425",
+      "title": "ORDEN MUNDIAL: GIRO HISTÓRICO EN LA GUERRA DE IRÁN, ¿ALTO EL FUEGO EN ORIENTE MEDIO? Y PUTIN ALERTA",
+      "url": "https://t.me/negociostv/60305",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T18:00:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "80c10f99bde65a5ac487043d14aa57c8ebd635c0c52aeb4e7f63f23d447aa110",
       "sha256": "80c10f99bde65a5ac487043d14aa57c8ebd635c0c52aeb4e7f63f23d447aa110",
       "title": "ECB's Nagel: Inflationary pressures higher than expected in September; approaching adverse scenario",
@@ -841,6 +1235,52 @@
       "z": null
     },
     {
+      "id": "037ec56518b0a2a0d1055b8d97533df2761282a85be11900401077cda5a74688",
+      "sha256": "037ec56518b0a2a0d1055b8d97533df2761282a85be11900401077cda5a74688",
+      "title": "CÓDIGO TRADER: PLANES DE PENSIONES, PIAS Y UNIT LINKED: ¿DÓNDE RINDE DE VERDAD TU AHORRO?",
+      "url": "https://t.me/negociostv/60304",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:54:38.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d1e41b113e7049ec88846294399d0f1349f28f35691cdb30932a9279812e5e01",
+      "sha256": "d1e41b113e7049ec88846294399d0f1349f28f35691cdb30932a9279812e5e01",
+      "title": "ÚLTIMA HORA | ALERTA MÁXIMA EN EUROPA: siete aviones aterrizan de emergencia por amenazas de bomba",
+      "url": "https://t.me/negociostv/60303",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:51:21.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4c051882ca4f5f4fadc01383dfaf63415a0760b606d86022f51f0aa6da480284",
       "sha256": "4c051882ca4f5f4fadc01383dfaf63415a0760b606d86022f51f0aa6da480284",
       "title": "US, Russia and China discuss meeting between Trump, Putin and Xi",
@@ -849,6 +1289,29 @@
       "source_id": "ft-economy",
       "source_type": "agencia",
       "published_at": "2026-11-03T17:46:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "018ced98884c49daaebfb50751395991c78380abd8ac99c440b5c8f8e5ec09ae",
+      "sha256": "018ced98884c49daaebfb50751395991c78380abd8ac99c440b5c8f8e5ec09ae",
+      "title": "ÚLTIMA HORA | Reino Unido y Francia preparan el envío de tropas a Ucrania: ¿movimientos de paz?",
+      "url": "https://t.me/negociostv/60302",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:39:02.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -910,6 +1373,29 @@
       "z": null
     },
     {
+      "id": "d6f72f8a897b2ffbb5c7ff0329eda953784866f8ad13aca9b2eb20b1bbd960ca",
+      "sha256": "d6f72f8a897b2ffbb5c7ff0329eda953784866f8ad13aca9b2eb20b1bbd960ca",
+      "title": "Noche electoral en EEUU: qué vigilar esta noche y cómo puede reaccionar tu dinero",
+      "url": "https://t.me/negociostv/60301",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:19:53.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "fddd242249a1b165ea29ba08ebc8e0cd05f46a728ae17110860198a6b1cf172e",
       "sha256": "fddd242249a1b165ea29ba08ebc8e0cd05f46a728ae17110860198a6b1cf172e",
       "title": "The hidden power of electricity",
@@ -918,6 +1404,29 @@
       "source_id": "ft-markets",
       "source_type": "agencia",
       "published_at": "2026-11-03T17:17:42.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "86a51eecd41c8ee50100db37e2b6080e72c06be1b190ae2a31e0479c02dce2be",
+      "sha256": "86a51eecd41c8ee50100db37e2b6080e72c06be1b190ae2a31e0479c02dce2be",
+      "title": "ÚLTIMA HORA | Escalofriante conversación antes de Urda: “A ver qué nos toca hoy en la ruleta rusa”",
+      "url": "https://t.me/negociostv/60300",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:07:46.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -943,6 +1452,83 @@
       "published_at": "2026-11-03T17:00:20.000Z",
       "currencies": [],
       "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d73cb1163abb4ca212bd61766dd2c7792754ade2812371be3bb1048b39701378",
+      "sha256": "d73cb1163abb4ca212bd61766dd2c7792754ade2812371be3bb1048b39701378",
+      "title": "NOTICIERO: Trump se somete a un juicio histórico, Irán frena en seco un acuerdo y alerta en Europa",
+      "url": "https://t.me/negociostv/60299",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:52:01.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b029563f359a6e3d5e97cf683fdc2b13731bd039fdfdaca4b14277554521660",
+      "sha256": "2b029563f359a6e3d5e97cf683fdc2b13731bd039fdfdaca4b14277554521660",
+      "title": "“Donald Trump buscará una cabeza de turco y puede ser su secretario de guerra”. Cañete",
+      "url": "https://t.me/negociostv/60298",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:50:56.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c7136a231ee93e88d6179eb325e2d7fbb67167e5f9275facdded3b6c4cb585b2",
+      "sha256": "c7136a231ee93e88d6179eb325e2d7fbb67167e5f9275facdded3b6c4cb585b2",
+      "title": "ÚLTIMA HORA | IRÁN FRENA EN SECO EL ACUERDO CON EEUU: no hay avance y Trump prepara una ofensiva",
+      "url": "https://t.me/negociostv/60297",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:40:59.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -1013,6 +1599,29 @@
       "z": null
     },
     {
+      "id": "0272322632817879cad8a2a63caa5c6861cf06bb20ce81c1a2f1295f3346b969",
+      "sha256": "0272322632817879cad8a2a63caa5c6861cf06bb20ce81c1a2f1295f3346b969",
+      "title": "ÚLTIMA HORA | Escándalo electoral: Pedro Sánchez accede a datos privilegiados del voto por correo",
+      "url": "https://t.me/negociostv/60296",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:25:23.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e1346ac9e87367327d7cf10e35918c75ba5129a39466da45cc82657763d08970",
       "sha256": "e1346ac9e87367327d7cf10e35918c75ba5129a39466da45cc82657763d08970",
       "title": "Boc s macklem there could be a need to raise the policy rate further",
@@ -1033,6 +1642,52 @@
       ],
       "legacy_category": "banco_central",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "08b1ad22bc64bf3679822da3d1d41c02b7f3d08f6f224b12fc04707402fa0ada",
+      "sha256": "08b1ad22bc64bf3679822da3d1d41c02b7f3d08f6f224b12fc04707402fa0ada",
+      "title": "ÚLTIMA HORA | Giro histórico de EEUU: Corta 4.000 millones a Israel y Trump confía en las midterms",
+      "url": "https://t.me/negociostv/60295",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:11:17.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f36c3addc0ba3316905bda662bbb1a57da86ff07316428b77dd648780ae19eba",
+      "sha256": "f36c3addc0ba3316905bda662bbb1a57da86ff07316428b77dd648780ae19eba",
+      "title": "DIRECTO | ¿FALLO TÉCNICO O NEGLIGENCIA? ÓSCAR PUENTE RINDE CUENTAS POR EL ACCIDENTE DE TREN EN URDA",
+      "url": "https://t.me/negociostv/60294",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:07:35.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -1432,29 +2087,6 @@
       "source_id": "ft-markets",
       "source_type": "agencia",
       "published_at": "2026-11-03T11:34:25.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
-      "sha256": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
-      "title": "Americans vote in election that doubles as referendum on Trump’s presidency",
-      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-03T10:52:57.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -2774,6 +3406,52 @@
       "z": null
     },
     {
+      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
+      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "title": "Statement - base rate of the National Bank of Kazakhstan",
+      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "sha256": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "title": "Liquidity against collateral - the Swiss National Bank’s approach",
@@ -2897,52 +3575,6 @@
       "divisas": [
         "EUR"
       ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
-      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "title": "Statement - base rate of the National Bank of Kazakhstan",
-      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
       "category": "BC",
       "categories": [
         "BC"
@@ -3116,6 +3748,212 @@
   ],
   "news": [
     {
+      "id": "e2ba875cb959ecf3a333bc8a27b5708892a49b639728646233369020cee3ece2",
+      "sha256": "e2ba875cb959ecf3a333bc8a27b5708892a49b639728646233369020cee3ece2",
+      "title": "Booking holdings shares slide as q3 revenue misses despite earnings and bookings beat",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:25:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8dce05425a8006ded10c666a074013309091efafdc814a8d8af4104a6249ce20",
+      "sha256": "8dce05425a8006ded10c666a074013309091efafdc814a8d8af4104a6249ce20",
+      "title": "DIRECTO CHOQUE GEOPOLÍTICO | ELECCIONES EN EEUU, PULSO NUCLEAR CON IRÁN Y TENSIÓN MILITAR EN EUROPA",
+      "url": "https://t.me/negociostv/60313",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:22:42.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "bc74d8bfb0cb1e969ac1c56460d6f87590b061b185f673c927fc65d8d8ce1c52",
+      "sha256": "bc74d8bfb0cb1e969ac1c56460d6f87590b061b185f673c927fc65d8d8ce1c52",
+      "title": "$AMD Q3 Earnings Revenue $13.38B, est. $13.08B Adjusted EPS $2.09, est. $1.97 Adjusted Operating Income $3.92B, est. $3.68B Adjusted Operating Margin 29%, est. 28% R&D Expenses $2.80B, est. $2.72B Capex $648M, est. $647M Sees Q4 Revenue of ~$17B, ±3%",
+      "url": "https://t.me/FinancialJuice/144592",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:17:25.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2927e844db07446e14169125dda8ecbe2f35b7bdef815d405318b9f8e02776fe",
+      "sha256": "2927e844db07446e14169125dda8ecbe2f35b7bdef815d405318b9f8e02776fe",
+      "title": "ECB's Kocher: Dec. rate hike likely if situation doesn't change.",
+      "url": "https://t.me/FinancialJuice/144591",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:15:24.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "30234e4b68dc567fa24d46dda10461509a0c889f676dc1372ce1ff96c59aee90",
+      "sha256": "30234e4b68dc567fa24d46dda10461509a0c889f676dc1372ce1ff96c59aee90",
+      "title": "ECB's Kocher: ECB will continue to react on inflation when necessary.",
+      "url": "https://t.me/FinancialJuice/144590",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:14:55.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "351d067ddf44c0811b8c0f0f47ba405d09c70cbfc7487403806c2ffd8775b5bb",
+      "sha256": "351d067ddf44c0811b8c0f0f47ba405d09c70cbfc7487403806c2ffd8775b5bb",
+      "title": "ECB's Kocher: Risks to inflation remain elevated",
+      "url": "https://t.me/FinancialJuice/144589",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:13:41.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "af176b079c0382f1466b96bedbf923549cf920cae5e1e3c7fa63b26114e8bdda",
+      "sha256": "af176b079c0382f1466b96bedbf923549cf920cae5e1e3c7fa63b26114e8bdda",
+      "title": "Amd earnings preview adjusted eps seen rising 62.5 as shares trade below key moving averages",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:10:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
+      "sha256": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
+      "title": "Americans vote in election that doubles as referendum on Trump’s presidency",
+      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:09:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5a819282ba80c4a445e2feb9c117b7d79ae48300e639e427f4fa3f2aaaf3ebdc",
       "sha256": "5a819282ba80c4a445e2feb9c117b7d79ae48300e639e427f4fa3f2aaaf3ebdc",
       "title": "❗ MOC IMBALANCE S&P 500: -880.2 MLN NASDAQ 100: -1404.2 MLN DOW 30: -49.5 MLN MAG 7: -14.3 MLN $MACRO",
@@ -3156,6 +3994,29 @@
       "category": "Riesgo_Sistemico",
       "categories": [
         "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3d379321a05e1bd26110144b052acedb8685853d578edb63a50845d26eacd6ef",
+      "sha256": "3d379321a05e1bd26110144b052acedb8685853d578edb63a50845d26eacd6ef",
+      "title": "ÚLTIMA HORA | ÓSCAR PUENTE DIMITE como ministro de Transportes tras la tragedia ferroviaria de Urda",
+      "url": "https://t.me/negociostv/60312",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T20:33:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
       ],
       "legacy_category": "otro",
       "impact": 1,
@@ -3354,6 +4215,33 @@
       "z": null
     },
     {
+      "id": "419b3597da4010b51f54b52f3ab72659282ac7168d5a183a2c5a5471a9b2a012",
+      "sha256": "419b3597da4010b51f54b52f3ab72659282ac7168d5a183a2c5a5471a9b2a012",
+      "title": "NOTICIAS DEL DÍA: Trump se somete a un juicio histórico, Irán frena en seco un acuerdo y Putin avisa",
+      "url": "https://t.me/negociostv/60311",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T19:30:34.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "7c5e96bfbc1f9b4405d0e19995dc62c436864040020eca5f4c87d6f1a2d01f7e",
       "sha256": "7c5e96bfbc1f9b4405d0e19995dc62c436864040020eca5f4c87d6f1a2d01f7e",
       "title": "If you squint the odds are improving slightly for republican senate control",
@@ -3384,7 +4272,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-03T19:22:47.000Z",
+      "published_at": "2026-11-03T19:22:55.000Z",
       "currencies": [
         "CAD"
       ],
@@ -3397,6 +4285,52 @@
       ],
       "legacy_category": "otro",
       "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fcec2ae0e0b51391ea6c6bedfa745448e3475e98a5b0b6a9cfddb96c445c775d",
+      "sha256": "fcec2ae0e0b51391ea6c6bedfa745448e3475e98a5b0b6a9cfddb96c445c775d",
+      "title": "ÚLTIMA HORA | China cerca a Taiwán: Despliegue masivo de 49 cazas de combate y 12 buques de guerra",
+      "url": "https://t.me/negociostv/60310",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T19:17:27.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4304ef9be59ee23e56c093995be8f9470b23ae92bced927cf1398bb64708d7eb",
+      "sha256": "4304ef9be59ee23e56c093995be8f9470b23ae92bced927cf1398bb64708d7eb",
+      "title": "El petróleo en montaña rusa: se hunde un 7% y rebota en horas. ¿Quién mueve el precio?",
+      "url": "https://t.me/negociostv/60309",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T19:06:18.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -3454,6 +4388,29 @@
       "z": null
     },
     {
+      "id": "a2459fbce3163c1d3773c0fbbacf609123e7fa75712e50ac15b3d3c8961184aa",
+      "sha256": "a2459fbce3163c1d3773c0fbbacf609123e7fa75712e50ac15b3d3c8961184aa",
+      "title": "WALL STREET: NOCHE ELECTORAL EN EEUU, TRUMP SE LA JUEGA CON LA GASOLINA EN RÉCORD Y AMD A EXAMEN",
+      "url": "https://t.me/negociostv/60308",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T18:55:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "107800fc5cc1d64c62ee2a51061f95c29c5db64e24555521c3c5113cd33541c8",
       "sha256": "107800fc5cc1d64c62ee2a51061f95c29c5db64e24555521c3c5113cd33541c8",
       "title": "US officials have held up approval for American chipmaking equipment needed by SK Hynix to expand production in China - Sources.",
@@ -3462,6 +4419,29 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-03T18:50:20.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3b5308a9b965ac62fb68670e273edfd3de949daee8ef865c19159591290a1874",
+      "sha256": "3b5308a9b965ac62fb68670e273edfd3de949daee8ef865c19159591290a1874",
+      "title": "ÚLTIMA HORA | El voto anticipado PULVERIZA TODOS LOS RÉCORDS y dispara la alerta electoral de Trump",
+      "url": "https://t.me/negociostv/60307",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T18:50:19.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -3642,6 +4622,29 @@
       "z": null
     },
     {
+      "id": "608707663a500c8c1127616ec2809df59c23c5ecddbdc19b573dff19b724a937",
+      "sha256": "608707663a500c8c1127616ec2809df59c23c5ecddbdc19b573dff19b724a937",
+      "title": "ARÍSTEGUI: ¿Ha ganado EEUU la guerra a Irán? El pacto secreto de Ormuz y el petróleo",
+      "url": "https://t.me/negociostv/60306",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T18:28:14.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "58f9d38b2a570b665d5a596f2042bee1e9dc61155c7dc57a4e922e3e6de85c35",
       "sha256": "58f9d38b2a570b665d5a596f2042bee1e9dc61155c7dc57a4e922e3e6de85c35",
       "title": "ECB's Sleijpen: The Iran shock is more persistent than earlier thought.",
@@ -3776,6 +4779,29 @@
       "z": null
     },
     {
+      "id": "7eaf7bdb4f2a725ea3f179475b3c42fa103030d25f7abf2a0ee7e6bfb3b45425",
+      "sha256": "7eaf7bdb4f2a725ea3f179475b3c42fa103030d25f7abf2a0ee7e6bfb3b45425",
+      "title": "ORDEN MUNDIAL: GIRO HISTÓRICO EN LA GUERRA DE IRÁN, ¿ALTO EL FUEGO EN ORIENTE MEDIO? Y PUTIN ALERTA",
+      "url": "https://t.me/negociostv/60305",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T18:00:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "80c10f99bde65a5ac487043d14aa57c8ebd635c0c52aeb4e7f63f23d447aa110",
       "sha256": "80c10f99bde65a5ac487043d14aa57c8ebd635c0c52aeb4e7f63f23d447aa110",
       "title": "ECB's Nagel: Inflationary pressures higher than expected in September; approaching adverse scenario",
@@ -3830,6 +4856,52 @@
       "z": null
     },
     {
+      "id": "037ec56518b0a2a0d1055b8d97533df2761282a85be11900401077cda5a74688",
+      "sha256": "037ec56518b0a2a0d1055b8d97533df2761282a85be11900401077cda5a74688",
+      "title": "CÓDIGO TRADER: PLANES DE PENSIONES, PIAS Y UNIT LINKED: ¿DÓNDE RINDE DE VERDAD TU AHORRO?",
+      "url": "https://t.me/negociostv/60304",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:54:38.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d1e41b113e7049ec88846294399d0f1349f28f35691cdb30932a9279812e5e01",
+      "sha256": "d1e41b113e7049ec88846294399d0f1349f28f35691cdb30932a9279812e5e01",
+      "title": "ÚLTIMA HORA | ALERTA MÁXIMA EN EUROPA: siete aviones aterrizan de emergencia por amenazas de bomba",
+      "url": "https://t.me/negociostv/60303",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:51:21.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4c051882ca4f5f4fadc01383dfaf63415a0760b606d86022f51f0aa6da480284",
       "sha256": "4c051882ca4f5f4fadc01383dfaf63415a0760b606d86022f51f0aa6da480284",
       "title": "US, Russia and China discuss meeting between Trump, Putin and Xi",
@@ -3838,6 +4910,29 @@
       "source_id": "ft-economy",
       "source_type": "agencia",
       "published_at": "2026-11-03T17:46:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "018ced98884c49daaebfb50751395991c78380abd8ac99c440b5c8f8e5ec09ae",
+      "sha256": "018ced98884c49daaebfb50751395991c78380abd8ac99c440b5c8f8e5ec09ae",
+      "title": "ÚLTIMA HORA | Reino Unido y Francia preparan el envío de tropas a Ucrania: ¿movimientos de paz?",
+      "url": "https://t.me/negociostv/60302",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:39:02.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -3899,6 +4994,29 @@
       "z": null
     },
     {
+      "id": "d6f72f8a897b2ffbb5c7ff0329eda953784866f8ad13aca9b2eb20b1bbd960ca",
+      "sha256": "d6f72f8a897b2ffbb5c7ff0329eda953784866f8ad13aca9b2eb20b1bbd960ca",
+      "title": "Noche electoral en EEUU: qué vigilar esta noche y cómo puede reaccionar tu dinero",
+      "url": "https://t.me/negociostv/60301",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:19:53.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "fddd242249a1b165ea29ba08ebc8e0cd05f46a728ae17110860198a6b1cf172e",
       "sha256": "fddd242249a1b165ea29ba08ebc8e0cd05f46a728ae17110860198a6b1cf172e",
       "title": "The hidden power of electricity",
@@ -3907,6 +5025,29 @@
       "source_id": "ft-markets",
       "source_type": "agencia",
       "published_at": "2026-11-03T17:17:42.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "86a51eecd41c8ee50100db37e2b6080e72c06be1b190ae2a31e0479c02dce2be",
+      "sha256": "86a51eecd41c8ee50100db37e2b6080e72c06be1b190ae2a31e0479c02dce2be",
+      "title": "ÚLTIMA HORA | Escalofriante conversación antes de Urda: “A ver qué nos toca hoy en la ruleta rusa”",
+      "url": "https://t.me/negociostv/60300",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T17:07:46.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -3932,6 +5073,83 @@
       "published_at": "2026-11-03T17:00:20.000Z",
       "currencies": [],
       "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d73cb1163abb4ca212bd61766dd2c7792754ade2812371be3bb1048b39701378",
+      "sha256": "d73cb1163abb4ca212bd61766dd2c7792754ade2812371be3bb1048b39701378",
+      "title": "NOTICIERO: Trump se somete a un juicio histórico, Irán frena en seco un acuerdo y alerta en Europa",
+      "url": "https://t.me/negociostv/60299",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:52:01.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b029563f359a6e3d5e97cf683fdc2b13731bd039fdfdaca4b14277554521660",
+      "sha256": "2b029563f359a6e3d5e97cf683fdc2b13731bd039fdfdaca4b14277554521660",
+      "title": "“Donald Trump buscará una cabeza de turco y puede ser su secretario de guerra”. Cañete",
+      "url": "https://t.me/negociostv/60298",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:50:56.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c7136a231ee93e88d6179eb325e2d7fbb67167e5f9275facdded3b6c4cb585b2",
+      "sha256": "c7136a231ee93e88d6179eb325e2d7fbb67167e5f9275facdded3b6c4cb585b2",
+      "title": "ÚLTIMA HORA | IRÁN FRENA EN SECO EL ACUERDO CON EEUU: no hay avance y Trump prepara una ofensiva",
+      "url": "https://t.me/negociostv/60297",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:40:59.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -4002,6 +5220,29 @@
       "z": null
     },
     {
+      "id": "0272322632817879cad8a2a63caa5c6861cf06bb20ce81c1a2f1295f3346b969",
+      "sha256": "0272322632817879cad8a2a63caa5c6861cf06bb20ce81c1a2f1295f3346b969",
+      "title": "ÚLTIMA HORA | Escándalo electoral: Pedro Sánchez accede a datos privilegiados del voto por correo",
+      "url": "https://t.me/negociostv/60296",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:25:23.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e1346ac9e87367327d7cf10e35918c75ba5129a39466da45cc82657763d08970",
       "sha256": "e1346ac9e87367327d7cf10e35918c75ba5129a39466da45cc82657763d08970",
       "title": "Boc s macklem there could be a need to raise the policy rate further",
@@ -4022,6 +5263,52 @@
       ],
       "legacy_category": "banco_central",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "08b1ad22bc64bf3679822da3d1d41c02b7f3d08f6f224b12fc04707402fa0ada",
+      "sha256": "08b1ad22bc64bf3679822da3d1d41c02b7f3d08f6f224b12fc04707402fa0ada",
+      "title": "ÚLTIMA HORA | Giro histórico de EEUU: Corta 4.000 millones a Israel y Trump confía en las midterms",
+      "url": "https://t.me/negociostv/60295",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:11:17.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f36c3addc0ba3316905bda662bbb1a57da86ff07316428b77dd648780ae19eba",
+      "sha256": "f36c3addc0ba3316905bda662bbb1a57da86ff07316428b77dd648780ae19eba",
+      "title": "DIRECTO | ¿FALLO TÉCNICO O NEGLIGENCIA? ÓSCAR PUENTE RINDE CUENTAS POR EL ACCIDENTE DE TREN EN URDA",
+      "url": "https://t.me/negociostv/60294",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T16:07:35.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -4421,29 +5708,6 @@
       "source_id": "ft-markets",
       "source_type": "agencia",
       "published_at": "2026-11-03T11:34:25.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
-      "sha256": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
-      "title": "Americans vote in election that doubles as referendum on Trump’s presidency",
-      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-03T10:52:57.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -5763,6 +7027,52 @@
       "z": null
     },
     {
+      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
+      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "title": "Statement - base rate of the National Bank of Kazakhstan",
+      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "sha256": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "title": "Liquidity against collateral - the Swiss National Bank’s approach",
@@ -5886,52 +7196,6 @@
       "divisas": [
         "EUR"
       ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
-      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "title": "Statement - base rate of the National Bank of Kazakhstan",
-      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
       "category": "BC",
       "categories": [
         "BC"
