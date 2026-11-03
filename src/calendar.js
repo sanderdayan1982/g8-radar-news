@@ -132,7 +132,11 @@ export function eventFamily(title) {
   if (/fhfa|^hpi\b/.test(t)) return 'hpi_fhfa';
   if (/core retail/.test(t)) return 'retail_core';
   if (/retail/.test(t)) return 'retail';
-  if (/unemployment|jobless|claims|payroll|employment|\bnfp\b/.test(t)) return 'labour';
+  if (/participation/.test(t)) return 'participation';
+  if (/unemployment/.test(t)) return 'unemployment';
+  if (/claims|jobless claims/.test(t)) return 'claims';
+  if (/wage|labor cost|labour cost|earnings/.test(t)) return 'wages';
+  if (/jobless|payroll|employment|job growth|\bnfp\b/.test(t)) return 'employment';
   if (/\bcpi\b|\bipc\b|inflation/.test(t)) return 'cpi';
   if (/\bgdp\b|\bpib\b/.test(t)) return 'gdp';
   if (/housing|home sales|building permit/.test(t)) return 'housing';
@@ -150,6 +154,7 @@ export function eventPlace(title) {
   if (/\bu\.?s\.?\b|united states/.test(t)) return 'us';
   if (/japan|japanese/.test(t)) return 'jp';
   if (/australia|australian/.test(t)) return 'au';
+  if (/new zealand|\bnz\b/.test(t)) return 'nz';
   if (/canada|canadian/.test(t)) return 'ca';
   if (/eurozone|euro zone|euro area/.test(t)) return 'ez';
   return null;
@@ -173,7 +178,7 @@ function wordOverlap(a, b) {
 }
 
 function matchQuality(news, event) {
-  const PLACE_CUR = { us: 'USD', de: 'EUR', fr: 'EUR', ez: 'EUR', gb: 'GBP', jp: 'JPY', au: 'AUD', ca: 'CAD' };
+  const PLACE_CUR = { us: 'USD', de: 'EUR', fr: 'EUR', ez: 'EUR', gb: 'GBP', jp: 'JPY', au: 'AUD', nz: 'NZD', ca: 'CAD' };
   const newsCurs = news.currencies?.length ? news.currencies : (PLACE_CUR[eventPlace(news.title)] ? [PLACE_CUR[eventPlace(news.title)]] : []);
   if (!newsCurs.includes(event.currency)) return -Infinity;
   // a headline about a change figure (MoM, YoY...) must not fill an event that is not a change figure
@@ -205,11 +210,12 @@ function matchQuality(news, event) {
 }
 
 function actualFromTitle(title) {
-  const m = /\bActual\s*\(\s*(-?\d[\d.,]*\s*[%KMB]?)\s*\)/i.exec(String(title || ''));
+  const m = /\bActual\s*:?\s*\(?\s*(-?\d[\d.,]*\s*[%KMB]?)\s*\)?/i.exec(String(title || ''));
   return m ? m[1].replace(/\s+/g, '') : null;
 }
 
 export function linkNewsToCalendar(news, events) {
+  const bestQForEvent = new Map();
   for (const n of news) {
     const nAct = n.actual || actualFromTitle(n.title);
     if (!nAct && !n.forecast) continue;
@@ -225,8 +231,14 @@ export function linkNewsToCalendar(news, events) {
     if (!best) continue;
     n.calendar_title = best.title;
     if (best.impact === 'High') n.impact = Math.max(n.impact || 1, 4);
-    best.news_item_id = n.id || best.news_item_id;
-    if (nAct && !best.actual) best.actual = nAct;
+    const prevQ = bestQForEvent.get(best.id) || 0;
+    if (bestQ >= prevQ) {
+      bestQForEvent.set(best.id, bestQ);
+      best.news_item_id = n.id || best.news_item_id;
+      if (nAct) best.actual = nAct;
+    } else if (nAct && !best.actual) {
+      best.actual = nAct;
+    }
   }
 }
 

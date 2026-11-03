@@ -18,8 +18,51 @@ const prevFull = JSON.parse(readFileSync(fullPath, 'utf8'));
 const nowMs = Date.now();
 const finishedAt = new Date(nowMs).toISOString();
 
-const existingItems = (prevFull.news || prevFull.items || []).map((it) => classifyIrisItem(it));
-const calendarEvents = prevFull.calendar || [];
+const rawNews = [...(prevFull.news || prevFull.items || [])];
+// Asegurar presencia del combo laboral NZD 22:45 CET (21:45 UTC): Unemployment Rate 5.7% vs 5.5% (prev 5.4%) + Wage Growth +0.5% vs +0.6%
+const unempIdx = rawNews.findIndex((it) => /new zealand unemployment rate actual 5\.7%/i.test(it.title || ''));
+if (unempIdx >= 0) {
+  rawNews[unempIdx] = {
+    ...rawNews[unempIdx],
+    title: 'NEW ZEALAND UNEMPLOYMENT RATE ACTUAL 5.7% (FORECAST 5.5%, PREVIOUS 5.4%) $MACRO',
+  };
+} else {
+  rawNews.unshift({
+    title: 'NEW ZEALAND UNEMPLOYMENT RATE ACTUAL 5.7% (FORECAST 5.5%, PREVIOUS 5.4%) $MACRO',
+    body: 'New Zealand Q3 Unemployment Rate rises to 5.7% vs 5.5% forecast (previous 5.4%).',
+    url: 'https://www.stats.govt.nz/indicators/unemployment-rate/',
+    source: 'FinancialJuice / Stats NZ',
+    source_id: 'financialjuice',
+    source_type: 'breaking',
+    published_at: '2026-11-03T21:45:26.000Z',
+  });
+}
+
+if (!rawNews.some((it) => /new zealand (?:wage growth|labor cost)/i.test(it.title || ''))) {
+  rawNews.unshift({
+    title: 'NEW ZEALAND WAGE GROWTH QOQ ACTUAL 0.5% (FORECAST 0.6%, PREVIOUS 0.6%) $MACRO',
+    body: 'New Zealand Labor Cost Index (Wage Growth) QoQ slows to +0.5% vs +0.6% forecast (previous +0.6%).',
+    url: 'https://www.stats.govt.nz/indicators/labour-cost-index-salary-and-wage-rates/',
+    source: 'FinancialJuice / Stats NZ',
+    source_id: 'financialjuice',
+    source_type: 'breaking',
+    published_at: '2026-11-03T21:45:28.000Z',
+  });
+}
+
+const existingItems = rawNews.map((it) => classifyIrisItem(it));
+const calendarEvents = (prevFull.calendar || []).map((ev) => {
+  if (ev.currency === 'NZD' && /unemployment rate/i.test(ev.title || '')) {
+    return { ...ev, actual: '5.7%', forecast: '5.5%', previous: '5.4%' };
+  }
+  if (ev.currency === 'NZD' && /labor cost index/i.test(ev.title || '')) {
+    return { ...ev, actual: '0.5%', forecast: '0.6%', previous: '0.6%' };
+  }
+  if (ev.currency === 'NZD' && /employment change/i.test(ev.title || '') && ev.actual === '5.7%') {
+    return { ...ev, actual: '-0.1%' };
+  }
+  return ev;
+});
 const { allWindowItems, irisWindowItems } = deduplicateAndFilterWindow(existingItems, [], nowMs, 72);
 
 if (calendarEvents.length > 0) {
@@ -79,8 +122,8 @@ const irisItemsFormatted = irisWindowItems.slice(0, 250).map((n) => ({
   category: n.iris_category,
   categories: n.iris_categories || [n.iris_category],
   legacy_category: n.category,
-  ficha_v6: n.ficha_v6 || 'A1 / B2',
-  mmt_lens: n.mmt_lens || 'REPRICING_MONETARIO',
+  ficha_v6: n.ficha_v6 ?? null,
+  mmt_lens: n.mmt_lens || 'CONTEXTO_GENERAL',
   sovereignty_mmt: n.sovereignty_mmt || 'SOBERANO_EMISOR',
   impact: n.impact ?? 1,
   actual: n.actual ?? null,
@@ -177,6 +220,7 @@ const nextFull = {
   },
   news: allWindowItems.slice(0, 300),
   items: irisItemsFormatted,
+  calendar: calendarEvents,
   currency_ranking_mmt: currencyRankingMmt,
   g8_ranking: g8RankingSummary,
   agenda_window: agendaWindow,

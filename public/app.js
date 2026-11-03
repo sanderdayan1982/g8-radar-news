@@ -374,7 +374,7 @@ function cleanRationale(s) {
 
 function ledgerHtml(row) {
   if (!row.ledger?.length) return '';
-  return `<details><summary>Contribuciones MMT v4.0-G8 (${row.ledger.length} noticias)</summary>${row.ledger.map((x) => `<p>${esc(x.published_at)} · ${esc(x.channel)}${x.ficha_v6 ? ` · <b>Ficha ${esc(x.ficha_v6)}</b>` : ''}${x.mmt_lens ? ` (${esc(x.mmt_lens)})` : ''} · bruto ${Number(x.raw).toFixed(2)} · tras antigüedad/tope ${Number(x.contribution).toFixed(2)} · ${esc(x.title)}</p>`).join('')}</details>`;
+  return `<details><summary>Contribuciones MMT v4.1-G8 (${row.ledger.length} noticias)</summary>${row.ledger.map((x) => `<p>${esc(x.published_at)} · ${esc(x.channel)}${x.ficha_v6 ? ` · <b>Ficha ${esc(x.ficha_v6)}</b>` : ''}${x.mmt_lens ? ` (${esc(x.mmt_lens)})` : ''} · bruto ${Number(x.raw).toFixed(2)} · tras antigüedad/tope ${Number(x.contribution).toFixed(2)} · ${esc(x.title)}</p>`).join('')}</details>`;
 }
 
 const CB_UI_RE = /\b(official bank rate|monetary policy|fomc|rate decision|rate statement|cash rate|interest rate|policy rate|policy assessment|mpc\b|press conference|projections|gov(?:ernor)?\s+\w+\s+speaks|president\s+\w+\s+speaks|bailey speaks|lagarde speaks|powell speaks|ueda speaks|bullock speaks|orr speaks|macklem speaks|schlegel speaks)\b/i;
@@ -397,14 +397,14 @@ function computeLiveCalendarBadge(currency, row, calEvents = []) {
   const pills = [];
   if (nextEv) {
     const hTxt = nextEv.dtH < 1 ? `${Math.max(1, Math.round(nextEv.dtH * 60))}m` : `${nextEv.dtH.toFixed(1)}h`;
-    pills.push(`<span class="cal-lock-pill lock" title="Candado de Agenda 48h: ${esc(nextEv.title)} en ${hTxt}">⚑BC &lt;48h (Candado CIRO) · ${esc(nextEv.title.slice(0, 24))} (${hTxt})</span>`);
+    pills.push(`<span class="cal-lock-pill lock" title="Candado de Agenda 48h: ${esc(nextEv.title)} en ${hTxt}">⚑BC &lt;48h · ${esc(nextEv.title.slice(0, 18))} (${hTxt})</span>`);
   } else if (row.calendar_lock === '⚑BC <48h (Candado CIRO)') {
     pills.push(`<span class="cal-lock-pill lock" title="${esc(row.calendar_lock_detail || 'Evento BC <48h')}">⚑BC &lt;48h (Candado CIRO)</span>`);
   }
 
   if (prevEv) {
-    const actVsEst = prevEv.actual ? `Act ${prevEv.actual}${prevEv.forecast ? ` vs Est ${prevEv.forecast}` : ''}` : 'Publicado';
-    pills.push(`<span class="cal-lock-pill post" title="Evento publicado hace ${prevEv.dtH.toFixed(1)}h: ${esc(prevEv.title)} (${esc(actVsEst)})">✓ POST-EVENTO · ${esc(prevEv.title.slice(0, 22))} (${esc(actVsEst)})</span>`);
+    const actVsEst = prevEv.actual ? `Act ${prevEv.actual}${prevEv.forecast ? ` vs ${prevEv.forecast}` : ''}` : 'Publicado';
+    pills.push(`<span class="cal-lock-pill post" title="Evento publicado hace ${prevEv.dtH.toFixed(1)}h: ${esc(prevEv.title)} (${esc(actVsEst)})">✓ POST-EVENTO · ${esc(prevEv.title.slice(0, 16))} (${esc(actVsEst)})</span>`);
   } else if (row.post_event_status) {
     pills.push(`<span class="cal-lock-pill post" title="${esc(row.post_event_status)}">✓ POST-EVENTO</span>`);
   }
@@ -423,7 +423,7 @@ function renderBoard() {
     return;
   }
 
-  const opVer = ui.data?.engine_meta?.op_version || 'mmt-agent-op-v4.0-G8';
+  const opVer = ui.data?.engine_meta?.op_version || 'mmt-agent-op-v4.1-G8';
   $('#batch-time').textContent = view.snapshot_at
     ? `${ENGINE_NAME} (${opVer}) · ${fmtTime(view.snapshot_at)} · Curso Maestro MMT + Matriz v6.0 · umbral ±${BIAS_THRESHOLD}`
     : `${ENGINE_NAME} (${opVer}) · Escala MMT descriptiva`;
@@ -459,7 +459,10 @@ function renderBoard() {
     const fichaV6 = r.ficha_v6 || 'A1 / B2';
     const fichaHtml = `<span class="ficha-pill" title="Escenario Matriz Macro Institucional v6.0">Ficha ${esc(fichaV6)}</span>`;
     const sovMmt = r.sovereignty_mmt || (r.currency === 'EUR' ? 'USUARIO_MONEDA' : 'SOBERANO_EMISOR');
-    const sovHtml = `<span class="mmt-sov-pill ${sovMmt === 'USUARIO_MONEDA' ? 'user' : 'sov'}" title="Naturaleza Monetaria Curso Maestro MMT (Regla #1 y #9)">${sovMmt === 'USUARIO_MONEDA' ? 'USUARIO_MONEDA' : 'SOBERANO_EMISOR'}</span>`;
+    const isB12 = sovMmt === 'B12_EUR_FRAG_RIESGO' || (r.currency === 'EUR' && fichaV6 === 'B12');
+    const sovHtml = isB12
+      ? `<span class="mmt-sov-pill b12" title="Matriz v6.0 Ficha B12: Veto alcista activo por riesgo de fragmentación fiscal en Eurozona">B12_EUR_FRAG_RIESGO</span>`
+      : `<span class="mmt-sov-pill ${sovMmt === 'USUARIO_MONEDA' ? 'user' : 'sov'}" title="Naturaleza Monetaria Curso Maestro MMT (Regla #1 y #9)">${sovMmt === 'USUARIO_MONEDA' ? 'USUARIO_MONEDA' : 'SOBERANO_EMISOR'}</span>`;
     const calLockHtml = computeLiveCalendarBadge(r.currency, r, ui.data?.calendar || []);
     const biasText = r.noEvidence ? 'N/D' : pressureLabel(r);
     const drvText = r.drivers?.[0] || 'Sin catalizadores claros';

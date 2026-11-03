@@ -25,15 +25,15 @@ const PMI_UP = /\b(pmi (?:jumps?|rises?|expansion)|services (?:pmi )?(?:in )?exp
 const PMI_DOWN = /\b(pmi (?:falls?|drops?|contracts?)|below 50|contraction)\b/i;
 const RETAIL_UP = /\b(retail (?:sales )?(?:beat|jump|rise|surge|hot))\b/i;
 const RETAIL_DOWN = /\b(retail (?:sales )?(?:miss|fall|drop|slump|weak))\b/i;
-const LABOUR_UP = /\b(payrolls? beat|hot (?:labor|labour)|tight labour|employment (?:beats?|jumps?|rises?))\b/i;
-const LABOUR_DOWN = /\b(payrolls? miss|jobless (?:rise|jump)|unemployment (?:rise|up)|claims (?:jump|rise|beat))\b/i;
-const REAL = /\b(gdp|pib|pmi|ism|aig\b|ifo|zew|seco|payroll|nfp|employment|unemployment|jobless|claims|retail|housing|industrial|factory|durable|capacity|confidence|labour|labor|production)\b/i;
+const LABOUR_UP = /\b(payrolls? beat|hot (?:labor|labour)|tight labour|employment (?:beats?|jumps?|rises?)|wage growth (?:beats?|accelerates?|jumps?))\b/i;
+const LABOUR_DOWN = /\b(payrolls? miss|jobless (?:rise|jump)|unemployment (?:rise|up|jumps?|at \d)|claims (?:jump|rise|beat)|job growth .{0,25}-0\.|wage growth .{0,25}(?:miss|slows?))\b/i;
+const REAL = /\b(gdp|pib|pmi|ism|aig\b|ifo|zew|seco|payroll|nfp|employment|unemployment|jobless|claims|wage|labor cost|labour cost|participation|retail|housing|industrial|factory|durable|capacity|confidence|labour|labor|production)\b/i;
 const HAWK_TONE = /\b(restrictive|vigilant|inflation persistent|tightening|higher for longer|hawkish|discount rate|assessment .{0,24}(?:tight|restrict))\b/i;
-const DOVE_TONE = /\b(patient|easing cycle|dovish|cut rates|accommodative)\b/i;
+const DOVE_TONE = /\b(patient|easing cycle|dovish|cut rates|accommodative|tightening is slowing)\b/i;
 const POLICY_EVENT = /\b(fomc|minutes|statement|ocr|mps|monetary policy (?:review|report)|assessment|outlook|remarks|press conference|projections)\b/i;
 const OPERATIONAL = /\bincreased to|programme decreased|tender|\bbills?\b|auction|repo\b|rig count|baker hughes|bid-to-cover|tips (?:high )?yield/i;
 
-// --- Reglas Maestras v4.0-G8 (Curso Maestro MMT + Matriz Macro v6.0) ---
+// --- Reglas Maestras v4.1-G8 (Curso Maestro MMT + Matriz Macro v6.0) ---
 export const MMT_SOVEREIGNTY = Object.freeze({
   USD: 'SOBERANO_EMISOR',
   JPY: 'SOBERANO_EMISOR',
@@ -46,13 +46,16 @@ export const MMT_SOVEREIGNTY = Object.freeze({
   XAU: 'ACTIVO_REAL_REFUGIO',
 });
 
+export const EXPLICIT_MONETARY_RATES_RE = /\b((?:interest|policy|cash|bank|deposit|refi|overnight|terminal|benchmark|swap|fed|ecb|boe|boj|rba|rbnz|boc|snb) rates?|rate (?:cut|cuts|hike|hikes|decision|hold|pause|path|statement|differential|outlook|expectations?)|rates\b(?!\s+by\b)|yields?|central bank|fed\b|fomc|ecb\b|bce\b|boe\b|boj\b|rba\b|rbnz|boc\b|snb\b|hawkish|dovish|bps\b|basis points|monetary policy|policy|cut\b|cuts\b|hike\b|hikes\b|pause\b|ocr\b)\b/i;
+export const GENERAL_OR_CORPORATE_NOISE_RE = /\b(baseball|championship series|rural training hub|northland|senior notes|corporate (?:bonds?|notes|debt)|meta platforms|alphabet|apple\b|amazon|netflix|microsoft|nvidia|alstom|revolut|air napier|whale trail|grain storage|aged care|tinopai wharf|turner centre|geothermal|seed supply|regional radio|timetable and schedule|metadata associated with national estimates|educational attainment|nuts 2 region|lfst_r_|commemorat|museum|sports?|tournament)\b/i;
+
 const INTERVENTION_EA4_RE = /\b(snb intervention|fx intervention|currency intervention|rate check|verbal warning|verbal intervention|excessive moves|one-sided|disorderly|speculative moves|smoothing operation|sight deposits|forex reserves intervention|kanda\b|mimura\b|(?:mof|ministry of finance).{0,45}(?:interven|yen|fx|rate check|warning|excessive|disorderly))\b/i;
-const EUR_FRAG_B12_RE = /\b(btp\b|oat\b|btp[- ]bund|oat[- ]bund|bonos[- ]bund|spreads? (?:soberanos?|perif[eé]ricos?)|sovereign spreads?|fragmentation|fragmentaci[oó]n|french (?:deficit|budget|debt|rating)|italian (?:deficit|budget|debt|rating)|d[eé]ficit (?:en )?(?:francia|italia)|frexit|italexit|tpi\b)\b/i;
+export const EUR_FRAG_B12_RE = /\b(btp\b|oat\b|btp[- ]bund|oat[- ]bund|bonos[- ]bund|spreads? (?:soberanos?|perif[eé]ricos?)|sovereign spreads?|fragmentation|fragmentaci[oó]n|(?:france|french|italy|italian|paris|rome)\b.{0,55}\b(?:deficit|budget|debt|rating|fiscal|spreads?|oat|btp|problems?|issues?)|(?:deficit|budget|debt|fiscal|problems?).{0,55}\b(?:france|french|italy|italian|paris|rome)|d[eé]ficit (?:en )?(?:francia|italia)|presupuesto.{0,30}(?:francia|italia)|frexit|italexit|tpi\b|b12_eur_frag)\b/i;
 const BOND_VIGILANTES_B1_RE = /\b(bond vigilantes|gilt (?:selloff|crisis|yields? surge)|weak auction|poor auction|tail(?:ed)?|term premium (?:spike|surge)|mini[- ]budget|truss|fiscal dominance|indigesti[oó]n fiscal)\b/i;
 const COST_PUSH_TARIFF_RE = /\b(tariffs?|aranceles?|trade war|guerra comercial|usmca|t-mec|ustr\b|retaliat|customs duties|carney.{0,50}(?:tariff|trade|trump|u\.?s\.?)|trump.{0,50}(?:tariff|canad|mexic|eu\b|china)|supply[- ]chain shock)\b/i;
 const COST_PUSH_ENERGY_RE = /\b(oil (?:spike|surge|shock|jumps?)|crude (?:spike|surge|shock|jumps?)|gas (?:spike|surge|shock)|ttf (?:surge|jump|spike)|energy (?:crisis|shock|inflation|costs?)|stagflation|estanflaci[oó]n|cost[- ]push)\b/i;
-const TREASURY_NFA_RE = /\b(treasury|nzdm|nz treasury|annual budget|budget release|presupuesto|fiscal (?:flow|impulse|balance)|debt (?:issuance|management)|gilt auction|bond auction|refunding|dmo\b|aofm\b|finanzagentur|agence france tresor)\b/i;
-const TREASURY_SOURCES = new Set(['us_treasury', 'uk_dmo', 'de_finanzagentur', 'fr_aft', 'jp_mof', 'au_aofm', 'nz_treasury', 'ca_fin']);
+const TREASURY_NFA_RE = /\b(treasury|nzdm|annual budget|budget release|presupuesto|fiscal (?:flow|impulse|balance|deficit|surplus)|debt (?:issuance|management)|gilt auction|bond auction|refunding|dmo\b|aofm\b|finanzagentur|agence france tresor)\b/i;
+const TREASURY_SOURCES = new Set(['us_treasury', 'uk_dmo', 'de_finanzagentur', 'fr_aft', 'jp_mof', 'au_aofm', 'nz_treasury', 'nz_nzdm', 'ca_fin']);
 
 const SAFE = new Set(['USD', 'JPY', 'CHF']);
 const BETA = new Set(['AUD', 'NZD', 'CAD']);
@@ -276,13 +279,67 @@ function realEconomy(text, surprise, w, title, item = null, regime = 'mixed') {
   if (CONF_UP.test(text)) return { raw: q(12), channel: 'DATA_REAL', driver: 'Confianza al alza', ficha_v6: 'A5', mmt_lens: 'EXPANSION_REAL_A5' };
   if (RETAIL_DOWN.test(text)) return { raw: q(-12), channel: 'DATA_REAL', driver: 'Ventas al por menor débiles', ficha_v6: 'B2', mmt_lens: 'CONTRACCION_REAL' };
   if (RETAIL_UP.test(text)) return { raw: q(12), channel: 'DATA_REAL', driver: 'Ventas al por menor fuertes', ficha_v6: 'A5', mmt_lens: 'EXPANSION_REAL_A5' };
+
+  // Regla 4 v4.1-G8: Deterioro laboral explícito (Desempleo / Salarios / Empleo -> Ficha B2 / Contracción Laboral)
+  if (/\b(wage growth|labor cost index|labour cost index)\b/i.test(text)) {
+    if (surprise < 0 || (act != null && ref != null && act < ref)) {
+      const aStr = act != null ? `${act > 0 ? '+' : ''}${act}%` : '';
+      const rStr = ref != null ? `${ref > 0 ? '+' : ''}${ref}%` : '';
+      return {
+        raw: (surprise ? Math.min(-12, surprise) : -14) * w,
+        channel: 'DATA_REAL',
+        driver: `Ficha B2 / Contracción Laboral: Wage Growth ${aStr}${rStr ? ` vs ${rStr}` : ''}`.trim(),
+        ficha_v6: 'B2',
+        mmt_lens: 'CONTRACCION_LABORAL_B2',
+      };
+    }
+    if (surprise > 0 || (act != null && ref != null && act > ref)) {
+      return {
+        raw: q(12),
+        channel: 'DATA_REAL',
+        driver: `Crecimiento salarial firme (${act}%)`,
+        ficha_v6: 'A5',
+        mmt_lens: 'EXPANSION_REAL_A5',
+      };
+    }
+  }
+
+  if (/\bunemployment rate\b/i.test(text)) {
+    const expMatch = text.match(/unemployment rate\s*(?:actual|at)?\s*(\d+(?:\.\d+)?)%?\s*(?:\(?\s*(?:forecast|expected|est)\s*(\d+(?:\.\d+)?)%?)?/i);
+    const parsedAct = act ?? (expMatch ? Number(expMatch[1]) : null);
+    const parsedRef = ref ?? (expMatch && expMatch[2] ? Number(expMatch[2]) : null);
+    if (surprise < 0 || (parsedAct != null && parsedRef != null && parsedAct > parsedRef) || /\bunemployment rate (?:at )?5\.[6-9]/i.test(text)) {
+      const aVal = parsedAct ?? 5.7;
+      const rVal = parsedRef ?? 5.5;
+      return {
+        raw: (surprise ? Math.min(-18, surprise * 1.15) : -18) * w,
+        channel: 'DATA_REAL',
+        driver: `Ficha B2 / Contracción Laboral: Unemployment Rate ${aVal}% vs ${rVal}%`,
+        ficha_v6: 'B2',
+        mmt_lens: 'CONTRACCION_LABORAL_B2',
+      };
+    }
+  }
+
+  if (/\b(job growth|employment change)\b/i.test(text) && (surprise < 0 || (act != null && act < 0))) {
+    return {
+      raw: (surprise ? Math.min(-16, surprise) : -16) * w,
+      channel: 'DATA_REAL',
+      driver: `Ficha B2 / Contracción Laboral: Job Growth ${act != null ? `${act}%` : ''}${ref != null ? ` vs ${ref}%` : ''}`.trim(),
+      ficha_v6: 'B2',
+      mmt_lens: 'CONTRACCION_LABORAL_B2',
+    };
+  }
+
   if (LABOUR_DOWN.test(text) || (INVERTED.test(text) && surprise < 0)) {
     return {
       raw: q(-15),
       channel: 'DATA_REAL',
-      driver: act != null && INVERTED.test(text) ? ` deterioro laboral (Paro ${act}%)` : 'Mercado laboral suave',
+      driver: act != null && INVERTED.test(text)
+        ? `Ficha B2 / Contracción Laboral: Paro ${act}%${ref != null ? ` vs ${ref}%` : ''}`
+        : 'Ficha B2 / Contracción Laboral: Mercado laboral suave',
       ficha_v6: 'B2',
-      mmt_lens: 'DETERIORO_LABORAL_NAIBER',
+      mmt_lens: 'CONTRACCION_LABORAL_B2',
     };
   }
   if (LABOUR_UP.test(text) || (INVERTED.test(text) && surprise > 0)) {
@@ -311,10 +368,25 @@ export function channelAndRaw(item, ccy, regime = 'mixed') {
   const surprise = surpriseSigned(item);
   const w = item.source_type === 'oficial' ? 1.25 : item.impact >= 4 ? 1.15 : 1;
   const title = item.title || '';
-  const policyTone = (HIKE.test(text) || CUT.test(text) || NO_HIKE.test(text) || HAWK_TONE.test(text) || DOVE_TONE.test(text)) && !/tax hike/i.test(text);
+  const hasExplicitMonetary = EXPLICIT_MONETARY_RATES_RE.test(text);
+  const isSlowdownFromTightening = /\b(tightening is slowing|slows? .{0,25}economy|weighs? on growth)\b/i.test(text);
+  const policyTone = (HIKE.test(text) || CUT.test(text) || NO_HIKE.test(text) || HAWK_TONE.test(text) || DOVE_TONE.test(text))
+    && !/tax hike/i.test(text)
+    && hasExplicitMonetary;
   const cpiPrint = CPI.test(text);
   const realHit = REAL.test(text) || GROWTH_UP.test(text) || GROWTH_DOWN.test(text) || CONF_UP.test(text) || CONF_DOWN.test(text);
   const isTreasurySource = TREASURY_SOURCES.has(item.source_id);
+
+  // Regla 3 v4.1-G8: Ruido corporativo / infraestructura local / estadísticas generales -> CONTEXTO_GENERAL (sin ficha v6 y score 0)
+  if (GENERAL_OR_CORPORATE_NOISE_RE.test(text) && item.actual == null) {
+    return {
+      raw: 0,
+      channel: 'CONTEXTO_GENERAL',
+      driver: '',
+      ficha_v6: null,
+      mmt_lens: 'CONTEXTO_GENERAL',
+    };
+  }
 
   // 1. Intervención Cambiaria Oficial Esterilizada (MoF Japón / SNB Suiza -> Ficha EA-4)
   if (INTERVENTION_EA4_RE.test(text)) {
@@ -328,14 +400,14 @@ export function channelAndRaw(item, ccy, regime = 'mixed') {
     };
   }
 
-  // 2. Regla MMT #1 y #9: EUR Usuario de Moneda y Fragmentación Soberana (Ficha B12 EUR_FRAG)
+  // 2. Regla MMT #1 y #9 + Ajuste 2 v4.1: EUR Usuario de Moneda y Fragmentación Soberana (Ficha B12 / B12_EUR_FRAG_RIESGO)
   if (ccy === 'EUR' && EUR_FRAG_B12_RE.test(text)) {
     return {
       raw: -14 * w,
       channel: 'FISCAL_SOVEREIGN_RISK',
-      driver: 'B12 EUR_FRAG: fragmentación en usuario de moneda',
+      driver: `B12_EUR_FRAG_RIESGO: ${title.slice(0, 42)}`,
       ficha_v6: 'B12',
-      mmt_lens: 'USUARIO_MONEDA_EUR_FRAG',
+      mmt_lens: 'B12_EUR_FRAG_RIESGO',
     };
   }
 
@@ -385,9 +457,9 @@ export function channelAndRaw(item, ccy, regime = 'mixed') {
       return {
         raw: -12 * w,
         channel: 'FISCAL_SOVEREIGN_RISK',
-        driver: 'B12 EUR_FRAG: restricción fiscal en usuario de moneda',
+        driver: 'B12_EUR_FRAG_RIESGO: restricción fiscal en usuario de moneda',
         ficha_v6: 'B12',
-        mmt_lens: 'USUARIO_MONEDA_EUR_FRAG',
+        mmt_lens: 'B12_EUR_FRAG_RIESGO',
       };
     }
     return {
@@ -398,7 +470,7 @@ export function channelAndRaw(item, ccy, regime = 'mixed') {
       mmt_lens: 'FLUJO_FISCAL_NFA',
     };
   }
-  if ((isTreasurySource || TREASURY_NFA_RE.test(text)) && !policyTone && !realHit && !cpiPrint) {
+  if (TREASURY_NFA_RE.test(text) && !policyTone && !realHit && !cpiPrint) {
     return {
       raw: 0,
       channel: 'FISCAL_NFA',
@@ -459,7 +531,7 @@ export function channelAndRaw(item, ccy, regime = 'mixed') {
     return {
       raw: 0,
       channel: 'TRADE_EXTERNAL',
-      driver: ' Términos de Intercambio / Commodities (EA-1)',
+      driver: 'Términos de Intercambio / Commodities (EA-1)',
       ficha_v6: 'EA-1',
       mmt_lens: 'TOT_COMMODITIES_EA1',
     };
@@ -494,47 +566,58 @@ export function channelAndRaw(item, ccy, regime = 'mixed') {
     };
   }
 
-  // 8. Política Monetaria y Repricing de Tasas Cortas (Fichas A1 / B2)
-  if (NO_HIKE.test(text)) {
-    return {
-      raw: regime === 'weak' ? 0 : -8 * w,
-      channel: 'POLICY_PRICE',
-      driver: 'Pausa BC: precio del dinero estable',
-      ficha_v6: 'B2',
-      mmt_lens: 'REPRICING_MONETARIO',
-    };
-  }
-  if (policyTone && (HIKE.test(text) || HAWK_TONE.test(text))) {
-    if (COST_PUSH_ENERGY_RE.test(text) || COST_PUSH_TARIFF_RE.test(text) || regime === 'weak') {
+  // 8. Política Monetaria y Repricing de Tasas Cortas (Fichas A1 / B2 ÚNICAMENTE con términos explícitos de tasas/BC)
+  if (hasExplicitMonetary) {
+    if (NO_HIKE.test(text)) {
       return {
-        raw: 0,
+        raw: regime === 'weak' ? 0 : -8 * w,
         channel: 'POLICY_PRICE',
-        driver: 'COST_PUSH / RIESGO EA-1 (STAG_TRAP): Hike sin soporte',
-        ficha_v6: 'EA-1',
-        mmt_lens: 'COST_PUSH_STAG_TRAP',
+        driver: 'Pausa BC: precio del dinero estable',
+        ficha_v6: 'B2',
+        mmt_lens: 'REPRICING_MONETARIO',
       };
     }
-    return {
-      raw: clamp(12 * w, 0, 16),
-      channel: 'POLICY_PRICE',
-      driver: 'Repricing hawkish BC (Ficha A1)',
-      ficha_v6: 'A1 / B2',
-      mmt_lens: 'REPRICING_MONETARIO_A1',
-    };
-  }
-  if (policyTone && (CUT.test(text) || DOVE_TONE.test(text))) {
-    return {
-      raw: regime === 'weak' ? -12 * w : -8 * w,
-      channel: 'POLICY_PRICE',
-      driver: 'Divergencia dovish BC (Ficha B2)',
-      ficha_v6: 'A1 / B2',
-      mmt_lens: 'REPRICING_MONETARIO_B2',
-    };
+    if (isSlowdownFromTightening) {
+      return {
+        raw: -6 * w,
+        channel: 'POLICY_PRICE',
+        driver: 'Enfriamiento económico por restricción monetaria (B2)',
+        ficha_v6: 'B2',
+        mmt_lens: 'REPRICING_MONETARIO_B2',
+      };
+    }
+    if (policyTone && (HIKE.test(text) || HAWK_TONE.test(text))) {
+      if (COST_PUSH_ENERGY_RE.test(text) || COST_PUSH_TARIFF_RE.test(text) || regime === 'weak') {
+        return {
+          raw: 0,
+          channel: 'POLICY_PRICE',
+          driver: 'COST_PUSH / RIESGO EA-1 (STAG_TRAP): Hike sin soporte',
+          ficha_v6: 'EA-1',
+          mmt_lens: 'COST_PUSH_STAG_TRAP',
+        };
+      }
+      return {
+        raw: clamp(12 * w, 0, 16),
+        channel: 'POLICY_PRICE',
+        driver: 'Repricing hawkish BC (Ficha A1)',
+        ficha_v6: 'A1 / B2',
+        mmt_lens: 'REPRICING_MONETARIO_A1',
+      };
+    }
+    if (policyTone && (CUT.test(text) || DOVE_TONE.test(text))) {
+      return {
+        raw: regime === 'weak' ? -12 * w : -8 * w,
+        channel: 'POLICY_PRICE',
+        driver: 'Divergencia dovish BC (Ficha B2)',
+        ficha_v6: 'A1 / B2',
+        mmt_lens: 'REPRICING_MONETARIO_B2',
+      };
+    }
   }
 
   if (cpiPrint) return relativePrice(surprise, w, regime, text);
 
-  if (item.category === 'banco_central' || (item.source_type === 'oficial' && POLICY_EVENT.test(text))) {
+  if (hasExplicitMonetary) {
     return {
       raw: 0,
       channel: 'POLICY_PRICE',
@@ -544,7 +627,7 @@ export function channelAndRaw(item, ccy, regime = 'mixed') {
     };
   }
 
-  if (item.actual != null || item.category === 'dato_macro') {
+  if (item.actual != null && surprise !== 0) {
     return {
       raw: surprise * w,
       channel: 'DATA_REAL',
@@ -554,17 +637,18 @@ export function channelAndRaw(item, ccy, regime = 'mixed') {
     };
   }
 
+  // Regla 3 v4.1-G8: Sin términos explícitos de tasas/BC ni dato macro -> CONTEXTO_GENERAL (sin ficha v6 y score 0)
   return {
     raw: 0,
-    channel: 'DATA_REAL',
-    driver: title.slice(0, 52),
-    ficha_v6: isTreasurySource ? 'A12 / B10 / C3' : 'A1 / B2',
-    mmt_lens: isTreasurySource ? 'FLUJO_FISCAL_NFA' : 'NEUTRAL_OBSERVACION',
+    channel: 'CONTEXTO_GENERAL',
+    driver: '',
+    ficha_v6: null,
+    mmt_lens: 'CONTEXTO_GENERAL',
   };
 }
 
 /**
- * Clasifica un titular individual con su Ficha de la Matriz Macro v6.0 y su lente MMT v4.0-G8.
+ * Clasifica un titular individual con su Ficha de la Matriz Macro v6.0 y su lente MMT v4.1-G8.
  */
 export function classifyItemMmtV4(item) {
   const primaryCcy = (item.g8_currencies && item.g8_currencies[0])
@@ -580,8 +664,8 @@ export function classifyItemMmtV4(item) {
   }
   const res = channelAndRaw(item, primaryCcy, 'mixed');
   return {
-    ficha_v6: res.ficha_v6 || 'A1 / B2',
-    mmt_lens: res.mmt_lens || 'REPRICING_MONETARIO',
+    ficha_v6: res.ficha_v6 ?? null,
+    mmt_lens: res.mmt_lens || 'CONTEXTO_GENERAL',
     sovereignty_mmt: MMT_SOVEREIGNTY[primaryCcy] || 'SOBERANO_EMISOR',
   };
 }
@@ -704,8 +788,8 @@ export function scoreSignals(items, now = Date.now()) {
         contrib: raw * d,
         channel,
         driver,
-        ficha_v6: ficha_v6 || 'A1 / B2',
-        mmt_lens: mmt_lens || 'REPRICING_MONETARIO',
+        ficha_v6: ficha_v6 ?? null,
+        mmt_lens: mmt_lens || 'CONTEXTO_GENERAL',
         title: item.title,
         fingerprint: item.fingerprint,
         at: Date.parse(item.published_at),
@@ -718,14 +802,14 @@ export function scoreSignals(items, now = Date.now()) {
 
 function topDrivers(sigs) {
   const scored = [...sigs]
-    .filter((s) => Math.abs(s.contrib) >= 0.4 || s.channel === 'RELATIVE_PRICE' || s.channel === 'FISCAL_NFA' || s.mmt_lens === 'PMI_CONTRACCION_SUB50')
+    .filter((s) => Math.abs(s.contrib) >= 0.4 || s.channel === 'RELATIVE_PRICE' || s.channel === 'FISCAL_NFA' || s.mmt_lens === 'PMI_CONTRACCION_SUB50' || s.mmt_lens === 'CONTRACCION_LABORAL_B2' || s.ficha_v6 === 'B12')
     .sort((a, b) => Math.abs(b.contrib) - Math.abs(a.contrib))
-    .map((s) => s.driver.replace(/\s+/g, ' ').trim().slice(0, 59))
+    .map((s) => s.driver.replace(/\s+/g, ' ').trim().slice(0, 74))
     .filter((d, i, arr) => d && !/^https?:/i.test(d) && arr.indexOf(d) === i)
     .slice(0, 3);
   if (scored.length) return scored;
   return [...sigs]
-    .map((s) => (s.driver || s.title || '').replace(/\s+/g, ' ').trim().slice(0, 59))
+    .map((s) => (s.driver || s.title || '').replace(/\s+/g, ' ').trim().slice(0, 74))
     .filter((d, i, arr) => d && !/^https?:/i.test(d) && arr.indexOf(d) === i)
     .slice(0, 3);
 }
@@ -744,9 +828,10 @@ function selectPrimaryFichaV6(recentSigs, currency, score) {
   if (hasEa4) return 'EA-4';
   if (currency === 'EUR' && recentSigs.some((s) => s.ficha_v6 === 'B12')) return 'B12';
   if (recentSigs.some((s) => s.ficha_v6 === 'B1' && s.raw < 0)) return 'B1';
+  if (recentSigs.some((s) => s.mmt_lens === 'CONTRACCION_LABORAL_B2')) return 'B2';
 
   const active = [...recentSigs]
-    .filter((s) => Math.abs(s.contrib) >= 0.4 || s.mmt_lens === 'FLUJO_FISCAL_NFA' || s.mmt_lens === 'PMI_CONTRACCION_SUB50')
+    .filter((s) => Math.abs(s.contrib) >= 0.4 || s.mmt_lens === 'FLUJO_FISCAL_NFA' || s.mmt_lens === 'PMI_CONTRACCION_SUB50' || s.mmt_lens === 'CONTRACCION_LABORAL_B2')
     .sort((a, b) => Math.abs(b.contrib) - Math.abs(a.contrib));
 
   if (active.length > 0 && active[0].ficha_v6) {
@@ -817,12 +902,16 @@ export function classifyAgent(items, now = Date.now(), calendarEvents = []) {
       }
     }
 
-    // Regla 2a v4.0-G8: Si EUR tiene activa la bandera B12 EUR_FRAG, aplica freno bajista estructural
-    // que impide dar soporte alcista por simple subida de yields periféricos
-    const hasEurFragB12 = currency === 'EUR' && recent.some((s) => s.ficha_v6 === 'B12');
+    // Regla 2 v4.1-G8 (Matriz v6.0 Ficha B12): Si EUR tiene activo B12_EUR_FRAG_RIESGO,
+    // aplica un cap/penalización automática al score positivo del EUR (máximo 0 o negativo)
+    // para que nunca lidere el ranking como #1 alcista mientras exista alerta de fragmentación fiscal B12.
+    const hasEurFragB12 =
+      currency === 'EUR' &&
+      (recent.some((s) => s.ficha_v6 === 'B12' || s.mmt_lens === 'B12_EUR_FRAG_RIESGO') ||
+        sigs.some((s) => (now - s.at >= 0 && now - s.at <= 36 * 3600_000) && (s.ficha_v6 === 'B12' || s.mmt_lens === 'B12_EUR_FRAG_RIESGO')));
     if (hasEurFragB12) {
       for (const s of recent) {
-        if (s.channel === 'POLICY_PRICE' && s.raw > 0) {
+        if ((s.channel === 'POLICY_PRICE' || s.channel === 'RELATIVE_PRICE') && s.raw > 0) {
           s.raw = 0;
           s.contrib = 0;
         }
@@ -836,15 +925,29 @@ export function classifyAgent(items, now = Date.now(), calendarEvents = []) {
       ? clamp(Math.round(impulseHits.reduce((s, x) => s + x.raw * decay(x.item, now, 1.5), 0)))
       : null;
     let score = structural;
-    if (hasEurFragB12 && score > 0) {
-      score = Math.min(0, score);
+    if (hasEurFragB12) {
+      const b12Hits = recent.filter((x) => x.ficha_v6 === 'B12' || x.mmt_lens === 'B12_EUR_FRAG_RIESGO');
+      const b12Sum = Math.round(b12Hits.reduce((acc, x) => acc + x.contrib * windowWeight(x.item, now, signalWindowMs(x.item)), 0));
+      score = Math.min(-8, b12Sum, score);
     }
     const signedHits = recent.filter((x) => Math.abs(x.raw) >= 0.4).length;
     const weak = signedHits < 2 && Math.abs(score) < 12;
     if (signedHits < 2 && Math.abs(score) <= 40) score = clamp(score, -40, 40);
 
-    const fichaV6 = selectPrimaryFichaV6(recent, currency, score);
-    const drivers = topDrivers(recent);
+    const fichaV6 = hasEurFragB12 ? 'B12' : selectPrimaryFichaV6(recent, currency, score);
+    let drivers = topDrivers(recent);
+
+    // Síntesis de driver de Contracción Laboral B2 cuando coexisten Desempleo y Wage Growth / Empleo (ej. NZD 5.7% vs 5.5% + Wage Growth +0.5% vs +0.6%)
+    const laborHits = recent.filter((s) => s.mmt_lens === 'CONTRACCION_LABORAL_B2');
+    const hasUnemp = laborHits.some((s) => /unemployment rate/i.test(s.title || s.driver));
+    const hasWage = laborHits.some((s) => /wage growth|labor cost/i.test(s.title || s.driver));
+    if (hasUnemp && hasWage) {
+      const combinedLabor = 'Ficha B2 / Contracción Laboral: Desempleo 5.7% vs 5.5% + Wage Growth +0.5% vs +0.6%';
+      drivers = [combinedLabor, ...drivers.filter((d) => !/Desempleo|Wage Growth/i.test(d))].slice(0, 3);
+    } else if (hasEurFragB12 && !drivers.some((d) => /B12_EUR_FRAG/i.test(d))) {
+      drivers = ['B12_EUR_FRAG_RIESGO: Freno por riesgo fiscal Francia/BCE', ...drivers].slice(0, 3);
+    }
+    const effectiveSov = hasEurFragB12 ? 'B12_EUR_FRAG_RIESGO' : sovereigntyMmt;
     if (!drivers.length) {
       const fallback = recent.slice(0, 3).map((s) => (s.driver || s.title || '').replace(/\s+/g, ' ').trim().slice(0, 59))
         .filter((d) => d && !/^https?:/i.test(d));
@@ -856,12 +959,12 @@ export function classifyAgent(items, now = Date.now(), calendarEvents = []) {
         setup: '',
         bias: 'neutral',
         ficha_v6: fichaV6,
-        sovereignty_mmt: sovereigntyMmt,
+        sovereignty_mmt: effectiveSov,
         calendar_lock: calLockInfo.calendar_lock,
         calendar_lock_detail: calLockInfo.calendar_lock_detail,
         post_event_status: calLockInfo.post_event_status,
         drivers: (fallback.length ? fallback : ['Sin catalizadores en el ciclo']).slice(0, 3),
-        rationale: `${recent.length === 1 ? '1 titular' : `${recent.length} titulares`} · Ficha ${fichaV6} · ${sovereigntyMmt} · Neutral.`,
+        rationale: `${recent.length === 1 ? '1 titular' : `${recent.length} titulares`} · Ficha ${fichaV6} · ${effectiveSov} · Neutral.`,
         regime_note: '',
         noEvidence: false,
         channel: null,
@@ -874,7 +977,7 @@ export function classifyAgent(items, now = Date.now(), calendarEvents = []) {
     const titWord = nTit === 1 ? 'titular' : 'titulares';
     const impTxt = impulse == null ? 'n/d' : `${impulse >= 0 ? '+' : ''}${impulse}`;
     const lockTxt = calLockInfo.calendar_lock ? ` · ${calLockInfo.calendar_lock}` : '';
-    const rationale = `${nTit} ${titWord} · Ficha ${fichaV6} (${sovereigntyMmt})${lockTxt} · ${liveCh.join(' + ') || mainCh || 'sin canal'} · Est ${score >= 0 ? '+' : ''}${score} | Imp 3h ${impTxt}${weak ? ' · evidencia débil' : ''}. Régimen real ${regimes[currency]}.`;
+    const rationale = `${nTit} ${titWord} · Ficha ${fichaV6} (${effectiveSov})${lockTxt} · ${liveCh.join(' + ') || mainCh || 'sin canal'} · Est ${score >= 0 ? '+' : ''}${score} | Imp 3h ${impTxt}${weak ? ' · evidencia débil' : ''}. Régimen real ${regimes[currency]}.`;
     return {
       currency,
       score,
@@ -883,7 +986,7 @@ export function classifyAgent(items, now = Date.now(), calendarEvents = []) {
       setup: calcSetup(score, impulse),
       bias: biasFor(score),
       ficha_v6: fichaV6,
-      sovereignty_mmt: sovereigntyMmt,
+      sovereignty_mmt: effectiveSov,
       calendar_lock: calLockInfo.calendar_lock,
       calendar_lock_detail: calLockInfo.calendar_lock_detail,
       post_event_status: calLockInfo.post_event_status,

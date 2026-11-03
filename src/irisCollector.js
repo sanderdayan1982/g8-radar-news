@@ -264,7 +264,7 @@ export function deduplicateAndFilterWindow(items, existingItems = [], nowMs = Da
   const allInput = [...items, ...existingItems];
   for (const raw of allInput) {
     if (!raw?.title) continue;
-    const item = (raw.sha256 && raw.ficha_v6 && raw.mmt_lens) ? raw : classifyIrisItem(raw);
+    const item = classifyIrisItem(raw);
     const pubMs = Date.parse(item.published_at || '');
     const isOfficial = item.source_type === 'oficial';
     const minAllowedMs = isOfficial ? officialCutoffMs : windowCutoffMs;
@@ -380,7 +380,7 @@ export async function collectRadarAndIrisData({
     .map((n, idx) => ({
       id: idx + 1,
       title: `${n.currencies?.length ? `[${n.currencies.join('/')}] ` : ''}${n.title}`.slice(0, 180),
-      body: `${n.source} · Categoría IRIS: ${n.iris_category} · Ficha v6.0: ${n.ficha_v6 || 'A1 / B2'}${n.actual ? ` · Act ${n.actual}` : ''}`,
+      body: `${n.source} · Categoría IRIS: ${n.iris_category}${n.ficha_v6 ? ` · Ficha v6.0: ${n.ficha_v6}` : ` · ${n.mmt_lens || 'CONTEXTO_GENERAL'}`}${n.actual ? ` · Act ${n.actual}` : ''}`,
       level: n.impact >= 5 ? 'critico' : n.impact >= 4 ? 'alto' : 'medio',
       alert_type: n.category === 'dato_macro' ? 'dato_macro' : 'breaking',
       currency: (n.currencies || [])[0] || null,
@@ -403,8 +403,8 @@ export async function collectRadarAndIrisData({
     category: n.iris_category,
     categories: n.iris_categories || [n.iris_category],
     legacy_category: n.category,
-    ficha_v6: n.ficha_v6 || 'A1 / B2',
-    mmt_lens: n.mmt_lens || 'REPRICING_MONETARIO',
+    ficha_v6: n.ficha_v6 ?? null,
+    mmt_lens: n.mmt_lens || 'CONTEXTO_GENERAL',
     sovereignty_mmt: n.sovereignty_mmt || 'SOBERANO_EMISOR',
     impact: n.impact ?? 1,
     actual: n.actual ?? null,

@@ -105,8 +105,8 @@ test('Candado Anti-Cobro Netlify ([skip netlify]) presente en workflow y netlify
   assert.match(toml, /\/api\/radar-full/);
 });
 
-test('mmt-agent-op-v4.0-G8: Regla 1 (PMI < 50 contracción + AiG negativos en AUD) y Reglas 2-4 (MMT + Matriz v6.0 + Candado 48h)', () => {
-  assert.equal(OP_VERSION, 'mmt-agent-op-v4.0-G8');
+test('mmt-agent-op-v4.1-G8: Regla 1 (PMI < 50 + AiG AUD) y Ajustes v4.1 (Freno B12 EUR, CONTEXTO_GENERAL sin A1/B2 por defecto, Contracción Laboral NZD)', () => {
+  assert.equal(OP_VERSION, 'mmt-agent-op-v4.1-G8');
   assert.equal(MMT_SOVEREIGNTY.USD, 'SOBERANO_EMISOR');
   assert.equal(MMT_SOVEREIGNTY.EUR, 'USUARIO_MONEDA');
 
@@ -167,16 +167,66 @@ test('mmt-agent-op-v4.0-G8: Regla 1 (PMI < 50 contracción + AiG negativos en AU
   assert.equal(carneyTariff.ficha_v6, 'EA-1');
   assert.equal(carneyTariff.mmt_lens, 'COST_PUSH_STAG_TRAP');
 
-  // Regla 2: EUR B12 EUR_FRAG en spreads BTP-Bund / OAT-Bund
+  // Ajuste 2 v4.1: EUR con B12_EUR_FRAG_RIESGO activo (presupuesto Francia / BCE) frena todo score positivo <= 0
   const eurFragItem = classifyIrisItem({
-    title: 'Eurozone BTP-Bund and OAT-Bund sovereign spreads widen on French deficit concerns',
+    title: "ECB's Nagel on France Budget: This isn't a task for monetary policy.",
     url: 'https://example.com/eur-frag',
     currencies: ['EUR'],
     published_at: pubIso,
+    fingerprint: 'eur-frag-nagel',
+  });
+  const eurHawkItem = classifyIrisItem({
+    title: 'ECB hawkish rate hike expectations rise 15 bps',
+    url: 'https://example.com/eur-hawk',
+    currencies: ['EUR'],
+    published_at: pubIso,
+    fingerprint: 'eur-hawk-1',
   });
   assert.equal(eurFragItem.ficha_v6, 'B12');
-  assert.equal(eurFragItem.mmt_lens, 'USUARIO_MONEDA_EUR_FRAG');
-  assert.equal(eurFragItem.sovereignty_mmt, 'USUARIO_MONEDA');
+  assert.equal(eurFragItem.mmt_lens, 'B12_EUR_FRAG_RIESGO');
+  const eurRows = classifyAgent([eurFragItem, eurHawkItem], now);
+  const eurRow = eurRows.find((r) => r.currency === 'EUR');
+  assert.ok(eurRow.score <= 0, `EUR con B12_EUR_FRAG_RIESGO activo nunca puede tener score > 0 (obtuvo ${eurRow.score})`);
+  assert.equal(eurRow.ficha_v6, 'B12');
+  assert.equal(eurRow.sovereignty_mmt, 'B12_EUR_FRAG_RIESGO');
+
+  // Ajuste 3 v4.1: Noticias generales/corporativas sin términos de tasas/BC reciben CONTEXTO_GENERAL (ficha_v6: null)
+  for (const generalTitle of [
+    "Baseball's championship series ran through Milwaukee and Tampa - Bureau of Labor Statistics (.gov)",
+    'Northland to get fourth Rural Training Hub',
+    'Meta Platforms to price $15B senior notes',
+  ]) {
+    const item = classifyIrisItem({ title: generalTitle, published_at: pubIso });
+    assert.equal(item.ficha_v6, null, `Noticia general no debe tener Ficha A1/B2: ${generalTitle}`);
+    assert.equal(item.mmt_lens, 'CONTEXTO_GENERAL');
+  }
+
+  // Ajuste 4 v4.1: Desempleo NZ 5.7% vs 5.5% + Wage Growth +0.5% vs +0.6% -> Ficha B2 / Contracción Laboral
+  const nzdUnemp = classifyIrisItem({
+    title: 'NEW ZEALAND UNEMPLOYMENT RATE ACTUAL 5.7% (FORECAST 5.5%, PREVIOUS 5.4%) $MACRO',
+    currencies: ['NZD'],
+    category: 'dato_macro',
+    source_type: 'breaking',
+    published_at: pubIso,
+    fingerprint: 'nzd-unemp-57',
+  });
+  const nzdWage = classifyIrisItem({
+    title: 'NEW ZEALAND WAGE GROWTH QOQ ACTUAL 0.5% (FORECAST 0.6%, PREVIOUS 0.6%) $MACRO',
+    currencies: ['NZD'],
+    category: 'dato_macro',
+    source_type: 'breaking',
+    published_at: pubIso,
+    fingerprint: 'nzd-wage-05',
+  });
+  assert.equal(nzdUnemp.ficha_v6, 'B2');
+  assert.equal(nzdUnemp.mmt_lens, 'CONTRACCION_LABORAL_B2');
+  assert.equal(nzdWage.ficha_v6, 'B2');
+  assert.equal(nzdWage.mmt_lens, 'CONTRACCION_LABORAL_B2');
+  const nzdRows = classifyAgent([nzdUnemp, nzdWage], now);
+  const nzdRow = nzdRows.find((r) => r.currency === 'NZD');
+  assert.ok(nzdRow.score < -20, `NZD con deterioro laboral doble debe caer bajo -20 (obtuvo ${nzdRow.score})`);
+  assert.equal(nzdRow.ficha_v6, 'B2');
+  assert.match(nzdRow.drivers[0], /Ficha B2 \/ Contracción Laboral/i);
 
   // Regla 4: Candado de Agenda ⚑BC <48h (Candado CIRO) y ✓ POST-EVENTO
   const calEvents = [
@@ -193,8 +243,8 @@ test('mmt-agent-op-v4.0-G8: Regla 1 (PMI < 50 contracción + AiG negativos en AU
       title: 'Unemployment Rate',
       impact: 'High',
       actual: '5.7%',
-      forecast: '5.3%',
-      previous: '5.2%',
+      forecast: '5.5%',
+      previous: '5.4%',
       event_at: new Date(now - 4 * 3600_000).toISOString(),
     },
   ];
@@ -202,5 +252,5 @@ test('mmt-agent-op-v4.0-G8: Regla 1 (PMI < 50 contracción + AiG negativos en AU
   assert.equal(gbpLock.calendar_lock, '⚑BC <48h (Candado CIRO)');
   const nzdLock = computeCalendarLock('NZD', calEvents, now);
   assert.equal(nzdLock.calendar_lock, '✓ POST-EVENTO');
-  assert.match(nzdLock.post_event_status, /5\.7%.*5\.3%/);
+  assert.match(nzdLock.post_event_status, /5\.7%.*5\.5%/);
 });

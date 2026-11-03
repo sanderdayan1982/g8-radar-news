@@ -3,7 +3,7 @@ import { classifyAgent, scoreSignals, biasFor, clamp, parseNum } from './classif
 import { dedupeNews, extractReleaseIdentity } from './enrich.js';
 import { evidenceContract } from './evidence.js';
 
-export const OP_VERSION = 'mmt-agent-op-v4.0-G8';
+export const OP_VERSION = 'mmt-agent-op-v4.1-G8';
 export const SHADOW_VERSION = 'mmt-rubric-shadow-v2.1-frozen';
 export const EXPANDED_EXPERIMENT_VERSION = 'mmt-expanded-coverage-exp-v1';
 
