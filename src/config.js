@@ -48,12 +48,12 @@ export const WINDOWS = {
   staleMs: 15 * 60_000,
 };
 
-export const UA = 'RadarNews/2.0 (institutional G8 terminal; +https://radarnews.local)';
+export const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36';
 
 const BURBUJA = process.env.RADARNEWS_BURBUJA_CHANNEL || 'BrujulaDeMercados';
 
 /**
- * Existing production sources are preserved.
+ * 31 Institutional G8 Sources.
  * Note on FinancialJuice: `https://www.financialjuice.com/home` is a client-side SPA requiring SignalR/user authentication
  * and does not expose a public RSS feed (`404`). The configured public channel `https://t.me/s/FinancialJuice` is an
  * automated Twitter-to-Telegram mirror that explicitly declares "no affiliation" with financialjuice.com.
@@ -75,13 +75,24 @@ export const SOURCES = [
   { id: 'boc', name: 'BoC', type: 'oficial', kind: 'rss', url: 'https://www.bankofcanada.ca/content_type/press-releases/feed/', currency: 'CAD', pollMs: 180_000 },
   { id: 'rba', name: 'RBA', type: 'oficial', kind: 'rss', url: 'https://www.rba.gov.au/rss/rss-cb-media-releases.xml', currency: 'AUD', pollMs: 180_000 },
   { id: 'rbnz', name: 'RBNZ', type: 'oficial', kind: 'rss', url: 'https://www.rbnz.govt.nz/feeds/news', currency: 'NZD', pollMs: 180_000 },
-  { id: 'nz-treasury', name: 'NZ Treasury / NZDM', type: 'oficial', kind: 'rss', url: 'https://www.treasury.govt.nz/feeds/news', currency: 'NZD', pollMs: 300_000, channel_note: 'El Tesoro de NZ publica pocas noticias y no a diario; que el dato sea antiguo es esperable, no es un fallo de la fuente.' },
+  {
+    id: 'nz-treasury',
+    name: 'NZ Treasury / NZDM',
+    type: 'oficial',
+    kind: 'rss',
+    url: 'https://www.beehive.govt.nz/rss.xml',
+    fallbackUrl: 'https://news.google.com/rss/search?q=site:treasury.govt.nz+OR+site:rbnz.govt.nz+OR+NZDM&hl=en-NZ&gl=NZ&ceid=NZ:en',
+    currency: 'NZD',
+    pollMs: 300_000,
+    channel_note: 'Comunicados económicos y fiscales oficiales del Gobierno y Tesoro de Nueva Zelanda (beehive.govt.nz / treasury.govt.nz).',
+  },
   {
     id: 'stats-nz',
     name: 'Stats NZ',
     type: 'oficial',
     kind: 'html',
     url: 'https://www.stats.govt.nz/news/',
+    fallbackUrl: 'https://news.google.com/rss/search?q=site:stats.govt.nz&hl=en-NZ&gl=NZ&ceid=NZ:en',
     currency: 'NZD',
     pollMs: 300_000,
     channel_note: 'Comunicados oficiales de Stats NZ extraídos del bloque JSON PaginatedBlockPages en stats.govt.nz/news/.',
@@ -114,6 +125,66 @@ export const SOURCES = [
     channel_note: 'Comunicados y publicaciones oficiales del BIS (all_pressrels.rss / bis_fsi_publs.rss).',
   },
   { id: 'bis-speeches', name: 'BIS · Discursos', type: 'oficial', kind: 'rss', url: 'https://www.bis.org/doclist/cbspeeches.rss', pollMs: 300_000 },
+  {
+    id: 'us-treasury',
+    name: 'US Treasury · Deuda y Subastas',
+    type: 'oficial',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=site:home.treasury.gov+OR+%22U.S.+Treasury%22+auction+OR+yields+OR+deficit+when:14d&hl=en-US&gl=US&ceid=US:en',
+    currency: 'USD',
+    pollMs: 300_000,
+    channel_note: 'Comunicados fiscales, subastas y deuda del Tesoro de EE. UU. (home.treasury.gov).',
+  },
+  {
+    id: 'us-bls-bea',
+    name: 'BLS / BEA · Empleo e Inflación US',
+    type: 'oficial',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=site:bls.gov+OR+site:bea.gov+OR+%22Bureau+of+Labor+Statistics%22+CPI+OR+payrolls+OR+PCE+when:14d&hl=en-US&gl=US&ceid=US:en',
+    currency: 'USD',
+    pollMs: 300_000,
+    channel_note: 'Publicaciones macroeconómicas de empleo, CPI, PCE y PIB de EE. UU. (bls.gov / bea.gov).',
+  },
+  {
+    id: 'eurostat',
+    name: 'Eurostat · Macro Eurozona',
+    type: 'oficial',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=site:ec.europa.eu/eurostat+OR+Eurostat+inflation+OR+GDP+OR+unemployment+when:14d&hl=en-US&gl=US&ceid=US:en',
+    currency: 'EUR',
+    pollMs: 300_000,
+    channel_note: 'Estadísticas oficiales de inflación, PIB y empleo de la Eurozona (ec.europa.eu/eurostat).',
+  },
+  {
+    id: 'uk-ons-hmt',
+    name: 'HM Treasury / ONS · Reino Unido',
+    type: 'oficial',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=site:ons.gov.uk+OR+%22HM+Treasury%22+OR+%22Office+for+National+Statistics%22+UK+inflation+OR+gilts+OR+GDP+when:14d&hl=en-GB&gl=GB&ceid=GB:en',
+    currency: 'GBP',
+    pollMs: 300_000,
+    channel_note: 'Datos macro y emisiones fiscales de ONS y HM Treasury del Reino Unido.',
+  },
+  {
+    id: 'jp-mof',
+    name: 'Japan MoF · Finanzas y Divisas',
+    type: 'oficial',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=site:mof.go.jp+OR+%22Ministry+of+Finance%22+Japan+yen+OR+JGB+OR+intervention+when:14d&hl=en-US&gl=US&ceid=US:en',
+    currency: 'JPY',
+    pollMs: 300_000,
+    channel_note: 'Seguimiento oficial del Ministerio de Finanzas de Japón (MoF), JGBs y vigilancia cambiaria.',
+  },
+  {
+    id: 'au-abs-treasury',
+    name: 'ABS / Australian Treasury',
+    type: 'oficial',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=site:abs.gov.au+OR+site:treasury.gov.au+Australia+CPI+OR+inflation+OR+employment+when:14d&hl=en-AU&gl=AU&ceid=AU:en',
+    currency: 'AUD',
+    pollMs: 300_000,
+    channel_note: 'Comunicados oficiales de inflación, empleo y cuentas públicas de Australia (abs.gov.au / treasury.gov.au).',
+  },
   {
     id: 'investinglive',
     name: 'InvestingLive',

@@ -4,20 +4,34 @@
   "engine": "Agente MMT",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-03T21:27:36.639Z",
-  "started_at": "2026-11-03T21:27:32.761Z",
+  "generated_at": "2026-11-03T22:07:48.745Z",
+  "started_at": "2026-11-03T22:07:44.809Z",
   "window_hours": 72,
-  "sources_ok": 25,
-  "sources_total": 25,
-  "count": 144,
+  "sources_ok": 31,
+  "sources_total": 31,
+  "count": 193,
   "g8_ranking": [
     {
-      "currency": "CHF",
+      "currency": "AUD",
       "rank": 1,
-      "score": 37,
+      "score": 41,
       "bias": "alcista",
-      "structural": 37,
-      "impulse": 15,
+      "structural": 41,
+      "impulse": 30,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real fuerte: AUSTRALIAN SERVICES PMI FINAL ACTUAL 48.5",
+        "Dato real fuerte: AUSTRALIAN COMPOSITE PMI FINAL ACTUAL 48.",
+        "Precio del dinero al alza"
+      ]
+    },
+    {
+      "currency": "CHF",
+      "rank": 2,
+      "score": 31,
+      "bias": "alcista",
+      "structural": 31,
+      "impulse": 23,
       "no_evidence": false,
       "drivers": [
         "Acuerdo comercial / sector exterior",
@@ -27,29 +41,15 @@
     },
     {
       "currency": "EUR",
-      "rank": 2,
+      "rank": 3,
       "score": 30,
       "bias": "alcista",
       "structural": 30,
-      "impulse": 17,
+      "impulse": 8,
       "no_evidence": false,
       "drivers": [
         "Precio del dinero al alza",
         "Riesgo geopolítico",
-        "CPI sin sorpresa"
-      ]
-    },
-    {
-      "currency": "USD",
-      "rank": 3,
-      "score": 27,
-      "bias": "alcista",
-      "structural": 27,
-      "impulse": 15,
-      "no_evidence": false,
-      "drivers": [
-        "Demanda de refugio",
-        "Precio del dinero al alza",
         "CPI sin sorpresa"
       ]
     },
@@ -59,7 +59,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 15,
+      "impulse": 23,
       "no_evidence": false,
       "drivers": [
         "Demanda de refugio",
@@ -67,15 +67,16 @@
       ]
     },
     {
-      "currency": "AUD",
-      "rank": 5,
-      "score": 9,
-      "bias": "neutral",
-      "structural": 9,
-      "impulse": null,
+      "currency": "USD",
+      "rank": 4,
+      "score": 24,
+      "bias": "alcista",
+      "structural": 24,
+      "impulse": 23,
       "no_evidence": false,
       "drivers": [
-        "Precio del dinero al alza"
+        "Demanda de refugio",
+        "CPI sin sorpresa"
       ]
     },
     {
@@ -91,27 +92,29 @@
       ]
     },
     {
-      "currency": "NZD",
-      "rank": 6,
-      "score": 0,
-      "bias": "neutral",
-      "structural": 0,
-      "impulse": null,
-      "no_evidence": false,
-      "drivers": [
-        "CPI sin sorpresa"
-      ]
-    },
-    {
       "currency": "CAD",
-      "rank": 8,
+      "rank": 7,
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": null,
+      "impulse": -12,
       "no_evidence": false,
       "drivers": [
         "Beta: riesgo off"
+      ]
+    },
+    {
+      "currency": "NZD",
+      "rank": 8,
+      "score": -45,
+      "bias": "bajista",
+      "structural": -45,
+      "impulse": -38,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real suave: NEW ZEALAND JOB GROWTH QOQ ACTUAL -0.1% (F",
+        "Mercado laboral suave",
+        "Dato real suave: NEW ZEALAND PARTICIPATION RATE ACTUAL 70.4"
       ]
     }
   ],
@@ -127,6 +130,635 @@
   },
   "items": [
     {
+      "id": "763b13fc719d7bc34037c6f7fc506115fcd83617588618d3c7c8697217efef52",
+      "sha256": "763b13fc719d7bc34037c6f7fc506115fcd83617588618d3c7c8697217efef52",
+      "title": "Unemployment rate at 5.7 percent in the September 2026 quarter",
+      "url": "https://www.stats.govt.nz/news/unemployment-rate-at-5-7-percent-in-the-september-2026-quarter/",
+      "source": "Stats NZ",
+      "source_id": "stats-nz",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T10:45:00.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2e8ae95b29919641d47f396c74e79db0b40af239b630588bcb32d19c961267b3",
+      "sha256": "2e8ae95b29919641d47f396c74e79db0b40af239b630588bcb32d19c961267b3",
+      "title": "Canada's PM Carney: US requests fewer concessions and proposes more, but deal not reached yet",
+      "url": "https://t.me/FinancialJuice/144608",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:06:23.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "851e6f6ec017fdf3a56587fc216fa6dc0250774f73210745c5251f9ef8114883",
+      "sha256": "851e6f6ec017fdf3a56587fc216fa6dc0250774f73210745c5251f9ef8114883",
+      "title": "Canada's PM Carney: some of our limits in US trade talks have been eliminated",
+      "url": "https://t.me/FinancialJuice/144607",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:06:14.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
+      "sha256": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
+      "title": "Americans vote in election that doubles as referendum on Trump’s presidency",
+      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T22:05:19.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4e225fa2fbb89961b640e4e405b0480310de77b06065109a2c462994fd34a457",
+      "sha256": "4e225fa2fbb89961b640e4e405b0480310de77b06065109a2c462994fd34a457",
+      "title": "Canada’s PM Carney: some red lines remain to be addressed",
+      "url": "https://t.me/FinancialJuice/144606",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:04:40.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ed793ccc75c443987d91037d4460c28303bbb406ff1ac6bf6a838e006e81c98c",
+      "sha256": "ed793ccc75c443987d91037d4460c28303bbb406ff1ac6bf6a838e006e81c98c",
+      "title": "Canada's PM Carney: progress made but US trade talks not yet complete",
+      "url": "https://t.me/FinancialJuice/144605",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:04:22.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7bd0ce91a380309deaeadd8cfd3641cca6f5724fbf51c42ed57893a0f66ed72b",
+      "sha256": "7bd0ce91a380309deaeadd8cfd3641cca6f5724fbf51c42ed57893a0f66ed72b",
+      "title": "Canada Prime Minister Carney: talks with US to become more intensive",
+      "url": "https://t.me/FinancialJuice/144604",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:04:10.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cdbaa8e5e3a8768b4f199e95c7707ef73483a125696cc9005873494bcaf75620",
+      "sha256": "cdbaa8e5e3a8768b4f199e95c7707ef73483a125696cc9005873494bcaf75620",
+      "title": "AIG MANUFACTURING INDEX ACTUAL -20.1 (FORECAST -, PREVIOUS -16.6) $MACRO",
+      "url": "https://t.me/FinancialJuice/144602",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:00:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-20.1",
+      "forecast": null,
+      "previous": "-16.6",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b97589088e8c25d61fd4792187732c91a76e45489338e9e0f70b912f59c86907",
+      "sha256": "b97589088e8c25d61fd4792187732c91a76e45489338e9e0f70b912f59c86907",
+      "title": "AIG CONSTRUCTION INDEX ACTUAL -26.9 (FORECAST -, PREVIOUS -6.9) $MACRO",
+      "url": "https://t.me/FinancialJuice/144603",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:00:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-26.9",
+      "forecast": null,
+      "previous": "-6.9",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c73fa8f8c8ce481c08614fe3e02902a46b937726314beceb7ff70cecd9eddbd6",
+      "sha256": "c73fa8f8c8ce481c08614fe3e02902a46b937726314beceb7ff70cecd9eddbd6",
+      "title": "AUSTRALIAN SERVICES PMI FINAL ACTUAL 48.5 (FORECAST -, PREVIOUS 47.8) $MACRO",
+      "url": "https://t.me/FinancialJuice/144600",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:00:35.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 4,
+      "actual": "48.5",
+      "forecast": null,
+      "previous": "47.8",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3e3a5f3c486e5e27f7da968b524335d355af56b3e937c42536a55dd6d9c2e113",
+      "sha256": "3e3a5f3c486e5e27f7da968b524335d355af56b3e937c42536a55dd6d9c2e113",
+      "title": "AUSTRALIAN COMPOSITE PMI FINAL ACTUAL 48.2 (FORECAST -, PREVIOUS 47.7) $MACRO",
+      "url": "https://t.me/FinancialJuice/144601",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:00:35.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 4,
+      "actual": "48.2",
+      "forecast": null,
+      "previous": "47.7",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "12f347ee9186e79ec09bb9f8d13a69f07a3f5d57277a6fa732cea3664914b753",
+      "sha256": "12f347ee9186e79ec09bb9f8d13a69f07a3f5d57277a6fa732cea3664914b753",
+      "title": "US API CUSHING STOCK CHANGE ACTUAL 0.511M (FORECAST -, PREVIOUS -0.453M) $MACRO",
+      "url": "https://t.me/FinancialJuice/144599",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:56:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "0.511",
+      "forecast": null,
+      "previous": "-0.453",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "50449e5e01e812fbe254410ea9bb87333b0c39fe912e50d54096403870759f20",
+      "sha256": "50449e5e01e812fbe254410ea9bb87333b0c39fe912e50d54096403870759f20",
+      "title": "US API DISTILLATE STOCK CHANGE ACTUAL -1.192M (FORECAST -, PREVIOUS 0.38M) $MACRO",
+      "url": "https://t.me/FinancialJuice/144598",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:55:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-1.192",
+      "forecast": null,
+      "previous": "0.38",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cee56a1c64eeff1d507c04823fe9a259a62afd575ac1e2d52b2df2cc45666684",
+      "sha256": "cee56a1c64eeff1d507c04823fe9a259a62afd575ac1e2d52b2df2cc45666684",
+      "title": "Investinglive americas market news wrap job openings jump as the us votes",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:55:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "db46b8cd245cb9e1ce19a719d615f285498710ab184e2ed652df34f3647051ee",
+      "sha256": "db46b8cd245cb9e1ce19a719d615f285498710ab184e2ed652df34f3647051ee",
+      "title": "Nz q3 unemployment rate 5.7 expected 5.5 prior 5.6",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:55:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": "5.5",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3e2cac6a5f7de8a80a8a39336deefdc9d6a788ef4d3b46068242c8bd3a5a1936",
+      "sha256": "3e2cac6a5f7de8a80a8a39336deefdc9d6a788ef4d3b46068242c8bd3a5a1936",
+      "title": "US API GASOLINE STOCK CHANGE ACTUAL 1.427M (FORECAST -, PREVIOUS 2.39M) $MACRO",
+      "url": "https://t.me/FinancialJuice/144597",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:55:10.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "1.427",
+      "forecast": null,
+      "previous": "2.39",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1f51c3b3cd0e060b7b686c0b3c3073ab5967f7f34a2751fd02c77c91dba20d86",
+      "sha256": "1f51c3b3cd0e060b7b686c0b3c3073ab5967f7f34a2751fd02c77c91dba20d86",
+      "title": "US API CRUDE STOCK CHANGE ACTUAL -5.267M (FORECAST 2.1M, PREVIOUS -2.031M) $MACRO",
+      "url": "https://t.me/FinancialJuice/144596",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:54:26.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-5.267",
+      "forecast": "2.1",
+      "previous": "-2.031",
+      "calendar_title": null,
+      "z": -49.1
+    },
+    {
+      "id": "98490e9e5aff2089630c298f8a6d6c2e9f349f031e1d14e01be9daa2a1410e1a",
+      "sha256": "98490e9e5aff2089630c298f8a6d6c2e9f349f031e1d14e01be9daa2a1410e1a",
+      "title": "Nasdaq rebounds as chip stocks rally and dow slips",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:50:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d07e9864dd30e7792af0eb6ad51583a71ccc7d7864c0ed98cdb12d4a690bb5c4",
+      "sha256": "d07e9864dd30e7792af0eb6ad51583a71ccc7d7864c0ed98cdb12d4a690bb5c4",
+      "title": "NEW ZEALAND PARTICIPATION RATE ACTUAL 70.4% (FORECAST 70.7%, PREVIOUS 70.7%) $MACRO",
+      "url": "https://t.me/FinancialJuice/144595",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:45:38.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "70.4%",
+      "forecast": "70.7%",
+      "previous": "70.7%",
+      "calendar_title": null,
+      "z": -0.1
+    },
+    {
+      "id": "295904e187b52662fee1a2bc6617f208b08e424cc797fc8cdb7aa7c7532bc85e",
+      "sha256": "295904e187b52662fee1a2bc6617f208b08e424cc797fc8cdb7aa7c7532bc85e",
+      "title": "NEW ZEALAND JOB GROWTH QOQ ACTUAL -0.1% (FORECAST 0.4%, PREVIOUS 0.5%) $MACRO",
+      "url": "https://t.me/FinancialJuice/144594",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:45:30.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-0.1%",
+      "forecast": "0.4%",
+      "previous": "0.5%",
+      "calendar_title": null,
+      "z": -3.3
+    },
+    {
+      "id": "7e31d37eb6ed65cc6ac231a4ef00d7e8c8bd76ca1d18ca63969626f8675638ab",
+      "sha256": "7e31d37eb6ed65cc6ac231a4ef00d7e8c8bd76ca1d18ca63969626f8675638ab",
+      "title": "Economic and event calendar in asia wednesday november 4.2026 nz jobs report china pmi",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:45:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
+      "sha256": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
+      "title": "Amd shares rise after hours as q4 revenue outlook of 17bn tops forecasts on ai ramp",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:45:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "756f380006b39ca5e88a27bd11d50508be1d9332c0364a572f7c0284f3044b4a",
+      "sha256": "756f380006b39ca5e88a27bd11d50508be1d9332c0364a572f7c0284f3044b4a",
+      "title": "❗ NEW ZEALAND UNEMPLOYMENT RATE ACTUAL 5.7% (FORECAST 5.5%, PREVIOUS 5.6%) $MACRO",
+      "url": "https://t.me/FinancialJuice/144593",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:45:26.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "impact": 4,
+      "actual": "5.7%",
+      "forecast": "5.5%",
+      "previous": "5.6%",
+      "calendar_title": "Employment Change q/q",
+      "z": -0.9
+    },
+    {
+      "id": "afd5bfcb0ffe4d8e9ca953d3923e0f9905e9edcaaf586096bb56d3fe8eccd1e4",
+      "sha256": "afd5bfcb0ffe4d8e9ca953d3923e0f9905e9edcaaf586096bb56d3fe8eccd1e4",
+      "title": "Super micro shares rise after hours as revenue nears 20bn and q2 guidance tops forecasts",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:35:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "af3f20d19fde18b62d08dd431c6f8e29a20ebca7e55ac5aed369e2b25743e845",
+      "sha256": "af3f20d19fde18b62d08dd431c6f8e29a20ebca7e55ac5aed369e2b25743e845",
+      "title": "Two reasons why the us could attack iran as soon as tomorrow",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:30:28.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e2ba875cb959ecf3a333bc8a27b5708892a49b639728646233369020cee3ece2",
       "sha256": "e2ba875cb959ecf3a333bc8a27b5708892a49b639728646233369020cee3ece2",
       "title": "Booking holdings shares slide as q3 revenue misses despite earnings and bookings beat",
@@ -135,6 +767,29 @@
       "source_id": "investinglive",
       "source_type": "agencia",
       "published_at": "2026-11-03T21:25:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "74dd9f6e0ee84f1de86596aa85b2258a776373ab5cd8c10765686fb48bdfd21e",
+      "sha256": "74dd9f6e0ee84f1de86596aa85b2258a776373ab5cd8c10765686fb48bdfd21e",
+      "title": "What Binance's historic heist means for crypto",
+      "url": "https://www.ft.com/content/567d7280-2bcb-4802-8caa-01853b3278dc?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:22:50.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -310,29 +965,6 @@
       "z": null
     },
     {
-      "id": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
-      "sha256": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
-      "title": "Americans vote in election that doubles as referendum on Trump’s presidency",
-      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-03T21:09:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "5a819282ba80c4a445e2feb9c117b7d79ae48300e639e427f4fa3f2aaaf3ebdc",
       "sha256": "5a819282ba80c4a445e2feb9c117b7d79ae48300e639e427f4fa3f2aaaf3ebdc",
       "title": "❗ MOC IMBALANCE S&P 500: -880.2 MLN NASDAQ 100: -1404.2 MLN DOW 30: -49.5 MLN MAG 7: -14.3 MLN $MACRO",
@@ -349,6 +981,35 @@
       ],
       "legacy_category": "otro",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "249b5549ed30f478b7af6c483985d9a38e3535692ceafa946a62c9b190a834ce",
+      "sha256": "249b5549ed30f478b7af6c483985d9a38e3535692ceafa946a62c9b190a834ce",
+      "title": "Wairarapa grain storage set to benefit farmers",
+      "url": "https://www.beehive.govt.nz/release/wairarapa-grain-storage-set-benefit-farmers",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T20:50:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -651,7 +1312,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-03T19:22:55.000Z",
+      "published_at": "2026-11-03T19:22:47.000Z",
       "currencies": [
         "CAD"
       ],
@@ -1599,6 +2260,33 @@
       "z": null
     },
     {
+      "id": "6a449228b8ed87b3825a181b3a747cdb2dbb69b9073bc57c92150a65e1e7ce37",
+      "sha256": "6a449228b8ed87b3825a181b3a747cdb2dbb69b9073bc57c92150a65e1e7ce37",
+      "title": "2028 Geographic Revision Notice - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE04M3Vob0VWRVZLbmpqU0s5TjNtcmNXZHN2WTJoR29NWU44Z2t5WWZfaFlTSW9PQ1h2akUtc2RzY0J0S241X0stdzVjR0o4U2VsVlNmSkxHZUJEbXM2aThMX182enRjM1U4R1ZDdXNQcW9NRWFsN2c?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T16:33:26.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "0272322632817879cad8a2a63caa5c6861cf06bb20ce81c1a2f1295f3346b969",
       "sha256": "0272322632817879cad8a2a63caa5c6861cf06bb20ce81c1a2f1295f3346b969",
       "title": "ÚLTIMA HORA | Escándalo electoral: Pedro Sánchez accede a datos privilegiados del voto por correo",
@@ -1665,6 +2353,33 @@
       ],
       "legacy_category": "geopolitica",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "049d5f692303581c57c1d7e064bf21167312890b3b7bd4fc20ac75d61d0fbd6e",
+      "sha256": "049d5f692303581c57c1d7e064bf21167312890b3b7bd4fc20ac75d61d0fbd6e",
+      "title": "Employment up in 6 large metropolitan areas, down in 1, over year ended September 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMnpMQVEwQTBORWtBWmZvMFdRZlUxWFVUbTZISFdaU3RXZDJSUVpXT1lEM25CTG5uOTJNQmRkUkxpYnZUdXJTeDE4QTdabjlEaFdqY3JRd0RDcWVVQVlqX3RBNWRPRjFaN0NSQjZibjNqNnBBbGJ1RmVqVVBCVkl0OE1TdUFZX2lBQXpHUGlfWkRxVDlmb3ZmTGhYMmQtTU5ja193VWQtWl81eFFReWMwSXZfZHRNVFN3NzdXblFEaw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T16:10:37.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -1741,6 +2456,29 @@
       "z": null
     },
     {
+      "id": "d0f598cd3a360e0f969b6c86596e68c7fe357dd644a607043176772d1ebddc51",
+      "sha256": "d0f598cd3a360e0f969b6c86596e68c7fe357dd644a607043176772d1ebddc51",
+      "title": "Us september factory orders 1.8 vs 1.2 expected",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T15:15:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "1.8",
+      "forecast": "1.2",
+      "previous": null,
+      "calendar_title": "Factory Orders m/m",
+      "z": 4
+    },
+    {
       "id": "d9c2f1923c9012d4b5fa2b0bed849fb5157ad4b3b8c4e71966b2c5923c4466dd",
       "sha256": "d9c2f1923c9012d4b5fa2b0bed849fb5157ad4b3b8c4e71966b2c5923c4466dd",
       "title": "Jolts job openings 7.523m vs 7.100m estimate",
@@ -1766,29 +2504,6 @@
       "previous": null,
       "calendar_title": "JOLTS Job Openings",
       "z": null
-    },
-    {
-      "id": "d0f598cd3a360e0f969b6c86596e68c7fe357dd644a607043176772d1ebddc51",
-      "sha256": "d0f598cd3a360e0f969b6c86596e68c7fe357dd644a607043176772d1ebddc51",
-      "title": "Us september factory orders 1.8 vs 1.2 expected",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-03T15:15:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 1,
-      "actual": "1.8",
-      "forecast": "1.2",
-      "previous": null,
-      "calendar_title": "Factory Orders m/m",
-      "z": 4
     },
     {
       "id": "e31480fafe900cce09c2a52624158f7f32bd9f70e44a26eddb30f3085203f371",
@@ -1971,6 +2686,36 @@
         "Fiscal"
       ],
       "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f6c49e88b789456f8313dc65e9b96d2061397ed22055cfc5ff391bffba9cff56",
+      "sha256": "f6c49e88b789456f8313dc65e9b96d2061397ed22055cfc5ff391bffba9cff56",
+      "title": "Reserve Bank interest rate decision - Treasury.gov.au",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbkJPNENZLTBlR0pIcy1VLTFKRnVmSFdObGNqZ2lTRDFkcXp3SzJUZmpEY21SQUFvXzgzTWVvSlpNbVZLTlUwRk4yRHZJU0dBd3BfN296bTRUY2s5UUQ4U3MyYUVkUThsb091Zkx0V3pqcjRpT0p4a0FrbnJERXczUzBjU0JqTkhodm5ZNnZKUEJSZTB6MHJ2dlZsM2tMM0RoRTRvbWF6SHJlVTJrTHRFRjNjWnY?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T12:46:56.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Fiscal"
+      ],
+      "legacy_category": "banco_central",
       "impact": 3,
       "actual": null,
       "forecast": null,
@@ -2635,6 +3380,95 @@
       "z": null
     },
     {
+      "id": "bf09e045a419219a9474ea71f1119ee78eec9ddf26d40960847a645e85cb6bc9",
+      "sha256": "bf09e045a419219a9474ea71f1119ee78eec9ddf26d40960847a645e85cb6bc9",
+      "title": "Interview with Patricia Karvelas, Afternoon Briefing, ABC - Treasury.gov.au",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSzJzNjAzdm5YUVFMX3dzUV80cTFIWXA3NmducUk4Y0Y2ZkdaYnpZVXNyUU9FSGxnWUVFQWdpSnp6bzZhRVpSWUFCMHN2a0xMcHBlTGx6QWktZXpYOGhEaWhUbWtKZUYtM20xVFhOcGotX3FLV28zbDdBNDVYRUhHZmhWQXdRT1JWR2tlVC1QeS01eVFvdDJndGVPdVpZVkVQak5fRFhyTDFGRmZmQ2dyZkVnUHhEOHM5ckRVZjIxeUV3Xzd4WHc?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T03:27:20.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4a891653b0cd02d5740373e1015ceeb59d361cfa723d8796cd06c594ef984547",
+      "sha256": "4a891653b0cd02d5740373e1015ceeb59d361cfa723d8796cd06c594ef984547",
+      "title": "Interview with Stephen Cenatiempo, Canberra Breakfast, 2CC Radio - Treasury.gov.au",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRlR3Z1BBTDBsLThpdVR4aTA1NjVpcmpxNm1UaG1wNS1XUm9ya0d4ZHQ4am12V1ducm9DR3pEbkFlRFNCQUdiSmtRRWJYWjB2Y0VUaHA3ZTZUM0pHcjBNWXBTM2dpUGNwckgyQVcwa3RkNnZpbDQyZHJOWkI1R09nMEdHWUZGWE5kRjdMemk4VFFybV9vUlFmZkFqc1h3TnBSUlpLeW5nN0pFb2laYkN3NFIydlpib0VzS0p3RjRKRUtaUjlLSm9fUkRqWVdUUQ?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T03:27:20.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7907ada54a5d88967a80f8b42c9838a8fd05fbb19668b3e05649321ba958c75e",
+      "sha256": "7907ada54a5d88967a80f8b42c9838a8fd05fbb19668b3e05649321ba958c75e",
+      "title": "Regional radio strengthened for emergencies",
+      "url": "https://www.beehive.govt.nz/release/regional-radio-strengthened-emergencies",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T02:30:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "da7c1fd159e1593727d9ba5f50f7f1685d49a3a4d649cde6927634ace8dd6f38",
       "sha256": "da7c1fd159e1593727d9ba5f50f7f1685d49a3a4d649cde6927634ace8dd6f38",
       "title": "Japan’s interest rates are rising. Will young people lose out?",
@@ -2918,6 +3752,37 @@
       "z": null
     },
     {
+      "id": "5e78a2f38af63f9fa8688813046bf8696bad8cbc169124f86dfaa15fff162d69",
+      "sha256": "5e78a2f38af63f9fa8688813046bf8696bad8cbc169124f86dfaa15fff162d69",
+      "title": "Government backs regional airline Air Napier",
+      "url": "https://www.beehive.govt.nz/release/government-backs-regional-airline-air-napier",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T21:30:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 4,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "56843422684fb1e70a9605999c389a70017091cb254a15c78674f3714ef890a8",
       "sha256": "56843422684fb1e70a9605999c389a70017091cb254a15c78674f3714ef890a8",
       "title": "Oil tumbles on hopes for US-Iran talks",
@@ -2934,6 +3799,65 @@
       ],
       "legacy_category": "geopolitica",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "31ae1943cd4e1cbbb9f102641d3acc55923bc549c96273290e8c369f4ac8c033",
+      "sha256": "31ae1943cd4e1cbbb9f102641d3acc55923bc549c96273290e8c369f4ac8c033",
+      "title": "Govt nurturing New Zealand’s seed supply chain",
+      "url": "https://www.beehive.govt.nz/release/govt-nurturing-new-zealands-seed-supply-chain",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T21:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fa693d64e571369d15109414197bab6cf835dc032cd21705d55606aa6876c641",
+      "sha256": "fa693d64e571369d15109414197bab6cf835dc032cd21705d55606aa6876c641",
+      "title": "Government backing Whale Trail tourism venture",
+      "url": "https://www.beehive.govt.nz/release/government-backing-whale-trail-tourism-venture",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T20:39:10.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -2980,6 +3904,96 @@
       ],
       "legacy_category": "otro",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fed0129c3692cafee48acbd3deb1d1bf8499182b338828b54e9228d4aa36173a",
+      "sha256": "fed0129c3692cafee48acbd3deb1d1bf8499182b338828b54e9228d4aa36173a",
+      "title": "Government support for aged care facility",
+      "url": "https://www.beehive.govt.nz/release/government-support-aged-care-facility",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T20:30:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c9ef0c8ee9c179e95dc6eee73381dcc95562cb7b4afef08b83321725ff1c7902",
+      "sha256": "c9ef0c8ee9c179e95dc6eee73381dcc95562cb7b4afef08b83321725ff1c7902",
+      "title": "Economy Statement for the Treasury Borrowing Advisory Committee - U.S. Department of the Treasury (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QT0E3RXlzSkUzOHNxMEFDS0lScEpmUUtzQlVRTlRfRThxV1lIMnB4azljMUhKRVJSM09WY2tKZXhnMmpWRkdtOFY3eFI3LXpvbmFRcGRkSVZTQVBTeW10MnVR?oc=5",
+      "source": "US Treasury",
+      "source_id": "us-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T20:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a3a999b8c82ae898022eb279cf92ed40639b1a9518ab20c00d437283f6a591ce",
+      "sha256": "a3a999b8c82ae898022eb279cf92ed40639b1a9518ab20c00d437283f6a591ce",
+      "title": "Government backing iwi-led geothermal potential",
+      "url": "https://www.beehive.govt.nz/release/government-backing-iwi-led-geothermal-potential",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T19:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -3055,6 +4069,33 @@
       ],
       "legacy_category": "geopolitica",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "84c121f7b2985961e3f582f67d39466f5c9d691870e8f60485bd7d26d00ea5a5",
+      "sha256": "84c121f7b2985961e3f582f67d39466f5c9d691870e8f60485bd7d26d00ea5a5",
+      "title": "Three-fourths of long-tenured workers displaced from jobs in health care and social assistance reemployed in January 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaHJ4UXNtNDZKc29MRktnaFluRlRQLVlPcEJERVUtWGFIcjJnNzN6eFE3VUpIMk1xMElRaC10Z1ktZjhDQXVHakEwVnQyamxUcGpybFNNdFpTSzdmeEp6YnNmQWpQZXRmM3FjMUpEZDd4ODZwSnFrR0FwNFhxYjdYZnFqY0sxbFNtdjFnYmZFZW1Vek9Xbkl6RjlWYnlyWVJIWlhvV0t2R1I0XzhZV2pIMURjYXo0M3VOdFZnc2ZkcUsxNjFuMGJTeFlGWmNpRk9YODRCZlFzdkpvTXlvNkdyMU5xa2lOaWRKV2U0REkxWUE?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T16:04:56.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -3235,6 +4276,35 @@
       "z": null
     },
     {
+      "id": "6fc127c5856c44cb35928cb16dacdabd8daf63cbb185c3bf84555c50c582d268",
+      "sha256": "6fc127c5856c44cb35928cb16dacdabd8daf63cbb185c3bf84555c50c582d268",
+      "title": "Avoidable mortality in England and Wales: 2025 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE81bkpUMjY1NWhrVVpiVVVkelRzeFZBVDUxUWVmb21uRnM3TkMwdDZENVRvc2FIZUd5U3FYdlgxNlN0Q3NEdnNfQy1LdEhpYmFJd0JZWnpVb0h2T284QzdEcnMxN28yYmFuNWdmVWMwTHQ0SjhsQV9HNXQ2SQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T09:30:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "cd7e3fc74e2dca68faec7377ac1a71424a22dce8a6d1cda159c207043adb4bbd",
       "sha256": "cd7e3fc74e2dca68faec7377ac1a71424a22dce8a6d1cda159c207043adb4bbd",
       "title": "Informe de mercado: Tu resumen diario Se avecina una semana intensa 🗳️ . Las elecciones de mitad de mandato de EE. UU. son el martes, se prevé que el Banco de Inglaterra suba los tipos el jueves y Apple presenta hoy sus resultados. Los mercados aún acusan el desplome tecnológico",
@@ -3262,6 +4332,64 @@
       ],
       "legacy_category": "banco_central",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ba59b94464077af40b59700c997b6efd8639abaac83aab13bb96574689690264",
+      "sha256": "ba59b94464077af40b59700c997b6efd8639abaac83aab13bb96574689690264",
+      "title": "Treasury Discount Bills to Be Auctioned on November 9, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOVNTVnVwMnFKODkwOE9nZ2p6RFJtcy1ESi1wWFRoQzh0YWE1cDJJeWZLdzRjQ3dEQ0k4akZzRjM2bTNtbWlteTVwVHU3YTRIeTZaNW5tWnNiaThHbXBDVVRqeTBfRGNtbmE1QXR6VVNHeVFpLUs0TGhEMjhyc2N3aVFTckRBWXMzSjRTV1k4YnhiOFhKVk1aSlFR?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T08:21:56.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Intervencion_EA4",
+      "categories": [
+        "Intervencion_EA4",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1cbd8e2a39b5fffc30881b3fbadf04e627cd6353f715f52867701854557f47cc",
+      "sha256": "1cbd8e2a39b5fffc30881b3fbadf04e627cd6353f715f52867701854557f47cc",
+      "title": "Auction Result of 5-year Climate Transition JGBs on November 2, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSTZtbWxXdVNySk8xcUZGMVVwbXh4OVRYUC1fQlZfakJEVHhheEhuanBCcG5HWnhrQ0pGZDVXbzV3UDBHOUh5ZmpzZURNMkxtaGF1R1BjeW1iVU5SUlJSNUJqV2VtLUhSbG5CVTl6eHIyS0IzeS1QN1NEbjkxOVg0U3NCWmFaeEFsbWExZA?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T06:58:23.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Intervencion_EA4",
+      "categories": [
+        "Intervencion_EA4",
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -3406,19 +4534,27 @@
       "z": null
     },
     {
-      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
-      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
-      "source": "BIS",
-      "source_id": "bis-speeches",
+      "id": "d6e8855ce76792fcc4ecf698474e3a814ec9ad74187700d1f91f85b5d9705d97",
+      "sha256": "d6e8855ce76792fcc4ecf698474e3a814ec9ad74187700d1f91f85b5d9705d97",
+      "title": "RIF grant to help build replacement Tinopai Wharf",
+      "url": "https://www.beehive.govt.nz/release/rif-grant-help-build-replacement-tinopai-wharf",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
       "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
+      "published_at": "2026-11-02T04:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
       "categories": [
-        "BC"
+        "Fiscal"
       ],
       "legacy_category": "otro",
       "impact": 2,
@@ -3429,19 +4565,27 @@
       "z": null
     },
     {
-      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "title": "Statement - base rate of the National Bank of Kazakhstan",
-      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-      "source": "BIS",
-      "source_id": "bis-speeches",
+      "id": "2af1de3c79e572b71ef5f40693c3c0c4a8d6e0098a25e796f0aa966ee568825d",
+      "sha256": "2af1de3c79e572b71ef5f40693c3c0c4a8d6e0098a25e796f0aa966ee568825d",
+      "title": "Government support for Turner Centre upgrade",
+      "url": "https://www.beehive.govt.nz/release/government-support-turner-centre-upgrade",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
       "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
+      "published_at": "2026-11-02T00:46:41.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
       "categories": [
-        "BC"
+        "Fiscal"
       ],
       "legacy_category": "otro",
       "impact": 2,
@@ -3588,6 +4732,144 @@
       "z": null
     },
     {
+      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
+      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "title": "Statement - base rate of the National Bank of Kazakhstan",
+      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0ca547456918d41ab34be6ab6c1b33abb4edfdd286f8b5bdcbd3600913b37e12",
+      "sha256": "0ca547456918d41ab34be6ab6c1b33abb4edfdd286f8b5bdcbd3600913b37e12",
+      "title": "Year 11 Agriculture and Horticultural Science subject announced",
+      "url": "https://www.beehive.govt.nz/release/year-11-agriculture-and-horticultural-science-subject-announced",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T23:01:16.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "51883a57f24ed84cd3fd0d5763c69916c9e1302f06fe31d77188bf7d7fbde2f7",
+      "sha256": "51883a57f24ed84cd3fd0d5763c69916c9e1302f06fe31d77188bf7d7fbde2f7",
+      "title": "Rockpool pillagers face infringements soon",
+      "url": "https://www.beehive.govt.nz/release/rockpool-pillagers-face-infringements-soon",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T21:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3fe724adad970b163ea761c4629e7e41ee71fad6abf9a1b4fbf57602de448a2c",
+      "sha256": "3fe724adad970b163ea761c4629e7e41ee71fad6abf9a1b4fbf57602de448a2c",
+      "title": "Green light for Rotorua business park intersection",
+      "url": "https://www.beehive.govt.nz/release/green-light-rotorua-business-park-intersection",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T19:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "29695c4c0cabadbff13e84e72865924ede8b46b5754f03b6b5f59b72ce5f7d1e",
       "sha256": "29695c4c0cabadbff13e84e72865924ede8b46b5754f03b6b5f59b72ce5f7d1e",
       "title": "Trump faces the voters",
@@ -3692,6 +4974,33 @@
       "z": null
     },
     {
+      "id": "feba5d7da1707bfd50d81a772de5199e154e5e87757db9b2a291b319186a1c1f",
+      "sha256": "feba5d7da1707bfd50d81a772de5199e154e5e87757db9b2a291b319186a1c1f",
+      "title": "Updated EU rules on social security coordination enter into force - Employment, Social Affairs and Inclusion",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYThjbnNzTE5XZkFrQktxekVfMGNNYzlJcGJpSWdVYlpSUWt1UUlrT3hSVkhGUWVyNVdRMU5VX2g2b0xzX1J0Uk1mLW9oQTFVWS0tM2JVRllrbmVpeXdFMDBmYThDSW1MTEp6Y0JMSjh5YWpLOWJKYVZTT3dlR2Z1YmNNY3UtdEdkWFJDbnN2ZGg5UTZJclk2U1NsdXhOSFg4WUx6Z2RSZVNWZVk0dXNFRFFNMW9yMTh6Yzk3eFpWQ2Y?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T07:10:09.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "a295bb14dd8d6589d6af990a1110b199c66a853142aa8fe61362932cb1bf4b2b",
       "sha256": "a295bb14dd8d6589d6af990a1110b199c66a853142aa8fe61362932cb1bf4b2b",
       "title": "No amount of money can make a war zone safe for seafarers",
@@ -3739,6 +5048,38 @@
       ],
       "legacy_category": "otro",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8a42329a31ff4b7d09c6eac6fec9ebbe3ce3eda6992ae2446fc7fd00852dd6f6",
+      "sha256": "8a42329a31ff4b7d09c6eac6fec9ebbe3ce3eda6992ae2446fc7fd00852dd6f6",
+      "title": "RIF grant to support energy resilience in Far North",
+      "url": "https://www.beehive.govt.nz/release/rif-grant-support-energy-resilience-far-north",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T01:23:26.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -3748,6 +5089,635 @@
   ],
   "news": [
     {
+      "id": "763b13fc719d7bc34037c6f7fc506115fcd83617588618d3c7c8697217efef52",
+      "sha256": "763b13fc719d7bc34037c6f7fc506115fcd83617588618d3c7c8697217efef52",
+      "title": "Unemployment rate at 5.7 percent in the September 2026 quarter",
+      "url": "https://www.stats.govt.nz/news/unemployment-rate-at-5-7-percent-in-the-september-2026-quarter/",
+      "source": "Stats NZ",
+      "source_id": "stats-nz",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T10:45:00.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2e8ae95b29919641d47f396c74e79db0b40af239b630588bcb32d19c961267b3",
+      "sha256": "2e8ae95b29919641d47f396c74e79db0b40af239b630588bcb32d19c961267b3",
+      "title": "Canada's PM Carney: US requests fewer concessions and proposes more, but deal not reached yet",
+      "url": "https://t.me/FinancialJuice/144608",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:06:23.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "851e6f6ec017fdf3a56587fc216fa6dc0250774f73210745c5251f9ef8114883",
+      "sha256": "851e6f6ec017fdf3a56587fc216fa6dc0250774f73210745c5251f9ef8114883",
+      "title": "Canada's PM Carney: some of our limits in US trade talks have been eliminated",
+      "url": "https://t.me/FinancialJuice/144607",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:06:14.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
+      "sha256": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
+      "title": "Americans vote in election that doubles as referendum on Trump’s presidency",
+      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T22:05:19.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4e225fa2fbb89961b640e4e405b0480310de77b06065109a2c462994fd34a457",
+      "sha256": "4e225fa2fbb89961b640e4e405b0480310de77b06065109a2c462994fd34a457",
+      "title": "Canada’s PM Carney: some red lines remain to be addressed",
+      "url": "https://t.me/FinancialJuice/144606",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:04:40.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ed793ccc75c443987d91037d4460c28303bbb406ff1ac6bf6a838e006e81c98c",
+      "sha256": "ed793ccc75c443987d91037d4460c28303bbb406ff1ac6bf6a838e006e81c98c",
+      "title": "Canada's PM Carney: progress made but US trade talks not yet complete",
+      "url": "https://t.me/FinancialJuice/144605",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:04:22.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7bd0ce91a380309deaeadd8cfd3641cca6f5724fbf51c42ed57893a0f66ed72b",
+      "sha256": "7bd0ce91a380309deaeadd8cfd3641cca6f5724fbf51c42ed57893a0f66ed72b",
+      "title": "Canada Prime Minister Carney: talks with US to become more intensive",
+      "url": "https://t.me/FinancialJuice/144604",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:04:10.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cdbaa8e5e3a8768b4f199e95c7707ef73483a125696cc9005873494bcaf75620",
+      "sha256": "cdbaa8e5e3a8768b4f199e95c7707ef73483a125696cc9005873494bcaf75620",
+      "title": "AIG MANUFACTURING INDEX ACTUAL -20.1 (FORECAST -, PREVIOUS -16.6) $MACRO",
+      "url": "https://t.me/FinancialJuice/144602",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:00:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-20.1",
+      "forecast": null,
+      "previous": "-16.6",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b97589088e8c25d61fd4792187732c91a76e45489338e9e0f70b912f59c86907",
+      "sha256": "b97589088e8c25d61fd4792187732c91a76e45489338e9e0f70b912f59c86907",
+      "title": "AIG CONSTRUCTION INDEX ACTUAL -26.9 (FORECAST -, PREVIOUS -6.9) $MACRO",
+      "url": "https://t.me/FinancialJuice/144603",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:00:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-26.9",
+      "forecast": null,
+      "previous": "-6.9",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c73fa8f8c8ce481c08614fe3e02902a46b937726314beceb7ff70cecd9eddbd6",
+      "sha256": "c73fa8f8c8ce481c08614fe3e02902a46b937726314beceb7ff70cecd9eddbd6",
+      "title": "AUSTRALIAN SERVICES PMI FINAL ACTUAL 48.5 (FORECAST -, PREVIOUS 47.8) $MACRO",
+      "url": "https://t.me/FinancialJuice/144600",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:00:35.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 4,
+      "actual": "48.5",
+      "forecast": null,
+      "previous": "47.8",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3e3a5f3c486e5e27f7da968b524335d355af56b3e937c42536a55dd6d9c2e113",
+      "sha256": "3e3a5f3c486e5e27f7da968b524335d355af56b3e937c42536a55dd6d9c2e113",
+      "title": "AUSTRALIAN COMPOSITE PMI FINAL ACTUAL 48.2 (FORECAST -, PREVIOUS 47.7) $MACRO",
+      "url": "https://t.me/FinancialJuice/144601",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T22:00:35.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 4,
+      "actual": "48.2",
+      "forecast": null,
+      "previous": "47.7",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "12f347ee9186e79ec09bb9f8d13a69f07a3f5d57277a6fa732cea3664914b753",
+      "sha256": "12f347ee9186e79ec09bb9f8d13a69f07a3f5d57277a6fa732cea3664914b753",
+      "title": "US API CUSHING STOCK CHANGE ACTUAL 0.511M (FORECAST -, PREVIOUS -0.453M) $MACRO",
+      "url": "https://t.me/FinancialJuice/144599",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:56:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "0.511",
+      "forecast": null,
+      "previous": "-0.453",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "50449e5e01e812fbe254410ea9bb87333b0c39fe912e50d54096403870759f20",
+      "sha256": "50449e5e01e812fbe254410ea9bb87333b0c39fe912e50d54096403870759f20",
+      "title": "US API DISTILLATE STOCK CHANGE ACTUAL -1.192M (FORECAST -, PREVIOUS 0.38M) $MACRO",
+      "url": "https://t.me/FinancialJuice/144598",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:55:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-1.192",
+      "forecast": null,
+      "previous": "0.38",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cee56a1c64eeff1d507c04823fe9a259a62afd575ac1e2d52b2df2cc45666684",
+      "sha256": "cee56a1c64eeff1d507c04823fe9a259a62afd575ac1e2d52b2df2cc45666684",
+      "title": "Investinglive americas market news wrap job openings jump as the us votes",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:55:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "db46b8cd245cb9e1ce19a719d615f285498710ab184e2ed652df34f3647051ee",
+      "sha256": "db46b8cd245cb9e1ce19a719d615f285498710ab184e2ed652df34f3647051ee",
+      "title": "Nz q3 unemployment rate 5.7 expected 5.5 prior 5.6",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:55:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": "5.5",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3e2cac6a5f7de8a80a8a39336deefdc9d6a788ef4d3b46068242c8bd3a5a1936",
+      "sha256": "3e2cac6a5f7de8a80a8a39336deefdc9d6a788ef4d3b46068242c8bd3a5a1936",
+      "title": "US API GASOLINE STOCK CHANGE ACTUAL 1.427M (FORECAST -, PREVIOUS 2.39M) $MACRO",
+      "url": "https://t.me/FinancialJuice/144597",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:55:10.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "1.427",
+      "forecast": null,
+      "previous": "2.39",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1f51c3b3cd0e060b7b686c0b3c3073ab5967f7f34a2751fd02c77c91dba20d86",
+      "sha256": "1f51c3b3cd0e060b7b686c0b3c3073ab5967f7f34a2751fd02c77c91dba20d86",
+      "title": "US API CRUDE STOCK CHANGE ACTUAL -5.267M (FORECAST 2.1M, PREVIOUS -2.031M) $MACRO",
+      "url": "https://t.me/FinancialJuice/144596",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:54:26.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-5.267",
+      "forecast": "2.1",
+      "previous": "-2.031",
+      "calendar_title": null,
+      "z": -49.1
+    },
+    {
+      "id": "98490e9e5aff2089630c298f8a6d6c2e9f349f031e1d14e01be9daa2a1410e1a",
+      "sha256": "98490e9e5aff2089630c298f8a6d6c2e9f349f031e1d14e01be9daa2a1410e1a",
+      "title": "Nasdaq rebounds as chip stocks rally and dow slips",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:50:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d07e9864dd30e7792af0eb6ad51583a71ccc7d7864c0ed98cdb12d4a690bb5c4",
+      "sha256": "d07e9864dd30e7792af0eb6ad51583a71ccc7d7864c0ed98cdb12d4a690bb5c4",
+      "title": "NEW ZEALAND PARTICIPATION RATE ACTUAL 70.4% (FORECAST 70.7%, PREVIOUS 70.7%) $MACRO",
+      "url": "https://t.me/FinancialJuice/144595",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:45:38.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "70.4%",
+      "forecast": "70.7%",
+      "previous": "70.7%",
+      "calendar_title": null,
+      "z": -0.1
+    },
+    {
+      "id": "295904e187b52662fee1a2bc6617f208b08e424cc797fc8cdb7aa7c7532bc85e",
+      "sha256": "295904e187b52662fee1a2bc6617f208b08e424cc797fc8cdb7aa7c7532bc85e",
+      "title": "NEW ZEALAND JOB GROWTH QOQ ACTUAL -0.1% (FORECAST 0.4%, PREVIOUS 0.5%) $MACRO",
+      "url": "https://t.me/FinancialJuice/144594",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:45:30.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "-0.1%",
+      "forecast": "0.4%",
+      "previous": "0.5%",
+      "calendar_title": null,
+      "z": -3.3
+    },
+    {
+      "id": "7e31d37eb6ed65cc6ac231a4ef00d7e8c8bd76ca1d18ca63969626f8675638ab",
+      "sha256": "7e31d37eb6ed65cc6ac231a4ef00d7e8c8bd76ca1d18ca63969626f8675638ab",
+      "title": "Economic and event calendar in asia wednesday november 4.2026 nz jobs report china pmi",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:45:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
+      "sha256": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
+      "title": "Amd shares rise after hours as q4 revenue outlook of 17bn tops forecasts on ai ramp",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:45:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "756f380006b39ca5e88a27bd11d50508be1d9332c0364a572f7c0284f3044b4a",
+      "sha256": "756f380006b39ca5e88a27bd11d50508be1d9332c0364a572f7c0284f3044b4a",
+      "title": "❗ NEW ZEALAND UNEMPLOYMENT RATE ACTUAL 5.7% (FORECAST 5.5%, PREVIOUS 5.6%) $MACRO",
+      "url": "https://t.me/FinancialJuice/144593",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T21:45:26.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "impact": 4,
+      "actual": "5.7%",
+      "forecast": "5.5%",
+      "previous": "5.6%",
+      "calendar_title": "Employment Change q/q",
+      "z": -0.9
+    },
+    {
+      "id": "afd5bfcb0ffe4d8e9ca953d3923e0f9905e9edcaaf586096bb56d3fe8eccd1e4",
+      "sha256": "afd5bfcb0ffe4d8e9ca953d3923e0f9905e9edcaaf586096bb56d3fe8eccd1e4",
+      "title": "Super micro shares rise after hours as revenue nears 20bn and q2 guidance tops forecasts",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:35:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "af3f20d19fde18b62d08dd431c6f8e29a20ebca7e55ac5aed369e2b25743e845",
+      "sha256": "af3f20d19fde18b62d08dd431c6f8e29a20ebca7e55ac5aed369e2b25743e845",
+      "title": "Two reasons why the us could attack iran as soon as tomorrow",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:30:28.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e2ba875cb959ecf3a333bc8a27b5708892a49b639728646233369020cee3ece2",
       "sha256": "e2ba875cb959ecf3a333bc8a27b5708892a49b639728646233369020cee3ece2",
       "title": "Booking holdings shares slide as q3 revenue misses despite earnings and bookings beat",
@@ -3756,6 +5726,29 @@
       "source_id": "investinglive",
       "source_type": "agencia",
       "published_at": "2026-11-03T21:25:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "74dd9f6e0ee84f1de86596aa85b2258a776373ab5cd8c10765686fb48bdfd21e",
+      "sha256": "74dd9f6e0ee84f1de86596aa85b2258a776373ab5cd8c10765686fb48bdfd21e",
+      "title": "What Binance's historic heist means for crypto",
+      "url": "https://www.ft.com/content/567d7280-2bcb-4802-8caa-01853b3278dc?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:22:50.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -3931,29 +5924,6 @@
       "z": null
     },
     {
-      "id": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
-      "sha256": "2b575c362b09761b0120ed67ed762c02e3e0ac72797e992b16852c8518d0cc07",
-      "title": "Americans vote in election that doubles as referendum on Trump’s presidency",
-      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-03T21:09:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "5a819282ba80c4a445e2feb9c117b7d79ae48300e639e427f4fa3f2aaaf3ebdc",
       "sha256": "5a819282ba80c4a445e2feb9c117b7d79ae48300e639e427f4fa3f2aaaf3ebdc",
       "title": "❗ MOC IMBALANCE S&P 500: -880.2 MLN NASDAQ 100: -1404.2 MLN DOW 30: -49.5 MLN MAG 7: -14.3 MLN $MACRO",
@@ -3970,6 +5940,35 @@
       ],
       "legacy_category": "otro",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "249b5549ed30f478b7af6c483985d9a38e3535692ceafa946a62c9b190a834ce",
+      "sha256": "249b5549ed30f478b7af6c483985d9a38e3535692ceafa946a62c9b190a834ce",
+      "title": "Wairarapa grain storage set to benefit farmers",
+      "url": "https://www.beehive.govt.nz/release/wairarapa-grain-storage-set-benefit-farmers",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T20:50:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -4272,7 +6271,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-03T19:22:55.000Z",
+      "published_at": "2026-11-03T19:22:47.000Z",
       "currencies": [
         "CAD"
       ],
@@ -5220,6 +7219,33 @@
       "z": null
     },
     {
+      "id": "6a449228b8ed87b3825a181b3a747cdb2dbb69b9073bc57c92150a65e1e7ce37",
+      "sha256": "6a449228b8ed87b3825a181b3a747cdb2dbb69b9073bc57c92150a65e1e7ce37",
+      "title": "2028 Geographic Revision Notice - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE04M3Vob0VWRVZLbmpqU0s5TjNtcmNXZHN2WTJoR29NWU44Z2t5WWZfaFlTSW9PQ1h2akUtc2RzY0J0S241X0stdzVjR0o4U2VsVlNmSkxHZUJEbXM2aThMX182enRjM1U4R1ZDdXNQcW9NRWFsN2c?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T16:33:26.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "0272322632817879cad8a2a63caa5c6861cf06bb20ce81c1a2f1295f3346b969",
       "sha256": "0272322632817879cad8a2a63caa5c6861cf06bb20ce81c1a2f1295f3346b969",
       "title": "ÚLTIMA HORA | Escándalo electoral: Pedro Sánchez accede a datos privilegiados del voto por correo",
@@ -5286,6 +7312,33 @@
       ],
       "legacy_category": "geopolitica",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "049d5f692303581c57c1d7e064bf21167312890b3b7bd4fc20ac75d61d0fbd6e",
+      "sha256": "049d5f692303581c57c1d7e064bf21167312890b3b7bd4fc20ac75d61d0fbd6e",
+      "title": "Employment up in 6 large metropolitan areas, down in 1, over year ended September 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPMnpMQVEwQTBORWtBWmZvMFdRZlUxWFVUbTZISFdaU3RXZDJSUVpXT1lEM25CTG5uOTJNQmRkUkxpYnZUdXJTeDE4QTdabjlEaFdqY3JRd0RDcWVVQVlqX3RBNWRPRjFaN0NSQjZibjNqNnBBbGJ1RmVqVVBCVkl0OE1TdUFZX2lBQXpHUGlfWkRxVDlmb3ZmTGhYMmQtTU5ja193VWQtWl81eFFReWMwSXZfZHRNVFN3NzdXblFEaw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T16:10:37.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -5362,6 +7415,29 @@
       "z": null
     },
     {
+      "id": "d0f598cd3a360e0f969b6c86596e68c7fe357dd644a607043176772d1ebddc51",
+      "sha256": "d0f598cd3a360e0f969b6c86596e68c7fe357dd644a607043176772d1ebddc51",
+      "title": "Us september factory orders 1.8 vs 1.2 expected",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T15:15:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 1,
+      "actual": "1.8",
+      "forecast": "1.2",
+      "previous": null,
+      "calendar_title": "Factory Orders m/m",
+      "z": 4
+    },
+    {
       "id": "d9c2f1923c9012d4b5fa2b0bed849fb5157ad4b3b8c4e71966b2c5923c4466dd",
       "sha256": "d9c2f1923c9012d4b5fa2b0bed849fb5157ad4b3b8c4e71966b2c5923c4466dd",
       "title": "Jolts job openings 7.523m vs 7.100m estimate",
@@ -5387,29 +7463,6 @@
       "previous": null,
       "calendar_title": "JOLTS Job Openings",
       "z": null
-    },
-    {
-      "id": "d0f598cd3a360e0f969b6c86596e68c7fe357dd644a607043176772d1ebddc51",
-      "sha256": "d0f598cd3a360e0f969b6c86596e68c7fe357dd644a607043176772d1ebddc51",
-      "title": "Us september factory orders 1.8 vs 1.2 expected",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-03T15:15:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "impact": 1,
-      "actual": "1.8",
-      "forecast": "1.2",
-      "previous": null,
-      "calendar_title": "Factory Orders m/m",
-      "z": 4
     },
     {
       "id": "e31480fafe900cce09c2a52624158f7f32bd9f70e44a26eddb30f3085203f371",
@@ -5592,6 +7645,36 @@
         "Fiscal"
       ],
       "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f6c49e88b789456f8313dc65e9b96d2061397ed22055cfc5ff391bffba9cff56",
+      "sha256": "f6c49e88b789456f8313dc65e9b96d2061397ed22055cfc5ff391bffba9cff56",
+      "title": "Reserve Bank interest rate decision - Treasury.gov.au",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbkJPNENZLTBlR0pIcy1VLTFKRnVmSFdObGNqZ2lTRDFkcXp3SzJUZmpEY21SQUFvXzgzTWVvSlpNbVZLTlUwRk4yRHZJU0dBd3BfN296bTRUY2s5UUQ4U3MyYUVkUThsb091Zkx0V3pqcjRpT0p4a0FrbnJERXczUzBjU0JqTkhodm5ZNnZKUEJSZTB6MHJ2dlZsM2tMM0RoRTRvbWF6SHJlVTJrTHRFRjNjWnY?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T12:46:56.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Fiscal"
+      ],
+      "legacy_category": "banco_central",
       "impact": 3,
       "actual": null,
       "forecast": null,
@@ -6256,6 +8339,95 @@
       "z": null
     },
     {
+      "id": "bf09e045a419219a9474ea71f1119ee78eec9ddf26d40960847a645e85cb6bc9",
+      "sha256": "bf09e045a419219a9474ea71f1119ee78eec9ddf26d40960847a645e85cb6bc9",
+      "title": "Interview with Patricia Karvelas, Afternoon Briefing, ABC - Treasury.gov.au",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSzJzNjAzdm5YUVFMX3dzUV80cTFIWXA3NmducUk4Y0Y2ZkdaYnpZVXNyUU9FSGxnWUVFQWdpSnp6bzZhRVpSWUFCMHN2a0xMcHBlTGx6QWktZXpYOGhEaWhUbWtKZUYtM20xVFhOcGotX3FLV28zbDdBNDVYRUhHZmhWQXdRT1JWR2tlVC1QeS01eVFvdDJndGVPdVpZVkVQak5fRFhyTDFGRmZmQ2dyZkVnUHhEOHM5ckRVZjIxeUV3Xzd4WHc?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T03:27:20.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4a891653b0cd02d5740373e1015ceeb59d361cfa723d8796cd06c594ef984547",
+      "sha256": "4a891653b0cd02d5740373e1015ceeb59d361cfa723d8796cd06c594ef984547",
+      "title": "Interview with Stephen Cenatiempo, Canberra Breakfast, 2CC Radio - Treasury.gov.au",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRlR3Z1BBTDBsLThpdVR4aTA1NjVpcmpxNm1UaG1wNS1XUm9ya0d4ZHQ4am12V1ducm9DR3pEbkFlRFNCQUdiSmtRRWJYWjB2Y0VUaHA3ZTZUM0pHcjBNWXBTM2dpUGNwckgyQVcwa3RkNnZpbDQyZHJOWkI1R09nMEdHWUZGWE5kRjdMemk4VFFybV9vUlFmZkFqc1h3TnBSUlpLeW5nN0pFb2laYkN3NFIydlpib0VzS0p3RjRKRUtaUjlLSm9fUkRqWVdUUQ?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T03:27:20.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7907ada54a5d88967a80f8b42c9838a8fd05fbb19668b3e05649321ba958c75e",
+      "sha256": "7907ada54a5d88967a80f8b42c9838a8fd05fbb19668b3e05649321ba958c75e",
+      "title": "Regional radio strengthened for emergencies",
+      "url": "https://www.beehive.govt.nz/release/regional-radio-strengthened-emergencies",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T02:30:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "da7c1fd159e1593727d9ba5f50f7f1685d49a3a4d649cde6927634ace8dd6f38",
       "sha256": "da7c1fd159e1593727d9ba5f50f7f1685d49a3a4d649cde6927634ace8dd6f38",
       "title": "Japan’s interest rates are rising. Will young people lose out?",
@@ -6539,6 +8711,37 @@
       "z": null
     },
     {
+      "id": "5e78a2f38af63f9fa8688813046bf8696bad8cbc169124f86dfaa15fff162d69",
+      "sha256": "5e78a2f38af63f9fa8688813046bf8696bad8cbc169124f86dfaa15fff162d69",
+      "title": "Government backs regional airline Air Napier",
+      "url": "https://www.beehive.govt.nz/release/government-backs-regional-airline-air-napier",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T21:30:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 4,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "56843422684fb1e70a9605999c389a70017091cb254a15c78674f3714ef890a8",
       "sha256": "56843422684fb1e70a9605999c389a70017091cb254a15c78674f3714ef890a8",
       "title": "Oil tumbles on hopes for US-Iran talks",
@@ -6555,6 +8758,65 @@
       ],
       "legacy_category": "geopolitica",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "31ae1943cd4e1cbbb9f102641d3acc55923bc549c96273290e8c369f4ac8c033",
+      "sha256": "31ae1943cd4e1cbbb9f102641d3acc55923bc549c96273290e8c369f4ac8c033",
+      "title": "Govt nurturing New Zealand’s seed supply chain",
+      "url": "https://www.beehive.govt.nz/release/govt-nurturing-new-zealands-seed-supply-chain",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T21:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fa693d64e571369d15109414197bab6cf835dc032cd21705d55606aa6876c641",
+      "sha256": "fa693d64e571369d15109414197bab6cf835dc032cd21705d55606aa6876c641",
+      "title": "Government backing Whale Trail tourism venture",
+      "url": "https://www.beehive.govt.nz/release/government-backing-whale-trail-tourism-venture",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T20:39:10.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -6601,6 +8863,96 @@
       ],
       "legacy_category": "otro",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fed0129c3692cafee48acbd3deb1d1bf8499182b338828b54e9228d4aa36173a",
+      "sha256": "fed0129c3692cafee48acbd3deb1d1bf8499182b338828b54e9228d4aa36173a",
+      "title": "Government support for aged care facility",
+      "url": "https://www.beehive.govt.nz/release/government-support-aged-care-facility",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T20:30:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c9ef0c8ee9c179e95dc6eee73381dcc95562cb7b4afef08b83321725ff1c7902",
+      "sha256": "c9ef0c8ee9c179e95dc6eee73381dcc95562cb7b4afef08b83321725ff1c7902",
+      "title": "Economy Statement for the Treasury Borrowing Advisory Committee - U.S. Department of the Treasury (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QT0E3RXlzSkUzOHNxMEFDS0lScEpmUUtzQlVRTlRfRThxV1lIMnB4azljMUhKRVJSM09WY2tKZXhnMmpWRkdtOFY3eFI3LXpvbmFRcGRkSVZTQVBTeW10MnVR?oc=5",
+      "source": "US Treasury",
+      "source_id": "us-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T20:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a3a999b8c82ae898022eb279cf92ed40639b1a9518ab20c00d437283f6a591ce",
+      "sha256": "a3a999b8c82ae898022eb279cf92ed40639b1a9518ab20c00d437283f6a591ce",
+      "title": "Government backing iwi-led geothermal potential",
+      "url": "https://www.beehive.govt.nz/release/government-backing-iwi-led-geothermal-potential",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T19:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -6676,6 +9028,33 @@
       ],
       "legacy_category": "geopolitica",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "84c121f7b2985961e3f582f67d39466f5c9d691870e8f60485bd7d26d00ea5a5",
+      "sha256": "84c121f7b2985961e3f582f67d39466f5c9d691870e8f60485bd7d26d00ea5a5",
+      "title": "Three-fourths of long-tenured workers displaced from jobs in health care and social assistance reemployed in January 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQaHJ4UXNtNDZKc29MRktnaFluRlRQLVlPcEJERVUtWGFIcjJnNzN6eFE3VUpIMk1xMElRaC10Z1ktZjhDQXVHakEwVnQyamxUcGpybFNNdFpTSzdmeEp6YnNmQWpQZXRmM3FjMUpEZDd4ODZwSnFrR0FwNFhxYjdYZnFqY0sxbFNtdjFnYmZFZW1Vek9Xbkl6RjlWYnlyWVJIWlhvV0t2R1I0XzhZV2pIMURjYXo0M3VOdFZnc2ZkcUsxNjFuMGJTeFlGWmNpRk9YODRCZlFzdkpvTXlvNkdyMU5xa2lOaWRKV2U0REkxWUE?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T16:04:56.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -6856,6 +9235,35 @@
       "z": null
     },
     {
+      "id": "6fc127c5856c44cb35928cb16dacdabd8daf63cbb185c3bf84555c50c582d268",
+      "sha256": "6fc127c5856c44cb35928cb16dacdabd8daf63cbb185c3bf84555c50c582d268",
+      "title": "Avoidable mortality in England and Wales: 2025 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE81bkpUMjY1NWhrVVpiVVVkelRzeFZBVDUxUWVmb21uRnM3TkMwdDZENVRvc2FIZUd5U3FYdlgxNlN0Q3NEdnNfQy1LdEhpYmFJd0JZWnpVb0h2T284QzdEcnMxN28yYmFuNWdmVWMwTHQ0SjhsQV9HNXQ2SQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T09:30:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "cd7e3fc74e2dca68faec7377ac1a71424a22dce8a6d1cda159c207043adb4bbd",
       "sha256": "cd7e3fc74e2dca68faec7377ac1a71424a22dce8a6d1cda159c207043adb4bbd",
       "title": "Informe de mercado: Tu resumen diario Se avecina una semana intensa 🗳️ . Las elecciones de mitad de mandato de EE. UU. son el martes, se prevé que el Banco de Inglaterra suba los tipos el jueves y Apple presenta hoy sus resultados. Los mercados aún acusan el desplome tecnológico",
@@ -6883,6 +9291,64 @@
       ],
       "legacy_category": "banco_central",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ba59b94464077af40b59700c997b6efd8639abaac83aab13bb96574689690264",
+      "sha256": "ba59b94464077af40b59700c997b6efd8639abaac83aab13bb96574689690264",
+      "title": "Treasury Discount Bills to Be Auctioned on November 9, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPOVNTVnVwMnFKODkwOE9nZ2p6RFJtcy1ESi1wWFRoQzh0YWE1cDJJeWZLdzRjQ3dEQ0k4akZzRjM2bTNtbWlteTVwVHU3YTRIeTZaNW5tWnNiaThHbXBDVVRqeTBfRGNtbmE1QXR6VVNHeVFpLUs0TGhEMjhyc2N3aVFTckRBWXMzSjRTV1k4YnhiOFhKVk1aSlFR?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T08:21:56.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Intervencion_EA4",
+      "categories": [
+        "Intervencion_EA4",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1cbd8e2a39b5fffc30881b3fbadf04e627cd6353f715f52867701854557f47cc",
+      "sha256": "1cbd8e2a39b5fffc30881b3fbadf04e627cd6353f715f52867701854557f47cc",
+      "title": "Auction Result of 5-year Climate Transition JGBs on November 2, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSTZtbWxXdVNySk8xcUZGMVVwbXh4OVRYUC1fQlZfakJEVHhheEhuanBCcG5HWnhrQ0pGZDVXbzV3UDBHOUh5ZmpzZURNMkxtaGF1R1BjeW1iVU5SUlJSNUJqV2VtLUhSbG5CVTl6eHIyS0IzeS1QN1NEbjkxOVg0U3NCWmFaeEFsbWExZA?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T06:58:23.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Intervencion_EA4",
+      "categories": [
+        "Intervencion_EA4",
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7027,19 +9493,27 @@
       "z": null
     },
     {
-      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
-      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
-      "source": "BIS",
-      "source_id": "bis-speeches",
+      "id": "d6e8855ce76792fcc4ecf698474e3a814ec9ad74187700d1f91f85b5d9705d97",
+      "sha256": "d6e8855ce76792fcc4ecf698474e3a814ec9ad74187700d1f91f85b5d9705d97",
+      "title": "RIF grant to help build replacement Tinopai Wharf",
+      "url": "https://www.beehive.govt.nz/release/rif-grant-help-build-replacement-tinopai-wharf",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
       "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
+      "published_at": "2026-11-02T04:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
       "categories": [
-        "BC"
+        "Fiscal"
       ],
       "legacy_category": "otro",
       "impact": 2,
@@ -7050,19 +9524,27 @@
       "z": null
     },
     {
-      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "title": "Statement - base rate of the National Bank of Kazakhstan",
-      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-      "source": "BIS",
-      "source_id": "bis-speeches",
+      "id": "2af1de3c79e572b71ef5f40693c3c0c4a8d6e0098a25e796f0aa966ee568825d",
+      "sha256": "2af1de3c79e572b71ef5f40693c3c0c4a8d6e0098a25e796f0aa966ee568825d",
+      "title": "Government support for Turner Centre upgrade",
+      "url": "https://www.beehive.govt.nz/release/government-support-turner-centre-upgrade",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
       "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
+      "published_at": "2026-11-02T00:46:41.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
       "categories": [
-        "BC"
+        "Fiscal"
       ],
       "legacy_category": "otro",
       "impact": 2,
@@ -7209,6 +9691,144 @@
       "z": null
     },
     {
+      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
+      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "title": "Statement - base rate of the National Bank of Kazakhstan",
+      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0ca547456918d41ab34be6ab6c1b33abb4edfdd286f8b5bdcbd3600913b37e12",
+      "sha256": "0ca547456918d41ab34be6ab6c1b33abb4edfdd286f8b5bdcbd3600913b37e12",
+      "title": "Year 11 Agriculture and Horticultural Science subject announced",
+      "url": "https://www.beehive.govt.nz/release/year-11-agriculture-and-horticultural-science-subject-announced",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T23:01:16.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "51883a57f24ed84cd3fd0d5763c69916c9e1302f06fe31d77188bf7d7fbde2f7",
+      "sha256": "51883a57f24ed84cd3fd0d5763c69916c9e1302f06fe31d77188bf7d7fbde2f7",
+      "title": "Rockpool pillagers face infringements soon",
+      "url": "https://www.beehive.govt.nz/release/rockpool-pillagers-face-infringements-soon",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T21:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3fe724adad970b163ea761c4629e7e41ee71fad6abf9a1b4fbf57602de448a2c",
+      "sha256": "3fe724adad970b163ea761c4629e7e41ee71fad6abf9a1b4fbf57602de448a2c",
+      "title": "Green light for Rotorua business park intersection",
+      "url": "https://www.beehive.govt.nz/release/green-light-rotorua-business-park-intersection",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T19:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "29695c4c0cabadbff13e84e72865924ede8b46b5754f03b6b5f59b72ce5f7d1e",
       "sha256": "29695c4c0cabadbff13e84e72865924ede8b46b5754f03b6b5f59b72ce5f7d1e",
       "title": "Trump faces the voters",
@@ -7313,6 +9933,33 @@
       "z": null
     },
     {
+      "id": "feba5d7da1707bfd50d81a772de5199e154e5e87757db9b2a291b319186a1c1f",
+      "sha256": "feba5d7da1707bfd50d81a772de5199e154e5e87757db9b2a291b319186a1c1f",
+      "title": "Updated EU rules on social security coordination enter into force - Employment, Social Affairs and Inclusion",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYThjbnNzTE5XZkFrQktxekVfMGNNYzlJcGJpSWdVYlpSUWt1UUlrT3hSVkhGUWVyNVdRMU5VX2g2b0xzX1J0Uk1mLW9oQTFVWS0tM2JVRllrbmVpeXdFMDBmYThDSW1MTEp6Y0JMSjh5YWpLOWJKYVZTT3dlR2Z1YmNNY3UtdEdkWFJDbnN2ZGg5UTZJclk2U1NsdXhOSFg4WUx6Z2RSZVNWZVk0dXNFRFFNMW9yMTh6Yzk3eFpWQ2Y?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T07:10:09.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "a295bb14dd8d6589d6af990a1110b199c66a853142aa8fe61362932cb1bf4b2b",
       "sha256": "a295bb14dd8d6589d6af990a1110b199c66a853142aa8fe61362932cb1bf4b2b",
       "title": "No amount of money can make a war zone safe for seafarers",
@@ -7360,6 +10007,38 @@
       ],
       "legacy_category": "otro",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8a42329a31ff4b7d09c6eac6fec9ebbe3ce3eda6992ae2446fc7fd00852dd6f6",
+      "sha256": "8a42329a31ff4b7d09c6eac6fec9ebbe3ce3eda6992ae2446fc7fd00852dd6f6",
+      "title": "RIF grant to support energy resilience in Far North",
+      "url": "https://www.beehive.govt.nz/release/rif-grant-support-energy-resilience-far-north",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-01T01:23:26.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,

@@ -43,8 +43,8 @@ async function readNetlifyBlobCache() {
   try {
     const { getStore } = await import('@netlify/blobs');
     const store = getStore('radar-news-g8-cache');
-    const cached = await store.get('live-bundle-v1', { type: 'json' });
-    if (cached && cached.updatedAt && cached.irisFeed && cached.fullState) {
+    const cached = await store.get('live-bundle-v2-31sources', { type: 'json' });
+    if (cached && cached.updatedAt && cached.irisFeed && cached.fullState && cached.fullState.sources?.length >= 31) {
       return cached;
     }
   } catch {
@@ -57,7 +57,7 @@ async function writeNetlifyBlobCache(bundle) {
   try {
     const { getStore } = await import('@netlify/blobs');
     const store = getStore('radar-news-g8-cache');
-    await store.setJSON('live-bundle-v1', bundle);
+    await store.setJSON('live-bundle-v2-31sources', bundle);
   } catch {
     // Ignore if Blobs store is unavailable in local dev
   }

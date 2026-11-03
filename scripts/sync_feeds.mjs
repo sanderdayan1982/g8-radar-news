@@ -47,7 +47,11 @@ if (Array.isArray(prevFull?.sources) && Array.isArray(fullState.sources)) {
 }
 
 const newItemsCount = irisFeed.items.filter((x) => !prevShaSet.has(x.sha256)).length;
-const shouldWrite = !prevFull || newItemsCount > 0 || (prevFull?.items?.length || 0) === 0;
+const shouldWrite = !prevFull
+  || newItemsCount > 0
+  || (prevFull?.items?.length || 0) === 0
+  || (prevFull?.sources?.length || 0) !== fullState.sources.length
+  || process.argv.includes('--force');
 
 if (shouldWrite) {
   writeFileSync(FULL_PATH, JSON.stringify(fullState, null, 2));

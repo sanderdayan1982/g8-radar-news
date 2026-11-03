@@ -150,11 +150,20 @@ function setSyncing(on) {
   renderLive();
 }
 
+function isSourceActiveWithinWindow(s, nowMs = Date.now()) {
+  if (!s || s.status !== 'ok') return false;
+  if (!s.last_news_published_at) return true;
+  const pubMs = Date.parse(s.last_news_published_at);
+  if (!Number.isFinite(pubMs)) return true;
+  const maxAgeDays = s.type === 'oficial' ? 45 : 7;
+  return (nowMs - pubMs) <= maxAgeDays * 86400_000;
+}
+
 function liveCoverage() {
-  const liveCalEvents = (ui.data?.calendar || []).filter((e) => e.impact !== 'Holiday' && (e.forecast || e.previous) && Date.parse(e.event_at) >= captureStart() && Date.parse(e.event_at) < Date.now());
-  const matched = liveCalEvents.filter((e) => e.actual && /\d/.test(String(e.actual))).length; // H3: a placeholder such as - is not a captured Act
-  const total = liveCalEvents.length;
-  return { total, matched, degraded: total >= 4 && matched / total < 0.5 };
+  const sources = ui.data?.sources || [];
+  const total = sources.length;
+  const matched = sources.filter((s) => isSourceActiveWithinWindow(s)).length;
+  return { total, matched, degraded: total > 0 && matched / total < 0.8 };
 }
 
 function renderStatus() {
@@ -961,7 +970,7 @@ function renderHealth() {
   const errCount = rows.filter((r) => r.status === 'error').length;
   const cal = ui.data.calendar_sync;
   const cov = liveCoverage();
-  const covText = cov.total ? ` · Cobertura agenda ${cov.matched}/${cov.total} Act` : '';
+  const covText = cov.total ? ` · Cobertura Act ${cov.matched}/${cov.total}` : '';
   const el = $('#health');
   el.className = `health ${errCount > 0 || emptyCount > 0 || !checked.length ? 'warn' : ''}`;
   el.innerHTML = `<span class="d"></span>${checked.length ? `${ok}/${rows.length} fuentes con titulares (${emptyCount} vacías, ${errCount} errores)` : 'Fuentes pendientes'} · Agenda ${cal ? `${cal.events} eventos` : 'no disponible'}${covText}`;

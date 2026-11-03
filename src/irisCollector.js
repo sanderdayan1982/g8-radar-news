@@ -113,22 +113,31 @@ export function classifyIrisItem(rawItem) {
   };
 }
 
-async function fetchFeedWithTimeout(url, timeoutMs = 4000) {
-  const res = await fetch(url, {
-    headers: {
-      'User-Agent': UA,
-      Accept: 'application/rss+xml, application/xml, text/html, */*',
-    },
-    signal: AbortSignal.timeout(timeoutMs),
-    redirect: 'follow',
-  });
-  const text = await res.text();
-  if (!res.ok) {
-    const err = new Error(`HTTP ${res.status}`);
-    err.httpStatus = res.status;
-    throw err;
+async function fetchFeedWithTimeout(url, timeoutMs = 4000, retries = 1) {
+  let lastErr;
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': UA,
+          Accept: 'application/rss+xml, application/xml, text/xml, application/atom+xml, text/html, */*',
+          'Accept-Language': 'en-US,en;q=0.9',
+        },
+        signal: AbortSignal.timeout(timeoutMs),
+        redirect: 'follow',
+      });
+      const text = await res.text();
+      if (!res.ok) {
+        const err = new Error(`HTTP ${res.status}`);
+        err.httpStatus = res.status;
+        throw err;
+      }
+      return { text, finalUrl: res.url, httpStatus: res.status };
+    } catch (err) {
+      lastErr = err;
+    }
   }
-  return { text, finalUrl: res.url, httpStatus: res.status };
+  throw lastErr;
 }
 
 function parseByKind(source, text) {
@@ -165,21 +174,34 @@ export async function pullSingleSourceFast(source, nowMs = Date.now(), timeoutMs
   };
 
   try {
-    let { text, finalUrl, httpStatus } = await fetchFeedWithTimeout(source.url, timeoutMs);
-    baseHealth.last_http_status = httpStatus;
-    let raw = parseByKind(source, text);
+    let raw = [];
+    let finalUrl = source.url;
+    try {
+      const primary = await fetchFeedWithTimeout(source.url, timeoutMs);
+      baseHealth.last_http_status = primary.httpStatus;
+      finalUrl = primary.finalUrl;
+      raw = parseByKind(source, primary.text);
+    } catch (primaryErr) {
+      if (!source.fallbackUrl) throw primaryErr;
+    }
 
-    if (raw.length === 0 && source.fallbackUrl) {
+    const latestPrimaryMs = raw.reduce((acc, r) => {
+      const ms = Date.parse(r.published_at || r.pubDate || '');
+      return Number.isFinite(ms) && ms > acc ? ms : acc;
+    }, 0);
+    const primaryStale = latestPrimaryMs > 0 && (nowMs - latestPrimaryMs > 45 * 86400_000);
+
+    if ((raw.length === 0 || primaryStale) && source.fallbackUrl) {
       try {
         const fb = await fetchFeedWithTimeout(source.fallbackUrl, timeoutMs);
-        const fbItems = parseByKind({ ...source, url: source.fallbackUrl }, fb.text);
+        const fbItems = parseByKind({ ...source, kind: 'rss', url: source.fallbackUrl }, fb.text);
         if (fbItems.length > 0) {
           raw = fbItems;
           finalUrl = fb.finalUrl;
           baseHealth.last_http_status = fb.httpStatus;
         }
       } catch {
-        // Ignore fallback failure
+        // Ignore fallback failure if primary had items
       }
     }
 
@@ -224,11 +246,11 @@ export async function pullSingleSourceFast(source, nowMs = Date.now(), timeoutMs
 
 /**
  * Deduplica estrictamente por `sha256(url || title)` y por título normalizado,
- * conservando una ventana limpia de 72h para noticias de alta frecuencia (y hasta 30d para bancos centrales oficiales en MMT).
+ * conservando una ventana limpia de 72h para noticias de alta frecuencia y hasta 45d para bancos centrales/tesoros oficiales.
  */
 export function deduplicateAndFilterWindow(items, existingItems = [], nowMs = Date.now(), windowHours = 72) {
   const windowCutoffMs = nowMs - windowHours * 3600_000;
-  const officialCutoffMs = nowMs - 30 * 86400_000;
+  const officialCutoffMs = nowMs - 45 * 86400_000;
   const bySha = new Map();
   const byNormTitle = new Map();
 
