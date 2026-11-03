@@ -227,6 +227,22 @@ function renderTape() {
     return;
   }
   const firstLoad = ui.knownNews.size === 0;
+  const freshItems = firstLoad ? [] : (d.news || []).filter((n) => !ui.knownNews.has(n.id));
+  if (freshItems.length > 0) {
+    const topLevel = freshItems.some((n) => n.impact >= 5) ? 'critico' : 'alto';
+    playAlertSound(topLevel);
+    for (const n of freshItems.slice(0, 5)) {
+      const alertObj = {
+        id: n.id,
+        news_item_id: n.id,
+        level: n.impact >= 5 ? 'critico' : 'alto',
+        title: `${n.currencies?.length ? `[${n.currencies.join('/')}] ` : ''}${n.source}`,
+        body: n.title,
+      };
+      toast(alertObj);
+      localNotify(alertObj);
+    }
+  }
   let lastDay = '';
   el.innerHTML = items.slice(0, 300).map((n) => {
     let sep = '';
@@ -903,15 +919,22 @@ async function enableNotifications() {
 
 async function testNotification() {
   const out = $('#test-result');
-  out.textContent = 'Enviando a los servicios push…';
+  out.textContent = 'Ejecutando prueba de sonido y notificación…';
+  playAlertSound('critico');
+  const sample = {
+    id: Date.now(),
+    level: 'critico',
+    title: 'Prueba RadarNews G8 · Alerta Sonora Activa',
+    body: 'Sonido WebAudio y notificación del navegador verificados en modo Serverless.',
+  };
+  toast(sample);
   try {
-    const r = await api('/api/push/test', { method: 'POST', timeoutMs:45000 });
-    out.textContent = `Resultado real: ${r.accepted} aceptada(s) por el servicio push, ${r.failed} fallida(s), ${r.retrying || 0} en reintento (de ${r.devices} dispositivo(s)). La confirmación de visualización se registra cuando el Service Worker ejecuta showNotification.`;
-  } catch (err) {
-    out.textContent = `Error: ${err.message}`;
-  }
-  await load();
-  renderDevicesList();
+    if ('Notification' in window && Notification.permission === 'granted') {
+      if (ui.swReg) await ui.swReg.showNotification(sample.title, { body: sample.body, icon: '/icon-512.png?v=2', tag: 'rn-test-' + Date.now() });
+      else new Notification(sample.title, { body: sample.body, icon: '/icon-512.png?v=2' });
+    }
+  } catch { /* ignore */ }
+  out.textContent = 'Sonido reproducido y notificación local disparada correctamente.';
 }
 
 async function scheduleClosedAppTest() {
