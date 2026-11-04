@@ -5,44 +5,64 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-03T23:21:42.215Z",
-  "started_at": "2026-11-03T22:07:44.809Z",
+  "generated_at": "2026-11-04T01:17:19.252Z",
+  "started_at": "2026-11-04T01:17:15.776Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
-  "count": 194,
+  "count": 231,
   "currency_ranking_mmt": [
     {
-      "currency": "CHF",
+      "currency": "JPY",
       "rank": 1,
+      "score": 33,
+      "bias": "alcista",
+      "structural": 33,
+      "impulse": 24,
+      "ficha_v6": "A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "Monetary Policy Meeting Minutes en 22.5h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real fuerte: JAPANESE MONETARY BASE YOY ACTUAL -13.6% (FORECAST -, PR",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "14 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + DATA_REAL + FISCAL_NFA + TRADE_EXTERNAL · Est +33 | Imp 3h +24. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 2,
       "score": 27,
       "bias": "alcista",
       "structural": 27,
-      "impulse": 13,
+      "impulse": 17,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "SNB Chairman Schlegel Speaks en 37.3h",
+      "calendar_lock_detail": "SNB Chairman Schlegel Speaks en 35.4h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Acuerdo comercial / sector exterior (C1/EA-1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "15 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL · Est +27 | Imp 3h +13. Régimen real mixed."
+      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL · Est +27 | Imp 3h +17. Régimen real mixed."
     },
     {
       "currency": "USD",
-      "rank": 2,
+      "rank": 3,
       "score": 22,
       "bias": "alcista",
       "structural": 22,
-      "impulse": 13,
+      "impulse": 17,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Hammack Speaks en 38.5h",
+      "calendar_lock_detail": "FOMC Member Hammack Speaks en 36.5h",
       "post_event_status": "✓ POST-EVENTO (Congressional Elections: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -50,27 +70,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre",
         "CPI sin sorpresa"
       ],
-      "rationale": "27 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +22 | Imp 3h +13. Régimen real mixed."
-    },
-    {
-      "currency": "JPY",
-      "rank": 3,
-      "score": 19,
-      "bias": "alcista",
-      "structural": 19,
-      "impulse": 13,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "Monetary Policy Meeting Minutes en 24.5h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre",
-        "FLUJO_FISCAL_NFA: Treasury Discount Bills to Be Auctioned on N"
-      ],
-      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +19 | Imp 3h +13. Régimen real mixed."
+      "rationale": "26 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +22 | Imp 3h +17. Régimen real mixed."
     },
     {
       "currency": "AUD",
@@ -82,7 +82,7 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "RBA Deputy Gov Hauser Speaks en 31.4h",
+      "calendar_lock_detail": "RBA Deputy Gov Hauser Speaks en 29.5h",
       "post_event_status": "✓ POST-EVENTO (RBA Press Conference: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -90,7 +90,7 @@
         "Contracción menor a la previa (PMI 48.2 < 50)",
         "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
       ],
-      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA · Est +0 | Imp 3h n/d · evidencia débil. Régimen real weak."
+      "rationale": "10 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA · Est +0 | Imp 3h n/d · evidencia débil. Régimen real weak."
     },
     {
       "currency": "GBP",
@@ -102,7 +102,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Monetary Policy Report en 36.6h",
+      "calendar_lock_detail": "BOE Monetary Policy Report en 34.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -113,14 +113,14 @@
     {
       "currency": "EUR",
       "rank": 6,
-      "score": -44,
+      "score": -42,
       "bias": "bajista",
-      "structural": -44,
+      "structural": -42,
       "impulse": null,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 42.4h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 40.5h",
       "post_event_status": "✓ POST-EVENTO (German Buba President Nagel Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -128,35 +128,35 @@
         "B12_EUR_FRAG_RIESGO: ECB's Nagel on France Budget: This isn't a",
         "B12_EUR_FRAG_RIESGO: ECB's Nagel: I am confident that France wi"
       ],
-      "rationale": "15 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + POLICY_PRICE · Est -44 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "14 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + POLICY_PRICE · Est -42 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
       "rank": 7,
-      "score": -63,
+      "score": -62,
       "bias": "bajista",
-      "structural": -63,
-      "impulse": -29,
-      "ficha_v6": "A6 / B5 / B15",
+      "structural": -62,
+      "impulse": -17,
+      "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOC Gov Macklem Speaks en 40.1h",
+      "calendar_lock_detail": "BOC Gov Macklem Speaks en 38.2h",
       "post_event_status": "✓ POST-EVENTO (BOC Gov Macklem Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: US requests fewer",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: some of our limit"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: some of our limit",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: progress made but"
       ],
-      "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL · Est -63 | Imp 3h -29. Régimen real mixed."
+      "rationale": "14 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL · Est -62 | Imp 3h -17. Régimen real mixed."
     },
     {
       "currency": "NZD",
       "rank": 8,
-      "score": -66,
+      "score": -64,
       "bias": "bajista",
-      "structural": -66,
-      "impulse": -33,
+      "structural": -64,
+      "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "✓ POST-EVENTO",
@@ -168,14 +168,14 @@
         "Ficha B2 / Contracción Laboral: Job Growth -0.1% vs 0.4%",
         "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%"
       ],
-      "rationale": "5 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -66 | Imp 3h -33. Régimen real weak."
+      "rationale": "7 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -64 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "XAU",
       "rank": null,
-      "score": 6,
-      "bias": "neutral",
-      "structural": 6,
+      "score": 16,
+      "bias": "alcista",
+      "structural": 16,
       "impulse": null,
       "ficha_v6": "A6 / EA-7",
       "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
@@ -184,44 +184,64 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Oro refugio / MDP: Informe de mercado: resumen diario El petr",
-        "Oro refugio / MDP: Informe de mercado: Tu resumen diario Se a"
+        "Oro refugio / MDP: India gold demand seen at six year low in ",
+        "Oro refugio / MDP: Central bank gold buying jumps 42 in q3 as"
       ],
-      "rationale": "3 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +6."
+      "rationale": "5 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +16."
     }
   ],
   "g8_ranking": [
     {
-      "currency": "CHF",
+      "currency": "JPY",
       "rank": 1,
+      "score": 33,
+      "bias": "alcista",
+      "structural": 33,
+      "impulse": 24,
+      "ficha_v6": "A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "Monetary Policy Meeting Minutes en 22.5h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real fuerte: JAPANESE MONETARY BASE YOY ACTUAL -13.6% (FORECAST -, PR",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "14 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + DATA_REAL + FISCAL_NFA + TRADE_EXTERNAL · Est +33 | Imp 3h +24. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 2,
       "score": 27,
       "bias": "alcista",
       "structural": 27,
-      "impulse": 13,
+      "impulse": 17,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "SNB Chairman Schlegel Speaks en 37.3h",
+      "calendar_lock_detail": "SNB Chairman Schlegel Speaks en 35.4h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Acuerdo comercial / sector exterior (C1/EA-1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "15 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL · Est +27 | Imp 3h +13. Régimen real mixed."
+      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL · Est +27 | Imp 3h +17. Régimen real mixed."
     },
     {
       "currency": "USD",
-      "rank": 2,
+      "rank": 3,
       "score": 22,
       "bias": "alcista",
       "structural": 22,
-      "impulse": 13,
+      "impulse": 17,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Hammack Speaks en 38.5h",
+      "calendar_lock_detail": "FOMC Member Hammack Speaks en 36.5h",
       "post_event_status": "✓ POST-EVENTO (Congressional Elections: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -229,27 +249,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre",
         "CPI sin sorpresa"
       ],
-      "rationale": "27 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +22 | Imp 3h +13. Régimen real mixed."
-    },
-    {
-      "currency": "JPY",
-      "rank": 3,
-      "score": 19,
-      "bias": "alcista",
-      "structural": 19,
-      "impulse": 13,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "Monetary Policy Meeting Minutes en 24.5h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): China’s soaring chemical exports thre",
-        "FLUJO_FISCAL_NFA: Treasury Discount Bills to Be Auctioned on N"
-      ],
-      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +19 | Imp 3h +13. Régimen real mixed."
+      "rationale": "26 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +22 | Imp 3h +17. Régimen real mixed."
     },
     {
       "currency": "AUD",
@@ -261,7 +261,7 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "RBA Deputy Gov Hauser Speaks en 31.4h",
+      "calendar_lock_detail": "RBA Deputy Gov Hauser Speaks en 29.5h",
       "post_event_status": "✓ POST-EVENTO (RBA Press Conference: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -269,7 +269,7 @@
         "Contracción menor a la previa (PMI 48.2 < 50)",
         "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
       ],
-      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA · Est +0 | Imp 3h n/d · evidencia débil. Régimen real weak."
+      "rationale": "10 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA · Est +0 | Imp 3h n/d · evidencia débil. Régimen real weak."
     },
     {
       "currency": "GBP",
@@ -281,7 +281,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Monetary Policy Report en 36.6h",
+      "calendar_lock_detail": "BOE Monetary Policy Report en 34.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -292,14 +292,14 @@
     {
       "currency": "EUR",
       "rank": 6,
-      "score": -44,
+      "score": -42,
       "bias": "bajista",
-      "structural": -44,
+      "structural": -42,
       "impulse": null,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 42.4h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 40.5h",
       "post_event_status": "✓ POST-EVENTO (German Buba President Nagel Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -307,35 +307,35 @@
         "B12_EUR_FRAG_RIESGO: ECB's Nagel on France Budget: This isn't a",
         "B12_EUR_FRAG_RIESGO: ECB's Nagel: I am confident that France wi"
       ],
-      "rationale": "15 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + POLICY_PRICE · Est -44 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "14 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + POLICY_PRICE · Est -42 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
       "rank": 7,
-      "score": -63,
+      "score": -62,
       "bias": "bajista",
-      "structural": -63,
-      "impulse": -29,
-      "ficha_v6": "A6 / B5 / B15",
+      "structural": -62,
+      "impulse": -17,
+      "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOC Gov Macklem Speaks en 40.1h",
+      "calendar_lock_detail": "BOC Gov Macklem Speaks en 38.2h",
       "post_event_status": "✓ POST-EVENTO (BOC Gov Macklem Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: US requests fewer",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: some of our limit"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: some of our limit",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: progress made but"
       ],
-      "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL · Est -63 | Imp 3h -29. Régimen real mixed."
+      "rationale": "14 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL · Est -62 | Imp 3h -17. Régimen real mixed."
     },
     {
       "currency": "NZD",
       "rank": 8,
-      "score": -66,
+      "score": -64,
       "bias": "bajista",
-      "structural": -66,
-      "impulse": -33,
+      "structural": -64,
+      "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "✓ POST-EVENTO",
@@ -347,22 +347,10 @@
         "Ficha B2 / Contracción Laboral: Job Growth -0.1% vs 0.4%",
         "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%"
       ],
-      "rationale": "5 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -66 | Imp 3h -33. Régimen real weak."
+      "rationale": "7 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -64 | Imp 3h n/d. Régimen real weak."
     }
   ],
   "agenda_window": [
-    {
-      "id": "ce804ac0172e2b56",
-      "currency": "JPY",
-      "title": "Bank Holiday",
-      "event_at": "2026-11-03T00:00:00.000Z",
-      "impact": "Holiday",
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "hours_from_now": -23.4,
-      "window_status": "✓ POST-EVENTO"
-    },
     {
       "id": "c867a826e851f88e",
       "currency": "AUD",
@@ -372,7 +360,7 @@
       "actual": null,
       "forecast": "4.85%",
       "previous": "4.60%",
-      "hours_from_now": -19.9,
+      "hours_from_now": -21.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -384,7 +372,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -19.9,
+      "hours_from_now": -21.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -396,7 +384,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -19.9,
+      "hours_from_now": -21.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -408,7 +396,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18.9,
+      "hours_from_now": -20.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -420,7 +408,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.0%",
-      "hours_from_now": -15.9,
+      "hours_from_now": -17.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -432,7 +420,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-159.6B",
-      "hours_from_now": -15.6,
+      "hours_from_now": -17.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -444,7 +432,7 @@
       "actual": null,
       "forecast": "46.2",
       "previous": "46.8",
-      "hours_from_now": -14.4,
+      "hours_from_now": -16.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -456,7 +444,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.42|3.6",
-      "hours_from_now": -13.3,
+      "hours_from_now": -15.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -468,7 +456,7 @@
       "actual": null,
       "forecast": "7.15M",
       "previous": "7.08M",
-      "hours_from_now": -8.4,
+      "hours_from_now": -10.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -480,7 +468,7 @@
       "actual": "1.8",
       "forecast": "1.2%",
       "previous": "0.1%",
-      "hours_from_now": -8.4,
+      "hours_from_now": -10.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -492,7 +480,7 @@
       "actual": null,
       "forecast": "15.8M",
       "previous": "16.0M",
-      "hours_from_now": -8.1,
+      "hours_from_now": -10,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -504,7 +492,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.1,
+      "hours_from_now": -10,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -516,7 +504,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.5%",
-      "hours_from_now": -7.9,
+      "hours_from_now": -9.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -528,7 +516,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -7.4,
+      "hours_from_now": -9.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -540,7 +528,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.4,
+      "hours_from_now": -7.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -552,7 +540,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1.9,
+      "hours_from_now": -3.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -564,7 +552,7 @@
       "actual": "-0.1%",
       "forecast": "0.4%",
       "previous": "0.5%",
-      "hours_from_now": -1.6,
+      "hours_from_now": -3.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -575,8 +563,8 @@
       "impact": "High",
       "actual": "5.7%",
       "forecast": "5.5%",
-      "previous": "5.4%",
-      "hours_from_now": -1.6,
+      "previous": "5.6%",
+      "hours_from_now": -3.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -586,9 +574,9 @@
       "event_at": "2026-11-03T21:45:00.000Z",
       "impact": "Low",
       "actual": "0.5%",
-      "forecast": "0.6%",
-      "previous": "0.6%",
-      "hours_from_now": -1.6,
+      "forecast": "0.5%",
+      "previous": "0.7%",
+      "hours_from_now": -3.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -597,11 +585,11 @@
       "title": "Monetary Base y/y",
       "event_at": "2026-11-03T23:50:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "-13.6%",
       "forecast": "-14.0%",
       "previous": "-15.2%",
-      "hours_from_now": 0.5,
-      "window_status": "⚑BC <48h (Candado CIRO)"
+      "hours_from_now": -1.5,
+      "window_status": "✓ POST-EVENTO"
     },
     {
       "id": "79a7047a72578b48",
@@ -612,8 +600,8 @@
       "actual": null,
       "forecast": null,
       "previous": "0.6%",
-      "hours_from_now": 0.6,
-      "window_status": "⚑BC <48h (Candado CIRO)"
+      "hours_from_now": -1.3,
+      "window_status": "✓ POST-EVENTO"
     },
     {
       "id": "bee8029b5fac6711",
@@ -624,8 +612,8 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.0%",
-      "hours_from_now": 1.1,
-      "window_status": "⚑BC <48h (Candado CIRO)"
+      "hours_from_now": -0.8,
+      "window_status": "✓ POST-EVENTO"
     },
     {
       "id": "c8793c5722592364",
@@ -636,7 +624,7 @@
       "actual": null,
       "forecast": "18.7K",
       "previous": "23.6K",
-      "hours_from_now": 8.6,
+      "hours_from_now": 6.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -648,7 +636,7 @@
       "actual": null,
       "forecast": "57.6",
       "previous": "58.3",
-      "hours_from_now": 8.9,
+      "hours_from_now": 7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -660,7 +648,7 @@
       "actual": null,
       "forecast": "51.4",
       "previous": "51.7",
-      "hours_from_now": 9.4,
+      "hours_from_now": 7.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -672,7 +660,7 @@
       "actual": null,
       "forecast": "48.4",
       "previous": "48.4",
-      "hours_from_now": 9.5,
+      "hours_from_now": 7.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -684,7 +672,7 @@
       "actual": null,
       "forecast": "51.7",
       "previous": "51.7",
-      "hours_from_now": 9.6,
+      "hours_from_now": 7.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -696,7 +684,7 @@
       "actual": null,
       "forecast": "51.7",
       "previous": "51.7",
-      "hours_from_now": 9.6,
+      "hours_from_now": 7.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -708,7 +696,7 @@
       "actual": null,
       "forecast": "53.1",
       "previous": "53.1",
-      "hours_from_now": 10.1,
+      "hours_from_now": 8.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -720,7 +708,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "2.5%",
-      "hours_from_now": 10.6,
+      "hours_from_now": 8.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -732,7 +720,7 @@
       "actual": null,
       "forecast": "4.0%",
       "previous": "3.8%",
-      "hours_from_now": 10.6,
+      "hours_from_now": 8.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -744,7 +732,7 @@
       "actual": null,
       "forecast": "67K",
       "previous": "90K",
-      "hours_from_now": 13.9,
+      "hours_from_now": 12,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -756,7 +744,7 @@
       "actual": null,
       "forecast": "4.8B",
       "previous": "4.2B",
-      "hours_from_now": 14.1,
+      "hours_from_now": 12.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -768,7 +756,7 @@
       "actual": null,
       "forecast": "-107.9B",
       "previous": "-105.6B",
-      "hours_from_now": 14.1,
+      "hours_from_now": 12.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -780,7 +768,7 @@
       "actual": null,
       "forecast": "57.9",
       "previous": "57.9",
-      "hours_from_now": 15.4,
+      "hours_from_now": 13.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -792,7 +780,7 @@
       "actual": null,
       "forecast": "54.8",
       "previous": "54.9",
-      "hours_from_now": 15.6,
+      "hours_from_now": 13.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -802,9 +790,9 @@
       "event_at": "2026-11-04T15:30:00.000Z",
       "impact": "Low",
       "actual": null,
-      "forecast": "-0.1M",
+      "forecast": "-1.7M",
       "previous": "-1.9M",
-      "hours_from_now": 16.1,
+      "hours_from_now": 14.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -816,7 +804,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24.5,
+      "hours_from_now": 22.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -828,7 +816,7 @@
       "actual": null,
       "forecast": "0.94B",
       "previous": "0.50B",
-      "hours_from_now": 25.1,
+      "hours_from_now": 23.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -840,7 +828,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.10|3.8",
-      "hours_from_now": 28.2,
+      "hours_from_now": 26.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -852,7 +840,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.4,
+      "hours_from_now": 29.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -864,7 +852,7 @@
       "actual": null,
       "forecast": "4.6%",
       "previous": "-10.6%",
-      "hours_from_now": 31.6,
+      "hours_from_now": 29.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -876,7 +864,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "-0.3%",
-      "hours_from_now": 32.4,
+      "hours_from_now": 30.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -888,7 +876,7 @@
       "actual": null,
       "forecast": "3.1%",
       "previous": "3.1%",
-      "hours_from_now": 32.6,
+      "hours_from_now": 30.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -900,7 +888,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.3%",
-      "hours_from_now": 33.6,
+      "hours_from_now": 31.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -912,7 +900,7 @@
       "actual": null,
       "forecast": "46.4",
       "previous": "46.1",
-      "hours_from_now": 34.1,
+      "hours_from_now": 32.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -924,7 +912,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "1.9%",
-      "hours_from_now": 34.6,
+      "hours_from_now": 32.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -936,7 +924,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.18|1.6",
-      "hours_from_now": 34.7,
+      "hours_from_now": 32.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -948,7 +936,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.93|2.0",
-      "hours_from_now": 34.9,
+      "hours_from_now": 33,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -960,7 +948,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-19.9%",
-      "hours_from_now": 35.1,
+      "hours_from_now": 33.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -972,7 +960,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.6,
+      "hours_from_now": 34.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -984,7 +972,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.6,
+      "hours_from_now": 34.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -996,7 +984,7 @@
       "actual": null,
       "forecast": "7-0-2",
       "previous": "3-0-6",
-      "hours_from_now": 36.6,
+      "hours_from_now": 34.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1008,7 +996,7 @@
       "actual": null,
       "forecast": "4.00%",
       "previous": "3.75%",
-      "hours_from_now": 36.6,
+      "hours_from_now": 34.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1020,7 +1008,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.1,
+      "hours_from_now": 35.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1032,7 +1020,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.3,
+      "hours_from_now": 35.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1044,7 +1032,7 @@
       "actual": null,
       "forecast": "197K",
       "previous": "194K",
-      "hours_from_now": 38.1,
+      "hours_from_now": 36.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1056,7 +1044,7 @@
       "actual": null,
       "forecast": "2.8%",
       "previous": "1.4%",
-      "hours_from_now": 38.1,
+      "hours_from_now": 36.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1068,7 +1056,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "1.3%",
-      "hours_from_now": 38.1,
+      "hours_from_now": 36.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1080,7 +1068,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.5,
+      "hours_from_now": 36.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1092,7 +1080,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.8,
+      "hours_from_now": 36.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1104,7 +1092,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.1,
+      "hours_from_now": 38.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1114,9 +1102,9 @@
       "event_at": "2026-11-05T15:30:00.000Z",
       "impact": "Low",
       "actual": null,
-      "forecast": null,
+      "forecast": "81B",
       "previous": "80B",
-      "hours_from_now": 40.1,
+      "hours_from_now": 38.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1128,7 +1116,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 42.4,
+      "hours_from_now": 40.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1140,7 +1128,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 42.6,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1152,7 +1140,19 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.6,
+      "hours_from_now": 43.7,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "3cb5da067a917db2",
+      "currency": "JPY",
+      "title": "Average Cash Earnings y/y",
+      "event_at": "2026-11-05T23:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "3.8%",
+      "previous": "3.8%",
+      "hours_from_now": 46.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1191,6 +1191,955 @@
       "mmt_lens": "CONTRACCION_LABORAL_B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "92fb5df3f48f5661e038650ca7ce661332d477397e015e877600fe1e865fa91c",
+      "sha256": "92fb5df3f48f5661e038650ca7ce661332d477397e015e877600fe1e865fa91c",
+      "title": "Republican Moody wins Florida Senate race - DDHQ projects",
+      "url": "https://t.me/FinancialJuice/144632",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:16:27.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8373f11924c250a86bf590f2a832057f4249d5a776c1f999f7066c087a8a3f44",
+      "sha256": "8373f11924c250a86bf590f2a832057f4249d5a776c1f999f7066c087a8a3f44",
+      "title": "China : requests for relending exceed 200 billion yuan",
+      "url": "https://t.me/FinancialJuice/144630",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:13:14.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "59b18aea44e0afde6e9082d6ffdd74ba8159036f51151df247eed54e921f0642",
+      "sha256": "59b18aea44e0afde6e9082d6ffdd74ba8159036f51151df247eed54e921f0642",
+      "title": "Democrat Chris Pappas defeats Republican John Sununu in contest for democratic-held US Senate seat in New Hampshire - Fox News",
+      "url": "https://t.me/FinancialJuice/144631",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:13:14.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3f76c4e347575a086b33e4cd9a62f810b5609e24acb3e18583387e696f4df00c",
+      "sha256": "3f76c4e347575a086b33e4cd9a62f810b5609e24acb3e18583387e696f4df00c",
+      "title": "Democrats clinch first battleground Senate seat as Jon Ossoff wins in Georgia",
+      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T01:07:12.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "748a086a758e88d7c74ae3ffcf33db498fa281614294cb843d00396f7674e10b",
+      "sha256": "748a086a758e88d7c74ae3ffcf33db498fa281614294cb843d00396f7674e10b",
+      "title": "Bank of Canada raises the policy rate by 25 basis points to 2½%",
+      "url": "https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T01:02:21.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9d5cf882f7db25454acfbfcf20a10d56b3b8447915057ce32c37618ddaea58e8",
+      "sha256": "9d5cf882f7db25454acfbfcf20a10d56b3b8447915057ce32c37618ddaea58e8",
+      "title": "Democrat Chris Pappas beats Republican John Sununu in race for democratic-held US Senate seat in New Hampshire: Decision Desk HQ",
+      "url": "https://t.me/FinancialJuice/144629",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:02:13.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6c16844929e037adcc51bd8b22c3fd6ab7a8b85fb2b2e4c0e227fd0172ecff29",
+      "sha256": "6c16844929e037adcc51bd8b22c3fd6ab7a8b85fb2b2e4c0e227fd0172ecff29",
+      "title": "Ireland S&P Global October services PMI rises to 54.3 from 54.1 in September",
+      "url": "https://t.me/FinancialJuice/144628",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:02:03.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c3240efc1370b051f1fcb1e5d589488e2e711b0c2c34c4a37e732bd5d7ad0e1a",
+      "sha256": "c3240efc1370b051f1fcb1e5d589488e2e711b0c2c34c4a37e732bd5d7ad0e1a",
+      "title": "Taiwan overnight interbank rate starts at 0.805% (unchanged from prior session)",
+      "url": "https://t.me/FinancialJuice/144627",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:01:54.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6c4818ef4aed21b2391a09ed89de602925d544a13e1cb51153215ec9060df4f2",
+      "sha256": "6c4818ef4aed21b2391a09ed89de602925d544a13e1cb51153215ec9060df4f2",
+      "title": "Cricket Australia chief defends controversial sale plan",
+      "url": "https://www.ft.com/content/a03d241a-5e93-41ae-b019-50879c6d1ad9?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T01:00:06.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "43607a1674b4f4188744a7fcd2ab787de9881d014bbcbf6c41a69953f04c5875",
+      "sha256": "43607a1674b4f4188744a7fcd2ab787de9881d014bbcbf6c41a69953f04c5875",
+      "title": "Bank of Japan Accounts (October 31)",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261031.htm",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T01:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "035d46d3cb0be7b0e4da8ea158f584a54024507f7cee58abc60fe9a98d01ea1e",
+      "sha256": "035d46d3cb0be7b0e4da8ea158f584a54024507f7cee58abc60fe9a98d01ea1e",
+      "title": "Tesla misled south korean buyers over full self driving consumer group alleges",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:55:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fb3183307122e22d277a0fe10c673e9f7e757eef03cd2ea9145576a3f861dccd",
+      "sha256": "fb3183307122e22d277a0fe10c673e9f7e757eef03cd2ea9145576a3f861dccd",
+      "title": "North Korea launches unidentified projectile toward sea off east coast: South Korea defence ministry",
+      "url": "https://t.me/FinancialJuice/144626",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:53:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5e686a58cea0ed531faaef3bd677771d57cb85fc32126f523cd29a8923bba61d",
+      "sha256": "5e686a58cea0ed531faaef3bd677771d57cb85fc32126f523cd29a8923bba61d",
+      "title": "Pboc is expected to set the usd cny reference rate at 6.6811 reuters estimate",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:40:31.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "80bda2ae0b600a2bd57b8aa764a02d5de76d86baff7cc61de056aea65867d094",
+      "sha256": "80bda2ae0b600a2bd57b8aa764a02d5de76d86baff7cc61de056aea65867d094",
+      "title": "Democratic US Senator Jon Ossoff secures reelection in Georgia - NBC News",
+      "url": "https://t.me/FinancialJuice/144625",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:40:21.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2326a8576a311cd8aaeeabe6e46a614db43767aac2076cf7fc41f13c001df21f",
+      "sha256": "2326a8576a311cd8aaeeabe6e46a614db43767aac2076cf7fc41f13c001df21f",
+      "title": "Australia September household spending volumes rise 0.7% quarter on quarter seasonally adjusted",
+      "url": "https://t.me/FinancialJuice/144624",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:40:19.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1fa77ae55bd4cbf9a3646607a77233a1fc7be127097e7eabdafcf7a4fa64648e",
+      "sha256": "1fa77ae55bd4cbf9a3646607a77233a1fc7be127097e7eabdafcf7a4fa64648e",
+      "title": "Australia September household spending rises 0.6% month on month seasonally adjusted",
+      "url": "https://t.me/FinancialJuice/144623",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:40:14.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a0539b90e5b55a3b2589a53fd2d086a64e160cc2869a6c344122e51025cd8e12",
+      "sha256": "a0539b90e5b55a3b2589a53fd2d086a64e160cc2869a6c344122e51025cd8e12",
+      "title": "Hong Kong S&P Global October PMI at 50.2 vs 49.2 in September",
+      "url": "https://t.me/FinancialJuice/144622",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:40:11.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "50.2",
+      "forecast": "49.2",
+      "previous": null,
+      "calendar_title": null,
+      "z": 0.5
+    },
+    {
+      "id": "bb39d6bfbd0e4ae5bf603cf8a0d19ddf62853b47b09de34373dc09b25674f79b",
+      "sha256": "bb39d6bfbd0e4ae5bf603cf8a0d19ddf62853b47b09de34373dc09b25674f79b",
+      "title": "India gold demand seen at six year low in 2026 as high prices and weak monsoon bite",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:30:32.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f629b0406345280ca76a059f9308ee739ba19aad3a67a2bd997666377358fc42",
+      "sha256": "f629b0406345280ca76a059f9308ee739ba19aad3a67a2bd997666377358fc42",
+      "title": "China PBOC likely to set yuan midpoint at 6.6811 per dollar: Estimate",
+      "url": "https://t.me/FinancialJuice/144621",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:22:47.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4f24166dc8938e118b2f59cf86c59f1acc7d9e31eaf1f6e3e3bdbae9a56a30c8",
+      "sha256": "4f24166dc8938e118b2f59cf86c59f1acc7d9e31eaf1f6e3e3bdbae9a56a30c8",
+      "title": "Democratic US Senator Jon Ossoff secures reelection in Georgia, Decision Desk HQ",
+      "url": "https://t.me/FinancialJuice/144620",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:21:58.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8de01fb8c5d5caf537c69a09b8d5560bfe0088f56109f94c6a52884c45059c51",
+      "sha256": "8de01fb8c5d5caf537c69a09b8d5560bfe0088f56109f94c6a52884c45059c51",
+      "title": "The very early results in kentucky show a massive swing towards democrats",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:20:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2ff036314d5305c813cf659d12793a1bb60964427547d613ab87da1795132c71",
+      "sha256": "2ff036314d5305c813cf659d12793a1bb60964427547d613ab87da1795132c71",
+      "title": "Trump says no immediate plan to strike iran as netanyahu hints at attack this week",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:05:32.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "54cfbfe94f33d049c2f1060d18810204f54d21a50c6076bff99789b470d4f438",
+      "sha256": "54cfbfe94f33d049c2f1060d18810204f54d21a50c6076bff99789b470d4f438",
+      "title": "Consumer group alleges Tesla misled South Korean customers by selling driver software most vehicles cannot legally use",
+      "url": "https://t.me/FinancialJuice/144619",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:00:43.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cc24e17b4ac2ac8f05cc25ab278e2dbe7bf24aff907e40a9c187c36abfcff809",
+      "sha256": "cc24e17b4ac2ac8f05cc25ab278e2dbe7bf24aff907e40a9c187c36abfcff809",
+      "title": "Saudi civil defense: danger has passed in Riyadh",
+      "url": "https://t.me/FinancialJuice/144618",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:58:55.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a2833037f03cd3671577b7b257e55ca630a6c145d2f36c79225827ebe5d14374",
+      "sha256": "a2833037f03cd3671577b7b257e55ca630a6c145d2f36c79225827ebe5d14374",
+      "title": "JAPANESE MONETARY BASE YOY ACTUAL -13.6% (FORECAST -, PREVIOUS -15.2%) $MACRO",
+      "url": "https://t.me/FinancialJuice/144617",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:50:37.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "-13.6%",
+      "forecast": null,
+      "previous": "-15.2%",
+      "calendar_title": "Monetary Base y/y",
+      "z": null
+    },
+    {
+      "id": "9a57745f1da895743df30b83010c53e9c5565e9773fe4a1968305fa684cbdab2",
+      "sha256": "9a57745f1da895743df30b83010c53e9c5565e9773fe4a1968305fa684cbdab2",
+      "title": "Bmw issues second profit warning says car business could slip into operating loss",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T23:50:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6c7354bb2783f0f3124a540b6977ac169d81ebdea4868fce3fb2a779826686aa",
+      "sha256": "6c7354bb2783f0f3124a540b6977ac169d81ebdea4868fce3fb2a779826686aa",
+      "title": "Monetary Base (Oct.)",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/mb/mb.htm",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T23:50:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "49c88b07dad9421b74445839aacc2b78611e53170d2994746f0d5adc66499c7e",
+      "sha256": "49c88b07dad9421b74445839aacc2b78611e53170d2994746f0d5adc66499c7e",
+      "title": "Saudi civil defense issues early warning alert in Riyadh",
+      "url": "https://t.me/FinancialJuice/144616",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:48:57.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b2834cead05a0670dcd9f3ef970868cad55f892c7375b90d8184b5300139219a",
+      "sha256": "b2834cead05a0670dcd9f3ef970868cad55f892c7375b90d8184b5300139219a",
+      "title": "Trump on Iran: 'we appear to be achieving all our objectives' - FT",
+      "url": "https://t.me/FinancialJuice/144615",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:37:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0ace48cdc327e6f28adfbd1fc8a01c7fcfaa98b7545d7a4bbd44e5562dd148c5",
+      "sha256": "0ace48cdc327e6f28adfbd1fc8a01c7fcfaa98b7545d7a4bbd44e5562dd148c5",
+      "title": "US has no immediate plan to attack Iran, Trump tells FT",
+      "url": "https://t.me/FinancialJuice/144613",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:36:27.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2bbdd8871bad9c7a64741362c71823b84655c71da05d96e1e5367824f41bf2e0",
+      "sha256": "2bbdd8871bad9c7a64741362c71823b84655c71da05d96e1e5367824f41bf2e0",
+      "title": "Central bank gold buying jumps 42 in q3 as high prices hit jewellery demand wgc says",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T23:20:31.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8608bd3637866cb412a994535b58f612bcb1369058bb7a7b7c084eba1ae624e7",
+      "sha256": "8608bd3637866cb412a994535b58f612bcb1369058bb7a7b7c084eba1ae624e7",
+      "title": "Us warns of houthi threat to saudi airports and infrastructure curbs travel to oil areas",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T22:55:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5b25825f1b41de57b17a947c8179441221f3f434554e9ca045b81b00cd5a30df",
+      "sha256": "5b25825f1b41de57b17a947c8179441221f3f434554e9ca045b81b00cd5a30df",
+      "title": "Carney says us trade talks to intensify as washington asks less and offers mor",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T22:30:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "COST_PUSH_STAG_TRAP",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b80db30ea1a72ad5f66e2badee7f4faf9c17e98db65694c55cff0e59b5de4fb1",
+      "sha256": "b80db30ea1a72ad5f66e2badee7f4faf9c17e98db65694c55cff0e59b5de4fb1",
+      "title": "Oil private survey of inventory shows a huge headline crude oil draw vs build expected",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T22:20:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -1486,6 +2435,40 @@
       "z": null
     },
     {
+      "id": "ac9a0ef9338c554fb125c77740664eb66812c3de2a5a0a17673f6cc559eb8007",
+      "sha256": "ac9a0ef9338c554fb125c77740664eb66812c3de2a5a0a17673f6cc559eb8007",
+      "title": "Geothermal exploration for Taranaki and Waikato",
+      "url": "https://www.beehive.govt.nz/release/geothermal-exploration-taranaki-and-waikato",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T22:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "12f347ee9186e79ec09bb9f8d13a69f07a3f5d57277a6fa732cea3664914b753",
       "sha256": "12f347ee9186e79ec09bb9f8d13a69f07a3f5d57277a6fa732cea3664914b753",
       "title": "US API CUSHING STOCK CHANGE ACTUAL 0.511M (FORECAST -, PREVIOUS -0.453M) $MACRO",
@@ -1754,6 +2737,32 @@
       "z": null
     },
     {
+      "id": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
+      "sha256": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
+      "title": "Amd shares rise after hours as q4 revenue outlook of 17bn tops forecasts on ai ramp",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:45:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "a8289a8e6f50056b008cf6bca42c3c03708b64895081a04fe2f106500beafb1c",
       "sha256": "a8289a8e6f50056b008cf6bca42c3c03708b64895081a04fe2f106500beafb1c",
       "title": "NEW ZEALAND WAGE GROWTH QOQ ACTUAL 0.5% (FORECAST 0.6%, PREVIOUS 0.6%) $MACRO",
@@ -1780,32 +2789,6 @@
       "forecast": null,
       "previous": null,
       "calendar_title": "Labor Cost Index q/q",
-      "z": null
-    },
-    {
-      "id": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
-      "sha256": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
-      "title": "Amd shares rise after hours as q4 revenue outlook of 17bn tops forecasts on ai ramp",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-03T21:45:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
       "z": null
     },
     {
@@ -1909,6 +2892,32 @@
       "source_id": "investinglive",
       "source_type": "agencia",
       "published_at": "2026-11-03T21:25:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "24e3ba9c855fce9c29a66e0ea6604b2bcd674e55ddfcfe5d3a9c237a8ea81347",
+      "sha256": "24e3ba9c855fce9c29a66e0ea6604b2bcd674e55ddfcfe5d3a9c237a8ea81347",
+      "title": "What the historic heist of Binance means for crypto",
+      "url": "https://www.ft.com/content/567d7280-2bcb-4802-8caa-01853b3278dc?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:22:50.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -2323,6 +3332,40 @@
       "z": null
     },
     {
+      "id": "870c825889438716ec9cb198fc68d537b84afb17bca84377cd0311b305022329",
+      "sha256": "870c825889438716ec9cb198fc68d537b84afb17bca84377cd0311b305022329",
+      "title": "Foxton wetland restoration backed by RIF",
+      "url": "https://www.beehive.govt.nz/release/foxton-wetland-restoration-backed-rif",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T20:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "bc984de747479cabea2a10b1d4d98a4022d0152786e9ff269fb4ed635151f3df",
       "sha256": "bc984de747479cabea2a10b1d4d98a4022d0152786e9ff269fb4ed635151f3df",
       "title": "Brent Crude futures settle at $103.60/bbl, down $1.17, 1.12%",
@@ -2506,36 +3549,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "748a086a758e88d7c74ae3ffcf33db498fa281614294cb843d00396f7674e10b",
-      "sha256": "748a086a758e88d7c74ae3ffcf33db498fa281614294cb843d00396f7674e10b",
-      "title": "Bank of Canada raises the policy rate by 25 basis points to 2½%",
-      "url": "https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T19:22:47.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -3701,7 +4714,7 @@
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
-      "published_at": "2026-11-03T16:10:37.000Z",
+      "published_at": "2026-11-03T16:10:06.000Z",
       "currencies": [
         "USD"
       ],
@@ -5251,6 +6264,38 @@
       "z": null
     },
     {
+      "id": "ad8a092092b8c9a0eb403e5cd1e4e661ef2041d06002bc9c49eeb82e826a410d",
+      "sha256": "ad8a092092b8c9a0eb403e5cd1e4e661ef2041d06002bc9c49eeb82e826a410d",
+      "title": "Media Releases by Topic - Australian Bureau of Statistics - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ2x0VGZWZG82WWJHekZ4RWdYNDV0T01DZWVMTnVxMlY1VHZlYi1YQ1ZXdHkxNGtpRmJUdGV3SVlLZEY2NGdRYW16Zm1jcVJDb0FjcWJ1b3BQNkRVQ2Q0ZFpwNGpqWWV2VHA2dnJ4UEp2R3VjekRwRWRuZ1g4STl1aDhPMnVldXhRd0ZTcWZzSk5aVEQ0TktfaXFkR3lmaUszY1lUQ2EyRjk1UDJjUTVDdg?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T23:46:50.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5e78a2f38af63f9fa8688813046bf8696bad8cbc169124f86dfaa15fff162d69",
       "sha256": "5e78a2f38af63f9fa8688813046bf8696bad8cbc169124f86dfaa15fff162d69",
       "title": "Government backs regional airline Air Napier",
@@ -6186,6 +7231,58 @@
       "z": null
     },
     {
+      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
+      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "title": "Statement - base rate of the National Bank of Kazakhstan",
+      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "sha256": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "title": "Liquidity against collateral - the Swiss National Bank’s approach",
@@ -6329,58 +7426,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
-      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "title": "Statement - base rate of the National Bank of Kazakhstan",
-      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -6763,6 +7808,955 @@
       "z": null
     },
     {
+      "id": "92fb5df3f48f5661e038650ca7ce661332d477397e015e877600fe1e865fa91c",
+      "sha256": "92fb5df3f48f5661e038650ca7ce661332d477397e015e877600fe1e865fa91c",
+      "title": "Republican Moody wins Florida Senate race - DDHQ projects",
+      "url": "https://t.me/FinancialJuice/144632",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:16:27.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8373f11924c250a86bf590f2a832057f4249d5a776c1f999f7066c087a8a3f44",
+      "sha256": "8373f11924c250a86bf590f2a832057f4249d5a776c1f999f7066c087a8a3f44",
+      "title": "China : requests for relending exceed 200 billion yuan",
+      "url": "https://t.me/FinancialJuice/144630",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:13:14.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "59b18aea44e0afde6e9082d6ffdd74ba8159036f51151df247eed54e921f0642",
+      "sha256": "59b18aea44e0afde6e9082d6ffdd74ba8159036f51151df247eed54e921f0642",
+      "title": "Democrat Chris Pappas defeats Republican John Sununu in contest for democratic-held US Senate seat in New Hampshire - Fox News",
+      "url": "https://t.me/FinancialJuice/144631",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:13:14.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3f76c4e347575a086b33e4cd9a62f810b5609e24acb3e18583387e696f4df00c",
+      "sha256": "3f76c4e347575a086b33e4cd9a62f810b5609e24acb3e18583387e696f4df00c",
+      "title": "Democrats clinch first battleground Senate seat as Jon Ossoff wins in Georgia",
+      "url": "https://www.ft.com/content/77c2eaca-4fe1-4c69-b3bd-c517b045ff37?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T01:07:12.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "748a086a758e88d7c74ae3ffcf33db498fa281614294cb843d00396f7674e10b",
+      "sha256": "748a086a758e88d7c74ae3ffcf33db498fa281614294cb843d00396f7674e10b",
+      "title": "Bank of Canada raises the policy rate by 25 basis points to 2½%",
+      "url": "https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T01:02:21.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9d5cf882f7db25454acfbfcf20a10d56b3b8447915057ce32c37618ddaea58e8",
+      "sha256": "9d5cf882f7db25454acfbfcf20a10d56b3b8447915057ce32c37618ddaea58e8",
+      "title": "Democrat Chris Pappas beats Republican John Sununu in race for democratic-held US Senate seat in New Hampshire: Decision Desk HQ",
+      "url": "https://t.me/FinancialJuice/144629",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:02:13.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6c16844929e037adcc51bd8b22c3fd6ab7a8b85fb2b2e4c0e227fd0172ecff29",
+      "sha256": "6c16844929e037adcc51bd8b22c3fd6ab7a8b85fb2b2e4c0e227fd0172ecff29",
+      "title": "Ireland S&P Global October services PMI rises to 54.3 from 54.1 in September",
+      "url": "https://t.me/FinancialJuice/144628",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:02:03.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c3240efc1370b051f1fcb1e5d589488e2e711b0c2c34c4a37e732bd5d7ad0e1a",
+      "sha256": "c3240efc1370b051f1fcb1e5d589488e2e711b0c2c34c4a37e732bd5d7ad0e1a",
+      "title": "Taiwan overnight interbank rate starts at 0.805% (unchanged from prior session)",
+      "url": "https://t.me/FinancialJuice/144627",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T01:01:54.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6c4818ef4aed21b2391a09ed89de602925d544a13e1cb51153215ec9060df4f2",
+      "sha256": "6c4818ef4aed21b2391a09ed89de602925d544a13e1cb51153215ec9060df4f2",
+      "title": "Cricket Australia chief defends controversial sale plan",
+      "url": "https://www.ft.com/content/a03d241a-5e93-41ae-b019-50879c6d1ad9?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T01:00:06.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "43607a1674b4f4188744a7fcd2ab787de9881d014bbcbf6c41a69953f04c5875",
+      "sha256": "43607a1674b4f4188744a7fcd2ab787de9881d014bbcbf6c41a69953f04c5875",
+      "title": "Bank of Japan Accounts (October 31)",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261031.htm",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T01:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "035d46d3cb0be7b0e4da8ea158f584a54024507f7cee58abc60fe9a98d01ea1e",
+      "sha256": "035d46d3cb0be7b0e4da8ea158f584a54024507f7cee58abc60fe9a98d01ea1e",
+      "title": "Tesla misled south korean buyers over full self driving consumer group alleges",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:55:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fb3183307122e22d277a0fe10c673e9f7e757eef03cd2ea9145576a3f861dccd",
+      "sha256": "fb3183307122e22d277a0fe10c673e9f7e757eef03cd2ea9145576a3f861dccd",
+      "title": "North Korea launches unidentified projectile toward sea off east coast: South Korea defence ministry",
+      "url": "https://t.me/FinancialJuice/144626",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:53:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5e686a58cea0ed531faaef3bd677771d57cb85fc32126f523cd29a8923bba61d",
+      "sha256": "5e686a58cea0ed531faaef3bd677771d57cb85fc32126f523cd29a8923bba61d",
+      "title": "Pboc is expected to set the usd cny reference rate at 6.6811 reuters estimate",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:40:31.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "80bda2ae0b600a2bd57b8aa764a02d5de76d86baff7cc61de056aea65867d094",
+      "sha256": "80bda2ae0b600a2bd57b8aa764a02d5de76d86baff7cc61de056aea65867d094",
+      "title": "Democratic US Senator Jon Ossoff secures reelection in Georgia - NBC News",
+      "url": "https://t.me/FinancialJuice/144625",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:40:21.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2326a8576a311cd8aaeeabe6e46a614db43767aac2076cf7fc41f13c001df21f",
+      "sha256": "2326a8576a311cd8aaeeabe6e46a614db43767aac2076cf7fc41f13c001df21f",
+      "title": "Australia September household spending volumes rise 0.7% quarter on quarter seasonally adjusted",
+      "url": "https://t.me/FinancialJuice/144624",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:40:19.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1fa77ae55bd4cbf9a3646607a77233a1fc7be127097e7eabdafcf7a4fa64648e",
+      "sha256": "1fa77ae55bd4cbf9a3646607a77233a1fc7be127097e7eabdafcf7a4fa64648e",
+      "title": "Australia September household spending rises 0.6% month on month seasonally adjusted",
+      "url": "https://t.me/FinancialJuice/144623",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:40:14.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a0539b90e5b55a3b2589a53fd2d086a64e160cc2869a6c344122e51025cd8e12",
+      "sha256": "a0539b90e5b55a3b2589a53fd2d086a64e160cc2869a6c344122e51025cd8e12",
+      "title": "Hong Kong S&P Global October PMI at 50.2 vs 49.2 in September",
+      "url": "https://t.me/FinancialJuice/144622",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:40:11.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "50.2",
+      "forecast": "49.2",
+      "previous": null,
+      "calendar_title": null,
+      "z": 0.5
+    },
+    {
+      "id": "bb39d6bfbd0e4ae5bf603cf8a0d19ddf62853b47b09de34373dc09b25674f79b",
+      "sha256": "bb39d6bfbd0e4ae5bf603cf8a0d19ddf62853b47b09de34373dc09b25674f79b",
+      "title": "India gold demand seen at six year low in 2026 as high prices and weak monsoon bite",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:30:32.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f629b0406345280ca76a059f9308ee739ba19aad3a67a2bd997666377358fc42",
+      "sha256": "f629b0406345280ca76a059f9308ee739ba19aad3a67a2bd997666377358fc42",
+      "title": "China PBOC likely to set yuan midpoint at 6.6811 per dollar: Estimate",
+      "url": "https://t.me/FinancialJuice/144621",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:22:47.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4f24166dc8938e118b2f59cf86c59f1acc7d9e31eaf1f6e3e3bdbae9a56a30c8",
+      "sha256": "4f24166dc8938e118b2f59cf86c59f1acc7d9e31eaf1f6e3e3bdbae9a56a30c8",
+      "title": "Democratic US Senator Jon Ossoff secures reelection in Georgia, Decision Desk HQ",
+      "url": "https://t.me/FinancialJuice/144620",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:21:58.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8de01fb8c5d5caf537c69a09b8d5560bfe0088f56109f94c6a52884c45059c51",
+      "sha256": "8de01fb8c5d5caf537c69a09b8d5560bfe0088f56109f94c6a52884c45059c51",
+      "title": "The very early results in kentucky show a massive swing towards democrats",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:20:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2ff036314d5305c813cf659d12793a1bb60964427547d613ab87da1795132c71",
+      "sha256": "2ff036314d5305c813cf659d12793a1bb60964427547d613ab87da1795132c71",
+      "title": "Trump says no immediate plan to strike iran as netanyahu hints at attack this week",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-04T00:05:32.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "54cfbfe94f33d049c2f1060d18810204f54d21a50c6076bff99789b470d4f438",
+      "sha256": "54cfbfe94f33d049c2f1060d18810204f54d21a50c6076bff99789b470d4f438",
+      "title": "Consumer group alleges Tesla misled South Korean customers by selling driver software most vehicles cannot legally use",
+      "url": "https://t.me/FinancialJuice/144619",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-04T00:00:43.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cc24e17b4ac2ac8f05cc25ab278e2dbe7bf24aff907e40a9c187c36abfcff809",
+      "sha256": "cc24e17b4ac2ac8f05cc25ab278e2dbe7bf24aff907e40a9c187c36abfcff809",
+      "title": "Saudi civil defense: danger has passed in Riyadh",
+      "url": "https://t.me/FinancialJuice/144618",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:58:55.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a2833037f03cd3671577b7b257e55ca630a6c145d2f36c79225827ebe5d14374",
+      "sha256": "a2833037f03cd3671577b7b257e55ca630a6c145d2f36c79225827ebe5d14374",
+      "title": "JAPANESE MONETARY BASE YOY ACTUAL -13.6% (FORECAST -, PREVIOUS -15.2%) $MACRO",
+      "url": "https://t.me/FinancialJuice/144617",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:50:37.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "-13.6%",
+      "forecast": null,
+      "previous": "-15.2%",
+      "calendar_title": "Monetary Base y/y",
+      "z": null
+    },
+    {
+      "id": "9a57745f1da895743df30b83010c53e9c5565e9773fe4a1968305fa684cbdab2",
+      "sha256": "9a57745f1da895743df30b83010c53e9c5565e9773fe4a1968305fa684cbdab2",
+      "title": "Bmw issues second profit warning says car business could slip into operating loss",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T23:50:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6c7354bb2783f0f3124a540b6977ac169d81ebdea4868fce3fb2a779826686aa",
+      "sha256": "6c7354bb2783f0f3124a540b6977ac169d81ebdea4868fce3fb2a779826686aa",
+      "title": "Monetary Base (Oct.)",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/mb/mb.htm",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T23:50:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "49c88b07dad9421b74445839aacc2b78611e53170d2994746f0d5adc66499c7e",
+      "sha256": "49c88b07dad9421b74445839aacc2b78611e53170d2994746f0d5adc66499c7e",
+      "title": "Saudi civil defense issues early warning alert in Riyadh",
+      "url": "https://t.me/FinancialJuice/144616",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:48:57.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b2834cead05a0670dcd9f3ef970868cad55f892c7375b90d8184b5300139219a",
+      "sha256": "b2834cead05a0670dcd9f3ef970868cad55f892c7375b90d8184b5300139219a",
+      "title": "Trump on Iran: 'we appear to be achieving all our objectives' - FT",
+      "url": "https://t.me/FinancialJuice/144615",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:37:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0ace48cdc327e6f28adfbd1fc8a01c7fcfaa98b7545d7a4bbd44e5562dd148c5",
+      "sha256": "0ace48cdc327e6f28adfbd1fc8a01c7fcfaa98b7545d7a4bbd44e5562dd148c5",
+      "title": "US has no immediate plan to attack Iran, Trump tells FT",
+      "url": "https://t.me/FinancialJuice/144613",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-03T23:36:27.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2bbdd8871bad9c7a64741362c71823b84655c71da05d96e1e5367824f41bf2e0",
+      "sha256": "2bbdd8871bad9c7a64741362c71823b84655c71da05d96e1e5367824f41bf2e0",
+      "title": "Central bank gold buying jumps 42 in q3 as high prices hit jewellery demand wgc says",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T23:20:31.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8608bd3637866cb412a994535b58f612bcb1369058bb7a7b7c084eba1ae624e7",
+      "sha256": "8608bd3637866cb412a994535b58f612bcb1369058bb7a7b7c084eba1ae624e7",
+      "title": "Us warns of houthi threat to saudi airports and infrastructure curbs travel to oil areas",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T22:55:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5b25825f1b41de57b17a947c8179441221f3f434554e9ca045b81b00cd5a30df",
+      "sha256": "5b25825f1b41de57b17a947c8179441221f3f434554e9ca045b81b00cd5a30df",
+      "title": "Carney says us trade talks to intensify as washington asks less and offers mor",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T22:30:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "COST_PUSH_STAG_TRAP",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b80db30ea1a72ad5f66e2badee7f4faf9c17e98db65694c55cff0e59b5de4fb1",
+      "sha256": "b80db30ea1a72ad5f66e2badee7f4faf9c17e98db65694c55cff0e59b5de4fb1",
+      "title": "Oil private survey of inventory shows a huge headline crude oil draw vs build expected",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T22:20:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "2e8ae95b29919641d47f396c74e79db0b40af239b630588bcb32d19c961267b3",
       "sha256": "2e8ae95b29919641d47f396c74e79db0b40af239b630588bcb32d19c961267b3",
       "title": "Canada's PM Carney: US requests fewer concessions and proposes more, but deal not reached yet",
@@ -7051,6 +9045,40 @@
       "z": null
     },
     {
+      "id": "ac9a0ef9338c554fb125c77740664eb66812c3de2a5a0a17673f6cc559eb8007",
+      "sha256": "ac9a0ef9338c554fb125c77740664eb66812c3de2a5a0a17673f6cc559eb8007",
+      "title": "Geothermal exploration for Taranaki and Waikato",
+      "url": "https://www.beehive.govt.nz/release/geothermal-exploration-taranaki-and-waikato",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T22:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "12f347ee9186e79ec09bb9f8d13a69f07a3f5d57277a6fa732cea3664914b753",
       "sha256": "12f347ee9186e79ec09bb9f8d13a69f07a3f5d57277a6fa732cea3664914b753",
       "title": "US API CUSHING STOCK CHANGE ACTUAL 0.511M (FORECAST -, PREVIOUS -0.453M) $MACRO",
@@ -7319,6 +9347,32 @@
       "z": null
     },
     {
+      "id": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
+      "sha256": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
+      "title": "Amd shares rise after hours as q4 revenue outlook of 17bn tops forecasts on ai ramp",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:45:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "a8289a8e6f50056b008cf6bca42c3c03708b64895081a04fe2f106500beafb1c",
       "sha256": "a8289a8e6f50056b008cf6bca42c3c03708b64895081a04fe2f106500beafb1c",
       "title": "NEW ZEALAND WAGE GROWTH QOQ ACTUAL 0.5% (FORECAST 0.6%, PREVIOUS 0.6%) $MACRO",
@@ -7345,32 +9399,6 @@
       "forecast": null,
       "previous": null,
       "calendar_title": "Labor Cost Index q/q",
-      "z": null
-    },
-    {
-      "id": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
-      "sha256": "266aa61d5097321efa5366ff429138f0a2705ab69d493fdaf94af53fb78ef28a",
-      "title": "Amd shares rise after hours as q4 revenue outlook of 17bn tops forecasts on ai ramp",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-03T21:45:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
       "z": null
     },
     {
@@ -7474,6 +9502,32 @@
       "source_id": "investinglive",
       "source_type": "agencia",
       "published_at": "2026-11-03T21:25:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "24e3ba9c855fce9c29a66e0ea6604b2bcd674e55ddfcfe5d3a9c237a8ea81347",
+      "sha256": "24e3ba9c855fce9c29a66e0ea6604b2bcd674e55ddfcfe5d3a9c237a8ea81347",
+      "title": "What the historic heist of Binance means for crypto",
+      "url": "https://www.ft.com/content/567d7280-2bcb-4802-8caa-01853b3278dc?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-03T21:22:50.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -7888,6 +9942,40 @@
       "z": null
     },
     {
+      "id": "870c825889438716ec9cb198fc68d537b84afb17bca84377cd0311b305022329",
+      "sha256": "870c825889438716ec9cb198fc68d537b84afb17bca84377cd0311b305022329",
+      "title": "Foxton wetland restoration backed by RIF",
+      "url": "https://www.beehive.govt.nz/release/foxton-wetland-restoration-backed-rif",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T20:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "bc984de747479cabea2a10b1d4d98a4022d0152786e9ff269fb4ed635151f3df",
       "sha256": "bc984de747479cabea2a10b1d4d98a4022d0152786e9ff269fb4ed635151f3df",
       "title": "Brent Crude futures settle at $103.60/bbl, down $1.17, 1.12%",
@@ -8071,36 +10159,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "748a086a758e88d7c74ae3ffcf33db498fa281614294cb843d00396f7674e10b",
-      "sha256": "748a086a758e88d7c74ae3ffcf33db498fa281614294cb843d00396f7674e10b",
-      "title": "Bank of Canada raises the policy rate by 25 basis points to 2½%",
-      "url": "https://www.bankofcanada.ca/2026/10/fad-press-release-2026-10-28/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T19:22:47.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -9266,7 +11324,7 @@
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
-      "published_at": "2026-11-03T16:10:37.000Z",
+      "published_at": "2026-11-03T16:10:06.000Z",
       "currencies": [
         "USD"
       ],
@@ -10816,6 +12874,38 @@
       "z": null
     },
     {
+      "id": "ad8a092092b8c9a0eb403e5cd1e4e661ef2041d06002bc9c49eeb82e826a410d",
+      "sha256": "ad8a092092b8c9a0eb403e5cd1e4e661ef2041d06002bc9c49eeb82e826a410d",
+      "title": "Media Releases by Topic - Australian Bureau of Statistics - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ2x0VGZWZG82WWJHekZ4RWdYNDV0T01DZWVMTnVxMlY1VHZlYi1YQ1ZXdHkxNGtpRmJUdGV3SVlLZEY2NGdRYW16Zm1jcVJDb0FjcWJ1b3BQNkRVQ2Q0ZFpwNGpqWWV2VHA2dnJ4UEp2R3VjekRwRWRuZ1g4STl1aDhPMnVldXhRd0ZTcWZzSk5aVEQ0TktfaXFkR3lmaUszY1lUQ2EyRjk1UDJjUTVDdg?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T23:46:50.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5e78a2f38af63f9fa8688813046bf8696bad8cbc169124f86dfaa15fff162d69",
       "sha256": "5e78a2f38af63f9fa8688813046bf8696bad8cbc169124f86dfaa15fff162d69",
       "title": "Government backs regional airline Air Napier",
@@ -11751,6 +13841,58 @@
       "z": null
     },
     {
+      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
+      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
+      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "title": "Statement - base rate of the National Bank of Kazakhstan",
+      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "sha256": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "title": "Liquidity against collateral - the Swiss National Bank’s approach",
@@ -11894,58 +14036,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "sha256": "eaa4be1105082bbb406b071113f3b35c53b19e9d101fcf0dc1e012633ffd0754",
-      "title": "Sustainable revenue streams - financing the future of Eswatini's local authorities and unlocking local government financing",
-      "url": "https://www.bis.org/speeches/20261102-sustainable-revenue-streams-financing-future-eswatinis-local-authorities-and-unlocking-local-government-financing",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "title": "Statement - base rate of the National Bank of Kazakhstan",
-      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
