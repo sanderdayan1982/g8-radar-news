@@ -221,6 +221,36 @@ function actualFromTitle(title) {
   return v ? v[1].replace(/\s+/g, '').toUpperCase() : null;
 }
 
+
+// ENZO 2026-11-04 (orden CIRO #6): normaliza `actual` de forma general, sin parches por evento.
+// 1) UNIDAD: si el actual llega sin unidad (p.ej. "86") y forecast/previous del calendario la traen ("67K"), hereda esa unidad.
+// 2) SIGNO: los titulares (InvestingLive) omiten el signo de los déficits ("105.0b vs 108.0b expected"). Solo si el forecast
+//    del titular es positivo y su magnitud coincide (±3%) con un forecast del calendario NEGATIVO, el actual se marca negativo.
+//    Sin esa evidencia el signo no se toca.
+const NUM_RE = /^\s*(-?)(\d[\d.,]*)\s*([%KMBT]?)\s*$/i;
+function splitNum(v) {
+  const m = NUM_RE.exec(String(v ?? ''));
+  if (!m) return null;
+  const n = Number(m[2].replace(/,/g, ''));
+  return Number.isFinite(n) ? { neg: m[1] === '-', mag: n, unit: m[3].toUpperCase() } : null;
+}
+export function normalizeActual(actual, event, newsForecast = null) {
+  const a = splitNum(actual);
+  if (!a) return actual;
+  const f = splitNum(event?.forecast);
+  const p = splitNum(event?.previous);
+  let unit = a.unit;
+  if (!unit) unit = (f && f.unit) || (p && p.unit) || '';
+  let neg = a.neg;
+  if (!neg && f && f.neg) {
+    const nf = Number(newsForecast);
+    if (Number.isFinite(nf) && nf > 0 && f.mag > 0 && Math.abs(nf - f.mag) / f.mag <= 0.03) neg = true;
+  }
+  const raw = String(actual).replace(/\s+/g, '');
+  const body = /^-?(\d[\d.,]*)/.exec(raw)[1];
+  return `${neg ? '-' : ''}${body}${unit}`;
+}
+
 export function linkNewsToCalendar(news, events) {
   const bestQForEvent = new Map();
   for (const n of news) {
@@ -242,11 +272,12 @@ export function linkNewsToCalendar(news, events) {
     if (bestQ >= prevQ) {
       bestQForEvent.set(best.id, bestQ);
       best.news_item_id = n.id || best.news_item_id;
-      if (nAct) best.actual = nAct;
+      if (nAct) best.actual = normalizeActual(nAct, best, n.forecast);
     } else if (nAct && !best.actual) {
-      best.actual = nAct;
+      best.actual = normalizeActual(nAct, best, n.forecast);
     }
   }
+  for (const e of events) if (e.actual != null) e.actual = normalizeActual(e.actual, e);
 }
 
 function norm(s) {
