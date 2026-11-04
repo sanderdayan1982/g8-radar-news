@@ -100,6 +100,11 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
   const existingItems = Array.isArray(baseFull?.news) ? baseFull.news : [];
   const previousMarket = baseFull?.market || null;
   const previousCalendar = Array.isArray(baseFull?.calendar) ? baseFull.calendar : [];
+  try {
+    const mirror = rawSeed || await fetchGithubRawSeed(500);
+    const byId = new Map((mirror?.calendar || []).filter((e) => e?.id && e.actual != null && e.actual !== '').map((e) => [e.id, e.actual]));
+    for (const ev of previousCalendar) if ((ev.actual == null || ev.actual === '') && byId.has(ev.id)) ev.actual = byId.get(ev.id);
+  } catch { /* GitHub Raw no disponible: seguir sin fusionar */ }
 
   // Consulta paralela ultrarrápida (con timeout corto para garantizar respuesta < 1s cuando ya hay semilla)
   const perSourceTimeoutMs = existingItems.length > 0 ? 700 : 3800;
