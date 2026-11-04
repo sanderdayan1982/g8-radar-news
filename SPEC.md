@@ -163,3 +163,4 @@ Node.js 22+ con `node:sqlite`, systemd, SQLite WAL. Código `/opt/radarnews/app`
 El Agente MMT recibe una muestra de hasta 80 noticias, seleccionada por turnos entre las ocho divisas, con 72 horas para breaking/agencias y 30 días oficiales. Se excluyen fechas inválidas/futuras. Cada ciclo conserva huella de la muestra, fecha de corte y recuento por divisa. El Agente conserva contribuciones por noticia, antes y después de antigüedad/topes.
 La escala es descriptiva MMT/Mosler; no es probabilidad ni está calibrada históricamente. ±12 y la media equiponderada son parámetros de diseño, no pesos ajustados por divisa. Se requiere evaluación fuera de muestra antes de afirmar calibración predictiva.
 Los cruces y la matriz excluyen divisas N/D.
+<!-- ENZO 2026-11-04: redeploy para publicar functions (sin cambios de contenido) -->
