@@ -192,6 +192,8 @@ function matchQuality(news, event) {
   if (perN && perE && perN !== perE) return -Infinity;
   const CORE = /\b(?:trimmed|underlying|median|core)\b/i;
   if (CORE.test(news.title || '') !== CORE.test(event.title || '')) return -Infinity;
+  const ISM = /\bism\b/i;
+  if (ISM.test(news.title || '') !== ISM.test(event.title || '')) return -Infinity;
   const dt = Math.abs(Date.parse(event.event_at) - Date.parse(news.published_at));
   if (!Number.isFinite(dt) || dt > MATCH_MS) return -Infinity;
   const kn = eventFamily(news.title);
