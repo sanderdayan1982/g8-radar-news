@@ -150,6 +150,8 @@ export function eventPlace(title) {
   const t = String(title || '').toLowerCase();
   if (/french|france/.test(t)) return 'fr';
   if (/german|germany/.test(t)) return 'de';
+  if (/ital(?:y|ian)/.test(t)) return 'it';
+  if (/spain|spanish/.test(t)) return 'es';
   if (/\buk\b|britain|united kingdom|\bgfk\b/.test(t)) return 'gb';
   if (/\bu\.?s\.?\b|united states/.test(t)) return 'us';
   if (/japan|japanese/.test(t)) return 'jp';
@@ -197,6 +199,8 @@ function matchQuality(news, event) {
   const pn = eventPlace(news.title);
   const pe = eventPlace(event.title);
   if (pn && pe && pn !== pe) return -Infinity;
+  // ENZO 2026-11-04: en EUR el evento sin pais es la zona euro; un titular de pais (it/es/de/fr) no puede llenarlo ni viceversa
+  if (event.currency === 'EUR' && (pn || 'ez') !== (pe || 'ez')) return -Infinity;
   if (kn && ke && !kindsCompatible(kn, ke)) return -Infinity;
   if (kn && ke && kindsCompatible(kn, ke)) {
     let q = 1 - dt / MATCH_MS;
@@ -211,7 +215,10 @@ function matchQuality(news, event) {
 
 function actualFromTitle(title) {
   const m = /\bActual\s*:?\s*\(?\s*(-?\d[\d.,]*\s*[%KMB]?)\s*\)?/i.exec(String(title || ''));
-  return m ? m[1].replace(/\s+/g, '') : null;
+  if (m) return m[1].replace(/\s+/g, '');
+  // ENZO 2026-11-04: formato InvestingLive "<dato> 7.523m vs 7.100m estimate|expected"
+  const v = /(-?\d[\d.,]*\s*[%kmb]?)\s+vs\.?\s+-?\d[\d.,]*\s*[%kmb]?\s+(?:estimate|expected|exp|consensus)/i.exec(String(title || ''));
+  return v ? v[1].replace(/\s+/g, '').toUpperCase() : null;
 }
 
 export function linkNewsToCalendar(news, events) {

@@ -309,7 +309,7 @@ export async function collectRadarAndIrisData({
   const [pulledSources, calResult, mktResult] = await Promise.all([
     Promise.all(SOURCES.map((s) => pullSingleSourceFast(s, nowMs, timeoutMs))),
     fetchCalendar().catch((err) => ({ events: previousCalendar || [], error: String(err.message || err) })),
-    fetchMarket().catch(() => previousMarket || { updated_at: null, basketPct: {}, pairs: {} }),
+    fetchMarket(previousMarket).catch(() => previousMarket || { updated_at: null, basketPct: {}, pairs: {} }),
   ]);
 
   const sourcesHealth = pulledSources.map((p) => p.health);
@@ -321,15 +321,23 @@ export async function collectRadarAndIrisData({
     ? calResult.events
     : (previousCalendar || []);
   // ENZO 2026-11-04: FF no publica `actual`; conservar el `actual` ya cruzado en corridas previas (mismo id de evento). Nunca inventa valores.
+  // ENZO 2026-11-04b: actuals cruzados por error (titular Italia 52.0 -> German Final Services PMI). No se arrastran.
+  const VOID_ACTUALS = new Set(['5518ded651ae10dd']);
+  for (const e of calendarEvents) if (e && VOID_ACTUALS.has(e.id) && e.news_item_id === '7ddb7240e1274465') { e.actual = null; e.news_item_id = null; }
   if (calendarEvents !== previousCalendar && Array.isArray(previousCalendar) && previousCalendar.length) {
     const prevActual = new Map(previousCalendar.filter((e) => e && e.id && e.actual).map((e) => [e.id, e]));
     for (const e of calendarEvents) {
       const p = prevActual.get(e.id);
-      if (p && !e.actual) { e.actual = p.actual; if (!e.news_item_id) e.news_item_id = p.news_item_id || null; }
+      if (p && !e.actual && !VOID_ACTUALS.has(e.id)) { e.actual = p.actual; if (!e.news_item_id) e.news_item_id = p.news_item_id || null; }
     }
   }
   // ENZO 2026-11-04: actuals verificados en fuente oficial (RBA MR 2026-30 del 03-nov; BFS/FSO IPC oct 2026 publicado 03-nov). Solo rellena si sigue vacio.
-  const MANUAL_ACTUALS = { 'c867a826e851f88e': '4.85%', '2388a2d8b146948e': '0.2%' };
+  const MANUAL_ACTUALS = {
+    'c867a826e851f88e': '4.85%', '2388a2d8b146948e': '0.2%',
+    // ENZO 2026-11-04b: S&P Global/HCOB finales oct-2026 (04-nov), BLS JOLTS sep-2026 (03-nov), ABS MHSI sep-2026 (04-nov)
+    '5518ded651ae10dd': '52.5', 'e4b0e7ec11c7431f': '46.2', 'b0032a106721ab9f': '57.2', '551bc9118d35e3eb': '52.0',
+    'c7cdaa12c16213e2': '7.523M', 'bee8029b5fac6711': '0.6%',
+  };
   for (const e of calendarEvents) {
     if (e && !e.actual && MANUAL_ACTUALS[e.id]) e.actual = MANUAL_ACTUALS[e.id];
   }
@@ -433,7 +441,8 @@ export async function collectRadarAndIrisData({
       const ms = Date.parse(e?.event_at || '');
       if (!Number.isFinite(ms)) return false;
       const diff = ms - nowMs;
-      return diff >= -24 * 3600_000 && diff <= 48 * 3600_000;
+      // ENZO 2026-11-04: POST-EVENTO con actual se conserva hasta -48h (RBA/CHF del 03-nov caian fuera a -24h)
+      return diff >= (e.actual ? -48 : -24) * 3600_000 && diff <= 48 * 3600_000;
     })
     .map((e) => {
       const diffH = Math.round(((Date.parse(e.event_at) - nowMs) / 3600_000) * 10) / 10;
