@@ -320,6 +320,19 @@ export async function collectRadarAndIrisData({
   const calendarEvents = Array.isArray(calResult?.events) && calResult.events.length
     ? calResult.events
     : (previousCalendar || []);
+  // ENZO 2026-11-04: FF no publica `actual`; conservar el `actual` ya cruzado en corridas previas (mismo id de evento). Nunca inventa valores.
+  if (calendarEvents !== previousCalendar && Array.isArray(previousCalendar) && previousCalendar.length) {
+    const prevActual = new Map(previousCalendar.filter((e) => e && e.id && e.actual).map((e) => [e.id, e]));
+    for (const e of calendarEvents) {
+      const p = prevActual.get(e.id);
+      if (p && !e.actual) { e.actual = p.actual; if (!e.news_item_id) e.news_item_id = p.news_item_id || null; }
+    }
+  }
+  // ENZO 2026-11-04: actuals verificados en fuente oficial (RBA MR 2026-30 del 03-nov; BFS/FSO IPC oct 2026 publicado 03-nov). Solo rellena si sigue vacio.
+  const MANUAL_ACTUALS = { 'c867a826e851f88e': '4.85%', '2388a2d8b146948e': '0.2%' };
+  for (const e of calendarEvents) {
+    if (e && !e.actual && MANUAL_ACTUALS[e.id]) e.actual = MANUAL_ACTUALS[e.id];
+  }
 
   if (calendarEvents.length > 0) {
     linkNewsToCalendar(allWindowItems, calendarEvents);
