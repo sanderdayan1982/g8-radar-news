@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-07T02:01:58.055Z",
-  "started_at": "2026-11-07T02:01:54.416Z",
+  "generated_at": "2026-11-07T08:41:51.780Z",
+  "started_at": "2026-11-07T08:41:48.710Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,9 +15,9 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 35,
+      "score": 34,
       "bias": "alcista",
-      "structural": 35,
+      "structural": 34,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -28,9 +28,9 @@
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
       ],
-      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +35 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "32 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +34 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -49,14 +49,14 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "CPI sin sorpresa"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
       "rank": 3,
-      "score": 15,
+      "score": 13,
       "bias": "alcista",
-      "structural": 15,
+      "structural": 13,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -69,14 +69,14 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · POLICY_PRICE · Est +15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · POLICY_PRICE · Est +13 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 4,
-      "score": 8,
+      "score": 10,
       "bias": "neutral",
-      "structural": 8,
+      "structural": 10,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -88,34 +88,14 @@
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "16 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +8 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "AUD",
-      "rank": 5,
-      "score": -19,
-      "bias": "bajista",
-      "structural": -19,
-      "impulse": null,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
-        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
-      ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -19 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "15 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +10 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "EUR",
       "rank": 5,
-      "score": -19,
+      "score": -17,
       "bias": "bajista",
-      "structural": -19,
+      "structural": -17,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -128,14 +108,34 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "13 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -19 | Imp 3h n/d. Régimen real weak."
+      "rationale": "12 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -17 | Imp 3h n/d. Régimen real weak."
+    },
+    {
+      "currency": "AUD",
+      "rank": 6,
+      "score": -18,
+      "bias": "bajista",
+      "structural": -18,
+      "impulse": null,
+      "ficha_v6": "A6 / B5 / B15",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Presión Risk-Off sobre cíclica (B5 / B15)",
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
+        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
+      ],
+      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -18 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
-      "rank": 5,
-      "score": -19,
+      "rank": 6,
+      "score": -18,
       "bias": "bajista",
-      "structural": -19,
+      "structural": -18,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -144,17 +144,16 @@
       "post_event_status": "✓ POST-EVENTO (Parliamentary Elections: Publicado)",
       "no_evidence": false,
       "drivers": [
-        "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%",
-        "CPI sin sorpresa"
+        "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%"
       ],
-      "rationale": "4 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -19 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -18 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -33,
+      "score": -29,
       "bias": "bajista",
-      "structural": -33,
+      "structural": -29,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -165,16 +164,16 @@
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): BoC's Gov. Macklem: Optimistic we can",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): ‘Cartwheels’ in Canada after Trump pu"
+        "CPI sin sorpresa"
       ],
-      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -33 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -29 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "XAU",
       "rank": null,
-      "score": 6,
+      "score": 12,
       "bias": "neutral",
-      "structural": 6,
+      "structural": 12,
       "impulse": null,
       "ficha_v6": "A6 / EA-7",
       "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
@@ -183,19 +182,19 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Oro refugio / MDP: A welcome change for gold as tech selloff ",
-        "Oro refugio / MDP: Crude awakening: how oil has fuelled 150 y"
+        "Oro refugio / MDP: Gold analysis buyers keep defending 4.040 ",
+        "Oro refugio / MDP: China's gold reserves $306.41 billion at e"
       ],
-      "rationale": "3 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +6."
+      "rationale": "6 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +12."
     }
   ],
   "g8_ranking": [
     {
       "currency": "USD",
       "rank": 1,
-      "score": 35,
+      "score": 34,
       "bias": "alcista",
-      "structural": 35,
+      "structural": 34,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -206,9 +205,9 @@
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
       ],
-      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +35 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "32 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +34 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -227,14 +226,14 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "CPI sin sorpresa"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
       "rank": 3,
-      "score": 15,
+      "score": 13,
       "bias": "alcista",
-      "structural": 15,
+      "structural": 13,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -247,14 +246,14 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · POLICY_PRICE · Est +15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · POLICY_PRICE · Est +13 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 4,
-      "score": 8,
+      "score": 10,
       "bias": "neutral",
-      "structural": 8,
+      "structural": 10,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -266,34 +265,14 @@
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "16 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +8 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "AUD",
-      "rank": 5,
-      "score": -19,
-      "bias": "bajista",
-      "structural": -19,
-      "impulse": null,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
-        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
-      ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -19 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "15 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +10 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "EUR",
       "rank": 5,
-      "score": -19,
+      "score": -17,
       "bias": "bajista",
-      "structural": -19,
+      "structural": -17,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -306,14 +285,34 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "13 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -19 | Imp 3h n/d. Régimen real weak."
+      "rationale": "12 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -17 | Imp 3h n/d. Régimen real weak."
+    },
+    {
+      "currency": "AUD",
+      "rank": 6,
+      "score": -18,
+      "bias": "bajista",
+      "structural": -18,
+      "impulse": null,
+      "ficha_v6": "A6 / B5 / B15",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Presión Risk-Off sobre cíclica (B5 / B15)",
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
+        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
+      ],
+      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -18 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
-      "rank": 5,
-      "score": -19,
+      "rank": 6,
+      "score": -18,
       "bias": "bajista",
-      "structural": -19,
+      "structural": -18,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -322,17 +321,16 @@
       "post_event_status": "✓ POST-EVENTO (Parliamentary Elections: Publicado)",
       "no_evidence": false,
       "drivers": [
-        "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%",
-        "CPI sin sorpresa"
+        "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%"
       ],
-      "rationale": "4 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -19 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -18 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -33,
+      "score": -29,
       "bias": "bajista",
-      "structural": -33,
+      "structural": -29,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -343,108 +341,12 @@
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): BoC's Gov. Macklem: Optimistic we can",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): ‘Cartwheels’ in Canada after Trump pu"
+        "CPI sin sorpresa"
       ],
-      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -33 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -29 | Imp 3h n/d. Régimen real mixed."
     }
   ],
   "agenda_window": [
-    {
-      "id": "73d6122a3aef08ef",
-      "currency": "EUR",
-      "title": "German Factory Orders m/m",
-      "event_at": "2026-11-05T07:00:00.000Z",
-      "impact": "Low",
-      "actual": "4.4%",
-      "forecast": "4.6%",
-      "previous": "-10.6%",
-      "hours_from_now": -43,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "fd2ba07b51ce153a",
-      "currency": "EUR",
-      "title": "French Industrial Production m/m",
-      "event_at": "2026-11-05T07:45:00.000Z",
-      "impact": "Low",
-      "actual": "-0.5%",
-      "forecast": "0.3%",
-      "previous": "-0.3%",
-      "hours_from_now": -42.3,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "2c4cb36394bd9fc2",
-      "currency": "CHF",
-      "title": "Unemployment Rate",
-      "event_at": "2026-11-05T08:00:00.000Z",
-      "impact": "Low",
-      "actual": "3.0%",
-      "forecast": "3.1%",
-      "previous": "3.1%",
-      "hours_from_now": -42,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "be3e7a68bb75e33c",
-      "currency": "EUR",
-      "title": "German Industrial Production m/m",
-      "event_at": "2026-11-06T07:00:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "0.0%",
-      "previous": "2.0%",
-      "hours_from_now": -19,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "e54cd2ce3b0b5f95",
-      "currency": "GBP",
-      "title": "Lloyds HPI m/m",
-      "event_at": "2026-11-06T07:00:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "0.0%",
-      "previous": "0.0%",
-      "hours_from_now": -19,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "b90914b9bb1fe7d3",
-      "currency": "EUR",
-      "title": "French Trade Balance",
-      "event_at": "2026-11-06T07:45:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "-5.8B",
-      "previous": "-6.1B",
-      "hours_from_now": -18.3,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "f8990f04286bb9e3",
-      "currency": "CHF",
-      "title": "Foreign Currency Reserves",
-      "event_at": "2026-11-06T08:00:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": null,
-      "previous": "770B",
-      "hours_from_now": -18,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "b98ff8de9dff260d",
-      "currency": "CHF",
-      "title": "SECO Consumer Climate",
-      "event_at": "2026-11-06T08:00:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "-35",
-      "previous": "-36",
-      "hours_from_now": -18,
-      "window_status": "✓ POST-EVENTO"
-    },
     {
       "id": "ae5db3716d349390",
       "currency": "USD",
@@ -454,7 +356,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.5,
+      "hours_from_now": -23.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -466,7 +368,7 @@
       "actual": null,
       "forecast": "-0.1%",
       "previous": "0.1%",
-      "hours_from_now": -16,
+      "hours_from_now": -22.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -478,7 +380,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15,
+      "hours_from_now": -21.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -490,7 +392,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.8,
+      "hours_from_now": -20.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -502,7 +404,7 @@
       "actual": null,
       "forecast": "14.6K",
       "previous": "-68.3K",
-      "hours_from_now": -12.5,
+      "hours_from_now": -19.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -514,7 +416,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.5%",
-      "hours_from_now": -12.5,
+      "hours_from_now": -19.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -526,7 +428,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.1%",
-      "hours_from_now": -12.5,
+      "hours_from_now": -19.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -538,7 +440,7 @@
       "actual": "165K",
       "forecast": "65K",
       "previous": "29K",
-      "hours_from_now": -12.5,
+      "hours_from_now": -19.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -550,7 +452,7 @@
       "actual": null,
       "forecast": "4.2%",
       "previous": "4.2%",
-      "hours_from_now": -12.5,
+      "hours_from_now": -19.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -562,7 +464,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -11.9,
+      "hours_from_now": -18.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -574,7 +476,7 @@
       "actual": null,
       "forecast": "57.7",
       "previous": "58.2",
-      "hours_from_now": -11,
+      "hours_from_now": -17.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -586,7 +488,7 @@
       "actual": null,
       "forecast": "48.1",
       "previous": "46.3",
-      "hours_from_now": -11,
+      "hours_from_now": -17.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -598,7 +500,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.7%",
-      "hours_from_now": -11,
+      "hours_from_now": -17.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -610,7 +512,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10,
+      "hours_from_now": -16.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -622,7 +524,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.8,
+      "hours_from_now": -15.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -634,7 +536,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8,
+      "hours_from_now": -14.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -646,7 +548,7 @@
       "actual": "27.839B",
       "forecast": "13.4B",
       "previous": "8.3B",
-      "hours_from_now": -6,
+      "hours_from_now": -12.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -658,7 +560,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -4.3,
+      "hours_from_now": -10.9,
       "window_status": "✓ POST-EVENTO"
     }
   ],
@@ -673,6 +575,610 @@
     "NZD": -0.87
   },
   "items": [
+    {
+      "id": "fa2dc9fcd389a1162b2c483f3a828f526f0f2592d89bc74dcdfcb1959297808c",
+      "sha256": "fa2dc9fcd389a1162b2c483f3a828f526f0f2592d89bc74dcdfcb1959297808c",
+      "title": "Ukraine's Zelenskiy: Russians deployed 172 drones and 36 ballistic missiles, all targeted at Kyiv and nearby areas overnight",
+      "url": "https://t.me/FinancialJuice/145469",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T08:38:50.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cc258aaf25f3d7e84619fc8579e4dfde43e8c74e8e12f7ad1cd97e778dc579fb",
+      "sha256": "cc258aaf25f3d7e84619fc8579e4dfde43e8c74e8e12f7ad1cd97e778dc579fb",
+      "title": "Russia launched 36 ballistic missiles and 172 drones at Ukraine overnight, mainly targeting energy facilities: Zelenskiy",
+      "url": "https://t.me/FinancialJuice/145468",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T08:36:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "479fb325057b10b6ae9cc0d2308dbd04a99a2ef5cd8a6b43ee5bc2fad0da71dc",
+      "sha256": "479fb325057b10b6ae9cc0d2308dbd04a99a2ef5cd8a6b43ee5bc2fad0da71dc",
+      "title": "Russia's delegation at trilateral meeting with US and Ukraine to include Medinsky, Ryabkov, Galuzin, Kostyukov, and Zhigarlovsky: IFX cites Kremlin",
+      "url": "https://t.me/FinancialJuice/145467",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T07:29:59.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "89b1931322febd72de32f73ec569d36a031de67e7ab0bfffe6e828ed9e07898b",
+      "sha256": "89b1931322febd72de32f73ec569d36a031de67e7ab0bfffe6e828ed9e07898b",
+      "title": "New Zealand electoral commission data: centre-right and centre-left coalitions need centrist support to govern with 26% of results counted",
+      "url": "https://t.me/FinancialJuice/145466",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T07:25:10.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cd73667e4e869943a5c936b077eeeb89c6bba3befc6c66197384556b5d988061",
+      "sha256": "cd73667e4e869943a5c936b077eeeb89c6bba3befc6c66197384556b5d988061",
+      "title": "New Zealand Electoral Commission data: opposition Labour leads popular vote, but ruling National forms coalition with 24% counted",
+      "url": "https://t.me/FinancialJuice/145465",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T07:12:05.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e885f8bbae269c092b7c32b4153ccae6d2342ba5f555d6f73d7ffd771ae1c2db",
+      "sha256": "e885f8bbae269c092b7c32b4153ccae6d2342ba5f555d6f73d7ffd771ae1c2db",
+      "title": "Data from New Zealand electoral commission: Ruling National party may form coalition with 20% of votes counted",
+      "url": "https://t.me/FinancialJuice/145464",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:56:17.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cf4619a4458081b1f06bb5e9ad015bf734359c5d7a0cdc195cbb358538f01867",
+      "sha256": "cf4619a4458081b1f06bb5e9ad015bf734359c5d7a0cdc195cbb358538f01867",
+      "title": "Data from New Zealand electoral commission shows ruling National-led coalition likely to return to power with 10.9% of votes counted",
+      "url": "https://t.me/FinancialJuice/145463",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:35:42.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "807d1dd1d1cc9a387e7593cd039e7c1b96fd7d1ea389d65085c0785023ba9a68",
+      "sha256": "807d1dd1d1cc9a387e7593cd039e7c1b96fd7d1ea389d65085c0785023ba9a68",
+      "title": "New Zealand opposition lawmaker McNulty: National Party support exceeds expectations",
+      "url": "https://t.me/FinancialJuice/145462",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:35:33.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5b07ae484b4c6dd862deba892c56afc848b8c9d42629df0bb52df55f6be300aa",
+      "sha256": "5b07ae484b4c6dd862deba892c56afc848b8c9d42629df0bb52df55f6be300aa",
+      "title": "New Zealand election commission data: centrist opportunity party to cross threshold with 1.9% of votes counted",
+      "url": "https://t.me/FinancialJuice/145461",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:12:06.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b1819723855eef0057decd41abc281cca6538784c888049ecafcea3f9a1f9492",
+      "sha256": "b1819723855eef0057decd41abc281cca6538784c888049ecafcea3f9a1f9492",
+      "title": "New Zealand Electoral Commission data: ruling National at 30.81%, opposition Labour on 29.88% with 1.6% of votes counted",
+      "url": "https://t.me/FinancialJuice/145460",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:11:20.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6432c34f494202d2fdc419c6206ea6df77a7af4cdd8150a87bbfb844a852dc70",
+      "sha256": "6432c34f494202d2fdc419c6206ea6df77a7af4cdd8150a87bbfb844a852dc70",
+      "title": "Polls close in New Zealand general election: early results expected soon",
+      "url": "https://t.me/FinancialJuice/145459",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:00:34.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "aa534097c9635d5b1ef5c4649856986bc4c2d701b3663fa44c5b2b40c8d8b5d8",
+      "sha256": "aa534097c9635d5b1ef5c4649856986bc4c2d701b3663fa44c5b2b40c8d8b5d8",
+      "title": "Saudi-led coalition: intercepted and destroyed Houthi cruise missile targeted at Riyadh",
+      "url": "https://t.me/FinancialJuice/145458",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T05:07:13.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1c45a636ebea7512cc543b0aab705c83ac2cdec0262ddd5b38efd71eabc268a8",
+      "sha256": "1c45a636ebea7512cc543b0aab705c83ac2cdec0262ddd5b38efd71eabc268a8",
+      "title": "Britain preparing to host Volodymyr Zelenskiy for state visit next year: FT",
+      "url": "https://t.me/FinancialJuice/145457",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T05:03:34.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3dca1ce031d11e073b1c626c5e24d550641beafd9f79bcbcc20633f98300114f",
+      "sha256": "3dca1ce031d11e073b1c626c5e24d550641beafd9f79bcbcc20633f98300114f",
+      "title": "Trump’s defeat heralds a US retreat",
+      "url": "https://www.ft.com/content/f80ff605-6f6e-4b5d-9fab-20276b78e9b7?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-07T05:00:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "356b52ee7cf74c134c6326de98f9b9f970f59e668c691dc96caec4e66b5a3c0a",
+      "sha256": "356b52ee7cf74c134c6326de98f9b9f970f59e668c691dc96caec4e66b5a3c0a",
+      "title": "How Wall Street’s all-in bet on AI blew up",
+      "url": "https://www.ft.com/content/5a6806f0-e82e-4b34-b761-f9877e2b511c?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-07T05:00:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ad4817bf811e6f0b142fce3e2ed72eff8ff507bc8c7a862bf0ded23aa632c7b9",
+      "sha256": "ad4817bf811e6f0b142fce3e2ed72eff8ff507bc8c7a862bf0ded23aa632c7b9",
+      "title": "Russia ships metal via the Arctic to evade Ukrainian strikes",
+      "url": "https://www.ft.com/content/80d91653-c210-43cd-b91e-2b8c644561c1?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-07T05:00:22.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "786f6e15e72fa32ee51c363b73c9de81f23f0d329c65c3220e645e6fea1712b0",
+      "sha256": "786f6e15e72fa32ee51c363b73c9de81f23f0d329c65c3220e645e6fea1712b0",
+      "title": "Gold analysis buyers keep defending 4.040 is 4.140 the next target",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-07T04:20:39.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c824c550264a770154e03d459c438eeae7fc51defce91187619c4937d8c6e72a",
+      "sha256": "c824c550264a770154e03d459c438eeae7fc51defce91187619c4937d8c6e72a",
+      "title": "Hong Kong Legislative Council condemns foreign governments’ criticism of court ruling on Joshua Wong",
+      "url": "https://t.me/FinancialJuice/145456",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T04:06:36.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0b99274bbeb1077b04ec53237876e18929dc6fb810ba37bb0139290fef4f84c8",
+      "sha256": "0b99274bbeb1077b04ec53237876e18929dc6fb810ba37bb0139290fef4f84c8",
+      "title": "China's gold reserves $306.41 billion at end-October vs $323.52 billion at end-September: central bank",
+      "url": "https://t.me/FinancialJuice/145454",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T02:01:26.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "75a51299f28752dfd014a8cb9f2184a68e9abec053418739a59cbb037120842e",
+      "sha256": "75a51299f28752dfd014a8cb9f2184a68e9abec053418739a59cbb037120842e",
+      "title": "China's gold holdings 78.30 million fine troy oz at end-October vs 77.47 million at end-September: central bank",
+      "url": "https://t.me/FinancialJuice/145455",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T02:01:26.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": "77.47",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d75f0dd3b18a95d8aebbb72be80b8f622900d15b6d3a858cabdd31df8b376591",
+      "sha256": "d75f0dd3b18a95d8aebbb72be80b8f622900d15b6d3a858cabdd31df8b376591",
+      "title": "China foreign exchange reserves $3.405 trillion at end-October vs $3.400 trillion at end-September: central bank",
+      "url": "https://t.me/FinancialJuice/145453",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T02:01:15.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "df00957f6f8baf9dbbe95d00d168434efb1d0370f2328b0b2a3e6f01e8515238",
       "sha256": "df00957f6f8baf9dbbe95d00d168434efb1d0370f2328b0b2a3e6f01e8515238",
@@ -1649,7 +2155,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-06T20:08:49.000Z",
+      "published_at": "2026-11-06T20:08:42.000Z",
       "currencies": [
         "CAD"
       ],
@@ -4006,6 +4512,36 @@
       "z": null
     },
     {
+      "id": "43ba64d88250fee3bc45adc47e7162af10af61c9e5eb4dc65860691dbb84e3d8",
+      "sha256": "43ba64d88250fee3bc45adc47e7162af10af61c9e5eb4dc65860691dbb84e3d8",
+      "title": "2027 Ageing Report. Underlying Assumptions & Projection Methodologies - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0VMQ3NzdF9ZMGlVRnNYVExiakRsM1g4OFBrZlBHdzZjczE1ZlJ1cWpQTGlUUnRfcGVkcDlTQkRkOWZpUjlxNWZrNnA1cm1ORE05aFZfUG1xTll6Vk85WmxVZ2Uzal82aGp1c2hDYmt4MUF4QlFidTR6NDhhSG9Dc2liWkJGc1lTbllfTDIwbVRkRm1HWWtMVE9yUDZTNVBqZzJ4ZmdlZnY5TU1nRlFjWUU1Yjk0Slk?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T12:16:04.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "89f6ebfb53aa53d2a072f221ed1659a22dfda0f87fcc62b1f16395cc3225d69d",
       "sha256": "89f6ebfb53aa53d2a072f221ed1659a22dfda0f87fcc62b1f16395cc3225d69d",
       "title": "Comentario de mercado: resumen diario Asia está acusando el golpe 🌏 . Los avances demócratas en las elecciones de mitad de mandato desataron temores a una regulación más estricta de la IA y los centros de datos, lo que llevó a los inversores a refugiarse en los bonos y provocó u",
@@ -4386,6 +4922,36 @@
       "mmt_lens": "CONTRACCION_REAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "92e2e3e1cec26b1dba102e9564e3fc8024c39aea7bfa2eca84bf266cbe342833",
+      "sha256": "92e2e3e1cec26b1dba102e9564e3fc8024c39aea7bfa2eca84bf266cbe342833",
+      "title": "EU social benefits expenditure up 5% in 2025 - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB0eHJ4dWVDSUJJR0U0ck4yZUNXWWxZQURQLVN6U1FlY1FRdGlCWGJtbk95X0NsUDU3dmllTmdzX2JlZFJYcmxwTEMwSlgwTGJ1Y2I4MzdBeVZQc0QwVmRMTzBtWWkxWGtfWVRRaTZ3bmFXaFZveWtMM0h1ODBHdw?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T10:27:17.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7025,646 +7591,6 @@
       "source_id": "investinglive",
       "source_type": "agencia",
       "published_at": "2026-11-05T20:40:41.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2a3379866338c8df741ad09a181a608fa735c26c63353fd70bee77b4cf6fc63a",
-      "sha256": "2a3379866338c8df741ad09a181a608fa735c26c63353fd70bee77b4cf6fc63a",
-      "title": "Iran's Major General Rezaei: Putin said that he would do anything to end the war.",
-      "url": "https://t.me/FinancialJuice/145148",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T20:31:27.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3d3d921f6629e0c7770d0d1a53561e1b38f63993c5e8b1bf2fab3bdd6f61052d",
-      "sha256": "3d3d921f6629e0c7770d0d1a53561e1b38f63993c5e8b1bf2fab3bdd6f61052d",
-      "title": "Friday FX Options Expiries",
-      "url": "https://t.me/FinancialJuice/145147",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T20:22:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ff21f75425f78b3ced0ad227187f33ce913a06e67b2fb9d010b157b2f1216c81",
-      "sha256": "ff21f75425f78b3ced0ad227187f33ce913a06e67b2fb9d010b157b2f1216c81",
-      "title": "Israel’s Herzog to decide Sunday who will try to form govt",
-      "url": "https://t.me/FinancialJuice/145146",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T20:00:18.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "85b94afe9c392076d6fd9e46f8ecbcc9259c5c2d51fef3364c5e79069adc80ba",
-      "sha256": "85b94afe9c392076d6fd9e46f8ecbcc9259c5c2d51fef3364c5e79069adc80ba",
-      "title": "Wti crude oil settles at 90.52 up 2.72 as buyers defend key support",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T19:55:41.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2208c7a76adf316ee3dc062d51f3cd54969632d9f94c26d8447489e5b0cc696a",
-      "sha256": "2208c7a76adf316ee3dc062d51f3cd54969632d9f94c26d8447489e5b0cc696a",
-      "title": "Lawmakers request Huang briefing on link to China. $NVDA",
-      "url": "https://t.me/FinancialJuice/145145",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T19:52:26.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7f33f3cf60d440f87985048f29871eda6e2f504b88719085526aff169789c01e",
-      "sha256": "7f33f3cf60d440f87985048f29871eda6e2f504b88719085526aff169789c01e",
-      "title": "Nvidia in talks on small AI data center network: The Information",
-      "url": "https://t.me/FinancialJuice/145144",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T19:50:15.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3bfac0846985b26407a7d1b7676d9d166e5e5b58b0b8df6066a3da8f1935c3f9",
-      "sha256": "3bfac0846985b26407a7d1b7676d9d166e5e5b58b0b8df6066a3da8f1935c3f9",
-      "title": "Nvidia’s Workaround For Data Center Backlash: Retrofitting Old Telephone Buildings - The Information. $NVDA",
-      "url": "https://t.me/FinancialJuice/145142",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T19:48:52.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eb7b14f3adf0d9f919a930a52f5da2ea66613689a0125e378b9f2c76129c8717",
-      "sha256": "eb7b14f3adf0d9f919a930a52f5da2ea66613689a0125e378b9f2c76129c8717",
-      "title": "The market is waiting for signals from donald trump",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T19:15:41.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "180672c00893daa4b615b1f5332da901a58e6314242b0ed4a1688816b69b7087",
-      "sha256": "180672c00893daa4b615b1f5332da901a58e6314242b0ed4a1688816b69b7087",
-      "title": "Hedge fund Walleye hands back capital as it slims down equity business",
-      "url": "https://www.ft.com/content/fb02c333-a439-4acd-b0b6-e50633ce863e?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T19:15:04.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "00da4ae2aafd671507e0a9648ab6eae57aa65b57804d633a30275285397355c2",
-      "sha256": "00da4ae2aafd671507e0a9648ab6eae57aa65b57804d633a30275285397355c2",
-      "title": "James Benford 2026 Deane-Stone Lecture, National Institute of Economic and Social Research, 4 November 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSWFpeGJEZDJlQnVRazJ3SmpjZmtKTlRGVnJfMDV3WC0tUGdFN3pzRlJ2ZGFJTHdRYmtpVVZQY09sYU92TEFPUjAwWTZXam50bmgwNGNWYlZKRm52ZDlWbUlLenBaYW5vUUphV2prQ2sxU1JjZjVJQ05WUEZCWnRKRmNjbkc3a05YSTRuOE1qMW9DRHNkMXoySFdPenJjMHlYOXpkbllNTzViX3lWN2hRR1d1UmFZUmEtcTZxMVExTi0?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T19:09:03.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "452212890d92ff50129a9590d010982d575f05f2e863f05c303059a4fa53054a",
-      "sha256": "452212890d92ff50129a9590d010982d575f05f2e863f05c303059a4fa53054a",
-      "title": "ORDEN MUNDIAL | Golpe a Trump: Marco Rubio podría dimitir, Hegseth, ¿el siguiente? y lucha en Alaska",
-      "url": "https://t.me/negociostv/60371",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T18:02:26.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8208df724e045e5e4a230cad919bccccf23c00baf011b9de1f526c1a8d9fca35",
-      "sha256": "8208df724e045e5e4a230cad919bccccf23c00baf011b9de1f526c1a8d9fca35",
-      "title": "Europe close ai and chip liquidation drags equities lower",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T18:00:49.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0092e30e1200a2d1b563eae58bd542f6a2d08b9730b6c6638c174af659b2d41b",
-      "sha256": "0092e30e1200a2d1b563eae58bd542f6a2d08b9730b6c6638c174af659b2d41b",
-      "title": "Treasury Targets Global Scam Networks and the Corporate Infrastructure That Enables Them - U.S. Department of the Treasury (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Lal9PQ0pramVrWkxFS1JMMmRTSkpLb19lc05zMW9GRWhwYmNXcS1ZY2pSbFc2R3VOU2NsbTlJa0xOSGVRRG5JZU9WT1ExOEF6LTRjay1KT1p0TlMyNVJkZHVR?oc=5",
-      "source": "US Treasury",
-      "source_id": "us-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T18:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "efd2be9eb212f9125502915a7e772025591427131a5fe7d48b2428ca435f5641",
-      "sha256": "efd2be9eb212f9125502915a7e772025591427131a5fe7d48b2428ca435f5641",
-      "title": "Audusd sellers have pushed to the lowest level since mid october what next",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:45:40.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8156c52ce096dfe2747c1c94a9f317454e28231382c3834bd2042a31881181e6",
-      "sha256": "8156c52ce096dfe2747c1c94a9f317454e28231382c3834bd2042a31881181e6",
-      "title": "European stocks overtake Wall Street following Democratic sweep",
-      "url": "https://www.ft.com/content/1ca182d6-8d16-4ddb-98fb-cf933b4c3073?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:41:41.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a7989741d783393c25467217d7714916d52722e58d1d0096bfa5d7e5a6c65a60",
-      "sha256": "a7989741d783393c25467217d7714916d52722e58d1d0096bfa5d7e5a6c65a60",
-      "title": "BoE leaves door open to further rate rises amid fears of entrenched inflation",
-      "url": "https://www.ft.com/content/88476c6f-2e7c-4ec6-b92c-cd933b9aeb01?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:37:46.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "71bd2eb1ca034a7330c44fba7ebc44efcb5b472d60e870db1fc371415273bb5d",
-      "sha256": "71bd2eb1ca034a7330c44fba7ebc44efcb5b472d60e870db1fc371415273bb5d",
-      "title": "Oil cracks are beginning to fall and refineries are pointing to more normalization",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:25:40.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b08cd650bfa6b7c59d602caadd9fc4cb7beec11875aebfa3ae25b255d12fae6a",
-      "sha256": "b08cd650bfa6b7c59d602caadd9fc4cb7beec11875aebfa3ae25b255d12fae6a",
-      "title": "BoE raises interest rates to 4% in bid to tame inflation",
-      "url": "https://www.ft.com/content/2153a8c5-976c-471f-9ca9-bf0a5da40b61?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:12:56.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2c3045fae34edfe89dd7945eb2eee4b48d8dab3857e9480ba1965d358ad83c0a",
-      "sha256": "2c3045fae34edfe89dd7945eb2eee4b48d8dab3857e9480ba1965d358ad83c0a",
-      "title": "German government close to buying half of tank maker KNDS",
-      "url": "https://www.ft.com/content/198d3d9d-b7d4-4c3a-884e-ad7b4e359dfa?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:04:41.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "628d6d777326d2ff106e879e7ece924a3207ea669d7935c19ecb90dfbf7ef246",
-      "sha256": "628d6d777326d2ff106e879e7ece924a3207ea669d7935c19ecb90dfbf7ef246",
-      "title": "So, about that Anthropic IPO . . .",
-      "url": "https://www.ft.com/content/2fbd60ee-060a-4957-b9c5-3b5a0ce88e1a?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:01:56.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0943daa15d971f0f76139793eadb1b141570d37be08f83dccdc9af04986b085a",
-      "sha256": "0943daa15d971f0f76139793eadb1b141570d37be08f83dccdc9af04986b085a",
-      "title": "Top private equity dealmaker to quit UK for Greece",
-      "url": "https://www.ft.com/content/6f36556a-01e4-4767-b75d-806cee8e2a06?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:00:12.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "599ef5910e8e67c4bdd3d093e3f041d531cb8311dc550f9161521acb1a677d63",
-      "sha256": "599ef5910e8e67c4bdd3d093e3f041d531cb8311dc550f9161521acb1a677d63",
-      "title": "Global stocks tumble as Democratic midterm sweep sparks AI rout",
-      "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:59:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7dd5971f5b6a6b9fb9a57ba6b46b170cd69e2974e982e99965a0a52484b1b4ed",
-      "sha256": "7dd5971f5b6a6b9fb9a57ba6b46b170cd69e2974e982e99965a0a52484b1b4ed",
-      "title": "Nasdaq drops the most since pandemic as Democratic ‘blue wave’ upends AI bets",
-      "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:59:34.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -7685,6 +7611,610 @@
   ],
   "news": [
     {
+      "id": "fa2dc9fcd389a1162b2c483f3a828f526f0f2592d89bc74dcdfcb1959297808c",
+      "sha256": "fa2dc9fcd389a1162b2c483f3a828f526f0f2592d89bc74dcdfcb1959297808c",
+      "title": "Ukraine's Zelenskiy: Russians deployed 172 drones and 36 ballistic missiles, all targeted at Kyiv and nearby areas overnight",
+      "url": "https://t.me/FinancialJuice/145469",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T08:38:50.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cc258aaf25f3d7e84619fc8579e4dfde43e8c74e8e12f7ad1cd97e778dc579fb",
+      "sha256": "cc258aaf25f3d7e84619fc8579e4dfde43e8c74e8e12f7ad1cd97e778dc579fb",
+      "title": "Russia launched 36 ballistic missiles and 172 drones at Ukraine overnight, mainly targeting energy facilities: Zelenskiy",
+      "url": "https://t.me/FinancialJuice/145468",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T08:36:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "479fb325057b10b6ae9cc0d2308dbd04a99a2ef5cd8a6b43ee5bc2fad0da71dc",
+      "sha256": "479fb325057b10b6ae9cc0d2308dbd04a99a2ef5cd8a6b43ee5bc2fad0da71dc",
+      "title": "Russia's delegation at trilateral meeting with US and Ukraine to include Medinsky, Ryabkov, Galuzin, Kostyukov, and Zhigarlovsky: IFX cites Kremlin",
+      "url": "https://t.me/FinancialJuice/145467",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T07:29:59.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "89b1931322febd72de32f73ec569d36a031de67e7ab0bfffe6e828ed9e07898b",
+      "sha256": "89b1931322febd72de32f73ec569d36a031de67e7ab0bfffe6e828ed9e07898b",
+      "title": "New Zealand electoral commission data: centre-right and centre-left coalitions need centrist support to govern with 26% of results counted",
+      "url": "https://t.me/FinancialJuice/145466",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T07:25:10.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cd73667e4e869943a5c936b077eeeb89c6bba3befc6c66197384556b5d988061",
+      "sha256": "cd73667e4e869943a5c936b077eeeb89c6bba3befc6c66197384556b5d988061",
+      "title": "New Zealand Electoral Commission data: opposition Labour leads popular vote, but ruling National forms coalition with 24% counted",
+      "url": "https://t.me/FinancialJuice/145465",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T07:12:05.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e885f8bbae269c092b7c32b4153ccae6d2342ba5f555d6f73d7ffd771ae1c2db",
+      "sha256": "e885f8bbae269c092b7c32b4153ccae6d2342ba5f555d6f73d7ffd771ae1c2db",
+      "title": "Data from New Zealand electoral commission: Ruling National party may form coalition with 20% of votes counted",
+      "url": "https://t.me/FinancialJuice/145464",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:56:17.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "cf4619a4458081b1f06bb5e9ad015bf734359c5d7a0cdc195cbb358538f01867",
+      "sha256": "cf4619a4458081b1f06bb5e9ad015bf734359c5d7a0cdc195cbb358538f01867",
+      "title": "Data from New Zealand electoral commission shows ruling National-led coalition likely to return to power with 10.9% of votes counted",
+      "url": "https://t.me/FinancialJuice/145463",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:35:42.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "807d1dd1d1cc9a387e7593cd039e7c1b96fd7d1ea389d65085c0785023ba9a68",
+      "sha256": "807d1dd1d1cc9a387e7593cd039e7c1b96fd7d1ea389d65085c0785023ba9a68",
+      "title": "New Zealand opposition lawmaker McNulty: National Party support exceeds expectations",
+      "url": "https://t.me/FinancialJuice/145462",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:35:33.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5b07ae484b4c6dd862deba892c56afc848b8c9d42629df0bb52df55f6be300aa",
+      "sha256": "5b07ae484b4c6dd862deba892c56afc848b8c9d42629df0bb52df55f6be300aa",
+      "title": "New Zealand election commission data: centrist opportunity party to cross threshold with 1.9% of votes counted",
+      "url": "https://t.me/FinancialJuice/145461",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:12:06.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b1819723855eef0057decd41abc281cca6538784c888049ecafcea3f9a1f9492",
+      "sha256": "b1819723855eef0057decd41abc281cca6538784c888049ecafcea3f9a1f9492",
+      "title": "New Zealand Electoral Commission data: ruling National at 30.81%, opposition Labour on 29.88% with 1.6% of votes counted",
+      "url": "https://t.me/FinancialJuice/145460",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:11:20.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6432c34f494202d2fdc419c6206ea6df77a7af4cdd8150a87bbfb844a852dc70",
+      "sha256": "6432c34f494202d2fdc419c6206ea6df77a7af4cdd8150a87bbfb844a852dc70",
+      "title": "Polls close in New Zealand general election: early results expected soon",
+      "url": "https://t.me/FinancialJuice/145459",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T06:00:34.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "aa534097c9635d5b1ef5c4649856986bc4c2d701b3663fa44c5b2b40c8d8b5d8",
+      "sha256": "aa534097c9635d5b1ef5c4649856986bc4c2d701b3663fa44c5b2b40c8d8b5d8",
+      "title": "Saudi-led coalition: intercepted and destroyed Houthi cruise missile targeted at Riyadh",
+      "url": "https://t.me/FinancialJuice/145458",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T05:07:13.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1c45a636ebea7512cc543b0aab705c83ac2cdec0262ddd5b38efd71eabc268a8",
+      "sha256": "1c45a636ebea7512cc543b0aab705c83ac2cdec0262ddd5b38efd71eabc268a8",
+      "title": "Britain preparing to host Volodymyr Zelenskiy for state visit next year: FT",
+      "url": "https://t.me/FinancialJuice/145457",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T05:03:34.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3dca1ce031d11e073b1c626c5e24d550641beafd9f79bcbcc20633f98300114f",
+      "sha256": "3dca1ce031d11e073b1c626c5e24d550641beafd9f79bcbcc20633f98300114f",
+      "title": "Trump’s defeat heralds a US retreat",
+      "url": "https://www.ft.com/content/f80ff605-6f6e-4b5d-9fab-20276b78e9b7?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-07T05:00:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "356b52ee7cf74c134c6326de98f9b9f970f59e668c691dc96caec4e66b5a3c0a",
+      "sha256": "356b52ee7cf74c134c6326de98f9b9f970f59e668c691dc96caec4e66b5a3c0a",
+      "title": "How Wall Street’s all-in bet on AI blew up",
+      "url": "https://www.ft.com/content/5a6806f0-e82e-4b34-b761-f9877e2b511c?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-07T05:00:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ad4817bf811e6f0b142fce3e2ed72eff8ff507bc8c7a862bf0ded23aa632c7b9",
+      "sha256": "ad4817bf811e6f0b142fce3e2ed72eff8ff507bc8c7a862bf0ded23aa632c7b9",
+      "title": "Russia ships metal via the Arctic to evade Ukrainian strikes",
+      "url": "https://www.ft.com/content/80d91653-c210-43cd-b91e-2b8c644561c1?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-07T05:00:22.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "786f6e15e72fa32ee51c363b73c9de81f23f0d329c65c3220e645e6fea1712b0",
+      "sha256": "786f6e15e72fa32ee51c363b73c9de81f23f0d329c65c3220e645e6fea1712b0",
+      "title": "Gold analysis buyers keep defending 4.040 is 4.140 the next target",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-07T04:20:39.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c824c550264a770154e03d459c438eeae7fc51defce91187619c4937d8c6e72a",
+      "sha256": "c824c550264a770154e03d459c438eeae7fc51defce91187619c4937d8c6e72a",
+      "title": "Hong Kong Legislative Council condemns foreign governments’ criticism of court ruling on Joshua Wong",
+      "url": "https://t.me/FinancialJuice/145456",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T04:06:36.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0b99274bbeb1077b04ec53237876e18929dc6fb810ba37bb0139290fef4f84c8",
+      "sha256": "0b99274bbeb1077b04ec53237876e18929dc6fb810ba37bb0139290fef4f84c8",
+      "title": "China's gold reserves $306.41 billion at end-October vs $323.52 billion at end-September: central bank",
+      "url": "https://t.me/FinancialJuice/145454",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T02:01:26.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "75a51299f28752dfd014a8cb9f2184a68e9abec053418739a59cbb037120842e",
+      "sha256": "75a51299f28752dfd014a8cb9f2184a68e9abec053418739a59cbb037120842e",
+      "title": "China's gold holdings 78.30 million fine troy oz at end-October vs 77.47 million at end-September: central bank",
+      "url": "https://t.me/FinancialJuice/145455",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T02:01:26.000Z",
+      "currencies": [
+        "XAU"
+      ],
+      "divisas": [
+        "XAU"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A6 / EA-7",
+      "mmt_lens": "ACTIVO_REAL_REFUGIO",
+      "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
+      "impact": 1,
+      "actual": null,
+      "forecast": "77.47",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d75f0dd3b18a95d8aebbb72be80b8f622900d15b6d3a858cabdd31df8b376591",
+      "sha256": "d75f0dd3b18a95d8aebbb72be80b8f622900d15b6d3a858cabdd31df8b376591",
+      "title": "China foreign exchange reserves $3.405 trillion at end-October vs $3.400 trillion at end-September: central bank",
+      "url": "https://t.me/FinancialJuice/145453",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T02:01:15.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "df00957f6f8baf9dbbe95d00d168434efb1d0370f2328b0b2a3e6f01e8515238",
       "sha256": "df00957f6f8baf9dbbe95d00d168434efb1d0370f2328b0b2a3e6f01e8515238",
       "title": "Qatar's PM: Iran issue must be resolved, another escalation unaffordable",
@@ -8660,7 +9190,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-06T20:08:49.000Z",
+      "published_at": "2026-11-06T20:08:42.000Z",
       "currencies": [
         "CAD"
       ],
@@ -11017,6 +11547,36 @@
       "z": null
     },
     {
+      "id": "43ba64d88250fee3bc45adc47e7162af10af61c9e5eb4dc65860691dbb84e3d8",
+      "sha256": "43ba64d88250fee3bc45adc47e7162af10af61c9e5eb4dc65860691dbb84e3d8",
+      "title": "2027 Ageing Report. Underlying Assumptions & Projection Methodologies - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0VMQ3NzdF9ZMGlVRnNYVExiakRsM1g4OFBrZlBHdzZjczE1ZlJ1cWpQTGlUUnRfcGVkcDlTQkRkOWZpUjlxNWZrNnA1cm1ORE05aFZfUG1xTll6Vk85WmxVZ2Uzal82aGp1c2hDYmt4MUF4QlFidTR6NDhhSG9Dc2liWkJGc1lTbllfTDIwbVRkRm1HWWtMVE9yUDZTNVBqZzJ4ZmdlZnY5TU1nRlFjWUU1Yjk0Slk?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T12:16:04.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "89f6ebfb53aa53d2a072f221ed1659a22dfda0f87fcc62b1f16395cc3225d69d",
       "sha256": "89f6ebfb53aa53d2a072f221ed1659a22dfda0f87fcc62b1f16395cc3225d69d",
       "title": "Comentario de mercado: resumen diario Asia está acusando el golpe 🌏 . Los avances demócratas en las elecciones de mitad de mandato desataron temores a una regulación más estricta de la IA y los centros de datos, lo que llevó a los inversores a refugiarse en los bonos y provocó u",
@@ -11397,6 +11957,36 @@
       "mmt_lens": "CONTRACCION_REAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "92e2e3e1cec26b1dba102e9564e3fc8024c39aea7bfa2eca84bf266cbe342833",
+      "sha256": "92e2e3e1cec26b1dba102e9564e3fc8024c39aea7bfa2eca84bf266cbe342833",
+      "title": "EU social benefits expenditure up 5% in 2025 - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB0eHJ4dWVDSUJJR0U0ck4yZUNXWWxZQURQLVN6U1FlY1FRdGlCWGJtbk95X0NsUDU3dmllTmdzX2JlZFJYcmxwTEMwSlgwTGJ1Y2I4MzdBeVZQc0QwVmRMTzBtWWkxWGtfWVRRaTZ3bmFXaFZveWtMM0h1ODBHdw?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T10:27:17.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -14036,646 +14626,6 @@
       "source_id": "investinglive",
       "source_type": "agencia",
       "published_at": "2026-11-05T20:40:41.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2a3379866338c8df741ad09a181a608fa735c26c63353fd70bee77b4cf6fc63a",
-      "sha256": "2a3379866338c8df741ad09a181a608fa735c26c63353fd70bee77b4cf6fc63a",
-      "title": "Iran's Major General Rezaei: Putin said that he would do anything to end the war.",
-      "url": "https://t.me/FinancialJuice/145148",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T20:31:27.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3d3d921f6629e0c7770d0d1a53561e1b38f63993c5e8b1bf2fab3bdd6f61052d",
-      "sha256": "3d3d921f6629e0c7770d0d1a53561e1b38f63993c5e8b1bf2fab3bdd6f61052d",
-      "title": "Friday FX Options Expiries",
-      "url": "https://t.me/FinancialJuice/145147",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T20:22:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ff21f75425f78b3ced0ad227187f33ce913a06e67b2fb9d010b157b2f1216c81",
-      "sha256": "ff21f75425f78b3ced0ad227187f33ce913a06e67b2fb9d010b157b2f1216c81",
-      "title": "Israel’s Herzog to decide Sunday who will try to form govt",
-      "url": "https://t.me/FinancialJuice/145146",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T20:00:18.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "85b94afe9c392076d6fd9e46f8ecbcc9259c5c2d51fef3364c5e79069adc80ba",
-      "sha256": "85b94afe9c392076d6fd9e46f8ecbcc9259c5c2d51fef3364c5e79069adc80ba",
-      "title": "Wti crude oil settles at 90.52 up 2.72 as buyers defend key support",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T19:55:41.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2208c7a76adf316ee3dc062d51f3cd54969632d9f94c26d8447489e5b0cc696a",
-      "sha256": "2208c7a76adf316ee3dc062d51f3cd54969632d9f94c26d8447489e5b0cc696a",
-      "title": "Lawmakers request Huang briefing on link to China. $NVDA",
-      "url": "https://t.me/FinancialJuice/145145",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T19:52:26.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7f33f3cf60d440f87985048f29871eda6e2f504b88719085526aff169789c01e",
-      "sha256": "7f33f3cf60d440f87985048f29871eda6e2f504b88719085526aff169789c01e",
-      "title": "Nvidia in talks on small AI data center network: The Information",
-      "url": "https://t.me/FinancialJuice/145144",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T19:50:15.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3bfac0846985b26407a7d1b7676d9d166e5e5b58b0b8df6066a3da8f1935c3f9",
-      "sha256": "3bfac0846985b26407a7d1b7676d9d166e5e5b58b0b8df6066a3da8f1935c3f9",
-      "title": "Nvidia’s Workaround For Data Center Backlash: Retrofitting Old Telephone Buildings - The Information. $NVDA",
-      "url": "https://t.me/FinancialJuice/145142",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T19:48:52.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eb7b14f3adf0d9f919a930a52f5da2ea66613689a0125e378b9f2c76129c8717",
-      "sha256": "eb7b14f3adf0d9f919a930a52f5da2ea66613689a0125e378b9f2c76129c8717",
-      "title": "The market is waiting for signals from donald trump",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T19:15:41.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "180672c00893daa4b615b1f5332da901a58e6314242b0ed4a1688816b69b7087",
-      "sha256": "180672c00893daa4b615b1f5332da901a58e6314242b0ed4a1688816b69b7087",
-      "title": "Hedge fund Walleye hands back capital as it slims down equity business",
-      "url": "https://www.ft.com/content/fb02c333-a439-4acd-b0b6-e50633ce863e?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T19:15:04.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "00da4ae2aafd671507e0a9648ab6eae57aa65b57804d633a30275285397355c2",
-      "sha256": "00da4ae2aafd671507e0a9648ab6eae57aa65b57804d633a30275285397355c2",
-      "title": "James Benford 2026 Deane-Stone Lecture, National Institute of Economic and Social Research, 4 November 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSWFpeGJEZDJlQnVRazJ3SmpjZmtKTlRGVnJfMDV3WC0tUGdFN3pzRlJ2ZGFJTHdRYmtpVVZQY09sYU92TEFPUjAwWTZXam50bmgwNGNWYlZKRm52ZDlWbUlLenBaYW5vUUphV2prQ2sxU1JjZjVJQ05WUEZCWnRKRmNjbkc3a05YSTRuOE1qMW9DRHNkMXoySFdPenJjMHlYOXpkbllNTzViX3lWN2hRR1d1UmFZUmEtcTZxMVExTi0?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T19:09:03.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "452212890d92ff50129a9590d010982d575f05f2e863f05c303059a4fa53054a",
-      "sha256": "452212890d92ff50129a9590d010982d575f05f2e863f05c303059a4fa53054a",
-      "title": "ORDEN MUNDIAL | Golpe a Trump: Marco Rubio podría dimitir, Hegseth, ¿el siguiente? y lucha en Alaska",
-      "url": "https://t.me/negociostv/60371",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T18:02:26.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8208df724e045e5e4a230cad919bccccf23c00baf011b9de1f526c1a8d9fca35",
-      "sha256": "8208df724e045e5e4a230cad919bccccf23c00baf011b9de1f526c1a8d9fca35",
-      "title": "Europe close ai and chip liquidation drags equities lower",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T18:00:49.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0092e30e1200a2d1b563eae58bd542f6a2d08b9730b6c6638c174af659b2d41b",
-      "sha256": "0092e30e1200a2d1b563eae58bd542f6a2d08b9730b6c6638c174af659b2d41b",
-      "title": "Treasury Targets Global Scam Networks and the Corporate Infrastructure That Enables Them - U.S. Department of the Treasury (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Lal9PQ0pramVrWkxFS1JMMmRTSkpLb19lc05zMW9GRWhwYmNXcS1ZY2pSbFc2R3VOU2NsbTlJa0xOSGVRRG5JZU9WT1ExOEF6LTRjay1KT1p0TlMyNVJkZHVR?oc=5",
-      "source": "US Treasury",
-      "source_id": "us-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T18:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "efd2be9eb212f9125502915a7e772025591427131a5fe7d48b2428ca435f5641",
-      "sha256": "efd2be9eb212f9125502915a7e772025591427131a5fe7d48b2428ca435f5641",
-      "title": "Audusd sellers have pushed to the lowest level since mid october what next",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:45:40.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8156c52ce096dfe2747c1c94a9f317454e28231382c3834bd2042a31881181e6",
-      "sha256": "8156c52ce096dfe2747c1c94a9f317454e28231382c3834bd2042a31881181e6",
-      "title": "European stocks overtake Wall Street following Democratic sweep",
-      "url": "https://www.ft.com/content/1ca182d6-8d16-4ddb-98fb-cf933b4c3073?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:41:41.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a7989741d783393c25467217d7714916d52722e58d1d0096bfa5d7e5a6c65a60",
-      "sha256": "a7989741d783393c25467217d7714916d52722e58d1d0096bfa5d7e5a6c65a60",
-      "title": "BoE leaves door open to further rate rises amid fears of entrenched inflation",
-      "url": "https://www.ft.com/content/88476c6f-2e7c-4ec6-b92c-cd933b9aeb01?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:37:46.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "71bd2eb1ca034a7330c44fba7ebc44efcb5b472d60e870db1fc371415273bb5d",
-      "sha256": "71bd2eb1ca034a7330c44fba7ebc44efcb5b472d60e870db1fc371415273bb5d",
-      "title": "Oil cracks are beginning to fall and refineries are pointing to more normalization",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:25:40.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b08cd650bfa6b7c59d602caadd9fc4cb7beec11875aebfa3ae25b255d12fae6a",
-      "sha256": "b08cd650bfa6b7c59d602caadd9fc4cb7beec11875aebfa3ae25b255d12fae6a",
-      "title": "BoE raises interest rates to 4% in bid to tame inflation",
-      "url": "https://www.ft.com/content/2153a8c5-976c-471f-9ca9-bf0a5da40b61?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:12:56.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2c3045fae34edfe89dd7945eb2eee4b48d8dab3857e9480ba1965d358ad83c0a",
-      "sha256": "2c3045fae34edfe89dd7945eb2eee4b48d8dab3857e9480ba1965d358ad83c0a",
-      "title": "German government close to buying half of tank maker KNDS",
-      "url": "https://www.ft.com/content/198d3d9d-b7d4-4c3a-884e-ad7b4e359dfa?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:04:41.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "628d6d777326d2ff106e879e7ece924a3207ea669d7935c19ecb90dfbf7ef246",
-      "sha256": "628d6d777326d2ff106e879e7ece924a3207ea669d7935c19ecb90dfbf7ef246",
-      "title": "So, about that Anthropic IPO . . .",
-      "url": "https://www.ft.com/content/2fbd60ee-060a-4957-b9c5-3b5a0ce88e1a?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:01:56.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0943daa15d971f0f76139793eadb1b141570d37be08f83dccdc9af04986b085a",
-      "sha256": "0943daa15d971f0f76139793eadb1b141570d37be08f83dccdc9af04986b085a",
-      "title": "Top private equity dealmaker to quit UK for Greece",
-      "url": "https://www.ft.com/content/6f36556a-01e4-4767-b75d-806cee8e2a06?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T17:00:12.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "599ef5910e8e67c4bdd3d093e3f041d531cb8311dc550f9161521acb1a677d63",
-      "sha256": "599ef5910e8e67c4bdd3d093e3f041d531cb8311dc550f9161521acb1a677d63",
-      "title": "Global stocks tumble as Democratic midterm sweep sparks AI rout",
-      "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:59:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7dd5971f5b6a6b9fb9a57ba6b46b170cd69e2974e982e99965a0a52484b1b4ed",
-      "sha256": "7dd5971f5b6a6b9fb9a57ba6b46b170cd69e2974e982e99965a0a52484b1b4ed",
-      "title": "Nasdaq drops the most since pandemic as Democratic ‘blue wave’ upends AI bets",
-      "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:59:34.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
