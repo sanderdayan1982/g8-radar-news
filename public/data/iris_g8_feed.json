@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-07T19:28:54.824Z",
-  "started_at": "2026-11-07T19:28:51.985Z",
+  "generated_at": "2026-11-07T22:56:55.743Z",
+  "started_at": "2026-11-07T22:56:52.829Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,10 +15,10 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 32,
+      "score": 31,
       "bias": "alcista",
-      "structural": 32,
-      "impulse": 7,
+      "structural": 31,
+      "impulse": 5,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -28,9 +28,9 @@
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
+        "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "34 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +32 | Imp 3h +7. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +31 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -38,7 +38,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 7,
+      "impulse": 5,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -46,17 +46,18 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "23 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +7. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 3,
-      "score": 13,
+      "score": 14,
       "bias": "alcista",
-      "structural": 13,
-      "impulse": 7,
+      "structural": 14,
+      "impulse": 5,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,14 +68,14 @@
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "18 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +13 | Imp 3h +7. Régimen real mixed."
+      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +14 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
-      "score": 11,
-      "bias": "neutral",
-      "structural": 11,
+      "rank": 3,
+      "score": 14,
+      "bias": "alcista",
+      "structural": 14,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -87,7 +88,7 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +11 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +14 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -98,23 +99,23 @@
       "impulse": null,
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "✓ POST-EVENTO",
-      "calendar_lock_detail": "✓ POST-EVENTO (Parliamentary Elections: Publicado)",
-      "post_event_status": "✓ POST-EVENTO (Parliamentary Elections: Publicado)",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Currency Strength Chart: Strongest: USD, CHF, JPY, CAD, EUR, GBP, NZD, AUD",
         "New Zealand Prime Minister Luxon: talks and concessions will be necessary",
         "New Zealand Prime Minister Luxon: There is a route to form next government"
       ],
-      "rationale": "11 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ✓ POST-EVENTO · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "EUR",
       "rank": 6,
-      "score": -14,
+      "score": -13,
       "bias": "bajista",
-      "structural": -14,
+      "structural": -13,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -127,7 +128,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "11 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -14 | Imp 3h n/d. Régimen real weak."
+      "rationale": "11 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -13 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "AUD",
@@ -155,7 +156,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": null,
+      "impulse": -5,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -167,7 +168,7 @@
         "CPI sin sorpresa",
         "FLUJO_FISCAL_NFA: Emisor soberano sin riesgo default"
       ],
-      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -24 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -24 | Imp 3h -5. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -193,10 +194,10 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 32,
+      "score": 31,
       "bias": "alcista",
-      "structural": 32,
-      "impulse": 7,
+      "structural": 31,
+      "impulse": 5,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -206,9 +207,9 @@
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
+        "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "34 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +32 | Imp 3h +7. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +31 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -216,7 +217,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 7,
+      "impulse": 5,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -224,17 +225,18 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "23 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +7. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 3,
-      "score": 13,
+      "score": 14,
       "bias": "alcista",
-      "structural": 13,
-      "impulse": 7,
+      "structural": 14,
+      "impulse": 5,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -245,14 +247,14 @@
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "18 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +13 | Imp 3h +7. Régimen real mixed."
+      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +14 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
-      "score": 11,
-      "bias": "neutral",
-      "structural": 11,
+      "rank": 3,
+      "score": 14,
+      "bias": "alcista",
+      "structural": 14,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -265,7 +267,7 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +11 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +14 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -276,23 +278,23 @@
       "impulse": null,
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "✓ POST-EVENTO",
-      "calendar_lock_detail": "✓ POST-EVENTO (Parliamentary Elections: Publicado)",
-      "post_event_status": "✓ POST-EVENTO (Parliamentary Elections: Publicado)",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Currency Strength Chart: Strongest: USD, CHF, JPY, CAD, EUR, GBP, NZD, AUD",
         "New Zealand Prime Minister Luxon: talks and concessions will be necessary",
         "New Zealand Prime Minister Luxon: There is a route to form next government"
       ],
-      "rationale": "11 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ✓ POST-EVENTO · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "EUR",
       "rank": 6,
-      "score": -14,
+      "score": -13,
       "bias": "bajista",
-      "structural": -14,
+      "structural": -13,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -305,7 +307,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "11 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -14 | Imp 3h n/d. Régimen real weak."
+      "rationale": "11 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -13 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "AUD",
@@ -333,7 +335,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": null,
+      "impulse": -5,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -345,7 +347,7 @@
         "CPI sin sorpresa",
         "FLUJO_FISCAL_NFA: Emisor soberano sin riesgo default"
       ],
-      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -24 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -24 | Imp 3h -5. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -358,7 +360,7 @@
       "actual": "165K",
       "forecast": "65K",
       "previous": "29K",
-      "hours_from_now": -30,
+      "hours_from_now": -33.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -370,19 +372,7 @@
       "actual": "27.839B",
       "forecast": "13.4B",
       "previous": "8.3B",
-      "hours_from_now": -23.5,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "6a4470cb6134dc7c",
-      "currency": "NZD",
-      "title": "Parliamentary Elections",
-      "event_at": "2026-11-06T21:45:00.000Z",
-      "impact": "High",
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "hours_from_now": -21.7,
+      "hours_from_now": -26.9,
       "window_status": "✓ POST-EVENTO"
     }
   ],
@@ -398,6 +388,349 @@
   },
   "items": [
     {
+      "id": "7afa70f129114d60403c7555e8ededd109de1b21932d2472dfaf712aaa77a629",
+      "sha256": "7afa70f129114d60403c7555e8ededd109de1b21932d2472dfaf712aaa77a629",
+      "title": "Sneak peak of some data in FJ 2.0 - launching soon 😍",
+      "url": "https://t.me/FinancialJuice/145512",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:54:46.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f93a02b97114dda49ccbefe80bfaf866fc92248686724548fe0e05efa094e92c",
+      "sha256": "f93a02b97114dda49ccbefe80bfaf866fc92248686724548fe0e05efa094e92c",
+      "title": "UFC CEO Dana White declines Trump’s offer to become press secretary: source says - CNN",
+      "url": "https://t.me/FinancialJuice/145511",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:40:03.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "439539915620fed5f1e14475e588d5419b04b75b07da6954f0426a2dc7e256b7",
+      "sha256": "439539915620fed5f1e14475e588d5419b04b75b07da6954f0426a2dc7e256b7",
+      "title": "UKMTO: status of crew, damage evaluation and environmental impact unclear at time of report",
+      "url": "https://t.me/FinancialJuice/145510",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:32:07.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ab7b60bc928a5263aa7eb9c954642f097cef2e5ced926f40c449fd98112aaff2",
+      "sha256": "ab7b60bc928a5263aa7eb9c954642f097cef2e5ced926f40c449fd98112aaff2",
+      "title": "UKMTO reports incident between bulk carrier and military forces in Gulf of Oman near Khor Fakkan, UAE",
+      "url": "https://t.me/FinancialJuice/145509",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:32:04.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9f5823d5fb7e79b6a4e8161653c34840a842c8efeab079dd2ef5a7bafb72e653",
+      "sha256": "9f5823d5fb7e79b6a4e8161653c34840a842c8efeab079dd2ef5a7bafb72e653",
+      "title": "Trump orders Justice Department to investigate Democrats threatening many people",
+      "url": "https://t.me/FinancialJuice/145508",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:11:43.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "472fdc4573cb0866595aa9afdd31dca13fe00a5cd8c68b6b8e406170afede874",
+      "sha256": "472fdc4573cb0866595aa9afdd31dca13fe00a5cd8c68b6b8e406170afede874",
+      "title": "Iran's IRGC navy: two oil tankers struck mines near Strait of Hormuz - Iranian state TV",
+      "url": "https://t.me/FinancialJuice/145507",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:11:42.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a5b08ecba3a2f5e03d229f4e8580fa47ee9250a947747c8b383c8e0ccb967701",
+      "sha256": "a5b08ecba3a2f5e03d229f4e8580fa47ee9250a947747c8b383c8e0ccb967701",
+      "title": "US Central Command: Forces disabled commercial ship in Gulf of Oman Saturday",
+      "url": "https://t.me/FinancialJuice/145506",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T20:37:01.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2f5c8ca71bc1676bad8415fe367c48e395847a1f089e58f58d3f0ae78562eb85",
+      "sha256": "2f5c8ca71bc1676bad8415fe367c48e395847a1f089e58f58d3f0ae78562eb85",
+      "title": "Iran’s Tasnim News Agency: Explosions heard on Geshm Island not linked to missile attacks",
+      "url": "https://t.me/FinancialJuice/145505",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T20:32:13.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fa5e8032fad3938fccf83dcfda51b7f0cddf71f3e7694bfecfe5716795637264",
+      "sha256": "fa5e8032fad3938fccf83dcfda51b7f0cddf71f3e7694bfecfe5716795637264",
+      "title": "Iran state TV reporter: Explosions could be connected to Iranian military actions in Strait of Hormuz",
+      "url": "https://t.me/FinancialJuice/145504",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T20:24:10.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c3a885f67d5e0e59a137ce215fecd2d4bc2e596145b31e76e080ee23fa278455",
+      "sha256": "c3a885f67d5e0e59a137ce215fecd2d4bc2e596145b31e76e080ee23fa278455",
+      "title": "Explosions heard in Jask, Sirik, Bandar Abbas and Geshm in southern Iran: Iranian state TV",
+      "url": "https://t.me/FinancialJuice/145503",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T20:14:25.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "24523b50da4e443c05b614b3d8f74bed6b5817d7dd9ed9430f6c3064cc2988ac",
+      "sha256": "24523b50da4e443c05b614b3d8f74bed6b5817d7dd9ed9430f6c3064cc2988ac",
+      "title": "Explosions heard in Iran's Qeshm: IRNA corrects source",
+      "url": "https://t.me/FinancialJuice/145502",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T19:39:36.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "067b83c6dfbb69f822e5d0c57984f3d424a50090f43d559d680f8b6371fc07e1",
+      "sha256": "067b83c6dfbb69f822e5d0c57984f3d424a50090f43d559d680f8b6371fc07e1",
+      "title": "Explosions reported in Iran's Qeshm: ISNA News Agency",
+      "url": "https://t.me/FinancialJuice/145501",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T19:33:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "fd0af23e7430642ade5f751fec8e4826f2e10de1e239b916cc438cd09c4ef1df",
       "sha256": "fd0af23e7430642ade5f751fec8e4826f2e10de1e239b916cc438cd09c4ef1df",
       "title": "Israeli president selects Gadi Eisenkot, Netanyahu rival, to form government: Israeli media",
@@ -565,7 +898,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-07T17:44:57.000Z",
+      "published_at": "2026-11-07T17:44:48.000Z",
       "currencies": [
         "CAD"
       ],
@@ -623,32 +956,6 @@
       "z": null
     },
     {
-      "id": "74e8ac994bae7889961afa844f075b06d4bbdf3a6403b3866875fc30ae46c04c",
-      "sha256": "74e8ac994bae7889961afa844f075b06d4bbdf3a6403b3866875fc30ae46c04c",
-      "title": "Erdogan tells Trump US-Iran tensions must be settled diplomatically, Ankara will persist in peace efforts, Erdogan's office says",
-      "url": "https://t.me/FinancialJuice/145492",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-07T17:42:46.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "222f29e130112bd89d550f3edb8d07dbe6d4937a6b695d9e889bf1dd1c101b2e",
       "sha256": "222f29e130112bd89d550f3edb8d07dbe6d4937a6b695d9e889bf1dd1c101b2e",
       "title": "Turkey's Erdogan talks with Trump by phone: discusses regional and global developments, Erdogan's office says",
@@ -668,6 +975,32 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "74e8ac994bae7889961afa844f075b06d4bbdf3a6403b3866875fc30ae46c04c",
+      "sha256": "74e8ac994bae7889961afa844f075b06d4bbdf3a6403b3866875fc30ae46c04c",
+      "title": "Erdogan tells Trump US-Iran tensions must be settled diplomatically, Ankara will persist in peace efforts, Erdogan's office says",
+      "url": "https://t.me/FinancialJuice/145492",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T17:42:46.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -1911,6 +2244,38 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4f9d6fac823bf2dafc35bf0402b81ab7d74df330866dbdaba4d4f2510b8b5868",
+      "sha256": "4f9d6fac823bf2dafc35bf0402b81ab7d74df330866dbdaba4d4f2510b8b5868",
+      "title": "Auction Result of Treasury Discount Bills on November 6, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ1M4UHI3TXFtdXo5MV9memtvckFxcU9sRWVraVFLeGR5QnU4TUx6UzhMQUZGbXNGTEpuMGlZdW56aWNFRGlKWmh5NEdacXdKZzhuUmQ2TEswUGpOT2pzVXRLLUV2QktLZWNfZ2x1X0NEQUpLYVI2NDlsc0w3T0tiUEFiWXRvRmdPZXhqUE1qbUw0eTRTT0VmWVBwSEs?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-07T02:13:54.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -6749,6 +7114,38 @@
       "z": null
     },
     {
+      "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
+      "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
+      "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZUNnZDljUE1RcW9VZXU5QjZpZUdGTUNoazBCM1JRQmxfVGFWcnhnNnd3YUNycE0xZURiUmVKRXpoUkkwMFljSE9TRzV4Z29nOEFPVDZPVWFvekNLY0VIXzBCYWtmTEJvUE5vVlFzVS1JRFZzb21IQU1wQ3loYU1odkQzZ2RDaWFqdDNCVDYtalNWTnV3bmFQRlhB?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "cf70aa113439a2cca5d13dff286823c3804555c81e66f60788a089ed738649c5",
       "sha256": "cf70aa113439a2cca5d13dff286823c3804555c81e66f60788a089ed738649c5",
       "title": "BoE Gov. Bailey: If energy prices remain high, another hike is possible",
@@ -7029,388 +7426,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "64005740f5b34698b61c0267be9b830f785c405adc2389cc95f67e580149fb44",
-      "sha256": "64005740f5b34698b61c0267be9b830f785c405adc2389cc95f67e580149fb44",
-      "title": "Ark Invest wants to bring some ‘disruptive innovation’ to interval funds",
-      "url": "https://www.ft.com/content/dce2b9da-a4c6-4016-af78-7c41ac41a6b0",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T06:00:04.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5aaa64452b2bf418b11019e867021f97545c09f2e7003438bd333852b13af02d",
-      "sha256": "5aaa64452b2bf418b11019e867021f97545c09f2e7003438bd333852b13af02d",
-      "title": "The AI gamble strains for more cash",
-      "url": "https://www.ft.com/content/4e0dbca4-5917-483f-b524-8b8a2b4c54b2?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T05:00:14.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c6b00f1480b86ff9dde053fa61253cfb29c0c40c1cd6a2b621ed01f8f5d43316",
-      "sha256": "c6b00f1480b86ff9dde053fa61253cfb29c0c40c1cd6a2b621ed01f8f5d43316",
-      "title": "Why investors soured on the Democrats",
-      "url": "https://www.ft.com/content/f49c25d4-d77c-415d-b25b-5aaf7aaaac4a?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T05:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e42c4d46689e9b483abfc21c000495ef27771b973e628180f874a469203ccea7",
-      "sha256": "e42c4d46689e9b483abfc21c000495ef27771b973e628180f874a469203ccea7",
-      "title": "Nasdaq analysis after yesterday s crash is this the dip investors have been waiting for",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T04:05:58.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "80ce5a0e7cdc19ced2edcb5a0e1cdae95fd48ff46adb8f849edec9de336d3b72",
-      "sha256": "80ce5a0e7cdc19ced2edcb5a0e1cdae95fd48ff46adb8f849edec9de336d3b72",
-      "title": "Opinion piece: The war is driving inflation, but our budget must play its part - Treasury.gov.au",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONzFSc2xZSUJhTjA3c2w2OVNUWWJhdDM2Q01kcGdIVUl1UW54dGEzOGZSVFVIeFVockk4Q24xU0lwS2VjVEM3MG53WE1RRDFrS2d0cHhrTi1jTHBlcXIyMlZMVWRMUGF3aWFudjZfdDBHS0hkNzVRYnA4bUVNNndKN0MzQkhvTFJTaDFNV1BVYkRDUVJBX3FvUnZLZVFzY2M0d3ZJcVE5Z0JYM2FDNGxBanZmNFIyNm03a2ZYOXV2R0NFSzBNOVFaX2o4MA?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T03:31:14.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo",
-        "Fiscal",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "54323dac8643baaba7b60ec78c1e8d7c45ecdccd8b56db46a158d788bd8313d6",
-      "sha256": "54323dac8643baaba7b60ec78c1e8d7c45ecdccd8b56db46a158d788bd8313d6",
-      "title": "Doorstop interview, Mural Hall, Parliament House, Canberra - Treasury.gov.au",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeGhmQ2YzLUxtQlpZQ3RaaUJkQllNb1Z3dlRLcFA4WnNPbG1PTll6bndFVUozVW1kZ2NGaFlnMUhWQzlOeFFTeExvY1pSbkpDV1puTDZoUzJSd2hLQjRRZXpOTFlnR0hkZGhVNHhiOTc4QTJULVZKWFpNbW91S3JUX0tnQTEzc0hTWWdESnZQUGpNdUtacGptV1l3LXVISnR6OFNYcEVmaGFINWhrV0hnVXR4a25CUHQzQ2l2NlZaRTlRNEdKYjVxZ3l2SQ?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T03:30:50.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a7a666e714d5bf500158bf06893e8a08964cbf1a5897607fd5cdeeae5c56722c",
-      "sha256": "a7a666e714d5bf500158bf06893e8a08964cbf1a5897607fd5cdeeae5c56722c",
-      "title": "S.Korea finmin: will adopt more stabilizing measures if volatility rises further",
-      "url": "https://t.me/FinancialJuice/145202",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:45:51.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5998165ffadf7b4047f9532bb1ab45186829d71ccd9541662d789bf034b1cafe",
-      "sha256": "5998165ffadf7b4047f9532bb1ab45186829d71ccd9541662d789bf034b1cafe",
-      "title": "S.Korea finmin: to relax rules on borrowed investment to reduce market volatility",
-      "url": "https://t.me/FinancialJuice/145201",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:44:45.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dfbb5c1ea66a41939dba6035e0f2f43ddddc29e4ef11046081b2d2f5d81b5d0c",
-      "sha256": "dfbb5c1ea66a41939dba6035e0f2f43ddddc29e4ef11046081b2d2f5d81b5d0c",
-      "title": "S.Korea finance ministry: to watch stock market with utmost caution",
-      "url": "https://t.me/FinancialJuice/145200",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:43:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3bda7ee8c69acc00a208528153185920de1addb9542c0dc741b30032c3b697b7",
-      "sha256": "3bda7ee8c69acc00a208528153185920de1addb9542c0dc741b30032c3b697b7",
-      "title": "S.Korea finmin: to act proactively to avoid escalating market anxiety",
-      "url": "https://t.me/FinancialJuice/145199",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:43:06.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "bc27ea29b493d4cf829d7257258ef50fb30578b9279780849e00f316a225c5a6",
-      "sha256": "bc27ea29b493d4cf829d7257258ef50fb30578b9279780849e00f316a225c5a6",
-      "title": "S.Korea finance minister: necessary to be cautious of excessive worry given robust economic fundamentals",
-      "url": "https://t.me/FinancialJuice/145198",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:42:23.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4b0a76c79f93013fdf73c92434abac84ca4266589721965e95a44b95feac6bc8",
-      "sha256": "4b0a76c79f93013fdf73c92434abac84ca4266589721965e95a44b95feac6bc8",
-      "title": "S. Korea finmin: stock market overreacting to external factors",
-      "url": "https://t.me/FinancialJuice/145197",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:41:45.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4e2a09fbef4bd91a3608284205c431a752b38e70d28ee811e2e49357428996cf",
-      "sha256": "4e2a09fbef4bd91a3608284205c431a752b38e70d28ee811e2e49357428996cf",
-      "title": "S.Korea central bank announces sale of 91-day monetary stabilization bonds at 3.175% yield",
-      "url": "https://t.me/FinancialJuice/145196",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:40:33.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b2d3c13af1a1cca64967efcf9a2c138dcef64bb3a54a4540db8703928ace4de1",
-      "sha256": "b2d3c13af1a1cca64967efcf9a2c138dcef64bb3a54a4540db8703928ace4de1",
-      "title": "IMES Discussion Paper Series (2026)",
-      "url": "http://www.boj.or.jp/en/research/imes/dps/dps26.htm",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T02:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7420,6 +7435,349 @@
   ],
   "news": [
     {
+      "id": "7afa70f129114d60403c7555e8ededd109de1b21932d2472dfaf712aaa77a629",
+      "sha256": "7afa70f129114d60403c7555e8ededd109de1b21932d2472dfaf712aaa77a629",
+      "title": "Sneak peak of some data in FJ 2.0 - launching soon 😍",
+      "url": "https://t.me/FinancialJuice/145512",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:54:46.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f93a02b97114dda49ccbefe80bfaf866fc92248686724548fe0e05efa094e92c",
+      "sha256": "f93a02b97114dda49ccbefe80bfaf866fc92248686724548fe0e05efa094e92c",
+      "title": "UFC CEO Dana White declines Trump’s offer to become press secretary: source says - CNN",
+      "url": "https://t.me/FinancialJuice/145511",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:40:03.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "439539915620fed5f1e14475e588d5419b04b75b07da6954f0426a2dc7e256b7",
+      "sha256": "439539915620fed5f1e14475e588d5419b04b75b07da6954f0426a2dc7e256b7",
+      "title": "UKMTO: status of crew, damage evaluation and environmental impact unclear at time of report",
+      "url": "https://t.me/FinancialJuice/145510",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:32:07.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ab7b60bc928a5263aa7eb9c954642f097cef2e5ced926f40c449fd98112aaff2",
+      "sha256": "ab7b60bc928a5263aa7eb9c954642f097cef2e5ced926f40c449fd98112aaff2",
+      "title": "UKMTO reports incident between bulk carrier and military forces in Gulf of Oman near Khor Fakkan, UAE",
+      "url": "https://t.me/FinancialJuice/145509",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:32:04.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9f5823d5fb7e79b6a4e8161653c34840a842c8efeab079dd2ef5a7bafb72e653",
+      "sha256": "9f5823d5fb7e79b6a4e8161653c34840a842c8efeab079dd2ef5a7bafb72e653",
+      "title": "Trump orders Justice Department to investigate Democrats threatening many people",
+      "url": "https://t.me/FinancialJuice/145508",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:11:43.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "472fdc4573cb0866595aa9afdd31dca13fe00a5cd8c68b6b8e406170afede874",
+      "sha256": "472fdc4573cb0866595aa9afdd31dca13fe00a5cd8c68b6b8e406170afede874",
+      "title": "Iran's IRGC navy: two oil tankers struck mines near Strait of Hormuz - Iranian state TV",
+      "url": "https://t.me/FinancialJuice/145507",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T21:11:42.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a5b08ecba3a2f5e03d229f4e8580fa47ee9250a947747c8b383c8e0ccb967701",
+      "sha256": "a5b08ecba3a2f5e03d229f4e8580fa47ee9250a947747c8b383c8e0ccb967701",
+      "title": "US Central Command: Forces disabled commercial ship in Gulf of Oman Saturday",
+      "url": "https://t.me/FinancialJuice/145506",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T20:37:01.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2f5c8ca71bc1676bad8415fe367c48e395847a1f089e58f58d3f0ae78562eb85",
+      "sha256": "2f5c8ca71bc1676bad8415fe367c48e395847a1f089e58f58d3f0ae78562eb85",
+      "title": "Iran’s Tasnim News Agency: Explosions heard on Geshm Island not linked to missile attacks",
+      "url": "https://t.me/FinancialJuice/145505",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T20:32:13.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fa5e8032fad3938fccf83dcfda51b7f0cddf71f3e7694bfecfe5716795637264",
+      "sha256": "fa5e8032fad3938fccf83dcfda51b7f0cddf71f3e7694bfecfe5716795637264",
+      "title": "Iran state TV reporter: Explosions could be connected to Iranian military actions in Strait of Hormuz",
+      "url": "https://t.me/FinancialJuice/145504",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T20:24:10.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c3a885f67d5e0e59a137ce215fecd2d4bc2e596145b31e76e080ee23fa278455",
+      "sha256": "c3a885f67d5e0e59a137ce215fecd2d4bc2e596145b31e76e080ee23fa278455",
+      "title": "Explosions heard in Jask, Sirik, Bandar Abbas and Geshm in southern Iran: Iranian state TV",
+      "url": "https://t.me/FinancialJuice/145503",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T20:14:25.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "24523b50da4e443c05b614b3d8f74bed6b5817d7dd9ed9430f6c3064cc2988ac",
+      "sha256": "24523b50da4e443c05b614b3d8f74bed6b5817d7dd9ed9430f6c3064cc2988ac",
+      "title": "Explosions heard in Iran's Qeshm: IRNA corrects source",
+      "url": "https://t.me/FinancialJuice/145502",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T19:39:36.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "067b83c6dfbb69f822e5d0c57984f3d424a50090f43d559d680f8b6371fc07e1",
+      "sha256": "067b83c6dfbb69f822e5d0c57984f3d424a50090f43d559d680f8b6371fc07e1",
+      "title": "Explosions reported in Iran's Qeshm: ISNA News Agency",
+      "url": "https://t.me/FinancialJuice/145501",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T19:33:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "fd0af23e7430642ade5f751fec8e4826f2e10de1e239b916cc438cd09c4ef1df",
       "sha256": "fd0af23e7430642ade5f751fec8e4826f2e10de1e239b916cc438cd09c4ef1df",
       "title": "Israeli president selects Gadi Eisenkot, Netanyahu rival, to form government: Israeli media",
@@ -7587,7 +7945,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-07T17:44:57.000Z",
+      "published_at": "2026-11-07T17:44:48.000Z",
       "currencies": [
         "CAD"
       ],
@@ -7645,32 +8003,6 @@
       "z": null
     },
     {
-      "id": "74e8ac994bae7889961afa844f075b06d4bbdf3a6403b3866875fc30ae46c04c",
-      "sha256": "74e8ac994bae7889961afa844f075b06d4bbdf3a6403b3866875fc30ae46c04c",
-      "title": "Erdogan tells Trump US-Iran tensions must be settled diplomatically, Ankara will persist in peace efforts, Erdogan's office says",
-      "url": "https://t.me/FinancialJuice/145492",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-07T17:42:46.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "222f29e130112bd89d550f3edb8d07dbe6d4937a6b695d9e889bf1dd1c101b2e",
       "sha256": "222f29e130112bd89d550f3edb8d07dbe6d4937a6b695d9e889bf1dd1c101b2e",
       "title": "Turkey's Erdogan talks with Trump by phone: discusses regional and global developments, Erdogan's office says",
@@ -7690,6 +8022,32 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "74e8ac994bae7889961afa844f075b06d4bbdf3a6403b3866875fc30ae46c04c",
+      "sha256": "74e8ac994bae7889961afa844f075b06d4bbdf3a6403b3866875fc30ae46c04c",
+      "title": "Erdogan tells Trump US-Iran tensions must be settled diplomatically, Ankara will persist in peace efforts, Erdogan's office says",
+      "url": "https://t.me/FinancialJuice/145492",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T17:42:46.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8933,6 +9291,38 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4f9d6fac823bf2dafc35bf0402b81ab7d74df330866dbdaba4d4f2510b8b5868",
+      "sha256": "4f9d6fac823bf2dafc35bf0402b81ab7d74df330866dbdaba4d4f2510b8b5868",
+      "title": "Auction Result of Treasury Discount Bills on November 6, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQ1M4UHI3TXFtdXo5MV9memtvckFxcU9sRWVraVFLeGR5QnU4TUx6UzhMQUZGbXNGTEpuMGlZdW56aWNFRGlKWmh5NEdacXdKZzhuUmQ2TEswUGpOT2pzVXRLLUV2QktLZWNfZ2x1X0NEQUpLYVI2NDlsc0w3T0tiUEFiWXRvRmdPZXhqUE1qbUw0eTRTT0VmWVBwSEs?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-07T02:13:54.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -13771,6 +14161,38 @@
       "z": null
     },
     {
+      "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
+      "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
+      "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZUNnZDljUE1RcW9VZXU5QjZpZUdGTUNoazBCM1JRQmxfVGFWcnhnNnd3YUNycE0xZURiUmVKRXpoUkkwMFljSE9TRzV4Z29nOEFPVDZPVWFvekNLY0VIXzBCYWtmTEJvUE5vVlFzVS1JRFZzb21IQU1wQ3loYU1odkQzZ2RDaWFqdDNCVDYtalNWTnV3bmFQRlhB?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "cf70aa113439a2cca5d13dff286823c3804555c81e66f60788a089ed738649c5",
       "sha256": "cf70aa113439a2cca5d13dff286823c3804555c81e66f60788a089ed738649c5",
       "title": "BoE Gov. Bailey: If energy prices remain high, another hike is possible",
@@ -14051,388 +14473,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "64005740f5b34698b61c0267be9b830f785c405adc2389cc95f67e580149fb44",
-      "sha256": "64005740f5b34698b61c0267be9b830f785c405adc2389cc95f67e580149fb44",
-      "title": "Ark Invest wants to bring some ‘disruptive innovation’ to interval funds",
-      "url": "https://www.ft.com/content/dce2b9da-a4c6-4016-af78-7c41ac41a6b0",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T06:00:04.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5aaa64452b2bf418b11019e867021f97545c09f2e7003438bd333852b13af02d",
-      "sha256": "5aaa64452b2bf418b11019e867021f97545c09f2e7003438bd333852b13af02d",
-      "title": "The AI gamble strains for more cash",
-      "url": "https://www.ft.com/content/4e0dbca4-5917-483f-b524-8b8a2b4c54b2?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T05:00:14.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c6b00f1480b86ff9dde053fa61253cfb29c0c40c1cd6a2b621ed01f8f5d43316",
-      "sha256": "c6b00f1480b86ff9dde053fa61253cfb29c0c40c1cd6a2b621ed01f8f5d43316",
-      "title": "Why investors soured on the Democrats",
-      "url": "https://www.ft.com/content/f49c25d4-d77c-415d-b25b-5aaf7aaaac4a?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T05:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e42c4d46689e9b483abfc21c000495ef27771b973e628180f874a469203ccea7",
-      "sha256": "e42c4d46689e9b483abfc21c000495ef27771b973e628180f874a469203ccea7",
-      "title": "Nasdaq analysis after yesterday s crash is this the dip investors have been waiting for",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T04:05:58.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "80ce5a0e7cdc19ced2edcb5a0e1cdae95fd48ff46adb8f849edec9de336d3b72",
-      "sha256": "80ce5a0e7cdc19ced2edcb5a0e1cdae95fd48ff46adb8f849edec9de336d3b72",
-      "title": "Opinion piece: The war is driving inflation, but our budget must play its part - Treasury.gov.au",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONzFSc2xZSUJhTjA3c2w2OVNUWWJhdDM2Q01kcGdIVUl1UW54dGEzOGZSVFVIeFVockk4Q24xU0lwS2VjVEM3MG53WE1RRDFrS2d0cHhrTi1jTHBlcXIyMlZMVWRMUGF3aWFudjZfdDBHS0hkNzVRYnA4bUVNNndKN0MzQkhvTFJTaDFNV1BVYkRDUVJBX3FvUnZLZVFzY2M0d3ZJcVE5Z0JYM2FDNGxBanZmNFIyNm03a2ZYOXV2R0NFSzBNOVFaX2o4MA?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T03:31:14.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo",
-        "Fiscal",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "54323dac8643baaba7b60ec78c1e8d7c45ecdccd8b56db46a158d788bd8313d6",
-      "sha256": "54323dac8643baaba7b60ec78c1e8d7c45ecdccd8b56db46a158d788bd8313d6",
-      "title": "Doorstop interview, Mural Hall, Parliament House, Canberra - Treasury.gov.au",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeGhmQ2YzLUxtQlpZQ3RaaUJkQllNb1Z3dlRLcFA4WnNPbG1PTll6bndFVUozVW1kZ2NGaFlnMUhWQzlOeFFTeExvY1pSbkpDV1puTDZoUzJSd2hLQjRRZXpOTFlnR0hkZGhVNHhiOTc4QTJULVZKWFpNbW91S3JUX0tnQTEzc0hTWWdESnZQUGpNdUtacGptV1l3LXVISnR6OFNYcEVmaGFINWhrV0hnVXR4a25CUHQzQ2l2NlZaRTlRNEdKYjVxZ3l2SQ?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T03:30:50.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a7a666e714d5bf500158bf06893e8a08964cbf1a5897607fd5cdeeae5c56722c",
-      "sha256": "a7a666e714d5bf500158bf06893e8a08964cbf1a5897607fd5cdeeae5c56722c",
-      "title": "S.Korea finmin: will adopt more stabilizing measures if volatility rises further",
-      "url": "https://t.me/FinancialJuice/145202",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:45:51.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5998165ffadf7b4047f9532bb1ab45186829d71ccd9541662d789bf034b1cafe",
-      "sha256": "5998165ffadf7b4047f9532bb1ab45186829d71ccd9541662d789bf034b1cafe",
-      "title": "S.Korea finmin: to relax rules on borrowed investment to reduce market volatility",
-      "url": "https://t.me/FinancialJuice/145201",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:44:45.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dfbb5c1ea66a41939dba6035e0f2f43ddddc29e4ef11046081b2d2f5d81b5d0c",
-      "sha256": "dfbb5c1ea66a41939dba6035e0f2f43ddddc29e4ef11046081b2d2f5d81b5d0c",
-      "title": "S.Korea finance ministry: to watch stock market with utmost caution",
-      "url": "https://t.me/FinancialJuice/145200",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:43:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3bda7ee8c69acc00a208528153185920de1addb9542c0dc741b30032c3b697b7",
-      "sha256": "3bda7ee8c69acc00a208528153185920de1addb9542c0dc741b30032c3b697b7",
-      "title": "S.Korea finmin: to act proactively to avoid escalating market anxiety",
-      "url": "https://t.me/FinancialJuice/145199",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:43:06.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "bc27ea29b493d4cf829d7257258ef50fb30578b9279780849e00f316a225c5a6",
-      "sha256": "bc27ea29b493d4cf829d7257258ef50fb30578b9279780849e00f316a225c5a6",
-      "title": "S.Korea finance minister: necessary to be cautious of excessive worry given robust economic fundamentals",
-      "url": "https://t.me/FinancialJuice/145198",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:42:23.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4b0a76c79f93013fdf73c92434abac84ca4266589721965e95a44b95feac6bc8",
-      "sha256": "4b0a76c79f93013fdf73c92434abac84ca4266589721965e95a44b95feac6bc8",
-      "title": "S. Korea finmin: stock market overreacting to external factors",
-      "url": "https://t.me/FinancialJuice/145197",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:41:45.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4e2a09fbef4bd91a3608284205c431a752b38e70d28ee811e2e49357428996cf",
-      "sha256": "4e2a09fbef4bd91a3608284205c431a752b38e70d28ee811e2e49357428996cf",
-      "title": "S.Korea central bank announces sale of 91-day monetary stabilization bonds at 3.175% yield",
-      "url": "https://t.me/FinancialJuice/145196",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T02:40:33.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b2d3c13af1a1cca64967efcf9a2c138dcef64bb3a54a4540db8703928ace4de1",
-      "sha256": "b2d3c13af1a1cca64967efcf9a2c138dcef64bb3a54a4540db8703928ace4de1",
-      "title": "IMES Discussion Paper Series (2026)",
-      "url": "http://www.boj.or.jp/en/research/imes/dps/dps26.htm",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T02:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
