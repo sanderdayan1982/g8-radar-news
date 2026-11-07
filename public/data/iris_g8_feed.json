@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-06T22:15:47.875Z",
-  "started_at": "2026-11-06T22:15:44.387Z",
+  "generated_at": "2026-11-07T02:01:58.055Z",
+  "started_at": "2026-11-07T02:01:54.416Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,10 +15,10 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 36,
+      "score": 35,
       "bias": "alcista",
-      "structural": 36,
-      "impulse": 8,
+      "structural": 35,
+      "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "✓ POST-EVENTO",
@@ -30,7 +30,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "CPI sin sorpresa"
       ],
-      "rationale": "33 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +36 | Imp 3h +8. Régimen real mixed."
+      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +35 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -49,14 +49,14 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "CPI sin sorpresa"
       ],
-      "rationale": "25 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
       "rank": 3,
-      "score": 16,
+      "score": 15,
       "bias": "alcista",
-      "structural": 16,
+      "structural": 15,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -69,14 +69,14 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "14 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · POLICY_PRICE · Est +16 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · POLICY_PRICE · Est +15 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 4,
-      "score": 7,
+      "score": 8,
       "bias": "neutral",
-      "structural": 7,
+      "structural": 8,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -88,7 +88,7 @@
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "17 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +7 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "16 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +8 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "AUD",
@@ -105,10 +105,30 @@
       "no_evidence": false,
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "CPI sin sorpresa",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
+        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
       ],
       "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -19 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 5,
+      "score": -19,
+      "bias": "bajista",
+      "structural": -19,
+      "impulse": null,
+      "ficha_v6": "B2",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Ventas al por menor débiles",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
+        "Riesgo geopolítico (A6 / B5)"
+      ],
+      "rationale": "13 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -19 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "NZD",
@@ -127,34 +147,14 @@
         "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%",
         "CPI sin sorpresa"
       ],
-      "rationale": "5 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -19 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 7,
-      "score": -21,
-      "bias": "bajista",
-      "structural": -21,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Ventas al por menor débiles",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
-        "Riesgo geopolítico (A6 / B5)"
-      ],
-      "rationale": "14 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -21 | Imp 3h n/d. Régimen real weak."
+      "rationale": "4 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -19 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -30,
+      "score": -33,
       "bias": "bajista",
-      "structural": -30,
+      "structural": -33,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -165,16 +165,16 @@
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): BoC's Gov. Macklem: Optimistic we can",
-        "CPI sin sorpresa"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): ‘Cartwheels’ in Canada after Trump pu"
       ],
-      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -30 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -33 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "XAU",
       "rank": null,
-      "score": 10,
+      "score": 6,
       "bias": "neutral",
-      "structural": 10,
+      "structural": 6,
       "impulse": null,
       "ficha_v6": "A6 / EA-7",
       "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
@@ -186,17 +186,17 @@
         "Oro refugio / MDP: A welcome change for gold as tech selloff ",
         "Oro refugio / MDP: Crude awakening: how oil has fuelled 150 y"
       ],
-      "rationale": "5 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +10."
+      "rationale": "3 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +6."
     }
   ],
   "g8_ranking": [
     {
       "currency": "USD",
       "rank": 1,
-      "score": 36,
+      "score": 35,
       "bias": "alcista",
-      "structural": 36,
-      "impulse": 8,
+      "structural": 35,
+      "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "✓ POST-EVENTO",
@@ -208,7 +208,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "CPI sin sorpresa"
       ],
-      "rationale": "33 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +36 | Imp 3h +8. Régimen real mixed."
+      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +35 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -227,14 +227,14 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "CPI sin sorpresa"
       ],
-      "rationale": "25 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
       "rank": 3,
-      "score": 16,
+      "score": 15,
       "bias": "alcista",
-      "structural": 16,
+      "structural": 15,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -247,14 +247,14 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "14 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · POLICY_PRICE · Est +16 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ✓ POST-EVENTO · POLICY_PRICE · Est +15 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 4,
-      "score": 7,
+      "score": 8,
       "bias": "neutral",
-      "structural": 7,
+      "structural": 8,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -266,7 +266,7 @@
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "17 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +7 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "16 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +8 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "AUD",
@@ -283,10 +283,30 @@
       "no_evidence": false,
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "CPI sin sorpresa",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
+        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
       ],
       "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -19 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 5,
+      "score": -19,
+      "bias": "bajista",
+      "structural": -19,
+      "impulse": null,
+      "ficha_v6": "B2",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Ventas al por menor débiles",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
+        "Riesgo geopolítico (A6 / B5)"
+      ],
+      "rationale": "13 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -19 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "NZD",
@@ -305,34 +325,14 @@
         "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%",
         "CPI sin sorpresa"
       ],
-      "rationale": "5 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -19 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 7,
-      "score": -21,
-      "bias": "bajista",
-      "structural": -21,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Ventas al por menor débiles",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
-        "Riesgo geopolítico (A6 / B5)"
-      ],
-      "rationale": "14 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -21 | Imp 3h n/d. Régimen real weak."
+      "rationale": "4 titulares · Ficha B2 (SOBERANO_EMISOR) · ✓ POST-EVENTO · DATA_REAL · Est -19 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -30,
+      "score": -33,
       "bias": "bajista",
-      "structural": -30,
+      "structural": -33,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -343,24 +343,12 @@
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): BoC's Gov. Macklem: Optimistic we can",
-        "CPI sin sorpresa"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): ‘Cartwheels’ in Canada after Trump pu"
       ],
-      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -30 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ✓ POST-EVENTO · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -33 | Imp 3h n/d. Régimen real mixed."
     }
   ],
   "agenda_window": [
-    {
-      "id": "adbdb764cba978f7",
-      "currency": "AUD",
-      "title": "Goods Trade Balance",
-      "event_at": "2026-11-05T00:30:00.000Z",
-      "impact": "Low",
-      "actual": "2826B",
-      "forecast": "0.94B",
-      "previous": "0.50B",
-      "hours_from_now": -45.8,
-      "window_status": "✓ POST-EVENTO"
-    },
     {
       "id": "73d6122a3aef08ef",
       "currency": "EUR",
@@ -370,7 +358,7 @@
       "actual": "4.4%",
       "forecast": "4.6%",
       "previous": "-10.6%",
-      "hours_from_now": -39.3,
+      "hours_from_now": -43,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -382,7 +370,7 @@
       "actual": "-0.5%",
       "forecast": "0.3%",
       "previous": "-0.3%",
-      "hours_from_now": -38.5,
+      "hours_from_now": -42.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -394,19 +382,7 @@
       "actual": "3.0%",
       "forecast": "3.1%",
       "previous": "3.1%",
-      "hours_from_now": -38.3,
-      "window_status": "✓ POST-EVENTO"
-    },
-    {
-      "id": "3cb5da067a917db2",
-      "currency": "JPY",
-      "title": "Average Cash Earnings y/y",
-      "event_at": "2026-11-05T23:30:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "3.8%",
-      "previous": "3.8%",
-      "hours_from_now": -22.8,
+      "hours_from_now": -42,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -418,7 +394,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "2.0%",
-      "hours_from_now": -15.3,
+      "hours_from_now": -19,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -430,7 +406,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.0%",
-      "hours_from_now": -15.3,
+      "hours_from_now": -19,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -442,7 +418,7 @@
       "actual": null,
       "forecast": "-5.8B",
       "previous": "-6.1B",
-      "hours_from_now": -14.5,
+      "hours_from_now": -18.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -454,7 +430,7 @@
       "actual": null,
       "forecast": null,
       "previous": "770B",
-      "hours_from_now": -14.3,
+      "hours_from_now": -18,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -466,7 +442,7 @@
       "actual": null,
       "forecast": "-35",
       "previous": "-36",
-      "hours_from_now": -14.3,
+      "hours_from_now": -18,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -478,7 +454,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -12.8,
+      "hours_from_now": -16.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -490,7 +466,7 @@
       "actual": null,
       "forecast": "-0.1%",
       "previous": "0.1%",
-      "hours_from_now": -12.3,
+      "hours_from_now": -16,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -502,7 +478,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -11.3,
+      "hours_from_now": -15,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -514,7 +490,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10,
+      "hours_from_now": -13.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -526,7 +502,7 @@
       "actual": null,
       "forecast": "14.6K",
       "previous": "-68.3K",
-      "hours_from_now": -8.8,
+      "hours_from_now": -12.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -538,7 +514,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.5%",
-      "hours_from_now": -8.8,
+      "hours_from_now": -12.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -550,7 +526,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.1%",
-      "hours_from_now": -8.8,
+      "hours_from_now": -12.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -562,7 +538,7 @@
       "actual": "165K",
       "forecast": "65K",
       "previous": "29K",
-      "hours_from_now": -8.8,
+      "hours_from_now": -12.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -574,7 +550,7 @@
       "actual": null,
       "forecast": "4.2%",
       "previous": "4.2%",
-      "hours_from_now": -8.8,
+      "hours_from_now": -12.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -586,7 +562,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.1,
+      "hours_from_now": -11.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -598,7 +574,7 @@
       "actual": null,
       "forecast": "57.7",
       "previous": "58.2",
-      "hours_from_now": -7.3,
+      "hours_from_now": -11,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -610,7 +586,7 @@
       "actual": null,
       "forecast": "48.1",
       "previous": "46.3",
-      "hours_from_now": -7.3,
+      "hours_from_now": -11,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -622,7 +598,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.7%",
-      "hours_from_now": -7.3,
+      "hours_from_now": -11,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -634,7 +610,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.3,
+      "hours_from_now": -10,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -646,7 +622,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5,
+      "hours_from_now": -8.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -658,7 +634,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -4.3,
+      "hours_from_now": -8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -670,7 +646,7 @@
       "actual": "27.839B",
       "forecast": "13.4B",
       "previous": "8.3B",
-      "hours_from_now": -2.3,
+      "hours_from_now": -6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -682,7 +658,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.5,
+      "hours_from_now": -4.3,
       "window_status": "✓ POST-EVENTO"
     }
   ],
@@ -697,6 +673,536 @@
     "NZD": -0.87
   },
   "items": [
+    {
+      "id": "df00957f6f8baf9dbbe95d00d168434efb1d0370f2328b0b2a3e6f01e8515238",
+      "sha256": "df00957f6f8baf9dbbe95d00d168434efb1d0370f2328b0b2a3e6f01e8515238",
+      "title": "Qatar's PM: Iran issue must be resolved, another escalation unaffordable",
+      "url": "https://t.me/FinancialJuice/145452",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T01:13:11.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0497d120df390159522195e52eb045c061408ef0bd47c9eb961a876b8f52a9c6",
+      "sha256": "0497d120df390159522195e52eb045c061408ef0bd47c9eb961a876b8f52a9c6",
+      "title": "China, U.S. agree to continue talks to maintain stable, positive trade ties - Xinhua",
+      "url": "https://t.me/FinancialJuice/145450",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T01:01:42.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4947cb56f527e7c85f72c4581586f963fad0dc5246f0be65728cf1c25a6e2d33",
+      "sha256": "4947cb56f527e7c85f72c4581586f963fad0dc5246f0be65728cf1c25a6e2d33",
+      "title": "China voices concerns over U.S. trade restrictions against China: Xinhua",
+      "url": "https://t.me/FinancialJuice/145451",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T01:01:42.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "70e1d5436a712b215769f7c1e6d4011d8237ccb4b06c6ff1363422d23c11a6ce",
+      "sha256": "70e1d5436a712b215769f7c1e6d4011d8237ccb4b06c6ff1363422d23c11a6ce",
+      "title": "Chinese vice premier He Lifeng holds video call with top U.S. officials Bessent and Greer: Xinhua",
+      "url": "https://t.me/FinancialJuice/145449",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T01:01:35.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1adf9ab6c8d674d7b624b53ea31de0465d3fa99f72ba4e84d86520661aa4b1ac",
+      "sha256": "1adf9ab6c8d674d7b624b53ea31de0465d3fa99f72ba4e84d86520661aa4b1ac",
+      "title": "Qatar's PM: We have achieved a lot and believe a settlement is possible",
+      "url": "https://t.me/FinancialJuice/145448",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:56:05.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0e4e3657893bdcd4ea2595977c4387129ac6a9eae616106ed681866d340c704c",
+      "sha256": "0e4e3657893bdcd4ea2595977c4387129ac6a9eae616106ed681866d340c704c",
+      "title": "Qatar's PM: U.S. government still open to finding solution after midterm elections",
+      "url": "https://t.me/FinancialJuice/145447",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:53:56.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "91ad83b619f86373b81304e4666cd820517d7cde17229885e1e81811e3f7bfbd",
+      "sha256": "91ad83b619f86373b81304e4666cd820517d7cde17229885e1e81811e3f7bfbd",
+      "title": "Qatar's PM: Mediation efforts continue to prevent situation from spiraling out of control - Al Jazeera TV",
+      "url": "https://t.me/FinancialJuice/145446",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:51:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b6a44c8a5cfb0448bef54ec7c75b28334a3840e5b7339bbd23a880c2ef59a8a3",
+      "sha256": "b6a44c8a5cfb0448bef54ec7c75b28334a3840e5b7339bbd23a880c2ef59a8a3",
+      "title": "Trump: Russia and Ukraine seek to reach settlement",
+      "url": "https://t.me/FinancialJuice/145445",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:37:21.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8afa743b211a3a71a4283722e42fae2cb4ced719fba8bc8822c6f0bfdad1f630",
+      "sha256": "8afa743b211a3a71a4283722e42fae2cb4ced719fba8bc8822c6f0bfdad1f630",
+      "title": "Trump: Iran constructed ‘small anti-aircraft system,’ and we destroyed it",
+      "url": "https://t.me/FinancialJuice/145444",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:36:04.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5d6127c08df8addea524c52a2f0316b15b4ea523099fdbb36c8eede4c8eeb7da",
+      "sha256": "5d6127c08df8addea524c52a2f0316b15b4ea523099fdbb36c8eede4c8eeb7da",
+      "title": "Trump: anticipate very few departures from cabinet",
+      "url": "https://t.me/FinancialJuice/145443",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:31:35.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "38fd655e1b64f2dbe0a8d1b4a07ffb508d879e641ae50115a63d3a04317e3995",
+      "sha256": "38fd655e1b64f2dbe0a8d1b4a07ffb508d879e641ae50115a63d3a04317e3995",
+      "title": "Trump: negotiating with Iranians, will see how that plays out",
+      "url": "https://t.me/FinancialJuice/145442",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:29:35.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e9f810f75505db77fd23e65042edccd6f080351f74342079c13db17fb2dd344e",
+      "sha256": "e9f810f75505db77fd23e65042edccd6f080351f74342079c13db17fb2dd344e",
+      "title": "Trump: US will host largest air show worldwide in two years",
+      "url": "https://t.me/FinancialJuice/145441",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T23:16:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "60f9fe927a501eaed1426c8b8d1c19bb8b819455b5113f09d94cc4acde0b2991",
+      "sha256": "60f9fe927a501eaed1426c8b8d1c19bb8b819455b5113f09d94cc4acde0b2991",
+      "title": "Paraguay's Santiago Peña detained, local media ABC reports",
+      "url": "https://t.me/FinancialJuice/145440",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T23:08:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7b08064d79906b6fda33af56ea913f811f300d6a77b47ee9a368ef0e4ee057f0",
+      "sha256": "7b08064d79906b6fda33af56ea913f811f300d6a77b47ee9a368ef0e4ee057f0",
+      "title": "Iran's military: U.S. MQ-9 drone downed over Qeshm island - state media",
+      "url": "https://t.me/FinancialJuice/145439",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T23:03:34.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d6e8ac677c429fefef5f731af8b80e7dcdd0d7531a3cb5846aff086d51b4a48c",
+      "sha256": "d6e8ac677c429fefef5f731af8b80e7dcdd0d7531a3cb5846aff086d51b4a48c",
+      "title": "US warns China it must ‘immediately’ meet terms of Busan trade deal",
+      "url": "https://www.ft.com/content/391bb785-0247-4c39-b53b-35007187d603?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-06T22:53:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e9646256466fb1bdd1e03e7a65ecfa38ecd1612ea0e4f70667af8ec94e3f3e19",
+      "sha256": "e9646256466fb1bdd1e03e7a65ecfa38ecd1612ea0e4f70667af8ec94e3f3e19",
+      "title": "Paraguay's Pedro Alliana sworn in as president, replacing Santiago Pena following impeachment",
+      "url": "https://t.me/FinancialJuice/145438",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T22:50:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e328da7aa2e00a3853e3f551bab935c27187bc2ec9d1e8e0e588152dfed08756",
+      "sha256": "e328da7aa2e00a3853e3f551bab935c27187bc2ec9d1e8e0e588152dfed08756",
+      "title": "Paraguay prosecutor's office issues arrest warrant for former central bank chief",
+      "url": "https://t.me/FinancialJuice/145437",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T22:44:58.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "468f7db1f27aa73cf75d43c8b2747f4c03a58dd283a50cb4af8ccbdcf68abe6d",
+      "sha256": "468f7db1f27aa73cf75d43c8b2747f4c03a58dd283a50cb4af8ccbdcf68abe6d",
+      "title": "Paraguay prosecutor's office issues arrest warrant for Santiago Pena",
+      "url": "https://t.me/FinancialJuice/145436",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T22:44:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a982fb34883d1401d12c7f096cbddb46ceea68132db3121d4399bd8691b060b9",
+      "sha256": "a982fb34883d1401d12c7f096cbddb46ceea68132db3121d4399bd8691b060b9",
+      "title": "US stocks recover after tech rout",
+      "url": "https://www.ft.com/content/642b32dc-e3a1-4df8-ae91-5c84bdeb89e0?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-06T22:22:05.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "398cad3768d71b5a9ee825aac1f98abb7cb2fb3b802ef975c4c5af92b428f916",
+      "sha256": "398cad3768d71b5a9ee825aac1f98abb7cb2fb3b802ef975c4c5af92b428f916",
+      "title": "US economy outstrips forecasts to add 165,000 jobs in October",
+      "url": "https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-06T22:16:13.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "4d75863617dfd960c34760a3fed4b3229e2b2b9c604ceb83fbeff82da2d6f532",
       "sha256": "4d75863617dfd960c34760a3fed4b3229e2b2b9c604ceb83fbeff82da2d6f532",
@@ -835,6 +1341,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ea6b06c8361ccabe6d9f5cf7dc11e7c14e3854cb3a538c9d05daada85fafc800",
+      "sha256": "ea6b06c8361ccabe6d9f5cf7dc11e7c14e3854cb3a538c9d05daada85fafc800",
+      "title": "FATF Recognizes Effectiveness of U.S. AML/CFT System, Advances Key Illicit Finance Initiatives - U.S. Department of the Treasury (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE93dGk3dm01eVVwdzgtYXBTWGthejlTSVcxaG9YemI1c2EtV2hXQ0FXTzZ0Y0RwRFI5dno5NFRZd19RRl9nX0xJdWJDd3VrZE5rdUZPYk1WcUtITGltYzJHam1pUQ?oc=5",
+      "source": "US Treasury",
+      "source_id": "us-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T22:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -1128,6 +1664,39 @@
       "legacy_category": "banco_central",
       "ficha_v6": "C2",
       "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "61d6b3f506b75f356d26caddb32686d32ae993a8584ed1006d2c6b57195d7ab5",
+      "sha256": "61d6b3f506b75f356d26caddb32686d32ae993a8584ed1006d2c6b57195d7ab5",
+      "title": "Operation Economic Outcast Sanctions Eight Canadian Money Services Businesses Enabling Iranian Regime - U.S. Department of the Treasury (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE82bDBURU01cWY2NWdBaU9IMzZtdE9PQ1JiMzVNUERSUEgtN1BMU2lOTlVYa0VkTWJxU1U2V2VSYTlHUkU1Y19mSUtMdGUtVXUzMGJaM2VfN2VFVF9JT01DaEpR?oc=5",
+      "source": "US Treasury",
+      "source_id": "us-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T20:05:00.000Z",
+      "currencies": [
+        "USD",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "CAD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
@@ -1475,32 +2044,6 @@
       "z": null
     },
     {
-      "id": "398cad3768d71b5a9ee825aac1f98abb7cb2fb3b802ef975c4c5af92b428f916",
-      "sha256": "398cad3768d71b5a9ee825aac1f98abb7cb2fb3b802ef975c4c5af92b428f916",
-      "title": "US economy outstrips forecasts to add 165,000 jobs in October",
-      "url": "https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T18:45:36.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "28ceb22116aa6d8603541b5dfc9c5db6a5b1074e26f68e78c466ce0754d0549c",
       "sha256": "28ceb22116aa6d8603541b5dfc9c5db6a5b1074e26f68e78c466ce0754d0549c",
       "title": "A new phase in the tech market correction",
@@ -1732,32 +2275,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d6e8ac677c429fefef5f731af8b80e7dcdd0d7531a3cb5846aff086d51b4a48c",
-      "sha256": "d6e8ac677c429fefef5f731af8b80e7dcdd0d7531a3cb5846aff086d51b4a48c",
-      "title": "US warns China it must ‘immediately’ meet terms of Busan trade deal",
-      "url": "https://www.ft.com/content/391bb785-0247-4c39-b53b-35007187d603?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:20:21.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7148,576 +7665,6 @@
       "source_id": "ft-markets",
       "source_type": "agencia",
       "published_at": "2026-11-05T16:59:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "32bc48c2402c7f15ca80e2d7ee16fd6bc862b046eb4d8f6c734fbed2135a7f15",
-      "sha256": "32bc48c2402c7f15ca80e2d7ee16fd6bc862b046eb4d8f6c734fbed2135a7f15",
-      "title": "Bitcoin falls with risk off sentiment the price is testing a key swing area target",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:50:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "967f888026c2d2d46ec028efc2a64703eb72a75e3b8b51c6e5e1a71f379104c2",
-      "sha256": "967f888026c2d2d46ec028efc2a64703eb72a75e3b8b51c6e5e1a71f379104c2",
-      "title": "Meeting between Putin and Iran's Rezai is still ongoing at the Kremlin - Fars News",
-      "url": "https://t.me/FinancialJuice/145120",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:41:05.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f532fdd914af0888fbe71b61226c5acd8a2375f1c1442f3536f6446808907371",
-      "sha256": "f532fdd914af0888fbe71b61226c5acd8a2375f1c1442f3536f6446808907371",
-      "title": "DIRECTO PEDRO SÁNCHEZ | SACA PECHO TRAS EL EL CHOQUE POLÍTICO CON MILEI EN LA CUMBRE IBEROAMERICANA",
-      "url": "https://t.me/negociostv/60370",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:36:56.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "252d4a4a028f1b04fac7777c20e827d27b5cb00284d746df4c79c798f9d45593",
-      "sha256": "252d4a4a028f1b04fac7777c20e827d27b5cb00284d746df4c79c798f9d45593",
-      "title": "Al-Mayadeen: Iran's Rezai discussed ending the war with Russian President Putin during their meeting",
-      "url": "https://t.me/FinancialJuice/145117",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:36:40.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dd79f08805866f6f1a4dcf2eb5caa764544df6bce166ab33761d1aaec986c199",
-      "sha256": "dd79f08805866f6f1a4dcf2eb5caa764544df6bce166ab33761d1aaec986c199",
-      "title": "❗ Iran reviewing ‘concrete proposals’ on the nuclear program - NYT.",
-      "url": "https://t.me/FinancialJuice/145116",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:36:10.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d46d837d4291f8d6b314eaf546ac4b3c5ab4486aef86af4a6471ff019d92f527",
-      "sha256": "d46d837d4291f8d6b314eaf546ac4b3c5ab4486aef86af4a6471ff019d92f527",
-      "title": "US 4-Week Bill Auction High Yield 3.890% Bid-to-cover 2.46 Sells $115 bln Awards 5.33% of bids at high",
-      "url": "https://t.me/FinancialJuice/145115",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:33:19.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "bb048771600089a117a0960b07b1e1e39726f6569abb1aed0eb7f903f3e280a1",
-      "sha256": "bb048771600089a117a0960b07b1e1e39726f6569abb1aed0eb7f903f3e280a1",
-      "title": "US 4-WEEK BILL BID-TO-COVER ACTUAL 2.46 (FORECAST -, PREVIOUS 3.100) $MACRO",
-      "url": "https://t.me/FinancialJuice/145114",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:32:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "2.46",
-      "forecast": null,
-      "previous": "3.100",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "50a4b32f10aab41983088e97c6e5ac0a2f9136ab0301984daed03a226c99e9e0",
-      "sha256": "50a4b32f10aab41983088e97c6e5ac0a2f9136ab0301984daed03a226c99e9e0",
-      "title": "US 4-WEEK BILL HIGH YIELD ACTUAL 3.89% (FORECAST -, PREVIOUS 3.910%) $MACRO",
-      "url": "https://t.me/FinancialJuice/145113",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:32:30.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "3.89%",
-      "forecast": null,
-      "previous": "3.910%",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b3a565f79e472fce69df998431140106defa484c63787bea853c963707d509bb",
-      "sha256": "b3a565f79e472fce69df998431140106defa484c63787bea853c963707d509bb",
-      "title": "BoC's Gov. Macklem: Can't rule out escalation before US trade gets better",
-      "url": "https://t.me/FinancialJuice/145112",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:27:57.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "05b914dd9910fc3b9118e469bbc63a8384e6c0fd87e327aa3bdb524a22fac2fc",
-      "sha256": "05b914dd9910fc3b9118e469bbc63a8384e6c0fd87e327aa3bdb524a22fac2fc",
-      "title": "BoC's Gov. Macklem: Optimistic we can get to lower US tariffs",
-      "url": "https://t.me/FinancialJuice/145111",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:26:27.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Commodities_ToT"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "COST_PUSH_STAG_TRAP",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eac5c69dcd6aa80b159ff6158267eb4ada5ee287771189be0f1db02bb7f2a38f",
-      "sha256": "eac5c69dcd6aa80b159ff6158267eb4ada5ee287771189be0f1db02bb7f2a38f",
-      "title": "Nasdaq tumbles as chip rout intensifies after midterms",
-      "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:24:55.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1fab9793bb87199995f044ecc270dae0a4ec90ed45df719bad716762d9dbad7d",
-      "sha256": "1fab9793bb87199995f044ecc270dae0a4ec90ed45df719bad716762d9dbad7d",
-      "title": "Fed bids for 4-week bills total $8.3 bln",
-      "url": "https://t.me/FinancialJuice/145110",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:16:32.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "df0514761d2b8eb1983aa501e8725dbf59a6d722c728f24113a684f9d705776d",
-      "sha256": "df0514761d2b8eb1983aa501e8725dbf59a6d722c728f24113a684f9d705776d",
-      "title": "Nasdaq composite breaks the july low in 5.5 rout",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:15:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ed57465783a7dd47838a6d59f566fb90dc713854e7f1eb3df8a5976404764d4f",
-      "sha256": "ed57465783a7dd47838a6d59f566fb90dc713854e7f1eb3df8a5976404764d4f",
-      "title": "Putin Envoy Dmitriev: Putin appreciates trump's peacemaking efforts",
-      "url": "https://t.me/FinancialJuice/145109",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:13:36.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "809f2cc9743b15a08edf3c17fab4cca35e1c8df3f471e5249b42fa7791d8e80b",
-      "sha256": "809f2cc9743b15a08edf3c17fab4cca35e1c8df3f471e5249b42fa7791d8e80b",
-      "title": "ECB's President Lagarde: There are also demand shocks happening at the same time",
-      "url": "https://t.me/FinancialJuice/145108",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:13:21.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "308c5ab46773dd0821a4ce5d92a000edfd7e7dadb2796ec21ad00a254cde8133",
-      "sha256": "308c5ab46773dd0821a4ce5d92a000edfd7e7dadb2796ec21ad00a254cde8133",
-      "title": "Compensation costs up 2.3 percent in New England, 4.3 percent in Pacific region, over year ended September 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbGo1T0VXdXNBSTgzaGNfWElSY3hOei1QYk5HSTByeE1Lbk96ZVFxRnlMM0stOThBMmxSYmVYRWRia3diV1l2bXlpejhCdDFIWTZPYi03dFlyM0xfZm0zd05vX1A0cXdwWFRPZnd3NEJrZGpaeTlDcnd6XzAzbXBtTjY3eHZOSmt0TXY3TlBBcG14bkNOLU9rcEp5QjRFX0FpRklqSVMxM1BST0l6djNDcnhEc0tWcWlKdk1jX3NTdEpwVWdNTnVzZ3QzcnlmdEQwekhXLXdCTUtNYy1xOHltZA?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T16:13:02.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d28fbab7b5a9debbc30bd6d6ce595135855e2019f0aa1e8449653fea8d549575",
-      "sha256": "d28fbab7b5a9debbc30bd6d6ce595135855e2019f0aa1e8449653fea8d549575",
-      "title": "ECB's President Lagarde: Must pay attention to secondary effects of energy price shock",
-      "url": "https://t.me/FinancialJuice/145107",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:12:02.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b0efccdd944c25931ae0e48f86d752437d1d7cb425553e3548235d908c278936",
-      "sha256": "b0efccdd944c25931ae0e48f86d752437d1d7cb425553e3548235d908c278936",
-      "title": "DIRECTO EEUU: MELANIA TRUMP REÚNE A RUSIA Y UCRANIA EN LA CASA BLANCA POR LA PAZ Y AYUDA HUMANITARIA",
-      "url": "https://t.me/negociostv/60369",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:11:50.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7cb673e67a1213b390b1dbcaec5dc880383500c9192c00525f0d213f5fd3868e",
-      "sha256": "7cb673e67a1213b390b1dbcaec5dc880383500c9192c00525f0d213f5fd3868e",
-      "title": "French PM Lecornu to meet with unions and employers on Monday",
-      "url": "https://t.me/FinancialJuice/145106",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:09:08.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b56d2ed56fa9bb663960275d1a7aa8623e1795ebdf563c60fb72bbbb3c85e952",
-      "sha256": "b56d2ed56fa9bb663960275d1a7aa8623e1795ebdf563c60fb72bbbb3c85e952",
-      "title": "Shield AI to hit $28.8 billion valuation with radar firm deal.",
-      "url": "https://t.me/FinancialJuice/145105",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:02:56.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -7738,6 +7685,536 @@
   ],
   "news": [
     {
+      "id": "df00957f6f8baf9dbbe95d00d168434efb1d0370f2328b0b2a3e6f01e8515238",
+      "sha256": "df00957f6f8baf9dbbe95d00d168434efb1d0370f2328b0b2a3e6f01e8515238",
+      "title": "Qatar's PM: Iran issue must be resolved, another escalation unaffordable",
+      "url": "https://t.me/FinancialJuice/145452",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T01:13:11.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0497d120df390159522195e52eb045c061408ef0bd47c9eb961a876b8f52a9c6",
+      "sha256": "0497d120df390159522195e52eb045c061408ef0bd47c9eb961a876b8f52a9c6",
+      "title": "China, U.S. agree to continue talks to maintain stable, positive trade ties - Xinhua",
+      "url": "https://t.me/FinancialJuice/145450",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T01:01:42.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4947cb56f527e7c85f72c4581586f963fad0dc5246f0be65728cf1c25a6e2d33",
+      "sha256": "4947cb56f527e7c85f72c4581586f963fad0dc5246f0be65728cf1c25a6e2d33",
+      "title": "China voices concerns over U.S. trade restrictions against China: Xinhua",
+      "url": "https://t.me/FinancialJuice/145451",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T01:01:42.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "70e1d5436a712b215769f7c1e6d4011d8237ccb4b06c6ff1363422d23c11a6ce",
+      "sha256": "70e1d5436a712b215769f7c1e6d4011d8237ccb4b06c6ff1363422d23c11a6ce",
+      "title": "Chinese vice premier He Lifeng holds video call with top U.S. officials Bessent and Greer: Xinhua",
+      "url": "https://t.me/FinancialJuice/145449",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T01:01:35.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1adf9ab6c8d674d7b624b53ea31de0465d3fa99f72ba4e84d86520661aa4b1ac",
+      "sha256": "1adf9ab6c8d674d7b624b53ea31de0465d3fa99f72ba4e84d86520661aa4b1ac",
+      "title": "Qatar's PM: We have achieved a lot and believe a settlement is possible",
+      "url": "https://t.me/FinancialJuice/145448",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:56:05.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0e4e3657893bdcd4ea2595977c4387129ac6a9eae616106ed681866d340c704c",
+      "sha256": "0e4e3657893bdcd4ea2595977c4387129ac6a9eae616106ed681866d340c704c",
+      "title": "Qatar's PM: U.S. government still open to finding solution after midterm elections",
+      "url": "https://t.me/FinancialJuice/145447",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:53:56.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "91ad83b619f86373b81304e4666cd820517d7cde17229885e1e81811e3f7bfbd",
+      "sha256": "91ad83b619f86373b81304e4666cd820517d7cde17229885e1e81811e3f7bfbd",
+      "title": "Qatar's PM: Mediation efforts continue to prevent situation from spiraling out of control - Al Jazeera TV",
+      "url": "https://t.me/FinancialJuice/145446",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:51:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b6a44c8a5cfb0448bef54ec7c75b28334a3840e5b7339bbd23a880c2ef59a8a3",
+      "sha256": "b6a44c8a5cfb0448bef54ec7c75b28334a3840e5b7339bbd23a880c2ef59a8a3",
+      "title": "Trump: Russia and Ukraine seek to reach settlement",
+      "url": "https://t.me/FinancialJuice/145445",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:37:21.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8afa743b211a3a71a4283722e42fae2cb4ced719fba8bc8822c6f0bfdad1f630",
+      "sha256": "8afa743b211a3a71a4283722e42fae2cb4ced719fba8bc8822c6f0bfdad1f630",
+      "title": "Trump: Iran constructed ‘small anti-aircraft system,’ and we destroyed it",
+      "url": "https://t.me/FinancialJuice/145444",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:36:04.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5d6127c08df8addea524c52a2f0316b15b4ea523099fdbb36c8eede4c8eeb7da",
+      "sha256": "5d6127c08df8addea524c52a2f0316b15b4ea523099fdbb36c8eede4c8eeb7da",
+      "title": "Trump: anticipate very few departures from cabinet",
+      "url": "https://t.me/FinancialJuice/145443",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:31:35.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "38fd655e1b64f2dbe0a8d1b4a07ffb508d879e641ae50115a63d3a04317e3995",
+      "sha256": "38fd655e1b64f2dbe0a8d1b4a07ffb508d879e641ae50115a63d3a04317e3995",
+      "title": "Trump: negotiating with Iranians, will see how that plays out",
+      "url": "https://t.me/FinancialJuice/145442",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-07T00:29:35.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e9f810f75505db77fd23e65042edccd6f080351f74342079c13db17fb2dd344e",
+      "sha256": "e9f810f75505db77fd23e65042edccd6f080351f74342079c13db17fb2dd344e",
+      "title": "Trump: US will host largest air show worldwide in two years",
+      "url": "https://t.me/FinancialJuice/145441",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T23:16:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "60f9fe927a501eaed1426c8b8d1c19bb8b819455b5113f09d94cc4acde0b2991",
+      "sha256": "60f9fe927a501eaed1426c8b8d1c19bb8b819455b5113f09d94cc4acde0b2991",
+      "title": "Paraguay's Santiago Peña detained, local media ABC reports",
+      "url": "https://t.me/FinancialJuice/145440",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T23:08:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7b08064d79906b6fda33af56ea913f811f300d6a77b47ee9a368ef0e4ee057f0",
+      "sha256": "7b08064d79906b6fda33af56ea913f811f300d6a77b47ee9a368ef0e4ee057f0",
+      "title": "Iran's military: U.S. MQ-9 drone downed over Qeshm island - state media",
+      "url": "https://t.me/FinancialJuice/145439",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T23:03:34.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d6e8ac677c429fefef5f731af8b80e7dcdd0d7531a3cb5846aff086d51b4a48c",
+      "sha256": "d6e8ac677c429fefef5f731af8b80e7dcdd0d7531a3cb5846aff086d51b4a48c",
+      "title": "US warns China it must ‘immediately’ meet terms of Busan trade deal",
+      "url": "https://www.ft.com/content/391bb785-0247-4c39-b53b-35007187d603?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-06T22:53:51.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e9646256466fb1bdd1e03e7a65ecfa38ecd1612ea0e4f70667af8ec94e3f3e19",
+      "sha256": "e9646256466fb1bdd1e03e7a65ecfa38ecd1612ea0e4f70667af8ec94e3f3e19",
+      "title": "Paraguay's Pedro Alliana sworn in as president, replacing Santiago Pena following impeachment",
+      "url": "https://t.me/FinancialJuice/145438",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T22:50:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e328da7aa2e00a3853e3f551bab935c27187bc2ec9d1e8e0e588152dfed08756",
+      "sha256": "e328da7aa2e00a3853e3f551bab935c27187bc2ec9d1e8e0e588152dfed08756",
+      "title": "Paraguay prosecutor's office issues arrest warrant for former central bank chief",
+      "url": "https://t.me/FinancialJuice/145437",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T22:44:58.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "468f7db1f27aa73cf75d43c8b2747f4c03a58dd283a50cb4af8ccbdcf68abe6d",
+      "sha256": "468f7db1f27aa73cf75d43c8b2747f4c03a58dd283a50cb4af8ccbdcf68abe6d",
+      "title": "Paraguay prosecutor's office issues arrest warrant for Santiago Pena",
+      "url": "https://t.me/FinancialJuice/145436",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-06T22:44:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a982fb34883d1401d12c7f096cbddb46ceea68132db3121d4399bd8691b060b9",
+      "sha256": "a982fb34883d1401d12c7f096cbddb46ceea68132db3121d4399bd8691b060b9",
+      "title": "US stocks recover after tech rout",
+      "url": "https://www.ft.com/content/642b32dc-e3a1-4df8-ae91-5c84bdeb89e0?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-06T22:22:05.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "398cad3768d71b5a9ee825aac1f98abb7cb2fb3b802ef975c4c5af92b428f916",
+      "sha256": "398cad3768d71b5a9ee825aac1f98abb7cb2fb3b802ef975c4c5af92b428f916",
+      "title": "US economy outstrips forecasts to add 165,000 jobs in October",
+      "url": "https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-06T22:16:13.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4d75863617dfd960c34760a3fed4b3229e2b2b9c604ceb83fbeff82da2d6f532",
       "sha256": "4d75863617dfd960c34760a3fed4b3229e2b2b9c604ceb83fbeff82da2d6f532",
       "title": "Iran state broadcaster cites informed source: two blasts heard near Suza area in Qeshm Island, no casualty reports",
@@ -7875,6 +8352,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ea6b06c8361ccabe6d9f5cf7dc11e7c14e3854cb3a538c9d05daada85fafc800",
+      "sha256": "ea6b06c8361ccabe6d9f5cf7dc11e7c14e3854cb3a538c9d05daada85fafc800",
+      "title": "FATF Recognizes Effectiveness of U.S. AML/CFT System, Advances Key Illicit Finance Initiatives - U.S. Department of the Treasury (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE93dGk3dm01eVVwdzgtYXBTWGthejlTSVcxaG9YemI1c2EtV2hXQ0FXTzZ0Y0RwRFI5dno5NFRZd19RRl9nX0xJdWJDd3VrZE5rdUZPYk1WcUtITGltYzJHam1pUQ?oc=5",
+      "source": "US Treasury",
+      "source_id": "us-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T22:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8168,6 +8675,39 @@
       "legacy_category": "banco_central",
       "ficha_v6": "C2",
       "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "61d6b3f506b75f356d26caddb32686d32ae993a8584ed1006d2c6b57195d7ab5",
+      "sha256": "61d6b3f506b75f356d26caddb32686d32ae993a8584ed1006d2c6b57195d7ab5",
+      "title": "Operation Economic Outcast Sanctions Eight Canadian Money Services Businesses Enabling Iranian Regime - U.S. Department of the Treasury (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE82bDBURU01cWY2NWdBaU9IMzZtdE9PQ1JiMzVNUERSUEgtN1BMU2lOTlVYa0VkTWJxU1U2V2VSYTlHUkU1Y19mSUtMdGUtVXUzMGJaM2VfN2VFVF9JT01DaEpR?oc=5",
+      "source": "US Treasury",
+      "source_id": "us-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T20:05:00.000Z",
+      "currencies": [
+        "USD",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "CAD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
@@ -8515,32 +9055,6 @@
       "z": null
     },
     {
-      "id": "398cad3768d71b5a9ee825aac1f98abb7cb2fb3b802ef975c4c5af92b428f916",
-      "sha256": "398cad3768d71b5a9ee825aac1f98abb7cb2fb3b802ef975c4c5af92b428f916",
-      "title": "US economy outstrips forecasts to add 165,000 jobs in October",
-      "url": "https://www.ft.com/content/f84c722c-99a9-4628-84dc-c42a192cb35c?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T18:45:36.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "28ceb22116aa6d8603541b5dfc9c5db6a5b1074e26f68e78c466ce0754d0549c",
       "sha256": "28ceb22116aa6d8603541b5dfc9c5db6a5b1074e26f68e78c466ce0754d0549c",
       "title": "A new phase in the tech market correction",
@@ -8772,32 +9286,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d6e8ac677c429fefef5f731af8b80e7dcdd0d7531a3cb5846aff086d51b4a48c",
-      "sha256": "d6e8ac677c429fefef5f731af8b80e7dcdd0d7531a3cb5846aff086d51b4a48c",
-      "title": "US warns China it must ‘immediately’ meet terms of Busan trade deal",
-      "url": "https://www.ft.com/content/391bb785-0247-4c39-b53b-35007187d603?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:20:21.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -14188,576 +14676,6 @@
       "source_id": "ft-markets",
       "source_type": "agencia",
       "published_at": "2026-11-05T16:59:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "32bc48c2402c7f15ca80e2d7ee16fd6bc862b046eb4d8f6c734fbed2135a7f15",
-      "sha256": "32bc48c2402c7f15ca80e2d7ee16fd6bc862b046eb4d8f6c734fbed2135a7f15",
-      "title": "Bitcoin falls with risk off sentiment the price is testing a key swing area target",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:50:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "967f888026c2d2d46ec028efc2a64703eb72a75e3b8b51c6e5e1a71f379104c2",
-      "sha256": "967f888026c2d2d46ec028efc2a64703eb72a75e3b8b51c6e5e1a71f379104c2",
-      "title": "Meeting between Putin and Iran's Rezai is still ongoing at the Kremlin - Fars News",
-      "url": "https://t.me/FinancialJuice/145120",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:41:05.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f532fdd914af0888fbe71b61226c5acd8a2375f1c1442f3536f6446808907371",
-      "sha256": "f532fdd914af0888fbe71b61226c5acd8a2375f1c1442f3536f6446808907371",
-      "title": "DIRECTO PEDRO SÁNCHEZ | SACA PECHO TRAS EL EL CHOQUE POLÍTICO CON MILEI EN LA CUMBRE IBEROAMERICANA",
-      "url": "https://t.me/negociostv/60370",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:36:56.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "252d4a4a028f1b04fac7777c20e827d27b5cb00284d746df4c79c798f9d45593",
-      "sha256": "252d4a4a028f1b04fac7777c20e827d27b5cb00284d746df4c79c798f9d45593",
-      "title": "Al-Mayadeen: Iran's Rezai discussed ending the war with Russian President Putin during their meeting",
-      "url": "https://t.me/FinancialJuice/145117",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:36:40.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dd79f08805866f6f1a4dcf2eb5caa764544df6bce166ab33761d1aaec986c199",
-      "sha256": "dd79f08805866f6f1a4dcf2eb5caa764544df6bce166ab33761d1aaec986c199",
-      "title": "❗ Iran reviewing ‘concrete proposals’ on the nuclear program - NYT.",
-      "url": "https://t.me/FinancialJuice/145116",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:36:10.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d46d837d4291f8d6b314eaf546ac4b3c5ab4486aef86af4a6471ff019d92f527",
-      "sha256": "d46d837d4291f8d6b314eaf546ac4b3c5ab4486aef86af4a6471ff019d92f527",
-      "title": "US 4-Week Bill Auction High Yield 3.890% Bid-to-cover 2.46 Sells $115 bln Awards 5.33% of bids at high",
-      "url": "https://t.me/FinancialJuice/145115",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:33:19.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "bb048771600089a117a0960b07b1e1e39726f6569abb1aed0eb7f903f3e280a1",
-      "sha256": "bb048771600089a117a0960b07b1e1e39726f6569abb1aed0eb7f903f3e280a1",
-      "title": "US 4-WEEK BILL BID-TO-COVER ACTUAL 2.46 (FORECAST -, PREVIOUS 3.100) $MACRO",
-      "url": "https://t.me/FinancialJuice/145114",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:32:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "2.46",
-      "forecast": null,
-      "previous": "3.100",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "50a4b32f10aab41983088e97c6e5ac0a2f9136ab0301984daed03a226c99e9e0",
-      "sha256": "50a4b32f10aab41983088e97c6e5ac0a2f9136ab0301984daed03a226c99e9e0",
-      "title": "US 4-WEEK BILL HIGH YIELD ACTUAL 3.89% (FORECAST -, PREVIOUS 3.910%) $MACRO",
-      "url": "https://t.me/FinancialJuice/145113",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:32:30.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "3.89%",
-      "forecast": null,
-      "previous": "3.910%",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b3a565f79e472fce69df998431140106defa484c63787bea853c963707d509bb",
-      "sha256": "b3a565f79e472fce69df998431140106defa484c63787bea853c963707d509bb",
-      "title": "BoC's Gov. Macklem: Can't rule out escalation before US trade gets better",
-      "url": "https://t.me/FinancialJuice/145112",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:27:57.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "05b914dd9910fc3b9118e469bbc63a8384e6c0fd87e327aa3bdb524a22fac2fc",
-      "sha256": "05b914dd9910fc3b9118e469bbc63a8384e6c0fd87e327aa3bdb524a22fac2fc",
-      "title": "BoC's Gov. Macklem: Optimistic we can get to lower US tariffs",
-      "url": "https://t.me/FinancialJuice/145111",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:26:27.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Commodities_ToT"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "COST_PUSH_STAG_TRAP",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eac5c69dcd6aa80b159ff6158267eb4ada5ee287771189be0f1db02bb7f2a38f",
-      "sha256": "eac5c69dcd6aa80b159ff6158267eb4ada5ee287771189be0f1db02bb7f2a38f",
-      "title": "Nasdaq tumbles as chip rout intensifies after midterms",
-      "url": "https://www.ft.com/content/7c6ceb4f-d7b1-49ec-9047-0e2e4cd2615c?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:24:55.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1fab9793bb87199995f044ecc270dae0a4ec90ed45df719bad716762d9dbad7d",
-      "sha256": "1fab9793bb87199995f044ecc270dae0a4ec90ed45df719bad716762d9dbad7d",
-      "title": "Fed bids for 4-week bills total $8.3 bln",
-      "url": "https://t.me/FinancialJuice/145110",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:16:32.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "df0514761d2b8eb1983aa501e8725dbf59a6d722c728f24113a684f9d705776d",
-      "sha256": "df0514761d2b8eb1983aa501e8725dbf59a6d722c728f24113a684f9d705776d",
-      "title": "Nasdaq composite breaks the july low in 5.5 rout",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:15:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ed57465783a7dd47838a6d59f566fb90dc713854e7f1eb3df8a5976404764d4f",
-      "sha256": "ed57465783a7dd47838a6d59f566fb90dc713854e7f1eb3df8a5976404764d4f",
-      "title": "Putin Envoy Dmitriev: Putin appreciates trump's peacemaking efforts",
-      "url": "https://t.me/FinancialJuice/145109",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:13:36.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "809f2cc9743b15a08edf3c17fab4cca35e1c8df3f471e5249b42fa7791d8e80b",
-      "sha256": "809f2cc9743b15a08edf3c17fab4cca35e1c8df3f471e5249b42fa7791d8e80b",
-      "title": "ECB's President Lagarde: There are also demand shocks happening at the same time",
-      "url": "https://t.me/FinancialJuice/145108",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:13:21.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "308c5ab46773dd0821a4ce5d92a000edfd7e7dadb2796ec21ad00a254cde8133",
-      "sha256": "308c5ab46773dd0821a4ce5d92a000edfd7e7dadb2796ec21ad00a254cde8133",
-      "title": "Compensation costs up 2.3 percent in New England, 4.3 percent in Pacific region, over year ended September 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbGo1T0VXdXNBSTgzaGNfWElSY3hOei1QYk5HSTByeE1Lbk96ZVFxRnlMM0stOThBMmxSYmVYRWRia3diV1l2bXlpejhCdDFIWTZPYi03dFlyM0xfZm0zd05vX1A0cXdwWFRPZnd3NEJrZGpaeTlDcnd6XzAzbXBtTjY3eHZOSmt0TXY3TlBBcG14bkNOLU9rcEp5QjRFX0FpRklqSVMxM1BST0l6djNDcnhEc0tWcWlKdk1jX3NTdEpwVWdNTnVzZ3QzcnlmdEQwekhXLXdCTUtNYy1xOHltZA?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T16:13:02.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d28fbab7b5a9debbc30bd6d6ce595135855e2019f0aa1e8449653fea8d549575",
-      "sha256": "d28fbab7b5a9debbc30bd6d6ce595135855e2019f0aa1e8449653fea8d549575",
-      "title": "ECB's President Lagarde: Must pay attention to secondary effects of energy price shock",
-      "url": "https://t.me/FinancialJuice/145107",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:12:02.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b0efccdd944c25931ae0e48f86d752437d1d7cb425553e3548235d908c278936",
-      "sha256": "b0efccdd944c25931ae0e48f86d752437d1d7cb425553e3548235d908c278936",
-      "title": "DIRECTO EEUU: MELANIA TRUMP REÚNE A RUSIA Y UCRANIA EN LA CASA BLANCA POR LA PAZ Y AYUDA HUMANITARIA",
-      "url": "https://t.me/negociostv/60369",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-05T16:11:50.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7cb673e67a1213b390b1dbcaec5dc880383500c9192c00525f0d213f5fd3868e",
-      "sha256": "7cb673e67a1213b390b1dbcaec5dc880383500c9192c00525f0d213f5fd3868e",
-      "title": "French PM Lecornu to meet with unions and employers on Monday",
-      "url": "https://t.me/FinancialJuice/145106",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:09:08.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b56d2ed56fa9bb663960275d1a7aa8623e1795ebdf563c60fb72bbbb3c85e952",
-      "sha256": "b56d2ed56fa9bb663960275d1a7aa8623e1795ebdf563c60fb72bbbb3c85e952",
-      "title": "Shield AI to hit $28.8 billion valuation with radar firm deal.",
-      "url": "https://t.me/FinancialJuice/145105",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-05T16:02:56.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
