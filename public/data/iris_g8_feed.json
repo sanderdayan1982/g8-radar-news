@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-08T20:12:35.549Z",
-  "started_at": "2026-11-08T20:12:33.191Z",
+  "generated_at": "2026-11-08T20:17:55.177Z",
+  "started_at": "2026-11-08T20:17:51.959Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,19 +18,19 @@
       "score": 29,
       "bias": "alcista",
       "structural": 29,
-      "impulse": 18,
+      "impulse": 33,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 17.5h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 17.4h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "FLUJO_FISCAL_NFA: US Treasury asked Iraq to shut most border c"
+        "CPI sin sorpresa"
       ],
-      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA + RISK_GEO + POLICY_PRICE · Est +29 | Imp 3h +18. Régimen real mixed."
+      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +29 | Imp 3h +33. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -38,7 +38,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 18,
+      "impulse": 33,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -48,7 +48,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +18. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +33. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -56,7 +56,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 18,
+      "impulse": 33,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,7 +67,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "26 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +18. Régimen real mixed."
+      "rationale": "26 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +33. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -83,11 +83,11 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Currency Strength Chart: Strongest: USD, CHF, JPY, CAD, EUR, GBP, NZD, AUD",
         "New Zealand Prime Minister Luxon: talks and concessions will be necessary",
-        "New Zealand Prime Minister Luxon: There is a route to form next government"
+        "New Zealand Prime Minister Luxon: There is a route to form next government",
+        "New Zealand Prime Minister Luxon: encouraging that current figures show we"
       ],
-      "rationale": "11 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -99,14 +99,14 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 21.2h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 21.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est -3 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "10 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est -3 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -125,7 +125,7 @@
         "Ventas al por menor débiles",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "11 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL · Est -7 | Imp 3h n/d. Régimen real weak."
+      "rationale": "10 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL · Est -7 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "AUD",
@@ -137,7 +137,7 @@
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "RBA Assist Gov Hunter Speaks en 2.3h",
+      "calendar_lock_detail": "RBA Assist Gov Hunter Speaks en 2.2h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -164,7 +164,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "15 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -5. Régimen real mixed."
+      "rationale": "14 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -5. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -193,19 +193,19 @@
       "score": 29,
       "bias": "alcista",
       "structural": 29,
-      "impulse": 18,
+      "impulse": 33,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 17.5h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 17.4h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "FLUJO_FISCAL_NFA: US Treasury asked Iraq to shut most border c"
+        "CPI sin sorpresa"
       ],
-      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA + RISK_GEO + POLICY_PRICE · Est +29 | Imp 3h +18. Régimen real mixed."
+      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +29 | Imp 3h +33. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -213,7 +213,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 18,
+      "impulse": 33,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -223,7 +223,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +18. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +33. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -231,7 +231,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 18,
+      "impulse": 33,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -242,7 +242,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "26 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +18. Régimen real mixed."
+      "rationale": "26 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +33. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -258,11 +258,11 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Currency Strength Chart: Strongest: USD, CHF, JPY, CAD, EUR, GBP, NZD, AUD",
         "New Zealand Prime Minister Luxon: talks and concessions will be necessary",
-        "New Zealand Prime Minister Luxon: There is a route to form next government"
+        "New Zealand Prime Minister Luxon: There is a route to form next government",
+        "New Zealand Prime Minister Luxon: encouraging that current figures show we"
       ],
-      "rationale": "11 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -274,14 +274,14 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 21.2h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 21.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est -3 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "10 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est -3 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -300,7 +300,7 @@
         "Ventas al por menor débiles",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "11 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL · Est -7 | Imp 3h n/d. Régimen real weak."
+      "rationale": "10 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL · Est -7 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "AUD",
@@ -312,7 +312,7 @@
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "RBA Assist Gov Hunter Speaks en 2.3h",
+      "calendar_lock_detail": "RBA Assist Gov Hunter Speaks en 2.2h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -339,7 +339,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "15 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -5. Régimen real mixed."
+      "rationale": "14 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -5. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -352,7 +352,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.3,
+      "hours_from_now": 2.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -364,7 +364,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": 8.8,
+      "hours_from_now": 8.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -376,7 +376,7 @@
       "actual": null,
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": 10.8,
+      "hours_from_now": 10.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -388,7 +388,7 @@
       "actual": null,
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": 13.3,
+      "hours_from_now": 13.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -424,7 +424,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.5,
+      "hours_from_now": 17.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -436,7 +436,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": 18.8,
+      "hours_from_now": 18.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -448,7 +448,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.8,
+      "hours_from_now": 18.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -472,7 +472,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.2,
+      "hours_from_now": 21.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -484,7 +484,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 27.3,
+      "hours_from_now": 27.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -496,7 +496,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 27.3,
+      "hours_from_now": 27.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -508,7 +508,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 27.6,
+      "hours_from_now": 27.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -520,7 +520,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 27.6,
+      "hours_from_now": 27.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -532,7 +532,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 27.6,
+      "hours_from_now": 27.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -544,7 +544,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 27.8,
+      "hours_from_now": 27.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -556,7 +556,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 28.3,
+      "hours_from_now": 28.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -568,7 +568,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 31.4,
+      "hours_from_now": 31.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -580,7 +580,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 32.8,
+      "hours_from_now": 32.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -592,7 +592,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.3,
+      "hours_from_now": 36.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -604,7 +604,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.8,
+      "hours_from_now": 36.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -616,7 +616,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 38.8,
+      "hours_from_now": 38.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -628,7 +628,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -640,7 +640,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.3,
+      "hours_from_now": 40.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +664,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 41.3,
+      "hours_from_now": 41.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +676,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 41.3,
+      "hours_from_now": 41.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +688,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.6,
+      "hours_from_now": 43.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +700,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 45.8,
+      "hours_from_now": 45.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +712,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.3,
+      "hours_from_now": 46.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +724,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.3,
+      "hours_from_now": 46.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +736,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.3,
+      "hours_from_now": 46.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -752,6 +752,40 @@
   },
   "items": [
     {
+      "id": "c0d6dc97f863b8d26bb752e392b3ed2f01903de34df4f9bec58d3a89a24b71f5",
+      "sha256": "c0d6dc97f863b8d26bb752e392b3ed2f01903de34df4f9bec58d3a89a24b71f5",
+      "title": "Drone strike targets Iraq's Khor Mor gas field in Kurdistan region: security sources",
+      "url": "https://t.me/FinancialJuice/145563",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T20:16:51.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "f07ffb9591c07386be02c3198842ac0045a2378504fc85a0ca002068a38914ad",
       "sha256": "f07ffb9591c07386be02c3198842ac0045a2378504fc85a0ca002068a38914ad",
       "title": "Nvidia launches independent probe after report founder and CEO Jensen Huang targeted by foreign intelligence effort",
@@ -1346,37 +1380,6 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-08T15:29:40.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -2300,6 +2303,37 @@
       "legacy_category": "geopolitica",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-08T04:35:06.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
@@ -7717,32 +7751,6 @@
       "category": "Inflacion_Empleo",
       "categories": [
         "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ba03ca2bb14c35c651b27e7fa1bc0c6e8bfe0308576c3297684c9cedfe3b8c15",
-      "sha256": "ba03ca2bb14c35c651b27e7fa1bc0c6e8bfe0308576c3297684c9cedfe3b8c15",
-      "title": "LTIMA HORA | Fuerte terremoto en Japón: la costa de Honshu tiembla tras un seísmo de magnitud 6,2",
-      "url": "https://t.me/negociostv/60384",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T12:51:22.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
       ],
       "legacy_category": "otro",
       "ficha_v6": null,
@@ -7758,6 +7766,40 @@
   ],
   "news": [
     {
+      "id": "c0d6dc97f863b8d26bb752e392b3ed2f01903de34df4f9bec58d3a89a24b71f5",
+      "sha256": "c0d6dc97f863b8d26bb752e392b3ed2f01903de34df4f9bec58d3a89a24b71f5",
+      "title": "Drone strike targets Iraq's Khor Mor gas field in Kurdistan region: security sources",
+      "url": "https://t.me/FinancialJuice/145563",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T20:16:51.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "f07ffb9591c07386be02c3198842ac0045a2378504fc85a0ca002068a38914ad",
       "sha256": "f07ffb9591c07386be02c3198842ac0045a2378504fc85a0ca002068a38914ad",
       "title": "Nvidia launches independent probe after report founder and CEO Jensen Huang targeted by foreign intelligence effort",
@@ -8352,37 +8394,6 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-08T15:29:40.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -9306,6 +9317,37 @@
       "legacy_category": "geopolitica",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-08T04:35:06.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
@@ -14723,32 +14765,6 @@
       "category": "Inflacion_Empleo",
       "categories": [
         "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ba03ca2bb14c35c651b27e7fa1bc0c6e8bfe0308576c3297684c9cedfe3b8c15",
-      "sha256": "ba03ca2bb14c35c651b27e7fa1bc0c6e8bfe0308576c3297684c9cedfe3b8c15",
-      "title": "LTIMA HORA | Fuerte terremoto en Japón: la costa de Honshu tiembla tras un seísmo de magnitud 6,2",
-      "url": "https://t.me/negociostv/60384",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T12:51:22.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
       ],
       "legacy_category": "otro",
       "ficha_v6": null,
