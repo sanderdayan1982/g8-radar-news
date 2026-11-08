@@ -102,11 +102,11 @@ DeItaone, FirstSquawk, ZeroHedge (fake), Reuters vía Google News, WSJ congelado
 5. Enriquece: divisas, impacto 1–5, categoría, ACTUAL/FORECAST/PREVIOUS, z-score heurístico.
 6. Enlaza calendario ±18 h por **familia y lugar** (PMI manufacturing ≠ services; French ≠ German). El `actual` se guarda por `id` de evento y **sobrevive** a un refresh de ForexFactory vacío o a un reinicio.
 7. Deduplica por fingerprint canónico: HTTP=HTTPS; Telegram canal = mensaje (`t.me/canal/id` gana); InvestingLive por path del artículo. Un aviso de defensa civil no asigna USD/JPY/CHF; Hormuz/ataque sí.
-8. Inserta máx. 60 por ciclo, round-robin entre fuentes.
+8. Cuenta por ciclo: `pulled` (titulares descargados) e `inserted` (nuevos frente a la ventana previa).
 9. Alertas de titulares nuevos (≤12 h) impacto ≥4 (o geo ≥3). Una publicación de datos = una alerta por divisa y 15 min.
-10. Informe de salud por fuente.
+10. Informe de salud por fuente **sin maquillaje**: un fallo se publica como fallo (`error`, `empty_feed`); en la función serverless, la copia de la última sincronización se etiqueta `cached`. Se conservan `last_success_at` y `consecutive_failures`.
 
-Frecuencia: 5 min; 15 s en ventana turbo (±5 min de un High).
+Frecuencia: cron de GitHub Actions cada 5 min (sin garantía: GitHub puede retrasar o saltar ejecuciones). `public/data/radar_status.json` se publica en cada ejecución (`last_check_at`) para que la antigüedad sea visible. El feed completo se publica si hay titulares nuevos, si cambia el calendario (consenso/dato real) o si cambia el estado de una fuente.
 
 ## 5. Clasificación — Mosler / Soft Currency Economics
 
@@ -119,7 +119,7 @@ Reglas Mosler:
 1. Solo titulares aportados. Prohibido arrastre regional.
 2. **CPI alto + economía débil/insostenible no es soporte** (canal precio relativo; techo 0 en ese catalizador).
 3. El overnight es el **precio** del dinero. Un hike en cost-push **no suma**.
-4. El déficit no financia gasto; la emisión drena reservas (IRMA). Déficit/downgrade **no es presión automática**.
+4. El déficit no financia gasto; la emisión drena reservas (IRMA). Déficit/downgrade de un **emisor soberano** (USD, JPY, GBP, CAD, AUD, NZD, CHF) **no es presión automática**. El **EUR es usuario de moneda** (v4.0): la tensión de déficit periférico activa B12 EUR_FRAG y sí puede presionar.
 5. Interés sobre pasivos públicos = ingreso del no-gobierno.
 6. Sin evidencia ⇒ score 0, N/D, `rank: null`. No alerta de régimen.
 7. Evidencia débil ⇒ −40…+40. Máx. 3 drivers, < 60 caracteres, español.
@@ -144,6 +144,12 @@ Si la cobertura de actuals en vivo cae por debajo del 50 % (≥ 4 eventos con co
 Solo in-app + push. Sin correo. Breaking, dato, agenda −15 min High, cambio de ranking/régimen **con evidencia**. Cada noticia nueva elegible genera entregas independientes por dispositivo. Cola persistente con reintentos; HTTP 2xx del proveedor significa aceptación, no visualización. La visualización se registra mediante recibo firmado del service worker; el sonido depende del sistema operativo.
 
 ## 8. Despliegue
+
+**Producción actual (serverless, coste cero):** Netlify sirve `public/` y la función `radar_live`; GitHub Actions ejecuta `scripts/sync_feeds.mjs` y publica los JSON con `[skip netlify]`. Antes de publicar, el workflow pasa las pruebas del motor y de los contratos; si fallan, no se publica (fallo cerrado) y `radar_status.json` deja de avanzar. `/api/refresh` está limitado a una actualización forzada por minuto.
+
+**Limitaciones conocidas del modo serverless:** no hay envío Web Push (solo existe en el servidor Node descrito abajo); no hay sesión de acceso (el repositorio y los datos son públicos).
+
+**Despliegue alternativo (servidor propio, no activo):**
 
 Node.js 22+ con `node:sqlite`, systemd, SQLite WAL. Código `/opt/radarnews/app`, datos `/var/lib/radarnews`. HTTPS público existente y login de aplicación. Conservar `settings.json` (VAPID), base de datos y claves de sesión. Copia consistente antes de desplegar; procedimiento en DEPLOY.md. Los cuatro dispositivos se registran por separado.
 

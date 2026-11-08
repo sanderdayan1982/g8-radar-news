@@ -27,20 +27,24 @@ jobs:
         with:
           node-version: '22'
 
+      # Gate: never publish from an engine that fails its own contract (dependency-free suites, < 2 s).
+      - name: Gate — engine, Mosler rules and data contracts
+        run: node --test test/classify.test.js test/evidence.test.js test/integrity.test.js test/calibrationClosure.test.js test/sources.test.js test/financialjuice.test.js test/iris_serverless.test.js test/ui.test.js test/source_health.test.js
+
       - name: Collect G8 FX Feeds & Run Deterministic IRIS/MMT Classifier (Zero LLM)
         id: sync
         run: node scripts/sync_feeds.mjs
 
+      # The heartbeat (radar_status.json) is committed on every run; full feeds only when content changed.
       - name: Commit & Push updated JSON feeds (with [skip netlify] lock)
-        if: steps.sync.outputs.updated == 'true'
         run: |
           git config user.name "radarnews-g8-bot"
           git config user.email "radarnews-g8-bot@users.noreply.github.com"
-          git add public/data/radar_news_full.json public/data/iris_g8_feed.json
-          if ! git diff --staged --quiet; then
-            git commit -m "chore(feed): sync radar news [skip netlify]"
-            git pull --rebase origin main || true
-            git push origin main
-          else
-            echo "No changes to commit."
-          fi
+          git add public/data/radar_news_full.json public/data/iris_g8_feed.json public/data/radar_status.json
+          if git diff --staged --quiet; then echo "No changes to commit."; exit 0; fi
+          git commit -m "chore(feed): sync radar news [skip netlify]"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((attempt * 5))
+          done
+          echo "Push failed after 3 attempts"; exit 1
