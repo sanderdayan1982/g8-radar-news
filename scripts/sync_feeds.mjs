@@ -47,9 +47,14 @@ irisFeed.health = irisHealth(fullState.sources, fullState.calendar?.length || 0)
 const newItemsCount = irisFeed.items.filter((x) => !prevShaSet.has(x.sha256)).length;
 // Publish when consumers would see a difference: new headlines, calendar values (consensus/actual), source states.
 const signatureChanged = publishSignature(fullState) !== publishSignature(prevFull);
+// A contract change (new top-level fields) must reach consumers without waiting for a new headline.
+let prevIrisKeys = '';
+try { prevIrisKeys = Object.keys(JSON.parse(readFileSync(IRIS_PATH, 'utf8'))).sort().join(','); } catch { /* first run */ }
+const schemaChanged = prevIrisKeys !== Object.keys(irisFeed).sort().join(',');
 const shouldWrite = !prevFull
   || newItemsCount > 0
   || signatureChanged
+  || schemaChanged
   || (prevFull?.items?.length || 0) === 0
   || (prevFull?.sources?.length || 0) !== fullState.sources.length
   || process.argv.includes('--force');
