@@ -157,7 +157,13 @@ INVARIANTES v4.0-G8
 2. Regla PMI < 50 e Índices AiG: Cualquier PMI (Manufacturing, Services, Composite, ISM, Caixin) con Actual < 50.0 está en CONTRACCIÓN. Prohibido etiquetarlo como "Dato real fuerte" o darle +14..+30 pts; máximo +5 pts como "Contracción menor a la previa (PMI < 50)" y 0 si coincide con índices industriales negativos (AiG < 0). Solo Actual >= 50.0 batiendo consenso activa Ficha A5.
 3. Los 5 Tipos de Inflación (Módulo 12 MMT): Inflación o precios ligados a energía (WTI, Brent, TTF), cadenas de suministro o aranceles comerciales (USMCA/Carney/Trump) = COST_PUSH / RIESGO EA-1 (STAG_TRAP), nunca soporte alcista lineal por tasas.
 4. Separación Fiscal (NFA / Déficit) vs Monetaria (QE/QT / Tasas): Noticias del Tesoro / Presupuesto (NZ Treasury, CAD Budget, DMO, US Treasury) = FLUJO_FISCAL_NFA (Fichas A12 / B10 / C3 / B1), separadas de decisiones de tipos de Bancos Centrales (Fichas A1 / B2).
-5. Mapeo a Matriz Macro v6.0 (ficha_v6) y Candado de Agenda ⚑BC <48h / ✓ POST-EVENTO.`;
+5. Mapeo a Matriz Macro v6.0 (ficha_v6) y Candado de Agenda ⚑BC <48h / ✓ POST-EVENTO.
+
+INVARIANTES DE ESPECIFICACIÓN (se conservan)
+6. CPI/inflación ALTO con economía DÉBIL no es soporte: canal de precio relativo con techo 0 en ese catalizador.
+7. CPI NO es el motor único: empleo, PMI, ventas y política del banco central puntúan por sí mismos.
+8. Deduplicación por fingerprint canónico: una noticia repetida no suma dos veces.
+9. Prohibido "long", "short", "sesgo largo/corto" y "vía libre operativa": lenguaje de mesa Soporte / Presión / Neutral / N/D.`;
 
 function relativePrice(surprise, w, regime, text) {
   if (COST_PUSH_ENERGY_RE.test(text) || COST_PUSH_TARIFF_RE.test(text)) {

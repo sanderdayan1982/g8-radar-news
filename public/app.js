@@ -1046,6 +1046,8 @@ function renderHealth() {
       statusHtml = r.freshness === 'review'
         ? `<span class="st err" title="La fuente responde pero su ultimo titular es antiguo">Responde, contenido antiguo (${Math.round((r.content_age_sec || 0) / 86400)} d)</span>`
         : `<span class="st">Operativa (${r.last_fetched_count} extraídos)</span>`;
+    } else if (r.status === 'cached') {
+      statusHtml = `<span class="st" title="${esc(r.cached_reason || '')}">Copia de la última sincronización (sin respuesta en esta consulta)</span>`;
     } else if (r.status === 'empty_feed') {
       statusHtml = `<span class="st err" title="${esc(r.last_error || '')}">Vacía (HTTP ${r.last_http_status || 200} · 0 titulares)</span>`;
     } else if (r.status === 'error') {

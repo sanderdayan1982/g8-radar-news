@@ -2,6 +2,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { collectRadarAndIrisData } from '../../src/irisCollector.js';
+import { mergeSourceHealth } from '../../src/sourceHealth.js';
 
 const ROOT = (() => {
   try {
@@ -19,6 +20,8 @@ const SPEC_PATH = join(ROOT, 'SPEC.md');
 
 const GITHUB_RAW_FULL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_news_full.json';
 const CACHE_TTL_MS = 60_000;
+// A forced refresh re-polls 31 sources. Public callers cannot force more than one per minute.
+const MIN_FORCE_INTERVAL_MS = 60_000;
 
 let memCache = {
   updatedAt: 0,
@@ -79,6 +82,10 @@ async function fetchGithubRawSeed(timeoutMs = 600) {
 
 async function getFreshOrCachedBundle(forceRefresh = false) {
   const now = Date.now();
+  if (forceRefresh) {
+    const last = Math.max(memCache.updatedAt || 0, (await readNetlifyBlobCache())?.updatedAt || 0);
+    if (now - last < MIN_FORCE_INTERVAL_MS) forceRefresh = false;
+  }
 
   if (!forceRefresh && memCache.irisFeed && memCache.fullState && (now - memCache.updatedAt < CACHE_TTL_MS)) {
     return { ...memCache, cacheStatus: 'HIT_MEMORY' };
@@ -116,15 +123,9 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
   });
 
   // Conservar el estado ok de fuentes oficiales que en esta ventana de 700ms usaron la semilla de 5m
-  if (Array.isArray(baseFull?.sources) && Array.isArray(fullState.sources)) {
-    const prevById = new Map(baseFull.sources.map((s) => [s.id, s]));
-    fullState.sources = fullState.sources.map((s) => {
-      if (s.status === 'ok') return s;
-      const prev = prevById.get(s.id);
-      return prev && prev.status === 'ok' ? prev : s;
-    });
-    irisFeed.sources_ok = fullState.sources.filter((s) => s.status === 'ok').length;
-  }
+  // Sources that miss the 700 ms budget are served from the last scheduled run and labelled "cached".
+  fullState.sources = mergeSourceHealth(fullState.sources, baseFull?.sources || [], { seedMode: true });
+  irisFeed.sources_ok = fullState.sources.filter((s) => s.status === 'ok').length;
 
   const bundle = {
     updatedAt: Date.now(),

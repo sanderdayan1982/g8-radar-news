@@ -2,12 +2,14 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } fr
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { collectRadarAndIrisData } from '../src/irisCollector.js';
+import { mergeSourceHealth, healthSummary, publishSignature } from '../src/sourceHealth.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = dirname(__dirname);
 const DATA_DIR = join(ROOT, 'public', 'data');
 const FULL_PATH = join(DATA_DIR, 'radar_news_full.json');
 const IRIS_PATH = join(DATA_DIR, 'iris_g8_feed.json');
+const STATUS_PATH = join(DATA_DIR, 'radar_status.json');
 
 mkdirSync(DATA_DIR, { recursive: true });
 
@@ -36,19 +38,17 @@ const { irisFeed, fullState } = await collectRadarAndIrisData({
 });
 const elapsedMs = Date.now() - t0;
 
-if (Array.isArray(prevFull?.sources) && Array.isArray(fullState.sources)) {
-  const prevById = new Map(prevFull.sources.map((s) => [s.id, s]));
-  fullState.sources = fullState.sources.map((s) => {
-    if (s.status === 'ok') return s;
-    const prev = prevById.get(s.id);
-    return prev && prev.status === 'ok' ? prev : s;
-  });
-  irisFeed.sources_ok = fullState.sources.filter((s) => s.status === 'ok').length;
-}
+// A failed source stays failed; only its last success and last headline are carried forward.
+fullState.sources = mergeSourceHealth(fullState.sources, prevFull?.sources || []);
+const health = healthSummary(fullState.sources);
+irisFeed.sources_ok = health.ok;
 
 const newItemsCount = irisFeed.items.filter((x) => !prevShaSet.has(x.sha256)).length;
+// Publish when consumers would see a difference: new headlines, calendar values (consensus/actual), source states.
+const signatureChanged = publishSignature(fullState) !== publishSignature(prevFull);
 const shouldWrite = !prevFull
   || newItemsCount > 0
+  || signatureChanged
   || (prevFull?.items?.length || 0) === 0
   || (prevFull?.sources?.length || 0) !== fullState.sources.length
   || process.argv.includes('--force');
@@ -57,6 +57,19 @@ if (shouldWrite) {
   writeFileSync(FULL_PATH, JSON.stringify(fullState, null, 2));
   writeFileSync(IRIS_PATH, JSON.stringify(irisFeed, null, 2));
 }
+// Heartbeat: a small file written on every run, so staleness is visible even without new headlines.
+const status = {
+  schema: 'radar-status/v1',
+  last_check_at: new Date().toISOString(),
+  feed_generated_at: shouldWrite ? fullState.generated_at : (prevFull?.generated_at || null),
+  wrote_full_feed: shouldWrite,
+  new_items: newItemsCount,
+  sources: health,
+  failing_sources: fullState.sources.filter((s) => s.status !== 'ok').map((s) => ({ id: s.id, status: s.status, last_error: s.last_error || null, last_success_at: s.last_success_at || null, consecutive_failures: s.consecutive_failures })),
+  calendar_events: fullState.calendar?.length || 0,
+  cadence: 'GitHub Actions cron */5 (best effort; GitHub may delay or skip runs)',
+};
+writeFileSync(STATUS_PATH, JSON.stringify(status, null, 2));
 
 if (process.env.GITHUB_OUTPUT) {
   appendFileSync(process.env.GITHUB_OUTPUT, `new_items=${newItemsCount}\nupdated=${shouldWrite ? 'true' : 'false'}\n`);

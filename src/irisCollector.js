@@ -1,3 +1,4 @@
+import { isPromotional } from './sourceHealth.js';
 import { createHash } from 'node:crypto';
 import { SOURCES, UA, ENGINE_NAME } from './config.js';
 import { enrichRaw, parseRss, parseTelegram, parseHtmlList } from './enrich.js';
@@ -316,6 +317,7 @@ export async function collectRadarAndIrisData({
   const freshItems = pulledSources.flatMap((p) => p.items);
 
   const { allWindowItems, irisWindowItems } = deduplicateAndFilterWindow(freshItems, existingItems, nowMs, 72);
+  const existingKeys = new Set((existingItems || []).map((x) => x.sha256 || x.id).filter(Boolean));
 
   const calendarEvents = Array.isArray(calResult?.events) && calResult.events.length
     ? calResult.events
@@ -396,6 +398,7 @@ export async function collectRadarAndIrisData({
 
   // Alertas recientes derivadas de titulares de alto impacto o breaking en las últimas 24h
   const alerts = irisWindowItems
+    .filter((n) => !isPromotional(n))
     .filter((n) => n.impact >= 4 || n.source_type === 'breaking' || n.iris_category === 'Intervencion_EA4')
     .slice(0, 40)
     .map((n, idx) => ({
@@ -539,11 +542,14 @@ export async function collectRadarAndIrisData({
     last_sync: {
       started_at: startedAt,
       finished_at: finishedAt,
-      inserted: freshItems.length,
+      pulled: freshItems.length,
+      inserted: allWindowItems.filter((n) => !existingKeys.has(n.sha256 || n.id)).length,
       updated: 0,
       calendar_sync: { events: calendarEvents.length, ok: calendarEvents.length > 0 },
     },
-    next_sync_at: new Date(Date.now() + 60_000).toISOString(),
+    // GitHub schedules every 5 min are best-effort: this is the expected time, not a guarantee.
+    next_sync_at: new Date(Date.now() + 300_000).toISOString(),
+    next_sync_is_expected_not_guaranteed: true,
     syncing: false,
     turbo: turbo ? { currency: turbo.currency, title: turbo.title } : null,
     error: null,

@@ -37,7 +37,7 @@ test('ranking no aprieta meta y driver en una sola línea nowrap', () => {
   assert.doesNotMatch(app, /ccy-sub/);
   const css = readFileSync(new URL('../public/styles.css', import.meta.url), 'utf8');
   assert.match(css, /ccy-meta/);
-  assert.match(css, /-webkit-line-clamp:\s*2/);
+  assert.match(css, /-webkit-line-clamp:\s*[12]\b/);   // recortado; el texto completo va en title
   assert.doesNotMatch(css, /\.ccy-sub \.driver \{[^}]*white-space:\s*nowrap/);
 });
 

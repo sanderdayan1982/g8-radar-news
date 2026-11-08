@@ -27,7 +27,7 @@ test('CPI alto con economía débil no suma soporte', () => {
     t(50, { title: 'UK PMI services falls below 50, slowdown', currencies: ['GBP'], actual: '48.1', forecast: '51.0' }),
   ], now));
   const gbp = rows.find((r) => r.currency === 'GBP');
-  assert.ok(gbp.drivers.some((d) => /escasez relativa|no NFA/i.test(d)));
+  assert.ok(gbp.drivers.some((d) => /escasez relativa|no NFA|cost-push en economía débil/i.test(d)));
   assert.ok(gbp.score <= 0, `CPI+debilidad no puede ser soporte, score=${gbp.score}`);
 });
 
@@ -44,13 +44,20 @@ test('CPI alto con economía en capacidad queda acotado; el dato real manda', ()
   assert.ok(usd.drivers.some((d) => /labor|PMI|dato real|expansión|payroll/i.test(d)));
 });
 
-test('titular de déficit/downgrade no es presión automática (Mosler)', () => {
-  const rows = classifyAgent([
+test('déficit/downgrade de un emisor soberano no es presión automática (Mosler)', () => {
+  for (const [title, ccy] of [['UK deficit cannot afford spending, downgrade fears', 'GBP'], ['US deficit cannot afford spending, downgrade fears', 'USD']]) {
+    const row = classifyAgent([t(15, { title, currencies: [ccy], category: 'analisis', impact: 3 })], now).find((r) => r.currency === ccy);
+    assert.equal(row.score, 0, `${ccy} es emisor soberano`);
+    assert.ok(row.drivers.some((d) => /FLUJO_FISCAL_NFA|Emisor soberano/i.test(d)));
+  }
+});
+
+test('v4.0: el EUR es usuario de moneda; el riesgo de déficit periférico sí presiona (B12 EUR_FRAG)', () => {
+  const eur = classifyAgent([
     t(15, { title: 'France deficit cannot afford spending, downgrade fears', currencies: ['EUR'], category: 'analisis', impact: 3 }),
-  ], now);
-  const eur = rows.find((r) => r.currency === 'EUR');
-  assert.equal(eur.score, 0);
-  assert.ok(eur.drivers.some((d) => /déficit no es restricción/i.test(d)));
+  ], now).find((r) => r.currency === 'EUR');
+  assert.ok(eur.score < 0, `EUR usuario de moneda, score=${eur.score}`);
+  assert.ok(eur.drivers.some((d) => /B12_EUR_FRAG/.test(d)));
 });
 
 test('hike en régimen débil/cost-push no es soporte', () => {
@@ -155,7 +162,7 @@ test('inflación + tightening no se traga como CPI 0: BoJ puntúa política', ()
   ], now);
   const jpy = rows.find((r) => r.currency === 'JPY');
   assert.ok(jpy.score > 0, `tightening no puede quedar en 0, score=${jpy.score}`);
-  assert.ok(jpy.drivers.some((d) => /precio del dinero|tightening|alza/i.test(d)));
+  assert.ok(jpy.drivers.some((d) => /precio del dinero|tightening|alza|hawkish/i.test(d)));
 });
 
 test('oficial hawkish de hace 20 días todavía puntúa, no solo evidencia', () => {
@@ -211,7 +218,7 @@ test('Agente diferencia divisas con evidencia: no todas Neutral 0', () => {
   const chf = rows.find((r) => r.currency === 'CHF');
   assert.ok(jpy.score > 0);
   assert.ok(gbp.score < 0);
-  assert.equal(eur.score, 0);
+  assert.ok(eur.score < 0);   // v4.0: EUR usuario de moneda (B12 EUR_FRAG)
   assert.ok(chf.score > 0);
   assert.ok(new Set([jpy.score, gbp.score, eur.score, chf.score]).size >= 3);
 });

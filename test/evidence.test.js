@@ -169,7 +169,7 @@ test('production data hygiene: original dates resolved before temporal filter, r
 });
 
 test('Case 1: Operational and Shadow Agent evaluate the exact same evidence, and expanded coverage is recorded under a separate contract', () => {
-  assert.equal(OP_VERSION, 'mmt-agent-op-v3.1');
+  assert.equal(OP_VERSION, 'mmt-agent-op-v4.1-G8');
   assert.equal(SHADOW_VERSION, 'mmt-rubric-shadow-v2.1-frozen');
   assert.equal(SHADOW_SPEC.empirical, false);
   assert.equal(SHADOW_SPEC.sameEvidenceInvariant, true);
@@ -205,7 +205,9 @@ test('Case 1: Operational and Shadow Agent evaluate the exact same evidence, and
   assert.ok(opMap.get('CAD').score < 0);
   assert.ok(shMap.get('CAD').score > 0);
   assert.ok(shMap.get('JPY').score < opMap.get('JPY').score);
-  assert.ok(opMap.get('AUD').score > 0);
+  // v4.0 invariant 2: PMI < 50 is contraction; at most +5 when less negative than before (0 allowed).
+  assert.ok(opMap.get('AUD').score >= 0 && opMap.get('AUD').score <= 5);
+  assert.ok(opMap.get('AUD').drivers.some((d) => /PMI .*< 50/.test(d)));
   assert.equal(shMap.get('AUD').score, 0);
   assert.ok(Math.abs(shMap.get('GBP').score) < Math.abs(opMap.get('GBP').score));
 
