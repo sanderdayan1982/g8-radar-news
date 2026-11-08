@@ -5,10 +5,10 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-08T12:48:59.732Z",
-  "started_at": "2026-11-08T12:48:57.019Z",
+  "generated_at": "2026-11-08T12:49:29.071Z",
+  "started_at": "2026-11-08T12:49:12.924Z",
   "window_hours": 72,
-  "sources_ok": 31,
+  "sources_ok": 25,
   "sources_total": 31,
   "count": 250,
   "currency_ranking_mmt": [
@@ -22,7 +22,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 24.9h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 24.8h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -30,7 +30,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "30 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -50,14 +50,14 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "25 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 3,
-      "score": 13,
+      "score": 18,
       "bias": "alcista",
-      "structural": 13,
+      "structural": 18,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -67,10 +67,10 @@
       "no_evidence": false,
       "drivers": [
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
+        "Acuerdo comercial / sector exterior (C1/EA-1)",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "21 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +13 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "22 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +18 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -90,7 +90,7 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +8 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +8 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -110,7 +110,7 @@
         "New Zealand Prime Minister Luxon: talks and concessions will be necessary",
         "New Zealand Prime Minister Luxon: There is a route to form next government"
       ],
-      "rationale": "11 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -130,7 +130,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "12 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est -10 | Imp 3h n/d. Régimen real weak."
+      "rationale": "14 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est -10 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "CAD",
@@ -166,11 +166,9 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
-        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
+        "Presión Risk-Off sobre cíclica (B5 / B15)"
       ],
-      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est -17 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "3 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO · Est -17 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -203,7 +201,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 24.9h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 24.8h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -211,7 +209,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "30 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -231,14 +229,14 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "25 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 3,
-      "score": 13,
+      "score": 18,
       "bias": "alcista",
-      "structural": 13,
+      "structural": 18,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -248,10 +246,10 @@
       "no_evidence": false,
       "drivers": [
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
+        "Acuerdo comercial / sector exterior (C1/EA-1)",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "21 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +13 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "22 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +18 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -271,7 +269,7 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +8 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +8 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -291,7 +289,7 @@
         "New Zealand Prime Minister Luxon: talks and concessions will be necessary",
         "New Zealand Prime Minister Luxon: There is a route to form next government"
       ],
-      "rationale": "11 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -311,7 +309,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "12 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est -10 | Imp 3h n/d. Régimen real weak."
+      "rationale": "14 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est -10 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "CAD",
@@ -347,11 +345,9 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
-        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
+        "Presión Risk-Off sobre cíclica (B5 / B15)"
       ],
-      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est -17 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "3 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO · Est -17 | Imp 3h n/d. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -436,7 +432,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24.9,
+      "hours_from_now": 24.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1303,37 +1299,6 @@
       "z": null
     },
     {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-08T04:35:06.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "f14ff3ed0063b57008ca55f32cade990d69ca6ea36dca555ed2f747c2160220a",
       "sha256": "f14ff3ed0063b57008ca55f32cade990d69ca6ea36dca555ed2f747c2160220a",
       "title": "Iran executes three men convicted of involvement in armed unrest during January 2026 protests: state media",
@@ -2098,6 +2063,37 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-07T17:44:44.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8290,37 +8286,6 @@
       "z": null
     },
     {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-08T04:35:06.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "f14ff3ed0063b57008ca55f32cade990d69ca6ea36dca555ed2f747c2160220a",
       "sha256": "f14ff3ed0063b57008ca55f32cade990d69ca6ea36dca555ed2f747c2160220a",
       "title": "Iran executes three men convicted of involvement in armed unrest during January 2026 protests: state media",
@@ -9085,6 +9050,37 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-07T17:44:44.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -14641,13 +14637,13 @@
     }
   ],
   "health": {
-    "sources_active": 31,
-    "sources_live": 31,
+    "sources_active": 25,
+    "sources_live": 25,
     "sources_cached": 0,
     "sources_total": 31,
     "sources_empty": 0,
-    "sources_error": 0,
+    "sources_error": 6,
     "agenda_events_count": 94,
-    "status": "CLEAN"
+    "status": "DEGRADED"
   }
 }
