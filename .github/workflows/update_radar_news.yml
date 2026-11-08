@@ -4,6 +4,9 @@ name: Update Radar News G8 & IRIS Feed (5m)
 # Reliable, free design: an hourly trigger (plus a half-hour backup) starts a ~57-minute job that
 # syncs on its own clock (scripts/sync_loop.sh): every 5 min, every 60 s near High-impact events.
 # The legacy */5 trigger is kept as an extra wake-up; concurrency never runs two loops at once.
+# Observed 2026-11-08: GitHub fired no scheduled run for 4 h after 02:18 UTC. So each successful loop
+# dispatches the next one (workflow_dispatch via GITHUB_TOKEN is allowed to start a run). Schedules
+# remain only as a restart if the chain breaks. A failing gate stops the chain (fail closed, no hot loop).
 on:
   schedule:
     - cron: '3 * * * *'
@@ -13,6 +16,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # self-chaining: each loop dispatches the next one
 
 concurrency:
   group: radar-news-g8-sync
@@ -40,3 +44,9 @@ jobs:
       # Commits keep the lock message "chore(feed): sync radar news [skip netlify]" (see scripts/sync_loop.sh).
       - name: Sync loop (5 min cadence, 60 s near High events)
         run: bash scripts/sync_loop.sh
+
+      - name: Chain the next loop
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update_radar_news.yml --ref main
