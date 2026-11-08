@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-07T22:56:55.743Z",
-  "started_at": "2026-11-07T22:56:52.829Z",
+  "generated_at": "2026-11-08T01:47:14.097Z",
+  "started_at": "2026-11-08T01:47:11.071Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,7 +18,7 @@
       "score": 31,
       "bias": "alcista",
       "structural": 31,
-      "impulse": 5,
+      "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -30,7 +30,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +31 | Imp 3h +5. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +31 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -38,7 +38,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 5,
+      "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -49,7 +49,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +5. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -57,7 +57,7 @@
       "score": 14,
       "bias": "alcista",
       "structural": 14,
-      "impulse": 5,
+      "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -68,14 +68,14 @@
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +14 | Imp 3h +5. Régimen real mixed."
+      "rationale": "19 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +14 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 3,
-      "score": 14,
+      "rank": 4,
+      "score": 13,
       "bias": "alcista",
-      "structural": 14,
+      "structural": 13,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -88,7 +88,7 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +14 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +13 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -113,9 +113,9 @@
     {
       "currency": "EUR",
       "rank": 6,
-      "score": -13,
-      "bias": "bajista",
-      "structural": -13,
+      "score": -12,
+      "bias": "neutral",
+      "structural": -12,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -128,14 +128,14 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "11 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -13 | Imp 3h n/d. Régimen real weak."
+      "rationale": "12 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -12 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "AUD",
       "rank": 7,
-      "score": -18,
+      "score": -17,
       "bias": "bajista",
-      "structural": -18,
+      "structural": -17,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -148,7 +148,7 @@
         "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
         "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
       ],
-      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -18 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -17 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
@@ -156,7 +156,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": -5,
+      "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -168,7 +168,7 @@
         "CPI sin sorpresa",
         "FLUJO_FISCAL_NFA: Emisor soberano sin riesgo default"
       ],
-      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -24 | Imp 3h -5. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -24 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -197,7 +197,7 @@
       "score": 31,
       "bias": "alcista",
       "structural": 31,
-      "impulse": 5,
+      "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -209,7 +209,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +31 | Imp 3h +5. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +31 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -217,7 +217,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 5,
+      "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -228,7 +228,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +5. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -236,7 +236,7 @@
       "score": 14,
       "bias": "alcista",
       "structural": 14,
-      "impulse": 5,
+      "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -247,14 +247,14 @@
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +14 | Imp 3h +5. Régimen real mixed."
+      "rationale": "19 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +14 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 3,
-      "score": 14,
+      "rank": 4,
+      "score": 13,
       "bias": "alcista",
-      "structural": 14,
+      "structural": 13,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -267,7 +267,7 @@
         "Pausa BC: precio del dinero estable",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +14 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +13 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -292,9 +292,9 @@
     {
       "currency": "EUR",
       "rank": 6,
-      "score": -13,
-      "bias": "bajista",
-      "structural": -13,
+      "score": -12,
+      "bias": "neutral",
+      "structural": -12,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -307,14 +307,14 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "11 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -13 | Imp 3h n/d. Régimen real weak."
+      "rationale": "12 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -12 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "AUD",
       "rank": 7,
-      "score": -18,
+      "score": -17,
       "bias": "bajista",
-      "structural": -18,
+      "structural": -17,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -327,7 +327,7 @@
         "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
         "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
       ],
-      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -18 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -17 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
@@ -335,7 +335,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": -5,
+      "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -347,7 +347,7 @@
         "CPI sin sorpresa",
         "FLUJO_FISCAL_NFA: Emisor soberano sin riesgo default"
       ],
-      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -24 | Imp 3h -5. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -24 | Imp 3h n/d. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -360,7 +360,7 @@
       "actual": "165K",
       "forecast": "65K",
       "previous": "29K",
-      "hours_from_now": -33.4,
+      "hours_from_now": -36.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -372,7 +372,7 @@
       "actual": "27.839B",
       "forecast": "13.4B",
       "previous": "8.3B",
-      "hours_from_now": -26.9,
+      "hours_from_now": -29.8,
       "window_status": "✓ POST-EVENTO"
     }
   ],
@@ -388,6 +388,32 @@
   },
   "items": [
     {
+      "id": "ad791f61bbd23cb529b7eb1d6f4f94203380f45b3934bd339547813a4119f164",
+      "sha256": "ad791f61bbd23cb529b7eb1d6f4f94203380f45b3934bd339547813a4119f164",
+      "title": "Saudi civil defense issues warning of potential hazard in Dammam - post on X",
+      "url": "https://t.me/FinancialJuice/145513",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T01:44:06.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "7afa70f129114d60403c7555e8ededd109de1b21932d2472dfaf712aaa77a629",
       "sha256": "7afa70f129114d60403c7555e8ededd109de1b21932d2472dfaf712aaa77a629",
       "title": "Sneak peak of some data in FJ 2.0 - launching soon 😍",
@@ -898,7 +924,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-07T17:44:48.000Z",
+      "published_at": "2026-11-07T17:44:57.000Z",
       "currencies": [
         "CAD"
       ],
@@ -1780,6 +1806,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "08115d3de0b79bc46aba971a6ada58466fed70ee1190d3469d6767fa92ba757a",
+      "sha256": "08115d3de0b79bc46aba971a6ada58466fed70ee1190d3469d6767fa92ba757a",
+      "title": "[une_ltu_a] Long-term unemployment by sex - annual data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWVQyVW9BWXlHQlpZdzNrUmJLSUJHVTlIMmF3VGppUWNZOUZHeC1UMlFaZHZ4RHc0bXk1SmpBdmZOc0FYSmxkNk5Qd3hreEV4YWFweUhsbEhBY2NZUTlzSjdndUxwaTJXeU1qNHp0TjhtVFRoLXJpenNFU0RBdm1lYTFfRkJNQQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-07T07:42:59.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7114,6 +7170,36 @@
       "z": null
     },
     {
+      "id": "28ec21ce4b61ae9d49e6909540e7718da1670c2d0f82e8b59d3c1353bf53dfa4",
+      "sha256": "28ec21ce4b61ae9d49e6909540e7718da1670c2d0f82e8b59d3c1353bf53dfa4",
+      "title": "[prc_rem_gdp] GDP weights used in the calculation of the global specific indicator - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcE10LVFEUVphMG5XWXloTTZhTGJHT2Q4NGlmYnFUaGVTZnlBUlBZT0g2MFE0QUVMNzBjallDRWdhSzZibVJfNndwSGtSWEV1NE04cFJBZ0t3UTZmYXFJMVl5QUZPcFllbFZpMjVOZVQ3VURYYmU5WWRKYm5RbVg3djByWjB0aW8?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
       "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
       "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
@@ -7340,92 +7426,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f8fdd7a66932c161043fb3ac4d76eb3040f59011cc72d68996065a018807f6c9",
-      "sha256": "f8fdd7a66932c161043fb3ac4d76eb3040f59011cc72d68996065a018807f6c9",
-      "title": "LAS NOTICIAS: Trump se lleva un mazazo inesperado, Marco Rubio rompe su silencio y bolsas en pánico",
-      "url": "https://t.me/negociostv/60372",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T07:01:32.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0e43a9d226ddd1057157f80076720ac2b3d68a44d6d77cb12a7c0c0ca755dc0b",
-      "sha256": "0e43a9d226ddd1057157f80076720ac2b3d68a44d6d77cb12a7c0c0ca755dc0b",
-      "title": "(IMES Newsletter) 2026 BoC - Philadelphia Fed - BOJ Joint Workshop",
-      "url": "http://www.boj.or.jp/en/about/release_2026/rel261106b.htm",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T07:00:00.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1f72eb594d7fb9044f60408131ed5cd1677b6399c3b3d662b1b75036bb474eec",
-      "sha256": "1f72eb594d7fb9044f60408131ed5cd1677b6399c3b3d662b1b75036bb474eec",
-      "title": "The sell-off gets deep",
-      "url": "https://www.ft.com/content/4ea585dd-6532-4839-a042-c9d1ad2e23f7?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T06:30:04.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7435,6 +7435,32 @@
   ],
   "news": [
     {
+      "id": "ad791f61bbd23cb529b7eb1d6f4f94203380f45b3934bd339547813a4119f164",
+      "sha256": "ad791f61bbd23cb529b7eb1d6f4f94203380f45b3934bd339547813a4119f164",
+      "title": "Saudi civil defense issues warning of potential hazard in Dammam - post on X",
+      "url": "https://t.me/FinancialJuice/145513",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T01:44:06.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "7afa70f129114d60403c7555e8ededd109de1b21932d2472dfaf712aaa77a629",
       "sha256": "7afa70f129114d60403c7555e8ededd109de1b21932d2472dfaf712aaa77a629",
       "title": "Sneak peak of some data in FJ 2.0 - launching soon 😍",
@@ -7945,7 +7971,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-07T17:44:48.000Z",
+      "published_at": "2026-11-07T17:44:57.000Z",
       "currencies": [
         "CAD"
       ],
@@ -8827,6 +8853,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "08115d3de0b79bc46aba971a6ada58466fed70ee1190d3469d6767fa92ba757a",
+      "sha256": "08115d3de0b79bc46aba971a6ada58466fed70ee1190d3469d6767fa92ba757a",
+      "title": "[une_ltu_a] Long-term unemployment by sex - annual data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWVQyVW9BWXlHQlpZdzNrUmJLSUJHVTlIMmF3VGppUWNZOUZHeC1UMlFaZHZ4RHc0bXk1SmpBdmZOc0FYSmxkNk5Qd3hreEV4YWFweUhsbEhBY2NZUTlzSjdndUxwaTJXeU1qNHp0TjhtVFRoLXJpenNFU0RBdm1lYTFfRkJNQQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-07T07:42:59.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -14161,6 +14217,36 @@
       "z": null
     },
     {
+      "id": "28ec21ce4b61ae9d49e6909540e7718da1670c2d0f82e8b59d3c1353bf53dfa4",
+      "sha256": "28ec21ce4b61ae9d49e6909540e7718da1670c2d0f82e8b59d3c1353bf53dfa4",
+      "title": "[prc_rem_gdp] GDP weights used in the calculation of the global specific indicator - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcE10LVFEUVphMG5XWXloTTZhTGJHT2Q4NGlmYnFUaGVTZnlBUlBZT0g2MFE0QUVMNzBjallDRWdhSzZibVJfNndwSGtSWEV1NE04cFJBZ0t3UTZmYXFJMVl5QUZPcFllbFZpMjVOZVQ3VURYYmU5WWRKYm5RbVg3djByWjB0aW8?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
       "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
       "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
@@ -14387,92 +14473,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f8fdd7a66932c161043fb3ac4d76eb3040f59011cc72d68996065a018807f6c9",
-      "sha256": "f8fdd7a66932c161043fb3ac4d76eb3040f59011cc72d68996065a018807f6c9",
-      "title": "LAS NOTICIAS: Trump se lleva un mazazo inesperado, Marco Rubio rompe su silencio y bolsas en pánico",
-      "url": "https://t.me/negociostv/60372",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T07:01:32.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0e43a9d226ddd1057157f80076720ac2b3d68a44d6d77cb12a7c0c0ca755dc0b",
-      "sha256": "0e43a9d226ddd1057157f80076720ac2b3d68a44d6d77cb12a7c0c0ca755dc0b",
-      "title": "(IMES Newsletter) 2026 BoC - Philadelphia Fed - BOJ Joint Workshop",
-      "url": "http://www.boj.or.jp/en/about/release_2026/rel261106b.htm",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T07:00:00.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1f72eb594d7fb9044f60408131ed5cd1677b6399c3b3d662b1b75036bb474eec",
-      "sha256": "1f72eb594d7fb9044f60408131ed5cd1677b6399c3b3d662b1b75036bb474eec",
-      "title": "The sell-off gets deep",
-      "url": "https://www.ft.com/content/4ea585dd-6532-4839-a042-c9d1ad2e23f7?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T06:30:04.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
