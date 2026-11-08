@@ -17,6 +17,8 @@ test('scheduler: hourly loop, bounded runtime, no overlap, Netlify lock kept', (
   assert.match(wf, /cron:\s*'3 \* \* \* \*'/);
   assert.match(wf, /cancel-in-progress: false/);
   assert.match(wf, /timeout-minutes: 62/);
+  assert.match(wf, /actions: write/);
+  assert.match(wf, /if: success\(\)[\s\S]*gh workflow run update_radar_news\.yml --ref main/);   // chain only after a clean loop
   assert.match(loop, /BUDGET_SEC:-3420/);
   assert.match(loop, /chore\(feed\): sync radar news \[skip netlify\]/);
 });
