@@ -99,7 +99,8 @@ test('Candado Anti-Cobro Netlify ([skip netlify]) presente en workflow y netlify
   const wf = readFileSync(new URL('../.github/workflows/update_radar_news.yml', import.meta.url), 'utf8');
   const toml = readFileSync(new URL('../netlify.toml', import.meta.url), 'utf8');
   assert.match(wf, /cron:\s*'\*\/5 \* \* \* \*'/);
-  assert.match(wf, /chore\(feed\): sync radar news \[skip netlify\]/);
+  const loop = readFileSync(new URL('../scripts/sync_loop.sh', import.meta.url), 'utf8');
+  assert.match(loop, /chore\(feed\): sync radar news \[skip netlify\]/);
   assert.match(toml, /\[skip netlify\]/);
   assert.match(toml, /\/api\/iris-feed/);
   assert.match(toml, /\/api\/radar-full/);

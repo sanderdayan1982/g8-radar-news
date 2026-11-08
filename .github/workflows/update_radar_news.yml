@@ -1,7 +1,13 @@
 name: Update Radar News G8 & IRIS Feed (5m)
 
+# GitHub runs */5 schedules on a best-effort basis (often 15-60+ min late or skipped).
+# Reliable, free design: an hourly trigger (plus a half-hour backup) starts a ~57-minute job that
+# syncs on its own clock (scripts/sync_loop.sh): every 5 min, every 60 s near High-impact events.
+# The legacy */5 trigger is kept as an extra wake-up; concurrency never runs two loops at once.
 on:
   schedule:
+    - cron: '3 * * * *'
+    - cron: '33 * * * *'
     - cron: '*/5 * * * *'
   workflow_dispatch:
 
@@ -15,7 +21,7 @@ concurrency:
 jobs:
   sync-feeds:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 62
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -29,22 +35,8 @@ jobs:
 
       # Gate: never publish from an engine that fails its own contract (dependency-free suites, < 2 s).
       - name: Gate — engine, Mosler rules and data contracts
-        run: node --test test/classify.test.js test/evidence.test.js test/integrity.test.js test/calibrationClosure.test.js test/sources.test.js test/financialjuice.test.js test/iris_serverless.test.js test/ui.test.js test/source_health.test.js
+        run: node --test test/classify.test.js test/evidence.test.js test/integrity.test.js test/calibrationClosure.test.js test/sources.test.js test/financialjuice.test.js test/iris_serverless.test.js test/ui.test.js test/source_health.test.js test/scheduler.test.js
 
-      - name: Collect G8 FX Feeds & Run Deterministic IRIS/MMT Classifier (Zero LLM)
-        id: sync
-        run: node scripts/sync_feeds.mjs
-
-      # The heartbeat (radar_status.json) is committed on every run; full feeds only when content changed.
-      - name: Commit & Push updated JSON feeds (with [skip netlify] lock)
-        run: |
-          git config user.name "radarnews-g8-bot"
-          git config user.email "radarnews-g8-bot@users.noreply.github.com"
-          git add public/data/radar_news_full.json public/data/iris_g8_feed.json public/data/radar_status.json
-          if git diff --staged --quiet; then echo "No changes to commit."; exit 0; fi
-          git commit -m "chore(feed): sync radar news [skip netlify]"
-          for attempt in 1 2 3; do
-            git pull --rebase origin main && git push origin HEAD:main && exit 0
-            sleep $((attempt * 5))
-          done
-          echo "Push failed after 3 attempts"; exit 1
+      # Commits keep the lock message "chore(feed): sync radar news [skip netlify]" (see scripts/sync_loop.sh).
+      - name: Sync loop (5 min cadence, 60 s near High events)
+        run: bash scripts/sync_loop.sh
