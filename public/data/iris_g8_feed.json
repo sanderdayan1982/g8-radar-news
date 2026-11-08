@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-08T01:54:06.273Z",
-  "started_at": "2026-11-08T01:54:03.573Z",
+  "generated_at": "2026-11-08T01:59:10.482Z",
+  "started_at": "2026-11-08T01:59:07.894Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,9 +15,9 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 31,
+      "score": 33,
       "bias": "alcista",
-      "structural": 31,
+      "structural": 33,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -28,16 +28,16 @@
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
+        "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "34 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +31 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +33 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
       "rank": 2,
-      "score": 24,
+      "score": 21,
       "bias": "alcista",
-      "structural": 24,
+      "structural": 21,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -47,32 +47,14 @@
       "no_evidence": false,
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "23 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "CHF",
-      "rank": 3,
-      "score": 14,
-      "bias": "alcista",
-      "structural": 14,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
-      ],
-      "rationale": "19 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +14 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
+      "rank": 3,
       "score": 13,
       "bias": "alcista",
       "structural": 13,
@@ -89,6 +71,26 @@
         "CPI sin sorpresa"
       ],
       "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +13 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 4,
+      "score": 11,
+      "bias": "neutral",
+      "structural": 11,
+      "impulse": null,
+      "ficha_v6": "B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
+      ],
+      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +11 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -153,9 +155,9 @@
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -23,
+      "score": -20,
       "bias": "bajista",
-      "structural": -23,
+      "structural": -20,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -165,10 +167,10 @@
       "no_evidence": false,
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "CPI sin sorpresa",
-        "FLUJO_FISCAL_NFA: Emisor soberano sin riesgo default"
+        "Impulso ToT energético (EA-1)",
+        "CPI sin sorpresa"
       ],
-      "rationale": "15 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -23 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "14 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -20 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -194,9 +196,9 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 31,
+      "score": 33,
       "bias": "alcista",
-      "structural": 31,
+      "structural": 33,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -207,16 +209,16 @@
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
+        "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "34 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE · Est +31 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +33 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "JPY",
       "rank": 2,
-      "score": 24,
+      "score": 21,
       "bias": "alcista",
-      "structural": 24,
+      "structural": 21,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -226,32 +228,14 @@
       "no_evidence": false,
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "23 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "CHF",
-      "rank": 3,
-      "score": 14,
-      "bias": "alcista",
-      "structural": 14,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
-      ],
-      "rationale": "19 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL · Est +14 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
+      "rank": 3,
       "score": 13,
       "bias": "alcista",
       "structural": 13,
@@ -268,6 +252,26 @@
         "CPI sin sorpresa"
       ],
       "rationale": "11 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE · Est +13 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 4,
+      "score": 11,
+      "bias": "neutral",
+      "structural": 11,
+      "impulse": null,
+      "ficha_v6": "B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
+      ],
+      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +11 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -332,9 +336,9 @@
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -23,
+      "score": -20,
       "bias": "bajista",
-      "structural": -23,
+      "structural": -20,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -344,10 +348,10 @@
       "no_evidence": false,
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "CPI sin sorpresa",
-        "FLUJO_FISCAL_NFA: Emisor soberano sin riesgo default"
+        "Impulso ToT energético (EA-1)",
+        "CPI sin sorpresa"
       ],
-      "rationale": "15 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -23 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "14 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -20 | Imp 3h n/d. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -360,7 +364,7 @@
       "actual": "165K",
       "forecast": "65K",
       "previous": "29K",
-      "hours_from_now": -36.4,
+      "hours_from_now": -36.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -372,7 +376,7 @@
       "actual": "27.839B",
       "forecast": "13.4B",
       "previous": "8.3B",
-      "hours_from_now": -29.9,
+      "hours_from_now": -30,
       "window_status": "✓ POST-EVENTO"
     }
   ],
@@ -387,6 +391,32 @@
     "NZD": -0.87
   },
   "items": [
+    {
+      "id": "d6ef418459f811fd65a4ca3aaf72e738f18f815e04974d7528807245287efe17",
+      "sha256": "d6ef418459f811fd65a4ca3aaf72e738f18f815e04974d7528807245287efe17",
+      "title": "Saudi civil defense: risk has passed in Al Ahsa governorate",
+      "url": "https://t.me/FinancialJuice/145517",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T01:54:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "fc847333a535a560b15c49b8511bad6afe23a99f9172bffbaeb705bb29dedbfa",
       "sha256": "fc847333a535a560b15c49b8511bad6afe23a99f9172bffbaeb705bb29dedbfa",
@@ -7379,32 +7409,6 @@
       "source_id": "ft-markets",
       "source_type": "agencia",
       "published_at": "2026-11-06T07:44:30.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2e075a4545e97a46ba13ec26afea3b14513b7375c7686015d961cf8532afd8d7",
-      "sha256": "2e075a4545e97a46ba13ec26afea3b14513b7375c7686015d961cf8532afd8d7",
-      "title": "What are the main events for today 80",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T07:40:00.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -7425,6 +7429,32 @@
   ],
   "news": [
     {
+      "id": "d6ef418459f811fd65a4ca3aaf72e738f18f815e04974d7528807245287efe17",
+      "sha256": "d6ef418459f811fd65a4ca3aaf72e738f18f815e04974d7528807245287efe17",
+      "title": "Saudi civil defense: risk has passed in Al Ahsa governorate",
+      "url": "https://t.me/FinancialJuice/145517",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T01:54:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "fc847333a535a560b15c49b8511bad6afe23a99f9172bffbaeb705bb29dedbfa",
       "sha256": "fc847333a535a560b15c49b8511bad6afe23a99f9172bffbaeb705bb29dedbfa",
       "title": "Saudi civil defense: danger has passed in Dammam, Dhahran and Abqaiq - state TV",
@@ -14416,32 +14446,6 @@
       "source_id": "ft-markets",
       "source_type": "agencia",
       "published_at": "2026-11-06T07:44:30.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2e075a4545e97a46ba13ec26afea3b14513b7375c7686015d961cf8532afd8d7",
-      "sha256": "2e075a4545e97a46ba13ec26afea3b14513b7375c7686015d961cf8532afd8d7",
-      "title": "What are the main events for today 80",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T07:40:00.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
