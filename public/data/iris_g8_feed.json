@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-08T09:30:17.196Z",
-  "started_at": "2026-11-08T09:30:14.615Z",
+  "generated_at": "2026-11-08T09:45:29.446Z",
+  "started_at": "2026-11-08T09:45:26.820Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,11 +18,11 @@
       "score": 32,
       "bias": "alcista",
       "structural": 32,
-      "impulse": null,
+      "impulse": 16,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 28.2h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 27.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -30,7 +30,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "33 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h +16. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -38,7 +38,7 @@
       "score": 21,
       "bias": "alcista",
       "structural": 21,
-      "impulse": null,
+      "impulse": 16,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -50,15 +50,15 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "23 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h +16. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 3,
-      "score": 18,
+      "score": 13,
       "bias": "alcista",
-      "structural": 18,
-      "impulse": null,
+      "structural": 13,
+      "impulse": 16,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,10 +67,10 @@
       "no_evidence": false,
       "drivers": [
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
-        "Acuerdo comercial / sector exterior (C1/EA-1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +18 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "21 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +13 | Imp 3h +16. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -82,7 +82,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 31.9h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 31.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -130,7 +130,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "13 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est -10 | Imp 3h n/d. Régimen real weak."
+      "rationale": "13 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -10 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "AUD",
@@ -142,7 +142,7 @@
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "RBA Assist Gov Hunter Speaks en 13h",
+      "calendar_lock_detail": "RBA Assist Gov Hunter Speaks en 12.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -199,11 +199,11 @@
       "score": 32,
       "bias": "alcista",
       "structural": 32,
-      "impulse": null,
+      "impulse": 16,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 28.2h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 27.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -211,7 +211,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "33 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h +16. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -219,7 +219,7 @@
       "score": 21,
       "bias": "alcista",
       "structural": 21,
-      "impulse": null,
+      "impulse": 16,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -231,15 +231,15 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "23 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +21 | Imp 3h +16. Régimen real mixed."
     },
     {
       "currency": "CHF",
       "rank": 3,
-      "score": 18,
+      "score": 13,
       "bias": "alcista",
-      "structural": 18,
-      "impulse": null,
+      "structural": 13,
+      "impulse": 16,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -248,10 +248,10 @@
       "no_evidence": false,
       "drivers": [
         "Dato real suave: SWISS CONSUMER CONFIDENCE SA ACTUAL -44.9 (FORECAST -35.5",
-        "Acuerdo comercial / sector exterior (C1/EA-1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +18 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "21 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + DATA_REAL + TRADE_EXTERNAL · Est +13 | Imp 3h +16. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -263,7 +263,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 31.9h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 31.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -311,7 +311,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Riesgo geopolítico (A6 / B5)"
       ],
-      "rationale": "13 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est -10 | Imp 3h n/d. Régimen real weak."
+      "rationale": "13 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL + TRADE_EXTERNAL + RISK_GEO · Est -10 | Imp 3h n/d. Régimen real weak."
     },
     {
       "currency": "AUD",
@@ -323,7 +323,7 @@
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "RBA Assist Gov Hunter Speaks en 13h",
+      "calendar_lock_detail": "RBA Assist Gov Hunter Speaks en 12.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -364,7 +364,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13,
+      "hours_from_now": 12.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -376,7 +376,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": 19.5,
+      "hours_from_now": 19.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -388,7 +388,7 @@
       "actual": null,
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": 21.5,
+      "hours_from_now": 21.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -400,7 +400,7 @@
       "actual": null,
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": 24,
+      "hours_from_now": 23.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -412,7 +412,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24.7,
+      "hours_from_now": 24.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -424,7 +424,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24.7,
+      "hours_from_now": 24.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -436,7 +436,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 28.2,
+      "hours_from_now": 27.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -448,7 +448,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": 29.5,
+      "hours_from_now": 29.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -460,7 +460,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 29.5,
+      "hours_from_now": 29.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -472,7 +472,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.7,
+      "hours_from_now": 31.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -484,7 +484,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.9,
+      "hours_from_now": 31.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -496,7 +496,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 38,
+      "hours_from_now": 37.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -508,7 +508,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 38,
+      "hours_from_now": 37.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -520,7 +520,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 38.3,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -532,7 +532,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.3,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -544,7 +544,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 38.3,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -556,7 +556,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 38.5,
+      "hours_from_now": 38.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -568,7 +568,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 39,
+      "hours_from_now": 38.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -580,7 +580,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 42.1,
+      "hours_from_now": 41.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -592,7 +592,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 43.5,
+      "hours_from_now": 43.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -604,7 +604,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47,
+      "hours_from_now": 46.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -616,7 +616,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.5,
+      "hours_from_now": 47.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -632,6 +632,126 @@
   },
   "items": [
     {
+      "id": "fad79e00cf47d17d08bcb9c5be920feb6a47657ad2354b9bb57539ab350a7228",
+      "sha256": "fad79e00cf47d17d08bcb9c5be920feb6a47657ad2354b9bb57539ab350a7228",
+      "title": "Iran's Revolutionary Guards' spokesperson: US cannot achieve economic blockade or sever Tehran's ties with neighbors - Fars",
+      "url": "https://t.me/FinancialJuice/145532",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T09:43:24.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "42dbd36671a126d03a4aea1064c9052eb58a0fd36498fb2286a3f5efc57734c1",
+      "sha256": "42dbd36671a126d03a4aea1064c9052eb58a0fd36498fb2286a3f5efc57734c1",
+      "title": "Saudi energy ministry: limited physical harm caused",
+      "url": "https://t.me/FinancialJuice/145531",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T09:43:14.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "16fdbbaa8bb9a767a5ec87e0691a3d0420b6ad7147ef3f1ce8c0b7ae7f4e11dd",
+      "sha256": "16fdbbaa8bb9a767a5ec87e0691a3d0420b6ad7147ef3f1ce8c0b7ae7f4e11dd",
+      "title": "Saudi energy ministry: source says debris fell on building, no casualties reported on state TV",
+      "url": "https://t.me/FinancialJuice/145530",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T09:43:09.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ad3015b576ddc13bbe7964b33ff6ac05b6342f9384194e292a6de4ca8b79d80a",
+      "sha256": "ad3015b576ddc13bbe7964b33ff6ac05b6342f9384194e292a6de4ca8b79d80a",
+      "title": "Saudi energy ministry: attempt to strike Aramco building in Riyadh - state TV",
+      "url": "https://t.me/FinancialJuice/145529",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T09:43:08.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "419acb31fa577f46eb3e0f333cbcd320c2a1d036ad28d69fa491e50817e7b61c",
       "sha256": "419acb31fa577f46eb3e0f333cbcd320c2a1d036ad28d69fa491e50817e7b61c",
       "title": "Saudi-led coalition: two cruise missiles intercepted and destroyed in Riyadh and southern region",
@@ -7505,122 +7625,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1287e32378e3058ce308410c862dbe9814c49a8867d331e3f8ea16e100d58f0c",
-      "sha256": "1287e32378e3058ce308410c862dbe9814c49a8867d331e3f8ea16e100d58f0c",
-      "title": "China's Xi meets with Gabon president: state media",
-      "url": "https://t.me/FinancialJuice/145231",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T09:07:20.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "28b8ebd80ea3c3a459409ab0cf026039ef4a0e2ba373f35808c675a532f7198e",
-      "sha256": "28b8ebd80ea3c3a459409ab0cf026039ef4a0e2ba373f35808c675a532f7198e",
-      "title": "ANTONIO ALONSO: \"Trump ha sufrido una derrota estrepitosa. La guerra de Irán le ha pasado fractura\"",
-      "url": "https://t.me/negociostv/60376",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T09:01:02.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6f9c352461844f2915c5eb883b70cdf87ea64042ec2be5bef49fccfd50ea0dc1",
-      "sha256": "6f9c352461844f2915c5eb883b70cdf87ea64042ec2be5bef49fccfd50ea0dc1",
-      "title": "ECB publishes consolidated banking data for end-June 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "source": "BCE",
-      "source_id": "ecb",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T09:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "691737ff14b8aaddb445a4db9ff612883943d9f001ab790046c82868aed11046",
-      "sha256": "691737ff14b8aaddb445a4db9ff612883943d9f001ab790046c82868aed11046",
-      "title": "Ukraine said to confirm strike on Russia's Afipsky refinery",
-      "url": "https://t.me/FinancialJuice/145230",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T08:25:19.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7630,6 +7634,126 @@
   ],
   "news": [
     {
+      "id": "fad79e00cf47d17d08bcb9c5be920feb6a47657ad2354b9bb57539ab350a7228",
+      "sha256": "fad79e00cf47d17d08bcb9c5be920feb6a47657ad2354b9bb57539ab350a7228",
+      "title": "Iran's Revolutionary Guards' spokesperson: US cannot achieve economic blockade or sever Tehran's ties with neighbors - Fars",
+      "url": "https://t.me/FinancialJuice/145532",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T09:43:24.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "42dbd36671a126d03a4aea1064c9052eb58a0fd36498fb2286a3f5efc57734c1",
+      "sha256": "42dbd36671a126d03a4aea1064c9052eb58a0fd36498fb2286a3f5efc57734c1",
+      "title": "Saudi energy ministry: limited physical harm caused",
+      "url": "https://t.me/FinancialJuice/145531",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T09:43:14.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "16fdbbaa8bb9a767a5ec87e0691a3d0420b6ad7147ef3f1ce8c0b7ae7f4e11dd",
+      "sha256": "16fdbbaa8bb9a767a5ec87e0691a3d0420b6ad7147ef3f1ce8c0b7ae7f4e11dd",
+      "title": "Saudi energy ministry: source says debris fell on building, no casualties reported on state TV",
+      "url": "https://t.me/FinancialJuice/145530",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T09:43:09.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ad3015b576ddc13bbe7964b33ff6ac05b6342f9384194e292a6de4ca8b79d80a",
+      "sha256": "ad3015b576ddc13bbe7964b33ff6ac05b6342f9384194e292a6de4ca8b79d80a",
+      "title": "Saudi energy ministry: attempt to strike Aramco building in Riyadh - state TV",
+      "url": "https://t.me/FinancialJuice/145529",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T09:43:08.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A6 / B5 / B15",
+      "mmt_lens": "SAFE_HAVEN_A6",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "419acb31fa577f46eb3e0f333cbcd320c2a1d036ad28d69fa491e50817e7b61c",
       "sha256": "419acb31fa577f46eb3e0f333cbcd320c2a1d036ad28d69fa491e50817e7b61c",
       "title": "Saudi-led coalition: two cruise missiles intercepted and destroyed in Riyadh and southern region",
@@ -14503,122 +14627,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1287e32378e3058ce308410c862dbe9814c49a8867d331e3f8ea16e100d58f0c",
-      "sha256": "1287e32378e3058ce308410c862dbe9814c49a8867d331e3f8ea16e100d58f0c",
-      "title": "China's Xi meets with Gabon president: state media",
-      "url": "https://t.me/FinancialJuice/145231",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T09:07:20.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "28b8ebd80ea3c3a459409ab0cf026039ef4a0e2ba373f35808c675a532f7198e",
-      "sha256": "28b8ebd80ea3c3a459409ab0cf026039ef4a0e2ba373f35808c675a532f7198e",
-      "title": "ANTONIO ALONSO: \"Trump ha sufrido una derrota estrepitosa. La guerra de Irán le ha pasado fractura\"",
-      "url": "https://t.me/negociostv/60376",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T09:01:02.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6f9c352461844f2915c5eb883b70cdf87ea64042ec2be5bef49fccfd50ea0dc1",
-      "sha256": "6f9c352461844f2915c5eb883b70cdf87ea64042ec2be5bef49fccfd50ea0dc1",
-      "title": "ECB publishes consolidated banking data for end-June 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "source": "BCE",
-      "source_id": "ecb",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T09:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "691737ff14b8aaddb445a4db9ff612883943d9f001ab790046c82868aed11046",
-      "sha256": "691737ff14b8aaddb445a4db9ff612883943d9f001ab790046c82868aed11046",
-      "title": "Ukraine said to confirm strike on Russia's Afipsky refinery",
-      "url": "https://t.me/FinancialJuice/145230",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T08:25:19.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
