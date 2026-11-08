@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-08T23:26:33.265Z",
-  "started_at": "2026-11-08T23:26:31.067Z",
+  "generated_at": "2026-11-08T23:31:38.034Z",
+  "started_at": "2026-11-08T23:31:34.821Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,7 +18,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 12,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -28,7 +28,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "25 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "25 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +12. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -36,7 +36,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 12,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -47,7 +47,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "31 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "31 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +12. Régimen real mixed."
     },
     {
       "currency": "USD",
@@ -55,11 +55,11 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 12,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 14.2h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 14.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -67,7 +67,27 @@
         "CPI sin sorpresa",
         "FLUJO_FISCAL_NFA: US Treasury asked Iraq to shut most border c"
       ],
-      "rationale": "37 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "37 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +12. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 4,
+      "score": 0,
+      "bias": "neutral",
+      "structural": 0,
+      "impulse": null,
+      "ficha_v6": "A12 / B10 / C3",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "French foreign minister Barrot: Europeans to join Ukraine discussions in A",
+        "ECB releases media interview with Yomiuri Shimbun",
+        "[une_ltu_a] Long-term unemployment by sex - annual data - European Commiss"
+      ],
+      "rationale": "10 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -91,7 +111,7 @@
     },
     {
       "currency": "GBP",
-      "rank": 5,
+      "rank": 6,
       "score": -3,
       "bias": "neutral",
       "structural": -3,
@@ -99,7 +119,7 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 18h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 17.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -107,24 +127,6 @@
         "CPI sin sorpresa"
       ],
       "rationale": "10 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est -3 | Imp 3h n/d · evidencia débil. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 6,
-      "score": -4,
-      "bias": "neutral",
-      "structural": -4,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Ventas al por menor débiles"
-      ],
-      "rationale": "10 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL · Est -4 | Imp 3h n/d · evidencia débil. Régimen real weak."
     },
     {
       "currency": "AUD",
@@ -191,7 +193,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 12,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -201,7 +203,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "25 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "25 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +12. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -209,7 +211,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 12,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -220,7 +222,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "31 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "31 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +12. Régimen real mixed."
     },
     {
       "currency": "USD",
@@ -228,11 +230,11 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 12,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 14.2h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 14.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -240,7 +242,27 @@
         "CPI sin sorpresa",
         "FLUJO_FISCAL_NFA: US Treasury asked Iraq to shut most border c"
       ],
-      "rationale": "37 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "37 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +12. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 4,
+      "score": 0,
+      "bias": "neutral",
+      "structural": 0,
+      "impulse": null,
+      "ficha_v6": "A12 / B10 / C3",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "French foreign minister Barrot: Europeans to join Ukraine discussions in A",
+        "ECB releases media interview with Yomiuri Shimbun",
+        "[une_ltu_a] Long-term unemployment by sex - annual data - European Commiss"
+      ],
+      "rationale": "10 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -264,7 +286,7 @@
     },
     {
       "currency": "GBP",
-      "rank": 5,
+      "rank": 6,
       "score": -3,
       "bias": "neutral",
       "structural": -3,
@@ -272,7 +294,7 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 18h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 17.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -280,24 +302,6 @@
         "CPI sin sorpresa"
       ],
       "rationale": "10 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est -3 | Imp 3h n/d · evidencia débil. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 6,
-      "score": -4,
-      "bias": "neutral",
-      "structural": -4,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Ventas al por menor débiles"
-      ],
-      "rationale": "10 titulares · Ficha B2 (USUARIO_MONEDA) · DATA_REAL · Est -4 | Imp 3h n/d · evidencia débil. Régimen real weak."
     },
     {
       "currency": "AUD",
@@ -348,7 +352,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.9,
+      "hours_from_now": -1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -360,7 +364,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": 5.6,
+      "hours_from_now": 5.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -372,7 +376,7 @@
       "actual": null,
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": 7.6,
+      "hours_from_now": 7.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -384,7 +388,7 @@
       "actual": null,
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": 10.1,
+      "hours_from_now": 10,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -396,7 +400,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10.8,
+      "hours_from_now": 10.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -408,7 +412,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10.8,
+      "hours_from_now": 10.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -420,7 +424,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.2,
+      "hours_from_now": 14.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -432,7 +436,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": 15.6,
+      "hours_from_now": 15.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -444,7 +448,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.6,
+      "hours_from_now": 15.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -456,7 +460,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.8,
+      "hours_from_now": 17.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -468,7 +472,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18,
+      "hours_from_now": 17.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -480,7 +484,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 24.1,
+      "hours_from_now": 24,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -492,7 +496,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 24.1,
+      "hours_from_now": 24,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -504,7 +508,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 24.4,
+      "hours_from_now": 24.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -516,7 +520,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24.4,
+      "hours_from_now": 24.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -528,7 +532,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 24.4,
+      "hours_from_now": 24.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -540,7 +544,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 24.6,
+      "hours_from_now": 24.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -552,7 +556,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 25.1,
+      "hours_from_now": 25,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -576,7 +580,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 29.6,
+      "hours_from_now": 29.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -588,7 +592,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.1,
+      "hours_from_now": 33,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -600,7 +604,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.6,
+      "hours_from_now": 33.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -612,7 +616,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 35.6,
+      "hours_from_now": 35.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -624,7 +628,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -636,7 +640,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.1,
+      "hours_from_now": 37,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -648,7 +652,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.8,
+      "hours_from_now": 37.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -660,7 +664,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 38.1,
+      "hours_from_now": 38,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -672,7 +676,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 38.1,
+      "hours_from_now": 38,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -684,7 +688,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.4,
+      "hours_from_now": 40.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -696,7 +700,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 42.6,
+      "hours_from_now": 42.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -708,7 +712,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.1,
+      "hours_from_now": 43,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -720,7 +724,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.1,
+      "hours_from_now": 43,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -732,7 +736,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.1,
+      "hours_from_now": 43,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -744,7 +748,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.1,
+      "hours_from_now": 45,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -756,7 +760,31 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.1,
+      "hours_from_now": 46,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "2c2d880aaed0dd64",
+      "currency": "USD",
+      "title": "FOMC Member Bowman Speaks",
+      "event_at": "2026-11-10T23:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 48,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "65fcd879421c2931",
+      "currency": "USD",
+      "title": "FOMC Member Paulson Speaks",
+      "event_at": "2026-11-10T23:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 48,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -771,6 +799,58 @@
     "NZD": -0.87
   },
   "items": [
+    {
+      "id": "dad92fe1732c44d9412402ea536a1d42826c6165fa8cf676a44529248de96cbe",
+      "sha256": "dad92fe1732c44d9412402ea536a1d42826c6165fa8cf676a44529248de96cbe",
+      "title": "Trump: I expect to hold talks with Xi and Putin",
+      "url": "https://t.me/FinancialJuice/145586",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T23:30:54.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b9ddd0ae047abc3a8166c2682f17b972f6aea3bd1b7f4636f7a495e191a104c3",
+      "sha256": "b9ddd0ae047abc3a8166c2682f17b972f6aea3bd1b7f4636f7a495e191a104c3",
+      "title": "Trump on Nvidia's Huang: I would take him but don't know if he will join Asia trip",
+      "url": "https://t.me/FinancialJuice/145585",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T23:26:44.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "dfa429197eed3565820c865283869bfa105a5453339b54fb8990de66ecd900ba",
       "sha256": "dfa429197eed3565820c865283869bfa105a5453339b54fb8990de66ecd900ba",
@@ -7713,66 +7793,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-06T16:41:57.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d3b73d014d346ea6940c89a5a3cc8d3ef85f123e61d262e4c92ecf948bb12d33",
-      "sha256": "d3b73d014d346ea6940c89a5a3cc8d3ef85f123e61d262e4c92ecf948bb12d33",
-      "title": "BoJ's Governor Ueda: Unconventional policy had some positive effects.",
-      "url": "https://t.me/FinancialJuice/145367",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T16:41:17.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c992e7e54626d01141586dba21347c6f955dcc2715fa95839286ab3554f82513",
-      "sha256": "c992e7e54626d01141586dba21347c6f955dcc2715fa95839286ab3554f82513",
-      "title": "BoJ's Governor Ueda: Real rates haven't gone up as much.",
-      "url": "https://t.me/FinancialJuice/145366",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T16:39:16.000Z",
       "currencies": [
         "JPY"
       ],
@@ -7797,6 +7817,58 @@
   ],
   "news": [
     {
+      "id": "dad92fe1732c44d9412402ea536a1d42826c6165fa8cf676a44529248de96cbe",
+      "sha256": "dad92fe1732c44d9412402ea536a1d42826c6165fa8cf676a44529248de96cbe",
+      "title": "Trump: I expect to hold talks with Xi and Putin",
+      "url": "https://t.me/FinancialJuice/145586",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T23:30:54.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b9ddd0ae047abc3a8166c2682f17b972f6aea3bd1b7f4636f7a495e191a104c3",
+      "sha256": "b9ddd0ae047abc3a8166c2682f17b972f6aea3bd1b7f4636f7a495e191a104c3",
+      "title": "Trump on Nvidia's Huang: I would take him but don't know if he will join Asia trip",
+      "url": "https://t.me/FinancialJuice/145585",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-08T23:26:44.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "dfa429197eed3565820c865283869bfa105a5453339b54fb8990de66ecd900ba",
       "sha256": "dfa429197eed3565820c865283869bfa105a5453339b54fb8990de66ecd900ba",
       "title": "Trump on Nvidia CEO Huang: he is a good person",
@@ -14738,66 +14810,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-06T16:41:57.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d3b73d014d346ea6940c89a5a3cc8d3ef85f123e61d262e4c92ecf948bb12d33",
-      "sha256": "d3b73d014d346ea6940c89a5a3cc8d3ef85f123e61d262e4c92ecf948bb12d33",
-      "title": "BoJ's Governor Ueda: Unconventional policy had some positive effects.",
-      "url": "https://t.me/FinancialJuice/145367",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T16:41:17.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c992e7e54626d01141586dba21347c6f955dcc2715fa95839286ab3554f82513",
-      "sha256": "c992e7e54626d01141586dba21347c6f955dcc2715fa95839286ab3554f82513",
-      "title": "BoJ's Governor Ueda: Real rates haven't gone up as much.",
-      "url": "https://t.me/FinancialJuice/145366",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T16:39:16.000Z",
       "currencies": [
         "JPY"
       ],
