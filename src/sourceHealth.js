@@ -41,3 +41,14 @@ const PROMO = /\b(sneak pea[kc]|launching soon|subscribe|subscription|discount|p
 export function isPromotional(item) {
   return PROMO.test(String(item?.title || '')) && !(item?.currencies || []).length && !item?.actual;
 }
+
+// Health block of the IRIS contract (what ENZO audits). "cached" sources answered in the last
+// scheduled sync (<= 5 min) but not inside the serverless 700 ms window: they count as active,
+// and are reported separately; only errors and empty feeds degrade the status.
+export function irisHealth(sources = [], agendaEvents = 0) {
+  const h = healthSummary(sources);
+  const active = h.ok + h.cached;
+  const status = h.total === 0 ? 'UNKNOWN' : h.error + h.empty === 0 ? 'CLEAN' : active / h.total >= 0.8 ? 'DEGRADED' : 'CRITICAL';
+  return { sources_active: active, sources_live: h.ok, sources_cached: h.cached, sources_total: h.total,
+           sources_empty: h.empty, sources_error: h.error, agenda_events_count: agendaEvents, status };
+}

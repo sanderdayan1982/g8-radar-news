@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } fr
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { collectRadarAndIrisData } from '../src/irisCollector.js';
-import { mergeSourceHealth, healthSummary, publishSignature } from '../src/sourceHealth.js';
+import { mergeSourceHealth, healthSummary, publishSignature, irisHealth } from '../src/sourceHealth.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = dirname(__dirname);
@@ -42,6 +42,7 @@ const elapsedMs = Date.now() - t0;
 fullState.sources = mergeSourceHealth(fullState.sources, prevFull?.sources || []);
 const health = healthSummary(fullState.sources);
 irisFeed.sources_ok = health.ok;
+irisFeed.health = irisHealth(fullState.sources, fullState.calendar?.length || 0);
 
 const newItemsCount = irisFeed.items.filter((x) => !prevShaSet.has(x.sha256)).length;
 // Publish when consumers would see a difference: new headlines, calendar values (consensus/actual), source states.
@@ -67,7 +68,7 @@ const status = {
   sources: health,
   failing_sources: fullState.sources.filter((s) => s.status !== 'ok').map((s) => ({ id: s.id, status: s.status, last_error: s.last_error || null, last_success_at: s.last_success_at || null, consecutive_failures: s.consecutive_failures })),
   calendar_events: fullState.calendar?.length || 0,
-  cadence: 'GitHub Actions cron */5 (best effort; GitHub may delay or skip runs)',
+  cadence: 'Hourly GitHub Actions trigger + self-clocked loop: every 5 min, every 60 s within 15 min of a High-impact event',
 };
 writeFileSync(STATUS_PATH, JSON.stringify(status, null, 2));
 

@@ -2,7 +2,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { collectRadarAndIrisData } from '../../src/irisCollector.js';
-import { mergeSourceHealth } from '../../src/sourceHealth.js';
+import { mergeSourceHealth, irisHealth } from '../../src/sourceHealth.js';
 
 const ROOT = (() => {
   try {
@@ -126,6 +126,7 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
   // Sources that miss the 700 ms budget are served from the last scheduled run and labelled "cached".
   fullState.sources = mergeSourceHealth(fullState.sources, baseFull?.sources || [], { seedMode: true });
   irisFeed.sources_ok = fullState.sources.filter((s) => s.status === 'ok').length;
+  irisFeed.health = irisHealth(fullState.sources, fullState.calendar?.length || 0);
 
   const bundle = {
     updatedAt: Date.now(),
@@ -195,6 +196,7 @@ export async function handler(event) {
         response_ms: elapsedMs,
         last_sync_at: fullState.last_sync?.finished_at || null,
         sources_ok: irisFeed.sources_ok,
+        health: irisFeed.health,
         sources_total: irisFeed.sources_total,
         count: irisFeed.count,
       }),

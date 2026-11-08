@@ -165,6 +165,12 @@ Node.js 22+ con `node:sqlite`, systemd, SQLite WAL. Código `/opt/radarnews/app`
 8. Sin lenguaje de ejecución.
 
 
+## Contrato de salud IRIS
+`iris_g8_feed.json` y `/api/health` publican `health`: `sources_active` (vivas + copia de la última sincronización), `sources_live`, `sources_cached`, `sources_total`, `sources_empty`, `sources_error`, `agenda_events_count` y `status`: `CLEAN` si no hay errores ni fuentes vacías, `DEGRADED` si al menos el 80 % están activas, `CRITICAL` por debajo y `UNKNOWN` sin fuentes. `public/data/radar_status.json` es el latido de cada ciclo.
+
+## Alertas y acceso (decisión de la mesa, 8-nov-2026)
+Push desactivado en el despliegue serverless: las alertas se ven dentro de la app (pestaña Alertas y contador). La app y sus datos son públicos.
+
 ## Contrato de evidencia MMT v1
 El Agente MMT recibe una muestra de hasta 80 noticias, seleccionada por turnos entre las ocho divisas, con 72 horas para breaking/agencias y 30 días oficiales. Se excluyen fechas inválidas/futuras. Cada ciclo conserva huella de la muestra, fecha de corte y recuento por divisa. El Agente conserva contribuciones por noticia, antes y después de antigüedad/topes.
 La escala es descriptiva MMT/Mosler; no es probabilidad ni está calibrada históricamente. ±12 y la media equiponderada son parámetros de diseño, no pesos ajustados por divisa. Se requiere evaluación fuera de muestra antes de afirmar calibración predictiva.

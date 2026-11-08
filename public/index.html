@@ -140,12 +140,18 @@
         <button data-tab="notif" class="active">Notificaciones</button>
         <button data-tab="sources">Fuentes</button>
         <button data-tab="mmt">Motor Agente MMT</button>
-        <button data-tab="devices">iPhone y iPad</button>
+        <button data-tab="devices" hidden>iPhone y iPad</button>
         <button data-tab="about">Acerca de</button>
       </nav>
 
       <section class="tab" data-pane="notif">
-        <h3>Alertas en tus cuatro dispositivos</h3>
+        <h3>Alertas</h3>
+        <div class="card" id="push-off-notice">
+          <div class="card-title">Alertas dentro de la app · push desactivado</div>
+          <p class="muted">En el despliegue actual (Netlify + GitHub Actions, coste cero) <b>no se envían notificaciones push</b>: no hay servidor que las emita. Las alertas se generan igualmente y se ven en la pestaña <b>Alertas</b> y en el contador; con la app abierta suena el aviso. La app y sus datos son públicos por decisión de la mesa.</p>
+          <div class="about-actions"><button id="sound-test-visible" class="btn" type="button" onclick="document.getElementById('sound-test')?.click()">Probar sonido con app abierta</button></div>
+        </div>
+        <div id="push-controls" hidden>
         <p class="muted">Activa RadarNews por separado en tus dos iPhone, el Mac y el iPad. Cada dispositivo necesita su propia suscripción y permiso del sistema.</p>
         <label class="device-label" for="device-label">Nombre de este dispositivo</label>
         <input id="device-label" class="device-name-input" maxlength="80" placeholder="Ej.: iPhone personal, iPhone trabajo, Mac o iPad" autocomplete="off" />
@@ -181,9 +187,10 @@
           <p>En Mac: Ajustes del Sistema → Notificaciones → RadarNews (o Chrome) → Permitir notificaciones y Reproducir sonido. El sonido con la app cerrada lo controla el sistema; Web Push no puede forzarlo.</p>
           <p>La aceptación de Apple/Google no confirma que hayas visto u oído el aviso. El aviso push no necesita que mantengas RadarNews abierta.</p>
         </div>
+        </div>
         <h4>Qué genera una alerta</h4>
         <ul class="rules">
-          <li><b>Cada noticia nueva</b> recibida de cualquiera de las 25 fuentes seleccionadas (con identificador único por noticia, sin truncar ni agrupar)</li>
+          <li><b>Titulares de alto impacto o breaking</b> de las 31 fuentes (los anuncios promocionales sin divisa ni dato se excluyen)</li>
           <li><b>Agenda</b>: aviso 15 minutos antes de cada dato de alto impacto</li>
           <li><b>Cambio de ranking o régimen</b> detectado por el <b>Agente MMT</b></li>
         </ul>
