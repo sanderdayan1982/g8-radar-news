@@ -5,16 +5,36 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T14:08:58.692Z",
-  "started_at": "2026-11-09T14:08:56.431Z",
+  "generated_at": "2026-11-09T14:14:02.834Z",
+  "started_at": "2026-11-09T14:14:00.415Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
   "count": 250,
   "currency_ranking_mmt": [
     {
-      "currency": "EUR",
+      "currency": "USD",
       "rank": 1,
+      "score": 32,
+      "bias": "alcista",
+      "structural": 32,
+      "impulse": 40,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Goolsbee Speaks en 0.8h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Bowman Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
+        "Impulso ToT energético (EA-1)"
+      ],
+      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA + POLICY_PRICE · Est +32 | Imp 3h +40. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 2,
       "score": 31,
       "bias": "alcista",
       "structural": 31,
@@ -22,7 +42,7 @@
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 42.2h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 42.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -33,50 +53,31 @@
       "rationale": "12 titulares · Ficha EA-1 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL + TRADE_EXTERNAL · Est +31 | Imp 3h n/d. Régimen real mixed."
     },
     {
-      "currency": "USD",
-      "rank": 2,
-      "score": 30,
-      "bias": "alcista",
-      "structural": 30,
-      "impulse": 41,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Goolsbee Speaks en 0.9h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Bowman Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
-      ],
-      "rationale": "39 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA + POLICY_PRICE · Est +30 | Imp 3h +41. Régimen real mixed."
-    },
-    {
       "currency": "CHF",
       "rank": 3,
-      "score": 24,
+      "score": 21,
       "bias": "alcista",
-      "structural": 24,
-      "impulse": 43,
-      "ficha_v6": "A6 / B5 / B15",
+      "structural": 21,
+      "impulse": 41,
+      "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
       "calendar_lock_detail": null,
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +43. Régimen real mixed."
+      "rationale": "21 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h +41. Régimen real mixed."
     },
     {
       "currency": "JPY",
       "rank": 4,
-      "score": 4,
+      "score": 2,
       "bias": "neutral",
-      "structural": 4,
-      "impulse": 43,
+      "structural": 2,
+      "impulse": 41,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -88,7 +89,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "27 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +4 | Imp 3h +43. Régimen real mixed."
+      "rationale": "30 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +2 | Imp 3h +41. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -100,7 +101,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 3.3h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 3.2h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -144,15 +145,15 @@
         "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%",
         "CPI sin sorpresa"
       ],
-      "rationale": "7 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -16 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "4 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -16 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -34,
+      "score": -31,
       "bias": "bajista",
-      "structural": -34,
-      "impulse": -48,
+      "structural": -31,
+      "impulse": -46,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -162,9 +163,9 @@
       "drivers": [
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "CPI sin sorpresa"
+        "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -34 | Imp 3h -48. Régimen real mixed."
+      "rationale": "17 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -31 | Imp 3h -46. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -188,8 +189,28 @@
   ],
   "g8_ranking": [
     {
-      "currency": "EUR",
+      "currency": "USD",
       "rank": 1,
+      "score": 32,
+      "bias": "alcista",
+      "structural": 32,
+      "impulse": 40,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Goolsbee Speaks en 0.8h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Bowman Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
+        "Impulso ToT energético (EA-1)"
+      ],
+      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA + POLICY_PRICE · Est +32 | Imp 3h +40. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 2,
       "score": 31,
       "bias": "alcista",
       "structural": 31,
@@ -197,7 +218,7 @@
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 42.2h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 42.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -208,50 +229,31 @@
       "rationale": "12 titulares · Ficha EA-1 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL + TRADE_EXTERNAL · Est +31 | Imp 3h n/d. Régimen real mixed."
     },
     {
-      "currency": "USD",
-      "rank": 2,
-      "score": 30,
-      "bias": "alcista",
-      "structural": 30,
-      "impulse": 41,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Goolsbee Speaks en 0.9h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Bowman Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
-      ],
-      "rationale": "39 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA + POLICY_PRICE · Est +30 | Imp 3h +41. Régimen real mixed."
-    },
-    {
       "currency": "CHF",
       "rank": 3,
-      "score": 24,
+      "score": 21,
       "bias": "alcista",
-      "structural": 24,
-      "impulse": 43,
-      "ficha_v6": "A6 / B5 / B15",
+      "structural": 21,
+      "impulse": 41,
+      "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
       "calendar_lock_detail": null,
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +43. Régimen real mixed."
+      "rationale": "21 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h +41. Régimen real mixed."
     },
     {
       "currency": "JPY",
       "rank": 4,
-      "score": 4,
+      "score": 2,
       "bias": "neutral",
-      "structural": 4,
-      "impulse": 43,
+      "structural": 2,
+      "impulse": 41,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -263,7 +265,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "27 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +4 | Imp 3h +43. Régimen real mixed."
+      "rationale": "30 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +2 | Imp 3h +41. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -275,7 +277,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 3.3h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 3.2h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -319,15 +321,15 @@
         "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%",
         "CPI sin sorpresa"
       ],
-      "rationale": "7 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -16 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "4 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -16 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -34,
+      "score": -31,
       "bias": "bajista",
-      "structural": -34,
-      "impulse": -48,
+      "structural": -31,
+      "impulse": -46,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -337,9 +339,9 @@
       "drivers": [
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "CPI sin sorpresa"
+        "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -34 | Imp 3h -48. Régimen real mixed."
+      "rationale": "17 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -31 | Imp 3h -46. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -352,7 +354,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15.6,
+      "hours_from_now": -15.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +366,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -9.1,
+      "hours_from_now": -9.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -376,7 +378,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -7.1,
+      "hours_from_now": -7.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -388,7 +390,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -4.6,
+      "hours_from_now": -4.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -400,7 +402,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.9,
+      "hours_from_now": -4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -412,7 +414,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.9,
+      "hours_from_now": -4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -424,7 +426,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.5,
+      "hours_from_now": -0.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -436,7 +438,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": 0.9,
+      "hours_from_now": 0.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -448,7 +450,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.9,
+      "hours_from_now": 0.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -460,7 +462,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.1,
+      "hours_from_now": 3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -472,7 +474,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.3,
+      "hours_from_now": 3.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -484,7 +486,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 9.4,
+      "hours_from_now": 9.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -496,7 +498,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 9.4,
+      "hours_from_now": 9.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -508,7 +510,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 9.7,
+      "hours_from_now": 9.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -520,7 +522,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.7,
+      "hours_from_now": 9.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -532,7 +534,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 9.7,
+      "hours_from_now": 9.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -544,7 +546,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 9.9,
+      "hours_from_now": 9.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -556,7 +558,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 10.4,
+      "hours_from_now": 10.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -568,7 +570,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 13.4,
+      "hours_from_now": 13.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -580,7 +582,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 14.9,
+      "hours_from_now": 14.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -592,7 +594,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.4,
+      "hours_from_now": 18.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -604,7 +606,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.9,
+      "hours_from_now": 18.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -616,7 +618,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 20.9,
+      "hours_from_now": 20.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -628,7 +630,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 21.4,
+      "hours_from_now": 21.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -640,7 +642,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22.4,
+      "hours_from_now": 22.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +654,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.1,
+      "hours_from_now": 23,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +666,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 23.4,
+      "hours_from_now": 23.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +678,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 23.4,
+      "hours_from_now": 23.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +690,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.7,
+      "hours_from_now": 25.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +702,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 27.9,
+      "hours_from_now": 27.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +714,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 28.4,
+      "hours_from_now": 28.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +726,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 28.4,
+      "hours_from_now": 28.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +738,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 28.4,
+      "hours_from_now": 28.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +750,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30.4,
+      "hours_from_now": 30.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +762,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.4,
+      "hours_from_now": 31.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -772,7 +774,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.4,
+      "hours_from_now": 33.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -784,7 +786,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.4,
+      "hours_from_now": 33.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +798,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 33.7,
+      "hours_from_now": 33.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -808,7 +810,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 39.9,
+      "hours_from_now": 39.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -820,7 +822,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 40.9,
+      "hours_from_now": 40.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -832,7 +834,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.9,
+      "hours_from_now": 40.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -844,7 +846,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 42.2,
+      "hours_from_now": 42.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -856,7 +858,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 42.9,
+      "hours_from_now": 42.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -868,7 +870,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 44.4,
+      "hours_from_now": 44.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -880,7 +882,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.9,
+      "hours_from_now": 46.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -892,7 +894,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.9,
+      "hours_from_now": 46.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -907,6 +909,32 @@
     "NZD": -0.87
   },
   "items": [
+    {
+      "id": "ef28216f3537fdfbf9396c3ec3cc4f34ecd2585d8d8690f7e013e556e66d6d4a",
+      "sha256": "ef28216f3537fdfbf9396c3ec3cc4f34ecd2585d8d8690f7e013e556e66d6d4a",
+      "title": "Fitch Ratings: For Bitcoin-backed securities, the Binance hack reinforces the benefits of conservative collateral coverage and short liquidation periods.",
+      "url": "https://t.me/FinancialJuice/145671",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T14:10:07.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "432fad4a4c39c4bacfa1e0a20aff42e6807a96cc059341911e8c57aa1b286b31",
       "sha256": "432fad4a4c39c4bacfa1e0a20aff42e6807a96cc059341911e8c57aa1b286b31",
@@ -5171,88 +5199,6 @@
       "z": null
     },
     {
-      "id": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
-      "sha256": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
-      "title": "Making AI-driven finance work for consumers",
-      "url": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
-      "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
-      "title": "Message for the SEACEN masterclass - central bank communication",
-      "url": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
-      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
       "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
       "title": "Leading today, building for tomorrow",
@@ -5326,6 +5272,88 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
+      "sha256": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
+      "title": "Making AI-driven finance work for consumers",
+      "url": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
+      "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
+      "title": "Message for the SEACEN masterclass - central bank communication",
+      "url": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
+      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -7939,32 +7967,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-08T06:05:27.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "af6d7222a5f470b9198ac3cd86a5888ba13a80535482adb5ba248382b596e8cf",
-      "sha256": "af6d7222a5f470b9198ac3cd86a5888ba13a80535482adb5ba248382b596e8cf",
-      "title": "Saudi-led coalition: intercepts and destroys two missiles launched by Houthis toward Riyadh",
-      "url": "https://t.me/FinancialJuice/145527",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T05:34:05.000Z",
       "currencies": [],
       "divisas": [],
       "category": "Riesgo_Sistemico",
@@ -7985,6 +7987,32 @@
   ],
   "news": [
     {
+      "id": "ef28216f3537fdfbf9396c3ec3cc4f34ecd2585d8d8690f7e013e556e66d6d4a",
+      "sha256": "ef28216f3537fdfbf9396c3ec3cc4f34ecd2585d8d8690f7e013e556e66d6d4a",
+      "title": "Fitch Ratings: For Bitcoin-backed securities, the Binance hack reinforces the benefits of conservative collateral coverage and short liquidation periods.",
+      "url": "https://t.me/FinancialJuice/145671",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T14:10:07.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "432fad4a4c39c4bacfa1e0a20aff42e6807a96cc059341911e8c57aa1b286b31",
       "sha256": "432fad4a4c39c4bacfa1e0a20aff42e6807a96cc059341911e8c57aa1b286b31",
       "title": "Binance Hack Suggests Stronger Bitcoin Market Resilience to Stress - Fitch Ratings",
@@ -12248,88 +12276,6 @@
       "z": null
     },
     {
-      "id": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
-      "sha256": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
-      "title": "Making AI-driven finance work for consumers",
-      "url": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
-      "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
-      "title": "Message for the SEACEN masterclass - central bank communication",
-      "url": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
-      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
       "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
       "title": "Leading today, building for tomorrow",
@@ -12403,6 +12349,88 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
+      "sha256": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
+      "title": "Making AI-driven finance work for consumers",
+      "url": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
+      "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
+      "title": "Message for the SEACEN masterclass - central bank communication",
+      "url": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
+      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -15016,32 +15044,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-08T06:05:27.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "af6d7222a5f470b9198ac3cd86a5888ba13a80535482adb5ba248382b596e8cf",
-      "sha256": "af6d7222a5f470b9198ac3cd86a5888ba13a80535482adb5ba248382b596e8cf",
-      "title": "Saudi-led coalition: intercepts and destroys two missiles launched by Houthis toward Riyadh",
-      "url": "https://t.me/FinancialJuice/145527",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T05:34:05.000Z",
       "currencies": [],
       "divisas": [],
       "category": "Riesgo_Sistemico",
