@@ -1,17 +1,25 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-09T19:56:21.944Z",
-  "feed_generated_at": "2026-11-09T19:56:21.923Z",
+  "last_check_at": "2026-11-09T20:01:26.542Z",
+  "feed_generated_at": "2026-11-09T20:01:26.519Z",
   "wrote_full_feed": true,
-  "new_items": 1,
+  "new_items": 3,
   "sources": {
-    "ok": 31,
+    "ok": 30,
     "cached": 0,
-    "empty": 0,
+    "empty": 1,
     "error": 0,
     "total": 31
   },
-  "failing_sources": [],
+  "failing_sources": [
+    {
+      "id": "boj",
+      "status": "empty_feed",
+      "last_error": "HTTP 200 con 0 titulares extraídos",
+      "last_success_at": "2026-11-09T19:56:18.919Z",
+      "consecutive_failures": 1
+    }
+  ],
   "calendar_events": 95,
   "cadence": "Hourly GitHub Actions trigger + self-clocked loop: every 5 min, every 60 s within 15 min of a High-impact event"
 }
