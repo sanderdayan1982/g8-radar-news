@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T16:31:50.594Z",
-  "started_at": "2026-11-09T16:31:47.091Z",
+  "generated_at": "2026-11-09T16:36:55.513Z",
+  "started_at": "2026-11-09T16:36:52.596Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -22,7 +22,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Barkin Speaks en 0.7h",
+      "calendar_lock_detail": "FOMC Member Barkin Speaks en 0.6h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Goolsbee Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -52,11 +52,29 @@
       "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
     },
     {
-      "currency": "JPY",
+      "currency": "EUR",
       "rank": 3,
-      "score": 2,
+      "score": 17,
+      "bias": "alcista",
+      "structural": 17,
+      "impulse": null,
+      "ficha_v6": "A5",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 39.7h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real fuerte: EUROZONE SENTIX INVESTOR CONFIDENCE INDEX ACTUAL 2.4 (FO"
+      ],
+      "rationale": "12 titulares · Ficha A5 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est +17 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "JPY",
+      "rank": 4,
+      "score": 3,
       "bias": "neutral",
-      "structural": 2,
+      "structural": 3,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -69,31 +87,11 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "26 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +2 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 4,
-      "score": 0,
-      "bias": "neutral",
-      "structural": 0,
-      "impulse": null,
-      "ficha_v6": "A12 / B10 / C3",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 39.8h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "French Foreign Minister Barrot: There will be EU sanctions against Iran.",
-        "French Foreign Minister Barrot on Iran Fridge attacks: There will be conse",
-        "France’s Barrot: Iran Revolutionary Guard are behind this cyberattack on t"
-      ],
-      "rationale": "11 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "26 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +3 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
+      "rank": 5,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -101,7 +99,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 0.9h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 0.8h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -166,7 +164,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "15 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -31 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "14 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -31 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -199,7 +197,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Barkin Speaks en 0.7h",
+      "calendar_lock_detail": "FOMC Member Barkin Speaks en 0.6h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Goolsbee Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -229,11 +227,29 @@
       "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
     },
     {
-      "currency": "JPY",
+      "currency": "EUR",
       "rank": 3,
-      "score": 2,
+      "score": 17,
+      "bias": "alcista",
+      "structural": 17,
+      "impulse": null,
+      "ficha_v6": "A5",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 39.7h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real fuerte: EUROZONE SENTIX INVESTOR CONFIDENCE INDEX ACTUAL 2.4 (FO"
+      ],
+      "rationale": "12 titulares · Ficha A5 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est +17 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "JPY",
+      "rank": 4,
+      "score": 3,
       "bias": "neutral",
-      "structural": 2,
+      "structural": 3,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -246,31 +262,11 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "26 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +2 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 4,
-      "score": 0,
-      "bias": "neutral",
-      "structural": 0,
-      "impulse": null,
-      "ficha_v6": "A12 / B10 / C3",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 39.8h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "French Foreign Minister Barrot: There will be EU sanctions against Iran.",
-        "French Foreign Minister Barrot on Iran Fridge attacks: There will be conse",
-        "France’s Barrot: Iran Revolutionary Guard are behind this cyberattack on t"
-      ],
-      "rationale": "11 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "26 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +3 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
+      "rank": 5,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -278,7 +274,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 0.9h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 0.8h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -343,7 +339,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "15 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -31 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "14 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -31 | Imp 3h n/d. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -356,7 +352,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18,
+      "hours_from_now": -18.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -368,7 +364,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -11.5,
+      "hours_from_now": -11.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -380,7 +376,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -9.5,
+      "hours_from_now": -9.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -392,7 +388,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -7,
+      "hours_from_now": -7.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -404,7 +400,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.3,
+      "hours_from_now": -6.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -416,7 +412,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.3,
+      "hours_from_now": -6.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -440,7 +436,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -1.5,
+      "hours_from_now": -1.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -452,7 +448,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1.5,
+      "hours_from_now": -1.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -464,7 +460,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.7,
+      "hours_from_now": 0.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -476,7 +472,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.9,
+      "hours_from_now": 0.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -488,7 +484,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 7,
+      "hours_from_now": 6.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -500,7 +496,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 7,
+      "hours_from_now": 6.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -512,7 +508,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 7.3,
+      "hours_from_now": 7.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -524,7 +520,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.3,
+      "hours_from_now": 7.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -536,7 +532,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 7.3,
+      "hours_from_now": 7.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -548,7 +544,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 7.5,
+      "hours_from_now": 7.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -560,7 +556,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 8,
+      "hours_from_now": 7.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -572,7 +568,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 11.1,
+      "hours_from_now": 11,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -584,7 +580,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 12.5,
+      "hours_from_now": 12.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -596,7 +592,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16,
+      "hours_from_now": 15.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -608,7 +604,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.5,
+      "hours_from_now": 16.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -620,7 +616,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 18.5,
+      "hours_from_now": 18.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -632,7 +628,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 19,
+      "hours_from_now": 18.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -644,7 +640,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20,
+      "hours_from_now": 19.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -656,7 +652,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20.7,
+      "hours_from_now": 20.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -668,7 +664,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 21,
+      "hours_from_now": 20.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -680,7 +676,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 21,
+      "hours_from_now": 20.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -692,7 +688,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.3,
+      "hours_from_now": 23.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -704,7 +700,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 25.5,
+      "hours_from_now": 25.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -716,7 +712,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 26,
+      "hours_from_now": 25.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -728,7 +724,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 26,
+      "hours_from_now": 25.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -740,7 +736,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 26,
+      "hours_from_now": 25.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -752,7 +748,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 28,
+      "hours_from_now": 27.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -764,7 +760,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 29,
+      "hours_from_now": 28.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -776,7 +772,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31,
+      "hours_from_now": 30.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -788,7 +784,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31,
+      "hours_from_now": 30.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -800,7 +796,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 31.3,
+      "hours_from_now": 31.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -812,7 +808,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 37.5,
+      "hours_from_now": 37.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -824,7 +820,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 38.5,
+      "hours_from_now": 38.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -836,7 +832,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.5,
+      "hours_from_now": 38.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -848,7 +844,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -860,7 +856,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 40.5,
+      "hours_from_now": 40.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -884,7 +880,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44.5,
+      "hours_from_now": 44.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -896,7 +892,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44.5,
+      "hours_from_now": 44.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -912,6 +908,214 @@
   },
   "items": [
     {
+      "id": "4921f0763cae4b7d1ef0ae6506ae449d6374837506d713233ceafc2e178653f7",
+      "sha256": "4921f0763cae4b7d1ef0ae6506ae449d6374837506d713233ceafc2e178653f7",
+      "title": "US 6-Month Bill Auction High Yield 4.145% Bid-to-cover 2.92 US sells $82 bln Awards 70.91% of bids at high",
+      "url": "https://t.me/FinancialJuice/145724",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:33:45.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "beb1ee8f60c33264ecb86646225349b822ebc6034cebdfe77befaaa22509b34f",
+      "sha256": "beb1ee8f60c33264ecb86646225349b822ebc6034cebdfe77befaaa22509b34f",
+      "title": "US 3-Month Bill Auction High Yield 4.060% Bid-to-cover 2.67 US sells $95 bln Awards 79.03% of bids at high",
+      "url": "https://t.me/FinancialJuice/145723",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:33:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "71bb7b96e78939bc3683370989c3f4aad566574c28a96c36c975c12d887aaa6d",
+      "sha256": "71bb7b96e78939bc3683370989c3f4aad566574c28a96c36c975c12d887aaa6d",
+      "title": "US 6-MONTH AWARDED HIGH ACTUAL 70.910% (FORECAST -, PREVIOUS 49.230%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145722",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:49.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "70.910%",
+      "forecast": null,
+      "previous": "49.230%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "dc805f01ebe7a18ce0134e025226309b99cf3741f77d5e63532ea34f356ec8c4",
+      "sha256": "dc805f01ebe7a18ce0134e025226309b99cf3741f77d5e63532ea34f356ec8c4",
+      "title": "US 3-MONTH AWARDED HIGH ACTUAL 79.030% (FORECAST -, PREVIOUS 64.280%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145721",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:45.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "79.030%",
+      "forecast": null,
+      "previous": "64.280%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "69ad8fcaab9a0a5b36a5ed4dd032c41649cf5328daa84ffcb160d04c731a0b15",
+      "sha256": "69ad8fcaab9a0a5b36a5ed4dd032c41649cf5328daa84ffcb160d04c731a0b15",
+      "title": "US 6-MONTH BILL HIGH YIELD ACTUAL 4.145% (FORECAST -, PREVIOUS 4.150%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145720",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:44.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "4.145%",
+      "forecast": null,
+      "previous": "4.150%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fd42fb9be620974c4c6986819ac1c391c52f28dd414749ced301f409136d44cc",
+      "sha256": "fd42fb9be620974c4c6986819ac1c391c52f28dd414749ced301f409136d44cc",
+      "title": "US 6-MONTH BILL BID-TO-COVER ACTUAL 2.92 (FORECAST -, PREVIOUS 2.890) $MACRO",
+      "url": "https://t.me/FinancialJuice/145719",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "2.92",
+      "forecast": null,
+      "previous": "2.890",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "bdb65ab180367453233ff9db7b2e37ea994c33ce7866f099c96a9cbc102b5f98",
+      "sha256": "bdb65ab180367453233ff9db7b2e37ea994c33ce7866f099c96a9cbc102b5f98",
+      "title": "US 3-MONTH BILL HIGH YIELD ACTUAL 4.06% (FORECAST -, PREVIOUS 4.040%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145718",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "4.06%",
+      "forecast": null,
+      "previous": "4.040%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "28415700db538ab21c39e0d87b7bdf943e24daedde2546022d1f7feeef44c54c",
+      "sha256": "28415700db538ab21c39e0d87b7bdf943e24daedde2546022d1f7feeef44c54c",
+      "title": "US 3-MONTH BILL BID-TO-COVER ACTUAL 2.67 (FORECAST -, PREVIOUS 2.880) $MACRO",
+      "url": "https://t.me/FinancialJuice/145717",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:27.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "2.67",
+      "forecast": null,
+      "previous": "2.880",
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "0c5d1583f81ef44d99f2150191df31a8167508e58a08b714b752ea8836851cd9",
       "sha256": "0c5d1583f81ef44d99f2150191df31a8167508e58a08b714b752ea8836851cd9",
       "title": "Stocks of crude oil in US SPR fell to 279.5 mln barrels last week, lowest since 1982.",
@@ -1253,6 +1457,32 @@
       "z": null
     },
     {
+      "id": "b1c42db87b70364725a21c9a70f7837e6a6321acf8aba354e6ab33f4721245a1",
+      "sha256": "b1c42db87b70364725a21c9a70f7837e6a6321acf8aba354e6ab33f4721245a1",
+      "title": "US chip inquiry was halted after Nvidia intervention - NYT. $NVDA",
+      "url": "https://t.me/FinancialJuice/145706",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:06:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5ac208fd8a635808ad6ea9037dfbea2dd3a9677c4dbeea98f0357d15e85231b0",
       "sha256": "5ac208fd8a635808ad6ea9037dfbea2dd3a9677c4dbeea98f0357d15e85231b0",
       "title": "Us stocks rebound even as nvidia slides 4 what next technically",
@@ -1287,32 +1517,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-09T16:04:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7c721d6a5fcf0ff9d1ab05c23a1114abcdc642746a13cad7e4f605aa255ac2d9",
-      "sha256": "7c721d6a5fcf0ff9d1ab05c23a1114abcdc642746a13cad7e4f605aa255ac2d9",
-      "title": "❗ US chip inquiry was halted after Nvidia intervention - NYT. $NVDA",
-      "url": "https://t.me/FinancialJuice/145704",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:04:00.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -7689,238 +7893,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "92d27c3177719dfa3417481a69cad6508f0ad1b25c81fd003e4569f704ee7202",
-      "sha256": "92d27c3177719dfa3417481a69cad6508f0ad1b25c81fd003e4569f704ee7202",
-      "title": "Japan Tobacco Inc.: update on JT group's operations in Russia",
-      "url": "https://t.me/FinancialJuice/145576",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T23:01:12.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "57dbd25fc9bb4fbc35d305068c89ec0f30cfe49bec5ff049800d7831f7f648ec",
-      "sha256": "57dbd25fc9bb4fbc35d305068c89ec0f30cfe49bec5ff049800d7831f7f648ec",
-      "title": "Weekend houthis hit riyadh s aramco tower and target oil storage as saudi supply risk grows",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T22:50:58.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c5c2a1fbcc0beb6e9679c6a89d7618a30ab1ab00d04a1fd1ae4ee4e514b1fbcb",
-      "sha256": "c5c2a1fbcc0beb6e9679c6a89d7618a30ab1ab00d04a1fd1ae4ee4e514b1fbcb",
-      "title": "Rba s hunter warns ai could trigger sharp asset repricing as boom adds to inflation",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T22:45:57.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c97947314344e4598e9ec5b4f9848cb5cc36c8fc2c668d324ee12ea3dacbd17a",
-      "sha256": "c97947314344e4598e9ec5b4f9848cb5cc36c8fc2c668d324ee12ea3dacbd17a",
-      "title": "Is nvda stock a buy or sell spy alert",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T22:35:58.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "59070b69bbe461b73abf0a71cc961306dbbbb6f5880f2e9b5d9945f2023ab810",
-      "sha256": "59070b69bbe461b73abf0a71cc961306dbbbb6f5880f2e9b5d9945f2023ab810",
-      "title": "Rubio says iran talks not productive as tehran s demands are unacceptable",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T22:31:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d0ed585bfad8c439769b9dbbd364ba9d813885989fa93a63654632dbda4cd626",
-      "sha256": "d0ed585bfad8c439769b9dbbd364ba9d813885989fa93a63654632dbda4cd626",
-      "title": "RBA's Hunter: Extra supply will match demand, AI's long-term impact on inflation probably neutral",
-      "url": "https://t.me/FinancialJuice/145575",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T22:30:45.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "881d45eaeb046fe1af92bd4e3aebab898066c7cca8581d045dac5c3b911719ca",
-      "sha256": "881d45eaeb046fe1af92bd4e3aebab898066c7cca8581d045dac5c3b911719ca",
-      "title": "RBA's Hunter: If returns to AI investment fall short, some asset prices could face sharp, possibly disorderly, adjustments",
-      "url": "https://t.me/FinancialJuice/145574",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T22:30:40.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "Intervencion_EA4",
-      "categories": [
-        "Intervencion_EA4",
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "EA-4",
-      "mmt_lens": "INTERVENCION_SOBERANA_EA4",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "699cac1d8ac6cc4f1b5fb9510cb44f9b8c12c35ecafe40ee237ac924d4863986",
-      "sha256": "699cac1d8ac6cc4f1b5fb9510cb44f9b8c12c35ecafe40ee237ac924d4863986",
-      "title": "RBA's Hunter: In near term, AI's positive impact on aggregate demand versus economy’s current supply capacity will push inflation higher",
-      "url": "https://t.me/FinancialJuice/145573",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T22:30:40.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7930,6 +7902,214 @@
   ],
   "news": [
     {
+      "id": "4921f0763cae4b7d1ef0ae6506ae449d6374837506d713233ceafc2e178653f7",
+      "sha256": "4921f0763cae4b7d1ef0ae6506ae449d6374837506d713233ceafc2e178653f7",
+      "title": "US 6-Month Bill Auction High Yield 4.145% Bid-to-cover 2.92 US sells $82 bln Awards 70.91% of bids at high",
+      "url": "https://t.me/FinancialJuice/145724",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:33:45.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "beb1ee8f60c33264ecb86646225349b822ebc6034cebdfe77befaaa22509b34f",
+      "sha256": "beb1ee8f60c33264ecb86646225349b822ebc6034cebdfe77befaaa22509b34f",
+      "title": "US 3-Month Bill Auction High Yield 4.060% Bid-to-cover 2.67 US sells $95 bln Awards 79.03% of bids at high",
+      "url": "https://t.me/FinancialJuice/145723",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:33:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "71bb7b96e78939bc3683370989c3f4aad566574c28a96c36c975c12d887aaa6d",
+      "sha256": "71bb7b96e78939bc3683370989c3f4aad566574c28a96c36c975c12d887aaa6d",
+      "title": "US 6-MONTH AWARDED HIGH ACTUAL 70.910% (FORECAST -, PREVIOUS 49.230%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145722",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:49.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "70.910%",
+      "forecast": null,
+      "previous": "49.230%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "dc805f01ebe7a18ce0134e025226309b99cf3741f77d5e63532ea34f356ec8c4",
+      "sha256": "dc805f01ebe7a18ce0134e025226309b99cf3741f77d5e63532ea34f356ec8c4",
+      "title": "US 3-MONTH AWARDED HIGH ACTUAL 79.030% (FORECAST -, PREVIOUS 64.280%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145721",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:45.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "79.030%",
+      "forecast": null,
+      "previous": "64.280%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "69ad8fcaab9a0a5b36a5ed4dd032c41649cf5328daa84ffcb160d04c731a0b15",
+      "sha256": "69ad8fcaab9a0a5b36a5ed4dd032c41649cf5328daa84ffcb160d04c731a0b15",
+      "title": "US 6-MONTH BILL HIGH YIELD ACTUAL 4.145% (FORECAST -, PREVIOUS 4.150%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145720",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:44.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "4.145%",
+      "forecast": null,
+      "previous": "4.150%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fd42fb9be620974c4c6986819ac1c391c52f28dd414749ced301f409136d44cc",
+      "sha256": "fd42fb9be620974c4c6986819ac1c391c52f28dd414749ced301f409136d44cc",
+      "title": "US 6-MONTH BILL BID-TO-COVER ACTUAL 2.92 (FORECAST -, PREVIOUS 2.890) $MACRO",
+      "url": "https://t.me/FinancialJuice/145719",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:34.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "2.92",
+      "forecast": null,
+      "previous": "2.890",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "bdb65ab180367453233ff9db7b2e37ea994c33ce7866f099c96a9cbc102b5f98",
+      "sha256": "bdb65ab180367453233ff9db7b2e37ea994c33ce7866f099c96a9cbc102b5f98",
+      "title": "US 3-MONTH BILL HIGH YIELD ACTUAL 4.06% (FORECAST -, PREVIOUS 4.040%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145718",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "4.06%",
+      "forecast": null,
+      "previous": "4.040%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "28415700db538ab21c39e0d87b7bdf943e24daedde2546022d1f7feeef44c54c",
+      "sha256": "28415700db538ab21c39e0d87b7bdf943e24daedde2546022d1f7feeef44c54c",
+      "title": "US 3-MONTH BILL BID-TO-COVER ACTUAL 2.67 (FORECAST -, PREVIOUS 2.880) $MACRO",
+      "url": "https://t.me/FinancialJuice/145717",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:32:27.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "2.67",
+      "forecast": null,
+      "previous": "2.880",
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "0c5d1583f81ef44d99f2150191df31a8167508e58a08b714b752ea8836851cd9",
       "sha256": "0c5d1583f81ef44d99f2150191df31a8167508e58a08b714b752ea8836851cd9",
       "title": "Stocks of crude oil in US SPR fell to 279.5 mln barrels last week, lowest since 1982.",
@@ -8271,6 +8451,32 @@
       "z": null
     },
     {
+      "id": "b1c42db87b70364725a21c9a70f7837e6a6321acf8aba354e6ab33f4721245a1",
+      "sha256": "b1c42db87b70364725a21c9a70f7837e6a6321acf8aba354e6ab33f4721245a1",
+      "title": "US chip inquiry was halted after Nvidia intervention - NYT. $NVDA",
+      "url": "https://t.me/FinancialJuice/145706",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T16:06:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5ac208fd8a635808ad6ea9037dfbea2dd3a9677c4dbeea98f0357d15e85231b0",
       "sha256": "5ac208fd8a635808ad6ea9037dfbea2dd3a9677c4dbeea98f0357d15e85231b0",
       "title": "Us stocks rebound even as nvidia slides 4 what next technically",
@@ -8305,32 +8511,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-09T16:04:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7c721d6a5fcf0ff9d1ab05c23a1114abcdc642746a13cad7e4f605aa255ac2d9",
-      "sha256": "7c721d6a5fcf0ff9d1ab05c23a1114abcdc642746a13cad7e4f605aa255ac2d9",
-      "title": "❗ US chip inquiry was halted after Nvidia intervention - NYT. $NVDA",
-      "url": "https://t.me/FinancialJuice/145704",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:04:00.000Z",
       "currencies": [],
       "divisas": [],
       "category": "BC",
@@ -14707,238 +14887,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "92d27c3177719dfa3417481a69cad6508f0ad1b25c81fd003e4569f704ee7202",
-      "sha256": "92d27c3177719dfa3417481a69cad6508f0ad1b25c81fd003e4569f704ee7202",
-      "title": "Japan Tobacco Inc.: update on JT group's operations in Russia",
-      "url": "https://t.me/FinancialJuice/145576",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T23:01:12.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "57dbd25fc9bb4fbc35d305068c89ec0f30cfe49bec5ff049800d7831f7f648ec",
-      "sha256": "57dbd25fc9bb4fbc35d305068c89ec0f30cfe49bec5ff049800d7831f7f648ec",
-      "title": "Weekend houthis hit riyadh s aramco tower and target oil storage as saudi supply risk grows",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T22:50:58.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c5c2a1fbcc0beb6e9679c6a89d7618a30ab1ab00d04a1fd1ae4ee4e514b1fbcb",
-      "sha256": "c5c2a1fbcc0beb6e9679c6a89d7618a30ab1ab00d04a1fd1ae4ee4e514b1fbcb",
-      "title": "Rba s hunter warns ai could trigger sharp asset repricing as boom adds to inflation",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T22:45:57.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c97947314344e4598e9ec5b4f9848cb5cc36c8fc2c668d324ee12ea3dacbd17a",
-      "sha256": "c97947314344e4598e9ec5b4f9848cb5cc36c8fc2c668d324ee12ea3dacbd17a",
-      "title": "Is nvda stock a buy or sell spy alert",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T22:35:58.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "59070b69bbe461b73abf0a71cc961306dbbbb6f5880f2e9b5d9945f2023ab810",
-      "sha256": "59070b69bbe461b73abf0a71cc961306dbbbb6f5880f2e9b5d9945f2023ab810",
-      "title": "Rubio says iran talks not productive as tehran s demands are unacceptable",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T22:31:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d0ed585bfad8c439769b9dbbd364ba9d813885989fa93a63654632dbda4cd626",
-      "sha256": "d0ed585bfad8c439769b9dbbd364ba9d813885989fa93a63654632dbda4cd626",
-      "title": "RBA's Hunter: Extra supply will match demand, AI's long-term impact on inflation probably neutral",
-      "url": "https://t.me/FinancialJuice/145575",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T22:30:45.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "881d45eaeb046fe1af92bd4e3aebab898066c7cca8581d045dac5c3b911719ca",
-      "sha256": "881d45eaeb046fe1af92bd4e3aebab898066c7cca8581d045dac5c3b911719ca",
-      "title": "RBA's Hunter: If returns to AI investment fall short, some asset prices could face sharp, possibly disorderly, adjustments",
-      "url": "https://t.me/FinancialJuice/145574",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T22:30:40.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "Intervencion_EA4",
-      "categories": [
-        "Intervencion_EA4",
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "EA-4",
-      "mmt_lens": "INTERVENCION_SOBERANA_EA4",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "699cac1d8ac6cc4f1b5fb9510cb44f9b8c12c35ecafe40ee237ac924d4863986",
-      "sha256": "699cac1d8ac6cc4f1b5fb9510cb44f9b8c12c35ecafe40ee237ac924d4863986",
-      "title": "RBA's Hunter: In near term, AI's positive impact on aggregate demand versus economy’s current supply capacity will push inflation higher",
-      "url": "https://t.me/FinancialJuice/145573",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T22:30:40.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
