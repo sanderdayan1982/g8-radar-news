@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T14:39:24.691Z",
-  "started_at": "2026-11-09T14:39:21.250Z",
+  "generated_at": "2026-11-09T14:44:29.297Z",
+  "started_at": "2026-11-09T14:44:26.293Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -22,7 +22,7 @@
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 41.7h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 41.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -33,32 +33,12 @@
       "rationale": "12 titulares · Ficha EA-1 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL + TRADE_EXTERNAL · Est +31 | Imp 3h n/d. Régimen real mixed."
     },
     {
-      "currency": "USD",
-      "rank": 2,
-      "score": 30,
-      "bias": "alcista",
-      "structural": 30,
-      "impulse": 33,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Goolsbee Speaks en 0.3h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Bowman Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
-      ],
-      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL + POLICY_PRICE · Est +30 | Imp 3h +33. Régimen real mixed."
-    },
-    {
       "currency": "CHF",
-      "rank": 3,
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 34,
+      "impulse": 33,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -68,7 +48,27 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +34. Régimen real mixed."
+      "rationale": "21 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +33. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 3,
+      "score": 20,
+      "bias": "alcista",
+      "structural": 20,
+      "impulse": 31,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Goolsbee Speaks en 0.3h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Bowman Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "CPI sin sorpresa"
+      ],
+      "rationale": "41 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +20 | Imp 3h +31. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -76,7 +76,7 @@
       "score": 5,
       "bias": "neutral",
       "structural": 5,
-      "impulse": 34,
+      "impulse": 33,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -88,7 +88,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "29 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +5 | Imp 3h +34. Régimen real mixed."
+      "rationale": "30 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +5 | Imp 3h +33. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -100,7 +100,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 2.8h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 2.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -152,7 +152,7 @@
       "score": -34,
       "bias": "bajista",
       "structural": -34,
-      "impulse": -38,
+      "impulse": -36,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -164,7 +164,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -34 | Imp 3h -38. Régimen real mixed."
+      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -34 | Imp 3h -36. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -197,7 +197,7 @@
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 41.7h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 41.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -208,32 +208,12 @@
       "rationale": "12 titulares · Ficha EA-1 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL + TRADE_EXTERNAL · Est +31 | Imp 3h n/d. Régimen real mixed."
     },
     {
-      "currency": "USD",
-      "rank": 2,
-      "score": 30,
-      "bias": "alcista",
-      "structural": 30,
-      "impulse": 33,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Goolsbee Speaks en 0.3h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Bowman Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
-      ],
-      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL + POLICY_PRICE · Est +30 | Imp 3h +33. Régimen real mixed."
-    },
-    {
       "currency": "CHF",
-      "rank": 3,
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 34,
+      "impulse": 33,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -243,7 +223,27 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +34. Régimen real mixed."
+      "rationale": "21 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +33. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 3,
+      "score": 20,
+      "bias": "alcista",
+      "structural": 20,
+      "impulse": 31,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Goolsbee Speaks en 0.3h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Bowman Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "CPI sin sorpresa"
+      ],
+      "rationale": "41 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +20 | Imp 3h +31. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -251,7 +251,7 @@
       "score": 5,
       "bias": "neutral",
       "structural": 5,
-      "impulse": 34,
+      "impulse": 33,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -263,7 +263,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "29 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +5 | Imp 3h +34. Régimen real mixed."
+      "rationale": "30 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +5 | Imp 3h +33. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -275,7 +275,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 2.8h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 2.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -327,7 +327,7 @@
       "score": -34,
       "bias": "bajista",
       "structural": -34,
-      "impulse": -38,
+      "impulse": -36,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -339,7 +339,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -34 | Imp 3h -38. Régimen real mixed."
+      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -34 | Imp 3h -36. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -400,7 +400,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -4.4,
+      "hours_from_now": -4.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -412,7 +412,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -4.4,
+      "hours_from_now": -4.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -424,7 +424,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1,
+      "hours_from_now": -1.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -460,7 +460,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.6,
+      "hours_from_now": 2.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -472,7 +472,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.8,
+      "hours_from_now": 2.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -508,7 +508,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 9.2,
+      "hours_from_now": 9.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -520,7 +520,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.2,
+      "hours_from_now": 9.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -532,7 +532,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 9.2,
+      "hours_from_now": 9.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -544,7 +544,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 9.4,
+      "hours_from_now": 9.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -568,7 +568,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 12.9,
+      "hours_from_now": 12.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -628,7 +628,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 20.9,
+      "hours_from_now": 20.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +652,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22.6,
+      "hours_from_now": 22.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +688,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.2,
+      "hours_from_now": 25.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +700,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 27.4,
+      "hours_from_now": 27.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +796,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 33.2,
+      "hours_from_now": 33.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -832,7 +832,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.4,
+      "hours_from_now": 40.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -844,7 +844,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41.7,
+      "hours_from_now": 41.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -868,7 +868,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 43.9,
+      "hours_from_now": 43.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -908,6 +908,66 @@
   },
   "items": [
     {
+      "id": "35d4341712a3a96d72a0183429412b0b9ff84a98f35ceda2221caddfcbb1c3b8",
+      "sha256": "35d4341712a3a96d72a0183429412b0b9ff84a98f35ceda2221caddfcbb1c3b8",
+      "title": "US stocks rebound after AI rout",
+      "url": "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-09T14:43:13.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6c06d3e0712b506303286eea9be1a1b85b6aee3b432381c8b7d081bd618c31f9",
+      "sha256": "6c06d3e0712b506303286eea9be1a1b85b6aee3b432381c8b7d081bd618c31f9",
+      "title": "Trump administration vows to speed deployments of counter-drone systems to address threats - Memo",
+      "url": "https://t.me/FinancialJuice/145676",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T14:39:19.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "69d4126cca633b079a98920044acabd460eca381cb50a499c5d40ca0aecfa607",
       "sha256": "69d4126cca633b079a98920044acabd460eca381cb50a499c5d40ca0aecfa607",
       "title": "Bitcoin is doing it s abcs technically what will the buyers and selllers do at the old support",
@@ -5358,88 +5418,6 @@
       "z": null
     },
     {
-      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
-      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
-      "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
-      "title": "Leading today, building for tomorrow",
-      "url": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
-      "sha256": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
-      "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
-      "url": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "0dcba325c4b73366e7a6a3a1f7daaa97984c9383d1c9007bf4bf291c9eef7de8",
       "sha256": "0dcba325c4b73366e7a6a3a1f7daaa97984c9383d1c9007bf4bf291c9eef7de8",
       "title": "Opening remarks - 2026 Market Practitioners Group Conference",
@@ -5514,6 +5492,88 @@
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
+      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
+      "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
+      "title": "Leading today, building for tomorrow",
+      "url": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
+      "sha256": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
+      "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
+      "url": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -7904,58 +7964,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "29886dc1a28860ed22e75ea93b657740a01882ca6847ae9aeb20331a70a13eaf",
-      "sha256": "29886dc1a28860ed22e75ea93b657740a01882ca6847ae9aeb20331a70a13eaf",
-      "title": "IAEA: plant's link to only external power line, Ferosplavna-1, lost early today",
-      "url": "https://t.me/FinancialJuice/145534",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T09:52:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "00092c035a14e4af5bac4bdfc2a46a03b80d76622720cf78f435edf4dfc8e2ae",
-      "sha256": "00092c035a14e4af5bac4bdfc2a46a03b80d76622720cf78f435edf4dfc8e2ae",
-      "title": "IAEA: Zaporizhzhia nuclear plant again loses all off-site power, relies on emergency diesel generators for reactor cooling",
-      "url": "https://t.me/FinancialJuice/145533",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T09:52:09.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
@@ -7967,6 +7975,66 @@
   ],
   "news": [
     {
+      "id": "35d4341712a3a96d72a0183429412b0b9ff84a98f35ceda2221caddfcbb1c3b8",
+      "sha256": "35d4341712a3a96d72a0183429412b0b9ff84a98f35ceda2221caddfcbb1c3b8",
+      "title": "US stocks rebound after AI rout",
+      "url": "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-09T14:43:13.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6c06d3e0712b506303286eea9be1a1b85b6aee3b432381c8b7d081bd618c31f9",
+      "sha256": "6c06d3e0712b506303286eea9be1a1b85b6aee3b432381c8b7d081bd618c31f9",
+      "title": "Trump administration vows to speed deployments of counter-drone systems to address threats - Memo",
+      "url": "https://t.me/FinancialJuice/145676",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T14:39:19.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "69d4126cca633b079a98920044acabd460eca381cb50a499c5d40ca0aecfa607",
       "sha256": "69d4126cca633b079a98920044acabd460eca381cb50a499c5d40ca0aecfa607",
       "title": "Bitcoin is doing it s abcs technically what will the buyers and selllers do at the old support",
@@ -12417,88 +12485,6 @@
       "z": null
     },
     {
-      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
-      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
-      "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
-      "title": "Leading today, building for tomorrow",
-      "url": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
-      "sha256": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
-      "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
-      "url": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "0dcba325c4b73366e7a6a3a1f7daaa97984c9383d1c9007bf4bf291c9eef7de8",
       "sha256": "0dcba325c4b73366e7a6a3a1f7daaa97984c9383d1c9007bf4bf291c9eef7de8",
       "title": "Opening remarks - 2026 Market Practitioners Group Conference",
@@ -12573,6 +12559,88 @@
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
+      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
+      "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
+      "title": "Leading today, building for tomorrow",
+      "url": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
+      "sha256": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
+      "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
+      "url": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -14963,58 +15031,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "29886dc1a28860ed22e75ea93b657740a01882ca6847ae9aeb20331a70a13eaf",
-      "sha256": "29886dc1a28860ed22e75ea93b657740a01882ca6847ae9aeb20331a70a13eaf",
-      "title": "IAEA: plant's link to only external power line, Ferosplavna-1, lost early today",
-      "url": "https://t.me/FinancialJuice/145534",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T09:52:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "00092c035a14e4af5bac4bdfc2a46a03b80d76622720cf78f435edf4dfc8e2ae",
-      "sha256": "00092c035a14e4af5bac4bdfc2a46a03b80d76622720cf78f435edf4dfc8e2ae",
-      "title": "IAEA: Zaporizhzhia nuclear plant again loses all off-site power, relies on emergency diesel generators for reactor cooling",
-      "url": "https://t.me/FinancialJuice/145533",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T09:52:09.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
