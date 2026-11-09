@@ -5,16 +5,56 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T09:23:08.582Z",
-  "started_at": "2026-11-09T09:23:07.475Z",
+  "generated_at": "2026-11-09T09:33:13.990Z",
+  "started_at": "2026-11-09T09:33:12.916Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
   "count": 250,
   "currency_ranking_mmt": [
     {
-      "currency": "CHF",
+      "currency": "EUR",
       "rank": 1,
+      "score": 34,
+      "bias": "alcista",
+      "structural": 34,
+      "impulse": 24,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 46.8h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Términos de Intercambio (EA-1): GERMAN TRADE BALANCE SA ACTUAL 15.6B (",
+        "Dato real fuerte: EUROZONE SENTIX INVESTOR CONFIDENCE INDEX ACTUAL 2.4 (FO",
+        "Términos de Intercambio (EA-1): GERMAN EXPORTS MOM SA ACTUAL 2% (FOREC"
+      ],
+      "rationale": "11 titulares · Ficha EA-1 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL + TRADE_EXTERNAL · Est +34 | Imp 3h +24. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 2,
+      "score": 27,
+      "bias": "alcista",
+      "structural": 27,
+      "impulse": null,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 4.1h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "CPI vs consenso",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE · Est +27 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 3,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -29,46 +69,6 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
       "rationale": "18 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "USD",
-      "rank": 2,
-      "score": 21,
-      "bias": "alcista",
-      "structural": 21,
-      "impulse": null,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 4.3h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "CPI vs consenso",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
-      ],
-      "rationale": "37 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE · Est +21 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 3,
-      "score": 15,
-      "bias": "alcista",
-      "structural": 15,
-      "impulse": 5,
-      "ficha_v6": "EA-1",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 46.9h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Términos de Intercambio (EA-1): GERMAN TRADE BALANCE SA ACTUAL 15.6B (",
-        "Términos de Intercambio (EA-1): GERMAN EXPORTS MOM SA ACTUAL 2% (FOREC",
-        "Términos de Intercambio (EA-1): GERMAN IMPORTS MOM SA ACTUAL 4.2% (FOR"
-      ],
-      "rationale": "10 titulares · Ficha EA-1 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · TRADE_EXTERNAL · Est +15 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -100,7 +100,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 8h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 7.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -188,8 +188,48 @@
   ],
   "g8_ranking": [
     {
-      "currency": "CHF",
+      "currency": "EUR",
       "rank": 1,
+      "score": 34,
+      "bias": "alcista",
+      "structural": 34,
+      "impulse": 24,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 46.8h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Términos de Intercambio (EA-1): GERMAN TRADE BALANCE SA ACTUAL 15.6B (",
+        "Dato real fuerte: EUROZONE SENTIX INVESTOR CONFIDENCE INDEX ACTUAL 2.4 (FO",
+        "Términos de Intercambio (EA-1): GERMAN EXPORTS MOM SA ACTUAL 2% (FOREC"
+      ],
+      "rationale": "11 titulares · Ficha EA-1 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL + TRADE_EXTERNAL · Est +34 | Imp 3h +24. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 2,
+      "score": 27,
+      "bias": "alcista",
+      "structural": 27,
+      "impulse": null,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 4.1h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "CPI vs consenso",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE · Est +27 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 3,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -204,46 +244,6 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
       "rationale": "18 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "USD",
-      "rank": 2,
-      "score": 21,
-      "bias": "alcista",
-      "structural": 21,
-      "impulse": null,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 4.3h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "CPI vs consenso",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
-      ],
-      "rationale": "37 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE · Est +21 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 3,
-      "score": 15,
-      "bias": "alcista",
-      "structural": 15,
-      "impulse": 5,
-      "ficha_v6": "EA-1",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 46.9h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Términos de Intercambio (EA-1): GERMAN TRADE BALANCE SA ACTUAL 15.6B (",
-        "Términos de Intercambio (EA-1): GERMAN EXPORTS MOM SA ACTUAL 2% (FOREC",
-        "Términos de Intercambio (EA-1): GERMAN IMPORTS MOM SA ACTUAL 4.2% (FOR"
-      ],
-      "rationale": "10 titulares · Ficha EA-1 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · TRADE_EXTERNAL · Est +15 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -275,7 +275,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 8h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 7.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -352,7 +352,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10.9,
+      "hours_from_now": -11.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +364,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -4.4,
+      "hours_from_now": -4.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -376,7 +376,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -2.4,
+      "hours_from_now": -2.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -385,11 +385,11 @@
       "title": "Sentix Investor Confidence",
       "event_at": "2026-11-09T09:30:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": 0.1,
-      "window_status": "⚑BC <48h (Candado CIRO)"
+      "hours_from_now": -0.1,
+      "window_status": "✓ POST-EVENTO"
     },
     {
       "id": "710ba75df0cb4bf4",
@@ -400,7 +400,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.9,
+      "hours_from_now": 0.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -412,7 +412,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.9,
+      "hours_from_now": 0.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -424,7 +424,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.3,
+      "hours_from_now": 4.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -436,7 +436,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": 5.6,
+      "hours_from_now": 5.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -448,7 +448,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 5.6,
+      "hours_from_now": 5.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -460,7 +460,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.9,
+      "hours_from_now": 7.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -472,7 +472,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 8,
+      "hours_from_now": 7.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -484,7 +484,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 14.1,
+      "hours_from_now": 13.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -496,7 +496,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 14.1,
+      "hours_from_now": 13.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -508,7 +508,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 14.4,
+      "hours_from_now": 14.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -520,7 +520,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.4,
+      "hours_from_now": 14.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -532,7 +532,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 14.4,
+      "hours_from_now": 14.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -544,7 +544,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -556,7 +556,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 15.1,
+      "hours_from_now": 14.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -568,7 +568,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 18.2,
+      "hours_from_now": 18,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -580,7 +580,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 19.6,
+      "hours_from_now": 19.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -592,7 +592,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.1,
+      "hours_from_now": 22.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -604,7 +604,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.6,
+      "hours_from_now": 23.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -616,7 +616,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 25.6,
+      "hours_from_now": 25.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -628,7 +628,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 26.1,
+      "hours_from_now": 26,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -640,7 +640,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 27.1,
+      "hours_from_now": 26.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +652,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 27.9,
+      "hours_from_now": 27.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +664,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 28.1,
+      "hours_from_now": 27.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +676,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 28.1,
+      "hours_from_now": 27.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +688,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30.4,
+      "hours_from_now": 30.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +700,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 32.6,
+      "hours_from_now": 32.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +712,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.1,
+      "hours_from_now": 32.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +724,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.1,
+      "hours_from_now": 32.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +736,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.1,
+      "hours_from_now": 32.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +748,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.1,
+      "hours_from_now": 34.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +760,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.1,
+      "hours_from_now": 35.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -772,7 +772,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.1,
+      "hours_from_now": 37.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -784,7 +784,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.1,
+      "hours_from_now": 37.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +796,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 38.4,
+      "hours_from_now": 38.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -808,7 +808,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 44.6,
+      "hours_from_now": 44.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -820,7 +820,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 45.6,
+      "hours_from_now": 45.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -832,7 +832,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.6,
+      "hours_from_now": 45.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -844,7 +844,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.9,
+      "hours_from_now": 46.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -856,7 +856,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 47.6,
+      "hours_from_now": 47.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -872,6 +872,36 @@
   },
   "items": [
     {
+      "id": "eb0eafa2de56d202bf7e4ae13905e9941eb8d25ee7aea4cf9241c9273ca6e9e9",
+      "sha256": "eb0eafa2de56d202bf7e4ae13905e9941eb8d25ee7aea4cf9241c9273ca6e9e9",
+      "title": "EUROZONE SENTIX INVESTOR CONFIDENCE INDEX ACTUAL 2.4 (FORECAST 2.05, PREVIOUS 2.7) $MACRO",
+      "url": "https://t.me/FinancialJuice/145638",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T09:30:26.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 1,
+      "actual": "2.4",
+      "forecast": "2.05,",
+      "previous": "2.7",
+      "calendar_title": "Sentix Investor Confidence",
+      "z": 2.3
+    },
+    {
       "id": "894a68a81f35c021a61f4ddd861d67e134abdf9ec3edadead2573812c1570188",
       "sha256": "894a68a81f35c021a61f4ddd861d67e134abdf9ec3edadead2573812c1570188",
       "title": "MARÍN BELLO: \"El escándalo de Jensen Huang se ha magnificado porque hay muchos intereses detrás\"",
@@ -5268,7 +5298,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-08T15:31:07.000Z",
+      "published_at": "2026-11-08T15:29:40.000Z",
       "currencies": [
         "CAD"
       ],
@@ -7879,36 +7909,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "08115d3de0b79bc46aba971a6ada58466fed70ee1190d3469d6767fa92ba757a",
-      "sha256": "08115d3de0b79bc46aba971a6ada58466fed70ee1190d3469d6767fa92ba757a",
-      "title": "[une_ltu_a] Long-term unemployment by sex - annual data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWVQyVW9BWXlHQlpZdzNrUmJLSUJHVTlIMmF3VGppUWNZOUZHeC1UMlFaZHZ4RHc0bXk1SmpBdmZOc0FYSmxkNk5Qd3hreEV4YWFweUhsbEhBY2NZUTlzSjdndUxwaTJXeU1qNHp0TjhtVFRoLXJpenNFU0RBdm1lYTFfRkJNQQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-07T07:42:59.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7918,6 +7918,36 @@
   ],
   "news": [
     {
+      "id": "eb0eafa2de56d202bf7e4ae13905e9941eb8d25ee7aea4cf9241c9273ca6e9e9",
+      "sha256": "eb0eafa2de56d202bf7e4ae13905e9941eb8d25ee7aea4cf9241c9273ca6e9e9",
+      "title": "EUROZONE SENTIX INVESTOR CONFIDENCE INDEX ACTUAL 2.4 (FORECAST 2.05, PREVIOUS 2.7) $MACRO",
+      "url": "https://t.me/FinancialJuice/145638",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T09:30:26.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 1,
+      "actual": "2.4",
+      "forecast": "2.05,",
+      "previous": "2.7",
+      "calendar_title": "Sentix Investor Confidence",
+      "z": 2.3
+    },
+    {
       "id": "894a68a81f35c021a61f4ddd861d67e134abdf9ec3edadead2573812c1570188",
       "sha256": "894a68a81f35c021a61f4ddd861d67e134abdf9ec3edadead2573812c1570188",
       "title": "MARÍN BELLO: \"El escándalo de Jensen Huang se ha magnificado porque hay muchos intereses detrás\"",
@@ -12314,7 +12344,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-08T15:31:07.000Z",
+      "published_at": "2026-11-08T15:29:40.000Z",
       "currencies": [
         "CAD"
       ],
@@ -14925,36 +14955,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "08115d3de0b79bc46aba971a6ada58466fed70ee1190d3469d6767fa92ba757a",
-      "sha256": "08115d3de0b79bc46aba971a6ada58466fed70ee1190d3469d6767fa92ba757a",
-      "title": "[une_ltu_a] Long-term unemployment by sex - annual data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWVQyVW9BWXlHQlpZdzNrUmJLSUJHVTlIMmF3VGppUWNZOUZHeC1UMlFaZHZ4RHc0bXk1SmpBdmZOc0FYSmxkNk5Qd3hreEV4YWFweUhsbEhBY2NZUTlzSjdndUxwaTJXeU1qNHp0TjhtVFRoLXJpenNFU0RBdm1lYTFfRkJNQQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-07T07:42:59.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
