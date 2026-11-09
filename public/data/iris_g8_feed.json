@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T23:30:57.698Z",
-  "started_at": "2026-11-09T23:30:54.298Z",
+  "generated_at": "2026-11-09T23:36:02.598Z",
+  "started_at": "2026-11-09T23:35:59.587Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,42 +15,21 @@
     {
       "currency": "CHF",
       "rank": 1,
-      "score": 26,
+      "score": 21,
       "bias": "alcista",
-      "structural": 26,
+      "structural": 21,
       "impulse": 15,
-      "ficha_v6": "EA-1",
+      "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
       "calendar_lock_detail": null,
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Acuerdo comercial / sector exterior (C1/EA-1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "17 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +26 | Imp 3h +15. Régimen real mixed."
-    },
-    {
-      "currency": "JPY",
-      "rank": 2,
-      "score": 11,
-      "bias": "neutral",
-      "structural": 11,
-      "impulse": 15,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Dato real suave: JAPANESE LEADING INDICATOR CHANGE ACTUAL -1.6 (FORECAST -",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
-      ],
-      "rationale": "19 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +11 | Imp 3h +15. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h +15. Régimen real mixed."
     },
     {
       "currency": "USD",
@@ -62,7 +41,7 @@
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 9.5h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 9.4h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -70,11 +49,11 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "43 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +11 | Imp 3h +11. Régimen real mixed."
+      "rationale": "41 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +11 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "EUR",
-      "rank": 4,
+      "rank": 3,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -90,11 +69,11 @@
         "Bank of France: Great uncertainty on growth assessment.",
         "French Foreign Minister Barrot: There will be EU sanctions against Iran."
       ],
-      "rationale": "12 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
+      "rank": 3,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -102,7 +81,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 9h",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 8.9h",
       "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -113,11 +92,11 @@
     },
     {
       "currency": "AUD",
-      "rank": 6,
-      "score": -15,
-      "bias": "bajista",
-      "structural": -15,
-      "impulse": null,
+      "rank": 5,
+      "score": -1,
+      "bias": "neutral",
+      "structural": -1,
+      "impulse": 13,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -126,10 +105,10 @@
       "no_evidence": false,
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
-        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
+        "Dato real fuerte: AUSTRALIAN CONSUMER SENTIMENT ACTUAL -2.7% (FORECAST -, ",
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
       ],
-      "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + FISCAL_NFA · Est -1 | Imp 3h +13. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -151,12 +130,32 @@
       "rationale": "3 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -15 | Imp 3h n/d. Régimen real mixed."
     },
     {
+      "currency": "JPY",
+      "rank": 7,
+      "score": -25,
+      "bias": "bajista",
+      "structural": -25,
+      "impulse": -20,
+      "ficha_v6": "B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real suave: JAPANESE ALL HOUSEHOLD SPENDING YOY ACTUAL -6.8% (FORECAS",
+        "Dato real suave: JAPANESE ALL HOUSEHOLD SPENDING MOM ACTUAL -2.8% (FORECAS",
+        "Dato real suave: JAPANESE LEADING INDICATOR CHANGE ACTUAL -1.6 (FORECAST -"
+      ],
+      "rationale": "22 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -25 | Imp 3h -20. Régimen real mixed."
+    },
+    {
       "currency": "CAD",
       "rank": 8,
       "score": -59,
       "bias": "bajista",
       "structural": -59,
-      "impulse": -20,
+      "impulse": -19,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -168,7 +167,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -20. Régimen real mixed."
+      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -19. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -194,42 +193,21 @@
     {
       "currency": "CHF",
       "rank": 1,
-      "score": 26,
+      "score": 21,
       "bias": "alcista",
-      "structural": 26,
+      "structural": 21,
       "impulse": 15,
-      "ficha_v6": "EA-1",
+      "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
       "calendar_lock_detail": null,
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Acuerdo comercial / sector exterior (C1/EA-1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "17 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +26 | Imp 3h +15. Régimen real mixed."
-    },
-    {
-      "currency": "JPY",
-      "rank": 2,
-      "score": 11,
-      "bias": "neutral",
-      "structural": 11,
-      "impulse": 15,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Dato real suave: JAPANESE LEADING INDICATOR CHANGE ACTUAL -1.6 (FORECAST -",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
-      ],
-      "rationale": "19 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +11 | Imp 3h +15. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h +15. Régimen real mixed."
     },
     {
       "currency": "USD",
@@ -241,7 +219,7 @@
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 9.5h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 9.4h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -249,11 +227,11 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "43 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +11 | Imp 3h +11. Régimen real mixed."
+      "rationale": "41 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +11 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "EUR",
-      "rank": 4,
+      "rank": 3,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -269,11 +247,11 @@
         "Bank of France: Great uncertainty on growth assessment.",
         "French Foreign Minister Barrot: There will be EU sanctions against Iran."
       ],
-      "rationale": "12 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
+      "rank": 3,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -281,7 +259,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 9h",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 8.9h",
       "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -292,11 +270,11 @@
     },
     {
       "currency": "AUD",
-      "rank": 6,
-      "score": -15,
-      "bias": "bajista",
-      "structural": -15,
-      "impulse": null,
+      "rank": 5,
+      "score": -1,
+      "bias": "neutral",
+      "structural": -1,
+      "impulse": 13,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -305,10 +283,10 @@
       "no_evidence": false,
       "drivers": [
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
-        "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
+        "Dato real fuerte: AUSTRALIAN CONSUMER SENTIMENT ACTUAL -2.7% (FORECAST -, ",
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
       ],
-      "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + FISCAL_NFA · Est -1 | Imp 3h +13. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -330,12 +308,32 @@
       "rationale": "3 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -15 | Imp 3h n/d. Régimen real mixed."
     },
     {
+      "currency": "JPY",
+      "rank": 7,
+      "score": -25,
+      "bias": "bajista",
+      "structural": -25,
+      "impulse": -20,
+      "ficha_v6": "B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Dato real suave: JAPANESE ALL HOUSEHOLD SPENDING YOY ACTUAL -6.8% (FORECAS",
+        "Dato real suave: JAPANESE ALL HOUSEHOLD SPENDING MOM ACTUAL -2.8% (FORECAS",
+        "Dato real suave: JAPANESE LEADING INDICATOR CHANGE ACTUAL -1.6 (FORECAST -"
+      ],
+      "rationale": "22 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est -25 | Imp 3h -20. Régimen real mixed."
+    },
+    {
       "currency": "CAD",
       "rank": 8,
       "score": -59,
       "bias": "bajista",
       "structural": -59,
-      "impulse": -20,
+      "impulse": -19,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -347,7 +345,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -20. Régimen real mixed."
+      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -19. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -360,7 +358,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -18.5,
+      "hours_from_now": -18.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -372,7 +370,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -16.5,
+      "hours_from_now": -16.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -384,7 +382,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -14,
+      "hours_from_now": -14.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -420,7 +418,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.8,
+      "hours_from_now": -9.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -432,7 +430,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -8.5,
+      "hours_from_now": -8.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -444,7 +442,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.5,
+      "hours_from_now": -8.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -468,7 +466,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.1,
+      "hours_from_now": -6.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -477,10 +475,10 @@
       "title": "Westpac Consumer Sentiment",
       "event_at": "2026-11-09T23:30:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 0,
+      "hours_from_now": -0.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -489,10 +487,10 @@
       "title": "Household Spending y/y",
       "event_at": "2026-11-09T23:30:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 0,
+      "hours_from_now": -0.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -504,7 +502,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 0.3,
+      "hours_from_now": 0.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -516,7 +514,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.3,
+      "hours_from_now": 0.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -528,7 +526,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 0.3,
+      "hours_from_now": 0.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -540,7 +538,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 0.5,
+      "hours_from_now": 0.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -552,7 +550,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 1,
+      "hours_from_now": 0.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -564,7 +562,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 4.1,
+      "hours_from_now": 4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -576,7 +574,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": 5.5,
+      "hours_from_now": 5.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -588,7 +586,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9,
+      "hours_from_now": 8.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -600,7 +598,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.5,
+      "hours_from_now": 9.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -612,7 +610,7 @@
       "actual": null,
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": 11.5,
+      "hours_from_now": 11.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -624,7 +622,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 12,
+      "hours_from_now": 11.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -636,7 +634,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13,
+      "hours_from_now": 12.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -660,7 +658,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 14,
+      "hours_from_now": 13.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -672,7 +670,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 14,
+      "hours_from_now": 13.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -684,7 +682,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.3,
+      "hours_from_now": 16.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -696,7 +694,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 18.5,
+      "hours_from_now": 18.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -708,7 +706,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 19,
+      "hours_from_now": 18.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -720,7 +718,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 19,
+      "hours_from_now": 18.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -732,7 +730,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 19,
+      "hours_from_now": 18.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -744,7 +742,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21,
+      "hours_from_now": 20.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -756,7 +754,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22,
+      "hours_from_now": 21.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -768,7 +766,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24,
+      "hours_from_now": 23.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -780,7 +778,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24,
+      "hours_from_now": 23.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -792,7 +790,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 24.3,
+      "hours_from_now": 24.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -804,7 +802,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 30.5,
+      "hours_from_now": 30.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -816,7 +814,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 31.5,
+      "hours_from_now": 31.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -828,7 +826,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.5,
+      "hours_from_now": 31.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -852,7 +850,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 33.5,
+      "hours_from_now": 33.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -876,7 +874,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 35.1,
+      "hours_from_now": 35,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -888,7 +886,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.5,
+      "hours_from_now": 37.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -900,7 +898,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.5,
+      "hours_from_now": 37.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -928,6 +926,126 @@
   },
   "items": [
     {
+      "id": "f3d50e40e6c5e3f1b12ef0c7e172b82fd9cfe7725e53e59ca8768974376ddc8f",
+      "sha256": "f3d50e40e6c5e3f1b12ef0c7e172b82fd9cfe7725e53e59ca8768974376ddc8f",
+      "title": "JAPANESE ALL HOUSEHOLD SPENDING MOM ACTUAL -2.8% (FORECAST -, PREVIOUS 0.1%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145837",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:53.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "B2",
+      "mmt_lens": "CONTRACCION_REAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "-2.8%",
+      "forecast": null,
+      "previous": "0.1%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "afac5c9c50a958b6c8f328cace2f8bb3fd8e88664b5443e5031dffad4d8c2ff3",
+      "sha256": "afac5c9c50a958b6c8f328cace2f8bb3fd8e88664b5443e5031dffad4d8c2ff3",
+      "title": "JAPANESE ALL HOUSEHOLD SPENDING YOY ACTUAL -6.8% (FORECAST -3%, PREVIOUS -3.1%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145836",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:43.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "B2",
+      "mmt_lens": "CONTRACCION_REAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "-6.8%",
+      "forecast": "-3%",
+      "previous": "-3.1%",
+      "calendar_title": "Household Spending y/y",
+      "z": -25.3
+    },
+    {
+      "id": "401540494e7c6c47012d774a0c4bdcb64ba520fd845a664050a91a0a6a53bbbf",
+      "sha256": "401540494e7c6c47012d774a0c4bdcb64ba520fd845a664050a91a0a6a53bbbf",
+      "title": "Australia November Westpac-MI consumer confidence index declines 2.7% to 78.2",
+      "url": "https://t.me/FinancialJuice/145834",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:39.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ced21bccac6ba1b9cf3cc2d854fd91340dbe57bcdcb549095e1fcb8fbdaeb297",
+      "sha256": "ced21bccac6ba1b9cf3cc2d854fd91340dbe57bcdcb549095e1fcb8fbdaeb297",
+      "title": "Japan September household spending falls 2.8% month on month, government says (Poll: 0.3%)",
+      "url": "https://t.me/FinancialJuice/145835",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:39.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
       "sha256": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
       "title": "Blackrock an ai spending slowdown in 2027 would hurt markets but could also lower yields",
@@ -951,6 +1069,66 @@
       "forecast": null,
       "previous": null,
       "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4a38ba52ac961f0c83c05f468271031cdb496aec8a4977e6b605db8229126083",
+      "sha256": "4a38ba52ac961f0c83c05f468271031cdb496aec8a4977e6b605db8229126083",
+      "title": "Japan Sept household spending down 6.7% year/year: govt (Poll: -3.1%)",
+      "url": "https://t.me/FinancialJuice/145833",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:34.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "18a37c714b4b83d2ad11aadae5cf58b6312577474e88ba335902a5a15e39b76c",
+      "sha256": "18a37c714b4b83d2ad11aadae5cf58b6312577474e88ba335902a5a15e39b76c",
+      "title": "AUSTRALIAN CONSUMER SENTIMENT ACTUAL -2.7% (FORECAST -, PREVIOUS -4.7%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145832",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:25.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "-2.7%",
+      "forecast": null,
+      "previous": "-4.7%",
+      "calendar_title": "Westpac Consumer Sentiment",
       "z": null
     },
     {
@@ -7726,176 +7904,6 @@
       "legacy_category": "analisis",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "be10f02fb5103c5dfd6f510c417a59e1d2c5862b6b21df5d62b145ddcc7a140d",
-      "sha256": "be10f02fb5103c5dfd6f510c417a59e1d2c5862b6b21df5d62b145ddcc7a140d",
-      "title": "UBS Global Research 2027 Outlook: Expects S&P 500 index to hit 8900 by year-end.",
-      "url": "https://t.me/FinancialJuice/145644",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T12:02:20.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fc509cb410538cc9f96d7b2142aa3ee92a9c5ebbfc81259c850802c2fd2b0830",
-      "sha256": "fc509cb410538cc9f96d7b2142aa3ee92a9c5ebbfc81259c850802c2fd2b0830",
-      "title": "UBS Global Research 2027 Outlook: Expects Stoxx 600 index to hit 750 by year-end.",
-      "url": "https://t.me/FinancialJuice/145643",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T12:01:54.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f52d9b6274e75502ed49d996f2d9d65574855c712bfa8ac5c60320a3d4be699f",
-      "sha256": "f52d9b6274e75502ed49d996f2d9d65574855c712bfa8ac5c60320a3d4be699f",
-      "title": "Solana remains skewed to the downside amid negative macro backdrop as us cpi looms",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T12:00:33.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c4df985160644b2eb6d2a13317ec77cbc5450666d76f669fe44066016259209c",
-      "sha256": "c4df985160644b2eb6d2a13317ec77cbc5450666d76f669fe44066016259209c",
-      "title": "Are you into weird, esoteric financial history memorabilia?",
-      "url": "https://www.ft.com/content/5c0d0477-39cb-4d7b-80c7-f536ae7d90ee",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T12:00:01.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "859f19a307e7f4ef293bf30c7cd4d3a6a7aab5f6349261a750909131d6920022",
-      "sha256": "859f19a307e7f4ef293bf30c7cd4d3a6a7aab5f6349261a750909131d6920022",
-      "title": "Address to the United States Studies Centre - Treasury.gov.au",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE05QmlzREp2VHZWMzhmNUtMTHFKSGgxN1kwRFUwUU0xWnQ3YXR3U0xyb0FtaGJLNTJWcU9JSC1FS3p2Ui1Vb1ZDdjQxbmZEVlFQMmMzZHRDOFB4MWY4UTl3QUdmblFVc3RxeE5Nc0doU253NXNYXzliaQ?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T12:00:00.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0fb92840bc11da0f409246150f2d52b76ee8034f67b0db88291f830c6458a22c",
-      "sha256": "0fb92840bc11da0f409246150f2d52b76ee8034f67b0db88291f830c6458a22c",
-      "title": "UK PM Burnham: No decision has been made yet on cut to 2030 electric vehicle sales target.",
-      "url": "https://t.me/FinancialJuice/145642",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T11:55:38.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
@@ -7907,6 +7915,126 @@
   ],
   "news": [
     {
+      "id": "f3d50e40e6c5e3f1b12ef0c7e172b82fd9cfe7725e53e59ca8768974376ddc8f",
+      "sha256": "f3d50e40e6c5e3f1b12ef0c7e172b82fd9cfe7725e53e59ca8768974376ddc8f",
+      "title": "JAPANESE ALL HOUSEHOLD SPENDING MOM ACTUAL -2.8% (FORECAST -, PREVIOUS 0.1%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145837",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:53.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "B2",
+      "mmt_lens": "CONTRACCION_REAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "-2.8%",
+      "forecast": null,
+      "previous": "0.1%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "afac5c9c50a958b6c8f328cace2f8bb3fd8e88664b5443e5031dffad4d8c2ff3",
+      "sha256": "afac5c9c50a958b6c8f328cace2f8bb3fd8e88664b5443e5031dffad4d8c2ff3",
+      "title": "JAPANESE ALL HOUSEHOLD SPENDING YOY ACTUAL -6.8% (FORECAST -3%, PREVIOUS -3.1%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145836",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:43.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "B2",
+      "mmt_lens": "CONTRACCION_REAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "-6.8%",
+      "forecast": "-3%",
+      "previous": "-3.1%",
+      "calendar_title": "Household Spending y/y",
+      "z": -25.3
+    },
+    {
+      "id": "401540494e7c6c47012d774a0c4bdcb64ba520fd845a664050a91a0a6a53bbbf",
+      "sha256": "401540494e7c6c47012d774a0c4bdcb64ba520fd845a664050a91a0a6a53bbbf",
+      "title": "Australia November Westpac-MI consumer confidence index declines 2.7% to 78.2",
+      "url": "https://t.me/FinancialJuice/145834",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:39.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ced21bccac6ba1b9cf3cc2d854fd91340dbe57bcdcb549095e1fcb8fbdaeb297",
+      "sha256": "ced21bccac6ba1b9cf3cc2d854fd91340dbe57bcdcb549095e1fcb8fbdaeb297",
+      "title": "Japan September household spending falls 2.8% month on month, government says (Poll: 0.3%)",
+      "url": "https://t.me/FinancialJuice/145835",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:39.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
       "sha256": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
       "title": "Blackrock an ai spending slowdown in 2027 would hurt markets but could also lower yields",
@@ -7930,6 +8058,66 @@
       "forecast": null,
       "previous": null,
       "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4a38ba52ac961f0c83c05f468271031cdb496aec8a4977e6b605db8229126083",
+      "sha256": "4a38ba52ac961f0c83c05f468271031cdb496aec8a4977e6b605db8229126083",
+      "title": "Japan Sept household spending down 6.7% year/year: govt (Poll: -3.1%)",
+      "url": "https://t.me/FinancialJuice/145833",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:34.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "18a37c714b4b83d2ad11aadae5cf58b6312577474e88ba335902a5a15e39b76c",
+      "sha256": "18a37c714b4b83d2ad11aadae5cf58b6312577474e88ba335902a5a15e39b76c",
+      "title": "AUSTRALIAN CONSUMER SENTIMENT ACTUAL -2.7% (FORECAST -, PREVIOUS -4.7%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145832",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T23:30:25.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "-2.7%",
+      "forecast": null,
+      "previous": "-4.7%",
+      "calendar_title": "Westpac Consumer Sentiment",
       "z": null
     },
     {
@@ -14705,176 +14893,6 @@
       "legacy_category": "analisis",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "be10f02fb5103c5dfd6f510c417a59e1d2c5862b6b21df5d62b145ddcc7a140d",
-      "sha256": "be10f02fb5103c5dfd6f510c417a59e1d2c5862b6b21df5d62b145ddcc7a140d",
-      "title": "UBS Global Research 2027 Outlook: Expects S&P 500 index to hit 8900 by year-end.",
-      "url": "https://t.me/FinancialJuice/145644",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T12:02:20.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fc509cb410538cc9f96d7b2142aa3ee92a9c5ebbfc81259c850802c2fd2b0830",
-      "sha256": "fc509cb410538cc9f96d7b2142aa3ee92a9c5ebbfc81259c850802c2fd2b0830",
-      "title": "UBS Global Research 2027 Outlook: Expects Stoxx 600 index to hit 750 by year-end.",
-      "url": "https://t.me/FinancialJuice/145643",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T12:01:54.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f52d9b6274e75502ed49d996f2d9d65574855c712bfa8ac5c60320a3d4be699f",
-      "sha256": "f52d9b6274e75502ed49d996f2d9d65574855c712bfa8ac5c60320a3d4be699f",
-      "title": "Solana remains skewed to the downside amid negative macro backdrop as us cpi looms",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T12:00:33.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c4df985160644b2eb6d2a13317ec77cbc5450666d76f669fe44066016259209c",
-      "sha256": "c4df985160644b2eb6d2a13317ec77cbc5450666d76f669fe44066016259209c",
-      "title": "Are you into weird, esoteric financial history memorabilia?",
-      "url": "https://www.ft.com/content/5c0d0477-39cb-4d7b-80c7-f536ae7d90ee",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T12:00:01.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "859f19a307e7f4ef293bf30c7cd4d3a6a7aab5f6349261a750909131d6920022",
-      "sha256": "859f19a307e7f4ef293bf30c7cd4d3a6a7aab5f6349261a750909131d6920022",
-      "title": "Address to the United States Studies Centre - Treasury.gov.au",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE05QmlzREp2VHZWMzhmNUtMTHFKSGgxN1kwRFUwUU0xWnQ3YXR3U0xyb0FtaGJLNTJWcU9JSC1FS3p2Ui1Vb1ZDdjQxbmZEVlFQMmMzZHRDOFB4MWY4UTl3QUdmblFVc3RxeE5Nc0doU253NXNYXzliaQ?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T12:00:00.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0fb92840bc11da0f409246150f2d52b76ee8034f67b0db88291f830c6458a22c",
-      "sha256": "0fb92840bc11da0f409246150f2d52b76ee8034f67b0db88291f830c6458a22c",
-      "title": "UK PM Burnham: No decision has been made yet on cut to 2030 electric vehicle sales target.",
-      "url": "https://t.me/FinancialJuice/145642",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T11:55:38.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
