@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T01:28:40.517Z",
-  "started_at": "2026-11-09T01:28:36.960Z",
+  "generated_at": "2026-11-09T01:33:44.567Z",
+  "started_at": "2026-11-09T01:33:42.109Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,22 +15,22 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 36,
+      "score": 31,
       "bias": "alcista",
-      "structural": 36,
-      "impulse": 19,
+      "structural": 31,
+      "impulse": 14,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 12.2h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 12.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
+        "CPI vs consenso",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "38 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + RISK_GEO + FISCAL_NFA · Est +36 | Imp 3h +19. Régimen real mixed."
+      "rationale": "38 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RELATIVE_PRICE + RISK_GEO + POLICY_PRICE · Est +31 | Imp 3h +14. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -38,7 +38,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 9,
+      "impulse": 8,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -48,7 +48,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "23 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +9. Régimen real mixed."
+      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +8. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -67,7 +67,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "31 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +14 | Imp 3h +4. Régimen real mixed."
+      "rationale": "28 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +14 | Imp 3h +4. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -152,7 +152,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": -9,
+      "impulse": -8,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -163,7 +163,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -9. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -8. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -189,22 +189,22 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 36,
+      "score": 31,
       "bias": "alcista",
-      "structural": 36,
-      "impulse": 19,
+      "structural": 31,
+      "impulse": 14,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 12.2h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 12.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
+        "CPI vs consenso",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "38 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + RISK_GEO + FISCAL_NFA · Est +36 | Imp 3h +19. Régimen real mixed."
+      "rationale": "38 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RELATIVE_PRICE + RISK_GEO + POLICY_PRICE · Est +31 | Imp 3h +14. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -212,7 +212,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 9,
+      "impulse": 8,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -222,7 +222,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "23 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +9. Régimen real mixed."
+      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +8. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -241,7 +241,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "31 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +14 | Imp 3h +4. Régimen real mixed."
+      "rationale": "28 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +14 | Imp 3h +4. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -326,7 +326,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": -9,
+      "impulse": -8,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -337,7 +337,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -9. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -8. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -350,7 +350,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3,
+      "hours_from_now": -3.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -362,7 +362,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": 3.5,
+      "hours_from_now": 3.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -374,7 +374,7 @@
       "actual": null,
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": 5.5,
+      "hours_from_now": 5.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -386,7 +386,7 @@
       "actual": null,
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": 8,
+      "hours_from_now": 7.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -398,7 +398,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 8.8,
+      "hours_from_now": 8.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -410,7 +410,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 8.8,
+      "hours_from_now": 8.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -422,7 +422,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 12.2,
+      "hours_from_now": 12.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -434,7 +434,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": 13.5,
+      "hours_from_now": 13.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -446,7 +446,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13.5,
+      "hours_from_now": 13.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -458,7 +458,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.8,
+      "hours_from_now": 15.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -482,7 +482,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 22,
+      "hours_from_now": 21.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -494,7 +494,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 22,
+      "hours_from_now": 21.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -506,7 +506,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 22.4,
+      "hours_from_now": 22.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -518,7 +518,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22.4,
+      "hours_from_now": 22.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -530,7 +530,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 22.4,
+      "hours_from_now": 22.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -554,7 +554,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 23,
+      "hours_from_now": 22.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -566,7 +566,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 26.1,
+      "hours_from_now": 26,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -578,7 +578,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 27.5,
+      "hours_from_now": 27.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -590,7 +590,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31,
+      "hours_from_now": 30.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -602,7 +602,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.5,
+      "hours_from_now": 31.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -614,7 +614,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 33.5,
+      "hours_from_now": 33.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -626,7 +626,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 34.1,
+      "hours_from_now": 34,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -638,7 +638,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35,
+      "hours_from_now": 34.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -650,7 +650,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.8,
+      "hours_from_now": 35.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -662,7 +662,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 36,
+      "hours_from_now": 35.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -674,7 +674,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 36,
+      "hours_from_now": 35.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -686,7 +686,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.4,
+      "hours_from_now": 38.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -710,7 +710,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -722,7 +722,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -734,7 +734,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -746,7 +746,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43,
+      "hours_from_now": 42.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -758,7 +758,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44,
+      "hours_from_now": 43.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -770,7 +770,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46,
+      "hours_from_now": 45.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -782,7 +782,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46,
+      "hours_from_now": 45.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -794,7 +794,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 46.4,
+      "hours_from_now": 46.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -810,6 +810,212 @@
   },
   "items": [
     {
+      "id": "a73fbd3d7a2ca75ac2a1e94d2bfae89bda3f73d125ec8820d201a1fdefef4e9e",
+      "sha256": "a73fbd3d7a2ca75ac2a1e94d2bfae89bda3f73d125ec8820d201a1fdefef4e9e",
+      "title": "China: October food CPI falls 2.9% year on year; non-food CPI rises 1.5%",
+      "url": "https://t.me/FinancialJuice/145599",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:31:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9e32654fcfd1b8e3933dd180d37fec62e452abcbd941f22f2391e8600e9f7084",
+      "sha256": "9e32654fcfd1b8e3933dd180d37fec62e452abcbd941f22f2391e8600e9f7084",
+      "title": "CHINESE CPI MOM ACTUAL 0.0% (FORECAST -, PREVIOUS 0.2%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145600",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:31:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.0%",
+      "forecast": null,
+      "previous": "0.2%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "21f704f39f1df1081545b3bde239801caf5e5b468e3aacfe8030ccdeae8f21a3",
+      "sha256": "21f704f39f1df1081545b3bde239801caf5e5b468e3aacfe8030ccdeae8f21a3",
+      "title": "China october cpi unchanged from previous month: poll matches 0.0%",
+      "url": "https://t.me/FinancialJuice/145598",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:53.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "eabee25da5d890140412e843cd839045b266e26a06d99d8170c2ded8b5c7e9e8",
+      "sha256": "eabee25da5d890140412e843cd839045b266e26a06d99d8170c2ded8b5c7e9e8",
+      "title": "‼ BREAKING: CHINESE CPI YOY ACTUAL 0.7% (FORECAST 0.8%, PREVIOUS 0.9%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145597",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:52.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.7%",
+      "forecast": "0.8%",
+      "previous": "0.9%",
+      "calendar_title": null,
+      "z": -0.7
+    },
+    {
+      "id": "289cd7acb11003599ab840b766a341877dc853db50a711a838dbaf23ac471878",
+      "sha256": "289cd7acb11003599ab840b766a341877dc853db50a711a838dbaf23ac471878",
+      "title": "❗ CHINESE PPI YOY ACTUAL 5.7% (FORECAST 5.3%, PREVIOUS 5.0%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145596",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:48.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "5.7%",
+      "forecast": "5.3%",
+      "previous": "5.0%",
+      "calendar_title": null,
+      "z": 1.9
+    },
+    {
+      "id": "bee2c1256e621d44dc1e233ddf779f4622b5d241376be85f2dfb05de94753465",
+      "sha256": "bee2c1256e621d44dc1e233ddf779f4622b5d241376be85f2dfb05de94753465",
+      "title": "China October producer prices rise 0.7% month on month",
+      "url": "https://t.me/FinancialJuice/145595",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:45.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "56be149286ecb97c6863fb7dde413cc9de1c304672feba2cf41a9c948f04745a",
+      "sha256": "56be149286ecb97c6863fb7dde413cc9de1c304672feba2cf41a9c948f04745a",
+      "title": "China October CPI rises 0.7% year on year, poll expected 0.8%",
+      "url": "https://t.me/FinancialJuice/145594",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:41.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "0.8%",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "af70dcca45b9eb964e73906b4cd720ae78c7c278ebfa42ef35854c42a9f37fba",
       "sha256": "af70dcca45b9eb964e73906b4cd720ae78c7c278ebfa42ef35854c42a9f37fba",
       "title": "China cbank injects 182 billion yuan via overnight reverse repos at 1.25%: statement",
@@ -7628,200 +7834,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2d8fc90ce9656cdf2b29c384779431106c60d1a441d4525b25d4e730ad62d534",
-      "sha256": "2d8fc90ce9656cdf2b29c384779431106c60d1a441d4525b25d4e730ad62d534",
-      "title": "US stocks rebound after tech rout",
-      "url": "https://www.ft.com/content/642b32dc-e3a1-4df8-ae91-5c84bdeb89e0?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:59:54.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6f746778de5759db0e411b83d30a92951d66b0505b3fb7d22409904f31abd6e5",
-      "sha256": "6f746778de5759db0e411b83d30a92951d66b0505b3fb7d22409904f31abd6e5",
-      "title": "Us presses china to honor busan trade truce as rare earth shipments fall short",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:50:13.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f52785600c7157e2d79f181babd63e8f6f5bbec6e69b50e6209240d9788fe529",
-      "sha256": "f52785600c7157e2d79f181babd63e8f6f5bbec6e69b50e6209240d9788fe529",
-      "title": "DIRECTO ESPECIAL PARAGUAY: DIMISIÓN DE SANTIAGO PEÑA, COLAPSO BANCARIO Y CRISIS TOTAL EN ASUNCIÓN",
-      "url": "https://t.me/negociostv/60391",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:48:51.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ba9c50898480e9702162b4f01b5cc6b202db6b6a6eb3d379d8abd6d390e26456",
-      "sha256": "ba9c50898480e9702162b4f01b5cc6b202db6b6a6eb3d379d8abd6d390e26456",
-      "title": "European stocks fall into the weekend as wall street rebounds",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:35:13.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8af6e9b6a121061e6b261297e2bc43b6f022d3c60d832bb45f18ccc6c51e530d",
-      "sha256": "8af6e9b6a121061e6b261297e2bc43b6f022d3c60d832bb45f18ccc6c51e530d",
-      "title": "Fed's Bowman Speaks - Rgister Here",
-      "url": "https://t.me/FinancialJuice/145381",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T17:13:01.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "83d97d166f131eea681f8b5ebdf9a8d2124294f9fed107f60519f8a4505b09b1",
-      "sha256": "83d97d166f131eea681f8b5ebdf9a8d2124294f9fed107f60519f8a4505b09b1",
-      "title": "Boj s ueda consumer prices now around 3 and expected to rise further into early next year",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:00:22.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c3682953c95c9bc0fc49cfabe8f0d21ce3f66ae112ec9f194f9d1ad2e3058fbc",
-      "sha256": "c3682953c95c9bc0fc49cfabe8f0d21ce3f66ae112ec9f194f9d1ad2e3058fbc",
-      "title": "2026-11-06 - Issued SNB Bills",
-      "url": "https://www.snb.ch/en/publications/financial-markets/snb_bills_res",
-      "source": "SNB",
-      "source_id": "snb-bills",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T17:00:00.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7831,6 +7843,212 @@
   ],
   "news": [
     {
+      "id": "a73fbd3d7a2ca75ac2a1e94d2bfae89bda3f73d125ec8820d201a1fdefef4e9e",
+      "sha256": "a73fbd3d7a2ca75ac2a1e94d2bfae89bda3f73d125ec8820d201a1fdefef4e9e",
+      "title": "China: October food CPI falls 2.9% year on year; non-food CPI rises 1.5%",
+      "url": "https://t.me/FinancialJuice/145599",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:31:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9e32654fcfd1b8e3933dd180d37fec62e452abcbd941f22f2391e8600e9f7084",
+      "sha256": "9e32654fcfd1b8e3933dd180d37fec62e452abcbd941f22f2391e8600e9f7084",
+      "title": "CHINESE CPI MOM ACTUAL 0.0% (FORECAST -, PREVIOUS 0.2%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145600",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:31:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.0%",
+      "forecast": null,
+      "previous": "0.2%",
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "21f704f39f1df1081545b3bde239801caf5e5b468e3aacfe8030ccdeae8f21a3",
+      "sha256": "21f704f39f1df1081545b3bde239801caf5e5b468e3aacfe8030ccdeae8f21a3",
+      "title": "China october cpi unchanged from previous month: poll matches 0.0%",
+      "url": "https://t.me/FinancialJuice/145598",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:53.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "eabee25da5d890140412e843cd839045b266e26a06d99d8170c2ded8b5c7e9e8",
+      "sha256": "eabee25da5d890140412e843cd839045b266e26a06d99d8170c2ded8b5c7e9e8",
+      "title": "‼ BREAKING: CHINESE CPI YOY ACTUAL 0.7% (FORECAST 0.8%, PREVIOUS 0.9%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145597",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:52.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.7%",
+      "forecast": "0.8%",
+      "previous": "0.9%",
+      "calendar_title": null,
+      "z": -0.7
+    },
+    {
+      "id": "289cd7acb11003599ab840b766a341877dc853db50a711a838dbaf23ac471878",
+      "sha256": "289cd7acb11003599ab840b766a341877dc853db50a711a838dbaf23ac471878",
+      "title": "❗ CHINESE PPI YOY ACTUAL 5.7% (FORECAST 5.3%, PREVIOUS 5.0%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145596",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:48.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "5.7%",
+      "forecast": "5.3%",
+      "previous": "5.0%",
+      "calendar_title": null,
+      "z": 1.9
+    },
+    {
+      "id": "bee2c1256e621d44dc1e233ddf779f4622b5d241376be85f2dfb05de94753465",
+      "sha256": "bee2c1256e621d44dc1e233ddf779f4622b5d241376be85f2dfb05de94753465",
+      "title": "China October producer prices rise 0.7% month on month",
+      "url": "https://t.me/FinancialJuice/145595",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:45.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "56be149286ecb97c6863fb7dde413cc9de1c304672feba2cf41a9c948f04745a",
+      "sha256": "56be149286ecb97c6863fb7dde413cc9de1c304672feba2cf41a9c948f04745a",
+      "title": "China October CPI rises 0.7% year on year, poll expected 0.8%",
+      "url": "https://t.me/FinancialJuice/145594",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T01:30:41.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "0.8%",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "af70dcca45b9eb964e73906b4cd720ae78c7c278ebfa42ef35854c42a9f37fba",
       "sha256": "af70dcca45b9eb964e73906b4cd720ae78c7c278ebfa42ef35854c42a9f37fba",
       "title": "China cbank injects 182 billion yuan via overnight reverse repos at 1.25%: statement",
@@ -14649,200 +14867,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2d8fc90ce9656cdf2b29c384779431106c60d1a441d4525b25d4e730ad62d534",
-      "sha256": "2d8fc90ce9656cdf2b29c384779431106c60d1a441d4525b25d4e730ad62d534",
-      "title": "US stocks rebound after tech rout",
-      "url": "https://www.ft.com/content/642b32dc-e3a1-4df8-ae91-5c84bdeb89e0?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:59:54.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6f746778de5759db0e411b83d30a92951d66b0505b3fb7d22409904f31abd6e5",
-      "sha256": "6f746778de5759db0e411b83d30a92951d66b0505b3fb7d22409904f31abd6e5",
-      "title": "Us presses china to honor busan trade truce as rare earth shipments fall short",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:50:13.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f52785600c7157e2d79f181babd63e8f6f5bbec6e69b50e6209240d9788fe529",
-      "sha256": "f52785600c7157e2d79f181babd63e8f6f5bbec6e69b50e6209240d9788fe529",
-      "title": "DIRECTO ESPECIAL PARAGUAY: DIMISIÓN DE SANTIAGO PEÑA, COLAPSO BANCARIO Y CRISIS TOTAL EN ASUNCIÓN",
-      "url": "https://t.me/negociostv/60391",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:48:51.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ba9c50898480e9702162b4f01b5cc6b202db6b6a6eb3d379d8abd6d390e26456",
-      "sha256": "ba9c50898480e9702162b4f01b5cc6b202db6b6a6eb3d379d8abd6d390e26456",
-      "title": "European stocks fall into the weekend as wall street rebounds",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:35:13.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8af6e9b6a121061e6b261297e2bc43b6f022d3c60d832bb45f18ccc6c51e530d",
-      "sha256": "8af6e9b6a121061e6b261297e2bc43b6f022d3c60d832bb45f18ccc6c51e530d",
-      "title": "Fed's Bowman Speaks - Rgister Here",
-      "url": "https://t.me/FinancialJuice/145381",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-06T17:13:01.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "83d97d166f131eea681f8b5ebdf9a8d2124294f9fed107f60519f8a4505b09b1",
-      "sha256": "83d97d166f131eea681f8b5ebdf9a8d2124294f9fed107f60519f8a4505b09b1",
-      "title": "Boj s ueda consumer prices now around 3 and expected to rise further into early next year",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T17:00:22.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c3682953c95c9bc0fc49cfabe8f0d21ce3f66ae112ec9f194f9d1ad2e3058fbc",
-      "sha256": "c3682953c95c9bc0fc49cfabe8f0d21ce3f66ae112ec9f194f9d1ad2e3058fbc",
-      "title": "2026-11-06 - Issued SNB Bills",
-      "url": "https://www.snb.ch/en/publications/financial-markets/snb_bills_res",
-      "source": "SNB",
-      "source_id": "snb-bills",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T17:00:00.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
