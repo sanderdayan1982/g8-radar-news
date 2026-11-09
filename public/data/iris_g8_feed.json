@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T21:07:46.739Z",
-  "started_at": "2026-11-09T21:07:43.599Z",
+  "generated_at": "2026-11-09T21:12:51.207Z",
+  "started_at": "2026-11-09T21:12:48.415Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,7 +18,7 @@
       "score": 26,
       "bias": "alcista",
       "structural": 26,
-      "impulse": 16,
+      "impulse": 15,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -30,35 +30,15 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +26 | Imp 3h +16. Régimen real mixed."
-    },
-    {
-      "currency": "USD",
-      "rank": 2,
-      "score": 23,
-      "bias": "alcista",
-      "structural": 23,
-      "impulse": 16,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 11.9h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Impulso ToT energético (EA-1)"
-      ],
-      "rationale": "40 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +23 | Imp 3h +16. Régimen real mixed."
+      "rationale": "17 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +26 | Imp 3h +15. Régimen real mixed."
     },
     {
       "currency": "JPY",
-      "rank": 3,
+      "rank": 2,
       "score": 11,
       "bias": "neutral",
       "structural": 11,
-      "impulse": 16,
+      "impulse": 15,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -70,7 +50,27 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "21 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +11 | Imp 3h +16. Régimen real mixed."
+      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +11 | Imp 3h +15. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 2,
+      "score": 11,
+      "bias": "neutral",
+      "structural": 11,
+      "impulse": 3,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 11.8h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
+      ],
+      "rationale": "42 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · TRADE_EXTERNAL + RISK_GEO + FISCAL_NFA · Est +11 | Imp 3h +3. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -82,7 +82,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 35.1h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 35h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -102,7 +102,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 11.4h",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 11.3h",
       "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -153,10 +153,10 @@
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -30,
+      "score": -60,
       "bias": "bajista",
-      "structural": -30,
-      "impulse": null,
+      "structural": -60,
+      "impulse": -30,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -164,18 +164,18 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "Impulso ToT energético (EA-1)"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "14 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "17 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -60 | Imp 3h -30. Régimen real mixed."
     },
     {
       "currency": "XAU",
       "rank": null,
-      "score": 8,
+      "score": 6,
       "bias": "neutral",
-      "structural": 8,
+      "structural": 6,
       "impulse": null,
       "ficha_v6": "A6 / EA-7",
       "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
@@ -187,7 +187,7 @@
         "Oro refugio / MDP: Gold futures rallied 81 then gave back 51 ",
         "Oro refugio / MDP: Gold remains skewed to the upside amid fav"
       ],
-      "rationale": "4 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +8."
+      "rationale": "3 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +6."
     }
   ],
   "g8_ranking": [
@@ -197,7 +197,7 @@
       "score": 26,
       "bias": "alcista",
       "structural": 26,
-      "impulse": 16,
+      "impulse": 15,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -209,35 +209,15 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +26 | Imp 3h +16. Régimen real mixed."
-    },
-    {
-      "currency": "USD",
-      "rank": 2,
-      "score": 23,
-      "bias": "alcista",
-      "structural": 23,
-      "impulse": 16,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 11.9h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Impulso ToT energético (EA-1)"
-      ],
-      "rationale": "40 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +23 | Imp 3h +16. Régimen real mixed."
+      "rationale": "17 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +26 | Imp 3h +15. Régimen real mixed."
     },
     {
       "currency": "JPY",
-      "rank": 3,
+      "rank": 2,
       "score": 11,
       "bias": "neutral",
       "structural": 11,
-      "impulse": 16,
+      "impulse": 15,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -249,7 +229,27 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "21 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +11 | Imp 3h +16. Régimen real mixed."
+      "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +11 | Imp 3h +15. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 2,
+      "score": 11,
+      "bias": "neutral",
+      "structural": 11,
+      "impulse": 3,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 11.8h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
+      ],
+      "rationale": "42 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · TRADE_EXTERNAL + RISK_GEO + FISCAL_NFA · Est +11 | Imp 3h +3. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -261,7 +261,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 35.1h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 35h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -281,7 +281,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 11.4h",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 11.3h",
       "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -332,10 +332,10 @@
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -30,
+      "score": -60,
       "bias": "bajista",
-      "structural": -30,
-      "impulse": null,
+      "structural": -60,
+      "impulse": -30,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -343,11 +343,11 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "Impulso ToT energético (EA-1)"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "14 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "17 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -60 | Imp 3h -30. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -360,7 +360,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -22.6,
+      "hours_from_now": -22.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -372,7 +372,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -16.1,
+      "hours_from_now": -16.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -384,7 +384,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -14.1,
+      "hours_from_now": -14.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -396,7 +396,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -11.6,
+      "hours_from_now": -11.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -408,7 +408,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10.9,
+      "hours_from_now": -11,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -420,7 +420,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10.9,
+      "hours_from_now": -11,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -444,7 +444,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -6.1,
+      "hours_from_now": -6.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -456,7 +456,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.1,
+      "hours_from_now": -6.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -468,7 +468,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.9,
+      "hours_from_now": -4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -480,7 +480,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.7,
+      "hours_from_now": -3.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -492,7 +492,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 2.4,
+      "hours_from_now": 2.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -504,7 +504,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 2.4,
+      "hours_from_now": 2.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -516,7 +516,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 2.7,
+      "hours_from_now": 2.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -528,7 +528,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.7,
+      "hours_from_now": 2.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -540,7 +540,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 2.7,
+      "hours_from_now": 2.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -552,7 +552,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 2.9,
+      "hours_from_now": 2.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -564,7 +564,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 3.4,
+      "hours_from_now": 3.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -576,7 +576,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 6.5,
+      "hours_from_now": 6.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -588,7 +588,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 7.9,
+      "hours_from_now": 7.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -600,7 +600,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.4,
+      "hours_from_now": 11.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -612,7 +612,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.9,
+      "hours_from_now": 11.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -624,7 +624,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 13.9,
+      "hours_from_now": 13.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -636,7 +636,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 14.4,
+      "hours_from_now": 14.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -648,7 +648,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.4,
+      "hours_from_now": 15.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -660,7 +660,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.1,
+      "hours_from_now": 16,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -672,7 +672,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 16.4,
+      "hours_from_now": 16.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -684,7 +684,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 16.4,
+      "hours_from_now": 16.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -696,7 +696,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.7,
+      "hours_from_now": 18.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -708,7 +708,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 20.9,
+      "hours_from_now": 20.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -720,7 +720,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.4,
+      "hours_from_now": 21.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -732,7 +732,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.4,
+      "hours_from_now": 21.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -744,7 +744,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.4,
+      "hours_from_now": 21.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -756,7 +756,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.4,
+      "hours_from_now": 23.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -768,7 +768,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24.4,
+      "hours_from_now": 24.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -780,7 +780,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 26.4,
+      "hours_from_now": 26.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -792,7 +792,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 26.4,
+      "hours_from_now": 26.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -804,7 +804,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 26.7,
+      "hours_from_now": 26.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -816,7 +816,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 32.9,
+      "hours_from_now": 32.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -828,7 +828,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 33.9,
+      "hours_from_now": 33.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -840,7 +840,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.9,
+      "hours_from_now": 33.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -852,7 +852,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.1,
+      "hours_from_now": 35,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -864,7 +864,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 35.9,
+      "hours_from_now": 35.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -876,7 +876,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.6,
+      "hours_from_now": 36.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -900,7 +900,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 39.9,
+      "hours_from_now": 39.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -912,7 +912,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 39.9,
+      "hours_from_now": 39.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -928,6 +928,128 @@
   },
   "items": [
     {
+      "id": "e1a05adabe3ba4d13948279f899a8b6b3986575b5900ab38ac67c70837f1dd32",
+      "sha256": "e1a05adabe3ba4d13948279f899a8b6b3986575b5900ab38ac67c70837f1dd32",
+      "title": "North Korea's new torpedo weapon system to enter navy service from 2027 - KCNA",
+      "url": "https://t.me/FinancialJuice/145805",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T21:11:42.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d2ffdef8963090a68b62a77e7fef8b747d9e23d259ea665845c0ac7e779a7c16",
+      "sha256": "d2ffdef8963090a68b62a77e7fef8b747d9e23d259ea665845c0ac7e779a7c16",
+      "title": "Canada's Finance Minister: Granting targeted tariff relief for certain imported goods that are in short supply in the Canadian market",
+      "url": "https://t.me/FinancialJuice/145804",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T21:11:28.000Z",
+      "currencies": [
+        "CAD",
+        "USD"
+      ],
+      "divisas": [
+        "CAD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "COST_PUSH_STAG_TRAP",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "be73b2171e77c9041e1adc0ba99ca067b05bf9e371eb8bc19a05a8ae6bede823",
+      "sha256": "be73b2171e77c9041e1adc0ba99ca067b05bf9e371eb8bc19a05a8ae6bede823",
+      "title": "Canada's finance minister: Canada tariff relief will include non-steel goods used in mining, quarrying, or the extraction of oil and gas",
+      "url": "https://t.me/FinancialJuice/145803",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T21:10:51.000Z",
+      "currencies": [
+        "CAD",
+        "USD"
+      ],
+      "divisas": [
+        "CAD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "COST_PUSH_STAG_TRAP",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "56aeb17e0ece081a95a84b01e4208f5bbe25bbc2beec6553fd20f7d432f19f79",
+      "sha256": "56aeb17e0ece081a95a84b01e4208f5bbe25bbc2beec6553fd20f7d432f19f79",
+      "title": "Canada Finance Minister: Canada modifies tariff relief measures, extending the horizontal remission for u.s. tariffs by one year, to June 30th, 2028.",
+      "url": "https://t.me/FinancialJuice/145802",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T21:10:25.000Z",
+      "currencies": [
+        "CAD",
+        "USD"
+      ],
+      "divisas": [
+        "CAD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "COST_PUSH_STAG_TRAP",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "9fc22c23ddee5ece601a5429dd3cfd0ec35851f8e8b59fe8581de12c62c2a012",
       "sha256": "9fc22c23ddee5ece601a5429dd3cfd0ec35851f8e8b59fe8581de12c62c2a012",
       "title": "DIRECTO CHOQUE GEOPOLÍTICO | CAÍDA DE NETANYAHU, PULSO NUCLEAR DE TRUMP Y PUTIN NINGUNEA A EUROPA",
@@ -7789,126 +7911,132 @@
       "previous": null,
       "calendar_title": null,
       "z": null
-    },
-    {
-      "id": "4594db694da69124036e8ae930ed2331815f318402bdc5dc20e6fd1e39234ac3",
-      "sha256": "4594db694da69124036e8ae930ed2331815f318402bdc5dc20e6fd1e39234ac3",
-      "title": "Asian stocks rebound after AI rout",
-      "url": "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T07:09:17.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4f87962b516da2d60b43ad85549f51a5a20baf3b9a4a40779695e1d2244b2e7a",
-      "sha256": "4f87962b516da2d60b43ad85549f51a5a20baf3b9a4a40779695e1d2244b2e7a",
-      "title": "GERMAN EXPORTS MOM SA ACTUAL 2% (FORECAST 0.5%, PREVIOUS -0.8%) $MACRO",
-      "url": "https://t.me/FinancialJuice/145627",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T07:00:42.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": "2%",
-      "forecast": "0.5%",
-      "previous": "-0.8%",
-      "calendar_title": null,
-      "z": 10
-    },
-    {
-      "id": "86f821b6e77719ccc64d9c60b76d67b7c4923b3622cf137a70d5786a595192f2",
-      "sha256": "86f821b6e77719ccc64d9c60b76d67b7c4923b3622cf137a70d5786a595192f2",
-      "title": "GERMAN IMPORTS MOM SA ACTUAL 4.2% (FORECAST 0.5%, PREVIOUS 0.9%) $MACRO",
-      "url": "https://t.me/FinancialJuice/145626",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T07:00:37.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": "4.2%",
-      "forecast": "0.5%",
-      "previous": "0.9%",
-      "calendar_title": null,
-      "z": 24.7
-    },
-    {
-      "id": "af0d6f68c6100ffa7db4040742ce7ac53d2e616c0b5044c3adb176588bebcbf0",
-      "sha256": "af0d6f68c6100ffa7db4040742ce7ac53d2e616c0b5044c3adb176588bebcbf0",
-      "title": "GERMAN TRADE BALANCE SA ACTUAL 15.6B (FORECAST 19.4B, PREVIOUS 19.5B) $MACRO",
-      "url": "https://t.me/FinancialJuice/145625",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T07:00:30.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 4,
-      "actual": "15.6",
-      "forecast": "19.4",
-      "previous": "19.5",
-      "calendar_title": "German Trade Balance",
-      "z": -4.9
     }
   ],
   "news": [
     {
+      "id": "e1a05adabe3ba4d13948279f899a8b6b3986575b5900ab38ac67c70837f1dd32",
+      "sha256": "e1a05adabe3ba4d13948279f899a8b6b3986575b5900ab38ac67c70837f1dd32",
+      "title": "North Korea's new torpedo weapon system to enter navy service from 2027 - KCNA",
+      "url": "https://t.me/FinancialJuice/145805",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T21:11:42.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d2ffdef8963090a68b62a77e7fef8b747d9e23d259ea665845c0ac7e779a7c16",
+      "sha256": "d2ffdef8963090a68b62a77e7fef8b747d9e23d259ea665845c0ac7e779a7c16",
+      "title": "Canada's Finance Minister: Granting targeted tariff relief for certain imported goods that are in short supply in the Canadian market",
+      "url": "https://t.me/FinancialJuice/145804",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T21:11:28.000Z",
+      "currencies": [
+        "CAD",
+        "USD"
+      ],
+      "divisas": [
+        "CAD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "COST_PUSH_STAG_TRAP",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "be73b2171e77c9041e1adc0ba99ca067b05bf9e371eb8bc19a05a8ae6bede823",
+      "sha256": "be73b2171e77c9041e1adc0ba99ca067b05bf9e371eb8bc19a05a8ae6bede823",
+      "title": "Canada's finance minister: Canada tariff relief will include non-steel goods used in mining, quarrying, or the extraction of oil and gas",
+      "url": "https://t.me/FinancialJuice/145803",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T21:10:51.000Z",
+      "currencies": [
+        "CAD",
+        "USD"
+      ],
+      "divisas": [
+        "CAD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "COST_PUSH_STAG_TRAP",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "56aeb17e0ece081a95a84b01e4208f5bbe25bbc2beec6553fd20f7d432f19f79",
+      "sha256": "56aeb17e0ece081a95a84b01e4208f5bbe25bbc2beec6553fd20f7d432f19f79",
+      "title": "Canada Finance Minister: Canada modifies tariff relief measures, extending the horizontal remission for u.s. tariffs by one year, to June 30th, 2028.",
+      "url": "https://t.me/FinancialJuice/145802",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T21:10:25.000Z",
+      "currencies": [
+        "CAD",
+        "USD"
+      ],
+      "divisas": [
+        "CAD",
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "COST_PUSH_STAG_TRAP",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "9fc22c23ddee5ece601a5429dd3cfd0ec35851f8e8b59fe8581de12c62c2a012",
       "sha256": "9fc22c23ddee5ece601a5429dd3cfd0ec35851f8e8b59fe8581de12c62c2a012",
       "title": "DIRECTO CHOQUE GEOPOLÍTICO | CAÍDA DE NETANYAHU, PULSO NUCLEAR DE TRUMP Y PUTIN NINGUNEA A EUROPA",
@@ -14770,122 +14898,6 @@
       "previous": null,
       "calendar_title": null,
       "z": null
-    },
-    {
-      "id": "4594db694da69124036e8ae930ed2331815f318402bdc5dc20e6fd1e39234ac3",
-      "sha256": "4594db694da69124036e8ae930ed2331815f318402bdc5dc20e6fd1e39234ac3",
-      "title": "Asian stocks rebound after AI rout",
-      "url": "https://www.ft.com/content/b8644327-86e7-4d1c-a71f-3fb1d552723b?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T07:09:17.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4f87962b516da2d60b43ad85549f51a5a20baf3b9a4a40779695e1d2244b2e7a",
-      "sha256": "4f87962b516da2d60b43ad85549f51a5a20baf3b9a4a40779695e1d2244b2e7a",
-      "title": "GERMAN EXPORTS MOM SA ACTUAL 2% (FORECAST 0.5%, PREVIOUS -0.8%) $MACRO",
-      "url": "https://t.me/FinancialJuice/145627",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T07:00:42.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": "2%",
-      "forecast": "0.5%",
-      "previous": "-0.8%",
-      "calendar_title": null,
-      "z": 10
-    },
-    {
-      "id": "86f821b6e77719ccc64d9c60b76d67b7c4923b3622cf137a70d5786a595192f2",
-      "sha256": "86f821b6e77719ccc64d9c60b76d67b7c4923b3622cf137a70d5786a595192f2",
-      "title": "GERMAN IMPORTS MOM SA ACTUAL 4.2% (FORECAST 0.5%, PREVIOUS 0.9%) $MACRO",
-      "url": "https://t.me/FinancialJuice/145626",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T07:00:37.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": "4.2%",
-      "forecast": "0.5%",
-      "previous": "0.9%",
-      "calendar_title": null,
-      "z": 24.7
-    },
-    {
-      "id": "af0d6f68c6100ffa7db4040742ce7ac53d2e616c0b5044c3adb176588bebcbf0",
-      "sha256": "af0d6f68c6100ffa7db4040742ce7ac53d2e616c0b5044c3adb176588bebcbf0",
-      "title": "GERMAN TRADE BALANCE SA ACTUAL 15.6B (FORECAST 19.4B, PREVIOUS 19.5B) $MACRO",
-      "url": "https://t.me/FinancialJuice/145625",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T07:00:30.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 4,
-      "actual": "15.6",
-      "forecast": "19.4",
-      "previous": "19.5",
-      "calendar_title": "German Trade Balance",
-      "z": -4.9
     }
   ],
   "health": {
