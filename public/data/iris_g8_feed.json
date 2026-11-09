@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T06:50:05.965Z",
-  "started_at": "2026-11-09T06:50:03.409Z",
+  "generated_at": "2026-11-09T07:05:17.968Z",
+  "started_at": "2026-11-09T07:05:15.099Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,11 +18,11 @@
       "score": 30,
       "bias": "alcista",
       "structural": 30,
-      "impulse": 6,
+      "impulse": 5,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 6.8h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 6.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -30,7 +30,7 @@
         "CPI vs consenso",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE · Est +30 | Imp 3h +6. Régimen real mixed."
+      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE · Est +30 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -38,7 +38,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 6,
+      "impulse": 5,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -48,14 +48,34 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "18 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +6. Régimen real mixed."
+      "rationale": "18 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +5. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 3,
+      "score": 15,
+      "bias": "alcista",
+      "structural": 15,
+      "impulse": 15,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Términos de Intercambio (EA-1): GERMAN TRADE BALANCE SA ACTUAL 15.6B (",
+        "Términos de Intercambio (EA-1): GERMAN EXPORTS MOM SA ACTUAL 2% (FOREC",
+        "Términos de Intercambio (EA-1): GERMAN IMPORTS MOM SA ACTUAL 4.2% (FOR"
+      ],
+      "rationale": "10 titulares · Ficha EA-1 (USUARIO_MONEDA) · TRADE_EXTERNAL · Est +15 | Imp 3h +15. Régimen real mixed."
     },
     {
       "currency": "JPY",
-      "rank": 3,
-      "score": 1,
+      "rank": 4,
+      "score": 2,
       "bias": "neutral",
-      "structural": 1,
+      "structural": 2,
       "impulse": -4,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -68,31 +88,11 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "28 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est +1 | Imp 3h -4. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 4,
-      "score": 0,
-      "bias": "neutral",
-      "structural": 0,
-      "impulse": null,
-      "ficha_v6": "A12 / B10 / C3",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "FLUJO_FISCAL_NFA: Operaciones / subasta / IRMA",
-        "Transcript of an interview with Klaas Knot",
-        "French foreign minister Barrot: Europeans to join Ukraine discussions in A"
-      ],
-      "rationale": "10 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · OPERATIONAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "28 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est +2 | Imp 3h -4. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
+      "rank": 5,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -100,7 +100,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 10.6h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 10.3h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -110,7 +110,7 @@
     },
     {
       "currency": "NZD",
-      "rank": 4,
+      "rank": 5,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -193,11 +193,11 @@
       "score": 30,
       "bias": "alcista",
       "structural": 30,
-      "impulse": 6,
+      "impulse": 5,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 6.8h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 6.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -205,7 +205,7 @@
         "CPI vs consenso",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE · Est +30 | Imp 3h +6. Régimen real mixed."
+      "rationale": "36 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE · Est +30 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -213,7 +213,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 6,
+      "impulse": 5,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -223,14 +223,34 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "18 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +6. Régimen real mixed."
+      "rationale": "18 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +5. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 3,
+      "score": 15,
+      "bias": "alcista",
+      "structural": 15,
+      "impulse": 15,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "Términos de Intercambio (EA-1): GERMAN TRADE BALANCE SA ACTUAL 15.6B (",
+        "Términos de Intercambio (EA-1): GERMAN EXPORTS MOM SA ACTUAL 2% (FOREC",
+        "Términos de Intercambio (EA-1): GERMAN IMPORTS MOM SA ACTUAL 4.2% (FOR"
+      ],
+      "rationale": "10 titulares · Ficha EA-1 (USUARIO_MONEDA) · TRADE_EXTERNAL · Est +15 | Imp 3h +15. Régimen real mixed."
     },
     {
       "currency": "JPY",
-      "rank": 3,
-      "score": 1,
+      "rank": 4,
+      "score": 2,
       "bias": "neutral",
-      "structural": 1,
+      "structural": 2,
       "impulse": -4,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -243,31 +263,11 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "28 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est +1 | Imp 3h -4. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 4,
-      "score": 0,
-      "bias": "neutral",
-      "structural": 0,
-      "impulse": null,
-      "ficha_v6": "A12 / B10 / C3",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "FLUJO_FISCAL_NFA: Operaciones / subasta / IRMA",
-        "Transcript of an interview with Klaas Knot",
-        "French foreign minister Barrot: Europeans to join Ukraine discussions in A"
-      ],
-      "rationale": "10 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · OPERATIONAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+      "rationale": "28 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + TRADE_EXTERNAL · Est +2 | Imp 3h -4. Régimen real mixed."
     },
     {
       "currency": "GBP",
-      "rank": 4,
+      "rank": 5,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -275,7 +275,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 10.6h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 10.3h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -285,7 +285,7 @@
     },
     {
       "currency": "NZD",
-      "rank": 4,
+      "rank": 5,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -352,7 +352,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.3,
+      "hours_from_now": -8.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +364,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -1.8,
+      "hours_from_now": -2.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -373,11 +373,11 @@
       "title": "German Trade Balance",
       "event_at": "2026-11-09T07:00:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": 0.2,
-      "window_status": "⚑BC <48h (Candado CIRO)"
+      "hours_from_now": -0.1,
+      "window_status": "✓ POST-EVENTO"
     },
     {
       "id": "cf129cfc42bc7d1e",
@@ -388,7 +388,7 @@
       "actual": null,
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": 2.7,
+      "hours_from_now": 2.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -400,7 +400,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.4,
+      "hours_from_now": 3.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -412,7 +412,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.4,
+      "hours_from_now": 3.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -424,7 +424,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.8,
+      "hours_from_now": 6.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -436,7 +436,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": 8.2,
+      "hours_from_now": 7.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -448,7 +448,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 8.2,
+      "hours_from_now": 7.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -460,7 +460,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10.4,
+      "hours_from_now": 10.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -472,7 +472,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10.6,
+      "hours_from_now": 10.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -484,7 +484,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 16.7,
+      "hours_from_now": 16.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -496,7 +496,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 16.7,
+      "hours_from_now": 16.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -508,7 +508,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 17,
+      "hours_from_now": 16.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -520,7 +520,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17,
+      "hours_from_now": 16.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -532,7 +532,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 17,
+      "hours_from_now": 16.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -544,7 +544,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 17.2,
+      "hours_from_now": 16.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -556,7 +556,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 17.7,
+      "hours_from_now": 17.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -568,7 +568,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 20.7,
+      "hours_from_now": 20.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -580,7 +580,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 22.2,
+      "hours_from_now": 21.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -592,7 +592,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.7,
+      "hours_from_now": 25.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -604,7 +604,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 26.2,
+      "hours_from_now": 25.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -616,7 +616,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 28.2,
+      "hours_from_now": 27.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -628,7 +628,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 28.7,
+      "hours_from_now": 28.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -640,7 +640,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 29.7,
+      "hours_from_now": 29.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +652,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30.4,
+      "hours_from_now": 30.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +664,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 30.7,
+      "hours_from_now": 30.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +676,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 30.7,
+      "hours_from_now": 30.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +688,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33,
+      "hours_from_now": 32.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +700,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 35.2,
+      "hours_from_now": 34.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +712,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.7,
+      "hours_from_now": 35.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +724,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.7,
+      "hours_from_now": 35.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +736,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.7,
+      "hours_from_now": 35.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +748,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.7,
+      "hours_from_now": 37.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +760,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.7,
+      "hours_from_now": 38.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -772,7 +772,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.7,
+      "hours_from_now": 40.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -784,7 +784,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.7,
+      "hours_from_now": 40.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +796,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -808,7 +808,31 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 47.2,
+      "hours_from_now": 46.9,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "03ee13aec7bf5dc4",
+      "currency": "EUR",
+      "title": "German Final CPI m/m",
+      "event_at": "2026-11-11T07:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "-0.2%",
+      "previous": "-0.2%",
+      "hours_from_now": 47.9,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "5c914190f138fa43",
+      "currency": "EUR",
+      "title": "French Bank Holiday",
+      "event_at": "2026-11-11T07:01:00.000Z",
+      "impact": "Holiday",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -824,6 +848,96 @@
   },
   "items": [
     {
+      "id": "4f87962b516da2d60b43ad85549f51a5a20baf3b9a4a40779695e1d2244b2e7a",
+      "sha256": "4f87962b516da2d60b43ad85549f51a5a20baf3b9a4a40779695e1d2244b2e7a",
+      "title": "GERMAN EXPORTS MOM SA ACTUAL 2% (FORECAST 0.5%, PREVIOUS -0.8%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145627",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T07:00:42.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 1,
+      "actual": "2%",
+      "forecast": "0.5%",
+      "previous": "-0.8%",
+      "calendar_title": null,
+      "z": 10
+    },
+    {
+      "id": "86f821b6e77719ccc64d9c60b76d67b7c4923b3622cf137a70d5786a595192f2",
+      "sha256": "86f821b6e77719ccc64d9c60b76d67b7c4923b3622cf137a70d5786a595192f2",
+      "title": "GERMAN IMPORTS MOM SA ACTUAL 4.2% (FORECAST 0.5%, PREVIOUS 0.9%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145626",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T07:00:37.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 1,
+      "actual": "4.2%",
+      "forecast": "0.5%",
+      "previous": "0.9%",
+      "calendar_title": null,
+      "z": 24.7
+    },
+    {
+      "id": "af0d6f68c6100ffa7db4040742ce7ac53d2e616c0b5044c3adb176588bebcbf0",
+      "sha256": "af0d6f68c6100ffa7db4040742ce7ac53d2e616c0b5044c3adb176588bebcbf0",
+      "title": "GERMAN TRADE BALANCE SA ACTUAL 15.6B (FORECAST 19.4B, PREVIOUS 19.5B) $MACRO",
+      "url": "https://t.me/FinancialJuice/145625",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T07:00:30.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 4,
+      "actual": "15.6",
+      "forecast": "19.4",
+      "previous": "19.5",
+      "calendar_title": "German Trade Balance",
+      "z": -4.9
+    },
+    {
       "id": "165c517b90649cad894872c5fd77eff0d83944326f8e85f097cfa8f9ad77ed08",
       "sha256": "165c517b90649cad894872c5fd77eff0d83944326f8e85f097cfa8f9ad77ed08",
       "title": "South Korea Industry Minister: Experts say unlike in the stock market, AI investment in the real economy is still robust.",
@@ -1013,7 +1127,7 @@
       "id": "1b81bb18a7b60cd2bef5aff4e506b85337bfd0206271d8729ece8dde14e62961",
       "sha256": "1b81bb18a7b60cd2bef5aff4e506b85337bfd0206271d8729ece8dde14e62961",
       "title": "Amounts Outstanding in the Call Money Market (Oct.)",
-      "url": "https://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
+      "url": "http://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -1571,7 +1685,7 @@
       "id": "78dae62664edf58560c8068ef90550e498d1392168fa404b5c0731220ce2be6d",
       "sha256": "78dae62664edf58560c8068ef90550e498d1392168fa404b5c0731220ce2be6d",
       "title": "Consumption Activity Index",
-      "url": "https://www.boj.or.jp/en/research/research_data/cai/index.htm",
+      "url": "http://www.boj.or.jp/en/research/research_data/cai/index.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -2805,7 +2919,7 @@
       "id": "b9b7f7c872701b0314ff7aa57fbc5657635e18e9aae3a3e7d710aaa460b3d6f2",
       "sha256": "b9b7f7c872701b0314ff7aa57fbc5657635e18e9aae3a3e7d710aaa460b3d6f2",
       "title": "Market Operations by the Bank of Japan (Oct.)",
-      "url": "https://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2610.xlsx",
+      "url": "http://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2610.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -2835,7 +2949,7 @@
       "id": "ae32e24cc6e9dd19850adaaa470b93a1912d254cfb159d23173ff65b5dfbb8e8",
       "sha256": "ae32e24cc6e9dd19850adaaa470b93a1912d254cfb159d23173ff65b5dfbb8e8",
       "title": "Monetary Base and the Bank of Japan's Transactions (Oct.)",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2610.pdf",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -2865,7 +2979,7 @@
       "id": "5a016016cd55d665014a453e0264df37fc4c8e3c8459797dcb8aabf0d37ab470",
       "sha256": "5a016016cd55d665014a453e0264df37fc4c8e3c8459797dcb8aabf0d37ab470",
       "title": "Bank of Japan's Transactions with the Government (Oct.)",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/tseifu/release/2026/seifu2610.pdf",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/tseifu/release/2026/seifu2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -7815,84 +7929,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0497d120df390159522195e52eb045c061408ef0bd47c9eb961a876b8f52a9c6",
-      "sha256": "0497d120df390159522195e52eb045c061408ef0bd47c9eb961a876b8f52a9c6",
-      "title": "China, U.S. agree to continue talks to maintain stable, positive trade ties - Xinhua",
-      "url": "https://t.me/FinancialJuice/145450",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-07T01:01:42.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4947cb56f527e7c85f72c4581586f963fad0dc5246f0be65728cf1c25a6e2d33",
-      "sha256": "4947cb56f527e7c85f72c4581586f963fad0dc5246f0be65728cf1c25a6e2d33",
-      "title": "China voices concerns over U.S. trade restrictions against China: Xinhua",
-      "url": "https://t.me/FinancialJuice/145451",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-07T01:01:42.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "70e1d5436a712b215769f7c1e6d4011d8237ccb4b06c6ff1363422d23c11a6ce",
-      "sha256": "70e1d5436a712b215769f7c1e6d4011d8237ccb4b06c6ff1363422d23c11a6ce",
-      "title": "Chinese vice premier He Lifeng holds video call with top U.S. officials Bessent and Greer: Xinhua",
-      "url": "https://t.me/FinancialJuice/145449",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-07T01:01:35.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7902,6 +7938,96 @@
   ],
   "news": [
     {
+      "id": "4f87962b516da2d60b43ad85549f51a5a20baf3b9a4a40779695e1d2244b2e7a",
+      "sha256": "4f87962b516da2d60b43ad85549f51a5a20baf3b9a4a40779695e1d2244b2e7a",
+      "title": "GERMAN EXPORTS MOM SA ACTUAL 2% (FORECAST 0.5%, PREVIOUS -0.8%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145627",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T07:00:42.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 1,
+      "actual": "2%",
+      "forecast": "0.5%",
+      "previous": "-0.8%",
+      "calendar_title": null,
+      "z": 10
+    },
+    {
+      "id": "86f821b6e77719ccc64d9c60b76d67b7c4923b3622cf137a70d5786a595192f2",
+      "sha256": "86f821b6e77719ccc64d9c60b76d67b7c4923b3622cf137a70d5786a595192f2",
+      "title": "GERMAN IMPORTS MOM SA ACTUAL 4.2% (FORECAST 0.5%, PREVIOUS 0.9%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145626",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T07:00:37.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 1,
+      "actual": "4.2%",
+      "forecast": "0.5%",
+      "previous": "0.9%",
+      "calendar_title": null,
+      "z": 24.7
+    },
+    {
+      "id": "af0d6f68c6100ffa7db4040742ce7ac53d2e616c0b5044c3adb176588bebcbf0",
+      "sha256": "af0d6f68c6100ffa7db4040742ce7ac53d2e616c0b5044c3adb176588bebcbf0",
+      "title": "GERMAN TRADE BALANCE SA ACTUAL 15.6B (FORECAST 19.4B, PREVIOUS 19.5B) $MACRO",
+      "url": "https://t.me/FinancialJuice/145625",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T07:00:30.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 4,
+      "actual": "15.6",
+      "forecast": "19.4",
+      "previous": "19.5",
+      "calendar_title": "German Trade Balance",
+      "z": -4.9
+    },
+    {
       "id": "165c517b90649cad894872c5fd77eff0d83944326f8e85f097cfa8f9ad77ed08",
       "sha256": "165c517b90649cad894872c5fd77eff0d83944326f8e85f097cfa8f9ad77ed08",
       "title": "South Korea Industry Minister: Experts say unlike in the stock market, AI investment in the real economy is still robust.",
@@ -8091,7 +8217,7 @@
       "id": "1b81bb18a7b60cd2bef5aff4e506b85337bfd0206271d8729ece8dde14e62961",
       "sha256": "1b81bb18a7b60cd2bef5aff4e506b85337bfd0206271d8729ece8dde14e62961",
       "title": "Amounts Outstanding in the Call Money Market (Oct.)",
-      "url": "https://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
+      "url": "http://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -8649,7 +8775,7 @@
       "id": "78dae62664edf58560c8068ef90550e498d1392168fa404b5c0731220ce2be6d",
       "sha256": "78dae62664edf58560c8068ef90550e498d1392168fa404b5c0731220ce2be6d",
       "title": "Consumption Activity Index",
-      "url": "https://www.boj.or.jp/en/research/research_data/cai/index.htm",
+      "url": "http://www.boj.or.jp/en/research/research_data/cai/index.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -9883,7 +10009,7 @@
       "id": "b9b7f7c872701b0314ff7aa57fbc5657635e18e9aae3a3e7d710aaa460b3d6f2",
       "sha256": "b9b7f7c872701b0314ff7aa57fbc5657635e18e9aae3a3e7d710aaa460b3d6f2",
       "title": "Market Operations by the Bank of Japan (Oct.)",
-      "url": "https://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2610.xlsx",
+      "url": "http://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2610.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -9913,7 +10039,7 @@
       "id": "ae32e24cc6e9dd19850adaaa470b93a1912d254cfb159d23173ff65b5dfbb8e8",
       "sha256": "ae32e24cc6e9dd19850adaaa470b93a1912d254cfb159d23173ff65b5dfbb8e8",
       "title": "Monetary Base and the Bank of Japan's Transactions (Oct.)",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2610.pdf",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -9943,7 +10069,7 @@
       "id": "5a016016cd55d665014a453e0264df37fc4c8e3c8459797dcb8aabf0d37ab470",
       "sha256": "5a016016cd55d665014a453e0264df37fc4c8e3c8459797dcb8aabf0d37ab470",
       "title": "Bank of Japan's Transactions with the Government (Oct.)",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/tseifu/release/2026/seifu2610.pdf",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/tseifu/release/2026/seifu2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -14893,84 +15019,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0497d120df390159522195e52eb045c061408ef0bd47c9eb961a876b8f52a9c6",
-      "sha256": "0497d120df390159522195e52eb045c061408ef0bd47c9eb961a876b8f52a9c6",
-      "title": "China, U.S. agree to continue talks to maintain stable, positive trade ties - Xinhua",
-      "url": "https://t.me/FinancialJuice/145450",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-07T01:01:42.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4947cb56f527e7c85f72c4581586f963fad0dc5246f0be65728cf1c25a6e2d33",
-      "sha256": "4947cb56f527e7c85f72c4581586f963fad0dc5246f0be65728cf1c25a6e2d33",
-      "title": "China voices concerns over U.S. trade restrictions against China: Xinhua",
-      "url": "https://t.me/FinancialJuice/145451",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-07T01:01:42.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "70e1d5436a712b215769f7c1e6d4011d8237ccb4b06c6ff1363422d23c11a6ce",
-      "sha256": "70e1d5436a712b215769f7c1e6d4011d8237ccb4b06c6ff1363422d23c11a6ce",
-      "title": "Chinese vice premier He Lifeng holds video call with top U.S. officials Bessent and Greer: Xinhua",
-      "url": "https://t.me/FinancialJuice/145449",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-07T01:01:35.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
