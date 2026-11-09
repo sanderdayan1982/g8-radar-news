@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T00:42:50.172Z",
-  "started_at": "2026-11-09T00:42:48.071Z",
+  "generated_at": "2026-11-09T01:03:20.368Z",
+  "started_at": "2026-11-09T01:03:17.805Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,7 +18,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 11,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -28,7 +28,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "USD",
@@ -36,11 +36,11 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 11,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 13h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 12.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -48,7 +48,7 @@
         "CPI sin sorpresa",
         "FLUJO_FISCAL_NFA: US Treasury asked Iraq to shut most border c"
       ],
-      "rationale": "38 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "38 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -56,7 +56,7 @@
       "score": 14,
       "bias": "alcista",
       "structural": 14,
-      "impulse": 10,
+      "impulse": 5,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,7 +67,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "32 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +14 | Imp 3h +10. Régimen real mixed."
+      "rationale": "32 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +14 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -90,6 +90,24 @@
       "rationale": "10 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
+      "currency": "GBP",
+      "rank": 4,
+      "score": 0,
+      "bias": "neutral",
+      "structural": 0,
+      "impulse": null,
+      "ficha_v6": "A12 / B10 / C3",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 16.4h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "CPI sin sorpresa"
+      ],
+      "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+    },
+    {
       "currency": "NZD",
       "rank": 4,
       "score": 0,
@@ -108,25 +126,6 @@
         "New Zealand Prime Minister Luxon: There is a route to form next government"
       ],
       "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
-    },
-    {
-      "currency": "GBP",
-      "rank": 6,
-      "score": -3,
-      "bias": "neutral",
-      "structural": -3,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 16.7h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Pausa BC: precio del dinero estable",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "10 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est -3 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "AUD",
@@ -153,7 +152,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": -13,
+      "impulse": -11,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -164,7 +163,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -13. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -11. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -193,7 +192,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 11,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -203,7 +202,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "USD",
@@ -211,11 +210,11 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 17,
+      "impulse": 11,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 13h",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 12.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -223,7 +222,7 @@
         "CPI sin sorpresa",
         "FLUJO_FISCAL_NFA: US Treasury asked Iraq to shut most border c"
       ],
-      "rationale": "38 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +17. Régimen real mixed."
+      "rationale": "38 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -231,7 +230,7 @@
       "score": 14,
       "bias": "alcista",
       "structural": 14,
-      "impulse": 10,
+      "impulse": 5,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -242,7 +241,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "32 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +14 | Imp 3h +10. Régimen real mixed."
+      "rationale": "32 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +14 | Imp 3h +5. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -265,6 +264,24 @@
       "rationale": "10 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
+      "currency": "GBP",
+      "rank": 4,
+      "score": 0,
+      "bias": "neutral",
+      "structural": 0,
+      "impulse": null,
+      "ficha_v6": "A12 / B10 / C3",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 16.4h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "CPI sin sorpresa"
+      ],
+      "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+    },
+    {
       "currency": "NZD",
       "rank": 4,
       "score": 0,
@@ -283,25 +300,6 @@
         "New Zealand Prime Minister Luxon: There is a route to form next government"
       ],
       "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
-    },
-    {
-      "currency": "GBP",
-      "rank": 6,
-      "score": -3,
-      "bias": "neutral",
-      "structural": -3,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 16.7h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "Pausa BC: precio del dinero estable",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "10 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est -3 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
       "currency": "AUD",
@@ -328,7 +326,7 @@
       "score": -24,
       "bias": "bajista",
       "structural": -24,
-      "impulse": -13,
+      "impulse": -11,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -339,7 +337,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -13. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -24 | Imp 3h -11. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -352,7 +350,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -2.2,
+      "hours_from_now": -2.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +362,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": 4.3,
+      "hours_from_now": 3.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -376,7 +374,7 @@
       "actual": null,
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": 6.3,
+      "hours_from_now": 5.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -388,7 +386,7 @@
       "actual": null,
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": 8.8,
+      "hours_from_now": 8.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -400,7 +398,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.5,
+      "hours_from_now": 9.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -412,7 +410,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.5,
+      "hours_from_now": 9.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -424,7 +422,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13,
+      "hours_from_now": 12.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -436,7 +434,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": 14.3,
+      "hours_from_now": 13.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -448,7 +446,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.3,
+      "hours_from_now": 13.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -460,7 +458,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.5,
+      "hours_from_now": 16.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -472,7 +470,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.7,
+      "hours_from_now": 16.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -484,7 +482,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 22.8,
+      "hours_from_now": 22.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -496,7 +494,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 22.8,
+      "hours_from_now": 22.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -508,7 +506,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 23.1,
+      "hours_from_now": 22.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -520,7 +518,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.1,
+      "hours_from_now": 22.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -532,7 +530,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 23.1,
+      "hours_from_now": 22.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -544,7 +542,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 23.3,
+      "hours_from_now": 23,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -556,7 +554,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 23.8,
+      "hours_from_now": 23.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -568,7 +566,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 26.9,
+      "hours_from_now": 26.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -580,7 +578,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 28.3,
+      "hours_from_now": 27.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -592,7 +590,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.8,
+      "hours_from_now": 31.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -604,7 +602,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 32.3,
+      "hours_from_now": 31.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -616,7 +614,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 34.3,
+      "hours_from_now": 33.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -628,7 +626,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 34.8,
+      "hours_from_now": 34.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -640,7 +638,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.8,
+      "hours_from_now": 35.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +650,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.5,
+      "hours_from_now": 36.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +662,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 36.8,
+      "hours_from_now": 36.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +674,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 36.8,
+      "hours_from_now": 36.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +686,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 39.1,
+      "hours_from_now": 38.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +698,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 41.3,
+      "hours_from_now": 41,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +710,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41.8,
+      "hours_from_now": 41.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +722,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41.8,
+      "hours_from_now": 41.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +734,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41.8,
+      "hours_from_now": 41.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +746,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.8,
+      "hours_from_now": 43.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +758,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44.8,
+      "hours_from_now": 44.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -772,7 +770,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.8,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -784,7 +782,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.8,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +794,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 47.1,
+      "hours_from_now": 46.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -812,6 +810,36 @@
   },
   "items": [
     {
+      "id": "e4f6f1c4a9b46b7acbf678a477b25a89c52fa752bbce859df28e86193fb32e07",
+      "sha256": "e4f6f1c4a9b46b7acbf678a477b25a89c52fa752bbce859df28e86193fb32e07",
+      "title": "Markets price three more boe hikes but analysts see a shallower path after move to 4",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-09T01:00:29.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "78a0d69284fbdedaf16c4fdd92a187cab1ee58c00b61bcf000dbe0ce94aea8a0",
       "sha256": "78a0d69284fbdedaf16c4fdd92a187cab1ee58c00b61bcf000dbe0ce94aea8a0",
       "title": "Pboc is expected to set the usd cny reference rate at 6.6799 reuters estimate",
@@ -7789,32 +7817,6 @@
       "legacy_category": "banco_central",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8b404901142645bad69f835961b9721f6164ece91d5ce56bc93859792c317654",
-      "sha256": "8b404901142645bad69f835961b9721f6164ece91d5ce56bc93859792c317654",
-      "title": "NOTICIERO: RUSIA E IRÁN REVOLUCIONAN LA GUERRA, GOLPE FINAL A NETANYAHU EN ISRAEL Y CAOS EN FRANCIA",
-      "url": "https://t.me/negociostv/60390",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T16:54:16.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
@@ -7826,6 +7828,36 @@
   ],
   "news": [
     {
+      "id": "e4f6f1c4a9b46b7acbf678a477b25a89c52fa752bbce859df28e86193fb32e07",
+      "sha256": "e4f6f1c4a9b46b7acbf678a477b25a89c52fa752bbce859df28e86193fb32e07",
+      "title": "Markets price three more boe hikes but analysts see a shallower path after move to 4",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-09T01:00:29.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "78a0d69284fbdedaf16c4fdd92a187cab1ee58c00b61bcf000dbe0ce94aea8a0",
       "sha256": "78a0d69284fbdedaf16c4fdd92a187cab1ee58c00b61bcf000dbe0ce94aea8a0",
       "title": "Pboc is expected to set the usd cny reference rate at 6.6799 reuters estimate",
@@ -14803,32 +14835,6 @@
       "legacy_category": "banco_central",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8b404901142645bad69f835961b9721f6164ece91d5ce56bc93859792c317654",
-      "sha256": "8b404901142645bad69f835961b9721f6164ece91d5ce56bc93859792c317654",
-      "title": "NOTICIERO: RUSIA E IRÁN REVOLUCIONAN LA GUERRA, GOLPE FINAL A NETANYAHU EN ISRAEL Y CAOS EN FRANCIA",
-      "url": "https://t.me/negociostv/60390",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-06T16:54:16.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
