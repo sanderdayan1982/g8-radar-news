@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-09T15:25:23.932Z",
-  "started_at": "2026-11-09T15:25:20.739Z",
+  "generated_at": "2026-11-09T15:30:28.600Z",
+  "started_at": "2026-11-09T15:30:25.996Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -22,7 +22,7 @@
       "ficha_v6": "A5",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 40.9h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 40.8h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -33,50 +33,51 @@
       "rationale": "11 titulares · Ficha A5 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL + TRADE_EXTERNAL · Est +48 | Imp 3h n/d. Régimen real mixed."
     },
     {
-      "currency": "CHF",
+      "currency": "USD",
       "rank": 2,
-      "score": 24,
+      "score": 22,
       "bias": "alcista",
-      "structural": 24,
-      "impulse": 24,
-      "ficha_v6": "A6 / B5 / B15",
+      "structural": 22,
+      "impulse": 22,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Barkin Speaks en 1.7h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Goolsbee Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
+        "Impulso ToT energético (EA-1)",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "43 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +22 | Imp 3h +22. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 3,
+      "score": 21,
+      "bias": "alcista",
+      "structural": 21,
+      "impulse": 23,
+      "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
       "calendar_lock_detail": null,
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "21 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +24. Régimen real mixed."
-    },
-    {
-      "currency": "USD",
-      "rank": 3,
-      "score": 20,
-      "bias": "alcista",
-      "structural": 20,
-      "impulse": 23,
-      "ficha_v6": "EA-1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Barkin Speaks en 1.8h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Goolsbee Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "43 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +20 | Imp 3h +23. Régimen real mixed."
+      "rationale": "21 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h +23. Régimen real mixed."
     },
     {
       "currency": "JPY",
       "rank": 4,
-      "score": 5,
+      "score": 2,
       "bias": "neutral",
-      "structural": 5,
-      "impulse": 24,
+      "structural": 2,
+      "impulse": 23,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -88,7 +89,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "29 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +5 | Imp 3h +24. Régimen real mixed."
+      "rationale": "30 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +2 | Imp 3h +23. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -100,7 +101,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 2h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 1.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -149,10 +150,10 @@
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -33,
+      "score": -31,
       "bias": "bajista",
-      "structural": -33,
-      "impulse": -27,
+      "structural": -31,
+      "impulse": -26,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -162,9 +163,9 @@
       "drivers": [
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "CPI sin sorpresa"
+        "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -33 | Imp 3h -27. Régimen real mixed."
+      "rationale": "15 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -31 | Imp 3h -26. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -197,7 +198,7 @@
       "ficha_v6": "A5",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 40.9h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 40.8h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -208,50 +209,51 @@
       "rationale": "11 titulares · Ficha A5 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL + TRADE_EXTERNAL · Est +48 | Imp 3h n/d. Régimen real mixed."
     },
     {
-      "currency": "CHF",
+      "currency": "USD",
       "rank": 2,
-      "score": 24,
+      "score": 22,
       "bias": "alcista",
-      "structural": 24,
-      "impulse": 24,
-      "ficha_v6": "A6 / B5 / B15",
+      "structural": 22,
+      "impulse": 22,
+      "ficha_v6": "EA-1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Barkin Speaks en 1.7h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Goolsbee Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
+        "Impulso ToT energético (EA-1)",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "43 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + TRADE_EXTERNAL · Est +22 | Imp 3h +22. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 3,
+      "score": 21,
+      "bias": "alcista",
+      "structural": 21,
+      "impulse": 23,
+      "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
       "calendar_lock_detail": null,
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "21 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +24. Régimen real mixed."
-    },
-    {
-      "currency": "USD",
-      "rank": 3,
-      "score": 20,
-      "bias": "alcista",
-      "structural": 20,
-      "impulse": 23,
-      "ficha_v6": "EA-1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Barkin Speaks en 1.8h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Goolsbee Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "43 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +20 | Imp 3h +23. Régimen real mixed."
+      "rationale": "21 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h +23. Régimen real mixed."
     },
     {
       "currency": "JPY",
       "rank": 4,
-      "score": 5,
+      "score": 2,
       "bias": "neutral",
-      "structural": 5,
-      "impulse": 24,
+      "structural": 2,
+      "impulse": 23,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -263,7 +265,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "29 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +5 | Imp 3h +24. Régimen real mixed."
+      "rationale": "30 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA + DATA_REAL + TRADE_EXTERNAL · Est +2 | Imp 3h +23. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -275,7 +277,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "BOE Gov Bailey Speaks en 2h",
+      "calendar_lock_detail": "BOE Gov Bailey Speaks en 1.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -324,10 +326,10 @@
     {
       "currency": "CAD",
       "rank": 8,
-      "score": -33,
+      "score": -31,
       "bias": "bajista",
-      "structural": -33,
-      "impulse": -27,
+      "structural": -31,
+      "impulse": -26,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -337,9 +339,9 @@
       "drivers": [
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
         "Presión Risk-Off sobre cíclica (B5 / B15)",
-        "CPI sin sorpresa"
+        "Impulso ToT energético (EA-1)"
       ],
-      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -33 | Imp 3h -27. Régimen real mixed."
+      "rationale": "15 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -31 | Imp 3h -26. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -352,7 +354,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.9,
+      "hours_from_now": -17,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +366,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -376,7 +378,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -8.4,
+      "hours_from_now": -8.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -388,7 +390,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -5.9,
+      "hours_from_now": -6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -400,7 +402,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.2,
+      "hours_from_now": -5.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -412,7 +414,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.2,
+      "hours_from_now": -5.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -436,7 +438,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -0.4,
+      "hours_from_now": -0.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -448,7 +450,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.4,
+      "hours_from_now": -0.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -460,7 +462,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.8,
+      "hours_from_now": 1.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -472,7 +474,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2,
+      "hours_from_now": 1.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -484,7 +486,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": 8.1,
+      "hours_from_now": 8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -496,7 +498,7 @@
       "actual": null,
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": 8.1,
+      "hours_from_now": 8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -508,7 +510,7 @@
       "actual": null,
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": 8.4,
+      "hours_from_now": 8.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -520,7 +522,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 8.4,
+      "hours_from_now": 8.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -532,7 +534,7 @@
       "actual": null,
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": 8.4,
+      "hours_from_now": 8.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -544,7 +546,7 @@
       "actual": null,
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 8.6,
+      "hours_from_now": 8.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -556,7 +558,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 9.1,
+      "hours_from_now": 9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -568,7 +570,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 12.2,
+      "hours_from_now": 12.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -580,7 +582,7 @@
       "actual": null,
       "forecast": "46.9",
       "previous": "47.0",
-      "hours_from_now": 13.6,
+      "hours_from_now": 13.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -592,7 +594,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.1,
+      "hours_from_now": 17,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -604,7 +606,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.6,
+      "hours_from_now": 17.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -616,7 +618,7 @@
       "actual": null,
       "forecast": "97.7",
       "previous": "97.9",
-      "hours_from_now": 19.6,
+      "hours_from_now": 19.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -628,7 +630,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 20.1,
+      "hours_from_now": 20,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -640,7 +642,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.1,
+      "hours_from_now": 21,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +654,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.8,
+      "hours_from_now": 21.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +666,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 22.1,
+      "hours_from_now": 22,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +678,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 22.1,
+      "hours_from_now": 22,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +690,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24.4,
+      "hours_from_now": 24.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +702,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 26.6,
+      "hours_from_now": 26.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +714,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 27.1,
+      "hours_from_now": 27,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +726,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 27.1,
+      "hours_from_now": 27,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +738,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 27.1,
+      "hours_from_now": 27,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +750,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 29.1,
+      "hours_from_now": 29,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +762,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30.1,
+      "hours_from_now": 30,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -772,7 +774,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 32.1,
+      "hours_from_now": 32,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -784,7 +786,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 32.1,
+      "hours_from_now": 32,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +798,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 32.4,
+      "hours_from_now": 32.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -808,7 +810,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 38.6,
+      "hours_from_now": 38.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -820,7 +822,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 39.6,
+      "hours_from_now": 39.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -832,7 +834,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 39.6,
+      "hours_from_now": 39.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -844,7 +846,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.9,
+      "hours_from_now": 40.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -856,7 +858,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 41.6,
+      "hours_from_now": 41.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -880,7 +882,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.6,
+      "hours_from_now": 45.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -892,7 +894,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.6,
+      "hours_from_now": 45.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -908,6 +910,155 @@
   },
   "items": [
     {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T15:30:26.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "40a026119eb03da5f08509450c40386801eccdb781e4e12e29f098b6ec310037",
+      "sha256": "40a026119eb03da5f08509450c40386801eccdb781e4e12e29f098b6ec310037",
+      "title": "Fed's Goolsbee: Consumer spending has been main driver of growth",
+      "url": "https://t.me/FinancialJuice/145690",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T15:28:09.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Fiscal"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "042bba2c2439b44383218982d2d7c16704b25f641d1035dd89c7537271608f53",
+      "sha256": "042bba2c2439b44383218982d2d7c16704b25f641d1035dd89c7537271608f53",
+      "title": "Fed's Goolsbee: Data centers looking like old-fashioned overheating.",
+      "url": "https://t.me/FinancialJuice/145689",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T15:26:32.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fa45fc559e2d8882fd4be09598df5415f47511f998d1757daf8c82507c428749",
+      "sha256": "fa45fc559e2d8882fd4be09598df5415f47511f998d1757daf8c82507c428749",
+      "title": "Fed's Goolsbee: Starting to see inflation kicking up in services.",
+      "url": "https://t.me/FinancialJuice/145688",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T15:25:45.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ec9aa4722a1a28df59aca3e56c982ce0da7c38781c4e92d3fc2bb2eeae44e623",
+      "sha256": "ec9aa4722a1a28df59aca3e56c982ce0da7c38781c4e92d3fc2bb2eeae44e623",
+      "title": "Moody's affirms Verizon's Baa1 Sr unsecured; outlook stable. $VZ",
+      "url": "https://t.me/FinancialJuice/145687",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T15:25:38.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "analisis",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "dcdb7784cea11dee3a0bd501f328df487de4ebaba26560d8e2a0368eb1c341d8",
       "sha256": "dcdb7784cea11dee3a0bd501f328df487de4ebaba26560d8e2a0368eb1c341d8",
       "title": "Fed's Goolsbee: We've got to come to terms with inflation failure",
@@ -1744,37 +1895,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T14:00:36.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7823,121 +7943,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "76b0752ededf1c2632e09283ec9ef60756bca5412951011e837ce0ec5952f72a",
-      "sha256": "76b0752ededf1c2632e09283ec9ef60756bca5412951011e837ce0ec5952f72a",
-      "title": "Iran navy: oil tanker ignites after hitting naval mine east of Strait of Hormuz - Iranian media",
-      "url": "https://t.me/FinancialJuice/145545",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T16:44:31.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "205ce607f6a06519d0f89e6bce12d5dab01e87ac5f70bc524716c504cb0b57e9",
-      "sha256": "205ce607f6a06519d0f89e6bce12d5dab01e87ac5f70bc524716c504cb0b57e9",
-      "title": "Will US inflation data ease affordability concerns?",
-      "url": "https://www.ft.com/content/3d46dfb4-eef8-4ea0-9264-282bd269647e?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T16:20:06.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f5be3c2b6e7c2c8495d0de1d7ba89965654a5e1e29698e7ec3f360458e439b44",
-      "sha256": "f5be3c2b6e7c2c8495d0de1d7ba89965654a5e1e29698e7ec3f360458e439b44",
-      "title": "Eisenkot: with the mandate received today, will lead formation of national emergency government",
-      "url": "https://t.me/FinancialJuice/145544",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T15:16:20.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b073288a3e50bf25933c8c73557c5c8778fd9a22109fbde779450389f63e51e0",
-      "sha256": "b073288a3e50bf25933c8c73557c5c8778fd9a22109fbde779450389f63e51e0",
-      "title": "Eisenkot: urgent demand for fresh, strong leadership",
-      "url": "https://t.me/FinancialJuice/145543",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T15:15:57.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7947,6 +7952,155 @@
   ],
   "news": [
     {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T15:30:26.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "40a026119eb03da5f08509450c40386801eccdb781e4e12e29f098b6ec310037",
+      "sha256": "40a026119eb03da5f08509450c40386801eccdb781e4e12e29f098b6ec310037",
+      "title": "Fed's Goolsbee: Consumer spending has been main driver of growth",
+      "url": "https://t.me/FinancialJuice/145690",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T15:28:09.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Fiscal"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "042bba2c2439b44383218982d2d7c16704b25f641d1035dd89c7537271608f53",
+      "sha256": "042bba2c2439b44383218982d2d7c16704b25f641d1035dd89c7537271608f53",
+      "title": "Fed's Goolsbee: Data centers looking like old-fashioned overheating.",
+      "url": "https://t.me/FinancialJuice/145689",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T15:26:32.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fa45fc559e2d8882fd4be09598df5415f47511f998d1757daf8c82507c428749",
+      "sha256": "fa45fc559e2d8882fd4be09598df5415f47511f998d1757daf8c82507c428749",
+      "title": "Fed's Goolsbee: Starting to see inflation kicking up in services.",
+      "url": "https://t.me/FinancialJuice/145688",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T15:25:45.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ec9aa4722a1a28df59aca3e56c982ce0da7c38781c4e92d3fc2bb2eeae44e623",
+      "sha256": "ec9aa4722a1a28df59aca3e56c982ce0da7c38781c4e92d3fc2bb2eeae44e623",
+      "title": "Moody's affirms Verizon's Baa1 Sr unsecured; outlook stable. $VZ",
+      "url": "https://t.me/FinancialJuice/145687",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-09T15:25:38.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "analisis",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "dcdb7784cea11dee3a0bd501f328df487de4ebaba26560d8e2a0368eb1c341d8",
       "sha256": "dcdb7784cea11dee3a0bd501f328df487de4ebaba26560d8e2a0368eb1c341d8",
       "title": "Fed's Goolsbee: We've got to come to terms with inflation failure",
@@ -8783,37 +8937,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T14:00:36.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -14862,121 +14985,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "76b0752ededf1c2632e09283ec9ef60756bca5412951011e837ce0ec5952f72a",
-      "sha256": "76b0752ededf1c2632e09283ec9ef60756bca5412951011e837ce0ec5952f72a",
-      "title": "Iran navy: oil tanker ignites after hitting naval mine east of Strait of Hormuz - Iranian media",
-      "url": "https://t.me/FinancialJuice/145545",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T16:44:31.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "205ce607f6a06519d0f89e6bce12d5dab01e87ac5f70bc524716c504cb0b57e9",
-      "sha256": "205ce607f6a06519d0f89e6bce12d5dab01e87ac5f70bc524716c504cb0b57e9",
-      "title": "Will US inflation data ease affordability concerns?",
-      "url": "https://www.ft.com/content/3d46dfb4-eef8-4ea0-9264-282bd269647e?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-08T16:20:06.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f5be3c2b6e7c2c8495d0de1d7ba89965654a5e1e29698e7ec3f360458e439b44",
-      "sha256": "f5be3c2b6e7c2c8495d0de1d7ba89965654a5e1e29698e7ec3f360458e439b44",
-      "title": "Eisenkot: with the mandate received today, will lead formation of national emergency government",
-      "url": "https://t.me/FinancialJuice/145544",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T15:16:20.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b073288a3e50bf25933c8c73557c5c8778fd9a22109fbde779450389f63e51e0",
-      "sha256": "b073288a3e50bf25933c8c73557c5c8778fd9a22109fbde779450389f63e51e0",
-      "title": "Eisenkot: urgent demand for fresh, strong leadership",
-      "url": "https://t.me/FinancialJuice/145543",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-08T15:15:57.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
