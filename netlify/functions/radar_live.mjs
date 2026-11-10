@@ -1,8 +1,12 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { SOURCES } from '../../src/config.js';
 import { collectRadarAndIrisData, readRadarStore } from '../../src/irisCollector.js';
 import { mergeSourceHealth, irisHealth } from '../../src/sourceHealth.js';
+
+const SOURCE_COUNT = SOURCES.length;
+const LIVE_BUNDLE_KEY = `live-bundle-v2-${SOURCE_COUNT}sources`;
 
 const ROOT = (() => {
   try {
@@ -22,7 +26,7 @@ const SPEC_PATH = join(ROOT, 'SPEC.md');
 const GITHUB_RAW_FULL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_news_full.json';
 const GITHUB_RAW_STORE = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_store.json';
 const CACHE_TTL_MS = 60_000;
-// A forced refresh re-polls 31 sources. Public callers cannot force more than one per minute.
+// A forced refresh re-polls every configured source. Public callers cannot force more than one per minute.
 const MIN_FORCE_INTERVAL_MS = 60_000;
 
 let memCache = {
@@ -48,8 +52,8 @@ async function readNetlifyBlobCache() {
   try {
     const { getStore } = await import('@netlify/blobs');
     const store = getStore('radar-news-g8-cache');
-    const cached = await store.get('live-bundle-v2-31sources', { type: 'json' });
-    if (cached && cached.updatedAt && cached.irisFeed && cached.fullState && cached.fullState.sources?.length >= 31) {
+    const cached = await store.get(LIVE_BUNDLE_KEY, { type: 'json' });
+    if (cached && cached.updatedAt && cached.irisFeed && cached.fullState && cached.fullState.sources?.length >= SOURCE_COUNT) {
       return cached;
     }
   } catch {
@@ -62,7 +66,7 @@ async function writeNetlifyBlobCache(bundle) {
   try {
     const { getStore } = await import('@netlify/blobs');
     const store = getStore('radar-news-g8-cache');
-    await store.setJSON('live-bundle-v2-31sources', bundle);
+    await store.setJSON(LIVE_BUNDLE_KEY, bundle);
   } catch {
     // Ignore if Blobs store is unavailable in local dev
   }

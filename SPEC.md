@@ -6,7 +6,7 @@
 
 Un terminal privado (estilo Bloomberg simplificado, pensado para una mesa macro) que:
 
-1. **Agrega** todos los titulares publicados por las 25 fuentes seleccionadas (canales de breaking, feeds oficiales de bancos centrales y fuentes de análisis).
+1. **Agrega** todos los titulares publicados por las 35 fuentes seleccionadas (canales de breaking, feeds oficiales de bancos centrales y fuentes de análisis).
 2. **Conserva en la cinta y notifica cada noticia nueva** sin descartes por impacto o divisa en la recepción; los filtros de relevancia macro/MMT se aplican únicamente a la capa de análisis.
 3. **Clasifica** la fuerza narrativa de cada divisa de −100 a +100 con el motor determinista único **Agente MMT**, **según noticias, no precios**, bajo Soft Currency Economics (Mosler / MMT).
 4. **Sigue el calendario económico de la semana** y avisa de los datos de alto impacto.
@@ -82,6 +82,24 @@ Filtro: fuera premios (Carl Menger), reclutamiento, divulgación. Dentro: assess
 | **Financial Times** | RSS global-economy, markets, currencies |
 | **Negocios TV** | `t.me/s/negociostv` (solo G8/macro/geo; se descarta política doméstica ES sin divisa) |
 | **Brújula de Mercados** | Telegram público `t.me/s/BrujulaDeMercados` (confirmado). Slug override: `RADARNEWS_BURBUJA_CHANNEL`. |
+
+### 3.5.1 Prensa NZD, CHF y AUD (v5.1 Parte C)
+
+Mismo patrón que los Tesoros por Google News RSS (`news.google.com/rss/search`), tipo `agencia`, frescura 3 días (`when:3d` en la consulta y ventana de 72 h del tipo agencia). Consultas en inglés, tal cual:
+
+| id | Divisa | Consulta |
+|---|---|---|
+| `nz-press` | NZD | `RBNZ OR "Reserve Bank of New Zealand" OR "Anna Breman" OR "official cash rate" New Zealand when:3d` |
+| `ch-press` | CHF | `SNB OR "Swiss National Bank" OR Schlegel OR Tschudin OR "Swiss franc" when:3d` |
+| `au-press` | AUD | `RBA OR "Reserve Bank of Australia" OR Bullock OR Hauser OR "cash rate" Australia when:3d` |
+
+Edición Google News: NZ `hl=en-NZ&gl=NZ&ceid=NZ:en`, AU `hl=en-AU&gl=AU&ceid=AU:en`, CH `hl=en-US&gl=CH&ceid=CH:en` (inglés, edición suiza; el resto del patrón es el de los Tesoros).
+
+**RNZ negocios (añadida).** `rnz-business`, tipo `agencia`, divisa NZD, `https://www.rnz.co.nz/rss/business.xml`. El índice oficial `https://www.rnz.co.nz/rss` enlaza `/rss/business.xml`. Comprobado el 10-nov-2026 a las 20:18 UTC: HTTP 200, `content-type: application/xml`, 14 ítems parseados, todos con `published_at` dentro de 7 días. El más reciente es `2026-11-10T20:01:37Z` (`Wed, 11 Nov 2026 09:01:37 +1300`, antigüedad 0,29 h). Titulares de esa ventana: «Emergency services strike could affect 'tens of thousands' of travellers - Auckland Airport» (`2026-11-10T18:48:42Z`, coincide con Auckland) y «Retail spending subdued ahead of holiday season» (`2026-11-09T23:26:02Z`).
+
+**swissinfo economía (omitida).** No responde HTTP 200 con un titular. El 10-nov-2026: `https://www.swissinfo.ch/eng/topic/economy/feed/`, `https://www.swissinfo.ch/eng/economy/rss` (redirige a `/eng/economy/feed/`), `https://www.swissinfo.ch/eng/feed/` y los feeds de tema en alemán, francés y español responden HTTP 410 con «No feed available». La ruta antigua `https://www.swissinfo.ch/service/eng/rssxml/economy/rss.xml` responde HTTP 400. `https://www.swissinfo.ch/eng/economy.rss` responde HTTP 404. La página `https://www.swissinfo.ch/eng/topic/economy/` (HTTP 200) no publica `application/rss+xml`. No se añade.
+
+Ninguna fuente de la lista del §3.7 entra en esta parte.
 
 ### 3.6 Calendario
 
@@ -172,6 +190,7 @@ La memoria y la presentación van separadas. Constantes congeladas el 10-nov-202
 - `public/data/radar_store.json` (`schema: radar-store/v1`) guarda todos los titulares deduplicados dentro de su ventana. `scripts/sync_feeds.mjs` lo reutiliza como `existingItems`. La cinta `news` de `radar_news_full.json` sigue en 300 y no es memoria: usarla recortaba la ventana real a unas 12 h.
 - Si la memoria supera 5.000, salen primero los breaking más antiguos y después el resto de no oficiales. Un oficial dentro de su ventana no se elimina; si los oficiales solos superan el tope, la lista puede pasarse de 5.000. El feed IRIS (`items`) publica la misma ventana con tope 3.000 y la misma regla.
 - `coverage` en el feed, por divisa y en este orden (USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD, XAU): `count_72h`, `count_official_45d` (oficiales de los 45 días; un oficial de las últimas 72 h cuenta en los dos), `last_item_at`, `hours_since_last` (horas naturales, un decimal) y `hours_since_last_business` (sin sábados ni domingos UTC; los festivos sí cuentan). Las horas del JSON comprometido se refrescan cuando el ciclo reescribe el feed; la función live las recalcula en cada petición.
+- `silence` (v5.1 Parte C, umbral congelado ≥ 12 h hábiles): en USD, EUR, GBP, JPY, CHF, CAD, AUD y NZD, `silence: true` cuando `hours_since_last_business` ≥ 12 (el valor ya redondeado a un decimal). Con 11,9 h queda en `false`. Si no hay titular, las horas son null y `silence` es `false`. Un hueco de fin de semana no cuenta: el sábado y el domingo UTC se excluyen igual que en `hours_since_last_business`. XAU no lleva el campo. La bandera no bloquea, no cambia `lock_level` y no sube el nivel por sí sola; el cruce con un evento activo es la Parte E y no está aplicado.
 
 ## Contrato de candados (v5.1 Parte B)
 
@@ -190,7 +209,7 @@ Un `DISCURSO` de impacto Low, o sin impacto, sigue en la agenda con `lock_class:
 El esquema del feed sigue en `iris-g8-feed/v2-mmt-v4.0`. `agenda_window` añade `lock_class`, `lock_level` y `retirar_limitadas`. `window_status` de un evento activo pasa a ser el nivel (`TOTAL`, `TIER1`, `NO_AMPLIAR`, `AVISO`); dentro de las 24 h posteriores es `✓ POST-EVENTO`; el resto queda en null. En el ranking, `calendar_lock` de un candado activo pasa a ser ese nivel, y se añaden `lock_level`, `lock_class`, `lock_events` y `retirar_limitadas`. La sincronización y `netlify/functions/radar_live.mjs` usan el mismo `buildAgendaWindow`.
 
 ## Contrato de salud IRIS
-`iris_g8_feed.json` y `/api/health` publican `health`: `sources_active` (vivas + copia de la última sincronización), `sources_live`, `sources_cached`, `sources_total`, `sources_empty`, `sources_error`, `agenda_events_count` y `status`: `CLEAN` si no hay errores ni fuentes vacías, `DEGRADED` si al menos el 80 % están activas, `CRITICAL` por debajo y `UNKNOWN` sin fuentes. `public/data/radar_status.json` es el latido de cada ciclo.
+`iris_g8_feed.json` y `/api/health` publican `health`: `sources_active` (vivas + copia de la última sincronización), `sources_live`, `sources_cached`, `sources_total`, `sources_empty`, `sources_error`, `agenda_events_count` y `status`: `CLEAN` si no hay errores ni fuentes vacías, `DEGRADED` si al menos el 80 % están activas, `CRITICAL` por debajo y `UNKNOWN` sin fuentes. `sources_total` es el número de fuentes configuradas: 35 desde la Parte C (31 anteriores, más `nz-press`, `ch-press`, `au-press` y `rnz-business`). Las reglas CLEAN / DEGRADED / CRITICAL no cambian. `public/data/radar_status.json` es el latido de cada ciclo.
 
 ## Alertas y acceso (decisión de la mesa, 8-nov-2026)
 Push desactivado en el despliegue serverless: las alertas se ven dentro de la app (pestaña Alertas y contador). La app y sus datos son públicos.

@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { SOURCES } from '../src/config.js';
 import { mergeSourceHealth, healthSummary, publishSignature, isPromotional, irisHealth } from '../src/sourceHealth.js';
 
 const prev = [{ id: 'fed', status: 'ok', last_success_at: '2026-11-07T22:00:00Z', last_news_published_at: '2026-11-07T21:00:00Z', stored_count: 9, consecutive_failures: 0 }];
@@ -39,16 +40,19 @@ test('promotional posts do not become alerts', () => {
 });
 
 test('IRIS health block: CLEAN only when every source answered', () => {
-  const ok = Array.from({ length: 31 }, (_, i) => ({ id: 's' + i, status: 'ok' }));
+  assert.equal(SOURCES.length, 35);
+  const ok = Array.from({ length: SOURCES.length }, (_, i) => ({ id: 's' + i, status: 'ok' }));
   assert.equal(irisHealth(ok, 114).status, 'CLEAN');
+  assert.equal(irisHealth(ok, 114).sources_total, 35);
   assert.equal(irisHealth(ok, 114).agenda_events_count, 114);
   const one = ok.map((s, i) => (i === 0 ? { ...s, status: 'error' } : s));
   assert.equal(irisHealth(one).status, 'DEGRADED');
   assert.equal(irisHealth(one).sources_error, 1);
   const cached = ok.map((s, i) => (i < 10 ? { ...s, status: 'cached' } : s));
   assert.equal(irisHealth(cached).status, 'CLEAN');            // served from the last scheduled sync
-  assert.equal(irisHealth(cached).sources_live, 21);
+  assert.equal(irisHealth(cached).sources_live, 25);           // 35 - 10 cached; the 80% rule is unchanged
+  assert.equal(irisHealth(cached).sources_total, 35);
   const broken = ok.map((s, i) => (i < 10 ? { ...s, status: 'error' } : s));
-  assert.equal(irisHealth(broken).status, 'CRITICAL');
+  assert.equal(irisHealth(broken).status, 'CRITICAL');         // 25/35 active, still below 80%
   assert.equal(irisHealth([]).status, 'UNKNOWN');
 });

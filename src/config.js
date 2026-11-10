@@ -53,7 +53,7 @@ export const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/5
 const BURBUJA = process.env.RADARNEWS_BURBUJA_CHANNEL || 'BrujulaDeMercados';
 
 /**
- * 31 Institutional G8 Sources.
+ * Institutional G8 sources. The count is `SOURCES.length` (35 after v5.1 Parte C).
  * Note on FinancialJuice: `https://www.financialjuice.com/home` is a client-side SPA requiring SignalR/user authentication
  * and does not expose a public RSS feed (`404`). The configured public channel `https://t.me/s/FinancialJuice` is an
  * automated Twitter-to-Telegram mirror that explicitly declares "no affiliation" with financialjuice.com.
@@ -184,6 +184,46 @@ export const SOURCES = [
     currency: 'AUD',
     pollMs: 300_000,
     channel_note: 'Comunicados oficiales de inflación, empleo y cuentas públicas de Australia (abs.gov.au / treasury.gov.au).',
+  },
+  {
+    id: 'nz-press',
+    name: 'Prensa NZ · RBNZ',
+    type: 'agencia',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=RBNZ+OR+%22Reserve+Bank+of+New+Zealand%22+OR+%22Anna+Breman%22+OR+%22official+cash+rate%22+New+Zealand+when:3d&hl=en-NZ&gl=NZ&ceid=NZ:en',
+    currency: 'NZD',
+    pollMs: 300_000,
+    channel_note: 'Consulta Google News (when:3d) sobre el RBNZ, Anna Breman y la official cash rate de Nueva Zelanda.',
+  },
+  {
+    id: 'ch-press',
+    name: 'Prensa CH · SNB',
+    type: 'agencia',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=SNB+OR+%22Swiss+National+Bank%22+OR+Schlegel+OR+Tschudin+OR+%22Swiss+franc%22+when:3d&hl=en-US&gl=CH&ceid=CH:en',
+    currency: 'CHF',
+    pollMs: 300_000,
+    channel_note: 'Consulta Google News (when:3d) sobre el SNB, Schlegel, Tschudin y el franco suizo.',
+  },
+  {
+    id: 'au-press',
+    name: 'Prensa AU · RBA',
+    type: 'agencia',
+    kind: 'rss',
+    url: 'https://news.google.com/rss/search?q=RBA+OR+%22Reserve+Bank+of+Australia%22+OR+Bullock+OR+Hauser+OR+%22cash+rate%22+Australia+when:3d&hl=en-AU&gl=AU&ceid=AU:en',
+    currency: 'AUD',
+    pollMs: 300_000,
+    channel_note: 'Consulta Google News (when:3d) sobre el RBA, Bullock, Hauser y la cash rate de Australia.',
+  },
+  {
+    id: 'rnz-business',
+    name: 'RNZ · Negocios',
+    type: 'agencia',
+    kind: 'rss',
+    url: 'https://www.rnz.co.nz/rss/business.xml',
+    currency: 'NZD',
+    pollMs: 180_000,
+    channel_note: 'Titulares de negocios de Radio New Zealand (rnz.co.nz/rss/business.xml).',
   },
   {
     id: 'investinglive',
