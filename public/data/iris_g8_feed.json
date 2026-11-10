@@ -90,24 +90,14 @@
   "risk_map": [
     {
       "currency": "USD",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
-      "lock_events": [
-        {
-          "lock_class": "PRESUPUESTO",
-          "title": "Federal Budget Balance",
-          "time": "2026-11-12T19:00:00.000Z",
-          "hours_until": 45.2,
-          "retirar_limitadas": false
-        }
-      ],
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
+      "lock_events": [],
       "retirar_limitadas": false,
       "silence": false,
       "polymarket": [],
       "ea4_24h": false,
-      "reasons": [
-        "presupuesto"
-      ]
+      "reasons": []
     },
     {
       "currency": "EUR",
@@ -227,89 +217,77 @@
   "pair_risk": [
     {
       "pair": "EURUSD",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "EUR",
         "quote": "USD"
       },
       "reasons": [
-        "discurso",
-        "presupuesto"
+        "discurso"
       ]
     },
     {
       "pair": "GBPUSD",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "GBP",
         "quote": "USD"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h",
-        "presupuesto"
+        "dato de primer nivel entre 24 y 48 h"
       ]
     },
     {
       "pair": "USDJPY",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "USD",
         "quote": "JPY"
       },
-      "reasons": [
-        "presupuesto"
-      ]
+      "reasons": []
     },
     {
       "pair": "USDCHF",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "USD",
         "quote": "CHF"
       },
-      "reasons": [
-        "presupuesto"
-      ]
+      "reasons": []
     },
     {
       "pair": "USDCAD",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "USD",
         "quote": "CAD"
       },
-      "reasons": [
-        "presupuesto"
-      ]
+      "reasons": []
     },
     {
       "pair": "AUDUSD",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "AUD",
         "quote": "USD"
       },
-      "reasons": [
-        "presupuesto"
-      ]
+      "reasons": []
     },
     {
       "pair": "NZDUSD",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "USD"
       },
-      "reasons": [
-        "presupuesto"
-      ]
+      "reasons": []
     },
     {
       "pair": "EURGBP",
@@ -546,15 +524,13 @@
     },
     {
       "pair": "XAUUSD",
-      "risk_level": "ALTO",
-      "lock_level": "TOTAL",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "XAU",
         "quote": "USD"
       },
-      "reasons": [
-        "presupuesto"
-      ]
+      "reasons": []
     }
   ],
   "agenda_window": [
@@ -1543,9 +1519,9 @@
       "forecast": "-286.3B",
       "previous": "-26.9B",
       "hours_from_now": 45.2,
-      "window_status": "TOTAL",
-      "lock_class": "PRESUPUESTO",
-      "lock_level": "TOTAL",
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
       "retirar_limitadas": false
     },
     {

@@ -112,6 +112,26 @@ test('Annual Budget Release → TOTAL', () => {
   assert.equal(row.lock_level, 'TOTAL');
 });
 
+test('Federal Budget Balance Low no bloquea; Annual Budget Release sigue en TOTAL', () => {
+  const balance = classifyEventLock(event({
+    title: 'Federal Budget Balance',
+    impact: 'Low',
+    offsetMs: 20 * H,
+  }), NOW);
+  assert.notEqual(balance.lock_class, 'PRESUPUESTO');
+  assert.equal(balance.lock_level, 'NINGUNO');
+  assert.equal(balance.active, false);
+  const upper = classifyEventLock(event({
+    title: 'FEDERAL BUDGET BALANCE',
+    impact: 'Low',
+    offsetMs: 20 * H,
+  }), NOW);
+  assert.equal(upper.lock_level, 'NINGUNO');
+  const release = classifyEventLock(event({ title: 'Annual Budget Release', offsetMs: 16 * H }), NOW);
+  assert.equal(release.lock_class, 'PRESUPUESTO');
+  assert.equal(release.lock_level, 'TOTAL');
+});
+
 test('ISM Services PMI High → AVISO', () => {
   const row = classifyEventLock(event({ title: 'ISM Services PMI', impact: 'High', offsetMs: 6 * H }), NOW);
   assert.equal(row.lock_class, 'OTRO_HIGH');
