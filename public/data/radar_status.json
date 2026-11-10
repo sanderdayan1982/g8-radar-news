@@ -1,17 +1,25 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-10T17:09:38.980Z",
-  "feed_generated_at": "2026-11-10T17:04:33.760Z",
-  "wrote_full_feed": false,
+  "last_check_at": "2026-11-10T17:09:55.586Z",
+  "feed_generated_at": "2026-11-10T17:09:55.566Z",
+  "wrote_full_feed": true,
   "new_items": 0,
   "sources": {
-    "ok": 31,
+    "ok": 30,
     "cached": 0,
     "empty": 0,
-    "error": 0,
+    "error": 1,
     "total": 31
   },
-  "failing_sources": [],
+  "failing_sources": [
+    {
+      "id": "rba",
+      "status": "error",
+      "last_error": "HTTP 403",
+      "last_success_at": "2026-11-10T17:04:31.386Z",
+      "consecutive_failures": 1
+    }
+  ],
   "calendar_events": 96,
   "cadence": "Hourly GitHub Actions trigger + self-clocked loop: every 5 min, every 60 s within 15 min of a High-impact event"
 }
