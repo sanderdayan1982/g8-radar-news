@@ -78,6 +78,26 @@ test('el fin de semana UTC no cuenta para el silencio', () => {
   assert.equal(weekendOnly.CAD.silence, false);
 });
 
+test('sin titular, hours_since_last_business es null y silence es true; XAU sigue sin el campo', () => {
+  const now = Date.parse('2026-11-10T18:00:00.000Z');
+  const coverage = buildCoverage([
+    item('USD', '2026-11-10T16:00:00.000Z'),
+  ], now);
+  for (const currency of G8) {
+    if (currency === 'USD') {
+      assert.equal(coverage.USD.hours_since_last_business, 2);
+      assert.equal(coverage.USD.silence, false);
+      continue;
+    }
+    assert.equal(coverage[currency].hours_since_last_business, null);
+    assert.equal(coverage[currency].last_item_at, null);
+    assert.equal(coverage[currency].silence, true);
+  }
+  assert.equal(coverage.XAU.hours_since_last_business, null);
+  assert.equal(coverage.XAU.last_item_at, null);
+  assert.equal(Object.hasOwn(coverage.XAU, 'silence'), false);
+});
+
 test('las ocho divisas llevan la bandera, XAU no, y el silencio no añade candado ni nivel', () => {
   const now = Date.parse('2026-11-10T18:00:00.000Z');
   const old = '2026-11-09T00:00:00.000Z';
@@ -106,7 +126,7 @@ test('las ocho divisas llevan la bandera, XAU no, y el silencio no añade candad
   const empty = buildCoverage([], now);
   for (const currency of G8) {
     assert.equal(empty[currency].hours_since_last_business, null);
-    assert.equal(empty[currency].silence, false);
+    assert.equal(empty[currency].silence, true);
   }
   assert.equal(empty.XAU.hours_since_last_business, null);
   assert.equal(Object.hasOwn(empty.XAU, 'silence'), false);

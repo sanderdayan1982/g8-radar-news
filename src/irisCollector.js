@@ -411,7 +411,7 @@ export function buildCoverage(items, nowMs = Date.now()) {
       hours_since_last_business: business,
     };
     if (SILENCE_CURRENCY_SET.has(currency)) {
-      row.silence = Number.isFinite(business) && business >= SILENCE_BUSINESS_HOURS;
+      row.silence = !Number.isFinite(business) || business >= SILENCE_BUSINESS_HOURS;
     }
     coverage[currency] = row;
   }
