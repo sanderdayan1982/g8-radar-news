@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T14:10:36.879Z",
-  "started_at": "2026-11-10T14:10:33.790Z",
+  "generated_at": "2026-11-10T14:15:41.136Z",
+  "started_at": "2026-11-10T14:15:38.489Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,11 +18,11 @@
       "score": 87,
       "bias": "alcista",
       "structural": 87,
-      "impulse": 72,
+      "impulse": 69,
       "ficha_v6": "A5",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Logan Speaks en 1.7h",
+      "calendar_lock_detail": "FOMC Member Logan Speaks en 1.6h",
       "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
@@ -30,7 +30,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "CPI vs consenso"
       ],
-      "rationale": "28 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL + RELATIVE_PRICE + DATA_REAL · Est +87 | Imp 3h +72. Régimen real mixed."
+      "rationale": "28 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL + RELATIVE_PRICE + DATA_REAL · Est +87 | Imp 3h +69. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -38,7 +38,7 @@
       "score": 33,
       "bias": "alcista",
       "structural": 33,
-      "impulse": 21,
+      "impulse": 20,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -49,7 +49,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +21. Régimen real mixed."
+      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +20. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -57,7 +57,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 21,
+      "impulse": 20,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,7 +67,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +21. Régimen real mixed."
+      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +20. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -79,7 +79,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 4.3h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 4.2h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -110,9 +110,9 @@
     {
       "currency": "AUD",
       "rank": 6,
-      "score": -22,
+      "score": -21,
       "bias": "bajista",
-      "structural": -22,
+      "structural": -21,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -124,15 +124,34 @@
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONDITIONS ACTUAL -2 (FORECAST -,",
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONFIDENCE ACTUAL -15 (FORECAST -"
       ],
-      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -22 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -21 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 7,
+      "score": -23,
+      "bias": "bajista",
+      "structural": -23,
+      "impulse": -10,
+      "ficha_v6": "B12",
+      "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 18h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
+      ],
+      "rationale": "13 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + TRADE_EXTERNAL · Est -23 | Imp 3h -10. Régimen real mixed."
     },
     {
       "currency": "CAD",
-      "rank": 7,
+      "rank": 8,
       "score": -30,
       "bias": "bajista",
       "structural": -30,
-      "impulse": -21,
+      "impulse": -20,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -144,27 +163,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
         "CPI sin sorpresa"
       ],
-      "rationale": "15 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h -21. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 8,
-      "score": -35,
-      "bias": "bajista",
-      "structural": -35,
-      "impulse": -10,
-      "ficha_v6": "B12",
-      "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 18.1h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co",
-        "B12_EUR_FRAG_RIESGO: ECB's Lane: French fiscal problems need to",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
-      ],
-      "rationale": "13 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + TRADE_EXTERNAL · Est -35 | Imp 3h -10. Régimen real mixed."
+      "rationale": "15 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h -20. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -193,11 +192,11 @@
       "score": 87,
       "bias": "alcista",
       "structural": 87,
-      "impulse": 72,
+      "impulse": 69,
       "ficha_v6": "A5",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Logan Speaks en 1.7h",
+      "calendar_lock_detail": "FOMC Member Logan Speaks en 1.6h",
       "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
@@ -205,7 +204,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "CPI vs consenso"
       ],
-      "rationale": "28 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL + RELATIVE_PRICE + DATA_REAL · Est +87 | Imp 3h +72. Régimen real mixed."
+      "rationale": "28 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL + RELATIVE_PRICE + DATA_REAL · Est +87 | Imp 3h +69. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -213,7 +212,7 @@
       "score": 33,
       "bias": "alcista",
       "structural": 33,
-      "impulse": 21,
+      "impulse": 20,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -224,7 +223,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +21. Régimen real mixed."
+      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +20. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -232,7 +231,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 21,
+      "impulse": 20,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -242,7 +241,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +21. Régimen real mixed."
+      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +20. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -254,7 +253,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 4.3h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 4.2h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -285,9 +284,9 @@
     {
       "currency": "AUD",
       "rank": 6,
-      "score": -22,
+      "score": -21,
       "bias": "bajista",
-      "structural": -22,
+      "structural": -21,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -299,15 +298,34 @@
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONDITIONS ACTUAL -2 (FORECAST -,",
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONFIDENCE ACTUAL -15 (FORECAST -"
       ],
-      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -22 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -21 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "EUR",
+      "rank": 7,
+      "score": -23,
+      "bias": "bajista",
+      "structural": -23,
+      "impulse": -10,
+      "ficha_v6": "B12",
+      "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 18h",
+      "post_event_status": null,
+      "no_evidence": false,
+      "drivers": [
+        "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
+      ],
+      "rationale": "13 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + TRADE_EXTERNAL · Est -23 | Imp 3h -10. Régimen real mixed."
     },
     {
       "currency": "CAD",
-      "rank": 7,
+      "rank": 8,
       "score": -30,
       "bias": "bajista",
       "structural": -30,
-      "impulse": -21,
+      "impulse": -20,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -319,27 +337,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
         "CPI sin sorpresa"
       ],
-      "rationale": "15 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h -21. Régimen real mixed."
-    },
-    {
-      "currency": "EUR",
-      "rank": 8,
-      "score": -35,
-      "bias": "bajista",
-      "structural": -35,
-      "impulse": -10,
-      "ficha_v6": "B12",
-      "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 18.1h",
-      "post_event_status": null,
-      "no_evidence": false,
-      "drivers": [
-        "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co",
-        "B12_EUR_FRAG_RIESGO: ECB's Lane: French fiscal problems need to",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
-      ],
-      "rationale": "13 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + TRADE_EXTERNAL · Est -35 | Imp 3h -10. Régimen real mixed."
+      "rationale": "15 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h -20. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -352,7 +350,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -31.2,
+      "hours_from_now": -31.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +362,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -28.7,
+      "hours_from_now": -28.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -376,7 +374,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -23.2,
+      "hours_from_now": -23.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -388,7 +386,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23.2,
+      "hours_from_now": -23.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -400,7 +398,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -20.9,
+      "hours_from_now": -21,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -424,7 +422,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -14.7,
+      "hours_from_now": -14.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -436,7 +434,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -14.7,
+      "hours_from_now": -14.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -448,7 +446,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -14.3,
+      "hours_from_now": -14.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -460,7 +458,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -14.3,
+      "hours_from_now": -14.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -472,7 +470,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -14.3,
+      "hours_from_now": -14.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -496,7 +494,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -13.7,
+      "hours_from_now": -13.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -508,7 +506,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -10.6,
+      "hours_from_now": -10.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -520,7 +518,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -9.2,
+      "hours_from_now": -9.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -532,7 +530,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.7,
+      "hours_from_now": -5.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -544,7 +542,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.2,
+      "hours_from_now": -5.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -556,7 +554,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": -4.1,
+      "hours_from_now": -4.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -568,7 +566,7 @@
       "actual": "97.8",
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": -3.2,
+      "hours_from_now": -3.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -580,7 +578,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1.7,
+      "hours_from_now": -1.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -592,7 +590,7 @@
       "actual": "19.75K",
       "forecast": null,
       "previous": "16.8K",
-      "hours_from_now": -0.9,
+      "hours_from_now": -1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -604,7 +602,7 @@
       "actual": "0.3%",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -0.7,
+      "hours_from_now": -0.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -616,7 +614,7 @@
       "actual": "0.4%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": -0.7,
+      "hours_from_now": -0.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -628,7 +626,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.7,
+      "hours_from_now": 1.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +650,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.3,
+      "hours_from_now": 4.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +662,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.3,
+      "hours_from_now": 4.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +674,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.3,
+      "hours_from_now": 4.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +686,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.3,
+      "hours_from_now": 6.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +698,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.3,
+      "hours_from_now": 7.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +710,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.3,
+      "hours_from_now": 9.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +722,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.3,
+      "hours_from_now": 9.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +734,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 9.7,
+      "hours_from_now": 9.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +746,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 15.8,
+      "hours_from_now": 15.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +758,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 16.8,
+      "hours_from_now": 16.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -784,7 +782,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.1,
+      "hours_from_now": 18,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +794,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 18.8,
+      "hours_from_now": 18.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -808,7 +806,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 19.6,
+      "hours_from_now": 19.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -820,7 +818,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 20.4,
+      "hours_from_now": 20.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -832,7 +830,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22.8,
+      "hours_from_now": 22.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -844,7 +842,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22.8,
+      "hours_from_now": 22.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -856,7 +854,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 31.6,
+      "hours_from_now": 31.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -868,7 +866,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 33.7,
+      "hours_from_now": 33.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -880,7 +878,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 33.8,
+      "hours_from_now": 33.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -904,7 +902,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -916,7 +914,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -928,7 +926,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -940,7 +938,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -952,7 +950,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -964,7 +962,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -976,7 +974,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -988,7 +986,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1000,7 +998,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 42.8,
+      "hours_from_now": 42.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1012,7 +1010,7 @@
       "actual": null,
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": 47.3,
+      "hours_from_now": 47.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1024,7 +1022,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": 47.3,
+      "hours_from_now": 47.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1036,7 +1034,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.3,
+      "hours_from_now": 47.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1051,6 +1049,145 @@
     "NZD": 1.13
   },
   "items": [
+    {
+      "id": "607fc096239415ad50115e2f8002f793c6a82c827d4509e003972e6bf0340e92",
+      "sha256": "607fc096239415ad50115e2f8002f793c6a82c827d4509e003972e6bf0340e92",
+      "title": "Yemen's Houthis attacked an Aramco facility in Abqaiq - Statement.",
+      "url": "https://t.me/FinancialJuice/146018",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:13:41.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0bff68daefa6e6de6acfa431ee961e0c88df40e1a0cd3bdf3ce7e6647bb048ff",
+      "sha256": "0bff68daefa6e6de6acfa431ee961e0c88df40e1a0cd3bdf3ce7e6647bb048ff",
+      "title": "DIRECTO | LA BATALLA DEL EURO DIGITAL: EL BCE DA EXPLICACIONES ANTE LA EUROCÁMARA",
+      "url": "https://t.me/negociostv/60439",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T14:13:33.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T14:12:26.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7c6bca842c116111a5a2d3cef5e8416c1db01f37cb1743c744510678ee214e91",
+      "sha256": "7c6bca842c116111a5a2d3cef5e8416c1db01f37cb1743c744510678ee214e91",
+      "title": "Yemen's Houthis attacked oil pumping stations of Saudi Arabia's East-West pipeline - Statement.",
+      "url": "https://t.me/FinancialJuice/146017",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:12:25.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b3c78498e869a5cd2c04dc3ffbb49991445d75b0f8ef0b593f4b7cfa521f057",
+      "sha256": "2b3c78498e869a5cd2c04dc3ffbb49991445d75b0f8ef0b593f4b7cfa521f057",
+      "title": "Claves del día: El gran problema de Hegseth y Trump, tremendo lío en Nvidia y Abascal en La Revuelta",
+      "url": "https://t.me/negociostv/60438",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T14:11:43.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "e42b875d2ca2131aa79543b0d28ea7a7d95a9a66b327b7bad32903dfb254c298",
       "sha256": "e42b875d2ca2131aa79543b0d28ea7a7d95a9a66b327b7bad32903dfb254c298",
@@ -8062,158 +8199,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-09T23:55:35.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0eed8dbecabc48a47703c4696208bb7328670c53568ca18705128f1f26b16bc4",
-      "sha256": "0eed8dbecabc48a47703c4696208bb7328670c53568ca18705128f1f26b16bc4",
-      "title": "BOJ summary: one member said must watch risk future rate hike will weigh on economy, push down inflation",
-      "url": "https://t.me/FinancialJuice/145850",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:55:29.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4a05e07cd40133f8c69b5ca5660bac6c6ee49b4dc654ce9c9139c5d640b86a91",
-      "sha256": "4a05e07cd40133f8c69b5ca5660bac6c6ee49b4dc654ce9c9139c5d640b86a91",
-      "title": "BOJ summary: one member said central bank must move policy rate to neutral early for flexible response in hikes and cuts",
-      "url": "https://t.me/FinancialJuice/145849",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:55:04.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5a821cc88a6ea3ba4abf18e615a5ba8766851e04b5bc788af0d71f140f9f4916",
-      "sha256": "5a821cc88a6ea3ba4abf18e615a5ba8766851e04b5bc788af0d71f140f9f4916",
-      "title": "BOJ summary: one member said BOJ must observe financial conditions for several months after each rate increase in adjusting monetary easing",
-      "url": "https://t.me/FinancialJuice/145848",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:54:25.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "89bd229c522cd76c2b486a31b109a8e0313643190509d5c2b42f3fd121961ff7",
-      "sha256": "89bd229c522cd76c2b486a31b109a8e0313643190509d5c2b42f3fd121961ff7",
-      "title": "BoJ summary: one member said underlying inflation has hit 2%, BoJ must raise policy rate to neutral level soon",
-      "url": "https://t.me/FinancialJuice/145847",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:53:51.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "58928e6a1297b51246821d1982d4f409bf4346d01f65549bd318c2dbbd46741d",
-      "sha256": "58928e6a1297b51246821d1982d4f409bf4346d01f65549bd318c2dbbd46741d",
-      "title": "BOJ summary: one member said Japan entering new phase requiring faster rate hikes toward neutral levels",
-      "url": "https://t.me/FinancialJuice/145846",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:53:44.000Z",
       "currencies": [
         "JPY"
       ],
@@ -8238,6 +8223,145 @@
   ],
   "news": [
     {
+      "id": "607fc096239415ad50115e2f8002f793c6a82c827d4509e003972e6bf0340e92",
+      "sha256": "607fc096239415ad50115e2f8002f793c6a82c827d4509e003972e6bf0340e92",
+      "title": "Yemen's Houthis attacked an Aramco facility in Abqaiq - Statement.",
+      "url": "https://t.me/FinancialJuice/146018",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:13:41.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0bff68daefa6e6de6acfa431ee961e0c88df40e1a0cd3bdf3ce7e6647bb048ff",
+      "sha256": "0bff68daefa6e6de6acfa431ee961e0c88df40e1a0cd3bdf3ce7e6647bb048ff",
+      "title": "DIRECTO | LA BATALLA DEL EURO DIGITAL: EL BCE DA EXPLICACIONES ANTE LA EUROCÁMARA",
+      "url": "https://t.me/negociostv/60439",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T14:13:33.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T14:12:26.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7c6bca842c116111a5a2d3cef5e8416c1db01f37cb1743c744510678ee214e91",
+      "sha256": "7c6bca842c116111a5a2d3cef5e8416c1db01f37cb1743c744510678ee214e91",
+      "title": "Yemen's Houthis attacked oil pumping stations of Saudi Arabia's East-West pipeline - Statement.",
+      "url": "https://t.me/FinancialJuice/146017",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:12:25.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b3c78498e869a5cd2c04dc3ffbb49991445d75b0f8ef0b593f4b7cfa521f057",
+      "sha256": "2b3c78498e869a5cd2c04dc3ffbb49991445d75b0f8ef0b593f4b7cfa521f057",
+      "title": "Claves del día: El gran problema de Hegseth y Trump, tremendo lío en Nvidia y Abascal en La Revuelta",
+      "url": "https://t.me/negociostv/60438",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T14:11:43.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e42b875d2ca2131aa79543b0d28ea7a7d95a9a66b327b7bad32903dfb254c298",
       "sha256": "e42b875d2ca2131aa79543b0d28ea7a7d95a9a66b327b7bad32903dfb254c298",
       "title": "Oil falls below $90 as Trump pulls back from threat to strike Iran",
@@ -15248,158 +15372,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-09T23:55:35.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0eed8dbecabc48a47703c4696208bb7328670c53568ca18705128f1f26b16bc4",
-      "sha256": "0eed8dbecabc48a47703c4696208bb7328670c53568ca18705128f1f26b16bc4",
-      "title": "BOJ summary: one member said must watch risk future rate hike will weigh on economy, push down inflation",
-      "url": "https://t.me/FinancialJuice/145850",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:55:29.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4a05e07cd40133f8c69b5ca5660bac6c6ee49b4dc654ce9c9139c5d640b86a91",
-      "sha256": "4a05e07cd40133f8c69b5ca5660bac6c6ee49b4dc654ce9c9139c5d640b86a91",
-      "title": "BOJ summary: one member said central bank must move policy rate to neutral early for flexible response in hikes and cuts",
-      "url": "https://t.me/FinancialJuice/145849",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:55:04.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5a821cc88a6ea3ba4abf18e615a5ba8766851e04b5bc788af0d71f140f9f4916",
-      "sha256": "5a821cc88a6ea3ba4abf18e615a5ba8766851e04b5bc788af0d71f140f9f4916",
-      "title": "BOJ summary: one member said BOJ must observe financial conditions for several months after each rate increase in adjusting monetary easing",
-      "url": "https://t.me/FinancialJuice/145848",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:54:25.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "89bd229c522cd76c2b486a31b109a8e0313643190509d5c2b42f3fd121961ff7",
-      "sha256": "89bd229c522cd76c2b486a31b109a8e0313643190509d5c2b42f3fd121961ff7",
-      "title": "BoJ summary: one member said underlying inflation has hit 2%, BoJ must raise policy rate to neutral level soon",
-      "url": "https://t.me/FinancialJuice/145847",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:53:51.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "58928e6a1297b51246821d1982d4f409bf4346d01f65549bd318c2dbbd46741d",
-      "sha256": "58928e6a1297b51246821d1982d4f409bf4346d01f65549bd318c2dbbd46741d",
-      "title": "BOJ summary: one member said Japan entering new phase requiring faster rate hikes toward neutral levels",
-      "url": "https://t.me/FinancialJuice/145846",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:53:44.000Z",
       "currencies": [
         "JPY"
       ],
