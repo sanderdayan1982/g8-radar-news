@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T00:01:26.955Z",
-  "started_at": "2026-11-10T00:01:24.131Z",
+  "generated_at": "2026-11-10T00:06:31.910Z",
+  "started_at": "2026-11-10T00:06:29.012Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,10 +15,10 @@
     {
       "currency": "JPY",
       "rank": 1,
-      "score": 25,
+      "score": 37,
       "bias": "alcista",
-      "structural": 25,
-      "impulse": 16,
+      "structural": 37,
+      "impulse": 27,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -30,7 +30,7 @@
         "Divergencia dovish BC (Ficha B2)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +25 | Imp 3h +16. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE + RISK_GEO + TRADE_EXTERNAL · Est +37 | Imp 3h +27. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -61,7 +61,7 @@
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 9h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 8.9h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -69,7 +69,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "40 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +12 | Imp 3h +9. Régimen real mixed."
+      "rationale": "38 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +12 | Imp 3h +9. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -81,7 +81,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 32.2h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 32.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -92,27 +92,8 @@
       "rationale": "11 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
-      "currency": "GBP",
-      "rank": 4,
-      "score": 0,
-      "bias": "neutral",
-      "structural": 0,
-      "impulse": null,
-      "ficha_v6": "A12 / B10 / C3",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 8.5h",
-      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "FLUJO_FISCAL_NFA: The UK Treasury needs to keep consumers fron",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "12 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
-    },
-    {
       "currency": "AUD",
-      "rank": 6,
+      "rank": 5,
       "score": -1,
       "bias": "neutral",
       "structural": -1,
@@ -129,6 +110,24 @@
         "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
       ],
       "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + FISCAL_NFA · Est -1 | Imp 3h +11. Régimen real mixed."
+    },
+    {
+      "currency": "GBP",
+      "rank": 6,
+      "score": -13,
+      "bias": "bajista",
+      "structural": -13,
+      "impulse": -13,
+      "ficha_v6": "B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 8.4h",
+      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "Dato real suave: UK BRC RETAIL SALES YOY ACTUAL 1.1% (FORECAST 1.2%, PREVI"
+      ],
+      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est -13 | Imp 3h -13. Régimen real weak."
     },
     {
       "currency": "NZD",
@@ -155,7 +154,7 @@
       "score": -58,
       "bias": "bajista",
       "structural": -58,
-      "impulse": -16,
+      "impulse": -15,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -167,7 +166,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -58 | Imp 3h -16. Régimen real mixed."
+      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -58 | Imp 3h -15. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -193,10 +192,10 @@
     {
       "currency": "JPY",
       "rank": 1,
-      "score": 25,
+      "score": 37,
       "bias": "alcista",
-      "structural": 25,
-      "impulse": 16,
+      "structural": 37,
+      "impulse": 27,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -208,7 +207,7 @@
         "Divergencia dovish BC (Ficha B2)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +25 | Imp 3h +16. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · POLICY_PRICE + RISK_GEO + TRADE_EXTERNAL · Est +37 | Imp 3h +27. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -239,7 +238,7 @@
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 9h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 8.9h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -247,7 +246,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "40 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +12 | Imp 3h +9. Régimen real mixed."
+      "rationale": "38 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +12 | Imp 3h +9. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -259,7 +258,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 32.2h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 32.1h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -270,27 +269,8 @@
       "rationale": "11 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
     },
     {
-      "currency": "GBP",
-      "rank": 4,
-      "score": 0,
-      "bias": "neutral",
-      "structural": 0,
-      "impulse": null,
-      "ficha_v6": "A12 / B10 / C3",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 8.5h",
-      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "FLUJO_FISCAL_NFA: The UK Treasury needs to keep consumers fron",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "12 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
-    },
-    {
       "currency": "AUD",
-      "rank": 6,
+      "rank": 5,
       "score": -1,
       "bias": "neutral",
       "structural": -1,
@@ -307,6 +287,24 @@
         "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
       ],
       "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · DATA_REAL + RISK_GEO + FISCAL_NFA · Est -1 | Imp 3h +11. Régimen real mixed."
+    },
+    {
+      "currency": "GBP",
+      "rank": 6,
+      "score": -13,
+      "bias": "bajista",
+      "structural": -13,
+      "impulse": -13,
+      "ficha_v6": "B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 8.4h",
+      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "Dato real suave: UK BRC RETAIL SALES YOY ACTUAL 1.1% (FORECAST 1.2%, PREVI"
+      ],
+      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est -13 | Imp 3h -13. Régimen real weak."
     },
     {
       "currency": "NZD",
@@ -333,7 +331,7 @@
       "score": -58,
       "bias": "bajista",
       "structural": -58,
-      "impulse": -16,
+      "impulse": -15,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -345,7 +343,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -58 | Imp 3h -16. Régimen real mixed."
+      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -58 | Imp 3h -15. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -358,7 +356,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -19,
+      "hours_from_now": -19.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -370,7 +368,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -17,
+      "hours_from_now": -17.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -382,7 +380,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -14.5,
+      "hours_from_now": -14.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -394,7 +392,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.8,
+      "hours_from_now": -13.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -406,7 +404,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.8,
+      "hours_from_now": -13.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -430,7 +428,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -9,
+      "hours_from_now": -9.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -442,7 +440,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9,
+      "hours_from_now": -9.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -454,7 +452,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -466,7 +464,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.6,
+      "hours_from_now": -6.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -478,7 +476,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -0.5,
+      "hours_from_now": -0.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -490,7 +488,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -0.5,
+      "hours_from_now": -0.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -502,7 +500,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -0.2,
+      "hours_from_now": -0.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -514,7 +512,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.2,
+      "hours_from_now": -0.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -526,7 +524,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -0.2,
+      "hours_from_now": -0.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -535,10 +533,10 @@
       "title": "BRC Retail Sales Monitor y/y",
       "event_at": "2026-11-10T00:01:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": 0,
+      "hours_from_now": -0.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -550,7 +548,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": 0.5,
+      "hours_from_now": 0.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -562,7 +560,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 3.6,
+      "hours_from_now": 3.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -574,7 +572,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": 5,
+      "hours_from_now": 4.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -586,7 +584,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 8.5,
+      "hours_from_now": 8.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -598,7 +596,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9,
+      "hours_from_now": 8.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -610,7 +608,7 @@
       "actual": null,
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": 11,
+      "hours_from_now": 10.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -622,7 +620,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 11.5,
+      "hours_from_now": 11.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -634,7 +632,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 12.5,
+      "hours_from_now": 12.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -646,7 +644,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13.2,
+      "hours_from_now": 13.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -658,7 +656,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 13.5,
+      "hours_from_now": 13.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -670,7 +668,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 13.5,
+      "hours_from_now": 13.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -682,7 +680,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.8,
+      "hours_from_now": 15.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -694,7 +692,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 18,
+      "hours_from_now": 17.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -706,7 +704,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.5,
+      "hours_from_now": 18.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -718,7 +716,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.5,
+      "hours_from_now": 18.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -730,7 +728,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.5,
+      "hours_from_now": 18.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -742,7 +740,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20.5,
+      "hours_from_now": 20.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -754,7 +752,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.5,
+      "hours_from_now": 21.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -766,7 +764,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.5,
+      "hours_from_now": 23.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -778,7 +776,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.5,
+      "hours_from_now": 23.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -790,7 +788,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 23.8,
+      "hours_from_now": 23.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -802,7 +800,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 30,
+      "hours_from_now": 29.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -814,7 +812,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 31,
+      "hours_from_now": 30.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -826,7 +824,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31,
+      "hours_from_now": 30.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -838,7 +836,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 32.2,
+      "hours_from_now": 32.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -850,7 +848,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 33,
+      "hours_from_now": 32.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -862,7 +860,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.7,
+      "hours_from_now": 33.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -886,7 +884,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37,
+      "hours_from_now": 36.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -898,7 +896,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37,
+      "hours_from_now": 36.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -910,7 +908,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 45.7,
+      "hours_from_now": 45.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -922,7 +920,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 47.8,
+      "hours_from_now": 47.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -934,7 +932,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -946,7 +944,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -962,6 +960,187 @@
   },
   "items": [
     {
+      "id": "0e5e54bfab001d6a2948338354595a14a927c4b3ae3453d112a00f1ddb1d5007",
+      "sha256": "0e5e54bfab001d6a2948338354595a14a927c4b3ae3453d112a00f1ddb1d5007",
+      "title": "Japan household spending plunges 6.8 10th straight drop as boj weighs december hike",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T00:05:39.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Fiscal"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7c43b41b13cbf2306ba7fb5b7c1f580b7434dc420dc7ece5c8d75aabd86c58bf",
+      "sha256": "7c43b41b13cbf2306ba7fb5b7c1f580b7434dc420dc7ece5c8d75aabd86c58bf",
+      "title": "Barclays UK october consumer spending rises 2.3% yy vs 2.0% in september, biggest increase since July 2025",
+      "url": "https://t.me/FinancialJuice/145859",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:47.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "2.0%",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "53ef5a93fd7c3670e5d415975f79037ddcbc60bd73379ced31d1e3e9d2c8c076",
+      "sha256": "53ef5a93fd7c3670e5d415975f79037ddcbc60bd73379ced31d1e3e9d2c8c076",
+      "title": "British Retail Consortium total sales in October up 1.5% year-on-year vs 1.3% in September, strongest increase since June",
+      "url": "https://t.me/FinancialJuice/145858",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:40.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "1.3%",
+      "previous": null,
+      "calendar_title": "BRC Retail Sales Monitor y/y",
+      "z": null
+    },
+    {
+      "id": "555f3fe0143e8831f532dc7d60386d1f2c5623b1e69eb43387b8c759a2da411d",
+      "sha256": "555f3fe0143e8831f532dc7d60386d1f2c5623b1e69eb43387b8c759a2da411d",
+      "title": "British Retail Consortium like-for-like sales in October up 1.1% year-on-year vs 1.0% in September",
+      "url": "https://t.me/FinancialJuice/145857",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:35.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "1.0%",
+      "previous": null,
+      "calendar_title": "BRC Retail Sales Monitor y/y",
+      "z": null
+    },
+    {
+      "id": "ff5cb59c19cc5899f17e225d6b958ce8eb9229d78212af85d375d29026bfed20",
+      "sha256": "ff5cb59c19cc5899f17e225d6b958ce8eb9229d78212af85d375d29026bfed20",
+      "title": "Barclays: UK October consumer confidence weakest since April",
+      "url": "https://t.me/FinancialJuice/145856",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:34.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "df785517eaba91d271d5e6b1752ec1373abd8f32c11fa4ed54a89685788eef03",
+      "sha256": "df785517eaba91d271d5e6b1752ec1373abd8f32c11fa4ed54a89685788eef03",
+      "title": "UK BRC RETAIL SALES YOY ACTUAL 1.1% (FORECAST 1.2%, PREVIOUS 1.0%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145855",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:25.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "CONTRACCION_REAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "1.1%",
+      "forecast": "1.2%",
+      "previous": "1.0%",
+      "calendar_title": "BRC Retail Sales Monitor y/y",
+      "z": -0.7
+    },
+    {
       "id": "ce32a85556533b75f76550c98c1d72d4273573c414ec69da46f53a24f0a77973",
       "sha256": "ce32a85556533b75f76550c98c1d72d4273573c414ec69da46f53a24f0a77973",
       "title": "Boj Summary: One member said wage growth for next year unlikely to rise much from this year, risk of second-round effects low",
@@ -1627,6 +1806,32 @@
       "z": -25.3
     },
     {
+      "id": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
+      "sha256": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
+      "title": "Blackrock an ai spending slowdown in 2027 would hurt markets but could also lower yields",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-09T23:30:39.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "ced21bccac6ba1b9cf3cc2d854fd91340dbe57bcdcb549095e1fcb8fbdaeb297",
       "sha256": "ced21bccac6ba1b9cf3cc2d854fd91340dbe57bcdcb549095e1fcb8fbdaeb297",
       "title": "Japan September household spending falls 2.8% month on month, government says (Poll: 0.3%)",
@@ -1648,32 +1853,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
-      "sha256": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
-      "title": "Blackrock an ai spending slowdown in 2027 would hurt markets but could also lower yields",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T23:30:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
@@ -7802,176 +7981,6 @@
       "legacy_category": "geopolitica",
       "ficha_v6": "A6 / B5 / B15",
       "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d3d364e886bb18566f84cbcd6ae2f1af412c8e21444021e66d56c6074e74370a",
-      "sha256": "d3d364e886bb18566f84cbcd6ae2f1af412c8e21444021e66d56c6074e74370a",
-      "title": "Iraq PM visited Tehran on Friday for Iran-US war talks - Fars.",
-      "url": "https://t.me/FinancialJuice/145660",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:22:56.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3f26f38ee406603e34345cf917af9a7515f7fe359c938575d4a3af14f6e5adfb",
-      "sha256": "3f26f38ee406603e34345cf917af9a7515f7fe359c938575d4a3af14f6e5adfb",
-      "title": "DIRECTO | VALDECASAS: TRUMP FRENTE A IRÁN, CAÍDA DE NETANYAHU Y ALARMA NUCLEAR EN UCRANIA",
-      "url": "https://t.me/negociostv/60409",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T13:19:20.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "befeb91e9c1cd00fde94612b7c11e47a0dfdd59a4c22162fa779a09c08ea131e",
-      "sha256": "befeb91e9c1cd00fde94612b7c11e47a0dfdd59a4c22162fa779a09c08ea131e",
-      "title": "Admin will give a congressional briefing today on NVIDIA CEO - CBS. $NVDA",
-      "url": "https://t.me/FinancialJuice/145659",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:13:18.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a73e05bb59aa80aa3127965ddbfb5ba991ec5c9f63b849e2fdd96028b1448c4d",
-      "sha256": "a73e05bb59aa80aa3127965ddbfb5ba991ec5c9f63b849e2fdd96028b1448c4d",
-      "title": "Eurogroup President: The ideal situation would be to make a decision on a new ECB president by the end of the year.",
-      "url": "https://t.me/FinancialJuice/145658",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:11:02.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67ab48f2f6433a752ea2941dc5d764409df6ab2261d95508812d791af0246bd0",
-      "sha256": "67ab48f2f6433a752ea2941dc5d764409df6ab2261d95508812d791af0246bd0",
-      "title": "Qatari Official: The US and Iran are talking to mediators on deal details.",
-      "url": "https://t.me/FinancialJuice/145657",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:08:51.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ad8769dc8465b22387670fd85db2616251d3ecfd5df48d16f97c966be24521d3",
-      "sha256": "ad8769dc8465b22387670fd85db2616251d3ecfd5df48d16f97c966be24521d3",
-      "title": "❗ Qatari Official: Reports on US-Iran proposal details are false. Negotiations are ongoing.",
-      "url": "https://t.me/FinancialJuice/145656",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:08:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
@@ -7983,6 +7992,187 @@
   ],
   "news": [
     {
+      "id": "0e5e54bfab001d6a2948338354595a14a927c4b3ae3453d112a00f1ddb1d5007",
+      "sha256": "0e5e54bfab001d6a2948338354595a14a927c4b3ae3453d112a00f1ddb1d5007",
+      "title": "Japan household spending plunges 6.8 10th straight drop as boj weighs december hike",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T00:05:39.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Fiscal"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7c43b41b13cbf2306ba7fb5b7c1f580b7434dc420dc7ece5c8d75aabd86c58bf",
+      "sha256": "7c43b41b13cbf2306ba7fb5b7c1f580b7434dc420dc7ece5c8d75aabd86c58bf",
+      "title": "Barclays UK october consumer spending rises 2.3% yy vs 2.0% in september, biggest increase since July 2025",
+      "url": "https://t.me/FinancialJuice/145859",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:47.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "2.0%",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "53ef5a93fd7c3670e5d415975f79037ddcbc60bd73379ced31d1e3e9d2c8c076",
+      "sha256": "53ef5a93fd7c3670e5d415975f79037ddcbc60bd73379ced31d1e3e9d2c8c076",
+      "title": "British Retail Consortium total sales in October up 1.5% year-on-year vs 1.3% in September, strongest increase since June",
+      "url": "https://t.me/FinancialJuice/145858",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:40.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "1.3%",
+      "previous": null,
+      "calendar_title": "BRC Retail Sales Monitor y/y",
+      "z": null
+    },
+    {
+      "id": "555f3fe0143e8831f532dc7d60386d1f2c5623b1e69eb43387b8c759a2da411d",
+      "sha256": "555f3fe0143e8831f532dc7d60386d1f2c5623b1e69eb43387b8c759a2da411d",
+      "title": "British Retail Consortium like-for-like sales in October up 1.1% year-on-year vs 1.0% in September",
+      "url": "https://t.me/FinancialJuice/145857",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:35.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "1.0%",
+      "previous": null,
+      "calendar_title": "BRC Retail Sales Monitor y/y",
+      "z": null
+    },
+    {
+      "id": "ff5cb59c19cc5899f17e225d6b958ce8eb9229d78212af85d375d29026bfed20",
+      "sha256": "ff5cb59c19cc5899f17e225d6b958ce8eb9229d78212af85d375d29026bfed20",
+      "title": "Barclays: UK October consumer confidence weakest since April",
+      "url": "https://t.me/FinancialJuice/145856",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:34.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "df785517eaba91d271d5e6b1752ec1373abd8f32c11fa4ed54a89685788eef03",
+      "sha256": "df785517eaba91d271d5e6b1752ec1373abd8f32c11fa4ed54a89685788eef03",
+      "title": "UK BRC RETAIL SALES YOY ACTUAL 1.1% (FORECAST 1.2%, PREVIOUS 1.0%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145855",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T00:01:25.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "CONTRACCION_REAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "1.1%",
+      "forecast": "1.2%",
+      "previous": "1.0%",
+      "calendar_title": "BRC Retail Sales Monitor y/y",
+      "z": -0.7
+    },
+    {
       "id": "ce32a85556533b75f76550c98c1d72d4273573c414ec69da46f53a24f0a77973",
       "sha256": "ce32a85556533b75f76550c98c1d72d4273573c414ec69da46f53a24f0a77973",
       "title": "Boj Summary: One member said wage growth for next year unlikely to rise much from this year, risk of second-round effects low",
@@ -8648,6 +8838,32 @@
       "z": -25.3
     },
     {
+      "id": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
+      "sha256": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
+      "title": "Blackrock an ai spending slowdown in 2027 would hurt markets but could also lower yields",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-09T23:30:39.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "ced21bccac6ba1b9cf3cc2d854fd91340dbe57bcdcb549095e1fcb8fbdaeb297",
       "sha256": "ced21bccac6ba1b9cf3cc2d854fd91340dbe57bcdcb549095e1fcb8fbdaeb297",
       "title": "Japan September household spending falls 2.8% month on month, government says (Poll: 0.3%)",
@@ -8669,32 +8885,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
-      "sha256": "bf27c13c145d32734ae476dd4f0a6ac640b391853bdb9994778398d66371e5bf",
-      "title": "Blackrock an ai spending slowdown in 2027 would hurt markets but could also lower yields",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T23:30:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
@@ -14823,176 +15013,6 @@
       "legacy_category": "geopolitica",
       "ficha_v6": "A6 / B5 / B15",
       "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d3d364e886bb18566f84cbcd6ae2f1af412c8e21444021e66d56c6074e74370a",
-      "sha256": "d3d364e886bb18566f84cbcd6ae2f1af412c8e21444021e66d56c6074e74370a",
-      "title": "Iraq PM visited Tehran on Friday for Iran-US war talks - Fars.",
-      "url": "https://t.me/FinancialJuice/145660",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:22:56.000Z",
-      "currencies": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "divisas": [
-        "USD",
-        "JPY",
-        "CHF",
-        "CAD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3f26f38ee406603e34345cf917af9a7515f7fe359c938575d4a3af14f6e5adfb",
-      "sha256": "3f26f38ee406603e34345cf917af9a7515f7fe359c938575d4a3af14f6e5adfb",
-      "title": "DIRECTO | VALDECASAS: TRUMP FRENTE A IRÁN, CAÍDA DE NETANYAHU Y ALARMA NUCLEAR EN UCRANIA",
-      "url": "https://t.me/negociostv/60409",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T13:19:20.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A6 / B5 / B15",
-      "mmt_lens": "SAFE_HAVEN_A6",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "befeb91e9c1cd00fde94612b7c11e47a0dfdd59a4c22162fa779a09c08ea131e",
-      "sha256": "befeb91e9c1cd00fde94612b7c11e47a0dfdd59a4c22162fa779a09c08ea131e",
-      "title": "Admin will give a congressional briefing today on NVIDIA CEO - CBS. $NVDA",
-      "url": "https://t.me/FinancialJuice/145659",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:13:18.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a73e05bb59aa80aa3127965ddbfb5ba991ec5c9f63b849e2fdd96028b1448c4d",
-      "sha256": "a73e05bb59aa80aa3127965ddbfb5ba991ec5c9f63b849e2fdd96028b1448c4d",
-      "title": "Eurogroup President: The ideal situation would be to make a decision on a new ECB president by the end of the year.",
-      "url": "https://t.me/FinancialJuice/145658",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:11:02.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67ab48f2f6433a752ea2941dc5d764409df6ab2261d95508812d791af0246bd0",
-      "sha256": "67ab48f2f6433a752ea2941dc5d764409df6ab2261d95508812d791af0246bd0",
-      "title": "Qatari Official: The US and Iran are talking to mediators on deal details.",
-      "url": "https://t.me/FinancialJuice/145657",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:08:51.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ad8769dc8465b22387670fd85db2616251d3ecfd5df48d16f97c966be24521d3",
-      "sha256": "ad8769dc8465b22387670fd85db2616251d3ecfd5df48d16f97c966be24521d3",
-      "title": "❗ Qatari Official: Reports on US-Iran proposal details are false. Negotiations are ongoing.",
-      "url": "https://t.me/FinancialJuice/145656",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T13:08:34.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
