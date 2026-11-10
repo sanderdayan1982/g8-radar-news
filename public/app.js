@@ -1,4 +1,4 @@
-import { inverseChange, rankRows, hasNoEvidence, connectionState, nextCalendarEvent, fxClosed, safeUrl } from './domain.js';
+import { inverseChange, rankRows, hasNoEvidence, connectionState, nextCalendarEvent, fxClosed, safeUrl, sourceFetchedLive } from './domain.js';
 import { classifyEventLock, lockSeverityIndex } from './lockSeverity.js';
 const CURRENCIES = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'CAD', 'AUD', 'NZD'];
 const BANK = { USD: 'Fed', EUR: 'BCE', GBP: 'BoE', JPY: 'BoJ', CHF: 'SNB', CAD: 'BoC', AUD: 'RBA', NZD: 'RBNZ' };
@@ -140,7 +140,7 @@ function renderLive() {
   if (summary) {
     const d=ui.data;
     const zone=Intl.DateTimeFormat().resolvedOptions().timeZone;
-    summary.textContent=d ? `${d.sources?.filter(x=>x.status==='ok').length || 0}/${d.sources?.length || 0} fuentes responden · ${d.news?.length || 0} noticias recientes · ${detail} · ${zone}` : `Conectando con la mesa · ${zone}`;
+    summary.textContent=d ? `${d.sources?.filter(sourceFetchedLive).length || 0}/${d.sources?.length || 0} fuentes responden · ${d.news?.length || 0} noticias recientes · ${detail} · ${zone}` : `Conectando con la mesa · ${zone}`;
   }
 }
 
@@ -152,7 +152,7 @@ function setSyncing(on) {
 }
 
 function isSourceActiveWithinWindow(s, nowMs = Date.now()) {
-  if (!s || s.status !== 'ok') return false;
+  if (!s || !sourceFetchedLive(s)) return false;
   if (!s.last_news_published_at) return true;
   const pubMs = Date.parse(s.last_news_published_at);
   if (!Number.isFinite(pubMs)) return true;
@@ -1034,7 +1034,7 @@ async function scheduleClosedAppTest() {
 function renderHealth() {
   const rows = ui.data.sources || [];
   const checked = rows.filter((r) => r.last_attempt_at);
-  const ok = rows.filter((r) => r.status === 'ok').length;
+  const ok = rows.filter((r) => sourceFetchedLive(r)).length;
   const emptyCount = rows.filter((r) => r.status === 'empty_feed').length;
   const errCount = rows.filter((r) => r.status === 'error').length;
   const cal = ui.data.calendar_sync;
@@ -1063,9 +1063,9 @@ function renderHealth() {
     const freshness=r.freshness==='review' ? '<div class="muted small">Antigüedad elevada: revisar cobertura</div>' : '';
     const countsStr = `+${r.last_new_count ?? 0} (total ${r.stored_count ?? 0}) / ${r.pending_count ?? 0} pend.`;
     let statusHtml = '<span class="muted">Pendiente</span>';
-    if (r.kind === 'live' && r.status === 'ok') {
+    if (r.kind === 'live' && sourceFetchedLive(r)) {
       statusHtml = '<span class="st">Conectada · ' + (r.stored_count ? 'titulares recibidos' : 'esperando titulares') + '</span>';
-    } else if (r.status === 'ok') {
+    } else if (r.status === 'ok' || r.status === 'live') {
       statusHtml = r.freshness === 'review'
         ? `<span class="st err" title="La fuente responde pero su ultimo titular es antiguo">Responde, contenido antiguo (${Math.round((r.content_age_sec || 0) / 86400)} d)</span>`
         : `<span class="st">Operativa (${r.last_fetched_count} extraídos)</span>`;

@@ -25,6 +25,56 @@ export function mergeSourceHealth(current = [], previous = [], { seedMode = fals
   });
 }
 
+// Fifteen minutes: three Actions cycles of 5 min. Inclusive (`<=`).
+// Read only `status` and `last_success_at` from each record in radar_news_full.json.
+export const ACTIONS_CADENCE_MS = 15 * 60 * 1000;
+
+export function actionsRecordWithinCadence(record, nowMs) {
+  if (!record || record.status !== 'ok') return false;
+  const at = Date.parse(record.last_success_at || '');
+  if (!Number.isFinite(at)) return false;
+  return nowMs - at <= ACTIONS_CADENCE_MS;
+}
+
+// A fallback source records a timeout on both URLs as empty_feed with no HTTP status.
+function liveFetchFailed(source) {
+  if (source.status === 'error') return true;
+  return source.status === 'empty_feed' && (source.last_http_status == null);
+}
+
+// Live API status. A successful pull is `live`. A failure or timeout is `cached` only when the
+// Actions record is ok and last_success_at is within 15 minutes; otherwise it is `error`.
+// An HTTP response with zero headlines stays `empty_feed`.
+export function labelLiveAgainstActions(current = [], actionsSources = [], nowMs = Date.now()) {
+  const byId = new Map((actionsSources || []).map((s) => [s.id, s]));
+  return (current || []).map((s) => {
+    if (s.status === 'ok') return { ...s, status: 'live', ok: true, consecutive_failures: 0 };
+    const prev = byId.get(s.id);
+    const carried = {
+      ...s,
+      last_success_at: s.last_success_at || prev?.last_success_at || null,
+      last_news_published_at: s.last_news_published_at || prev?.last_news_published_at || null,
+      stored_count: s.stored_count || prev?.stored_count || 0,
+    };
+    if (!liveFetchFailed(s)) return { ...carried, ok: false };
+    if (actionsRecordWithinCadence(prev, nowMs)) {
+      return {
+        ...carried,
+        status: 'cached',
+        ok: false,
+        cached_reason: s.last_error || 'sin respuesta en la ventana de la función',
+        consecutive_failures: prev?.consecutive_failures || 0,
+      };
+    }
+    return {
+      ...carried,
+      status: 'error',
+      ok: false,
+      consecutive_failures: (prev?.consecutive_failures || 0) + 1,
+    };
+  });
+}
+
 export function healthSummary(sources = []) {
   const by = (st) => sources.filter((s) => s.status === st).length;
   return { ok: by('ok'), cached: by('cached'), empty: by('empty_feed'), error: by('error'), total: sources.length };
@@ -42,9 +92,8 @@ export function isPromotional(item) {
   return PROMO.test(String(item?.title || '')) && !(item?.currencies || []).length && !item?.actual;
 }
 
-// Health block of the IRIS contract (what ENZO audits). "cached" sources answered in the last
-// scheduled sync (<= 5 min) but not inside the serverless 700 ms window: they count as active,
-// and are reported separately; only errors and empty feeds degrade the status.
+// Health block of the IRIS contract (what ENZO audits). "cached" sources count as active.
+// Only errors and empty feeds degrade the status. The formula is the v5.0 contract.
 export function irisHealth(sources = [], agendaEvents = 0) {
   const h = healthSummary(sources);
   const active = h.ok + h.cached;
