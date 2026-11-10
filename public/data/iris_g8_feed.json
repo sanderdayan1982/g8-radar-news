@@ -5,16 +5,36 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T18:52:00.913Z",
-  "started_at": "2026-11-10T18:51:58.089Z",
+  "generated_at": "2026-11-10T18:57:05.596Z",
+  "started_at": "2026-11-10T18:57:02.724Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
   "count": 250,
   "currency_ranking_mmt": [
     {
-      "currency": "CHF",
+      "currency": "USD",
       "rank": 1,
+      "score": 28,
+      "bias": "alcista",
+      "structural": 28,
+      "impulse": 16,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 1.5h",
+      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "Divergencia dovish BC (Ficha B2)",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "39 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + RISK_GEO + FISCAL_NFA · Est +28 | Imp 3h +16. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -32,7 +52,7 @@
     },
     {
       "currency": "JPY",
-      "rank": 1,
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -49,26 +69,6 @@
       "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +12. Régimen real mixed."
     },
     {
-      "currency": "USD",
-      "rank": 3,
-      "score": 16,
-      "bias": "alcista",
-      "structural": 16,
-      "impulse": 4,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 1.6h",
-      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
-      "no_evidence": false,
-      "drivers": [
-        "Divergencia dovish BC (Ficha B2)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "39 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +16 | Imp 3h +4. Régimen real mixed."
-    },
-    {
       "currency": "GBP",
       "rank": 4,
       "score": 11,
@@ -78,7 +78,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "GDP m/m en 36.1h",
+      "calendar_lock_detail": "GDP m/m en 36h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Pill Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -90,9 +90,9 @@
     {
       "currency": "AUD",
       "rank": 5,
-      "score": -15,
+      "score": -14,
       "bias": "bajista",
-      "structural": -15,
+      "structural": -14,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -105,14 +105,14 @@
         "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
         "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
       ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -14 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
       "rank": 5,
-      "score": -15,
+      "score": -14,
       "bias": "bajista",
-      "structural": -15,
+      "structural": -14,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -124,7 +124,7 @@
         "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%",
         "CPI sin sorpresa"
       ],
-      "rationale": "3 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "3 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -14 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -136,7 +136,7 @@
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 13.4h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 13.3h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -188,8 +188,28 @@
   ],
   "g8_ranking": [
     {
-      "currency": "CHF",
+      "currency": "USD",
       "rank": 1,
+      "score": 28,
+      "bias": "alcista",
+      "structural": 28,
+      "impulse": 16,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Bowman Speaks en 1.5h",
+      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "Divergencia dovish BC (Ficha B2)",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "39 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + RISK_GEO + FISCAL_NFA · Est +28 | Imp 3h +16. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -207,7 +227,7 @@
     },
     {
       "currency": "JPY",
-      "rank": 1,
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -224,26 +244,6 @@
       "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +12. Régimen real mixed."
     },
     {
-      "currency": "USD",
-      "rank": 3,
-      "score": 16,
-      "bias": "alcista",
-      "structural": 16,
-      "impulse": 4,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Bowman Speaks en 1.6h",
-      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
-      "no_evidence": false,
-      "drivers": [
-        "Divergencia dovish BC (Ficha B2)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "39 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +16 | Imp 3h +4. Régimen real mixed."
-    },
-    {
       "currency": "GBP",
       "rank": 4,
       "score": 11,
@@ -253,7 +253,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "GDP m/m en 36.1h",
+      "calendar_lock_detail": "GDP m/m en 36h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Pill Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -265,9 +265,9 @@
     {
       "currency": "AUD",
       "rank": 5,
-      "score": -15,
+      "score": -14,
       "bias": "bajista",
-      "structural": -15,
+      "structural": -14,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -280,14 +280,14 @@
         "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra",
         "FLUJO_FISCAL_NFA: Reserve Bank interest rate decision - Treasu"
       ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -14 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
       "rank": 5,
-      "score": -15,
+      "score": -14,
       "bias": "bajista",
-      "structural": -15,
+      "structural": -14,
       "impulse": null,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -299,7 +299,7 @@
         "Ficha B2 / Contracción Laboral: Unemployment Rate 5.7% vs 5.5%",
         "CPI sin sorpresa"
       ],
-      "rationale": "3 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "3 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -14 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -311,7 +311,7 @@
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 13.4h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 13.3h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -352,7 +352,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -35.9,
+      "hours_from_now": -36,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +364,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -33.4,
+      "hours_from_now": -33.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -376,7 +376,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -27.9,
+      "hours_from_now": -28,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -388,7 +388,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -19.4,
+      "hours_from_now": -19.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -400,7 +400,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -19.4,
+      "hours_from_now": -19.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -412,7 +412,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -19,
+      "hours_from_now": -19.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -424,7 +424,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -19,
+      "hours_from_now": -19.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -436,7 +436,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -19,
+      "hours_from_now": -19.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -448,7 +448,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -18.8,
+      "hours_from_now": -18.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -460,7 +460,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -18.4,
+      "hours_from_now": -18.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -472,7 +472,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -15.3,
+      "hours_from_now": -15.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -484,7 +484,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -13.9,
+      "hours_from_now": -14,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -496,7 +496,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -508,7 +508,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.9,
+      "hours_from_now": -10,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -520,7 +520,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": -8.8,
+      "hours_from_now": -8.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -532,7 +532,7 @@
       "actual": "97.8",
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": -7.9,
+      "hours_from_now": -8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -544,7 +544,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.4,
+      "hours_from_now": -6.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -556,7 +556,7 @@
       "actual": "19.75K",
       "forecast": null,
       "previous": "16.8K",
-      "hours_from_now": -5.6,
+      "hours_from_now": -5.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -568,7 +568,7 @@
       "actual": "0.3%",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -5.4,
+      "hours_from_now": -5.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -580,7 +580,7 @@
       "actual": "0.4%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": -5.4,
+      "hours_from_now": -5.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -592,7 +592,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3,
+      "hours_from_now": -3.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -604,7 +604,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": -0.8,
+      "hours_from_now": -0.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -616,7 +616,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.4,
+      "hours_from_now": -0.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -628,7 +628,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.4,
+      "hours_from_now": -0.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -640,7 +640,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.4,
+      "hours_from_now": -0.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -652,7 +652,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +664,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.6,
+      "hours_from_now": 2.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +676,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.6,
+      "hours_from_now": 4.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +688,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.6,
+      "hours_from_now": 4.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +700,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 5,
+      "hours_from_now": 4.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +712,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 11.1,
+      "hours_from_now": 11,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +724,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 12.1,
+      "hours_from_now": 12,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +736,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 12.2,
+      "hours_from_now": 12.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +748,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13.4,
+      "hours_from_now": 13.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +760,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 14.1,
+      "hours_from_now": 14,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -772,7 +772,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.9,
+      "hours_from_now": 14.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -784,7 +784,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 15.7,
+      "hours_from_now": 15.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +796,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.1,
+      "hours_from_now": 18,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -808,7 +808,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.1,
+      "hours_from_now": 18,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -820,7 +820,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 26.9,
+      "hours_from_now": 26.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -832,7 +832,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 29,
+      "hours_from_now": 28.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -844,7 +844,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 29.1,
+      "hours_from_now": 29,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -856,7 +856,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 29.2,
+      "hours_from_now": 29.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -868,7 +868,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -880,7 +880,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -892,7 +892,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -904,7 +904,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -916,7 +916,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -928,7 +928,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -940,7 +940,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -952,7 +952,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -964,7 +964,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.1,
+      "hours_from_now": 38,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -976,7 +976,7 @@
       "actual": null,
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": 42.6,
+      "hours_from_now": 42.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -988,7 +988,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": 42.6,
+      "hours_from_now": 42.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1000,7 +1000,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 42.6,
+      "hours_from_now": 42.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1012,7 +1012,7 @@
       "actual": null,
       "forecast": "3.89M",
       "previous": "3.99M",
-      "hours_from_now": 44.1,
+      "hours_from_now": 44,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1024,7 +1024,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44.1,
+      "hours_from_now": 44,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1036,7 +1036,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 44.1,
+      "hours_from_now": 44,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1048,7 +1048,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.3%",
-      "hours_from_now": 44.6,
+      "hours_from_now": 44.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1060,7 +1060,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.4,
+      "hours_from_now": 45.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1072,7 +1072,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.9M",
-      "hours_from_now": 46.1,
+      "hours_from_now": 46,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1084,7 +1084,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.6,
+      "hours_from_now": 46.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1096,7 +1096,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.62|2.5",
-      "hours_from_now": 47.2,
+      "hours_from_now": 47.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1108,7 +1108,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.3,
+      "hours_from_now": 47.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1120,7 +1120,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.6,
+      "hours_from_now": 47.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1136,6 +1136,120 @@
   },
   "items": [
     {
+      "id": "5ba03e504ab5370a0429bd04944acb9e1b4ec4acd178270f875b0d32ea49e385",
+      "sha256": "5ba03e504ab5370a0429bd04944acb9e1b4ec4acd178270f875b0d32ea49e385",
+      "title": "Fed's Schmid Predicts instant payments will leap over digital asset structures",
+      "url": "https://t.me/FinancialJuice/146130",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T18:55:42.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9abb36d84a9033fad6bbe556324315aeac2fe6984fba82f756effd4f72d2b944",
+      "sha256": "9abb36d84a9033fad6bbe556324315aeac2fe6984fba82f756effd4f72d2b944",
+      "title": "Treasuries slide as ‘hot’ inflation sparks bets on Fed rate rise",
+      "url": "https://www.ft.com/content/8b564134-dea6-4272-8ede-e0b12ef5aebd?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:53:50.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "084b7b93ec0de94c74d374868b6b4b497cac2458861071034122b8bd9d160805",
+      "sha256": "084b7b93ec0de94c74d374868b6b4b497cac2458861071034122b8bd9d160805",
+      "title": "DIRECTO ESPECIAL ANTHROPIC | LA MAYOR OPV DE LA HISTORIA DESAFÍA EL DESPLOME DE LA IA EN WALL STREET",
+      "url": "https://t.me/negociostv/60445",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:53:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c89b5abfe0f21aa3b636e911139eb9d586981ccef6a6903b292404038a59f931",
+      "sha256": "c89b5abfe0f21aa3b636e911139eb9d586981ccef6a6903b292404038a59f931",
+      "title": "DIRECTO ABASCAL | POLÉMICA CON BRONCANO, ADVERTENCIA A SÁNCHEZ Y PLAN ELECTORAL PARA EL 29N",
+      "url": "https://t.me/negociostv/60444",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:52:30.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "1cec587380a8114940ca7bed4a15d16ce27320059bf1df00574f98b86c37217c",
       "sha256": "1cec587380a8114940ca7bed4a15d16ce27320059bf1df00574f98b86c37217c",
       "title": "Fed's Schmid: Inflation is top of mind",
@@ -1729,6 +1843,36 @@
       "legacy_category": "otro",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "675f48aa98041d12ec108e5b68c7dc9ce947ee8c5f9efac87bca02d7409b2497",
+      "sha256": "675f48aa98041d12ec108e5b68c7dc9ce947ee8c5f9efac87bca02d7409b2497",
+      "title": "UK fraudster who invented ‘too good to be true’ takeover bid given suspended sentence",
+      "url": "https://www.ft.com/content/ebef64b5-103c-46ba-b3b0-546634f74323?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:13:21.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
@@ -8211,149 +8355,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "773c020468ca195c723227ac12d2a7f3fccb32afdd71e1ee2182eb18edc5c171",
-      "sha256": "773c020468ca195c723227ac12d2a7f3fccb32afdd71e1ee2182eb18edc5c171",
-      "title": "Stock earnings pick of the week can applied materials spot cracks in the ai spending boom",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T10:00:52.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "cbcf5cf2b6df4f498caf102ef2a0993e1f1351955fb3e1a6eb41dcb65f0573aa",
-      "sha256": "cbcf5cf2b6df4f498caf102ef2a0993e1f1351955fb3e1a6eb41dcb65f0573aa",
-      "title": "ORELLA: \"Trump quiere cerrar la guerra de Irán a lo grande y va a lanzar un ataque sin precedentes\"",
-      "url": "https://t.me/negociostv/60426",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T09:56:38.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b52a29a749a29c22bc117cd65ec593bbb7ad5ae4c9a4c0439acdf547131da320",
-      "sha256": "b52a29a749a29c22bc117cd65ec593bbb7ad5ae4c9a4c0439acdf547131da320",
-      "title": "Fed's Waller: We need to raise rates to put downward pressure on inflation.",
-      "url": "https://t.me/FinancialJuice/145942",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T09:53:38.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7a03dbd6edda52b3c2e4603a6d23675122a983b0b5c3ef5b1c8a0056bb8a8c56",
-      "sha256": "7a03dbd6edda52b3c2e4603a6d23675122a983b0b5c3ef5b1c8a0056bb8a8c56",
-      "title": "Fed's Waller: Real rates have to rise to maintain level of restrictiveness in monetary policy.",
-      "url": "https://t.me/FinancialJuice/145941",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T09:53:28.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3258a35506450d70702ed606f3c4855f8af5c997d973237990a54f002b26f6dd",
-      "sha256": "3258a35506450d70702ed606f3c4855f8af5c997d973237990a54f002b26f6dd",
-      "title": "Auction Result of 30-Year JGBs on November 10, 2026 : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMlJaenItOGxHOUFDYjRJcU1xa2k4dS0zOFEwQUNFakRxNTVoN3pYM0Q2LTVoN05zcE85Tm43QXlkaEpxdmNlWkc3NnQ5d1JwTnRCa1VDLWFUME5kYzRfZm9oTnZ6UEotU1hCSlprS1FZYUZxWVNSUEF2Uzh6Rk02a1JuNG00WjJSQU51aA?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T09:38:47.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8363,6 +8364,120 @@
   ],
   "news": [
     {
+      "id": "5ba03e504ab5370a0429bd04944acb9e1b4ec4acd178270f875b0d32ea49e385",
+      "sha256": "5ba03e504ab5370a0429bd04944acb9e1b4ec4acd178270f875b0d32ea49e385",
+      "title": "Fed's Schmid Predicts instant payments will leap over digital asset structures",
+      "url": "https://t.me/FinancialJuice/146130",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T18:55:42.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9abb36d84a9033fad6bbe556324315aeac2fe6984fba82f756effd4f72d2b944",
+      "sha256": "9abb36d84a9033fad6bbe556324315aeac2fe6984fba82f756effd4f72d2b944",
+      "title": "Treasuries slide as ‘hot’ inflation sparks bets on Fed rate rise",
+      "url": "https://www.ft.com/content/8b564134-dea6-4272-8ede-e0b12ef5aebd?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:53:50.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "084b7b93ec0de94c74d374868b6b4b497cac2458861071034122b8bd9d160805",
+      "sha256": "084b7b93ec0de94c74d374868b6b4b497cac2458861071034122b8bd9d160805",
+      "title": "DIRECTO ESPECIAL ANTHROPIC | LA MAYOR OPV DE LA HISTORIA DESAFÍA EL DESPLOME DE LA IA EN WALL STREET",
+      "url": "https://t.me/negociostv/60445",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:53:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c89b5abfe0f21aa3b636e911139eb9d586981ccef6a6903b292404038a59f931",
+      "sha256": "c89b5abfe0f21aa3b636e911139eb9d586981ccef6a6903b292404038a59f931",
+      "title": "DIRECTO ABASCAL | POLÉMICA CON BRONCANO, ADVERTENCIA A SÁNCHEZ Y PLAN ELECTORAL PARA EL 29N",
+      "url": "https://t.me/negociostv/60444",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:52:30.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "1cec587380a8114940ca7bed4a15d16ce27320059bf1df00574f98b86c37217c",
       "sha256": "1cec587380a8114940ca7bed4a15d16ce27320059bf1df00574f98b86c37217c",
       "title": "Fed's Schmid: Inflation is top of mind",
@@ -8956,6 +9071,36 @@
       "legacy_category": "otro",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "675f48aa98041d12ec108e5b68c7dc9ce947ee8c5f9efac87bca02d7409b2497",
+      "sha256": "675f48aa98041d12ec108e5b68c7dc9ce947ee8c5f9efac87bca02d7409b2497",
+      "title": "UK fraudster who invented ‘too good to be true’ takeover bid given suspended sentence",
+      "url": "https://www.ft.com/content/ebef64b5-103c-46ba-b3b0-546634f74323?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:13:21.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
@@ -15438,149 +15583,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "773c020468ca195c723227ac12d2a7f3fccb32afdd71e1ee2182eb18edc5c171",
-      "sha256": "773c020468ca195c723227ac12d2a7f3fccb32afdd71e1ee2182eb18edc5c171",
-      "title": "Stock earnings pick of the week can applied materials spot cracks in the ai spending boom",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T10:00:52.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "cbcf5cf2b6df4f498caf102ef2a0993e1f1351955fb3e1a6eb41dcb65f0573aa",
-      "sha256": "cbcf5cf2b6df4f498caf102ef2a0993e1f1351955fb3e1a6eb41dcb65f0573aa",
-      "title": "ORELLA: \"Trump quiere cerrar la guerra de Irán a lo grande y va a lanzar un ataque sin precedentes\"",
-      "url": "https://t.me/negociostv/60426",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T09:56:38.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b52a29a749a29c22bc117cd65ec593bbb7ad5ae4c9a4c0439acdf547131da320",
-      "sha256": "b52a29a749a29c22bc117cd65ec593bbb7ad5ae4c9a4c0439acdf547131da320",
-      "title": "Fed's Waller: We need to raise rates to put downward pressure on inflation.",
-      "url": "https://t.me/FinancialJuice/145942",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T09:53:38.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7a03dbd6edda52b3c2e4603a6d23675122a983b0b5c3ef5b1c8a0056bb8a8c56",
-      "sha256": "7a03dbd6edda52b3c2e4603a6d23675122a983b0b5c3ef5b1c8a0056bb8a8c56",
-      "title": "Fed's Waller: Real rates have to rise to maintain level of restrictiveness in monetary policy.",
-      "url": "https://t.me/FinancialJuice/145941",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T09:53:28.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3258a35506450d70702ed606f3c4855f8af5c997d973237990a54f002b26f6dd",
-      "sha256": "3258a35506450d70702ed606f3c4855f8af5c997d973237990a54f002b26f6dd",
-      "title": "Auction Result of 30-Year JGBs on November 10, 2026 : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMlJaenItOGxHOUFDYjRJcU1xa2k4dS0zOFEwQUNFakRxNTVoN3pYM0Q2LTVoN05zcE85Tm43QXlkaEpxdmNlWkc3NnQ5d1JwTnRCa1VDLWFUME5kYzRfZm9oTnZ6UEotU1hCSlprS1FZYUZxWVNSUEF2Uzh6Rk02a1JuNG00WjJSQU51aA?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T09:38:47.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
