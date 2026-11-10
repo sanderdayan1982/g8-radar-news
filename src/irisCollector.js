@@ -8,6 +8,7 @@ import { buildAgendaWindow, rankingLockFields } from './lockSeverity.js';
 import { classifyAgentShadow, OP_VERSION, SHADOW_VERSION } from './shadowCalibration.js';
 import { fetchCalendar, linkNewsToCalendar, turboEvent } from './calendar.js';
 import { fetchMarket } from './market.js';
+import { fetchPolymarketGeo } from './polymarketGeo.js';
 import { sourceHealth, RELEASE } from './operations.js';
 
 /**
@@ -484,21 +485,23 @@ export function readRadarStore(value) {
 }
 
 /**
- * Ejecuta la recolección paralela determinista completa (35 fuentes + Calendario + Spot FX + Agente MMT).
+ * Ejecuta la recolección paralela determinista completa (35 fuentes + Calendario + Spot FX + Agente MMT + Polymarket geo).
  */
 export async function collectRadarAndIrisData({
   existingItems = [],
   previousMarket = null,
   previousCalendar = [],
+  polymarketHistory = null,
   timeoutMs = 4000,
 } = {}) {
   const startedAt = new Date().toISOString();
   const nowMs = Date.now();
 
-  const [pulledSources, calResult, mktResult] = await Promise.all([
+  const [pulledSources, calResult, mktResult, polyResult] = await Promise.all([
     Promise.all(SOURCES.map((s) => pullSingleSourceFast(s, nowMs, timeoutMs))),
     fetchCalendar().catch((err) => ({ events: previousCalendar || [], error: String(err.message || err) })),
     fetchMarket(previousMarket).catch(() => previousMarket || { updated_at: null, basketPct: {}, pairs: {} }),
+    fetchPolymarketGeo({ history: polymarketHistory, now: nowMs }),
   ]);
 
   const sourcesHealth = pulledSources.map((p) => p.health);
@@ -668,6 +671,7 @@ export async function collectRadarAndIrisData({
     currency_ranking_mmt: currencyRankingMmt,
     g8_ranking: g8RankingSummary,
     agenda_window: agendaWindow,
+    polymarket_geo: polyResult.block,
     market_basket_pct: market?.basketPct || {},
     items: irisItemsFormatted,
     news: irisItemsFormatted,
@@ -716,6 +720,7 @@ export async function collectRadarAndIrisData({
     currency_ranking_mmt: currencyRankingMmt,
     g8_ranking: g8RankingSummary,
     agenda_window: agendaWindow,
+    polymarket_geo: polyResult.block,
     engines: [engineSnapshot],
     market,
     calendar: calendarEvents,
@@ -737,5 +742,5 @@ export async function collectRadarAndIrisData({
     unread: 0,
   };
 
-  return { irisFeed, fullState, memoryItems };
+  return { irisFeed, fullState, memoryItems, polymarketHistory: polyResult.history };
 }

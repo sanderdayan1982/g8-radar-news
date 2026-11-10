@@ -111,6 +111,10 @@ Ninguna fuente de la lista del §3.7 entra en esta parte.
 
 DeItaone, FirstSquawk, ZeroHedge (fake), Reuters vía Google News, WSJ congelado, Bloomberg.com (ToS), Truth Social directo (sin credenciales; llega por FJ), MarketWatch, FXStreet, Investing.com, Cinco Días.
 
+### 3.8 Polymarket geopolítico y Washington (v5.1 Parte D)
+
+Gamma público (`https://gamma-api.polymarket.com`), sin clave y sin coste. No es una fuente de titulares: no entra en las 35 ni en la salud. No hay FedWatch ni probabilidades de bancos centrales. Cadencia 30 min, con la misma espera creciente que el calendario. Si Gamma falla, el bloque sale `STALE` con la hora del último éxito y sin datos inventados.
+
 ## 4. Pipeline de ingesta (`refreshFeed`)
 
 1. Descarga en paralelo, timeout 15 s.
@@ -216,6 +220,26 @@ El esquema del feed sigue en `iris-g8-feed/v2-mmt-v4.0`. `agenda_window` añade 
 `netlify/functions/radar_live.mjs` usa como base la última publicación de Actions en GitHub Raw (`main`, `public/data/radar_news_full.json`; los titulares, `public/data/radar_store.json`). El JSON empaquetado en el despliegue solo entra si esa descarga falla. `/api/iris-feed`, `/api/health` y `/api/radar-full` publican `base_source` (`actions_raw` o `bundle`) y `base_published_at` (`generated_at` de ese archivo, o `last_sync.finished_at` si no hay `generated_at`).
 
 Cadencia, por fuente, leída solo de `status` y `last_success_at` en `radar_news_full.json`: está dentro de su cadencia si `status === 'ok'` y `last_success_at` tiene como máximo 15 minutos (el instante de 15:00 incluido; 15:01 ya no). Una consulta que responde sale `live`. Si falla o agota el tiempo y la fuente está en cadencia, sale `cached` y los titulares son los de esa publicación. Si Actions no la tiene en `ok`, o `last_success_at` pasa de 15 minutos, sale `error`. Una respuesta HTTP con cero titulares sigue en `empty_feed`. Si la fuente tiene URL de reserva y las dos agotan el tiempo, el colector deja `empty_feed` sin código HTTP: la función lo cuenta como fallo, no como feed vacío. La ventana por fuente no cambia: 700 ms cuando la base trae titulares y 3800 ms si llega vacía. `sources_live` cuenta las filas `live`. `sources_ok` cuenta esas mismas filas.
+
+## Contrato Polymarket geopolítico (v5.1 Parte D)
+
+Tabla fija en `src/config.js`, sin dirección. La palabra clave se busca en el título del evento, sin distinguir mayúsculas, desde el inicio de una palabra (`\b` + palabra). Así «nato» no entra dentro de «senator». Las de varias palabras («trade deal», «strike on», «section 232») también empiezan en un límite de palabra. La tabla añade «iranian» e «israeli» en `IRAN_ORIENTE_MEDIO` y «chinese» en `CHINA_TAIWAN`. Constantes congeladas el 10-nov-2026: volumen total ≥ 250.000 USD, liquidez ≥ 25.000 USD, máximo 5 por tema por volumen, historia 8 días. Los umbrales de |Δ24h| (10 puntos y 5 puntos) son de la Parte E y este bloque no asigna nivel, puesto ni dirección.
+
+| theme | Palabras clave | Divisas expuestas |
+|---|---|---|
+| `IRAN_ORIENTE_MEDIO` | iran, iranian, israel, israeli, hormuz, houthi, gaza, saudi, strike on | USD, CHF, JPY, CAD, EUR, XAU |
+| `RUSIA_UCRANIA` | russia, ukraine, putin, zelensky, ceasefire, nato | EUR, CHF, GBP, XAU |
+| `ARANCELES_COMERCIO` | tariff, trade deal, trade war, usmca, section 232, section 301 | CAD, AUD, NZD, EUR, JPY, CHF |
+| `WASHINGTON` | shutdown, veto, executive order, debt ceiling, impeach, supreme court, fed chair, congress passes, signs into law | USD, XAU |
+| `CHINA_TAIWAN` | china, chinese, taiwan, beijing, xi jinping | AUD, NZD, JPY, USD |
+
+Entran eventos abiertos (`closed` false, no archivados, `active` distinto de false) que pasan el volumen y la liquidez del evento. Cada evento publica una fila: el mercado abierto de mayor volumen, su pregunta y la probabilidad Yes en escala 0–100 (dos decimales). `d24h_pp` es esa probabilidad menos la de la instantánea más cercana a hace 24 h, dentro de ±1 h (el borde cuenta; si hay dos a la misma distancia, la más antigua). Si esa instantánea no existe, o no trae ese mercado, `d24h_pp` es `null`. Un evento puede salir en cada tema cuyo título encaje. `volume` y `liquidity` de la fila son los totales del evento. `currencies` es la lista fija del tema, en el orden de la tabla. `url` es `https://polymarket.com/event/{slug}`, o `null` si no hay slug.
+
+Se excluyen, aunque una palabra clave encaje: deportes, cripto, entretenimiento y bancos centrales. La etiqueta Gamma `fed-rates` no excluye sola, porque también marca la nominación de Fed Chair, que la tabla deja en `WASHINGTON`. Sí se excluye un título de decisión de tipos (`fed rate`, `fomc`, `fedwatch`, y el resto de la lista en `POLYMARKET_GEO_EXCLUSIONS`). Si una página de Gamma falla, no se publica un recorrido a medias: el bloque queda `STALE`.
+
+`status` es `OK` cuando la última lectura de Gamma tuvo éxito (como mucho hace 30 min) y `STALE` cuando falló. `updated_at` es siempre la hora de ese último éxito, o `null` si todavía no hubo ninguno. Historia: `public/data/polymarket_geo_history.json` (`schema: polymarket-geo-history/v1`), instantáneas de 8 días. El ciclo de Actions la incluye en el commit de datos y conserva el candado `[skip netlify]`. La espera tras un fallo es la del calendario: 15 min, se duplica, tope 6 h, guardada en disco para que el siguiente proceso del bucle la respete.
+
+El bloque `polymarket_geo` es `{status, updated_at, markets:[{theme, event_title, question, prob, d24h_pp, volume, liquidity, end_date, url, currencies}]}`. Se añade a `iris_g8_feed.json` y a `radar_news_full.json`. El esquema sigue en `iris-g8-feed/v2-mmt-v4.0` hasta la Parte F. `llm_calls` sigue en 0. La función live lee la historia en GitHub Raw (`public/data/polymarket_geo_history.json`) y, si esa descarga falla, la copia empaquetada.
 
 ## Alertas y acceso (decisión de la mesa, 8-nov-2026)
 Push desactivado en el despliegue serverless: las alertas se ven dentro de la app (pestaña Alertas y contador). La app y sus datos son públicos.

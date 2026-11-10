@@ -11,7 +11,7 @@ cycle=0
 while :; do
   cycle=$((cycle + 1))
   node scripts/sync_feeds.mjs || echo "::warning::sync cycle $cycle failed; heartbeat not advanced"
-  git add public/data/radar_news_full.json public/data/iris_g8_feed.json public/data/radar_status.json public/data/radar_store.json
+  git add public/data/radar_news_full.json public/data/iris_g8_feed.json public/data/radar_status.json public/data/radar_store.json public/data/polymarket_geo_history.json
   if ! git diff --staged --quiet; then
     git commit -q -m "chore(feed): sync radar news [skip netlify]"
     pushed=0
