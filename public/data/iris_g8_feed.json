@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T07:00:27.041Z",
-  "started_at": "2026-11-10T07:00:24.112Z",
+  "generated_at": "2026-11-10T07:05:31.516Z",
+  "started_at": "2026-11-10T07:05:28.727Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,9 +15,9 @@
     {
       "currency": "JPY",
       "rank": 1,
-      "score": 42,
+      "score": 32,
       "bias": "alcista",
-      "structural": 42,
+      "structural": 32,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -30,33 +30,14 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "21 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +42 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "GBP",
-      "rank": 2,
-      "score": 23,
-      "bias": "alcista",
-      "structural": 23,
-      "impulse": 10,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 1.5h",
-      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "Ventas al por menor fuertes"
-      ],
-      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + DATA_REAL · Est +23 | Imp 3h +10. Régimen real mixed."
+      "rationale": "19 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
-      "rank": 3,
-      "score": 21,
+      "rank": 2,
+      "score": 26,
       "bias": "alcista",
-      "structural": 21,
+      "structural": 26,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -66,9 +47,29 @@
       "no_evidence": false,
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "Acuerdo comercial / sector exterior (C1/EA-1)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +26 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "GBP",
+      "rank": 3,
+      "score": 23,
+      "bias": "alcista",
+      "structural": 23,
+      "impulse": 9,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 1.4h",
+      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "Ventas al por menor fuertes"
+      ],
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + DATA_REAL · Est +23 | Imp 3h +9. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -91,22 +92,22 @@
     {
       "currency": "USD",
       "rank": 5,
-      "score": 4,
+      "score": -12,
       "bias": "neutral",
-      "structural": 4,
-      "impulse": null,
+      "structural": -12,
+      "impulse": -15,
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 2h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 1.9h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
         "FLUJO_FISCAL_NFA: Drenaje fiscal / superávit",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t"
+        "CPI vs consenso",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "28 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +4 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "27 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RELATIVE_PRICE + RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est -12 | Imp 3h -15. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -144,7 +145,7 @@
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONDITIONS ACTUAL -2 (FORECAST -,",
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONFIDENCE ACTUAL -15 (FORECAST -"
       ],
-      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -25 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -25 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
@@ -189,9 +190,9 @@
     {
       "currency": "JPY",
       "rank": 1,
-      "score": 42,
+      "score": 32,
       "bias": "alcista",
-      "structural": 42,
+      "structural": 32,
       "impulse": null,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -204,33 +205,14 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "21 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +42 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "GBP",
-      "rank": 2,
-      "score": 23,
-      "bias": "alcista",
-      "structural": 23,
-      "impulse": 10,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 1.5h",
-      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "Ventas al por menor fuertes"
-      ],
-      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + DATA_REAL · Est +23 | Imp 3h +10. Régimen real mixed."
+      "rationale": "19 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +32 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CHF",
-      "rank": 3,
-      "score": 21,
+      "rank": 2,
+      "score": 26,
       "bias": "alcista",
-      "structural": 21,
+      "structural": 26,
       "impulse": null,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -240,9 +222,29 @@
       "no_evidence": false,
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "Acuerdo comercial / sector exterior (C1/EA-1)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +26 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "GBP",
+      "rank": 3,
+      "score": 23,
+      "bias": "alcista",
+      "structural": 23,
+      "impulse": 9,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 1.4h",
+      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "Ventas al por menor fuertes"
+      ],
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + DATA_REAL · Est +23 | Imp 3h +9. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -265,22 +267,22 @@
     {
       "currency": "USD",
       "rank": 5,
-      "score": 4,
+      "score": -12,
       "bias": "neutral",
-      "structural": 4,
-      "impulse": null,
+      "structural": -12,
+      "impulse": -15,
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 2h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 1.9h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
         "FLUJO_FISCAL_NFA: Drenaje fiscal / superávit",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t"
+        "CPI vs consenso",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "28 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +4 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "27 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RELATIVE_PRICE + RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est -12 | Imp 3h -15. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -318,7 +320,7 @@
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONDITIONS ACTUAL -2 (FORECAST -,",
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONFIDENCE ACTUAL -15 (FORECAST -"
       ],
-      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -25 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -25 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "CAD",
@@ -351,7 +353,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -24,
+      "hours_from_now": -24.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -363,7 +365,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -21.5,
+      "hours_from_now": -21.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -399,7 +401,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -17.3,
+      "hours_from_now": -17.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -411,7 +413,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -16,
+      "hours_from_now": -16.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -423,7 +425,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16,
+      "hours_from_now": -16.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -447,7 +449,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.6,
+      "hours_from_now": -13.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -459,7 +461,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -7.5,
+      "hours_from_now": -7.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -471,7 +473,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -7.5,
+      "hours_from_now": -7.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -483,7 +485,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -7.2,
+      "hours_from_now": -7.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -495,7 +497,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -7.2,
+      "hours_from_now": -7.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -507,7 +509,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -7.2,
+      "hours_from_now": -7.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -519,7 +521,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -7,
+      "hours_from_now": -7.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -531,7 +533,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -6.5,
+      "hours_from_now": -6.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -543,7 +545,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -3.4,
+      "hours_from_now": -3.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -555,7 +557,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -2,
+      "hours_from_now": -2.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -567,7 +569,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.5,
+      "hours_from_now": 1.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -579,7 +581,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2,
+      "hours_from_now": 1.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -591,7 +593,7 @@
       "actual": null,
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": 4,
+      "hours_from_now": 3.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -603,7 +605,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 4.5,
+      "hours_from_now": 4.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -615,7 +617,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 5.5,
+      "hours_from_now": 5.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -639,7 +641,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 6.5,
+      "hours_from_now": 6.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -648,10 +650,10 @@
       "title": "CPI m/m",
       "event_at": "2026-11-10T13:30:00.000Z",
       "impact": "High",
-      "actual": null,
+      "actual": "0.3%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 6.5,
+      "hours_from_now": 6.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -663,7 +665,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 8.8,
+      "hours_from_now": 8.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -675,7 +677,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 11,
+      "hours_from_now": 10.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -687,7 +689,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.5,
+      "hours_from_now": 11.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -699,7 +701,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.5,
+      "hours_from_now": 11.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -711,7 +713,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.5,
+      "hours_from_now": 11.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -723,7 +725,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13.5,
+      "hours_from_now": 13.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -735,7 +737,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.5,
+      "hours_from_now": 14.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -747,7 +749,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.5,
+      "hours_from_now": 16.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -759,7 +761,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.5,
+      "hours_from_now": 16.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -771,7 +773,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 16.8,
+      "hours_from_now": 16.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -783,7 +785,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 23,
+      "hours_from_now": 22.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -795,7 +797,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 24,
+      "hours_from_now": 23.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -807,7 +809,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24,
+      "hours_from_now": 23.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -831,7 +833,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 26,
+      "hours_from_now": 25.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -855,7 +857,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 27.6,
+      "hours_from_now": 27.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -867,7 +869,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30,
+      "hours_from_now": 29.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -879,7 +881,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30,
+      "hours_from_now": 29.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -903,7 +905,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 40.8,
+      "hours_from_now": 40.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -915,7 +917,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -927,7 +929,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -939,7 +941,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -951,7 +953,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -963,7 +965,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -975,7 +977,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -987,7 +989,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -999,7 +1001,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1011,7 +1013,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1023,7 +1025,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 48,
+      "hours_from_now": 47.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1039,6 +1041,96 @@
   },
   "items": [
     {
+      "id": "ad4cb10f2b43585bc0ad9895695974c4f0476d3406987f99ef19bcef974fb9a8",
+      "sha256": "ad4cb10f2b43585bc0ad9895695974c4f0476d3406987f99ef19bcef974fb9a8",
+      "title": "NORWEGIAN CPI YOY ACTUAL 3.6% (FORECAST 3.7%, PREVIOUS 3.4%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145912",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T07:00:35.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "3.6%",
+      "forecast": "3.7%",
+      "previous": "3.4%",
+      "calendar_title": null,
+      "z": -0.7
+    },
+    {
+      "id": "014bb7934ad36682e057a7d7f0d2f792a1f25cc7f358ab2b2a4886f273393cb3",
+      "sha256": "014bb7934ad36682e057a7d7f0d2f792a1f25cc7f358ab2b2a4886f273393cb3",
+      "title": "NORWEGIAN CPI MOM ACTUAL 0.3% (FORECAST -, PREVIOUS 0.5%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145911",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T07:00:32.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.3%",
+      "forecast": null,
+      "previous": "0.5%",
+      "calendar_title": "CPI m/m",
+      "z": null
+    },
+    {
+      "id": "f567b5523aeab66930a7fd5293109c65f897b316d8d4e2e86a8252115d6d2c73",
+      "sha256": "f567b5523aeab66930a7fd5293109c65f897b316d8d4e2e86a8252115d6d2c73",
+      "title": "ECB's Moulin: Expect continuity at ECB if Knot or de Cos take over.",
+      "url": "https://t.me/FinancialJuice/145910",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:59:57.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "8f10d11ce4d79ef03fc7d37ecad99c6ff1a7aced65e051f70ed452694198f31a",
       "sha256": "8f10d11ce4d79ef03fc7d37ecad99c6ff1a7aced65e051f70ed452694198f31a",
       "title": "Adnoc CFO: Made no decisions on alternative LNG export facilities.",
@@ -8006,90 +8098,102 @@
       "actual": "4.06%",
       "forecast": null,
       "previous": "4.040%",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "28415700db538ab21c39e0d87b7bdf943e24daedde2546022d1f7feeef44c54c",
-      "sha256": "28415700db538ab21c39e0d87b7bdf943e24daedde2546022d1f7feeef44c54c",
-      "title": "US 3-MONTH BILL BID-TO-COVER ACTUAL 2.67 (FORECAST -, PREVIOUS 2.880) $MACRO",
-      "url": "https://t.me/FinancialJuice/145717",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:32:27.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "2.67",
-      "forecast": null,
-      "previous": "2.880",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0c5d1583f81ef44d99f2150191df31a8167508e58a08b714b752ea8836851cd9",
-      "sha256": "0c5d1583f81ef44d99f2150191df31a8167508e58a08b714b752ea8836851cd9",
-      "title": "Stocks of crude oil in US SPR fell to 279.5 mln barrels last week, lowest since 1982.",
-      "url": "https://t.me/FinancialJuice/145716",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:29:29.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c7a968488e5c53d3599178d45f8e5c870fa77f3fccb587d6478573827a7bc075",
-      "sha256": "c7a968488e5c53d3599178d45f8e5c870fa77f3fccb587d6478573827a7bc075",
-      "title": "Goldman Sachs CEO Solomon: Optimistic there'll still be a significant amount of investment in data centers, compute capacity in the US - CNBC",
-      "url": "https://t.me/FinancialJuice/145715",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:25:56.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
       "calendar_title": null,
       "z": null
     }
   ],
   "news": [
     {
+      "id": "ad4cb10f2b43585bc0ad9895695974c4f0476d3406987f99ef19bcef974fb9a8",
+      "sha256": "ad4cb10f2b43585bc0ad9895695974c4f0476d3406987f99ef19bcef974fb9a8",
+      "title": "NORWEGIAN CPI YOY ACTUAL 3.6% (FORECAST 3.7%, PREVIOUS 3.4%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145912",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T07:00:35.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "3.6%",
+      "forecast": "3.7%",
+      "previous": "3.4%",
+      "calendar_title": null,
+      "z": -0.7
+    },
+    {
+      "id": "014bb7934ad36682e057a7d7f0d2f792a1f25cc7f358ab2b2a4886f273393cb3",
+      "sha256": "014bb7934ad36682e057a7d7f0d2f792a1f25cc7f358ab2b2a4886f273393cb3",
+      "title": "NORWEGIAN CPI MOM ACTUAL 0.3% (FORECAST -, PREVIOUS 0.5%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145911",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T07:00:32.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.3%",
+      "forecast": null,
+      "previous": "0.5%",
+      "calendar_title": "CPI m/m",
+      "z": null
+    },
+    {
+      "id": "f567b5523aeab66930a7fd5293109c65f897b316d8d4e2e86a8252115d6d2c73",
+      "sha256": "f567b5523aeab66930a7fd5293109c65f897b316d8d4e2e86a8252115d6d2c73",
+      "title": "ECB's Moulin: Expect continuity at ECB if Knot or de Cos take over.",
+      "url": "https://t.me/FinancialJuice/145910",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:59:57.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "8f10d11ce4d79ef03fc7d37ecad99c6ff1a7aced65e051f70ed452694198f31a",
       "sha256": "8f10d11ce4d79ef03fc7d37ecad99c6ff1a7aced65e051f70ed452694198f31a",
       "title": "Adnoc CFO: Made no decisions on alternative LNG export facilities.",
@@ -15057,84 +15161,6 @@
       "actual": "4.06%",
       "forecast": null,
       "previous": "4.040%",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "28415700db538ab21c39e0d87b7bdf943e24daedde2546022d1f7feeef44c54c",
-      "sha256": "28415700db538ab21c39e0d87b7bdf943e24daedde2546022d1f7feeef44c54c",
-      "title": "US 3-MONTH BILL BID-TO-COVER ACTUAL 2.67 (FORECAST -, PREVIOUS 2.880) $MACRO",
-      "url": "https://t.me/FinancialJuice/145717",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:32:27.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "2.67",
-      "forecast": null,
-      "previous": "2.880",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0c5d1583f81ef44d99f2150191df31a8167508e58a08b714b752ea8836851cd9",
-      "sha256": "0c5d1583f81ef44d99f2150191df31a8167508e58a08b714b752ea8836851cd9",
-      "title": "Stocks of crude oil in US SPR fell to 279.5 mln barrels last week, lowest since 1982.",
-      "url": "https://t.me/FinancialJuice/145716",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:29:29.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c7a968488e5c53d3599178d45f8e5c870fa77f3fccb587d6478573827a7bc075",
-      "sha256": "c7a968488e5c53d3599178d45f8e5c870fa77f3fccb587d6478573827a7bc075",
-      "title": "Goldman Sachs CEO Solomon: Optimistic there'll still be a significant amount of investment in data centers, compute capacity in the US - CNBC",
-      "url": "https://t.me/FinancialJuice/145715",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:25:56.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
       "calendar_title": null,
       "z": null
     }
