@@ -26,14 +26,24 @@ export function mergeSourceHealth(current = [], previous = [], { seedMode = fals
 }
 
 // Fifteen minutes: three Actions cycles of 5 min. Inclusive (`<=`).
-// Read only `status` and `last_success_at` from each record in radar_news_full.json.
+// The age base is radar_status.json last_check_at, published every cycle.
+// failing_sources entries are objects with the same source `id` the live function uses.
 export const ACTIONS_CADENCE_MS = 15 * 60 * 1000;
 
-export function actionsRecordWithinCadence(record, nowMs) {
-  if (!record || record.status !== 'ok') return false;
-  const at = Date.parse(record.last_success_at || '');
+function heartbeatWithinCadence(statusDoc, nowMs) {
+  if (!statusDoc || typeof statusDoc !== 'object') return false;
+  const at = Date.parse(statusDoc.last_check_at || '');
   if (!Number.isFinite(at)) return false;
   return nowMs - at <= ACTIONS_CADENCE_MS;
+}
+
+function failingSourceIds(statusDoc) {
+  const list = statusDoc && Array.isArray(statusDoc.failing_sources) ? statusDoc.failing_sources : [];
+  const ids = new Set();
+  for (const entry of list) {
+    if (entry && typeof entry === 'object' && typeof entry.id === 'string' && entry.id) ids.add(entry.id);
+  }
+  return ids;
 }
 
 // A fallback source records a timeout on both URLs as empty_feed with no HTTP status.
@@ -42,10 +52,14 @@ function liveFetchFailed(source) {
   return source.status === 'empty_feed' && (source.last_http_status == null);
 }
 
-// Live API status. A successful pull is `live`. A failure or timeout is `cached` only when the
-// Actions record is ok and last_success_at is within 15 minutes; otherwise it is `error`.
+// Live API status. A successful pull is `live`. A failure or timeout is `cached` only when
+// radar_status.last_check_at is within 15 minutes and the source id is not in failing_sources.
+// Missing, unreadable, or heartbeat-less status fails closed (`error`).
+// Per-source status and last_success_at in radar_news_full.json do not decide this label.
 // An HTTP response with zero headlines stays `empty_feed`.
-export function labelLiveAgainstActions(current = [], actionsSources = [], nowMs = Date.now()) {
+export function labelLiveAgainstActions(current = [], actionsSources = [], nowMs = Date.now(), radarStatus = null) {
+  const fresh = heartbeatWithinCadence(radarStatus, nowMs);
+  const failing = failingSourceIds(radarStatus);
   const byId = new Map((actionsSources || []).map((s) => [s.id, s]));
   return (current || []).map((s) => {
     if (s.status === 'ok') return { ...s, status: 'live', ok: true, consecutive_failures: 0 };
@@ -57,7 +71,7 @@ export function labelLiveAgainstActions(current = [], actionsSources = [], nowMs
       stored_count: s.stored_count || prev?.stored_count || 0,
     };
     if (!liveFetchFailed(s)) return { ...carried, ok: false };
-    if (actionsRecordWithinCadence(prev, nowMs)) {
+    if (fresh && !failing.has(s.id)) {
       return {
         ...carried,
         status: 'cached',

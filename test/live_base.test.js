@@ -8,6 +8,7 @@ import {
   resetLiveCacheForTests,
   GITHUB_RAW_FULL,
   GITHUB_RAW_STORE,
+  GITHUB_RAW_STATUS,
 } from '../netlify/functions/radar_live.mjs';
 
 const FED_URL = 'https://www.federalreserve.gov/feeds/press_all.xml';
@@ -66,7 +67,21 @@ function actionsStore(now) {
   };
 }
 
-function installFetch({ full, store, liveFed = false } = {}) {
+function heartbeatAt(now, ageMs, failingIds = []) {
+  return {
+    schema: 'radar-status/v1',
+    last_check_at: new Date(now - ageMs).toISOString(),
+    failing_sources: failingIds.map((id) => ({
+      id,
+      status: 'error',
+      last_error: 'HTTP 503',
+      last_success_at: null,
+      consecutive_failures: 1,
+    })),
+  };
+}
+
+function installFetch({ full, store, liveFed = false, status = null } = {}) {
   const calls = [];
   globalThis.fetch = async (url) => {
     const href = String(url);
@@ -78,6 +93,10 @@ function installFetch({ full, store, liveFed = false } = {}) {
     if (href.startsWith(GITHUB_RAW_STORE)) {
       if (!store) throw new Error('raw store failed');
       return jsonResponse(store);
+    }
+    if (href.startsWith(GITHUB_RAW_STATUS)) {
+      if (!status) throw new Error('raw status failed');
+      return jsonResponse(status);
     }
     if (liveFed && href.startsWith(FED_URL)) {
       const body = `<?xml version="1.0"?><rss version="2.0"><channel><item><title>Fed holds the policy rate at the current setting</title><link>https://www.federalreserve.gov/newsevents/pressreleases/monetary20261110a.htm</link><pubDate>${new Date(Date.now()).toUTCString()}</pubDate></item></channel></rss>`;
@@ -123,6 +142,7 @@ describe('live base from the latest Actions publication', { concurrency: false }
     const calls = installFetch({
       full: actionsFull(NOW, { generatedAt, ageMs: 14 * 60_000 + 59_000 }),
       store: actionsStore(NOW),
+      status: heartbeatAt(NOW, 14 * 60_000 + 59_000),
     });
     const full = await call('/api/radar-full');
     assert.equal(full.base_source, 'actions_raw');
@@ -156,10 +176,11 @@ describe('live base from the latest Actions publication', { concurrency: false }
     assert.equal(body.health.base_published_at, bundled.generated_at);
   });
 
-  test('timeout with Actions ok at 14:59 is cached, and at exactly 15:00 is cached', async () => {
+  test('timeout with a heartbeat at 14:59 is cached, and at exactly 15:00 is cached', async () => {
     installFetch({
       full: actionsFull(NOW, { generatedAt: '2026-11-10T20:59:00.000Z', ageMs: 14 * 60_000 + 59_000 }),
       store: actionsStore(NOW),
+      status: heartbeatAt(NOW, 14 * 60_000 + 59_000),
     });
     const atFourteen = await call('/api/radar-full');
     assert.ok(atFourteen.sources.every((s) => s.status === 'cached'));
@@ -168,15 +189,17 @@ describe('live base from the latest Actions publication', { concurrency: false }
     installFetch({
       full: actionsFull(NOW, { generatedAt: '2026-11-10T20:45:00.000Z', ageMs: 15 * 60_000 }),
       store: actionsStore(NOW),
+      status: heartbeatAt(NOW, 15 * 60_000),
     });
     const atFifteen = await call('/api/radar-full');
     assert.ok(atFifteen.sources.every((s) => s.status === 'cached'));
   });
 
-  test('timeout with Actions ok at 15:01 is error', async () => {
+  test('timeout with a heartbeat at 15:01 is error', async () => {
     installFetch({
       full: actionsFull(NOW, { generatedAt: '2026-11-10T20:44:00.000Z', ageMs: 15 * 60_000 + 1_000 }),
       store: actionsStore(NOW),
+      status: heartbeatAt(NOW, 15 * 60_000 + 1_000),
     });
     const body = await call('/api/radar-full');
     assert.equal(body.base_source, 'actions_raw');
@@ -184,7 +207,7 @@ describe('live base from the latest Actions publication', { concurrency: false }
     assert.equal(body.health.status, 'CRITICAL');
   });
 
-  test('Actions status other than ok is error even with a fresh last_success_at', async () => {
+  test('failing_sources marks that source error; a non-ok row in the full file does not', async () => {
     installFetch({
       full: actionsFull(NOW, {
         generatedAt: '2026-11-10T20:59:30.000Z',
@@ -194,12 +217,13 @@ describe('live base from the latest Actions publication', { concurrency: false }
         overrideAgeMs: 30_000,
       }),
       store: actionsStore(NOW),
+      status: heartbeatAt(NOW, 30_000, ['fed']),
     });
     const body = await call('/api/radar-full');
     const nz = body.sources.find((s) => s.id === 'nz-press');
     const fed = body.sources.find((s) => s.id === 'fed');
-    assert.equal(nz.status, 'error');
-    assert.equal(fed.status, 'cached');
+    assert.equal(nz.status, 'cached');
+    assert.equal(fed.status, 'error');
     assert.equal(body.health.sources_error, 1);
   });
 
@@ -207,6 +231,7 @@ describe('live base from the latest Actions publication', { concurrency: false }
     installFetch({
       full: actionsFull(NOW, { generatedAt: '2026-11-10T20:59:00.000Z', ageMs: 60_000 }),
       store: actionsStore(NOW),
+      status: heartbeatAt(NOW, 60_000),
     });
     const feed = await call('/api/iris-feed');
     assert.equal(feed.health.status, 'CLEAN');
@@ -221,6 +246,7 @@ describe('live base from the latest Actions publication', { concurrency: false }
     installFetch({
       full: actionsFull(NOW, { generatedAt: '2026-11-10T20:59:00.000Z', ageMs: 60_000 }),
       store: actionsStore(NOW),
+      status: heartbeatAt(NOW, 60_000),
       liveFed: true,
     });
     const body = await call('/api/radar-full');
@@ -234,16 +260,21 @@ describe('live base from the latest Actions publication', { concurrency: false }
   });
 });
 
-test('cadence boundary on the record itself: 14:59 cached, 15:00 cached, 15:01 error, status not ok is error', () => {
+test('cadence boundary is the heartbeat: 15:00 cached, 15:01 error, failing id is error, missing heartbeat is error', () => {
   const now = Date.parse('2026-11-10T21:00:00.000Z');
   const failed = [{ id: 'fed', status: 'error', last_error: 'The operation was aborted due to timeout' }];
-  const record = (ageMs, status = 'ok') => [{ id: 'fed', status, last_success_at: new Date(now - ageMs).toISOString() }];
-  assert.equal(labelLiveAgainstActions(failed, record(14 * 60_000 + 59_000), now)[0].status, 'cached');
-  assert.equal(labelLiveAgainstActions(failed, record(15 * 60_000), now)[0].status, 'cached');
-  assert.equal(labelLiveAgainstActions(failed, record(15 * 60_000 + 1_000), now)[0].status, 'error');
-  assert.equal(labelLiveAgainstActions(failed, record(1_000, 'error'), now)[0].status, 'error');
-  assert.equal(labelLiveAgainstActions([{ id: 'fed', status: 'ok' }], record(1_000), now)[0].status, 'live');
+  const staleFull = [{ id: 'fed', status: 'error', last_success_at: new Date(now - (2 * 60 * 60_000)).toISOString() }];
+  const beat = (ageMs, failing = []) => ({
+    last_check_at: new Date(now - ageMs).toISOString(),
+    failing_sources: failing.map((id) => ({ id, status: 'error', last_error: null, last_success_at: null, consecutive_failures: 1 })),
+  });
+  assert.equal(labelLiveAgainstActions(failed, staleFull, now, beat(15 * 60_000))[0].status, 'cached');
+  assert.equal(labelLiveAgainstActions(failed, staleFull, now, beat(15 * 60_000 + 1_000))[0].status, 'error');
+  assert.equal(labelLiveAgainstActions(failed, [{ id: 'fed', status: 'ok', last_success_at: new Date(now - 1_000).toISOString() }], now, beat(1_000, ['fed']))[0].status, 'error');
+  assert.equal(labelLiveAgainstActions(failed, staleFull, now, null)[0].status, 'error');
+  assert.equal(labelLiveAgainstActions(failed, staleFull, now, {})[0].status, 'error');
+  assert.equal(labelLiveAgainstActions([{ id: 'fed', status: 'ok' }], staleFull, now, null)[0].status, 'live');
   const swallowed = [{ id: 'bis', status: 'empty_feed', last_http_status: null, last_error: 'HTTP null con 0 titulares extraídos' }];
-  assert.equal(labelLiveAgainstActions(swallowed, [{ id: 'bis', status: 'ok', last_success_at: new Date(now - (14 * 60_000 + 59_000)).toISOString() }], now)[0].status, 'cached');
-  assert.equal(labelLiveAgainstActions([{ id: 'bis', status: 'empty_feed', last_http_status: 200, last_error: 'HTTP 200 con 0 titulares extraídos' }], record(1_000), now)[0].status, 'empty_feed');
+  assert.equal(labelLiveAgainstActions(swallowed, [{ id: 'bis', status: 'ok', last_success_at: new Date(now - (2 * 60 * 60_000)).toISOString() }], now, beat(14 * 60_000 + 59_000))[0].status, 'cached');
+  assert.equal(labelLiveAgainstActions([{ id: 'bis', status: 'empty_feed', last_http_status: 200, last_error: 'HTTP 200 con 0 titulares extraídos' }], staleFull, now, null)[0].status, 'empty_feed');
 });
