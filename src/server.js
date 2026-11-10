@@ -1,3 +1,11 @@
+/**
+ * LEGADO — fuera de producción desde el 10-nov-2026 (RADAR v5.1 Parte F).
+ * El ciclo público es Netlify (`netlify/functions/radar_live.mjs`) más GitHub Actions
+ * (`scripts/sync_feeds.mjs`). Este servidor Express no está cableado a ese ciclo
+ * y no publica el contrato iris-g8-feed/v3-risk. Se conserva porque las pruebas
+ * de la cola push importan processPushQueue y dispatchAlertsNow; no leen un
+ * ranking de este archivo. No borrar y no volver a conectarlo desde la función live.
+ */
 import { startFinancialJuice } from './financialjuice.js';
 import { createAccess } from './access.js';
 import { RELEASE, endpointHash, sourceHealth, validPushSubscription, sameOriginMutation } from './operations.js';

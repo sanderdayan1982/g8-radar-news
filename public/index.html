@@ -82,21 +82,21 @@
 
     <section class="panel board" data-view="board">
       <div class="panel-head">
-        <h2>Ranking de divisas · Agente MMT</h2>
-        <div class="seg" id="engine-tabs"></div>
+        <h2>Mapa de riesgo de evento</h2>
+        <div class="seg" id="board-tabs" role="tablist" aria-label="Mapa y pares">
+          <button type="button" data-board-tab="mapa" class="active" role="tab" aria-selected="true">Mapa</button>
+          <button type="button" data-board-tab="pares" role="tab" aria-selected="false">Pares</button>
+        </div>
       </div>
       <div class="board-meta"><span id="batch-time"></span></div>
-      <ol id="board" class="board-list"><li class="state-msg">Cargando evidencia y ranking…</li></ol>
-      <div id="regime" class="regime" hidden></div>
-
-      <div class="section-title">Cruces con mayor diferencial · clic para ficha</div>
-      <div id="top-pairs" class="top-pairs"></div>
-      <div id="pair-sheet" class="pair-sheet" hidden></div>
-      <details class="matrix-wrap">
-        <summary>Ver matriz completa 8×8</summary>
-        <div id="matrix" class="matrix"></div>
-        <p class="footnote">Diferencial narrativo fila − columna (Agente MMT). Pulsa cualquier cruce para abrir su ficha comparativa de mesa.</p>
-      </details>
+      <ol id="board" class="board-list" role="tabpanel"><li class="state-msg">Cargando mapa de riesgo…</li></ol>
+      <div id="pair-panel" class="pair-panel" hidden role="tabpanel">
+        <div id="top-pairs" class="top-pairs"></div>
+      </div>
+      <section class="geo-panel" aria-labelledby="geo-title">
+        <h3 id="geo-title" class="section-title">Geopolítica (Polymarket)</h3>
+        <div id="geo-panel" class="geo-list"></div>
+      </section>
     </section>
 
     <section class="panel agenda" data-view="agenda">
@@ -114,7 +114,7 @@
   </main>
 
   <nav class="tabbar" id="tabbar" aria-label="Secciones">
-    <button data-view="board"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h10M4 12h16M4 18h7"/></svg><span>Ranking</span></button>
+    <button data-view="board"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h10M4 12h16M4 18h7"/></svg><span>Mapa</span></button>
     <button data-view="tape"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><span>Cinta</span></button>
     <button data-view="agenda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Agenda</span></button>
     <button data-view="alerts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span>Alertas</span><i id="tab-badge" class="badge" hidden>0</i></button>
@@ -192,7 +192,7 @@
         <ul class="rules">
           <li><b>Titulares de alto impacto o breaking</b> de las 35 fuentes (los anuncios promocionales sin divisa ni dato se excluyen)</li>
           <li><b>Agenda</b>: aviso 15 minutos antes de cada dato de alto impacto</li>
-          <li><b>Cambio de ranking o régimen</b> detectado por el <b>Agente MMT</b></li>
+          <li><b>Titular de intervención</b> (categoría IRIS) en la ventana reciente</li>
         </ul>
       </section>
 
@@ -215,7 +215,7 @@
 
       <section class="tab" data-pane="mmt" hidden>
         <h3>Motor determinista Agente MMT</h3>
-        <p class="muted">El <b>Agente MMT</b> (Soft Currency Economics · Mosler / NFA) es el motor único activo de RadarNews. Evalúa la evidencia con reglas deterministas auditables (umbral ±12 para Soporte / Presión, <code>empirical: false</code>, hipótesis económicas en sombra conservadas para evaluación prospectiva y sin pesos por divisa activados).</p>
+        <p class="muted">La salida publicada es el <b>mapa de riesgo de evento</b>: nueve divisas en orden fijo, sin puesto y sin dirección. El clasificador de titulares (ficha v6.0, lente MMT, categoría IRIS, impacto) sigue activo. La sombra histórica se conserva y no se ejecuta en el ciclo público.</p>
         <div class="card">
           <div class="card-row">
             <div>
@@ -235,7 +235,7 @@
 
       <section class="tab" data-pane="about" hidden>
         <h3>RadarNews · Agente MMT</h3>
-        <p class="muted">Terminal privado de noticias macro y FX. Recibe y notifica cada noticia nueva de las fuentes seleccionadas y puntúa de −100 a +100 la fuerza narrativa de USD, EUR, GBP, JPY, CHF, CAD, AUD y NZD bajo Soft Currency Economics (Mosler / MMT): déficit ≠ presión automática; overnight = precio del dinero; CPI alto con economía débil ≠ soporte.</p>
+        <p class="muted">Terminal de noticias macro y FX. Muestra la cinta, el mapa de riesgo de evento de USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD y XAU, los 29 pares y la agenda. No ordena divisas.</p>
         <div class="about-actions">
           <button id="spec-btn" class="btn">Leer la especificación</button>
         </div>
@@ -261,6 +261,6 @@
     <article id="spec-body" class="spec-body">Cargando…</article>
   </dialog>
 
-  <script type="module" src="/app.js?v=5.1.1"></script>
+  <script type="module" src="/app.js?v=5.1.2"></script>
 </body>
 </html>

@@ -145,8 +145,13 @@ describe('live base from the latest Actions publication', { concurrency: false }
     installFetch({ full: null, store: null });
     const bundled = JSON.parse(readFileSync(new URL('../public/data/radar_news_full.json', import.meta.url), 'utf8'));
     const body = await call('/api/iris-feed');
-    assert.equal(body.base_source, 'bundle');
-    assert.equal(body.base_published_at, bundled.generated_at);
+    assert.equal(body.schema_version, 'iris-g8-feed/v3-risk');
+    assert.deepEqual(Object.keys(body), [
+      'schema_version', 'version', 'engine_version', 'llm_calls', 'generated_at',
+      'health', 'coverage', 'risk_map', 'pair_risk', 'agenda_window', 'polymarket_geo', 'items',
+    ]);
+    assert.equal(body.llm_calls, 0);
+    assert.equal(Object.hasOwn(body, 'base_source'), false);
     assert.equal(body.health.base_source, 'bundle');
     assert.equal(body.health.base_published_at, bundled.generated_at);
   });

@@ -11,6 +11,26 @@ import { fetchPolymarketGeo } from './polymarketGeo.js';
 import { buildPairRisk, buildRiskMap } from './riskMap.js';
 import { sourceHealth, RELEASE } from './operations.js';
 
+/** Contrato IRIS publicado (Parte F). Ningún campo fuera de esta lista. */
+export const IRIS_SCHEMA_VERSION = 'iris-g8-feed/v3-risk';
+
+export function projectIrisFeed(input = {}) {
+  return {
+    schema_version: IRIS_SCHEMA_VERSION,
+    version: input.version,
+    engine_version: input.engine_version,
+    llm_calls: 0,
+    generated_at: input.generated_at,
+    health: input.health ?? null,
+    coverage: input.coverage,
+    risk_map: input.risk_map,
+    pair_risk: input.pair_risk,
+    agenda_window: input.agenda_window,
+    polymarket_geo: input.polymarket_geo,
+    items: input.items,
+  };
+}
+
 /**
  * Diccionario determinista de divisas G8 + XAU (Oro) en milisegundos (Cero llamadas a LLMs / Gemini).
  */
@@ -580,28 +600,18 @@ export async function collectRadarAndIrisData({
   });
   const pairRisk = buildPairRisk(riskMap);
 
-  const irisFeed = {
-    schema: 'iris-g8-feed/v2-mmt-v4.0',
+  const irisFeed = projectIrisFeed({
     version: RELEASE,
-    engine: ENGINE_NAME,
     engine_version: OP_VERSION,
-    classification_mode: 'deterministic_regex_keywords_zero_llm',
-    llm_calls: 0,
     generated_at: finishedAt,
-    started_at: startedAt,
-    window_hours: 72,
-    sources_ok: sourcesHealth.filter((s) => s.status === 'ok').length,
-    sources_total: sourcesHealth.length,
-    count: irisItemsFormatted.length,
+    health: null,
     coverage,
     risk_map: riskMap,
     pair_risk: pairRisk,
     agenda_window: agendaWindow,
     polymarket_geo: polyResult.block,
-    market_basket_pct: market?.basketPct || {},
     items: irisItemsFormatted,
-    news: irisItemsFormatted,
-  };
+  });
 
   const fullState = {
     schema: 'radar-news-full/v1',

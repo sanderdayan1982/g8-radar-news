@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { classifyIrisItem } from '../src/irisCollector.js';
+import { classifyIrisItem, projectIrisFeed } from '../src/irisCollector.js';
 import {
   EA4_WINDOW_H,
   POLY_ALTO_PP,
@@ -469,9 +469,10 @@ test('el colector y la función live dejan de publicar el ranking', () => {
   assert.match(collector, /risk_map/);
   assert.match(collector, /pair_risk/);
   assert.match(collector, /llm_calls: 0/);
-  assert.match(collector, /iris-g8-feed\/v2-mmt-v4\.0/);
+  assert.match(collector, /iris-g8-feed\/v3-risk/);
+  assert.match(collector, /projectIrisFeed/);
   assert.match(collector, /classifyItemMmtV4/);
-  assert.doesNotMatch(collector, /v3-risk/);
+  assert.doesNotMatch(collector, /iris-g8-feed\/v2-mmt-v4\.0/);
   assert.doesNotMatch(collector, /currency_ranking_mmt/);
   assert.doesNotMatch(collector, /g8_ranking/);
   assert.doesNotMatch(collector, /classifyAgent\(/);
@@ -482,7 +483,69 @@ test('el colector y la función live dejan de publicar el ranking', () => {
   assert.doesNotMatch(live, /scoreSignals\(/);
   assert.doesNotMatch(live, /rankingAlerts\(/);
   assert.doesNotMatch(live, /classifyAgentShadow\(/);
+  assert.match(live, /projectIrisFeed/);
   assert.match(workflow, /test\/risk_map\.test\.js/);
   assert.equal(readFileSync(new URL('../src/shadowCalibration.js', import.meta.url), 'utf8').includes('export function classifyAgentShadow'), true);
   assert.equal(readFileSync(new URL('../src/calibrationEval.js', import.meta.url), 'utf8').length > 0, true);
+});
+
+const IRIS_KEYS = [
+  'schema_version', 'version', 'engine_version', 'llm_calls', 'generated_at',
+  'health', 'coverage', 'risk_map', 'pair_risk', 'agenda_window', 'polymarket_geo', 'items',
+];
+
+test('projectIrisFeed publica exactamente iris-g8-feed/v3-risk', () => {
+  const feed = projectIrisFeed({
+    version: '3.0.0',
+    engine_version: 'mmt-agent-op-v4.1-G8',
+    generated_at: '2026-11-10T21:47:28.706Z',
+    health: {
+      sources_live: 35,
+      sources_cached: 0,
+      base_source: 'actions_raw',
+      base_published_at: '2026-11-10T21:47:28.706Z',
+      status: 'CLEAN',
+    },
+    coverage: {},
+    risk_map: [{ currency: 'USD', risk_level: 'BAJO', reasons: ['silencio con evento'] }],
+    pair_risk: [],
+    agenda_window: [{ lock_class: 'DECISION_BC', lock_level: 'TOTAL' }],
+    polymarket_geo: { status: 'STALE', updated_at: null, markets: [] },
+    items: [],
+    currency_ranking_mmt: [{ score: 9, rank: 1, bias: 'alcista' }],
+    g8_ranking: [{ score: 9 }],
+    news: [{ title: 'fuera de contrato' }],
+    schema: 'iris-g8-feed/v2-mmt-v4.0',
+    sources_ok: 35,
+  });
+  assert.equal(feed.schema_version, 'iris-g8-feed/v3-risk');
+  assert.deepEqual(Object.keys(feed), IRIS_KEYS);
+  assert.equal(feed.llm_calls, 0);
+  assert.equal(feed.health.sources_live, 35);
+  assert.equal(feed.health.sources_cached, 0);
+  assert.equal(feed.health.base_source, 'actions_raw');
+  assert.equal(feed.health.base_published_at, '2026-11-10T21:47:28.706Z');
+  assert.equal(Object.hasOwn(feed, 'currency_ranking_mmt'), false);
+  assert.equal(Object.hasOwn(feed, 'g8_ranking'), false);
+  assert.equal(Object.hasOwn(feed, 'news'), false);
+  assert.doesNotMatch(JSON.stringify(feed.risk_map), FORBIDDEN);
+  assert.equal(feed.agenda_window[0].lock_class, 'DECISION_BC');
+  assert.equal(feed.agenda_window[0].lock_level, 'TOTAL');
+});
+
+test('iris_g8_feed.json escrito por el colector cumple el contrato v3-risk', () => {
+  const feed = JSON.parse(readFileSync(new URL('../public/data/iris_g8_feed.json', import.meta.url), 'utf8'));
+  assert.equal(feed.schema_version, 'iris-g8-feed/v3-risk');
+  assert.deepEqual(Object.keys(feed), IRIS_KEYS);
+  assert.equal(feed.llm_calls, 0);
+  assert.equal(typeof feed.health.sources_live, 'number');
+  assert.equal(typeof feed.health.sources_cached, 'number');
+  assert.deepEqual(feed.risk_map.map((row) => row.currency), [...RISK_CURRENCIES]);
+  assert.equal(feed.pair_risk.length, 29);
+  assert.deepEqual(feed.pair_risk.map((row) => row.pair), RISK_PAIRS.map(([pair]) => pair));
+  assert.ok(feed.agenda_window.every((event) => Object.hasOwn(event, 'lock_class') && Object.hasOwn(event, 'lock_level')));
+  assert.equal(feed.polymarket_geo.status === 'OK' || feed.polymarket_geo.status === 'STALE', true);
+  const generated = JSON.stringify({ risk_map: feed.risk_map, pair_risk: feed.pair_risk, coverage: feed.coverage });
+  assert.doesNotMatch(generated, FORBIDDEN);
+  for (const key of RANKING_KEYS) assert.equal(generated.includes(`"${key}"`), false);
 });

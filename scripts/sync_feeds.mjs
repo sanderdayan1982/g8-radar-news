@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { collectRadarAndIrisData, buildRadarStore, readRadarStore } from '../src/irisCollector.js';
+import { collectRadarAndIrisData, buildRadarStore, readRadarStore, projectIrisFeed } from '../src/irisCollector.js';
 import { readPolymarketHistory, writePolymarketHistory } from '../src/polymarketGeo.js';
 import { mergeSourceHealth, healthSummary, publishSignature, irisHealth } from '../src/sourceHealth.js';
 
@@ -40,20 +40,24 @@ const prevShaSet = new Set(
 );
 
 const t0 = Date.now();
-const { irisFeed, fullState, memoryItems, polymarketHistory } = await collectRadarAndIrisData({
+const collected = await collectRadarAndIrisData({
   existingItems,
   previousMarket: prevFull?.market || null,
   previousCalendar: prevFull?.calendar || [],
   polymarketHistory: prevPoly,
   timeoutMs: 8000,
 });
+let { irisFeed } = collected;
+const { fullState, memoryItems, polymarketHistory } = collected;
 const elapsedMs = Date.now() - t0;
 
 // A failed source stays failed; only its last success and last headline are carried forward.
 fullState.sources = mergeSourceHealth(fullState.sources, prevFull?.sources || []);
 const health = healthSummary(fullState.sources);
-irisFeed.sources_ok = health.ok;
-irisFeed.health = irisHealth(fullState.sources, fullState.calendar?.length || 0);
+irisFeed = projectIrisFeed({
+  ...irisFeed,
+  health: irisHealth(fullState.sources, fullState.calendar?.length || 0),
+});
 
 const newItemsCount = irisFeed.items.filter((x) => !prevShaSet.has(x.sha256)).length;
 // Publish when consumers would see a difference: new headlines, calendar values (consensus/actual), source states.
@@ -111,9 +115,9 @@ if (process.env.GITHUB_OUTPUT) {
 console.log(JSON.stringify({
   ok: true,
   elapsedMs,
-  sourcesOk: irisFeed.sources_ok,
-  sourcesTotal: irisFeed.sources_total,
-  totalItems72h: irisFeed.count,
+  sourcesOk: health.ok,
+  sourcesTotal: health.total,
+  totalItems72h: irisFeed.items.length,
   storeCount: memoryItems.length,
   newItemsCount,
   wroteFiles: shouldWrite,
