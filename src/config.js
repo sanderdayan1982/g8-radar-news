@@ -286,6 +286,65 @@ export const PRESERVED_SOURCE_IDS = [
   'investinglive', 'ft-economy', 'ft-markets', 'ft-currencies',
 ];
 
+/**
+ * Temas Polymarket de geopolítica y Washington (v5.1 Parte D).
+ * Tabla fija, sin dirección: solo palabras del título y divisas expuestas.
+ */
+export const POLYMARKET_GEO_THEMES = [
+  {
+    theme: 'IRAN_ORIENTE_MEDIO',
+    keywords: ['iran', 'israel', 'hormuz', 'houthi', 'gaza', 'saudi', 'strike on'],
+    currencies: ['USD', 'CHF', 'JPY', 'CAD', 'EUR', 'XAU'],
+  },
+  {
+    theme: 'RUSIA_UCRANIA',
+    keywords: ['russia', 'ukraine', 'putin', 'zelensky', 'ceasefire', 'nato'],
+    currencies: ['EUR', 'CHF', 'GBP', 'XAU'],
+  },
+  {
+    theme: 'ARANCELES_COMERCIO',
+    keywords: ['tariff', 'trade deal', 'trade war', 'usmca', 'section 232', 'section 301'],
+    currencies: ['CAD', 'AUD', 'NZD', 'EUR', 'JPY', 'CHF'],
+  },
+  {
+    theme: 'WASHINGTON',
+    keywords: ['shutdown', 'veto', 'executive order', 'debt ceiling', 'impeach', 'supreme court', 'fed chair', 'congress passes', 'signs into law'],
+    currencies: ['USD', 'XAU'],
+  },
+  {
+    theme: 'CHINA_TAIWAN',
+    keywords: ['china', 'taiwan', 'beijing', 'xi jinping'],
+    currencies: ['AUD', 'NZD', 'JPY', 'USD'],
+  },
+];
+
+/** Umbrales congelados el 10-nov-2026 (PRE-REG). El |Δ24h| de nivel es la Parte E y no se aplica aquí. */
+export const POLYMARKET_MIN_VOLUME_USD = 250_000;
+export const POLYMARKET_MIN_LIQUIDITY_USD = 25_000;
+export const POLYMARKET_MAX_PER_THEME = 5;
+export const POLYMARKET_HISTORY_DAYS = 8;
+export const POLYMARKET_D24H_MS = 24 * 60 * 60 * 1000;
+export const POLYMARKET_D24H_WINDOW_MS = 60 * 60 * 1000;
+export const POLYMARKET_CADENCE_MS = 30 * 60 * 1000;
+/** Misma espera creciente que el calendario en src/calendar.js. */
+export const POLYMARKET_BACKOFF_START_MS = 15 * 60 * 1000;
+export const POLYMARKET_BACKOFF_MAX_MS = 6 * 60 * 60 * 1000;
+
+/**
+ * Mercados que se descartan aunque el título encaje en un tema.
+ * `fed-rates` y `fed-chair` no están: en Gamma también marcan la nominación de Fed Chair (WASHINGTON).
+ */
+export const POLYMARKET_GEO_EXCLUSIONS = {
+  sportsTags: ['sports', 'sport', 'nba', 'nfl', 'mlb', 'nhl', 'soccer', 'football', 'basketball', 'ufc', 'mma', 'esports', 'f1', 'formula-1', 'tennis', 'golf', 'cricket', 'ucl', 'super-bowl', 'premier-league', 'nba-finals', 'nfl-gameday'],
+  sportsPhrases: ['super bowl', 'world series', 'champions league', 'premier league', 'nba finals', 'stanley cup'],
+  cryptoTags: ['crypto', 'bitcoin', 'ethereum', 'solana', 'dogecoin', 'nft', 'nfts', 'defi'],
+  cryptoPhrases: ['bitcoin', 'ethereum', 'dogecoin', 'solana', 'crypto'],
+  entertainmentTags: ['entertainment', 'pop-culture', 'popculture', 'movies', 'movie', 'music', 'celebrities', 'celebrity', 'oscars', 'oscar', 'tv', 'video-games'],
+  entertainmentPhrases: ['oscar', 'grammy', 'box office', 'netflix'],
+  centralBankTags: ['fomc', 'federal-reserve', 'central-bank', 'central-banks', 'interest-rates', 'monetary-policy'],
+  centralBankPhrases: ['fed rate', 'rate cut', 'rate hike', 'fomc', 'federal funds', 'interest rate', 'policy rate', 'basis point', 'monetary policy', 'central bank', 'fed decision', 'fedwatch', 'bank of england', 'bank of japan', 'bank of canada', 'reserve bank'],
+};
+
 export const CCY_KEYWORDS = {
   USD: /\b(usd|u\.s\.a?|united states|dollar|greenback|fed\b|fomc|powell|treasury|payrolls?|nonfarm|cpi|pce|ism|jackson hole)\b/i,
   EUR: /\b(eur\b|euro\b|eurozone|euro area|ecb|bce|lagarde|germany|bund|france|italy)\b/i,

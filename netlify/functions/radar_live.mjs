@@ -3,6 +3,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SOURCES } from '../../src/config.js';
 import { collectRadarAndIrisData, readRadarStore } from '../../src/irisCollector.js';
+import { readPolymarketHistory } from '../../src/polymarketGeo.js';
 import { labelLiveAgainstActions, irisHealth } from '../../src/sourceHealth.js';
 
 const SOURCE_COUNT = SOURCES.length;
@@ -21,10 +22,12 @@ const ROOT = (() => {
 const SEED_FULL_PATH = join(ROOT, 'public', 'data', 'radar_news_full.json');
 const SEED_IRIS_PATH = join(ROOT, 'public', 'data', 'iris_g8_feed.json');
 const SEED_STORE_PATH = join(ROOT, 'public', 'data', 'radar_store.json');
+const SEED_POLY_PATH = join(ROOT, 'public', 'data', 'polymarket_geo_history.json');
 const SPEC_PATH = join(ROOT, 'SPEC.md');
 
 export const GITHUB_RAW_FULL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_news_full.json';
 export const GITHUB_RAW_STORE = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_store.json';
+const GITHUB_RAW_POLY = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/polymarket_geo_history.json';
 // Document fetch for the Actions publication. Separate from the per-source live timeout below.
 const GITHUB_RAW_TIMEOUT_MS = 4000;
 const CACHE_TTL_MS = 60_000;
@@ -100,6 +103,39 @@ async function fetchGithubStore(timeoutMs = GITHUB_RAW_TIMEOUT_MS) {
   }
 }
 
+function historyStamp(history) {
+  const latest = Date.parse(history?.latest?.at || '') || 0;
+  const snaps = (history?.snapshots || []).reduce((max, snap) => Math.max(max, Date.parse(snap?.at) || 0), 0);
+  return Math.max(latest, snaps);
+}
+
+function newerHistory(a, b) {
+  if (!a) return b;
+  if (!b) return a;
+  return historyStamp(a) >= historyStamp(b) ? a : b;
+}
+
+function readPolyFromDisk() {
+  try {
+    if (!existsSync(SEED_POLY_PATH)) return null;
+    return readPolymarketHistory(JSON.parse(readFileSync(SEED_POLY_PATH, 'utf8')));
+  } catch {
+    return null;
+  }
+}
+
+async function fetchGithubPoly(timeoutMs = GITHUB_RAW_TIMEOUT_MS) {
+  try {
+    const res = await fetch(`${GITHUB_RAW_POLY}?t=${Date.now()}`, {
+      signal: AbortSignal.timeout(timeoutMs),
+    });
+    if (!res.ok) return null;
+    return readPolymarketHistory(await res.json());
+  } catch {
+    return null;
+  }
+}
+
 async function fetchGithubRawSeed(timeoutMs = GITHUB_RAW_TIMEOUT_MS) {
   try {
     const res = await fetch(`${GITHUB_RAW_FULL}?t=${Date.now()}`, {
@@ -164,7 +200,10 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
   }
 
   // Base = latest Actions publication (GitHub Raw). Bundled JSON only if that fetch fails.
-  const base = await resolvePublicationBase();
+  const [base, polyHistory] = await Promise.all([
+    resolvePublicationBase(),
+    fetchGithubPoly().then((remote) => newerHistory(readPolyFromDisk(), remote)),
+  ]);
   const baseFull = base.fullState;
   const existingItems = Array.isArray(base.storeItems) ? base.storeItems : [];
   const previousMarket = baseFull?.market || null;
@@ -176,6 +215,7 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
     existingItems,
     previousMarket,
     previousCalendar,
+    polymarketHistory: polyHistory,
     timeoutMs: perSourceTimeoutMs,
   });
 

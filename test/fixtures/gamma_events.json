@@ -1,0 +1,702 @@
+[
+  {
+    "id": "iran-invade",
+    "title": "Will the US invade Iran before 2027?",
+    "slug": "will-the-us-invade-iran-before-2027",
+    "closed": false,
+    "active": true,
+    "archived": false,
+    "volume": 90000000,
+    "liquidity": 500000,
+    "endDate": "2027-01-01T00:00:00Z",
+    "tags": [{ "slug": "geopolitics", "label": "Geopolitics" }, { "slug": "iran", "label": "Iran" }],
+    "markets": [
+      {
+        "id": "iran-low",
+        "question": "Will a spokesperson comment on Iran?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 1000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.99\", \"0.01\"]"
+      },
+      {
+        "id": "iran-high",
+        "question": "Will the US invade Iran before 2027?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 80000000,
+        "endDate": "2027-01-01T00:00:00Z",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.42\", \"0.58\"]"
+      }
+    ]
+  },
+  {
+    "id": "hormuz",
+    "title": "Strait of Hormuz traffic returns to normal?",
+    "slug": "strait-of-hormuz-traffic",
+    "closed": false,
+    "active": true,
+    "volume": 70000000,
+    "liquidity": 400000,
+    "markets": [
+      {
+        "id": "hormuz-closed",
+        "question": "Closed Hormuz contract",
+        "closed": true,
+        "active": false,
+        "volumeNum": 999999999,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.99\", \"0.01\"]"
+      },
+      {
+        "id": "hormuz-open",
+        "question": "Strait of Hormuz traffic returns to normal?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 100,
+        "endDate": "2026-12-31T00:00:00Z",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.15\", \"0.85\"]"
+      }
+    ]
+  },
+  {
+    "id": "houthi",
+    "title": "Houthi attacks on shipping",
+    "slug": "houthi-attacks-on-shipping",
+    "closed": false,
+    "active": true,
+    "volume": 50000000,
+    "liquidity": 300000,
+    "markets": [
+      {
+        "id": "houthi-m",
+        "question": "Houthi attacks on shipping?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 50000000,
+        "endDate": "2026-12-01T00:00:00Z",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.10\", \"0.90\"]"
+      }
+    ]
+  },
+  {
+    "id": "gaza",
+    "title": "Gaza humanitarian corridor opens",
+    "slug": "gaza-humanitarian-corridor",
+    "closed": false,
+    "active": true,
+    "volume": 40000000,
+    "liquidity": 200000,
+    "markets": [
+      {
+        "id": "gaza-m",
+        "question": "Gaza humanitarian corridor opens?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 40000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.25\", \"0.75\"]"
+      }
+    ]
+  },
+  {
+    "id": "strike-mexico",
+    "title": "US strike on Mexico by June",
+    "slug": "us-strike-on-mexico-by-june",
+    "closed": false,
+    "active": true,
+    "volume": 35000000,
+    "liquidity": 180000,
+    "markets": [
+      {
+        "id": "strike-m",
+        "question": "US strike on Mexico by June?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 35000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.05\", \"0.95\"]"
+      }
+    ]
+  },
+  {
+    "id": "saudi",
+    "title": "Saudi defense pact signed",
+    "slug": "saudi-defense-pact",
+    "closed": false,
+    "active": true,
+    "volume": 30000000,
+    "liquidity": 150000,
+    "markets": [
+      {
+        "id": "saudi-m",
+        "question": "Saudi defense pact signed?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 30000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.20\", \"0.80\"]"
+      }
+    ]
+  },
+  {
+    "id": "iran-rumor",
+    "title": "Iran rumor mill",
+    "slug": "iran-rumor-mill",
+    "closed": false,
+    "active": true,
+    "volume": 249999,
+    "liquidity": 100000,
+    "markets": [
+      {
+        "id": "rumor-m",
+        "question": "Iran rumor mill?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 249999,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.50\", \"0.50\"]"
+      }
+    ]
+  },
+  {
+    "id": "iran-no-yes",
+    "title": "Iran outcome missing",
+    "slug": "iran-outcome-missing",
+    "closed": false,
+    "active": true,
+    "volume": 95000000,
+    "liquidity": 900000,
+    "markets": [
+      {
+        "id": "no-yes",
+        "question": "Which way does the Iran contract settle?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 95000000,
+        "outcomes": "[\"Up\", \"Down\"]",
+        "outcomePrices": "[\"0.40\", \"0.60\"]"
+      }
+    ]
+  },
+  {
+    "id": "iran-closed",
+    "title": "Iran conflict resolved",
+    "slug": "iran-conflict-resolved",
+    "closed": true,
+    "active": false,
+    "volume": 999000000,
+    "liquidity": 999000000,
+    "markets": [
+      {
+        "id": "iran-closed-m",
+        "question": "Iran conflict resolved?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 999000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.80\", \"0.20\"]"
+      }
+    ]
+  },
+  {
+    "id": "gaza-inactive",
+    "title": "Gaza corridor already settled",
+    "slug": "gaza-corridor-settled",
+    "closed": false,
+    "active": false,
+    "volume": 77000000,
+    "liquidity": 400000,
+    "markets": [
+      {
+        "id": "gaza-inactive-m",
+        "question": "Gaza corridor already settled?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 77000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.70\", \"0.30\"]"
+      }
+    ]
+  },
+  {
+    "id": "nba-israel",
+    "title": "NBA finals Israel exhibition",
+    "slug": "nba-finals-israel",
+    "closed": false,
+    "active": true,
+    "volume": 88000000,
+    "liquidity": 700000,
+    "tags": [{ "slug": "sports", "label": "Sports" }, { "slug": "nba", "label": "NBA" }],
+    "markets": [
+      {
+        "id": "nba-m",
+        "question": "NBA finals Israel exhibition?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 88000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.33\", \"0.67\"]"
+      }
+    ]
+  },
+  {
+    "id": "israel-derby",
+    "title": "Israel derby special",
+    "slug": "israel-derby-special",
+    "closed": false,
+    "active": true,
+    "volume": 60000000,
+    "liquidity": 250000,
+    "markets": [
+      {
+        "id": "derby-m",
+        "question": "Israel derby special?",
+        "closed": false,
+        "active": true,
+        "sportsMarketType": "moneyline",
+        "volumeNum": 60000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.55\", \"0.45\"]"
+      }
+    ]
+  },
+  {
+    "id": "gaza-concert",
+    "title": "Gaza concert night",
+    "slug": "gaza-concert-night",
+    "closed": false,
+    "active": true,
+    "volume": 80000000,
+    "liquidity": 200000,
+    "tags": [{ "slug": "pop-culture", "label": "Culture" }],
+    "markets": [
+      {
+        "id": "concert-m",
+        "question": "Gaza concert night?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 80000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.12\", \"0.88\"]"
+      }
+    ]
+  },
+  {
+    "id": "putin-grain",
+    "title": "Putin statement on grain",
+    "slug": "putin-statement-on-grain",
+    "closed": false,
+    "active": true,
+    "volume": 5000000,
+    "liquidity": 24999,
+    "markets": [
+      {
+        "id": "putin-m",
+        "question": "Putin statement on grain?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 5000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.40\", \"0.60\"]"
+      }
+    ]
+  },
+  {
+    "id": "ceasefire",
+    "title": "Russia and Ukraine ceasefire talks",
+    "slug": "russia-ukraine-ceasefire-talks",
+    "closed": false,
+    "active": true,
+    "volume": 10000000,
+    "liquidity": 25000,
+    "markets": [
+      {
+        "id": "ceasefire-m",
+        "question": "Russia and Ukraine ceasefire talks?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 10000000,
+        "endDate": "2026-12-15T00:00:00Z",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.33\", \"0.67\"]"
+      }
+    ]
+  },
+  {
+    "id": "nato",
+    "title": "NATO exercise in the Baltic",
+    "slug": "nato-exercise-baltic",
+    "closed": false,
+    "active": true,
+    "volume": 2000000,
+    "liquidity": 40000,
+    "markets": [
+      {
+        "id": "nato-m",
+        "question": "NATO exercise in the Baltic?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 2000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.08\", \"0.92\"]"
+      }
+    ]
+  },
+  {
+    "id": "zelensky-floor",
+    "title": "Zelensky press note",
+    "slug": "zelensky-press-note",
+    "closed": false,
+    "active": true,
+    "volume": 250000,
+    "liquidity": 25000,
+    "markets": [
+      {
+        "id": "zelensky-m",
+        "question": "Zelensky press note?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 250000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.50\", \"0.50\"]"
+      }
+    ]
+  },
+  {
+    "id": "china-taiwan",
+    "title": "Will China invade Taiwan by end of 2026?",
+    "slug": "will-china-invade-taiwan-by-end-of-2026",
+    "closed": false,
+    "active": true,
+    "volume": 46000000,
+    "liquidity": 489400,
+    "markets": [
+      {
+        "id": "china-taiwan-m",
+        "question": "Will China invade Taiwan by end of 2026?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 46000000,
+        "endDate": "2026-12-31T00:00:00Z",
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.07\", \"0.93\"]"
+      }
+    ]
+  },
+  {
+    "id": "china-tariff",
+    "title": "China tariff package",
+    "slug": "china-tariff-package",
+    "closed": false,
+    "active": true,
+    "volume": 4000000,
+    "liquidity": 80000,
+    "markets": [
+      {
+        "id": "china-tariff-m",
+        "question": "China tariff package?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 4000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.28\", \"0.72\"]"
+      }
+    ]
+  },
+  {
+    "id": "xi",
+    "title": "Xi Jinping out before 2027",
+    "closed": false,
+    "active": true,
+    "volume": 2000000,
+    "liquidity": 60000,
+    "markets": [
+      {
+        "id": "xi-m",
+        "question": "Xi Jinping out before 2027?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 2000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.11\", \"0.89\"]"
+      }
+    ]
+  },
+  {
+    "id": "taiwan-archived",
+    "title": "Taiwan strait archived case",
+    "slug": "taiwan-strait-archived",
+    "closed": false,
+    "active": true,
+    "archived": true,
+    "volume": 90000000,
+    "liquidity": 500000,
+    "markets": [
+      {
+        "id": "taiwan-arch-m",
+        "question": "Taiwan strait archived case?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 90000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.22\", \"0.78\"]"
+      }
+    ]
+  },
+  {
+    "id": "trade-war",
+    "title": "US tariff schedule and trade war talks",
+    "slug": "us-tariff-trade-war",
+    "closed": false,
+    "active": true,
+    "volume": 8000000,
+    "liquidity": 100000,
+    "markets": [
+      {
+        "id": "trade-war-m",
+        "question": "US tariff schedule and trade war talks?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 8000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.36\", \"0.64\"]"
+      }
+    ]
+  },
+  {
+    "id": "section-232",
+    "title": "Section 232 steel review",
+    "slug": "section-232-steel-review",
+    "closed": false,
+    "active": true,
+    "volume": "1000000",
+    "liquidity": "30000.5",
+    "markets": [
+      {
+        "id": "s232-m",
+        "question": "Section 232 steel review?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 1000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.19\", \"0.81\"]"
+      }
+    ]
+  },
+  {
+    "id": "shutdown",
+    "title": "Will Congress end the shutdown?",
+    "slug": "will-congress-end-the-shutdown",
+    "closed": false,
+    "active": true,
+    "volume": 12000000,
+    "liquidity": 350000,
+    "markets": [
+      {
+        "id": "shutdown-m",
+        "question": "Will Congress end the shutdown?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 12000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.44\", \"0.56\"]"
+      }
+    ]
+  },
+  {
+    "id": "fed-chair",
+    "title": "Who will be confirmed as Fed Chair?",
+    "slug": "who-will-be-confirmed-as-fed-chair",
+    "closed": false,
+    "active": true,
+    "volume": 6000000,
+    "liquidity": 400000,
+    "tags": [
+      { "slug": "fed", "label": "Fed" },
+      { "slug": "fed-chair", "label": "Fed Chair" },
+      { "slug": "fed-rates", "label": "Fed Rates" },
+      { "slug": "politics", "label": "Politics" }
+    ],
+    "markets": [
+      {
+        "id": "fed-chair-m",
+        "question": "Who will be confirmed as Fed Chair?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 6000000,
+        "outcomes": ["Yes", "No"],
+        "outcomePrices": ["0.61", "0.39"]
+      }
+    ]
+  },
+  {
+    "id": "fed-rate",
+    "title": "How many Fed rate cuts if the shutdown ends?",
+    "slug": "fed-rate-cuts-if-shutdown-ends",
+    "closed": false,
+    "active": true,
+    "volume": 55000000,
+    "liquidity": 3300000,
+    "tags": [{ "slug": "fed-rates", "label": "Fed Rates" }, { "slug": "fed", "label": "Fed" }],
+    "markets": [
+      {
+        "id": "fed-rate-m",
+        "question": "How many Fed rate cuts if the shutdown ends?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 55000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.30\", \"0.70\"]"
+      }
+    ]
+  },
+  {
+    "id": "fomc-tag",
+    "title": "Shutdown timing for the December meeting",
+    "slug": "shutdown-timing-december-meeting",
+    "closed": false,
+    "active": true,
+    "volume": 9000000,
+    "liquidity": 200000,
+    "tags": [{ "slug": "fomc", "label": "FOMC" }],
+    "markets": [
+      {
+        "id": "fomc-tag-m",
+        "question": "Will the meeting date slip?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 9000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.18\", \"0.82\"]"
+      }
+    ]
+  },
+  {
+    "id": "fedwatch",
+    "title": "FedWatch odds during a shutdown",
+    "slug": "fedwatch-odds-during-a-shutdown",
+    "closed": false,
+    "active": true,
+    "volume": 7000000,
+    "liquidity": 180000,
+    "markets": [
+      {
+        "id": "fedwatch-m",
+        "question": "FedWatch odds during a shutdown?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 7000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.21\", \"0.79\"]"
+      }
+    ]
+  },
+  {
+    "id": "clarity",
+    "title": "Clarity Act signed into law in 2026?",
+    "slug": "clarity-act-signed-into-law",
+    "closed": false,
+    "active": true,
+    "volume": 25000000,
+    "liquidity": 189000,
+    "tags": [{ "slug": "crypto", "label": "Crypto" }, { "slug": "politics", "label": "Politics" }],
+    "markets": [
+      {
+        "id": "clarity-m",
+        "question": "Clarity Act signed into law in 2026?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 25000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.16\", \"0.84\"]"
+      }
+    ]
+  },
+  {
+    "id": "bitcoin-china",
+    "title": "What price will Bitcoin hit if China invades Taiwan?",
+    "slug": "bitcoin-if-china-invades-taiwan",
+    "closed": false,
+    "active": true,
+    "volume": 120000000,
+    "liquidity": 4000000,
+    "tags": [{ "slug": "crypto", "label": "Crypto" }, { "slug": "bitcoin", "label": "Bitcoin" }],
+    "markets": [
+      {
+        "id": "btc-m",
+        "question": "What price will Bitcoin hit if China invades Taiwan?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 120000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.09\", \"0.91\"]"
+      }
+    ]
+  },
+  {
+    "id": "oscar",
+    "title": "Will Ukraine win the Oscar for best documentary?",
+    "slug": "ukraine-oscar-documentary",
+    "closed": false,
+    "active": true,
+    "volume": 3000000,
+    "liquidity": 50000,
+    "tags": [{ "slug": "movies", "label": "Movies" }],
+    "markets": [
+      {
+        "id": "oscar-m",
+        "question": "Will Ukraine win the Oscar for best documentary?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 3000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.04\", \"0.96\"]"
+      }
+    ]
+  },
+  {
+    "id": "oil",
+    "title": "Oil prices next week",
+    "slug": "oil-prices-next-week",
+    "closed": false,
+    "active": true,
+    "volume": 80000000,
+    "liquidity": 500000,
+    "markets": [
+      {
+        "id": "oil-m",
+        "question": "Will Iran disrupt oil prices next week?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 80000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.50\", \"0.50\"]"
+      }
+    ]
+  },
+  {
+    "id": "alternative",
+    "title": "Alternative energy bill",
+    "slug": "alternative-energy-bill",
+    "closed": false,
+    "active": true,
+    "volume": 5000000,
+    "liquidity": 80000,
+    "markets": [
+      {
+        "id": "alt-m",
+        "question": "Alternative energy bill?",
+        "closed": false,
+        "active": true,
+        "volumeNum": 5000000,
+        "outcomes": "[\"Yes\", \"No\"]",
+        "outcomePrices": "[\"0.50\", \"0.50\"]"
+      }
+    ]
+  }
+]

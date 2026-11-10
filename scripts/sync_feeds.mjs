@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } fr
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { collectRadarAndIrisData, buildRadarStore, readRadarStore } from '../src/irisCollector.js';
+import { readPolymarketHistory, writePolymarketHistory } from '../src/polymarketGeo.js';
 import { mergeSourceHealth, healthSummary, publishSignature, irisHealth } from '../src/sourceHealth.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -11,6 +12,7 @@ const FULL_PATH = join(DATA_DIR, 'radar_news_full.json');
 const IRIS_PATH = join(DATA_DIR, 'iris_g8_feed.json');
 const STATUS_PATH = join(DATA_DIR, 'radar_status.json');
 const STORE_PATH = join(DATA_DIR, 'radar_store.json');
+const POLY_PATH = join(DATA_DIR, 'polymarket_geo_history.json');
 
 mkdirSync(DATA_DIR, { recursive: true });
 
@@ -25,6 +27,7 @@ function readJson(path) {
 
 const prevFull = readJson(FULL_PATH);
 const prevStore = readRadarStore(readJson(STORE_PATH));
+const prevPoly = readPolymarketHistory(readJson(POLY_PATH));
 // Memoria = radar_store.json. La cinta prevFull.news está recortada a 300 y no se usa como memoria.
 // Solo el primer ciclo, si el archivo aún no existe, arranca desde esa cinta para no vaciar el feed.
 const existingItems = prevStore
@@ -37,10 +40,11 @@ const prevShaSet = new Set(
 );
 
 const t0 = Date.now();
-const { irisFeed, fullState, memoryItems } = await collectRadarAndIrisData({
+const { irisFeed, fullState, memoryItems, polymarketHistory } = await collectRadarAndIrisData({
   existingItems,
   previousMarket: prevFull?.market || null,
   previousCalendar: prevFull?.calendar || [],
+  polymarketHistory: prevPoly,
   timeoutMs: 8000,
 });
 const elapsedMs = Date.now() - t0;
@@ -65,11 +69,15 @@ const itemsChanged = prevItemIds !== nextItemIds;
 const prevStoreIds = (prevStore?.items || []).map(itemKey).join('\n');
 const nextStoreIds = memoryItems.map(itemKey).join('\n');
 const storeChanged = !prevStore || prevStoreIds !== nextStoreIds;
+const polyChanged = JSON.stringify(irisFeed.polymarket_geo) !== JSON.stringify(prevIris?.polymarket_geo);
+const historyChanged = JSON.stringify(polymarketHistory) !== JSON.stringify(prevPoly);
 const shouldWrite = !prevFull
   || newItemsCount > 0
   || signatureChanged
   || schemaChanged
   || itemsChanged
+  || polyChanged
+  || historyChanged
   || (prevFull?.items?.length || 0) === 0
   || (prevFull?.sources?.length || 0) !== fullState.sources.length
   || process.argv.includes('--force');
@@ -77,6 +85,7 @@ const shouldWrite = !prevFull
 if (storeChanged) {
   writeFileSync(STORE_PATH, JSON.stringify(buildRadarStore(memoryItems, fullState.generated_at), null, 2));
 }
+if (historyChanged) writePolymarketHistory(POLY_PATH, polymarketHistory);
 if (shouldWrite) {
   writeFileSync(FULL_PATH, JSON.stringify(fullState, null, 2));
   writeFileSync(IRIS_PATH, JSON.stringify(irisFeed, null, 2));
