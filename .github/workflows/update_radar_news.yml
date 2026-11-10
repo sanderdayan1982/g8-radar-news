@@ -39,7 +39,7 @@ jobs:
 
       # Gate: never publish from an engine that fails its own contract (dependency-free suites, < 2 s).
       - name: Gate — engine, Mosler rules and data contracts
-        run: node --test test/classify.test.js test/evidence.test.js test/integrity.test.js test/calibrationClosure.test.js test/sources.test.js test/financialjuice.test.js test/iris_serverless.test.js test/locks.test.js test/ui.test.js test/source_health.test.js test/scheduler.test.js test/retention.test.js test/silence.test.js test/polymarket_geo.test.js test/live_base.test.js
+        run: node --test test/classify.test.js test/evidence.test.js test/integrity.test.js test/calibrationClosure.test.js test/sources.test.js test/financialjuice.test.js test/iris_serverless.test.js test/locks.test.js test/risk_map.test.js test/ui.test.js test/source_health.test.js test/scheduler.test.js test/retention.test.js test/silence.test.js test/polymarket_geo.test.js test/live_base.test.js
 
       # Commits keep the lock message "chore(feed): sync radar news [skip netlify]" (see scripts/sync_loop.sh).
       - name: Sync loop (5 min cadence, 60 s near High events)

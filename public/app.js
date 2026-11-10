@@ -43,6 +43,37 @@ export function lookupMarketPair(marketPairs, base, quote) {
 const $ = (sel) => (typeof document !== 'undefined' ? document.querySelector(sel) : null);
 const $$ = (sel) => (typeof document !== 'undefined' ? [...document.querySelectorAll(sel)] : []);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+export function riskMapBoardHtml(rows = [], open = new Set()) {
+  return (rows || []).map((r) => {
+    const ccy = esc(r.currency);
+    const level = esc(r.risk_level || '');
+    const reasons = (Array.isArray(r.reasons) ? r.reasons : []).map((x) => esc(x)).filter(Boolean);
+    const reasonText = reasons.join(' · ');
+    const lock = r.lock_level && r.lock_level !== 'NINGUNO'
+      ? `<span class="${lockPillClass(r.lock_level)}">${esc(r.lock_level)}${r.retirar_limitadas ? ' · retirar limitadas' : ''}</span>`
+      : '';
+    const silence = r.silence === true ? '<span>silencio</span>' : '';
+    const expanded = open.has(r.currency);
+    return `<li class="ccy-row${expanded ? ' open' : ''}" data-ccy="${ccy}">
+      <button class="ccy-line" type="button" aria-expanded="${expanded}" aria-label="${ccy}: ${level}">
+        <span class="code">${ccy}</span>
+        <span class="risk-level">${level}</span>
+      </button>
+      <div class="ccy-meta"><span>${level}</span>${lock}${silence}</div>
+      <p class="driver" title="${reasonText}">${reasonText}</p>
+      <div class="ccy-detail"><p>${reasonText}</p></div>
+    </li>`;
+  }).join('');
+}
+
+export function pairRiskHtml(pairs = []) {
+  return (pairs || []).map((p) => {
+    const lock = p.lock_level && p.lock_level !== 'NINGUNO' ? ` · ${esc(p.lock_level)}` : '';
+    return `<div class="pair"><b>${esc(p.pair)}</b><span>${esc(p.risk_level || '')}${lock}</span></div>`;
+  }).join('');
+}
+
 const num = (v) => { const m = /-?\d+(?:\.\d+)?/.exec(String(v ?? '').replace(/,/g, '')); return m ? Number(m[0]) : null; };
 const signed = (n) => (n > 0 ? `+${n}` : `${n}`);
 const fmtImpulse = (v) => (v == null ? 'n/d' : signed(v));
@@ -432,6 +463,23 @@ export function computeLiveCalendarBadge(currency, row, calEvents = [], nowMs = 
 
 function renderBoard() {
   renderEngineTabs();
+  if (Array.isArray(ui.data?.risk_map) && ui.data.risk_map.length) {
+    const board = $('#board');
+    const opVer = ui.data?.engine_meta?.op_version || '';
+    const when = ui.data?.generated_at ? fmtTime(ui.data.generated_at) : '';
+    const batch = $('#batch-time');
+    if (batch) batch.textContent = ['Mapa de riesgo de evento', opVer, when].filter(Boolean).join(' · ');
+    if (board) board.innerHTML = riskMapBoardHtml(ui.data.risk_map, ui.open);
+    const matrix = $('#matrix');
+    if (matrix) matrix.innerHTML = '';
+    const top = $('#top-pairs');
+    if (top) top.innerHTML = pairRiskHtml(ui.data.pair_risk);
+    const sheet = $('#pair-sheet');
+    if (sheet) { sheet.hidden = true; sheet.innerHTML = ''; }
+    const regime = $('#regime');
+    if (regime) { regime.hidden = true; regime.textContent = ''; }
+    return;
+  }
   const view = engineView();
   const board = $('#board');
   if (!view) {
