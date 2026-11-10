@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { collectRadarAndIrisData } from '../src/irisCollector.js';
+import { collectRadarAndIrisData, buildRadarStore, readRadarStore } from '../src/irisCollector.js';
 import { mergeSourceHealth, healthSummary, publishSignature, irisHealth } from '../src/sourceHealth.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -10,27 +10,34 @@ const DATA_DIR = join(ROOT, 'public', 'data');
 const FULL_PATH = join(DATA_DIR, 'radar_news_full.json');
 const IRIS_PATH = join(DATA_DIR, 'iris_g8_feed.json');
 const STATUS_PATH = join(DATA_DIR, 'radar_status.json');
+const STORE_PATH = join(DATA_DIR, 'radar_store.json');
 
 mkdirSync(DATA_DIR, { recursive: true });
 
-let prevFull = null;
-if (existsSync(FULL_PATH)) {
+function readJson(path) {
+  if (!existsSync(path)) return null;
   try {
-    prevFull = JSON.parse(readFileSync(FULL_PATH, 'utf8'));
+    return JSON.parse(readFileSync(path, 'utf8'));
   } catch {
-    prevFull = null;
+    return null;
   }
 }
 
-const existingItems = Array.isArray(prevFull?.news) ? prevFull.news : [];
+const prevFull = readJson(FULL_PATH);
+const prevStore = readRadarStore(readJson(STORE_PATH));
+// Memoria = radar_store.json. La cinta prevFull.news está recortada a 300 y no se usa como memoria.
+// Solo el primer ciclo, si el archivo aún no existe, arranca desde esa cinta para no vaciar el feed.
+const existingItems = prevStore
+  ? prevStore.items
+  : (Array.isArray(prevFull?.news) ? prevFull.news : []);
 const prevShaSet = new Set(
-  (Array.isArray(prevFull?.items) ? prevFull.items : existingItems)
+  (prevStore?.items || (Array.isArray(prevFull?.items) ? prevFull.items : existingItems))
     .map((x) => x.sha256 || x.id)
     .filter(Boolean),
 );
 
 const t0 = Date.now();
-const { irisFeed, fullState } = await collectRadarAndIrisData({
+const { irisFeed, fullState, memoryItems } = await collectRadarAndIrisData({
   existingItems,
   previousMarket: prevFull?.market || null,
   previousCalendar: prevFull?.calendar || [],
@@ -48,17 +55,28 @@ const newItemsCount = irisFeed.items.filter((x) => !prevShaSet.has(x.sha256)).le
 // Publish when consumers would see a difference: new headlines, calendar values (consensus/actual), source states.
 const signatureChanged = publishSignature(fullState) !== publishSignature(prevFull);
 // A contract change (new top-level fields) must reach consumers without waiting for a new headline.
-let prevIrisKeys = '';
-try { prevIrisKeys = Object.keys(JSON.parse(readFileSync(IRIS_PATH, 'utf8'))).sort().join(','); } catch { /* first run */ }
+const prevIris = readJson(IRIS_PATH);
+const prevIrisKeys = prevIris ? Object.keys(prevIris).sort().join(',') : '';
 const schemaChanged = prevIrisKeys !== Object.keys(irisFeed).sort().join(',');
+const itemKey = (item) => item?.sha256 || item?.id || '';
+const prevItemIds = (prevIris?.items || []).map(itemKey).join('\n');
+const nextItemIds = irisFeed.items.map(itemKey).join('\n');
+const itemsChanged = prevItemIds !== nextItemIds;
+const prevStoreIds = (prevStore?.items || []).map(itemKey).join('\n');
+const nextStoreIds = memoryItems.map(itemKey).join('\n');
+const storeChanged = !prevStore || prevStoreIds !== nextStoreIds;
 const shouldWrite = !prevFull
   || newItemsCount > 0
   || signatureChanged
   || schemaChanged
+  || itemsChanged
   || (prevFull?.items?.length || 0) === 0
   || (prevFull?.sources?.length || 0) !== fullState.sources.length
   || process.argv.includes('--force');
 
+if (storeChanged) {
+  writeFileSync(STORE_PATH, JSON.stringify(buildRadarStore(memoryItems, fullState.generated_at), null, 2));
+}
 if (shouldWrite) {
   writeFileSync(FULL_PATH, JSON.stringify(fullState, null, 2));
   writeFileSync(IRIS_PATH, JSON.stringify(irisFeed, null, 2));
@@ -87,6 +105,8 @@ console.log(JSON.stringify({
   sourcesOk: irisFeed.sources_ok,
   sourcesTotal: irisFeed.sources_total,
   totalItems72h: irisFeed.count,
+  storeCount: memoryItems.length,
   newItemsCount,
   wroteFiles: shouldWrite,
+  wroteStore: storeChanged,
 }));

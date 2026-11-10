@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { collectRadarAndIrisData } from '../../src/irisCollector.js';
+import { collectRadarAndIrisData, readRadarStore } from '../../src/irisCollector.js';
 import { mergeSourceHealth, irisHealth } from '../../src/sourceHealth.js';
 
 const ROOT = (() => {
@@ -16,9 +16,11 @@ const ROOT = (() => {
 })();
 const SEED_FULL_PATH = join(ROOT, 'public', 'data', 'radar_news_full.json');
 const SEED_IRIS_PATH = join(ROOT, 'public', 'data', 'iris_g8_feed.json');
+const SEED_STORE_PATH = join(ROOT, 'public', 'data', 'radar_store.json');
 const SPEC_PATH = join(ROOT, 'SPEC.md');
 
 const GITHUB_RAW_FULL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_news_full.json';
+const GITHUB_RAW_STORE = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_store.json';
 const CACHE_TTL_MS = 60_000;
 // A forced refresh re-polls 31 sources. Public callers cannot force more than one per minute.
 const MIN_FORCE_INTERVAL_MS = 60_000;
@@ -66,6 +68,46 @@ async function writeNetlifyBlobCache(bundle) {
   }
 }
 
+function readStoreFromDisk() {
+  try {
+    if (!existsSync(SEED_STORE_PATH)) return null;
+    return readRadarStore(JSON.parse(readFileSync(SEED_STORE_PATH, 'utf8')));
+  } catch {
+    return null;
+  }
+}
+
+function pickNewerStore(a, b) {
+  if (!a) return b;
+  if (!b) return a;
+  const at = Date.parse(a.generated_at || '') || 0;
+  const bt = Date.parse(b.generated_at || '') || 0;
+  if (at !== bt) return at > bt ? a : b;
+  return (a.items?.length || 0) >= (b.items?.length || 0) ? a : b;
+}
+
+async function fetchGithubStore(timeoutMs = 4000) {
+  try {
+    const res = await fetch(`${GITHUB_RAW_STORE}?t=${Date.now()}`, {
+      signal: AbortSignal.timeout(timeoutMs),
+    });
+    if (!res.ok) return null;
+    return readRadarStore(await res.json());
+  } catch {
+    return null;
+  }
+}
+
+async function resolveStoreItems(memItems, blobItems) {
+  if (Array.isArray(memItems)) return memItems;
+  const picked = pickNewerStore(readStoreFromDisk(), await fetchGithubStore());
+  const fileItems = picked?.items || [];
+  if (Array.isArray(blobItems) && fileItems.length) return [...blobItems, ...fileItems];
+  if (fileItems.length) return fileItems;
+  if (Array.isArray(blobItems)) return blobItems;
+  return null;
+}
+
 async function fetchGithubRawSeed(timeoutMs = 600) {
   try {
     const res = await fetch(`${GITHUB_RAW_FULL}?t=${Date.now()}`, {
@@ -104,7 +146,11 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
     : null;
   const baseFull = memCache.fullState || blobCached?.fullState || rawSeed || diskSeed.fullState;
 
-  const existingItems = Array.isArray(baseFull?.news) ? baseFull.news : [];
+  const storeItems = await resolveStoreItems(memCache.storeItems, blobCached?.storeItems);
+  // La cinta (news, 300) no es memoria. Si no hay store todavía, se usa como arranque único.
+  const existingItems = Array.isArray(storeItems)
+    ? storeItems
+    : (Array.isArray(baseFull?.news) ? baseFull.news : []);
   const previousMarket = baseFull?.market || null;
   const previousCalendar = Array.isArray(baseFull?.calendar) ? baseFull.calendar : [];
   try {
@@ -115,7 +161,7 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
 
   // Consulta paralela ultrarrápida (con timeout corto para garantizar respuesta < 1s cuando ya hay semilla)
   const perSourceTimeoutMs = existingItems.length > 0 ? 700 : 3800;
-  const { irisFeed, fullState } = await collectRadarAndIrisData({
+  const { irisFeed, fullState, memoryItems } = await collectRadarAndIrisData({
     existingItems,
     previousMarket,
     previousCalendar,
@@ -132,6 +178,7 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
     updatedAt: Date.now(),
     irisFeed,
     fullState,
+    storeItems: memoryItems,
   };
   memCache = bundle;
   await writeNetlifyBlobCache(bundle);
