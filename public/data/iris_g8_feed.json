@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T08:27:08.315Z",
-  "started_at": "2026-11-10T08:27:05.162Z",
+  "generated_at": "2026-11-10T08:37:19.908Z",
+  "started_at": "2026-11-10T08:37:14.896Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -62,8 +62,8 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 0h",
-      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
+      "calendar_lock_detail": "MPC Member Lombardelli Speaks en 3.9h",
+      "post_event_status": "✓ POST-EVENTO (MPC Member Breeden Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
@@ -81,7 +81,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 0.5h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 0.4h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -89,7 +89,7 @@
         "CPI vs consenso",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "27 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RELATIVE_PRICE + RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est -11 | Imp 3h -8. Régimen real mixed."
+      "rationale": "27 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + RELATIVE_PRICE + TRADE_EXTERNAL + FISCAL_NFA · Est -11 | Imp 3h -8. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -97,11 +97,11 @@
       "score": -14,
       "bias": "bajista",
       "structural": -14,
-      "impulse": -6,
+      "impulse": -5,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 23.8h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 23.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -109,7 +109,7 @@
         "Mercado laboral firme (Pleno Empleo)",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + DATA_REAL · Est -14 | Imp 3h -6. Régimen real mixed."
+      "rationale": "11 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + DATA_REAL · Est -14 | Imp 3h -5. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -172,9 +172,9 @@
     {
       "currency": "XAU",
       "rank": null,
-      "score": 2,
+      "score": 4,
       "bias": "neutral",
-      "structural": 2,
+      "structural": 4,
       "impulse": null,
       "ficha_v6": "A6 / EA-7",
       "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
@@ -183,9 +183,10 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
+        "Oro refugio / MDP: Gold holds near recent highs as markets aw",
         "Oro refugio / MDP: Informe de mercado: resumen diario Semana "
       ],
-      "rationale": "1 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +2."
+      "rationale": "2 titulares XAU · Ficha A6 / EA-7 (ACTIVO_REAL_REFUGIO) · Score +4."
     }
   ],
   "g8_ranking": [
@@ -239,8 +240,8 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 0h",
-      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
+      "calendar_lock_detail": "MPC Member Lombardelli Speaks en 3.9h",
+      "post_event_status": "✓ POST-EVENTO (MPC Member Breeden Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
@@ -258,7 +259,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 0.5h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 0.4h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -266,7 +267,7 @@
         "CPI vs consenso",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "27 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RELATIVE_PRICE + RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est -11 | Imp 3h -8. Régimen real mixed."
+      "rationale": "27 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + RELATIVE_PRICE + TRADE_EXTERNAL + FISCAL_NFA · Est -11 | Imp 3h -8. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -274,11 +275,11 @@
       "score": -14,
       "bias": "bajista",
       "structural": -14,
-      "impulse": -6,
+      "impulse": -5,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 23.8h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 23.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -286,7 +287,7 @@
         "Mercado laboral firme (Pleno Empleo)",
         "CPI sin sorpresa"
       ],
-      "rationale": "11 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + DATA_REAL · Est -14 | Imp 3h -6. Régimen real mixed."
+      "rationale": "11 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + DATA_REAL · Est -14 | Imp 3h -5. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -357,7 +358,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -25.5,
+      "hours_from_now": -25.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -369,7 +370,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -23,
+      "hours_from_now": -23.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -381,7 +382,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -22.2,
+      "hours_from_now": -22.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -393,7 +394,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -22.2,
+      "hours_from_now": -22.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -405,7 +406,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18.8,
+      "hours_from_now": -19,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -417,7 +418,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -17.5,
+      "hours_from_now": -17.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -429,7 +430,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -17.5,
+      "hours_from_now": -17.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -441,7 +442,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15.2,
+      "hours_from_now": -15.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -453,7 +454,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15,
+      "hours_from_now": -15.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -465,7 +466,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -9,
+      "hours_from_now": -9.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -477,7 +478,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -9,
+      "hours_from_now": -9.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -489,7 +490,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -8.6,
+      "hours_from_now": -8.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -501,7 +502,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.6,
+      "hours_from_now": -8.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -513,7 +514,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -8.6,
+      "hours_from_now": -8.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -525,7 +526,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -8.4,
+      "hours_from_now": -8.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -537,7 +538,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -8,
+      "hours_from_now": -8.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -549,7 +550,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -4.9,
+      "hours_from_now": -5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -561,7 +562,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -3.5,
+      "hours_from_now": -3.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -573,7 +574,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0,
+      "hours_from_now": -0.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -585,7 +586,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.5,
+      "hours_from_now": 0.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -597,7 +598,7 @@
       "actual": null,
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": 2.5,
+      "hours_from_now": 2.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -609,7 +610,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 3.1,
+      "hours_from_now": 2.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -621,7 +622,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4,
+      "hours_from_now": 3.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -633,7 +634,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.8,
+      "hours_from_now": 4.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -645,7 +646,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 5,
+      "hours_from_now": 4.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -657,7 +658,7 @@
       "actual": "0.3%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 5,
+      "hours_from_now": 4.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -669,7 +670,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.4,
+      "hours_from_now": 7.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -681,7 +682,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 9.6,
+      "hours_from_now": 9.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -693,7 +694,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10,
+      "hours_from_now": 9.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -705,7 +706,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10,
+      "hours_from_now": 9.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -717,7 +718,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10,
+      "hours_from_now": 9.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -729,7 +730,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 12,
+      "hours_from_now": 11.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -741,7 +742,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13,
+      "hours_from_now": 12.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -753,7 +754,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15,
+      "hours_from_now": 14.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -765,7 +766,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15,
+      "hours_from_now": 14.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -777,7 +778,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 15.4,
+      "hours_from_now": 15.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -789,7 +790,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 21.5,
+      "hours_from_now": 21.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -801,7 +802,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 22.5,
+      "hours_from_now": 22.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -813,7 +814,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22.6,
+      "hours_from_now": 22.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -825,7 +826,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.8,
+      "hours_from_now": 23.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -837,7 +838,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 24.5,
+      "hours_from_now": 24.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -849,7 +850,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.3,
+      "hours_from_now": 25.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -861,7 +862,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 26.1,
+      "hours_from_now": 25.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -873,7 +874,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 28.5,
+      "hours_from_now": 28.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -885,7 +886,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 28.5,
+      "hours_from_now": 28.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -897,7 +898,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 37.3,
+      "hours_from_now": 37.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -909,7 +910,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 39.4,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -921,7 +922,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 39.5,
+      "hours_from_now": 39.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -933,7 +934,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 39.6,
+      "hours_from_now": 39.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -945,7 +946,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -957,7 +958,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -969,7 +970,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -981,7 +982,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -993,7 +994,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1005,7 +1006,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1017,7 +1018,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1029,7 +1030,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1044,6 +1045,65 @@
     "NZD": 1.13
   },
   "items": [
+    {
+      "id": "e306bd9981796b38f7704daa327c1e02d8d57927fe96786135800b4190a583e2",
+      "sha256": "e306bd9981796b38f7704daa327c1e02d8d57927fe96786135800b4190a583e2",
+      "title": "European stock market open stocks rally across the board as market optimism grows",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T08:35:36.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "425ee91a4edc7f2f71765434dd835a43c275ffd406b32141b00023d2dfe10ee9",
+      "sha256": "425ee91a4edc7f2f71765434dd835a43c275ffd406b32141b00023d2dfe10ee9",
+      "title": "Gold holds near recent highs as markets await us cpi and iran breakthrough",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T08:35:36.000Z",
+      "currencies": [
+        "USD",
+        "XAU"
+      ],
+      "divisas": [
+        "USD",
+        "XAU"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Commodities_ToT"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "e8dc8a29bc2bd89f67be15df61414d1d9260dafebb1ad3c4d764589fc2b8daae",
       "sha256": "e8dc8a29bc2bd89f67be15df61414d1d9260dafebb1ad3c4d764589fc2b8daae",
@@ -8035,66 +8095,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-09T17:05:24.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2c4391cb5ab6896628dbbb3ae128e030f3402d31615623fd621d5cae632da4c8",
-      "sha256": "2c4391cb5ab6896628dbbb3ae128e030f3402d31615623fd621d5cae632da4c8",
-      "title": "Fed's Barkin: Bankers say loan pipelines are healthy, demand extending well beyond artificial intelligence",
-      "url": "https://t.me/FinancialJuice/145733",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T17:05:14.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "95dbd76a6983d5d595b903971b8fd772bf54d63f731507256ee6f92ae154ff32",
-      "sha256": "95dbd76a6983d5d595b903971b8fd772bf54d63f731507256ee6f92ae154ff32",
-      "title": "Fed's Barkin: Businesses are performing well, with 'remarkable' earnings:",
-      "url": "https://t.me/FinancialJuice/145732",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T17:05:06.000Z",
       "currencies": [
         "USD"
       ],
@@ -8119,6 +8119,65 @@
   ],
   "news": [
     {
+      "id": "e306bd9981796b38f7704daa327c1e02d8d57927fe96786135800b4190a583e2",
+      "sha256": "e306bd9981796b38f7704daa327c1e02d8d57927fe96786135800b4190a583e2",
+      "title": "European stock market open stocks rally across the board as market optimism grows",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T08:35:36.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "425ee91a4edc7f2f71765434dd835a43c275ffd406b32141b00023d2dfe10ee9",
+      "sha256": "425ee91a4edc7f2f71765434dd835a43c275ffd406b32141b00023d2dfe10ee9",
+      "title": "Gold holds near recent highs as markets await us cpi and iran breakthrough",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T08:35:36.000Z",
+      "currencies": [
+        "USD",
+        "XAU"
+      ],
+      "divisas": [
+        "USD",
+        "XAU"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Commodities_ToT"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e8dc8a29bc2bd89f67be15df61414d1d9260dafebb1ad3c4d764589fc2b8daae",
       "sha256": "e8dc8a29bc2bd89f67be15df61414d1d9260dafebb1ad3c4d764589fc2b8daae",
       "title": "Qatari PM makes unscheduled stop at G7 to brief Europeans, Saudi Arabia after Trump talks on Iran.",
@@ -15109,66 +15168,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-09T17:05:24.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2c4391cb5ab6896628dbbb3ae128e030f3402d31615623fd621d5cae632da4c8",
-      "sha256": "2c4391cb5ab6896628dbbb3ae128e030f3402d31615623fd621d5cae632da4c8",
-      "title": "Fed's Barkin: Bankers say loan pipelines are healthy, demand extending well beyond artificial intelligence",
-      "url": "https://t.me/FinancialJuice/145733",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T17:05:14.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "95dbd76a6983d5d595b903971b8fd772bf54d63f731507256ee6f92ae154ff32",
-      "sha256": "95dbd76a6983d5d595b903971b8fd772bf54d63f731507256ee6f92ae154ff32",
-      "title": "Fed's Barkin: Businesses are performing well, with 'remarkable' earnings:",
-      "url": "https://t.me/FinancialJuice/145732",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T17:05:06.000Z",
       "currencies": [
         "USD"
       ],
