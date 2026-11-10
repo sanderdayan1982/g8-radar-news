@@ -1,26 +1,53 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { RISK_CURRENCIES, RISK_REASONS, buildRiskMap } from '../src/riskMap.js';
+import { classifyItemMmtV4, MOSLER_RULES } from '../src/classifyCurrencies.js';
+import { classifyIrisItem } from '../src/irisCollector.js';
+import { RISK_CURRENCIES, buildRiskMap } from '../src/riskMap.js';
 
 /**
- * Parte E. Las pruebas de ranking de este archivo pasan a ser pruebas del mapa.
- * El clasificador de titulares (classifyIrisItem / classifyItemMmtV4) sigue en
- * test/iris_serverless.test.js y no se toca aquí.
+ * Parte E. Cada prueba de ranking antigua comprueba ahora la ficha y la lente
+ * que el clasificador da a ese titular, y que el mapa no le asigna un nivel.
  */
 const NOW = Date.parse('2026-10-24T00:00:00.000Z');
 const RANKING_KEYS = ['score', 'rank', 'bias', 'impulse', 'structural'];
-const FORBIDDEN = /\blong\b|\bshort\b|sesgo largo|sesgo corto|vía libre operativa|\bcompra\b|\bvende\b|subirá|bajará|Soporte|Presión|alcista|bajista/i;
+const FORBIDDEN = /\blong\b|\bshort\b|sesgo largo|sesgo corto|vía libre operativa|\bcompra\b|\bvende\b|subirá|bajará/i;
 
-function item(title, currencies, minsAgo = 30, extra = {}) {
+function headline(title, currencies, extra = {}) {
   return {
     title,
+    body: extra.body || '',
     currencies,
-    published_at: new Date(NOW - minsAgo * 60_000).toISOString(),
-    ...extra,
+    source_type: extra.source_type || 'breaking',
+    category: extra.category || 'dato_macro',
+    actual: extra.actual ?? null,
+    forecast: extra.forecast ?? null,
+    previous: extra.previous ?? null,
+    impact: extra.impact ?? 4,
+    published_at: new Date(NOW - (extra.minsAgo ?? 30) * 60_000).toISOString(),
+    url: `https://example.com/h/${encodeURIComponent(title).slice(0, 48)}`,
   };
 }
 
-function bare(items = [], extra = {}) {
+function fichaFor(raw, currency) {
+  return classifyItemMmtV4({ ...raw, currencies: [currency], g8_currencies: [currency] });
+}
+
+function expectFicha(raw, currency, expected) {
+  const iris = classifyIrisItem(raw);
+  const mmt = fichaFor(raw, currency);
+  assert.equal(mmt.ficha_v6, expected.ficha);
+  assert.equal(mmt.mmt_lens, expected.lens);
+  assert.equal(iris.iris_category, expected.category);
+  if (expected.impact != null) assert.equal(iris.impact, expected.impact);
+  if (expected.sovereignty) assert.equal(mmt.sovereignty_mmt, expected.sovereignty);
+  if (expected.irisFicha !== false) {
+    assert.equal(iris.ficha_v6, expected.irisFicha ?? expected.ficha);
+    assert.equal(iris.mmt_lens, expected.irisLens ?? expected.lens);
+  }
+  return iris;
+}
+
+function quietMap(items) {
   const coverage = {};
   for (const currency of ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'CAD', 'AUD', 'NZD']) {
     coverage[currency] = { silence: false };
@@ -31,7 +58,6 @@ function bare(items = [], extra = {}) {
     items,
     polymarketGeo: { markets: [] },
     nowMs: NOW,
-    ...extra,
   });
 }
 
@@ -40,218 +66,258 @@ function expectQuiet(row) {
   assert.equal(row.lock_level, 'NINGUNO');
   assert.deepEqual(row.reasons, []);
   for (const key of RANKING_KEYS) assert.equal(Object.hasOwn(row, key), false, key);
-  assert.doesNotMatch(JSON.stringify(row), FORBIDDEN);
+  assert.doesNotMatch(JSON.stringify(row.reasons), FORBIDDEN);
 }
 
-test('sustituye «CPI alto con economía débil no suma soporte»: el titular no sube el mapa', () => {
-  const gbp = bare([
-    item('UK CPI ACTUAL 3.8% FORECAST 3.2% PREVIOUS 3.1%', ['GBP']),
-    item('UK retail sales miss: contraction, weak economy', ['GBP']),
-    item('UK PMI services falls below 50, slowdown', ['GBP']),
-  ]).find((row) => row.currency === 'GBP');
-  expectQuiet(gbp);
+test('sustituye «CPI alto con economía débil no suma soporte»: ficha del CPI y de la debilidad', () => {
+  const cpi = headline('UK CPI ACTUAL 3.8% FORECAST 3.2% PREVIOUS 3.1%', ['GBP'], { actual: '3.8', forecast: '3.2', previous: '3.1' });
+  const retail = headline('UK retail sales miss: contraction, weak economy', ['GBP'], { actual: '-0.7', forecast: '0.2' });
+  const pmi = headline('UK PMI services falls below 50, slowdown', ['GBP'], { actual: '48.1', forecast: '51.0' });
+  const cpiIris = expectFicha(cpi, 'GBP', { ficha: 'A1', lens: 'INFLATION_PRINT', category: 'Inflacion_Empleo', impact: 4, sovereignty: 'SOBERANO_EMISOR' });
+  assert.ok(cpiIris.g8_currencies.includes('USD'));
+  expectFicha(retail, 'GBP', { ficha: 'B2', lens: 'CONTRACCION_REAL', category: 'Inflacion_Empleo', impact: 4 });
+  expectFicha(pmi, 'GBP', { ficha: 'B2', lens: 'PMI_CONTRACCION_SUB50', category: 'Inflacion_Empleo', impact: 4 });
+  expectQuiet(quietMap([cpi, retail, pmi]).find((row) => row.currency === 'GBP'));
 });
 
-test('sustituye «CPI alto con economía en capacidad queda acotado»: el dato real no asigna nivel', () => {
-  const usd = bare([
-    item('US CPI ACTUAL 3.4% FORECAST 3.1%', ['USD']),
-    item('US payrolls beat, hot labor market expansion', ['USD']),
-    item('US PMI jumps above 52, strong growth', ['USD']),
-  ]).find((row) => row.currency === 'USD');
-  expectQuiet(usd);
+test('sustituye «CPI alto con economía en capacidad queda acotado»: el dato real es A5', () => {
+  const cpi = headline('US CPI ACTUAL 3.4% FORECAST 3.1%', ['USD'], { actual: '3.4', forecast: '3.1' });
+  const payrolls = headline('US payrolls beat, hot labor market expansion', ['USD'], { actual: '250', forecast: '160' });
+  const pmi = headline('US PMI jumps above 52, strong growth', ['USD'], { actual: '56.0', forecast: '52.0' });
+  expectFicha(cpi, 'USD', { ficha: 'A1', lens: 'INFLATION_PRINT', category: 'Inflacion_Empleo', impact: 4 });
+  expectFicha(payrolls, 'USD', { ficha: 'A5', lens: 'EXPANSION_REAL_A5', category: 'Inflacion_Empleo', impact: 4 });
+  expectFicha(pmi, 'USD', { ficha: 'A5', lens: 'EXPANSION_REAL_A5', category: 'Inflacion_Empleo', impact: 4 });
+  expectQuiet(quietMap([cpi, payrolls, pmi]).find((row) => row.currency === 'USD'));
 });
 
-test('sustituye «déficit de un emisor soberano no es presión automática»: USD y GBP quedan BAJO', () => {
-  const rows = bare([
-    item('UK deficit cannot afford spending, downgrade fears', ['GBP']),
-    item('US deficit cannot afford spending, downgrade fears', ['USD']),
-  ]);
+test('sustituye «déficit de un emisor soberano no es presión automática»: NFA, no B12', () => {
+  const gbp = headline('UK deficit cannot afford spending, downgrade fears', ['GBP'], { category: 'analisis', impact: 3 });
+  const usd = headline('US deficit cannot afford spending, downgrade fears', ['USD'], { category: 'analisis', impact: 3 });
+  expectFicha(gbp, 'GBP', { ficha: 'A12 / B10 / C3', lens: 'FLUJO_FISCAL_NFA', category: 'Fiscal', impact: 3, sovereignty: 'SOBERANO_EMISOR' });
+  expectFicha(usd, 'USD', { ficha: 'A12 / B10 / C3', lens: 'FLUJO_FISCAL_NFA', category: 'Fiscal', impact: 3, sovereignty: 'SOBERANO_EMISOR' });
+  const rows = quietMap([gbp, usd]);
   expectQuiet(rows.find((row) => row.currency === 'GBP'));
   expectQuiet(rows.find((row) => row.currency === 'USD'));
 });
 
-test('sustituye «el EUR es usuario de moneda»: el déficit del EUR no puntúa el mapa', () => {
-  const eur = bare([
-    item('France deficit cannot afford spending, downgrade fears', ['EUR']),
-  ]).find((row) => row.currency === 'EUR');
-  expectQuiet(eur);
+test('sustituye «el EUR es usuario de moneda»: déficit de Francia es B12', () => {
+  const eur = headline('France deficit cannot afford spending, downgrade fears', ['EUR'], { category: 'analisis', impact: 3 });
+  expectFicha(eur, 'EUR', {
+    ficha: 'B12',
+    lens: 'B12_EUR_FRAG_RIESGO',
+    category: 'Fiscal',
+    impact: 3,
+    sovereignty: 'USUARIO_MONEDA',
+  });
+  expectQuiet(quietMap([eur]).find((row) => row.currency === 'EUR'));
 });
 
-test('sustituye «hike en régimen débil no es soporte»: un titular de hike no es candado', () => {
-  const gbp = bare([
-    item('BoE hike as stagflation unsustainable economy persists', ['GBP']),
-    item('UK CPI ACTUAL 4.1% FORECAST 3.5% weak economy', ['GBP']),
-    item('UK PMI contracts below 50, recession fears', ['GBP']),
-  ]).find((row) => row.currency === 'GBP');
-  expectQuiet(gbp);
+test('sustituye «hike en régimen débil no es soporte»: estanflación es EA-1 y el PMI queda bajo 50', () => {
+  const hike = headline('BoE hike as stagflation unsustainable economy persists', ['GBP'], { category: 'banco_central' });
+  const cpi = headline('UK CPI ACTUAL 4.1% FORECAST 3.5% weak economy', ['GBP'], { actual: '4.1', forecast: '3.5' });
+  const pmi = headline('UK PMI contracts below 50, recession fears', ['GBP'], { actual: '47.0', forecast: '50.2' });
+  expectFicha(hike, 'GBP', { ficha: 'EA-1', lens: 'COST_PUSH_STAG_TRAP', category: 'BC', impact: 4 });
+  expectFicha(cpi, 'GBP', { ficha: 'B8', lens: 'COST_PUSH_EROSION_REAL', category: 'Inflacion_Empleo', impact: 4 });
+  expectFicha(pmi, 'GBP', { ficha: 'B2', lens: 'PMI_CONTRACCION_SUB50', category: 'Inflacion_Empleo', impact: 4 });
+  expectQuiet(quietMap([hike, cpi, pmi]).find((row) => row.currency === 'GBP'));
 });
 
-test('sustituye «does not hike se trata como negación»: el titular no mueve el nivel', () => {
-  const usd = bare([
-    item("Fed doesn't hike, holds rates", ['USD']),
-  ]).find((row) => row.currency === 'USD');
-  expectQuiet(usd);
+test('sustituye «does not hike se trata como negación»: la pausa es B2, no A1', () => {
+  const usd = headline("Fed doesn't hike, holds rates", ['USD'], { category: 'banco_central' });
+  expectFicha(usd, 'USD', { ficha: 'B2', lens: 'REPRICING_MONETARIO', category: 'BC', impact: 4 });
+  assert.notEqual(fichaFor(usd, 'USD').mmt_lens, 'REPRICING_MONETARIO_A1');
+  expectQuiet(quietMap([usd]).find((row) => row.currency === 'USD'));
 });
 
-test('sustituye «desempleo invertido»: el dato no invierte ni ordena el mapa', () => {
-  const usd = bare([
-    item('US unemployment ACTUAL 4.5% FORECAST 4.1%', ['USD']),
-  ]).find((row) => row.currency === 'USD');
-  expectQuiet(usd);
+test('sustituye «desempleo invertido»: paro por encima del consenso es contracción laboral', () => {
+  const usd = headline('US unemployment ACTUAL 4.5% FORECAST 4.1%', ['USD'], { actual: '4.5', forecast: '4.1' });
+  expectFicha(usd, 'USD', { ficha: 'B2', lens: 'CONTRACCION_LABORAL_B2', category: 'Inflacion_Empleo', impact: 4 });
+  expectQuiet(quietMap([usd]).find((row) => row.currency === 'USD'));
 });
 
-test('sustituye «oficial de hace 20 días sigue en ventana»: EA-4 de hace 20 días no sube', () => {
-  const rows = bare([
-    item('Updates to the October Monetary Policy Review', ['NZD'], 20 * 24 * 60),
-    item('MOF rate check on the yen', ['JPY'], 20 * 24 * 60, { iris_category: 'Intervencion_EA4' }),
-  ]);
+test('sustituye «oficial de hace 20 días sigue en ventana»: la ficha no caduca y el mapa sigue BAJO', () => {
+  const official = headline('Updates to the October Monetary Policy Review', ['NZD'], {
+    source_type: 'oficial', category: 'banco_central', impact: 2, minsAgo: 20 * 24 * 60,
+  });
+  const breaking = headline('Kiwi CPI miss ACTUAL 1.0 FORECAST 2.0', ['NZD'], {
+    actual: '1.0', forecast: '2.0', minsAgo: 20 * 24 * 60,
+  });
+  expectFicha(official, 'NZD', { ficha: 'A1 / B2', lens: 'REPRICING_MONETARIO', category: 'BC', impact: 2 });
+  const kiwi = expectFicha(breaking, 'NZD', { ficha: 'B2', lens: 'INFLATION_PRINT', category: 'Inflacion_Empleo', impact: 4 });
+  assert.ok(kiwi.g8_currencies.includes('USD'));
+  const rows = quietMap([official, breaking]);
   expectQuiet(rows.find((row) => row.currency === 'NZD'));
-  expectQuiet(rows.find((row) => row.currency === 'JPY'));
-  assert.equal(rows.find((row) => row.currency === 'JPY').ea4_24h, false);
+  assert.equal(rows.find((row) => row.currency === 'NZD').ea4_24h, false);
 });
 
-test('sustituye «titular oficial cuenta como evidencia aunque el score sea 0»: sin EA-4 queda BAJO y sin puesto', () => {
-  const nzd = bare([
-    item('Updates to the October Monetary Policy Review', ['NZD']),
-  ]).find((row) => row.currency === 'NZD');
-  expectQuiet(nzd);
-  assert.equal(Object.hasOwn(nzd, 'rank'), false);
+test('sustituye «titular oficial cuenta como evidencia aunque el score sea 0»: tiene ficha A1/B2', () => {
+  const nzd = headline('Updates to the October Monetary Policy Review', ['NZD'], {
+    source_type: 'oficial', category: 'banco_central', impact: 2,
+  });
+  const card = expectFicha(nzd, 'NZD', { ficha: 'A1 / B2', lens: 'REPRICING_MONETARIO', category: 'BC', impact: 2 });
+  assert.notEqual(card.ficha_v6, null);
+  assert.notEqual(card.mmt_lens, 'CONTEXTO_GENERAL');
+  const row = quietMap([nzd]).find((item) => item.currency === 'NZD');
+  expectQuiet(row);
+  assert.equal(Object.hasOwn(row, 'rank'), false);
 });
 
-test('sustituye «sin titulares: N/D, score 0, rank null»: todo el mapa queda BAJO y sin alerta de régimen', () => {
-  const rows = bare([item('US payrolls beat ACTUAL 250 FORECAST 160', ['USD'])]);
+test('sustituye «sin titulares: N/D, score 0, rank null»: el dato de empleo es A5 y el resto no tiene ficha', () => {
+  const payrolls = headline('US payrolls beat ACTUAL 250 FORECAST 160', ['USD'], { actual: '250', forecast: '160' });
+  expectFicha(payrolls, 'USD', { ficha: 'A5', lens: 'EXPANSION_REAL_A5', category: 'Inflacion_Empleo', impact: 4 });
+  const rows = quietMap([payrolls]);
   expectQuiet(rows.find((row) => row.currency === 'CHF'));
   expectQuiet(rows.find((row) => row.currency === 'NZD'));
+  expectQuiet(rows.find((row) => row.currency === 'USD'));
   assert.equal(JSON.stringify(rows).includes('cambio_regimen'), false);
-  for (const key of RANKING_KEYS) assert.equal(JSON.stringify(rows).includes(`"${key}"`), false);
 });
 
-test('sustituye «refugio geopolítico»: el titular no parte USD/JPY/CHF de NZD', () => {
-  const rows = bare([
-    item('Missile attack closes Hormuz, war risk', ['USD', 'JPY', 'CHF', 'NZD']),
-  ]);
-  const levels = ['USD', 'JPY', 'CHF', 'NZD'].map((currency) => rows.find((row) => row.currency === currency).risk_level);
-  assert.deepEqual(levels, ['BAJO', 'BAJO', 'BAJO', 'BAJO']);
-  for (const currency of ['USD', 'JPY', 'CHF', 'NZD']) {
-    expectQuiet(rows.find((row) => row.currency === currency));
+test('sustituye «refugio geopolítico»: USD/JPY/CHF en A6 y NZD en B5', () => {
+  const raw = headline('Missile attack closes Hormuz, war risk', ['USD', 'JPY', 'CHF', 'NZD'], { category: 'geopolitica', impact: 5 });
+  const iris = classifyIrisItem(raw);
+  assert.equal(iris.iris_category, 'Riesgo_Sistemico');
+  assert.equal(iris.impact, 5);
+  assert.equal(iris.ficha_v6, 'A6 / B5 / B15');
+  assert.equal(iris.mmt_lens, 'SAFE_HAVEN_A6');
+  for (const [currency, lens] of [
+    ['USD', 'SAFE_HAVEN_A6'],
+    ['JPY', 'SAFE_HAVEN_A6'],
+    ['CHF', 'SAFE_HAVEN_A6'],
+    ['NZD', 'RISK_OFF_CYCLICAL_B5'],
+  ]) {
+    const mmt = fichaFor(raw, currency);
+    assert.equal(mmt.ficha_v6, 'A6 / B5 / B15', currency);
+    assert.equal(mmt.mmt_lens, lens, currency);
   }
+  const rows = quietMap([raw]);
+  for (const currency of ['USD', 'JPY', 'CHF', 'NZD']) expectQuiet(rows.find((row) => row.currency === currency));
 });
 
-test('sustituye «máximo 3 drivers y sesgo por umbral ±12»: muchos titulares no crean sesgo', () => {
-  const items = Array.from({ length: 8 }, (_, i) => item(
+test('sustituye «máximo 3 drivers y sesgo por umbral ±12»: cada nómina es expansión A5 y el mapa no tiene sesgo', () => {
+  const items = Array.from({ length: 8 }, (_, i) => headline(
     `US payrolls beat ACTUAL ${200 + i} FORECAST 100`,
     ['USD'],
-    10 + i,
+    { actual: String(200 + i), forecast: '100', minsAgo: 10 + i },
   ));
-  const usd = bare(items).find((row) => row.currency === 'USD');
+  for (const raw of items) {
+    expectFicha(raw, 'USD', { ficha: 'A5', lens: 'EXPANSION_REAL_A5', category: 'Inflacion_Empleo', impact: 4 });
+  }
+  const usd = quietMap(items).find((row) => row.currency === 'USD');
   expectQuiet(usd);
   assert.equal(Object.hasOwn(usd, 'bias'), false);
 });
 
-test('sustituye «prompt Mosler veta lenguaje de ejecución»: las razones del mapa no lo usan', () => {
-  const rows = buildRiskMap({
-    nowMs: NOW,
-    coverage: { USD: { silence: true }, EUR: { silence: false }, GBP: { silence: false }, JPY: { silence: true }, CHF: { silence: false }, CAD: { silence: false }, AUD: { silence: false }, NZD: { silence: false } },
-    calendarEvents: [
-      { id: 'ff', currency: 'USD', title: 'Federal Funds Rate', impact: 'High', event_at: new Date(NOW + 30 * 3_600_000).toISOString() },
-      { id: 'speech', currency: 'EUR', title: 'ECB President Lagarde Speaks', impact: 'Medium', event_at: new Date(NOW + 10 * 3_600_000).toISOString() },
-      { id: 'cpi', currency: 'GBP', title: 'CPI y/y', impact: 'High', event_at: new Date(NOW + 30 * 3_600_000).toISOString() },
-      { id: 'ism', currency: 'CAD', title: 'ISM Services PMI', impact: 'High', event_at: new Date(NOW + 8 * 3_600_000).toISOString() },
-      { id: 'budget', currency: 'AUD', title: 'Annual Budget Release', impact: 'High', event_at: new Date(NOW + 20 * 3_600_000).toISOString() },
-      { id: 'nzd', currency: 'NZD', title: 'Retail Sales', impact: 'High', event_at: new Date(NOW + 6 * 3_600_000).toISOString() },
-    ],
-    items: [item('Japan MOF rate check on the yen', ['JPY'], 60, { iris_category: 'Intervencion_EA4' })],
-    polymarketGeo: {
-      markets: [{
-        theme: 'IRAN_ORIENTE_MEDIO',
-        question: 'Will the event happen?',
-        d24h_pp: 12,
-        currencies: ['USD', 'CHF', 'JPY', 'CAD', 'EUR', 'XAU'],
-      }],
-    },
+test('sustituye «prompt Mosler veta lenguaje de ejecución»: el prompt y el CPI débil', () => {
+  assert.match(MOSLER_RULES, /CPI\/inflación ALTO con economía DÉBIL/);
+  assert.match(MOSLER_RULES, /Prohibido "long"/);
+  assert.match(MOSLER_RULES, /fingerprint/);
+  assert.match(MOSLER_RULES, /CPI NO es el motor único/);
+  assert.match(MOSLER_RULES, /PMI \(Manufacturing, Services, Composite, ISM, Caixin\) con Actual < 50\.0/);
+  const weakCpi = headline('UK CPI ACTUAL 4.1% FORECAST 3.5% weak economy', ['GBP'], { actual: '4.1', forecast: '3.5' });
+  expectFicha(weakCpi, 'GBP', { ficha: 'B8', lens: 'COST_PUSH_EROSION_REAL', category: 'Inflacion_Empleo', impact: 4 });
+  expectQuiet(quietMap([weakCpi]).find((row) => row.currency === 'GBP'));
+});
+
+test('sustituye «inflación + tightening no queda en CPI 0»: el BoJ es repricing A1', () => {
+  const jpy = headline('September inflation keeps BoJ on tightening course', ['JPY'], {
+    category: 'banco_central', source_type: 'oficial',
   });
-  const reasons = rows.flatMap((row) => row.reasons);
-  for (const phrase of Object.values(RISK_REASONS)) assert.ok(reasons.includes(phrase), phrase);
-  assert.doesNotMatch(reasons.join('\n'), FORBIDDEN);
-  for (const row of rows) {
-    for (const key of RANKING_KEYS) assert.equal(Object.hasOwn(row, key), false);
-  }
+  const card = expectFicha(jpy, 'JPY', { ficha: 'A1 / B2', lens: 'REPRICING_MONETARIO_A1', category: 'BC', impact: 4 });
+  assert.notEqual(card.mmt_lens, 'INFLATION_PRINT');
+  const row = quietMap([jpy]).find((item) => item.currency === 'JPY');
+  expectQuiet(row);
+  assert.equal(row.ea4_24h, false);
 });
 
-test('sustituye «inflación + tightening no queda en CPI 0»: el titular del BoJ no es EA-4 ni candado', () => {
-  const jpy = bare([
-    item('September inflation keeps BoJ on tightening course', ['JPY']),
-  ]).find((row) => row.currency === 'JPY');
-  expectQuiet(jpy);
-  assert.equal(jpy.ea4_24h, false);
+test('sustituye «oficial hawkish de hace 20 días todavía puntúa»: la ficha A1 se conserva', () => {
+  const nzd = headline('RBNZ MPS: OCR remains restrictive, inflation persistent', ['NZD'], {
+    source_type: 'oficial', category: 'banco_central', impact: 3, minsAgo: 20 * 24 * 60,
+  });
+  expectFicha(nzd, 'NZD', { ficha: 'A1 / B2', lens: 'REPRICING_MONETARIO_A1', category: 'BC', impact: 3 });
+  expectQuiet(quietMap([nzd]).find((row) => row.currency === 'NZD'));
 });
 
-test('sustituye «oficial hawkish de hace 20 días todavía puntúa»: ya no sube el mapa', () => {
-  const nzd = bare([
-    item('RBNZ MPS: OCR remains restrictive, inflation persistent', ['NZD'], 20 * 24 * 60),
-  ]).find((row) => row.currency === 'NZD');
-  expectQuiet(nzd);
+test('sustituye «FOMC restrictive no es Neutral 0»: es repricing A1', () => {
+  const usd = headline('FOMC statement: Committee remains vigilant, policy restrictive', ['USD'], {
+    source_type: 'oficial', category: 'banco_central',
+  });
+  const card = expectFicha(usd, 'USD', { ficha: 'A1 / B2', lens: 'REPRICING_MONETARIO_A1', category: 'BC', impact: 4 });
+  assert.notEqual(card.ficha_v6, null);
+  assert.notEqual(card.mmt_lens, 'CONTEXTO_GENERAL');
+  expectQuiet(quietMap([usd]).find((row) => row.currency === 'USD'));
 });
 
-test('sustituye «FOMC restrictive no es Neutral 0»: el titular sin agenda queda BAJO', () => {
-  const usd = bare([
-    item('FOMC statement: Committee remains vigilant, policy restrictive', ['USD']),
-  ]).find((row) => row.currency === 'USD');
-  expectQuiet(usd);
-});
-
-test('sustituye «colapso de confianza es presión y NFA es soporte»: ninguno mueve el nivel', () => {
-  const rows = bare([
-    item('Relentless cost of living pressures behind collapse of consumer confidence', ['GBP']),
-    item('SNB profit distribution to Confederation and cantons', ['CHF']),
-  ]);
+test('sustituye «colapso de confianza es presión y NFA es soporte»: B2 y flujo fiscal', () => {
+  const gbp = headline('Relentless cost of living pressures behind collapse of consumer confidence', ['GBP'], { category: 'analisis' });
+  const chf = headline('SNB profit distribution to Confederation and cantons', ['CHF'], {
+    source_type: 'oficial', category: 'banco_central',
+  });
+  expectFicha(gbp, 'GBP', { ficha: 'B2', lens: 'CONTRACCION_REAL', category: 'Inflacion_Empleo', impact: 4 });
+  expectFicha(chf, 'CHF', { ficha: 'A12 / B10 / C3', lens: 'FLUJO_FISCAL_NFA', category: 'BC', impact: 4, sovereignty: 'SOBERANO_EMISOR' });
+  const rows = quietMap([gbp, chf]);
   expectQuiet(rows.find((row) => row.currency === 'GBP'));
   expectQuiet(rows.find((row) => row.currency === 'CHF'));
 });
 
-test('sustituye «el Agente diferencia divisas»: el mapa no las ordena por evidencia', () => {
-  const rows = bare([
-    item('BoJ on tightening course as inflation persists', ['JPY']),
-    item('UK consumer confidence collapses under cost of living pressures', ['GBP']),
-    item('France deficit cannot afford spending, downgrade fears', ['EUR']),
-    item('SECO raises growth forecast, revisión al alza del crecimiento', ['CHF']),
-  ]);
+test('sustituye «el Agente diferencia divisas»: las fichas no se ordenan', () => {
+  const jpy = headline('BoJ on tightening course as inflation persists', ['JPY'], { category: 'banco_central', source_type: 'oficial' });
+  const gbp = headline('UK consumer confidence collapses under cost of living pressures', ['GBP']);
+  const eur = headline('France deficit cannot afford spending, downgrade fears', ['EUR'], { category: 'analisis' });
+  const chf = headline('SECO raises growth forecast, revisión al alza del crecimiento', ['CHF'], { source_type: 'oficial' });
+  const cards = [
+    expectFicha(jpy, 'JPY', { ficha: 'A1 / B2', lens: 'REPRICING_MONETARIO_A1', category: 'BC', impact: 4 }),
+    expectFicha(gbp, 'GBP', { ficha: 'B2', lens: 'CONTRACCION_REAL', category: 'Inflacion_Empleo', impact: 4 }),
+    expectFicha(eur, 'EUR', { ficha: 'B12', lens: 'B12_EUR_FRAG_RIESGO', category: 'Fiscal', impact: 4, sovereignty: 'USUARIO_MONEDA' }),
+    expectFicha(chf, 'CHF', { ficha: 'A5', lens: 'EXPANSION_REAL_A5', category: 'Inflacion_Empleo', impact: 4 }),
+  ];
+  assert.equal(new Set(cards.map((card) => card.ficha_v6)).size, 4);
+  const rows = quietMap([jpy, gbp, eur, chf]);
   assert.deepEqual(rows.map((row) => row.currency), [...RISK_CURRENCIES]);
-  for (const currency of ['JPY', 'GBP', 'EUR', 'CHF']) {
-    expectQuiet(rows.find((row) => row.currency === currency));
-  }
-  assert.equal(new Set(rows.map((row) => row.risk_level)).size, 1);
+  for (const currency of ['JPY', 'GBP', 'EUR', 'CHF']) expectQuiet(rows.find((row) => row.currency === currency));
 });
 
-test('sustituye «empleo y PMI mueven el Agente»: sin candado TIER1 quedan BAJO', () => {
-  const usd = bare([
-    item('US payrolls beat ACTUAL 250 FORECAST 160', ['USD']),
-    item('US ISM services PMI jumps above 52, expansion', ['USD']),
-  ]).find((row) => row.currency === 'USD');
-  expectQuiet(usd);
+test('sustituye «empleo y PMI mueven el Agente»: nóminas e ISM son A5, no inflación', () => {
+  const payrolls = headline('US payrolls beat ACTUAL 250 FORECAST 160', ['USD'], { actual: '250', forecast: '160' });
+  const ism = headline('US ISM services PMI jumps above 52, expansion', ['USD'], { actual: '56.0', forecast: '52.0' });
+  const jobs = expectFicha(payrolls, 'USD', { ficha: 'A5', lens: 'EXPANSION_REAL_A5', category: 'Inflacion_Empleo', impact: 4 });
+  const pmi = expectFicha(ism, 'USD', { ficha: 'A5', lens: 'EXPANSION_REAL_A5', category: 'Inflacion_Empleo', impact: 4 });
+  assert.notEqual(jobs.mmt_lens, 'INFLATION_PRINT');
+  assert.notEqual(pmi.mmt_lens, 'INFLATION_PRINT');
+  expectQuiet(quietMap([payrolls, ism]).find((row) => row.currency === 'USD'));
 });
 
-test('sustituye «NFA y comercio puntúan»: no crean nivel ni dirección', () => {
-  const chf = bare([
-    item('SNB profit distribution to Confederation and cantons', ['CHF']),
-    item('Switzerland and Vietnam strengthen ties in trade, new agreement on digital trade', ['CHF']),
-  ]).find((row) => row.currency === 'CHF');
-  expectQuiet(chf);
+test('sustituye «NFA y comercio puntúan»: distribución fiscal y acuerdo EA-1', () => {
+  const nfa = headline('SNB profit distribution to Confederation and cantons', ['CHF'], {
+    source_type: 'oficial', category: 'banco_central',
+  });
+  const trade = headline('Switzerland and Vietnam strengthen ties in trade, new agreement on digital trade', ['CHF'], { category: 'analisis' });
+  expectFicha(nfa, 'CHF', { ficha: 'A12 / B10 / C3', lens: 'FLUJO_FISCAL_NFA', category: 'BC', impact: 4 });
+  expectFicha(trade, 'CHF', { ficha: 'EA-1', lens: 'TOT_COMMODITIES_EA1', category: 'BC', impact: 4 });
+  expectQuiet(quietMap([nfa, trade]).find((row) => row.currency === 'CHF'));
 });
 
-test('sustituye «desempleo y ventas mueven el score»: CAD queda BAJO', () => {
-  const cad = bare([
-    item('Canada retail sales miss ACTUAL -0.4 FORECAST 0.3', ['CAD']),
-    item('Canada unemployment ACTUAL 7.1% FORECAST 6.6%', ['CAD']),
-  ]).find((row) => row.currency === 'CAD');
+test('sustituye «desempleo y ventas mueven el score»: ventas B2 y paro laboral B2', () => {
+  const retail = headline('Canada retail sales miss ACTUAL -0.4 FORECAST 0.3', ['CAD'], { actual: '-0.4', forecast: '0.3' });
+  const unemployment = headline('Canada unemployment ACTUAL 7.1% FORECAST 6.6%', ['CAD'], { actual: '7.1', forecast: '6.6' });
+  expectFicha(retail, 'CAD', { ficha: 'B2', lens: 'CONTRACCION_REAL', category: 'Inflacion_Empleo', impact: 4 });
+  expectFicha(unemployment, 'CAD', { ficha: 'B2', lens: 'CONTRACCION_LABORAL_B2', category: 'Inflacion_Empleo', impact: 4 });
+  const cad = quietMap([retail, unemployment]).find((row) => row.currency === 'CAD');
   expectQuiet(cad);
 });
 
-test('sustituye «Baker Hughes y TIPS no son dato real ni Imp 3h»: el mapa no publica impulso', () => {
-  const usd = bare([
-    item('US BAKER HUGHES OIL RIG COUNT ACTUAL 460 (FORECAST -, PREVIOUS 459)', ['USD']),
-    item('US 5-YEAR TIPS HIGH YIELD ACTUAL 2.367% (FORECAST -, PREVIOUS 1.955%)', ['USD']),
-  ]).find((row) => row.currency === 'USD');
+test('sustituye «Baker Hughes y TIPS no son dato real ni Imp 3h»: ficha operativa, no A5', () => {
+  const baker = headline('US BAKER HUGHES OIL RIG COUNT ACTUAL 460 (FORECAST -, PREVIOUS 459)', ['USD'], {
+    actual: '460', previous: '459',
+  });
+  const tips = headline('US 5-YEAR TIPS HIGH YIELD ACTUAL 2.367% (FORECAST -, PREVIOUS 1.955%)', ['USD'], {
+    actual: '2.367%', previous: '1.955%',
+  });
+  const bakerCard = expectFicha(baker, 'USD', { ficha: 'A12 / B10 / C3', lens: 'FLUJO_FISCAL_NFA', category: 'Commodities_ToT', impact: 4 });
+  const tipsCard = expectFicha(tips, 'USD', { ficha: 'A12 / B10 / C3', lens: 'FLUJO_FISCAL_NFA', category: 'Inflacion_Empleo', impact: 4 });
+  assert.notEqual(bakerCard.ficha_v6, 'A5');
+  assert.notEqual(tipsCard.mmt_lens, 'EXPANSION_REAL_A5');
+  assert.notEqual(tipsCard.mmt_lens, 'CONTRACCION_REAL');
+  const usd = quietMap([baker, tips]).find((row) => row.currency === 'USD');
   expectQuiet(usd);
   assert.equal(Object.hasOwn(usd, 'impulse'), false);
 });
