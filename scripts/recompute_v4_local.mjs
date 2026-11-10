@@ -3,6 +3,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { classifyIrisItem, deduplicateAndFilterWindow, trimMemory, formatIrisFeedItem, buildCoverage, buildRadarStore, STORE_CAP, FEED_CAP, TAPE_CAP } from '../src/irisCollector.js';
 import { classifyAgent, attachRanks, MMT_SOVEREIGNTY, biasFor, clamp } from '../src/classifyCurrencies.js';
+import { buildAgendaWindow, rankingLockFields } from '../src/lockSeverity.js';
 import { classifyAgentShadow, OP_VERSION, SHADOW_VERSION } from '../src/shadowCalibration.js';
 import { selectEvidence, evidenceContract } from '../src/evidence.js';
 import { linkNewsToCalendar, turboEvent } from '../src/calendar.js';
@@ -114,29 +115,7 @@ const engineSnapshot = {
 const irisItemsFormatted = feedItems.map(formatIrisFeedItem);
 const coverage = buildCoverage(memoryItems, nowMs);
 
-const agendaWindow = calendarEvents
-  .filter((e) => {
-    const ms = Date.parse(e?.event_at || '');
-    if (!Number.isFinite(ms)) return false;
-    const diff = ms - nowMs;
-    return diff >= -24 * 3600_000 && diff <= 48 * 3600_000;
-  })
-  .map((e) => {
-    const diffH = Math.round(((Date.parse(e.event_at) - nowMs) / 3600_000) * 10) / 10;
-    const isUpcoming = diffH > 0;
-    return {
-      id: e.id,
-      currency: e.currency,
-      title: e.title,
-      event_at: e.event_at,
-      impact: e.impact,
-      actual: e.actual ?? null,
-      forecast: e.forecast ?? null,
-      previous: e.previous ?? null,
-      hours_from_now: diffH,
-      window_status: isUpcoming ? '⚑BC <48h (Candado CIRO)' : '✓ POST-EVENTO',
-    };
-  });
+const agendaWindow = buildAgendaWindow(calendarEvents, nowMs);
 
 const xauItems = irisWindowItems.filter((n) => (n.currencies || []).includes('XAU'));
 const xauRawSum = xauItems.reduce((acc, n) => {
@@ -155,9 +134,7 @@ const xauRowMmt = {
   impulse: null,
   ficha_v6: 'A6 / EA-7',
   sovereignty_mmt: MMT_SOVEREIGNTY.XAU,
-  calendar_lock: null,
-  calendar_lock_detail: null,
-  post_event_status: null,
+  ...rankingLockFields(null),
   no_evidence: xauItems.length === 0,
   drivers: xauItems.length
     ? xauItems.slice(0, 2).map((n) => `Oro refugio / MDP: ${n.title.slice(0, 42)}`)
@@ -174,9 +151,7 @@ const g8RankingSummary = agentRows.map((r) => ({
   impulse: r.impulse ?? null,
   ficha_v6: r.ficha_v6 || 'A1 / B2',
   sovereignty_mmt: r.sovereignty_mmt || MMT_SOVEREIGNTY[r.currency] || 'SOBERANO_EMISOR',
-  calendar_lock: r.calendar_lock || null,
-  calendar_lock_detail: r.calendar_lock_detail || null,
-  post_event_status: r.post_event_status || null,
+  ...rankingLockFields(r),
   no_evidence: !!r.noEvidence,
   drivers: r.drivers || [],
   rationale: r.rationale || '',

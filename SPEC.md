@@ -173,6 +173,22 @@ La memoria y la presentación van separadas. Constantes congeladas el 10-nov-202
 - Si la memoria supera 5.000, salen primero los breaking más antiguos y después el resto de no oficiales. Un oficial dentro de su ventana no se elimina; si los oficiales solos superan el tope, la lista puede pasarse de 5.000. El feed IRIS (`items`) publica la misma ventana con tope 3.000 y la misma regla.
 - `coverage` en el feed, por divisa y en este orden (USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD, XAU): `count_72h`, `count_official_45d` (oficiales de los 45 días; un oficial de las últimas 72 h cuenta en los dos), `last_item_at`, `hours_since_last` (horas naturales, un decimal) y `hours_since_last_business` (sin sábados ni domingos UTC; los festivos sí cuentan). Las horas del JSON comprometido se refrescan cuando el ciclo reescribe el feed; la función live las recalcula en cada petición.
 
+## Contrato de candados (v5.1 Parte B)
+
+Cada evento High o de banco central de la agenda recibe `lock_class` y `lock_level`. Las clases se evalúan en este orden y gana la primera que encaja, sin distinguir mayúsculas. Constantes congeladas el 10-nov-2026: ventana activa 48 h, POST-EVENTO 24 h, retirar limitadas 2 h antes de un DISCURSO.
+
+| lock_class | Regla sobre el título | lock_level | Ventana activa |
+|---|---|---|---|
+| `DECISION_BC` | federal funds rate, fomc statement, official bank rate, bank rate votes, main refinancing rate, deposit facility rate, monetary policy statement, official cash rate, cash rate, overnight rate, policy rate, rate statement, rate decision, monetary policy assessment, press conference | `TOTAL` | 0 < horas ≤ 48 |
+| `PRESUPUESTO` | budget, fiscal statement, spending review, fiscal update, prefu | `TOTAL` | 0 < horas ≤ 48 |
+| `DISCURSO` | `\bspeaks\b`, testifies, testimony | `NO_AMPLIAR` (`retirar_limitadas: true` si horas ≤ 2) | 0 < horas ≤ 48 |
+| `TIER1_DATO` | cpi, hicp, inflation rate, non-farm, nonfarm, employment change, unemployment rate, gdp, retail sales, pce (solo impacto High) | `TIER1` | 0 < horas ≤ 48 |
+| `OTRO_HIGH` | cualquier otro evento High | `AVISO` | 0 < horas ≤ 48 |
+
+Severidad: `TOTAL` > `TIER1` > `NO_AMPLIAR` > `AVISO` > `NINGUNO`. Fuera de la ventana el nivel es `NINGUNO` y la clase reconocida se conserva. Cuando el evento ya ocurrió, el candado termina y `✓ POST-EVENTO` muestra Act/Est/Prev durante 24 h. Un actual puede seguir en la lista de agenda hasta 48 h después (retención del 4-nov); entre 24 h y 48 h el evento sigue en la lista con Act/Est/Prev y `window_status` null. Por divisa, `lock_level` es el evento activo más severo y `lock_events` lista `lock_class`, `title`, `time` y `hours_until`. `TIER1` no decide solo: CIRO lo cruza con el posicionamiento que aporta ARGOS.
+
+El esquema del feed sigue en `iris-g8-feed/v2-mmt-v4.0`. `agenda_window` añade `lock_class`, `lock_level` y `retirar_limitadas`. `window_status` de un evento activo pasa a ser el nivel (`TOTAL`, `TIER1`, `NO_AMPLIAR`, `AVISO`); dentro de las 24 h posteriores es `✓ POST-EVENTO`; el resto queda en null. En el ranking, `calendar_lock` de un candado activo pasa a ser ese nivel, y se añaden `lock_level`, `lock_class`, `lock_events` y `retirar_limitadas`. La sincronización y `netlify/functions/radar_live.mjs` usan el mismo `buildAgendaWindow`.
+
 ## Contrato de salud IRIS
 `iris_g8_feed.json` y `/api/health` publican `health`: `sources_active` (vivas + copia de la última sincronización), `sources_live`, `sources_cached`, `sources_total`, `sources_empty`, `sources_error`, `agenda_events_count` y `status`: `CLEAN` si no hay errores ni fuentes vacías, `DEGRADED` si al menos el 80 % están activas, `CRITICAL` por debajo y `UNKNOWN` sin fuentes. `public/data/radar_status.json` es el latido de cada ciclo.
 

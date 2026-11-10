@@ -4,6 +4,7 @@ import { SOURCES, UA, ENGINE_NAME } from './config.js';
 import { enrichRaw, parseRss, parseTelegram, parseHtmlList } from './enrich.js';
 import { selectEvidence, evidenceContract } from './evidence.js';
 import { classifyAgent, attachRanks, classifyItemMmtV4, MMT_SOVEREIGNTY, biasFor, clamp } from './classifyCurrencies.js';
+import { buildAgendaWindow, rankingLockFields } from './lockSeverity.js';
 import { classifyAgentShadow, OP_VERSION, SHADOW_VERSION } from './shadowCalibration.js';
 import { fetchCalendar, linkNewsToCalendar, turboEvent } from './calendar.js';
 import { fetchMarket } from './market.js';
@@ -600,31 +601,9 @@ export async function collectRadarAndIrisData({
 
   const irisItemsFormatted = feedItems.map(formatIrisFeedItem);
 
-  // Ventana de Agenda (-24h a +48h) para el agente externo IRIS
-  const agendaWindow = (calendarEvents || [])
-    .filter((e) => {
-      const ms = Date.parse(e?.event_at || '');
-      if (!Number.isFinite(ms)) return false;
-      const diff = ms - nowMs;
-      // ENZO 2026-11-04: POST-EVENTO con actual se conserva hasta -48h (RBA/CHF del 03-nov caian fuera a -24h)
-      return diff >= (e.actual ? -48 : -24) * 3600_000 && diff <= 48 * 3600_000;
-    })
-    .map((e) => {
-      const diffH = Math.round(((Date.parse(e.event_at) - nowMs) / 3600_000) * 10) / 10;
-      const isUpcoming = diffH > 0;
-      return {
-        id: e.id,
-        currency: e.currency,
-        title: e.title,
-        event_at: e.event_at,
-        impact: e.impact,
-        actual: e.actual ?? null,
-        forecast: e.forecast ?? null,
-        previous: e.previous ?? null,
-        hours_from_now: diffH,
-        window_status: isUpcoming ? '⚑BC <48h (Candado CIRO)' : '✓ POST-EVENTO',
-      };
-    });
+  // Agenda: un actual se conserva en la lista hasta -48 h. El candado activo es 48 h
+  // y la etiqueta POST-EVENTO dura 24 h. La severidad la pone buildAgendaWindow.
+  const agendaWindow = buildAgendaWindow(calendarEvents, nowMs);
 
   // Fila determinista adicional para XAU (Oro) en currency_ranking_mmt
   const xauItems = irisWindowItems.filter((n) => (n.currencies || []).includes('XAU'));
@@ -644,9 +623,7 @@ export async function collectRadarAndIrisData({
     impulse: null,
     ficha_v6: 'A6 / EA-7',
     sovereignty_mmt: MMT_SOVEREIGNTY.XAU,
-    calendar_lock: null,
-    calendar_lock_detail: null,
-    post_event_status: null,
+    ...rankingLockFields(null),
     no_evidence: xauItems.length === 0,
     drivers: xauItems.length
       ? xauItems.slice(0, 2).map((n) => `Oro refugio / MDP: ${n.title.slice(0, 42)}`)
@@ -663,9 +640,7 @@ export async function collectRadarAndIrisData({
     impulse: r.impulse ?? null,
     ficha_v6: r.ficha_v6 || 'A1 / B2',
     sovereignty_mmt: r.sovereignty_mmt || MMT_SOVEREIGNTY[r.currency] || 'SOBERANO_EMISOR',
-    calendar_lock: r.calendar_lock || null,
-    calendar_lock_detail: r.calendar_lock_detail || null,
-    post_event_status: r.post_event_status || null,
+    ...rankingLockFields(r),
     no_evidence: !!r.noEvidence,
     drivers: r.drivers || [],
     rationale: r.rationale || '',
