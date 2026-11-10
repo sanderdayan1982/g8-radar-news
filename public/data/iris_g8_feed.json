@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T01:48:40.095Z",
-  "started_at": "2026-11-10T01:48:37.174Z",
+  "generated_at": "2026-11-10T02:34:38.648Z",
+  "started_at": "2026-11-10T02:34:35.672Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,7 +18,7 @@
       "score": 47,
       "bias": "alcista",
       "structural": 47,
-      "impulse": 22,
+      "impulse": 15,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -29,7 +29,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +47 | Imp 3h +22. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +47 | Imp 3h +15. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -37,7 +37,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 11,
+      "impulse": 8,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -47,7 +47,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +11. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +8. Régimen real mixed."
     },
     {
       "currency": "USD",
@@ -55,19 +55,19 @@
       "score": 10,
       "bias": "neutral",
       "structural": 10,
-      "impulse": 11,
-      "ficha_v6": "EA-1",
+      "impulse": 8,
+      "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 7.2h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 6.4h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar"
       ],
-      "rationale": "30 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +10 | Imp 3h +11. Régimen real mixed."
+      "rationale": "30 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +10 | Imp 3h +8. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -79,7 +79,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 30.4h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 29.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -99,7 +99,7 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 6.7h",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 5.9h",
       "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -153,7 +153,7 @@
       "score": -59,
       "bias": "bajista",
       "structural": -59,
-      "impulse": -11,
+      "impulse": -8,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -165,7 +165,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -11. Régimen real mixed."
+      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -8. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -193,7 +193,7 @@
       "score": 47,
       "bias": "alcista",
       "structural": 47,
-      "impulse": 22,
+      "impulse": 15,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -204,7 +204,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +47 | Imp 3h +22. Régimen real mixed."
+      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +47 | Imp 3h +15. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -212,7 +212,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 11,
+      "impulse": 8,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -222,7 +222,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +11. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +8. Régimen real mixed."
     },
     {
       "currency": "USD",
@@ -230,19 +230,19 @@
       "score": 10,
       "bias": "neutral",
       "structural": 10,
-      "impulse": 11,
-      "ficha_v6": "EA-1",
+      "impulse": 8,
+      "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 7.2h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 6.4h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar"
       ],
-      "rationale": "30 titulares · Ficha EA-1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +10 | Imp 3h +11. Régimen real mixed."
+      "rationale": "30 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +10 | Imp 3h +8. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -254,7 +254,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 30.4h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 29.7h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -274,7 +274,7 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 6.7h",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 5.9h",
       "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -328,7 +328,7 @@
       "score": -59,
       "bias": "bajista",
       "structural": -59,
-      "impulse": -11,
+      "impulse": -8,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -340,7 +340,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -11. Régimen real mixed."
+      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -8. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -353,7 +353,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -20.8,
+      "hours_from_now": -21.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -365,7 +365,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -18.8,
+      "hours_from_now": -19.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -377,7 +377,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -16.3,
+      "hours_from_now": -17.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -389,7 +389,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15.6,
+      "hours_from_now": -16.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -401,7 +401,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15.6,
+      "hours_from_now": -16.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -413,7 +413,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -12.1,
+      "hours_from_now": -12.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -425,7 +425,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -10.8,
+      "hours_from_now": -11.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -437,7 +437,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10.8,
+      "hours_from_now": -11.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -449,7 +449,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.6,
+      "hours_from_now": -9.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -461,7 +461,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.4,
+      "hours_from_now": -9.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -473,7 +473,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -2.3,
+      "hours_from_now": -3.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -485,7 +485,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -2.3,
+      "hours_from_now": -3.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -497,7 +497,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -2,
+      "hours_from_now": -2.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -509,7 +509,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -2,
+      "hours_from_now": -2.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -521,7 +521,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -2,
+      "hours_from_now": -2.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -533,7 +533,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -1.8,
+      "hours_from_now": -2.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -545,7 +545,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -1.3,
+      "hours_from_now": -2.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -557,7 +557,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 1.8,
+      "hours_from_now": 1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -569,7 +569,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": 3.2,
+      "hours_from_now": 2.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -581,7 +581,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.7,
+      "hours_from_now": 5.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -593,7 +593,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.2,
+      "hours_from_now": 6.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -605,7 +605,7 @@
       "actual": null,
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": 9.2,
+      "hours_from_now": 8.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -617,7 +617,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 9.7,
+      "hours_from_now": 9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -629,7 +629,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10.7,
+      "hours_from_now": 9.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -641,7 +641,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.4,
+      "hours_from_now": 10.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -653,7 +653,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 11.7,
+      "hours_from_now": 10.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -665,7 +665,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 11.7,
+      "hours_from_now": 10.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -677,7 +677,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14,
+      "hours_from_now": 13.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -689,7 +689,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 16.2,
+      "hours_from_now": 15.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -701,7 +701,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.7,
+      "hours_from_now": 15.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -713,7 +713,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.7,
+      "hours_from_now": 15.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -725,7 +725,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.7,
+      "hours_from_now": 15.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -737,7 +737,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.7,
+      "hours_from_now": 17.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -749,7 +749,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 19.7,
+      "hours_from_now": 18.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -761,7 +761,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.7,
+      "hours_from_now": 20.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -773,7 +773,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.7,
+      "hours_from_now": 20.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -785,7 +785,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 22,
+      "hours_from_now": 21.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -797,7 +797,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 28.2,
+      "hours_from_now": 27.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -809,7 +809,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 29.2,
+      "hours_from_now": 28.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -821,7 +821,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 29.2,
+      "hours_from_now": 28.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -833,7 +833,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30.4,
+      "hours_from_now": 29.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -845,7 +845,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 31.2,
+      "hours_from_now": 30.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -857,7 +857,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.9,
+      "hours_from_now": 31.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -869,7 +869,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 32.8,
+      "hours_from_now": 32,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -881,7 +881,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.2,
+      "hours_from_now": 34.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -893,7 +893,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.2,
+      "hours_from_now": 34.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -905,7 +905,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 43.9,
+      "hours_from_now": 43.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -917,7 +917,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 46,
+      "hours_from_now": 45.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -929,7 +929,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 46.2,
+      "hours_from_now": 45.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -941,7 +941,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 46.2,
+      "hours_from_now": 45.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -957,6 +957,114 @@
   },
   "items": [
     {
+      "id": "2ae23c33bf4b49b9567c933e04475697158c34e9b0f25e39c0d19f5374cba201",
+      "sha256": "2ae23c33bf4b49b9567c933e04475697158c34e9b0f25e39c0d19f5374cba201",
+      "title": "China October trade surplus 712.78 billion yuan",
+      "url": "https://t.me/FinancialJuice/145887",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:32:33.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "60ce95ef5b75101c634bf7020eba66fd1e3652f406332bebbb9ac5a2619fae2d",
+      "sha256": "60ce95ef5b75101c634bf7020eba66fd1e3652f406332bebbb9ac5a2619fae2d",
+      "title": "China october yuan-denominated exports rise 28.7% year-on-year",
+      "url": "https://t.me/FinancialJuice/145886",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:32:20.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a3c4f735c1f29d3ef13ac9e1878113d9cfade41022d303edcd1517297fafd208",
+      "sha256": "a3c4f735c1f29d3ef13ac9e1878113d9cfade41022d303edcd1517297fafd208",
+      "title": "China Oct trade surplus $105.28 billion vs poll $125.8 billion",
+      "url": "https://t.me/FinancialJuice/145885",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:31:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "14686621f64daa994f45cde2ab1d0e958b018b8190499a1c61ad4c67665f9b40",
+      "sha256": "14686621f64daa994f45cde2ab1d0e958b018b8190499a1c61ad4c67665f9b40",
+      "title": "China oct dollar-denominated exports rise 35.2% y/y, beating poll of 33.5% y/y",
+      "url": "https://t.me/FinancialJuice/145884",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:31:22.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "64e63f2eecf52b558bc9eb6c88c30e3a314938918268631a98018eb1a22a1c3c",
       "sha256": "64e63f2eecf52b558bc9eb6c88c30e3a314938918268631a98018eb1a22a1c3c",
       "title": "Anthropic lines up 26 billion from nvidia google others as ipo priced at 70 to 80",
@@ -1610,10 +1718,10 @@
       "z": null
     },
     {
-      "id": "fb878b46298f156c428648bf6e601ff0d4a214eb19e46666b512e4b0dbd5d8a6",
-      "sha256": "fb878b46298f156c428648bf6e601ff0d4a214eb19e46666b512e4b0dbd5d8a6",
-      "title": "Australia October business conditions index dips to -2 from -1 in September: NAB",
-      "url": "https://t.me/FinancialJuice/145867",
+      "id": "2154f14aeda080390a557f5f85973d843860973f81fcfb94f4815750a7ad4a06",
+      "sha256": "2154f14aeda080390a557f5f85973d843860973f81fcfb94f4815750a7ad4a06",
+      "title": "Australia October business confidence index slides to -15 from -14 in September: NAB",
+      "url": "https://t.me/FinancialJuice/145868",
       "source": "FinancialJuice",
       "source_id": "financialjuice",
       "source_type": "breaking",
@@ -1640,10 +1748,10 @@
       "z": null
     },
     {
-      "id": "2154f14aeda080390a557f5f85973d843860973f81fcfb94f4815750a7ad4a06",
-      "sha256": "2154f14aeda080390a557f5f85973d843860973f81fcfb94f4815750a7ad4a06",
-      "title": "Australia October business confidence index slides to -15 from -14 in September: NAB",
-      "url": "https://t.me/FinancialJuice/145868",
+      "id": "fb878b46298f156c428648bf6e601ff0d4a214eb19e46666b512e4b0dbd5d8a6",
+      "sha256": "fb878b46298f156c428648bf6e601ff0d4a214eb19e46666b512e4b0dbd5d8a6",
+      "title": "Australia October business conditions index dips to -2 from -1 in September: NAB",
+      "url": "https://t.me/FinancialJuice/145867",
       "source": "FinancialJuice",
       "source_id": "financialjuice",
       "source_type": "breaking",
@@ -5076,7 +5184,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-09T18:35:22.000Z",
+      "published_at": "2026-11-09T18:35:24.000Z",
       "currencies": [
         "CAD"
       ],
@@ -7911,120 +8019,118 @@
       "previous": null,
       "calendar_title": null,
       "z": null
-    },
-    {
-      "id": "89d933f7b0bef8f75359c133f751e1a349d73e6221256af9be0ada59ce09ff2d",
-      "sha256": "89d933f7b0bef8f75359c133f751e1a349d73e6221256af9be0ada59ce09ff2d",
-      "title": "Fear & Greed Index: 31/100 - Fear",
-      "url": "https://t.me/FinancialJuice/145682",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:18:38.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1c8d340dcc9ff6e2d18f5eb65daab40b7fa7e6ce804ab2076491b9ff719022b4",
-      "sha256": "1c8d340dcc9ff6e2d18f5eb65daab40b7fa7e6ce804ab2076491b9ff719022b4",
-      "title": "The UK Treasury needs to keep consumers front and centre",
-      "url": "https://www.ft.com/content/a27d67b9-7da0-438a-a9e7-c8567f123095?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T15:18:37.000Z",
-      "currencies": [
-        "USD",
-        "GBP"
-      ],
-      "divisas": [
-        "USD",
-        "GBP"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a86205c63100800cffabbf55028bfa2e8e8549814dd8ce94da6f0320d9551322",
-      "sha256": "a86205c63100800cffabbf55028bfa2e8e8549814dd8ce94da6f0320d9551322",
-      "title": "Crypto Fear & Greed Index: 29/100 - Fear",
-      "url": "https://t.me/FinancialJuice/145681",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:17:59.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3ebdcb251aef57867eb816a0b00877bb00379ec9179539adf2a48f55d3f49272",
-      "sha256": "3ebdcb251aef57867eb816a0b00877bb00379ec9179539adf2a48f55d3f49272",
-      "title": "Us september wholesale inventories 0.7 vs 0.6 expected",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T15:15:37.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A5",
-      "mmt_lens": "EXPANSION_REAL_A5",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "0.7",
-      "forecast": "0.6",
-      "previous": null,
-      "calendar_title": "Final Wholesale Inventories m/m",
-      "z": 0.7
     }
   ],
   "news": [
     {
+      "id": "2ae23c33bf4b49b9567c933e04475697158c34e9b0f25e39c0d19f5374cba201",
+      "sha256": "2ae23c33bf4b49b9567c933e04475697158c34e9b0f25e39c0d19f5374cba201",
+      "title": "China October trade surplus 712.78 billion yuan",
+      "url": "https://t.me/FinancialJuice/145887",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:32:33.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "60ce95ef5b75101c634bf7020eba66fd1e3652f406332bebbb9ac5a2619fae2d",
+      "sha256": "60ce95ef5b75101c634bf7020eba66fd1e3652f406332bebbb9ac5a2619fae2d",
+      "title": "China october yuan-denominated exports rise 28.7% year-on-year",
+      "url": "https://t.me/FinancialJuice/145886",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:32:20.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a3c4f735c1f29d3ef13ac9e1878113d9cfade41022d303edcd1517297fafd208",
+      "sha256": "a3c4f735c1f29d3ef13ac9e1878113d9cfade41022d303edcd1517297fafd208",
+      "title": "China Oct trade surplus $105.28 billion vs poll $125.8 billion",
+      "url": "https://t.me/FinancialJuice/145885",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:31:32.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "14686621f64daa994f45cde2ab1d0e958b018b8190499a1c61ad4c67665f9b40",
+      "sha256": "14686621f64daa994f45cde2ab1d0e958b018b8190499a1c61ad4c67665f9b40",
+      "title": "China oct dollar-denominated exports rise 35.2% y/y, beating poll of 33.5% y/y",
+      "url": "https://t.me/FinancialJuice/145884",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:31:22.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "64e63f2eecf52b558bc9eb6c88c30e3a314938918268631a98018eb1a22a1c3c",
       "sha256": "64e63f2eecf52b558bc9eb6c88c30e3a314938918268631a98018eb1a22a1c3c",
       "title": "Anthropic lines up 26 billion from nvidia google others as ipo priced at 70 to 80",
@@ -8678,10 +8784,10 @@
       "z": null
     },
     {
-      "id": "fb878b46298f156c428648bf6e601ff0d4a214eb19e46666b512e4b0dbd5d8a6",
-      "sha256": "fb878b46298f156c428648bf6e601ff0d4a214eb19e46666b512e4b0dbd5d8a6",
-      "title": "Australia October business conditions index dips to -2 from -1 in September: NAB",
-      "url": "https://t.me/FinancialJuice/145867",
+      "id": "2154f14aeda080390a557f5f85973d843860973f81fcfb94f4815750a7ad4a06",
+      "sha256": "2154f14aeda080390a557f5f85973d843860973f81fcfb94f4815750a7ad4a06",
+      "title": "Australia October business confidence index slides to -15 from -14 in September: NAB",
+      "url": "https://t.me/FinancialJuice/145868",
       "source": "FinancialJuice",
       "source_id": "financialjuice",
       "source_type": "breaking",
@@ -8708,10 +8814,10 @@
       "z": null
     },
     {
-      "id": "2154f14aeda080390a557f5f85973d843860973f81fcfb94f4815750a7ad4a06",
-      "sha256": "2154f14aeda080390a557f5f85973d843860973f81fcfb94f4815750a7ad4a06",
-      "title": "Australia October business confidence index slides to -15 from -14 in September: NAB",
-      "url": "https://t.me/FinancialJuice/145868",
+      "id": "fb878b46298f156c428648bf6e601ff0d4a214eb19e46666b512e4b0dbd5d8a6",
+      "sha256": "fb878b46298f156c428648bf6e601ff0d4a214eb19e46666b512e4b0dbd5d8a6",
+      "title": "Australia October business conditions index dips to -2 from -1 in September: NAB",
+      "url": "https://t.me/FinancialJuice/145867",
       "source": "FinancialJuice",
       "source_id": "financialjuice",
       "source_type": "breaking",
@@ -12144,7 +12250,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-09T18:35:22.000Z",
+      "published_at": "2026-11-09T18:35:24.000Z",
       "currencies": [
         "CAD"
       ],
@@ -14979,116 +15085,6 @@
       "previous": null,
       "calendar_title": null,
       "z": null
-    },
-    {
-      "id": "89d933f7b0bef8f75359c133f751e1a349d73e6221256af9be0ada59ce09ff2d",
-      "sha256": "89d933f7b0bef8f75359c133f751e1a349d73e6221256af9be0ada59ce09ff2d",
-      "title": "Fear & Greed Index: 31/100 - Fear",
-      "url": "https://t.me/FinancialJuice/145682",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:18:38.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1c8d340dcc9ff6e2d18f5eb65daab40b7fa7e6ce804ab2076491b9ff719022b4",
-      "sha256": "1c8d340dcc9ff6e2d18f5eb65daab40b7fa7e6ce804ab2076491b9ff719022b4",
-      "title": "The UK Treasury needs to keep consumers front and centre",
-      "url": "https://www.ft.com/content/a27d67b9-7da0-438a-a9e7-c8567f123095?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T15:18:37.000Z",
-      "currencies": [
-        "USD",
-        "GBP"
-      ],
-      "divisas": [
-        "USD",
-        "GBP"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a86205c63100800cffabbf55028bfa2e8e8549814dd8ce94da6f0320d9551322",
-      "sha256": "a86205c63100800cffabbf55028bfa2e8e8549814dd8ce94da6f0320d9551322",
-      "title": "Crypto Fear & Greed Index: 29/100 - Fear",
-      "url": "https://t.me/FinancialJuice/145681",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:17:59.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3ebdcb251aef57867eb816a0b00877bb00379ec9179539adf2a48f55d3f49272",
-      "sha256": "3ebdcb251aef57867eb816a0b00877bb00379ec9179539adf2a48f55d3f49272",
-      "title": "Us september wholesale inventories 0.7 vs 0.6 expected",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T15:15:37.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A5",
-      "mmt_lens": "EXPANSION_REAL_A5",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "0.7",
-      "forecast": "0.6",
-      "previous": null,
-      "calendar_title": "Final Wholesale Inventories m/m",
-      "z": 0.7
     }
   ],
   "health": {
