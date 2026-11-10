@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T14:00:27.992Z",
-  "started_at": "2026-11-10T14:00:25.858Z",
+  "generated_at": "2026-11-10T14:05:31.990Z",
+  "started_at": "2026-11-10T14:05:29.838Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,14 +15,14 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 78,
+      "score": 79,
       "bias": "alcista",
-      "structural": 78,
-      "impulse": 72,
+      "structural": 79,
+      "impulse": 75,
       "ficha_v6": "A5",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Logan Speaks en 1.8h",
+      "calendar_lock_detail": "FOMC Member Logan Speaks en 1.7h",
       "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
@@ -30,7 +30,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "CPI vs consenso"
       ],
-      "rationale": "31 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE + TRADE_EXTERNAL + DATA_REAL + FISCAL_NFA · Est +78 | Imp 3h +72. Régimen real mixed."
+      "rationale": "31 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + RISK_GEO + TRADE_EXTERNAL + RELATIVE_PRICE + DATA_REAL · Est +79 | Imp 3h +75. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -38,7 +38,7 @@
       "score": 33,
       "bias": "alcista",
       "structural": 33,
-      "impulse": 23,
+      "impulse": 22,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -49,7 +49,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +23. Régimen real mixed."
+      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +22. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -57,7 +57,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 23,
+      "impulse": 22,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,7 +67,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +23. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +22. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -79,14 +79,14 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 4.5h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 4.4h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "CPI sin sorpresa"
       ],
-      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +12 | Imp 3h +9. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +12 | Imp 3h +9. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -129,9 +129,9 @@
     {
       "currency": "EUR",
       "rank": 7,
-      "score": -36,
+      "score": -23,
       "bias": "bajista",
-      "structural": -36,
+      "structural": -23,
       "impulse": -11,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
@@ -141,10 +141,9 @@
       "no_evidence": false,
       "drivers": [
         "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co",
-        "B12_EUR_FRAG_RIESGO: ECB's Lane: French fiscal problems need to",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "11 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + TRADE_EXTERNAL · Est -36 | Imp 3h -11. Régimen real mixed."
+      "rationale": "12 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + TRADE_EXTERNAL · Est -23 | Imp 3h -11. Régimen real mixed."
     },
     {
       "currency": "CAD",
@@ -152,7 +151,7 @@
       "score": -52,
       "bias": "bajista",
       "structural": -52,
-      "impulse": -23,
+      "impulse": -22,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -164,7 +163,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -52 | Imp 3h -23. Régimen real mixed."
+      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -52 | Imp 3h -22. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -190,14 +189,14 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 78,
+      "score": 79,
       "bias": "alcista",
-      "structural": 78,
-      "impulse": 72,
+      "structural": 79,
+      "impulse": 75,
       "ficha_v6": "A5",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Logan Speaks en 1.8h",
+      "calendar_lock_detail": "FOMC Member Logan Speaks en 1.7h",
       "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
@@ -205,7 +204,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "CPI vs consenso"
       ],
-      "rationale": "31 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + RELATIVE_PRICE + TRADE_EXTERNAL + DATA_REAL + FISCAL_NFA · Est +78 | Imp 3h +72. Régimen real mixed."
+      "rationale": "31 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + RISK_GEO + TRADE_EXTERNAL + RELATIVE_PRICE + DATA_REAL · Est +79 | Imp 3h +75. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -213,7 +212,7 @@
       "score": 33,
       "bias": "alcista",
       "structural": 33,
-      "impulse": 23,
+      "impulse": 22,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -224,7 +223,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +23. Régimen real mixed."
+      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +22. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -232,7 +231,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 23,
+      "impulse": 22,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -242,7 +241,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +23. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +22. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -254,14 +253,14 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 4.5h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 4.4h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
         "CPI sin sorpresa"
       ],
-      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +12 | Imp 3h +9. Régimen real mixed."
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +12 | Imp 3h +9. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -304,9 +303,9 @@
     {
       "currency": "EUR",
       "rank": 7,
-      "score": -36,
+      "score": -23,
       "bias": "bajista",
-      "structural": -36,
+      "structural": -23,
       "impulse": -11,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
@@ -316,10 +315,9 @@
       "no_evidence": false,
       "drivers": [
         "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co",
-        "B12_EUR_FRAG_RIESGO: ECB's Lane: French fiscal problems need to",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "11 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + TRADE_EXTERNAL · Est -36 | Imp 3h -11. Régimen real mixed."
+      "rationale": "12 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + TRADE_EXTERNAL · Est -23 | Imp 3h -11. Régimen real mixed."
     },
     {
       "currency": "CAD",
@@ -327,7 +325,7 @@
       "score": -52,
       "bias": "bajista",
       "structural": -52,
-      "impulse": -23,
+      "impulse": -22,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -339,7 +337,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -52 | Imp 3h -23. Régimen real mixed."
+      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -52 | Imp 3h -22. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -352,7 +350,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -31,
+      "hours_from_now": -31.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +362,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -28.5,
+      "hours_from_now": -28.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -376,7 +374,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -23,
+      "hours_from_now": -23.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -388,7 +386,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23,
+      "hours_from_now": -23.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -412,7 +410,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -20.6,
+      "hours_from_now": -20.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -424,7 +422,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -14.5,
+      "hours_from_now": -14.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -436,7 +434,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -14.5,
+      "hours_from_now": -14.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -448,7 +446,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -14.2,
+      "hours_from_now": -14.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -460,7 +458,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -14.2,
+      "hours_from_now": -14.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -472,7 +470,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -14.2,
+      "hours_from_now": -14.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -484,7 +482,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -14,
+      "hours_from_now": -14.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -496,7 +494,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -13.5,
+      "hours_from_now": -13.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -508,7 +506,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -520,7 +518,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -9,
+      "hours_from_now": -9.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -532,7 +530,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.5,
+      "hours_from_now": -5.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -544,7 +542,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5,
+      "hours_from_now": -5.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -556,7 +554,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": -4,
+      "hours_from_now": -4.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -568,7 +566,7 @@
       "actual": "97.8",
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": -3,
+      "hours_from_now": -3.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -580,7 +578,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1.5,
+      "hours_from_now": -1.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -592,7 +590,7 @@
       "actual": "19.75K",
       "forecast": null,
       "previous": "16.8K",
-      "hours_from_now": -0.8,
+      "hours_from_now": -0.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -604,7 +602,7 @@
       "actual": "0.3%",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -0.5,
+      "hours_from_now": -0.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -616,7 +614,7 @@
       "actual": "0.4%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": -0.5,
+      "hours_from_now": -0.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -628,7 +626,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.8,
+      "hours_from_now": 1.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -640,7 +638,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 4,
+      "hours_from_now": 3.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +650,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.5,
+      "hours_from_now": 4.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +662,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.5,
+      "hours_from_now": 4.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +674,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.5,
+      "hours_from_now": 4.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +686,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.5,
+      "hours_from_now": 6.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +698,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.5,
+      "hours_from_now": 7.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +710,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.5,
+      "hours_from_now": 9.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +722,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.5,
+      "hours_from_now": 9.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +734,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 9.8,
+      "hours_from_now": 9.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +746,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 16,
+      "hours_from_now": 15.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +758,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 17,
+      "hours_from_now": 16.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -772,7 +770,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17,
+      "hours_from_now": 16.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -796,7 +794,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 19,
+      "hours_from_now": 18.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -820,7 +818,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 20.6,
+      "hours_from_now": 20.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -832,7 +830,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23,
+      "hours_from_now": 22.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -844,7 +842,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23,
+      "hours_from_now": 22.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -868,7 +866,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 33.8,
+      "hours_from_now": 33.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -880,7 +878,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 34,
+      "hours_from_now": 33.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -892,7 +890,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 34,
+      "hours_from_now": 33.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -904,7 +902,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -916,7 +914,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -928,7 +926,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -940,7 +938,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -952,7 +950,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -964,7 +962,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -976,7 +974,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -988,7 +986,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1000,7 +998,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43,
+      "hours_from_now": 42.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1012,7 +1010,7 @@
       "actual": null,
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": 47.5,
+      "hours_from_now": 47.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1024,7 +1022,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": 47.5,
+      "hours_from_now": 47.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1036,7 +1034,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.5,
+      "hours_from_now": 47.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1051,6 +1049,247 @@
     "NZD": 1.13
   },
   "items": [
+    {
+      "id": "05bcab0a38f111c46377c8937cb0c30a4aa71e977addb5d67c56108e577e75ab",
+      "sha256": "05bcab0a38f111c46377c8937cb0c30a4aa71e977addb5d67c56108e577e75ab",
+      "title": "❗ Bets on a 50-basis point fed rate hike in December begin to build after hotter-than-expected CPI, odds last at around 10% - CME Fedwatch.",
+      "url": "https://t.me/FinancialJuice/146015",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:04:22.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c11795ed3017f1a4e4384ae56b14bd68f135c4aafae8eb70c2dd57a8c1d3382e",
+      "sha256": "c11795ed3017f1a4e4384ae56b14bd68f135c4aafae8eb70c2dd57a8c1d3382e",
+      "title": "ECB: Forex reserves remained unchanged at €349.7 bln.",
+      "url": "https://t.me/FinancialJuice/146014",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:01:30.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a4ea23a13bc469846ef41aad09cafef36f387c2b6832e569581b9db540a15237",
+      "sha256": "a4ea23a13bc469846ef41aad09cafef36f387c2b6832e569581b9db540a15237",
+      "title": "ECB settled €208.6 bln corporate bond purchases.",
+      "url": "https://t.me/FinancialJuice/146013",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:01:14.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "59985146397fa397655aa7b89ab7ecbf170c3c7c884628de61ddd841849d06a0",
+      "sha256": "59985146397fa397655aa7b89ab7ecbf170c3c7c884628de61ddd841849d06a0",
+      "title": "ECB settled €1,625.2 bln public-sector bond purchases.",
+      "url": "https://t.me/FinancialJuice/146012",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:01:07.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a07f9f7521245d307fc98519d71730fd672f5ac30cb5e5a3f715d6d3423ac0a9",
+      "sha256": "a07f9f7521245d307fc98519d71730fd672f5ac30cb5e5a3f715d6d3423ac0a9",
+      "title": "ECB bond holdings under PEPP €1.26 tln as of last week.",
+      "url": "https://t.me/FinancialJuice/146011",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:00:50.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "590554c025a6e579a64be21ab960602e6fe8fa26470c643d12b4a0c685bad989",
+      "sha256": "590554c025a6e579a64be21ab960602e6fe8fa26470c643d12b4a0c685bad989",
+      "title": "ECB’s Cipollone warns of delay in a digital Euro if talks drag on.",
+      "url": "https://t.me/FinancialJuice/146010",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:00:39.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d7118495aaa4f8d3abe53244f1e270e182c379dfe0a099375e3fb63ad25bdb46",
+      "sha256": "d7118495aaa4f8d3abe53244f1e270e182c379dfe0a099375e3fb63ad25bdb46",
+      "title": "Effective Fed funds rate 3.88% November 9th vs 3.88% November 6th.",
+      "url": "https://t.me/FinancialJuice/146009",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:00:16.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": "3.88%",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3fe69a7b1e6ded1b80df71c056ccdea7c40233ddb0b6c41f7d01bca14ee3a6af",
+      "sha256": "3fe69a7b1e6ded1b80df71c056ccdea7c40233ddb0b6c41f7d01bca14ee3a6af",
+      "title": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html",
+      "source": "BCE",
+      "source_id": "ecb",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T14:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "88d821aab06e6231a089b4eeed64e57fb0a9a0c7b6924c706651926c90a7cee6",
       "sha256": "88d821aab06e6231a089b4eeed64e57fb0a9a0c7b6924c706651926c90a7cee6",
@@ -7670,6 +7909,32 @@
       "z": null
     },
     {
+      "id": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
+      "sha256": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
+      "title": "Opening remarks - Monetary Policy Report (IPOM) press conference, third quarter of 2026",
+      "url": "https://www.bis.org/speeches/20261110-opening-remarks-monetary-policy-report-ipom-press-conference-third-quarter-2026",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "ce32a85556533b75f76550c98c1d72d4273573c414ec69da46f53a24f0a77973",
       "sha256": "ce32a85556533b75f76550c98c1d72d4273573c414ec69da46f53a24f0a77973",
       "title": "Boj Summary: One member said wage growth for next year unlikely to rise much from this year, risk of second-round effects low",
@@ -7951,278 +8216,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-09T23:52:36.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "065c2e771e70bcd1b212c1411735b73cc0eb89e81b46fd53f6af4a3c50a397a0",
-      "sha256": "065c2e771e70bcd1b212c1411735b73cc0eb89e81b46fd53f6af4a3c50a397a0",
-      "title": "BOJ summary: one member says appropriate to continue raising rates as underlying inflation nears price target levels",
-      "url": "https://t.me/FinancialJuice/145844",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:52:24.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "454077f2b09a5ca3411aa4e57653193264c68ebd28cb6431b179decbf17320bc",
-      "sha256": "454077f2b09a5ca3411aa4e57653193264c68ebd28cb6431b179decbf17320bc",
-      "title": "BoJ October meeting summary of opinions: one member said maintaining policy is suitable to assess risks around economy, prices a bit more",
-      "url": "https://t.me/FinancialJuice/145843",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:51:46.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dc16d1bf9f73f41f3216410c3b91722ce7c5512395aad82239b1ec5a40debed5",
-      "sha256": "dc16d1bf9f73f41f3216410c3b91722ce7c5512395aad82239b1ec5a40debed5",
-      "title": "Japan October outstanding bank loans rise 5.2% year on year: BOJ",
-      "url": "https://t.me/FinancialJuice/145842",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:50:49.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8dc13383a7b1ba7f33da9f24c8e8ca78284580d4235cf307734af03329b5ba02",
-      "sha256": "8dc13383a7b1ba7f33da9f24c8e8ca78284580d4235cf307734af03329b5ba02",
-      "title": "JAPANESE BANK LENDING YOY ACTUAL 5.2% (FORECAST -, PREVIOUS 5.3%) $MACRO",
-      "url": "https://t.me/FinancialJuice/145841",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:50:48.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "B2",
-      "mmt_lens": "CONTRACCION_REAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "5.2%",
-      "forecast": null,
-      "previous": "5.3%",
-      "calendar_title": "Bank Lending y/y",
-      "z": null
-    },
-    {
-      "id": "1a2ff32e7244a183ae64bda9fa2da84ff63a31d6d8694fe6b9441853e7c3d895",
-      "sha256": "1a2ff32e7244a183ae64bda9fa2da84ff63a31d6d8694fe6b9441853e7c3d895",
-      "title": "Us cpi preview 43 day shutdown leaves no official annual rate as monthly pace seen easing",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T23:50:39.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "9e1720f8eadcfbf61ee38ba46ef93858586a8c96ad291e234b8610a61f48da45",
-      "sha256": "9e1720f8eadcfbf61ee38ba46ef93858586a8c96ad291e234b8610a61f48da45",
-      "title": "Japan Sept unadjusted current account surplus +2,372.3 bln yen: Ministry of Finance (Poll +3,354.4 bln yen)",
-      "url": "https://t.me/FinancialJuice/145840",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:50:33.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Intervencion_EA4",
-      "categories": [
-        "Intervencion_EA4",
-        "Fiscal"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-4",
-      "mmt_lens": "INTERVENCION_SOBERANA_EA4",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "020f4180d0f6548e4d1cf3d792f74e7f7a5b3590a10638916311485d0873ae79",
-      "sha256": "020f4180d0f6548e4d1cf3d792f74e7f7a5b3590a10638916311485d0873ae79",
-      "title": "❗ JAPANESE CURRENT ACCOUNT NSA YEN ACTUAL 2372.3B (FORECAST 3300B, PREVIOUS 4,062.0B) $MACRO",
-      "url": "https://t.me/FinancialJuice/145839",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:50:32.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 4,
-      "actual": "2372.3",
-      "forecast": "3300",
-      "previous": "4,062.0",
-      "calendar_title": "Current Account",
-      "z": -7
-    },
-    {
-      "id": "a3f9f8b1d92b218bb708626598ad33ec587864182b53bcef7cd19bd77974fdac",
-      "sha256": "a3f9f8b1d92b218bb708626598ad33ec587864182b53bcef7cd19bd77974fdac",
-      "title": "Principal Figures of Financial Institutions (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2610.pdf",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T23:50:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "610fa2a4b2af1ab514b7c6fe0745258a031aea4dda4c38a92752e1cf92673609",
-      "sha256": "610fa2a4b2af1ab514b7c6fe0745258a031aea4dda4c38a92752e1cf92673609",
-      "title": "Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026",
-      "url": "http://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T23:50:00.000Z",
       "currencies": [
         "JPY"
       ],
@@ -8247,6 +8240,247 @@
   ],
   "news": [
     {
+      "id": "05bcab0a38f111c46377c8937cb0c30a4aa71e977addb5d67c56108e577e75ab",
+      "sha256": "05bcab0a38f111c46377c8937cb0c30a4aa71e977addb5d67c56108e577e75ab",
+      "title": "❗ Bets on a 50-basis point fed rate hike in December begin to build after hotter-than-expected CPI, odds last at around 10% - CME Fedwatch.",
+      "url": "https://t.me/FinancialJuice/146015",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:04:22.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c11795ed3017f1a4e4384ae56b14bd68f135c4aafae8eb70c2dd57a8c1d3382e",
+      "sha256": "c11795ed3017f1a4e4384ae56b14bd68f135c4aafae8eb70c2dd57a8c1d3382e",
+      "title": "ECB: Forex reserves remained unchanged at €349.7 bln.",
+      "url": "https://t.me/FinancialJuice/146014",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:01:30.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a4ea23a13bc469846ef41aad09cafef36f387c2b6832e569581b9db540a15237",
+      "sha256": "a4ea23a13bc469846ef41aad09cafef36f387c2b6832e569581b9db540a15237",
+      "title": "ECB settled €208.6 bln corporate bond purchases.",
+      "url": "https://t.me/FinancialJuice/146013",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:01:14.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "59985146397fa397655aa7b89ab7ecbf170c3c7c884628de61ddd841849d06a0",
+      "sha256": "59985146397fa397655aa7b89ab7ecbf170c3c7c884628de61ddd841849d06a0",
+      "title": "ECB settled €1,625.2 bln public-sector bond purchases.",
+      "url": "https://t.me/FinancialJuice/146012",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:01:07.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a07f9f7521245d307fc98519d71730fd672f5ac30cb5e5a3f715d6d3423ac0a9",
+      "sha256": "a07f9f7521245d307fc98519d71730fd672f5ac30cb5e5a3f715d6d3423ac0a9",
+      "title": "ECB bond holdings under PEPP €1.26 tln as of last week.",
+      "url": "https://t.me/FinancialJuice/146011",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:00:50.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "590554c025a6e579a64be21ab960602e6fe8fa26470c643d12b4a0c685bad989",
+      "sha256": "590554c025a6e579a64be21ab960602e6fe8fa26470c643d12b4a0c685bad989",
+      "title": "ECB’s Cipollone warns of delay in a digital Euro if talks drag on.",
+      "url": "https://t.me/FinancialJuice/146010",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:00:39.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d7118495aaa4f8d3abe53244f1e270e182c379dfe0a099375e3fb63ad25bdb46",
+      "sha256": "d7118495aaa4f8d3abe53244f1e270e182c379dfe0a099375e3fb63ad25bdb46",
+      "title": "Effective Fed funds rate 3.88% November 9th vs 3.88% November 6th.",
+      "url": "https://t.me/FinancialJuice/146009",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T14:00:16.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": "3.88%",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3fe69a7b1e6ded1b80df71c056ccdea7c40233ddb0b6c41f7d01bca14ee3a6af",
+      "sha256": "3fe69a7b1e6ded1b80df71c056ccdea7c40233ddb0b6c41f7d01bca14ee3a6af",
+      "title": "Piero Cipollone: Cash and the digital euro: two sides of the same coin",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110~9422461bad.en.html",
+      "source": "BCE",
+      "source_id": "ecb",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T14:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "88d821aab06e6231a089b4eeed64e57fb0a9a0c7b6924c706651926c90a7cee6",
       "sha256": "88d821aab06e6231a089b4eeed64e57fb0a9a0c7b6924c706651926c90a7cee6",
       "title": "Monthly US inflation eased less than expected in October",
@@ -14865,6 +15099,32 @@
       "z": null
     },
     {
+      "id": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
+      "sha256": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
+      "title": "Opening remarks - Monetary Policy Report (IPOM) press conference, third quarter of 2026",
+      "url": "https://www.bis.org/speeches/20261110-opening-remarks-monetary-policy-report-ipom-press-conference-third-quarter-2026",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "ce32a85556533b75f76550c98c1d72d4273573c414ec69da46f53a24f0a77973",
       "sha256": "ce32a85556533b75f76550c98c1d72d4273573c414ec69da46f53a24f0a77973",
       "title": "Boj Summary: One member said wage growth for next year unlikely to rise much from this year, risk of second-round effects low",
@@ -15146,278 +15406,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-09T23:52:36.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "065c2e771e70bcd1b212c1411735b73cc0eb89e81b46fd53f6af4a3c50a397a0",
-      "sha256": "065c2e771e70bcd1b212c1411735b73cc0eb89e81b46fd53f6af4a3c50a397a0",
-      "title": "BOJ summary: one member says appropriate to continue raising rates as underlying inflation nears price target levels",
-      "url": "https://t.me/FinancialJuice/145844",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:52:24.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "454077f2b09a5ca3411aa4e57653193264c68ebd28cb6431b179decbf17320bc",
-      "sha256": "454077f2b09a5ca3411aa4e57653193264c68ebd28cb6431b179decbf17320bc",
-      "title": "BoJ October meeting summary of opinions: one member said maintaining policy is suitable to assess risks around economy, prices a bit more",
-      "url": "https://t.me/FinancialJuice/145843",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:51:46.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dc16d1bf9f73f41f3216410c3b91722ce7c5512395aad82239b1ec5a40debed5",
-      "sha256": "dc16d1bf9f73f41f3216410c3b91722ce7c5512395aad82239b1ec5a40debed5",
-      "title": "Japan October outstanding bank loans rise 5.2% year on year: BOJ",
-      "url": "https://t.me/FinancialJuice/145842",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:50:49.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8dc13383a7b1ba7f33da9f24c8e8ca78284580d4235cf307734af03329b5ba02",
-      "sha256": "8dc13383a7b1ba7f33da9f24c8e8ca78284580d4235cf307734af03329b5ba02",
-      "title": "JAPANESE BANK LENDING YOY ACTUAL 5.2% (FORECAST -, PREVIOUS 5.3%) $MACRO",
-      "url": "https://t.me/FinancialJuice/145841",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:50:48.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "B2",
-      "mmt_lens": "CONTRACCION_REAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "5.2%",
-      "forecast": null,
-      "previous": "5.3%",
-      "calendar_title": "Bank Lending y/y",
-      "z": null
-    },
-    {
-      "id": "1a2ff32e7244a183ae64bda9fa2da84ff63a31d6d8694fe6b9441853e7c3d895",
-      "sha256": "1a2ff32e7244a183ae64bda9fa2da84ff63a31d6d8694fe6b9441853e7c3d895",
-      "title": "Us cpi preview 43 day shutdown leaves no official annual rate as monthly pace seen easing",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T23:50:39.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "9e1720f8eadcfbf61ee38ba46ef93858586a8c96ad291e234b8610a61f48da45",
-      "sha256": "9e1720f8eadcfbf61ee38ba46ef93858586a8c96ad291e234b8610a61f48da45",
-      "title": "Japan Sept unadjusted current account surplus +2,372.3 bln yen: Ministry of Finance (Poll +3,354.4 bln yen)",
-      "url": "https://t.me/FinancialJuice/145840",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:50:33.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Intervencion_EA4",
-      "categories": [
-        "Intervencion_EA4",
-        "Fiscal"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-4",
-      "mmt_lens": "INTERVENCION_SOBERANA_EA4",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "020f4180d0f6548e4d1cf3d792f74e7f7a5b3590a10638916311485d0873ae79",
-      "sha256": "020f4180d0f6548e4d1cf3d792f74e7f7a5b3590a10638916311485d0873ae79",
-      "title": "❗ JAPANESE CURRENT ACCOUNT NSA YEN ACTUAL 2372.3B (FORECAST 3300B, PREVIOUS 4,062.0B) $MACRO",
-      "url": "https://t.me/FinancialJuice/145839",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T23:50:32.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 4,
-      "actual": "2372.3",
-      "forecast": "3300",
-      "previous": "4,062.0",
-      "calendar_title": "Current Account",
-      "z": -7
-    },
-    {
-      "id": "a3f9f8b1d92b218bb708626598ad33ec587864182b53bcef7cd19bd77974fdac",
-      "sha256": "a3f9f8b1d92b218bb708626598ad33ec587864182b53bcef7cd19bd77974fdac",
-      "title": "Principal Figures of Financial Institutions (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2610.pdf",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T23:50:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "610fa2a4b2af1ab514b7c6fe0745258a031aea4dda4c38a92752e1cf92673609",
-      "sha256": "610fa2a4b2af1ab514b7c6fe0745258a031aea4dda4c38a92752e1cf92673609",
-      "title": "Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026",
-      "url": "http://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T23:50:00.000Z",
       "currencies": [
         "JPY"
       ],
