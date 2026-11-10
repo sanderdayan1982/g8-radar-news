@@ -15,6 +15,9 @@ export function rankRows(rows) {
     return {...r, rank, tied: measured.filter(x => x.score === r.score).length > 1, noEvidence:false};
   }), ...rows.filter(hasNoEvidence).map(r => ({...r,score:0,structural:0,impulse:null,bias:'neutral',rank:null,noEvidence:true}))];
 }
+export function sourceFetchedLive(source) {
+  return source?.status === 'ok' || source?.status === 'live';
+}
 export function connectionState(data, error, lastReceived, now = Date.now()) {
   if (error || (lastReceived && now-lastReceived > 90_000)) return {kind:'offline',label:'Sin conexión'};
   if (!data) return {kind:'loading',label:'Conectando'};
@@ -22,7 +25,7 @@ export function connectionState(data, error, lastReceived, now = Date.now()) {
   const sync = Date.parse(data.last_sync?.finished_at);
   if (!Number.isFinite(sync)) return {kind:'loading',label:'Primera sincronización'};
   if (now-sync > 15*60_000) return {kind:'stale',label:'Datos desactualizados'};
-  if (data.sources?.some(s => s.status !== 'ok' || (s.freshness === 'review' && !s.channel_note))) return {kind:'partial',label:'Cobertura parcial'};
+  if (data.sources?.some(s => !sourceFetchedLive(s) || (s.freshness === 'review' && !s.channel_note))) return {kind:'partial',label:'Cobertura parcial'};
   return data.syncing ? {kind:'syncing',label:'Actualizando'} : {kind:'ready',label:'Actualizado'};
 }
 export function nextCalendarEvent(events, now = Date.now()) {

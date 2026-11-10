@@ -3,7 +3,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SOURCES } from '../../src/config.js';
 import { collectRadarAndIrisData, readRadarStore } from '../../src/irisCollector.js';
-import { mergeSourceHealth, irisHealth } from '../../src/sourceHealth.js';
+import { labelLiveAgainstActions, irisHealth } from '../../src/sourceHealth.js';
 
 const SOURCE_COUNT = SOURCES.length;
 const LIVE_BUNDLE_KEY = `live-bundle-v2-${SOURCE_COUNT}sources`;
@@ -23,8 +23,10 @@ const SEED_IRIS_PATH = join(ROOT, 'public', 'data', 'iris_g8_feed.json');
 const SEED_STORE_PATH = join(ROOT, 'public', 'data', 'radar_store.json');
 const SPEC_PATH = join(ROOT, 'SPEC.md');
 
-const GITHUB_RAW_FULL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_news_full.json';
-const GITHUB_RAW_STORE = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_store.json';
+export const GITHUB_RAW_FULL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_news_full.json';
+export const GITHUB_RAW_STORE = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_store.json';
+// Document fetch for the Actions publication. Separate from the per-source live timeout below.
+const GITHUB_RAW_TIMEOUT_MS = 4000;
 const CACHE_TTL_MS = 60_000;
 // A forced refresh re-polls every configured source. Public callers cannot force more than one per minute.
 const MIN_FORCE_INTERVAL_MS = 60_000;
@@ -81,16 +83,12 @@ function readStoreFromDisk() {
   }
 }
 
-function pickNewerStore(a, b) {
-  if (!a) return b;
-  if (!b) return a;
-  const at = Date.parse(a.generated_at || '') || 0;
-  const bt = Date.parse(b.generated_at || '') || 0;
-  if (at !== bt) return at > bt ? a : b;
-  return (a.items?.length || 0) >= (b.items?.length || 0) ? a : b;
+function publicationTime(full) {
+  if (!full) return null;
+  return full.generated_at || full.last_sync?.finished_at || null;
 }
 
-async function fetchGithubStore(timeoutMs = 4000) {
+async function fetchGithubStore(timeoutMs = GITHUB_RAW_TIMEOUT_MS) {
   try {
     const res = await fetch(`${GITHUB_RAW_STORE}?t=${Date.now()}`, {
       signal: AbortSignal.timeout(timeoutMs),
@@ -102,28 +100,50 @@ async function fetchGithubStore(timeoutMs = 4000) {
   }
 }
 
-async function resolveStoreItems(memItems, blobItems) {
-  if (Array.isArray(memItems)) return memItems;
-  const picked = pickNewerStore(readStoreFromDisk(), await fetchGithubStore());
-  const fileItems = picked?.items || [];
-  if (Array.isArray(blobItems) && fileItems.length) return [...blobItems, ...fileItems];
-  if (fileItems.length) return fileItems;
-  if (Array.isArray(blobItems)) return blobItems;
-  return null;
-}
-
-async function fetchGithubRawSeed(timeoutMs = 600) {
+async function fetchGithubRawSeed(timeoutMs = GITHUB_RAW_TIMEOUT_MS) {
   try {
     const res = await fetch(`${GITHUB_RAW_FULL}?t=${Date.now()}`, {
       signal: AbortSignal.timeout(timeoutMs),
     });
-    if (res.ok) {
-      return await res.json();
-    }
+    if (res.ok) return await res.json();
   } catch {
     // ignore
   }
   return null;
+}
+
+function itemsFromFull(full) {
+  if (Array.isArray(full?.items) && full.items.length) return full.items;
+  if (Array.isArray(full?.news)) return full.news;
+  return [];
+}
+
+// Base is the latest Actions publication. The bundled JSON is used only when that fetch fails.
+async function resolvePublicationBase() {
+  const rawFull = await fetchGithubRawSeed();
+  if (rawFull && Array.isArray(rawFull.sources)) {
+    const rawStore = await fetchGithubStore();
+    const storeItems = Array.isArray(rawStore?.items) ? rawStore.items : itemsFromFull(rawFull);
+    return {
+      baseSource: 'actions_raw',
+      basePublishedAt: publicationTime(rawFull),
+      fullState: rawFull,
+      storeItems,
+    };
+  }
+  const disk = loadSeedFromDisk();
+  const diskStore = readStoreFromDisk();
+  const full = disk.fullState;
+  return {
+    baseSource: 'bundle',
+    basePublishedAt: publicationTime(full),
+    fullState: full,
+    storeItems: Array.isArray(diskStore?.items) ? diskStore.items : itemsFromFull(full),
+  };
+}
+
+export function resetLiveCacheForTests() {
+  memCache = { updatedAt: 0, irisFeed: null, fullState: null };
 }
 
 async function getFreshOrCachedBundle(forceRefresh = false) {
@@ -143,25 +163,12 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
     return { ...blobCached, cacheStatus: 'HIT_NETLIFY_BLOBS' };
   }
 
-  // Seed baseline from previous memory/blob or GitHub Raw / bundled JSON
-  const diskSeed = loadSeedFromDisk();
-  const rawSeed = (!blobCached?.fullState && !memCache.fullState)
-    ? await fetchGithubRawSeed(500)
-    : null;
-  const baseFull = memCache.fullState || blobCached?.fullState || rawSeed || diskSeed.fullState;
-
-  const storeItems = await resolveStoreItems(memCache.storeItems, blobCached?.storeItems);
-  // La cinta (news, 300) no es memoria. Si no hay store todavía, se usa como arranque único.
-  const existingItems = Array.isArray(storeItems)
-    ? storeItems
-    : (Array.isArray(baseFull?.news) ? baseFull.news : []);
+  // Base = latest Actions publication (GitHub Raw). Bundled JSON only if that fetch fails.
+  const base = await resolvePublicationBase();
+  const baseFull = base.fullState;
+  const existingItems = Array.isArray(base.storeItems) ? base.storeItems : [];
   const previousMarket = baseFull?.market || null;
   const previousCalendar = Array.isArray(baseFull?.calendar) ? baseFull.calendar : [];
-  try {
-    const mirror = rawSeed || await fetchGithubRawSeed(500);
-    const byId = new Map((mirror?.calendar || []).filter((e) => e?.id && e.actual != null && e.actual !== '').map((e) => [e.id, e.actual]));
-    for (const ev of previousCalendar) if ((ev.actual == null || ev.actual === '') && byId.has(ev.id)) ev.actual = byId.get(ev.id);
-  } catch { /* GitHub Raw no disponible: seguir sin fusionar */ }
 
   // Consulta paralela ultrarrápida (con timeout corto para garantizar respuesta < 1s cuando ya hay semilla)
   const perSourceTimeoutMs = existingItems.length > 0 ? 700 : 3800;
@@ -172,11 +179,23 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
     timeoutMs: perSourceTimeoutMs,
   });
 
-  // Conservar el estado ok de fuentes oficiales que en esta ventana de 700ms usaron la semilla de 5m
-  // Sources that miss the 700 ms budget are served from the last scheduled run and labelled "cached".
-  fullState.sources = mergeSourceHealth(fullState.sources, baseFull?.sources || [], { seedMode: true });
-  irisFeed.sources_ok = fullState.sources.filter((s) => s.status === 'ok').length;
-  irisFeed.health = irisHealth(fullState.sources, fullState.calendar?.length || 0);
+  const labeledAt = Date.now();
+  fullState.sources = labelLiveAgainstActions(fullState.sources, baseFull?.sources || [], labeledAt);
+  // irisHealth is unchanged and counts status `ok` as sources_live. A successful pull is published
+  // as `live`; that row is shown to the same function as `ok` so the v5.0 counts stay true.
+  const healthSources = fullState.sources.map((s) => (s.status === 'live' ? { ...s, status: 'ok' } : s));
+  const health = {
+    ...irisHealth(healthSources, fullState.calendar?.length || 0),
+    base_source: base.baseSource,
+    base_published_at: base.basePublishedAt,
+  };
+  irisFeed.sources_ok = fullState.sources.filter((s) => s.status === 'live').length;
+  irisFeed.health = health;
+  irisFeed.base_source = base.baseSource;
+  irisFeed.base_published_at = base.basePublishedAt;
+  fullState.base_source = base.baseSource;
+  fullState.base_published_at = base.basePublishedAt;
+  fullState.health = health;
 
   const bundle = {
     updatedAt: Date.now(),
@@ -248,6 +267,8 @@ export async function handler(event) {
         last_sync_at: fullState.last_sync?.finished_at || null,
         sources_ok: irisFeed.sources_ok,
         health: irisFeed.health,
+        base_source: irisFeed.base_source || null,
+        base_published_at: irisFeed.base_published_at || null,
         sources_total: irisFeed.sources_total,
         count: irisFeed.count,
       }),
