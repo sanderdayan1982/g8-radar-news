@@ -47,7 +47,7 @@ test('la tabla y los umbrales congelados viven en config, sin dirección', () =>
   assert.deepEqual(POLYMARKET_GEO_THEMES.map((theme) => theme.theme), [
     'IRAN_ORIENTE_MEDIO', 'RUSIA_UCRANIA', 'ARANCELES_COMERCIO', 'WASHINGTON', 'CHINA_TAIWAN',
   ]);
-  assert.deepEqual(POLYMARKET_GEO_THEMES[0].keywords, ['iran', 'israel', 'hormuz', 'houthi', 'gaza', 'saudi', 'strike on']);
+  assert.deepEqual(POLYMARKET_GEO_THEMES[0].keywords, ['iran', 'iranian', 'israel', 'israeli', 'hormuz', 'houthi', 'gaza', 'saudi', 'strike on']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[0].currencies, ['USD', 'CHF', 'JPY', 'CAD', 'EUR', 'XAU']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[1].keywords, ['russia', 'ukraine', 'putin', 'zelensky', 'ceasefire', 'nato']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[1].currencies, ['EUR', 'CHF', 'GBP', 'XAU']);
@@ -55,7 +55,7 @@ test('la tabla y los umbrales congelados viven en config, sin dirección', () =>
   assert.deepEqual(POLYMARKET_GEO_THEMES[2].currencies, ['CAD', 'AUD', 'NZD', 'EUR', 'JPY', 'CHF']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[3].keywords, ['shutdown', 'veto', 'executive order', 'debt ceiling', 'impeach', 'supreme court', 'fed chair', 'congress passes', 'signs into law']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[3].currencies, ['USD', 'XAU']);
-  assert.deepEqual(POLYMARKET_GEO_THEMES[4].keywords, ['china', 'taiwan', 'beijing', 'xi jinping']);
+  assert.deepEqual(POLYMARKET_GEO_THEMES[4].keywords, ['china', 'chinese', 'taiwan', 'beijing', 'xi jinping']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[4].currencies, ['AUD', 'NZD', 'JPY', 'USD']);
   for (const theme of POLYMARKET_GEO_THEMES) {
     assert.equal(Object.hasOwn(theme, 'direction'), false);
@@ -81,9 +81,51 @@ test('cada palabra clave del título selecciona su tema y una subcadena ajena no
     }
   }
   assert.equal(themesForTitle('Alternative energy bill').length, 0);
-  assert.equal(themesForTitle('Iranian ports').some((hit) => hit.theme === 'IRAN_ORIENTE_MEDIO'), true);
   assert.equal(themesForTitle('China ports').some((hit) => hit.theme === 'CHINA_TAIWAN'), true);
-  assert.equal(themesForTitle('Chinese ports').length, 0);
+});
+
+function pricedEvent(title) {
+  return {
+    id: title,
+    title,
+    slug: 'boundary-check',
+    closed: false,
+    active: true,
+    volume: 1_000_000,
+    liquidity: 50_000,
+    markets: [{
+      id: 'boundary-m',
+      question: 'Yes or no?',
+      closed: false,
+      active: true,
+      volumeNum: 1_000,
+      outcomes: '["Yes","No"]',
+      outcomePrices: '["0.5","0.5"]',
+    }],
+  };
+}
+
+test('la palabra clave empieza en un límite de palabra', () => {
+  const senator = selectPolymarketMarkets([pricedEvent('A senator addresses the chamber')]);
+  assert.equal(senator.some((row) => row.theme === 'RUSIA_UCRANIA'), false);
+  assert.equal(senator.length, 0);
+  assert.equal(themesForTitle('senator').some((hit) => hit.theme === 'RUSIA_UCRANIA'), false);
+
+  const chinese = selectPolymarketMarkets([pricedEvent('Chinese ports stay open')]);
+  assert.deepEqual(titles(chinese, 'CHINA_TAIWAN'), ['Chinese ports stay open']);
+  assert.equal(themesForTitle('Chinese ports').some((hit) => hit.theme === 'CHINA_TAIWAN'), true);
+
+  const israeli = selectPolymarketMarkets([pricedEvent('Israeli cabinet meets')]);
+  assert.deepEqual(titles(israeli, 'IRAN_ORIENTE_MEDIO'), ['Israeli cabinet meets']);
+  assert.equal(themesForTitle('Israeli').some((hit) => hit.theme === 'IRAN_ORIENTE_MEDIO'), true);
+
+  const iranian = selectPolymarketMarkets([pricedEvent('Iranian ports reopen')]);
+  assert.deepEqual(titles(iranian, 'IRAN_ORIENTE_MEDIO'), ['Iranian ports reopen']);
+  assert.equal(themesForTitle('Iranian').some((hit) => hit.theme === 'IRAN_ORIENTE_MEDIO'), true);
+
+  assert.equal(themesForTitle('The trade deal holds').some((hit) => hit.theme === 'ARANCELES_COMERCIO'), true);
+  assert.equal(themesForTitle('US strike on Mexico').some((hit) => hit.theme === 'IRAN_ORIENTE_MEDIO'), true);
+  assert.equal(themesForTitle('Section 232 steel review').some((hit) => hit.theme === 'ARANCELES_COMERCIO'), true);
 });
 
 test('la respuesta fija de Gamma selecciona, filtra y excluye', () => {

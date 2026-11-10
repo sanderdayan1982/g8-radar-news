@@ -131,10 +131,14 @@ export function exclusionReason(event) {
   return null;
 }
 
+function keywordAtWordStart(title, keyword) {
+  const escaped = String(keyword).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`\\b${escaped}`, 'i').test(String(title || ''));
+}
+
 export function themesForTitle(title) {
-  const text = norm(title);
-  if (!text) return [];
-  return POLYMARKET_GEO_THEMES.filter((theme) => theme.keywords.some((keyword) => text.includes(keyword)));
+  if (!String(title || '').trim()) return [];
+  return POLYMARKET_GEO_THEMES.filter((theme) => theme.keywords.some((keyword) => keywordAtWordStart(title, keyword)));
 }
 
 function yesProbability(market) {

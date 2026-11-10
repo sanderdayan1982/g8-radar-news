@@ -223,15 +223,15 @@ Cadencia, por fuente, leída solo de `status` y `last_success_at` en `radar_news
 
 ## Contrato Polymarket geopolítico (v5.1 Parte D)
 
-Tabla fija en `src/config.js`, sin dirección. La palabra clave se busca en el título del evento, sin distinguir mayúsculas, como subcadena (así «Iranian» entra en `iran`; «Chinese» no entra en `china`). Constantes congeladas el 10-nov-2026: volumen total ≥ 250.000 USD, liquidez ≥ 25.000 USD, máximo 5 por tema por volumen, historia 8 días. Los umbrales de |Δ24h| (10 puntos y 5 puntos) son de la Parte E y este bloque no asigna nivel, puesto ni dirección.
+Tabla fija en `src/config.js`, sin dirección. La palabra clave se busca en el título del evento, sin distinguir mayúsculas, desde el inicio de una palabra (`\b` + palabra). Así «nato» no entra dentro de «senator». Las de varias palabras («trade deal», «strike on», «section 232») también empiezan en un límite de palabra. La tabla añade «iranian» e «israeli» en `IRAN_ORIENTE_MEDIO` y «chinese» en `CHINA_TAIWAN`. Constantes congeladas el 10-nov-2026: volumen total ≥ 250.000 USD, liquidez ≥ 25.000 USD, máximo 5 por tema por volumen, historia 8 días. Los umbrales de |Δ24h| (10 puntos y 5 puntos) son de la Parte E y este bloque no asigna nivel, puesto ni dirección.
 
 | theme | Palabras clave | Divisas expuestas |
 |---|---|---|
-| `IRAN_ORIENTE_MEDIO` | iran, israel, hormuz, houthi, gaza, saudi, strike on | USD, CHF, JPY, CAD, EUR, XAU |
+| `IRAN_ORIENTE_MEDIO` | iran, iranian, israel, israeli, hormuz, houthi, gaza, saudi, strike on | USD, CHF, JPY, CAD, EUR, XAU |
 | `RUSIA_UCRANIA` | russia, ukraine, putin, zelensky, ceasefire, nato | EUR, CHF, GBP, XAU |
 | `ARANCELES_COMERCIO` | tariff, trade deal, trade war, usmca, section 232, section 301 | CAD, AUD, NZD, EUR, JPY, CHF |
 | `WASHINGTON` | shutdown, veto, executive order, debt ceiling, impeach, supreme court, fed chair, congress passes, signs into law | USD, XAU |
-| `CHINA_TAIWAN` | china, taiwan, beijing, xi jinping | AUD, NZD, JPY, USD |
+| `CHINA_TAIWAN` | china, chinese, taiwan, beijing, xi jinping | AUD, NZD, JPY, USD |
 
 Entran eventos abiertos (`closed` false, no archivados, `active` distinto de false) que pasan el volumen y la liquidez del evento. Cada evento publica una fila: el mercado abierto de mayor volumen, su pregunta y la probabilidad Yes en escala 0–100 (dos decimales). `d24h_pp` es esa probabilidad menos la de la instantánea más cercana a hace 24 h, dentro de ±1 h (el borde cuenta; si hay dos a la misma distancia, la más antigua). Si esa instantánea no existe, o no trae ese mercado, `d24h_pp` es `null`. Un evento puede salir en cada tema cuyo título encaje. `volume` y `liquidity` de la fila son los totales del evento. `currencies` es la lista fija del tema, en el orden de la tabla. `url` es `https://polymarket.com/event/{slug}`, o `null` si no hay slug.
 

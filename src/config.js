@@ -293,7 +293,7 @@ export const PRESERVED_SOURCE_IDS = [
 export const POLYMARKET_GEO_THEMES = [
   {
     theme: 'IRAN_ORIENTE_MEDIO',
-    keywords: ['iran', 'israel', 'hormuz', 'houthi', 'gaza', 'saudi', 'strike on'],
+    keywords: ['iran', 'iranian', 'israel', 'israeli', 'hormuz', 'houthi', 'gaza', 'saudi', 'strike on'],
     currencies: ['USD', 'CHF', 'JPY', 'CAD', 'EUR', 'XAU'],
   },
   {
@@ -313,7 +313,7 @@ export const POLYMARKET_GEO_THEMES = [
   },
   {
     theme: 'CHINA_TAIWAN',
-    keywords: ['china', 'taiwan', 'beijing', 'xi jinping'],
+    keywords: ['china', 'chinese', 'taiwan', 'beijing', 'xi jinping'],
     currencies: ['AUD', 'NZD', 'JPY', 'USD'],
   },
 ];
