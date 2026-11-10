@@ -5,75 +5,75 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T21:42:23.903Z",
-  "started_at": "2026-11-10T21:42:18.960Z",
+  "generated_at": "2026-11-10T21:47:28.706Z",
+  "started_at": "2026-11-10T21:47:25.963Z",
   "window_hours": 72,
   "sources_ok": 35,
   "sources_total": 35,
-  "count": 848,
+  "count": 851,
   "coverage": {
     "USD": {
-      "count_72h": 171,
+      "count_72h": 172,
       "count_official_45d": 141,
-      "last_item_at": "2026-11-10T21:29:42.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "last_item_at": "2026-11-10T21:45:46.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "EUR": {
       "count_72h": 45,
       "count_official_45d": 55,
       "last_item_at": "2026-11-10T18:10:45.000Z",
-      "hours_since_last": 3.5,
-      "hours_since_last_business": 3.5,
+      "hours_since_last": 3.6,
+      "hours_since_last_business": 3.6,
       "silence": false
     },
     "GBP": {
       "count_72h": 49,
       "count_official_45d": 47,
       "last_item_at": "2026-11-10T18:48:26.000Z",
-      "hours_since_last": 2.9,
-      "hours_since_last_business": 2.9,
+      "hours_since_last": 3,
+      "hours_since_last_business": 3,
       "silence": false
     },
     "JPY": {
       "count_72h": 32,
       "count_official_45d": 60,
       "last_item_at": "2026-11-10T20:44:25.000Z",
-      "hours_since_last": 1,
-      "hours_since_last_business": 1,
+      "hours_since_last": 1.1,
+      "hours_since_last_business": 1.1,
       "silence": false
     },
     "CHF": {
       "count_72h": 44,
       "count_official_45d": 16,
       "last_item_at": "2026-11-10T20:44:25.000Z",
-      "hours_since_last": 1,
-      "hours_since_last_business": 1,
+      "hours_since_last": 1.1,
+      "hours_since_last_business": 1.1,
       "silence": false
     },
     "CAD": {
       "count_72h": 33,
       "count_official_45d": 6,
       "last_item_at": "2026-11-10T20:44:25.000Z",
-      "hours_since_last": 1,
-      "hours_since_last_business": 1,
+      "hours_since_last": 1.1,
+      "hours_since_last_business": 1.1,
       "silence": false
     },
     "AUD": {
-      "count_72h": 70,
+      "count_72h": 71,
       "count_official_45d": 62,
       "last_item_at": "2026-11-10T21:05:34.000Z",
-      "hours_since_last": 0.6,
-      "hours_since_last_business": 0.6,
+      "hours_since_last": 0.7,
+      "hours_since_last_business": 0.7,
       "silence": false
     },
     "NZD": {
-      "count_72h": 45,
+      "count_72h": 46,
       "count_official_45d": 50,
-      "last_item_at": "2026-11-10T21:05:41.000Z",
-      "hours_since_last": 0.6,
-      "hours_since_last_business": 0.6,
+      "last_item_at": "2026-11-10T21:34:50.000Z",
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "XAU": {
@@ -86,8 +86,40 @@
   },
   "currency_ranking_mmt": [
     {
-      "currency": "CHF",
+      "currency": "USD",
       "rank": 1,
+      "score": 28,
+      "bias": "alcista",
+      "structural": 28,
+      "impulse": 15,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "TOTAL",
+      "calendar_lock_detail": "PRESUPUESTO · Federal Budget Balance en 45.2h",
+      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
+      "lock_level": "TOTAL",
+      "lock_class": "PRESUPUESTO",
+      "lock_events": [
+        {
+          "lock_class": "PRESUPUESTO",
+          "title": "Federal Budget Balance",
+          "time": "2026-11-12T19:00:00.000Z",
+          "hours_until": 45.2,
+          "retirar_limitadas": false
+        }
+      ],
+      "retirar_limitadas": false,
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "Divergencia dovish BC (Ficha B2)",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "26 titulares · Ficha A1 (SOBERANO_EMISOR) · TOTAL · POLICY_PRICE + RISK_GEO + FISCAL_NFA · Est +28 | Imp 3h +15. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -109,7 +141,7 @@
     },
     {
       "currency": "JPY",
-      "rank": 1,
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -130,38 +162,6 @@
       "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +10. Régimen real mixed."
     },
     {
-      "currency": "USD",
-      "rank": 3,
-      "score": 16,
-      "bias": "alcista",
-      "structural": 16,
-      "impulse": 3,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "TOTAL",
-      "calendar_lock_detail": "PRESUPUESTO · Federal Budget Balance en 45.3h",
-      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
-      "lock_level": "TOTAL",
-      "lock_class": "PRESUPUESTO",
-      "lock_events": [
-        {
-          "lock_class": "PRESUPUESTO",
-          "title": "Federal Budget Balance",
-          "time": "2026-11-12T19:00:00.000Z",
-          "hours_until": 45.3,
-          "retirar_limitadas": false
-        }
-      ],
-      "retirar_limitadas": false,
-      "no_evidence": false,
-      "drivers": [
-        "Divergencia dovish BC (Ficha B2)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "26 titulares · Ficha A1 (SOBERANO_EMISOR) · TOTAL · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +16 | Imp 3h +3. Régimen real mixed."
-    },
-    {
       "currency": "GBP",
       "rank": 4,
       "score": 10,
@@ -171,7 +171,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "TIER1",
-      "calendar_lock_detail": "TIER1_DATO · GDP m/m en 33.3h",
+      "calendar_lock_detail": "TIER1_DATO · GDP m/m en 33.2h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Pill Speaks: Publicado)",
       "lock_level": "TIER1",
       "lock_class": "TIER1_DATO",
@@ -180,7 +180,7 @@
           "lock_class": "TIER1_DATO",
           "title": "GDP m/m",
           "time": "2026-11-12T07:00:00.000Z",
-          "hours_until": 33.3,
+          "hours_until": 33.2,
           "retirar_limitadas": false
         }
       ],
@@ -214,8 +214,32 @@
       "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · POLICY_PRICE · Est +0 | Imp 3h n/d · evidencia débil. Régimen real weak."
     },
     {
+      "currency": "NZD",
+      "rank": 5,
+      "score": 0,
+      "bias": "neutral",
+      "structural": 0,
+      "impulse": null,
+      "ficha_v6": "A12 / B10 / C3",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "lock_level": "NINGUNO",
+      "lock_class": null,
+      "lock_events": [],
+      "retirar_limitadas": false,
+      "no_evidence": false,
+      "drivers": [
+        "Kaitāia mill could close in months with 157 jobs at risk",
+        "Rocket Lab gets $270m loan from US Dept of Defence",
+        "Dozens of jobs saved after local investors buy Candida's NZ manufacturing "
+      ],
+      "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+    },
+    {
       "currency": "EUR",
-      "rank": 6,
+      "rank": 7,
       "score": -12,
       "bias": "neutral",
       "structural": -12,
@@ -239,7 +263,7 @@
           "lock_class": "DISCURSO",
           "title": "ECB President Lagarde Speaks",
           "time": "2026-11-12T19:30:00.000Z",
-          "hours_until": 45.8,
+          "hours_until": 45.7,
           "retirar_limitadas": false
         }
       ],
@@ -253,7 +277,7 @@
     },
     {
       "currency": "CAD",
-      "rank": 7,
+      "rank": 8,
       "score": -13,
       "bias": "bajista",
       "structural": -13,
@@ -274,28 +298,6 @@
         "CPI sin sorpresa"
       ],
       "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est -13 | Imp 3h -7. Régimen real mixed."
-    },
-    {
-      "currency": "NZD",
-      "rank": 8,
-      "score": -15,
-      "bias": "bajista",
-      "structural": -15,
-      "impulse": -4,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "lock_level": "NINGUNO",
-      "lock_class": null,
-      "lock_events": [],
-      "retirar_limitadas": false,
-      "no_evidence": false,
-      "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)"
-      ],
-      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -15 | Imp 3h -4. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -323,8 +325,40 @@
   ],
   "g8_ranking": [
     {
-      "currency": "CHF",
+      "currency": "USD",
       "rank": 1,
+      "score": 28,
+      "bias": "alcista",
+      "structural": 28,
+      "impulse": 15,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "TOTAL",
+      "calendar_lock_detail": "PRESUPUESTO · Federal Budget Balance en 45.2h",
+      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
+      "lock_level": "TOTAL",
+      "lock_class": "PRESUPUESTO",
+      "lock_events": [
+        {
+          "lock_class": "PRESUPUESTO",
+          "title": "Federal Budget Balance",
+          "time": "2026-11-12T19:00:00.000Z",
+          "hours_until": 45.2,
+          "retirar_limitadas": false
+        }
+      ],
+      "retirar_limitadas": false,
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "Divergencia dovish BC (Ficha B2)",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+      ],
+      "rationale": "26 titulares · Ficha A1 (SOBERANO_EMISOR) · TOTAL · POLICY_PRICE + RISK_GEO + FISCAL_NFA · Est +28 | Imp 3h +15. Régimen real mixed."
+    },
+    {
+      "currency": "CHF",
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -346,7 +380,7 @@
     },
     {
       "currency": "JPY",
-      "rank": 1,
+      "rank": 2,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
@@ -367,38 +401,6 @@
       "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +10. Régimen real mixed."
     },
     {
-      "currency": "USD",
-      "rank": 3,
-      "score": 16,
-      "bias": "alcista",
-      "structural": 16,
-      "impulse": 3,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "TOTAL",
-      "calendar_lock_detail": "PRESUPUESTO · Federal Budget Balance en 45.3h",
-      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
-      "lock_level": "TOTAL",
-      "lock_class": "PRESUPUESTO",
-      "lock_events": [
-        {
-          "lock_class": "PRESUPUESTO",
-          "title": "Federal Budget Balance",
-          "time": "2026-11-12T19:00:00.000Z",
-          "hours_until": 45.3,
-          "retirar_limitadas": false
-        }
-      ],
-      "retirar_limitadas": false,
-      "no_evidence": false,
-      "drivers": [
-        "Divergencia dovish BC (Ficha B2)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "CPI sin sorpresa"
-      ],
-      "rationale": "26 titulares · Ficha A1 (SOBERANO_EMISOR) · TOTAL · RISK_GEO + POLICY_PRICE + FISCAL_NFA · Est +16 | Imp 3h +3. Régimen real mixed."
-    },
-    {
       "currency": "GBP",
       "rank": 4,
       "score": 10,
@@ -408,7 +410,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "TIER1",
-      "calendar_lock_detail": "TIER1_DATO · GDP m/m en 33.3h",
+      "calendar_lock_detail": "TIER1_DATO · GDP m/m en 33.2h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Pill Speaks: Publicado)",
       "lock_level": "TIER1",
       "lock_class": "TIER1_DATO",
@@ -417,7 +419,7 @@
           "lock_class": "TIER1_DATO",
           "title": "GDP m/m",
           "time": "2026-11-12T07:00:00.000Z",
-          "hours_until": 33.3,
+          "hours_until": 33.2,
           "retirar_limitadas": false
         }
       ],
@@ -451,8 +453,32 @@
       "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · POLICY_PRICE · Est +0 | Imp 3h n/d · evidencia débil. Régimen real weak."
     },
     {
+      "currency": "NZD",
+      "rank": 5,
+      "score": 0,
+      "bias": "neutral",
+      "structural": 0,
+      "impulse": null,
+      "ficha_v6": "A12 / B10 / C3",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": null,
+      "calendar_lock_detail": null,
+      "post_event_status": null,
+      "lock_level": "NINGUNO",
+      "lock_class": null,
+      "lock_events": [],
+      "retirar_limitadas": false,
+      "no_evidence": false,
+      "drivers": [
+        "Kaitāia mill could close in months with 157 jobs at risk",
+        "Rocket Lab gets $270m loan from US Dept of Defence",
+        "Dozens of jobs saved after local investors buy Candida's NZ manufacturing "
+      ],
+      "rationale": "10 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+    },
+    {
       "currency": "EUR",
-      "rank": 6,
+      "rank": 7,
       "score": -12,
       "bias": "neutral",
       "structural": -12,
@@ -476,7 +502,7 @@
           "lock_class": "DISCURSO",
           "title": "ECB President Lagarde Speaks",
           "time": "2026-11-12T19:30:00.000Z",
-          "hours_until": 45.8,
+          "hours_until": 45.7,
           "retirar_limitadas": false
         }
       ],
@@ -490,7 +516,7 @@
     },
     {
       "currency": "CAD",
-      "rank": 7,
+      "rank": 8,
       "score": -13,
       "bias": "bajista",
       "structural": -13,
@@ -511,28 +537,6 @@
         "CPI sin sorpresa"
       ],
       "rationale": "20 titulares · Ficha B2 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est -13 | Imp 3h -7. Régimen real mixed."
-    },
-    {
-      "currency": "NZD",
-      "rank": 8,
-      "score": -15,
-      "bias": "bajista",
-      "structural": -15,
-      "impulse": -4,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": null,
-      "calendar_lock_detail": null,
-      "post_event_status": null,
-      "lock_level": "NINGUNO",
-      "lock_class": null,
-      "lock_events": [],
-      "retirar_limitadas": false,
-      "no_evidence": false,
-      "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)"
-      ],
-      "rationale": "10 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -15 | Imp 3h -4. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -545,7 +549,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -38.7,
+      "hours_from_now": -38.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -560,7 +564,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -36.2,
+      "hours_from_now": -36.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -575,7 +579,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -30.7,
+      "hours_from_now": -30.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -590,7 +594,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -22.2,
+      "hours_from_now": -22.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -605,7 +609,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -22.2,
+      "hours_from_now": -22.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -620,7 +624,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -21.9,
+      "hours_from_now": -22,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -635,7 +639,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -21.9,
+      "hours_from_now": -22,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -650,7 +654,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -21.9,
+      "hours_from_now": -22,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -665,7 +669,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -21.7,
+      "hours_from_now": -21.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -680,7 +684,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -21.2,
+      "hours_from_now": -21.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -695,7 +699,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -18.1,
+      "hours_from_now": -18.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -710,7 +714,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -16.7,
+      "hours_from_now": -16.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -725,7 +729,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.2,
+      "hours_from_now": -13.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -740,7 +744,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -12.7,
+      "hours_from_now": -12.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -755,7 +759,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": -11.7,
+      "hours_from_now": -11.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -770,7 +774,7 @@
       "actual": "97.8",
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": -10.7,
+      "hours_from_now": -10.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -785,7 +789,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.2,
+      "hours_from_now": -9.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -800,7 +804,7 @@
       "actual": "19.75K",
       "forecast": null,
       "previous": "16.8K",
-      "hours_from_now": -8.5,
+      "hours_from_now": -8.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -815,7 +819,7 @@
       "actual": "0.3%",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -8.2,
+      "hours_from_now": -8.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -830,7 +834,7 @@
       "actual": "0.4%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": -8.2,
+      "hours_from_now": -8.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -845,7 +849,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.9,
+      "hours_from_now": -6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -860,7 +864,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": -3.7,
+      "hours_from_now": -3.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -875,7 +879,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.2,
+      "hours_from_now": -3.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -890,7 +894,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.2,
+      "hours_from_now": -3.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -905,7 +909,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.2,
+      "hours_from_now": -3.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -920,7 +924,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1.2,
+      "hours_from_now": -1.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -935,7 +939,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.2,
+      "hours_from_now": -0.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -950,7 +954,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.8,
+      "hours_from_now": 1.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -965,7 +969,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.8,
+      "hours_from_now": 1.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -980,7 +984,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 2.1,
+      "hours_from_now": 2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -995,7 +999,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 8.3,
+      "hours_from_now": 8.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1010,7 +1014,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 9.3,
+      "hours_from_now": 9.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1025,7 +1029,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.3,
+      "hours_from_now": 9.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1055,7 +1059,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 11.3,
+      "hours_from_now": 11.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1085,7 +1089,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 12.9,
+      "hours_from_now": 12.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1100,7 +1104,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.3,
+      "hours_from_now": 15.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1115,7 +1119,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.3,
+      "hours_from_now": 15.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1145,7 +1149,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 26.1,
+      "hours_from_now": 26,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1160,7 +1164,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 26.3,
+      "hours_from_now": 26.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1175,7 +1179,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 26.3,
+      "hours_from_now": 26.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1190,7 +1194,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1205,7 +1209,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1220,7 +1224,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1235,7 +1239,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1250,7 +1254,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1265,7 +1269,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1280,7 +1284,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1295,7 +1299,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1310,7 +1314,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.3,
+      "hours_from_now": 35.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1325,7 +1329,7 @@
       "actual": null,
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1340,7 +1344,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1355,7 +1359,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1370,7 +1374,7 @@
       "actual": null,
       "forecast": "3.89M",
       "previous": "3.99M",
-      "hours_from_now": 41.3,
+      "hours_from_now": 41.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1385,7 +1389,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41.3,
+      "hours_from_now": 41.2,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1400,7 +1404,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 41.3,
+      "hours_from_now": 41.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1415,7 +1419,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.3%",
-      "hours_from_now": 41.8,
+      "hours_from_now": 41.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1445,7 +1449,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.9M",
-      "hours_from_now": 43.3,
+      "hours_from_now": 43.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1460,7 +1464,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.8,
+      "hours_from_now": 43.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1475,7 +1479,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.62|2.5",
-      "hours_from_now": 44.3,
+      "hours_from_now": 44.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1490,7 +1494,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44.5,
+      "hours_from_now": 44.4,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1505,7 +1509,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44.8,
+      "hours_from_now": 44.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1520,7 +1524,7 @@
       "actual": null,
       "forecast": "-286.3B",
       "previous": "-26.9B",
-      "hours_from_now": 45.3,
+      "hours_from_now": 45.2,
       "window_status": "TOTAL",
       "lock_class": "PRESUPUESTO",
       "lock_level": "TOTAL",
@@ -1535,7 +1539,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.8,
+      "hours_from_now": 45.7,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1550,7 +1554,7 @@
       "actual": null,
       "forecast": null,
       "previous": "56.5",
-      "hours_from_now": 47.8,
+      "hours_from_now": 47.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1569,6 +1573,37 @@
   },
   "items": [
     {
+      "id": "a6fa1bd13e3a3035749a39a8b94becb710e22b2375edfa287c1757b6d33c89b2",
+      "sha256": "a6fa1bd13e3a3035749a39a8b94becb710e22b2375edfa287c1757b6d33c89b2",
+      "title": "Investinglive americas fx news wrap 10 nov it s a wrap hot us cpi puts a bigger fed hike in play",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T21:45:46.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "78eeaf1127e1bf0f2583fa85299cb0f9a9424991557b85e2bf574265c9295a4d",
       "sha256": "78eeaf1127e1bf0f2583fa85299cb0f9a9424991557b85e2bf574265c9295a4d",
       "title": "Costco declares 30 special dividend worth 13.3 billion renews 4 billion buyback",
@@ -1579,6 +1614,36 @@
       "published_at": "2026-11-10T21:40:46.000Z",
       "currencies": [],
       "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a9d2d41c26566ef2b1660498cfdaf0e240570fec357aedb755bd6871cafbbd6e",
+      "sha256": "a9d2d41c26566ef2b1660498cfdaf0e240570fec357aedb755bd6871cafbbd6e",
+      "title": "Kaitāia mill could close in months with 157 jobs at risk",
+      "url": "https://www.rnz.co.nz/news/regions_northland/2531280/kaitaia-mill-could-close-in-months-with-157-jobs-at-risk",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T21:34:50.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -1649,6 +1714,36 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "192f58ea0f0d2e04b8024bebe866a1f4c37d1903e9756df0318a731c677549d3",
+      "sha256": "192f58ea0f0d2e04b8024bebe866a1f4c37d1903e9756df0318a731c677549d3",
+      "title": "Rocket Lab gets $270m loan from US Dept of Defence",
+      "url": "https://www.rnz.co.nz/news/business/2531802/rocket-lab-gets-270m-loan-from-us-dept-of-defence",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T21:27:16.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -2240,36 +2335,6 @@
       "published_at": "2026-11-10T21:00:00.000Z",
       "currencies": [],
       "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a9d2d41c26566ef2b1660498cfdaf0e240570fec357aedb755bd6871cafbbd6e",
-      "sha256": "a9d2d41c26566ef2b1660498cfdaf0e240570fec357aedb755bd6871cafbbd6e",
-      "title": "Kaitāia mill could close in months with 157 jobs at risk",
-      "url": "https://www.rnz.co.nz/news/regions_northland/2531280/kaitaia-mill-could-close-in-months-with-157-jobs-at-risk",
-      "source": "RNZ",
-      "source_id": "rnz-business",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T20:57:48.000Z",
-      "currencies": [
-        "NZD"
-      ],
-      "divisas": [
-        "NZD"
-      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -13648,6 +13713,36 @@
       "category": "Commodities_ToT",
       "categories": [
         "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b453e3c87d037c17b46a97a8587806101330f971d4c1434ad21c5f5d5f60ca4",
+      "sha256": "2b453e3c87d037c17b46a97a8587806101330f971d4c1434ad21c5f5d5f60ca4",
+      "title": "Most Australians don’t have a mortgage. Rate rises could leave them better off - SMH.com.au",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONThydERGekVzNjdkQzB3NUZjdTNTU09uZEtpdVprME9GdHo2ZF9SMmpMZ2xYTkhoOEVKczlXR2lQRzJRSGRYR1ZaRW9kNWxNOTVjb1VNMkt0eFdNYnJqanVzR0xQMC03ZlA1cUlRSE94TXo2T1daNjl1NlBRa3p5alNmODY5YWpyUFlMTTNpWGJxdVB3Y1lQci16ZVlQQmhCTzRCa19xN2hLcV9JYjRZU3p6NG9JTE1hTTVZQ2VWV2JobnlSNVl4c1FQbmJSb3Q3RDFJ?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T00:24:17.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
       ],
       "legacy_category": "otro",
       "ficha_v6": null,
@@ -26828,6 +26923,37 @@
   ],
   "news": [
     {
+      "id": "a6fa1bd13e3a3035749a39a8b94becb710e22b2375edfa287c1757b6d33c89b2",
+      "sha256": "a6fa1bd13e3a3035749a39a8b94becb710e22b2375edfa287c1757b6d33c89b2",
+      "title": "Investinglive americas fx news wrap 10 nov it s a wrap hot us cpi puts a bigger fed hike in play",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T21:45:46.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "78eeaf1127e1bf0f2583fa85299cb0f9a9424991557b85e2bf574265c9295a4d",
       "sha256": "78eeaf1127e1bf0f2583fa85299cb0f9a9424991557b85e2bf574265c9295a4d",
       "title": "Costco declares 30 special dividend worth 13.3 billion renews 4 billion buyback",
@@ -26838,6 +26964,36 @@
       "published_at": "2026-11-10T21:40:46.000Z",
       "currencies": [],
       "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a9d2d41c26566ef2b1660498cfdaf0e240570fec357aedb755bd6871cafbbd6e",
+      "sha256": "a9d2d41c26566ef2b1660498cfdaf0e240570fec357aedb755bd6871cafbbd6e",
+      "title": "Kaitāia mill could close in months with 157 jobs at risk",
+      "url": "https://www.rnz.co.nz/news/regions_northland/2531280/kaitaia-mill-could-close-in-months-with-157-jobs-at-risk",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T21:34:50.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -26908,6 +27064,36 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "192f58ea0f0d2e04b8024bebe866a1f4c37d1903e9756df0318a731c677549d3",
+      "sha256": "192f58ea0f0d2e04b8024bebe866a1f4c37d1903e9756df0318a731c677549d3",
+      "title": "Rocket Lab gets $270m loan from US Dept of Defence",
+      "url": "https://www.rnz.co.nz/news/business/2531802/rocket-lab-gets-270m-loan-from-us-dept-of-defence",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T21:27:16.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -27499,36 +27685,6 @@
       "published_at": "2026-11-10T21:00:00.000Z",
       "currencies": [],
       "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a9d2d41c26566ef2b1660498cfdaf0e240570fec357aedb755bd6871cafbbd6e",
-      "sha256": "a9d2d41c26566ef2b1660498cfdaf0e240570fec357aedb755bd6871cafbbd6e",
-      "title": "Kaitāia mill could close in months with 157 jobs at risk",
-      "url": "https://www.rnz.co.nz/news/regions_northland/2531280/kaitaia-mill-could-close-in-months-with-157-jobs-at-risk",
-      "source": "RNZ",
-      "source_id": "rnz-business",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T20:57:48.000Z",
-      "currencies": [
-        "NZD"
-      ],
-      "divisas": [
-        "NZD"
-      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -38907,6 +39063,36 @@
       "category": "Commodities_ToT",
       "categories": [
         "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2b453e3c87d037c17b46a97a8587806101330f971d4c1434ad21c5f5d5f60ca4",
+      "sha256": "2b453e3c87d037c17b46a97a8587806101330f971d4c1434ad21c5f5d5f60ca4",
+      "title": "Most Australians don’t have a mortgage. Rate rises could leave them better off - SMH.com.au",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxONThydERGekVzNjdkQzB3NUZjdTNTU09uZEtpdVprME9GdHo2ZF9SMmpMZ2xYTkhoOEVKczlXR2lQRzJRSGRYR1ZaRW9kNWxNOTVjb1VNMkt0eFdNYnJqanVzR0xQMC03ZlA1cUlRSE94TXo2T1daNjl1NlBRa3p5alNmODY5YWpyUFlMTTNpWGJxdVB3Y1lQci16ZVlQQmhCTzRCa19xN2hLcV9JYjRZU3p6NG9JTE1hTTVZQ2VWV2JobnlSNVl4c1FQbmJSb3Q3RDFJ?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T00:24:17.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
       ],
       "legacy_category": "otro",
       "ficha_v6": null,
