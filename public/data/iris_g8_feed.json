@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T13:30:17.439Z",
-  "started_at": "2026-11-10T13:30:15.410Z",
+  "generated_at": "2026-11-10T13:31:21.410Z",
+  "started_at": "2026-11-10T13:31:19.185Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,22 +15,22 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 75,
+      "score": 89,
       "bias": "alcista",
-      "structural": 75,
-      "impulse": 63,
+      "structural": 89,
+      "impulse": 77,
       "ficha_v6": "A5",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
       "calendar_lock_detail": "FOMC Member Logan Speaks en 2.3h",
-      "post_event_status": "✓ POST-EVENTO (CPI m/m: Act 0.3% vs Est 0.3%)",
+      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
         "Dato real fuerte: US ADP WKLY EMPLOYMENT CHANGE ACTUAL 19.75K (FORECAST -,",
         "Repricing hawkish BC (Ficha A1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+        "CPI vs consenso"
       ],
-      "rationale": "31 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + DATA_REAL + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +75 | Imp 3h +63. Régimen real mixed."
+      "rationale": "31 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RELATIVE_PRICE + RISK_GEO + DATA_REAL + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +89 | Imp 3h +77. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -38,7 +38,7 @@
       "score": 33,
       "bias": "alcista",
       "structural": 33,
-      "impulse": 29,
+      "impulse": 28,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -49,7 +49,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +29. Régimen real mixed."
+      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +28. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -57,7 +57,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 29,
+      "impulse": 28,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,7 +67,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +29. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +28. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -75,7 +75,7 @@
       "score": 12,
       "bias": "neutral",
       "structural": 12,
-      "impulse": 12,
+      "impulse": 11,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
@@ -86,7 +86,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "CPI sin sorpresa"
       ],
-      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +12 | Imp 3h +12. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +12 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -152,7 +152,7 @@
       "score": -52,
       "bias": "bajista",
       "structural": -52,
-      "impulse": -29,
+      "impulse": -28,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -164,7 +164,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -52 | Imp 3h -29. Régimen real mixed."
+      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -52 | Imp 3h -28. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -190,22 +190,22 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 75,
+      "score": 89,
       "bias": "alcista",
-      "structural": 75,
-      "impulse": 63,
+      "structural": 89,
+      "impulse": 77,
       "ficha_v6": "A5",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
       "calendar_lock_detail": "FOMC Member Logan Speaks en 2.3h",
-      "post_event_status": "✓ POST-EVENTO (CPI m/m: Act 0.3% vs Est 0.3%)",
+      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
         "Dato real fuerte: US ADP WKLY EMPLOYMENT CHANGE ACTUAL 19.75K (FORECAST -,",
         "Repricing hawkish BC (Ficha A1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+        "CPI vs consenso"
       ],
-      "rationale": "31 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + DATA_REAL + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +75 | Imp 3h +63. Régimen real mixed."
+      "rationale": "31 titulares · Ficha A5 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RELATIVE_PRICE + RISK_GEO + DATA_REAL + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +89 | Imp 3h +77. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -213,7 +213,7 @@
       "score": 33,
       "bias": "alcista",
       "structural": 33,
-      "impulse": 29,
+      "impulse": 28,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -224,7 +224,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "24 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +29. Régimen real mixed."
+      "rationale": "23 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +28. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -232,7 +232,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 29,
+      "impulse": 28,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -242,7 +242,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +29. Régimen real mixed."
+      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +28. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -250,7 +250,7 @@
       "score": 12,
       "bias": "neutral",
       "structural": 12,
-      "impulse": 12,
+      "impulse": 11,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
@@ -261,7 +261,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "CPI sin sorpresa"
       ],
-      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +12 | Imp 3h +12. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE · Est +12 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -327,7 +327,7 @@
       "score": -52,
       "bias": "bajista",
       "structural": -52,
-      "impulse": -29,
+      "impulse": -28,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -339,7 +339,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -52 | Imp 3h -29. Régimen real mixed."
+      "rationale": "18 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -52 | Imp 3h -28. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -376,7 +376,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23.8,
+      "hours_from_now": -23.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -613,7 +613,7 @@
       "title": "Core CPI m/m",
       "event_at": "2026-11-10T13:30:00.000Z",
       "impact": "High",
-      "actual": null,
+      "actual": "0.3%",
       "forecast": "0.2%",
       "previous": "0.3%",
       "hours_from_now": 0,
@@ -625,7 +625,7 @@
       "title": "CPI m/m",
       "event_at": "2026-11-10T13:30:00.000Z",
       "impact": "High",
-      "actual": "0.3%",
+      "actual": "0.4%",
       "forecast": "0.3%",
       "previous": "0.6%",
       "hours_from_now": 0,
@@ -832,7 +832,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 21.1,
+      "hours_from_now": 21,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1064,6 +1064,96 @@
   },
   "items": [
     {
+      "id": "ddf792468667d540bdca68e8303bd119a8e0fa39a4b9a2fa4547cbc8570cb0e3",
+      "sha256": "ddf792468667d540bdca68e8303bd119a8e0fa39a4b9a2fa4547cbc8570cb0e3",
+      "title": "❗ US CORE CPI MOM ACTUAL 0.3% (FORECAST 0.2%, PREVIOUS 0.3%) $MACRO",
+      "url": "https://t.me/FinancialJuice/146000",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T13:30:32.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.3%",
+      "forecast": "0.2%",
+      "previous": "0.3%",
+      "calendar_title": "Core CPI m/m",
+      "z": 0.7
+    },
+    {
+      "id": "68a3bfc87bbd63e34e59f74a0bdda742a0b33c7069a095bfadd2a5fafb913ce4",
+      "sha256": "68a3bfc87bbd63e34e59f74a0bdda742a0b33c7069a095bfadd2a5fafb913ce4",
+      "title": "‼ BREAKING: US CPI MOM ACTUAL 0.4% (FORECAST 0.3%, PREVIOUS 0.6%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145999",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T13:30:28.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.4%",
+      "forecast": "0.3%",
+      "previous": "0.6%",
+      "calendar_title": "CPI m/m",
+      "z": 0.7
+    },
+    {
+      "id": "7defb5da55325869bc4c89b629e2a48023c77fb4ba4502bfacaee9cd014b22aa",
+      "sha256": "7defb5da55325869bc4c89b629e2a48023c77fb4ba4502bfacaee9cd014b22aa",
+      "title": "DIRECTO | ESPECIAL DATO DE INFLACIÓN EN EEUU: EL IPC DECIDE EL DESTINO DE WALL STREET Y LA FED #directo #inflacion #ipc #eeuu #fed #wallstreet #tiposdeinteres #sp500 #nasdaq#dolar",
+      "url": "https://t.me/negociostv/60437",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T13:29:54.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "ccdfd34572ba5b035e2bc12cc15814652a818daf22d64aa191d64eeb0cc72fa5",
       "sha256": "ccdfd34572ba5b035e2bc12cc15814652a818daf22d64aa191d64eeb0cc72fa5",
       "title": "BoE's Lombardelli: A number of European countries such as France have really difficult debt trajectories.",
@@ -8190,84 +8280,6 @@
       "mmt_lens": "SAFE_HAVEN_A6",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "288892b441a8b339bd53e20d42721d1f0ec3cb1205940699c25dade99fed8648",
-      "sha256": "288892b441a8b339bd53e20d42721d1f0ec3cb1205940699c25dade99fed8648",
-      "title": "Asset managers stay constructive on stocks after ai rout urge investors to diversify",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T22:20:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fefc6fe3bdfa4d0ca413a464bfc3d9a88d68f2f0316aac02636f95855bc051a6",
-      "sha256": "fefc6fe3bdfa4d0ca413a464bfc3d9a88d68f2f0316aac02636f95855bc051a6",
-      "title": "Trump on US Secretary of Defense Hegseth: will support him if impeached",
-      "url": "https://t.me/FinancialJuice/145827",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T22:10:06.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "68bb5cf81cc1589232e3e3c69871226aa90d66379d4603198e364c136d4481c8",
-      "sha256": "68bb5cf81cc1589232e3e3c69871226aa90d66379d4603198e364c136d4481c8",
-      "title": "US Secretary of Defense Hegseth: will support him if impeached",
-      "url": "https://t.me/FinancialJuice/145826",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T22:09:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8277,6 +8289,96 @@
   ],
   "news": [
     {
+      "id": "ddf792468667d540bdca68e8303bd119a8e0fa39a4b9a2fa4547cbc8570cb0e3",
+      "sha256": "ddf792468667d540bdca68e8303bd119a8e0fa39a4b9a2fa4547cbc8570cb0e3",
+      "title": "❗ US CORE CPI MOM ACTUAL 0.3% (FORECAST 0.2%, PREVIOUS 0.3%) $MACRO",
+      "url": "https://t.me/FinancialJuice/146000",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T13:30:32.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.3%",
+      "forecast": "0.2%",
+      "previous": "0.3%",
+      "calendar_title": "Core CPI m/m",
+      "z": 0.7
+    },
+    {
+      "id": "68a3bfc87bbd63e34e59f74a0bdda742a0b33c7069a095bfadd2a5fafb913ce4",
+      "sha256": "68a3bfc87bbd63e34e59f74a0bdda742a0b33c7069a095bfadd2a5fafb913ce4",
+      "title": "‼ BREAKING: US CPI MOM ACTUAL 0.4% (FORECAST 0.3%, PREVIOUS 0.6%) $MACRO",
+      "url": "https://t.me/FinancialJuice/145999",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T13:30:28.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.4%",
+      "forecast": "0.3%",
+      "previous": "0.6%",
+      "calendar_title": "CPI m/m",
+      "z": 0.7
+    },
+    {
+      "id": "7defb5da55325869bc4c89b629e2a48023c77fb4ba4502bfacaee9cd014b22aa",
+      "sha256": "7defb5da55325869bc4c89b629e2a48023c77fb4ba4502bfacaee9cd014b22aa",
+      "title": "DIRECTO | ESPECIAL DATO DE INFLACIÓN EN EEUU: EL IPC DECIDE EL DESTINO DE WALL STREET Y LA FED #directo #inflacion #ipc #eeuu #fed #wallstreet #tiposdeinteres #sp500 #nasdaq#dolar",
+      "url": "https://t.me/negociostv/60437",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T13:29:54.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "ccdfd34572ba5b035e2bc12cc15814652a818daf22d64aa191d64eeb0cc72fa5",
       "sha256": "ccdfd34572ba5b035e2bc12cc15814652a818daf22d64aa191d64eeb0cc72fa5",
       "title": "BoE's Lombardelli: A number of European countries such as France have really difficult debt trajectories.",
@@ -15403,84 +15505,6 @@
       "mmt_lens": "SAFE_HAVEN_A6",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "288892b441a8b339bd53e20d42721d1f0ec3cb1205940699c25dade99fed8648",
-      "sha256": "288892b441a8b339bd53e20d42721d1f0ec3cb1205940699c25dade99fed8648",
-      "title": "Asset managers stay constructive on stocks after ai rout urge investors to diversify",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T22:20:39.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fefc6fe3bdfa4d0ca413a464bfc3d9a88d68f2f0316aac02636f95855bc051a6",
-      "sha256": "fefc6fe3bdfa4d0ca413a464bfc3d9a88d68f2f0316aac02636f95855bc051a6",
-      "title": "Trump on US Secretary of Defense Hegseth: will support him if impeached",
-      "url": "https://t.me/FinancialJuice/145827",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T22:10:06.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "68bb5cf81cc1589232e3e3c69871226aa90d66379d4603198e364c136d4481c8",
-      "sha256": "68bb5cf81cc1589232e3e3c69871226aa90d66379d4603198e364c136d4481c8",
-      "title": "US Secretary of Defense Hegseth: will support him if impeached",
-      "url": "https://t.me/FinancialJuice/145826",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T22:09:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
