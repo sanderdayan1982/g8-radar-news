@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { classifyIrisItem, deduplicateAndFilterWindow } from '../src/irisCollector.js';
+import { classifyIrisItem, deduplicateAndFilterWindow, trimMemory, formatIrisFeedItem, buildCoverage, buildRadarStore, STORE_CAP, FEED_CAP, TAPE_CAP } from '../src/irisCollector.js';
 import { classifyAgent, attachRanks, MMT_SOVEREIGNTY, biasFor, clamp } from '../src/classifyCurrencies.js';
 import { classifyAgentShadow, OP_VERSION, SHADOW_VERSION } from '../src/shadowCalibration.js';
 import { selectEvidence, evidenceContract } from '../src/evidence.js';
@@ -13,6 +13,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(__dirname, '..');
 const fullPath = join(rootDir, 'public', 'data', 'radar_news_full.json');
 const irisPath = join(rootDir, 'public', 'data', 'iris_g8_feed.json');
+const storePath = join(rootDir, 'public', 'data', 'radar_store.json');
 
 const prevFull = JSON.parse(readFileSync(fullPath, 'utf8'));
 const nowMs = Date.now();
@@ -64,6 +65,8 @@ const calendarEvents = (prevFull.calendar || []).map((ev) => {
   return ev;
 });
 const { allWindowItems, irisWindowItems } = deduplicateAndFilterWindow(existingItems, [], nowMs, 72);
+const memoryItems = trimMemory(allWindowItems, STORE_CAP);
+const feedItems = trimMemory(memoryItems, FEED_CAP);
 
 if (calendarEvents.length > 0) {
   linkNewsToCalendar(allWindowItems, calendarEvents);
@@ -108,30 +111,8 @@ const engineSnapshot = {
   history: Object.fromEntries(agentRows.map((r) => [r.currency, [[finishedAt, r.score, r.rank]]])),
 };
 
-const irisItemsFormatted = irisWindowItems.slice(0, 250).map((n) => ({
-  id: n.sha256,
-  sha256: n.sha256,
-  title: n.title,
-  url: n.url || '',
-  source: n.source,
-  source_id: n.source_id,
-  source_type: n.source_type,
-  published_at: n.published_at,
-  currencies: n.currencies || [],
-  divisas: n.currencies || [],
-  category: n.iris_category,
-  categories: n.iris_categories || [n.iris_category],
-  legacy_category: n.category,
-  ficha_v6: n.ficha_v6 ?? null,
-  mmt_lens: n.mmt_lens || 'CONTEXTO_GENERAL',
-  sovereignty_mmt: n.sovereignty_mmt || 'SOBERANO_EMISOR',
-  impact: n.impact ?? 1,
-  actual: n.actual ?? null,
-  forecast: n.forecast ?? null,
-  previous: n.previous ?? null,
-  calendar_title: n.calendar_title ?? null,
-  z: n.z ?? null,
-}));
+const irisItemsFormatted = feedItems.map(formatIrisFeedItem);
+const coverage = buildCoverage(memoryItems, nowMs);
 
 const agendaWindow = calendarEvents
   .filter((e) => {
@@ -218,7 +199,8 @@ const nextFull = {
     mode: 'single_engine_agente_mmt_serverless',
     llm_calls: 0,
   },
-  news: allWindowItems.slice(0, 300),
+  coverage,
+  news: memoryItems.slice(0, TAPE_CAP),
   items: irisItemsFormatted,
   calendar: calendarEvents,
   currency_ranking_mmt: currencyRankingMmt,
@@ -241,6 +223,7 @@ const nextIris = {
   sources_ok: (prevFull.sources || []).filter((s) => s.status === 'ok').length,
   sources_total: (prevFull.sources || []).length,
   count: irisItemsFormatted.length,
+  coverage,
   currency_ranking_mmt: currencyRankingMmt,
   g8_ranking: g8RankingSummary,
   agenda_window: agendaWindow,
@@ -251,6 +234,7 @@ const nextIris = {
 
 writeFileSync(fullPath, JSON.stringify(nextFull, null, 2));
 writeFileSync(irisPath, JSON.stringify(nextIris, null, 2));
+writeFileSync(storePath, JSON.stringify(buildRadarStore(memoryItems, finishedAt), null, 2));
 
 console.log(`=== RANKING ${OP_VERSION} ===`);
 for (const r of currencyRankingMmt) {

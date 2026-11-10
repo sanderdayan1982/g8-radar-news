@@ -283,7 +283,8 @@ export function deduplicateAndFilterWindow(items, existingItems = [], nowMs = Da
     (a, b) => (Date.parse(b.published_at || 0) || 0) - (Date.parse(a.published_at || 0) || 0),
   );
 
-  // Para el feed ligero IRIS (ventana estricta 72h; si una fuente oficial tiene comunicados recientes en 72h entran aquí)
+  // Recorte de 72 h usado por alertas y por la fila XAU. El feed IRIS publicado sale de retainHeadlines
+  // (72 h de breaking/agencia más oficiales de 45 días), no de este recorte.
   const irisWindowItems = merged.filter((it) => {
     const ms = Date.parse(it.published_at || '');
     return !Number.isFinite(ms) || ms >= windowCutoffMs;
@@ -293,6 +294,189 @@ export function deduplicateAndFilterWindow(items, existingItems = [], nowMs = Da
     allWindowItems: merged,
     irisWindowItems: irisWindowItems.length >= 25 ? irisWindowItems : merged.slice(0, 200),
   };
+}
+
+/** Constantes congeladas en PRE-REG_RADAR_v5.1 (10-nov-2026). No se mueven después de ver datos. */
+export const BREAKING_WINDOW_HOURS = 72;
+export const OFFICIAL_WINDOW_DAYS = 45;
+export const STORE_CAP = 5_000;
+export const FEED_CAP = 3_000;
+export const TAPE_CAP = 300;
+export const COVERAGE_CURRENCIES = Object.freeze(['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'CAD', 'AUD', 'NZD', 'XAU']);
+
+function itemTime(item) {
+  const ms = Date.parse(item?.published_at || '');
+  return Number.isFinite(ms) ? ms : NaN;
+}
+
+export function naturalHoursBetween(fromMs, toMs) {
+  if (!Number.isFinite(fromMs) || !Number.isFinite(toMs)) return null;
+  return Math.max(0, (toMs - fromMs) / 3600_000);
+}
+
+/** Horas entre dos instantes sin contar los sábados ni los domingos UTC. Los festivos sí cuentan. */
+export function businessHoursBetween(fromMs, toMs) {
+  if (!Number.isFinite(fromMs) || !Number.isFinite(toMs) || toMs <= fromMs) return 0;
+  let cursor = fromMs;
+  let acc = 0;
+  let guard = 0;
+  while (cursor < toMs && guard < 20000) {
+    guard += 1;
+    const day = new Date(cursor).getUTCDay();
+    const stamp = new Date(cursor);
+    const nextMidnight = Date.UTC(stamp.getUTCFullYear(), stamp.getUTCMonth(), stamp.getUTCDate() + 1);
+    const end = Math.min(nextMidnight, toMs);
+    if (day !== 0 && day !== 6) acc += end - cursor;
+    if (end <= cursor) break;
+    cursor = end;
+  }
+  return acc / 3600_000;
+}
+
+function roundHours(hours) {
+  if (!Number.isFinite(hours)) return null;
+  return Math.round(hours * 10) / 10;
+}
+
+/**
+ * Tope de seguridad. Primero salen los breaking más antiguos, luego el resto de no oficiales
+ * (agencia y cualquier otro tipo). Un oficial dentro de ventana no se elimina: si los oficiales
+ * solos superan el tope, el resultado puede pasarse del tope.
+ */
+export function trimMemory(items, cap) {
+  const list = Array.isArray(items) ? items : [];
+  if (!Number.isFinite(cap) || list.length <= cap) return list.slice();
+  const droppable = [];
+  for (let index = 0; index < list.length; index += 1) {
+    const item = list[index];
+    if (item?.source_type === 'oficial') continue;
+    droppable.push({ index, item });
+  }
+  droppable.sort((a, b) => {
+    const aBreak = a.item?.source_type === 'breaking' ? 0 : 1;
+    const bBreak = b.item?.source_type === 'breaking' ? 0 : 1;
+    if (aBreak !== bBreak) return aBreak - bBreak;
+    const aMs = itemTime(a.item);
+    const bMs = itemTime(b.item);
+    const aKey = Number.isFinite(aMs) ? aMs : Number.NEGATIVE_INFINITY;
+    const bKey = Number.isFinite(bMs) ? bMs : Number.NEGATIVE_INFINITY;
+    if (aKey !== bKey) return aKey - bKey;
+    return b.index - a.index;
+  });
+  let extra = list.length - cap;
+  const drop = new Set();
+  for (const row of droppable) {
+    if (extra <= 0) break;
+    drop.add(row.index);
+    extra -= 1;
+  }
+  return list.filter((_, index) => !drop.has(index));
+}
+
+export function buildCoverage(items, nowMs = Date.now()) {
+  const list = Array.isArray(items) ? items : [];
+  const cutoff72 = nowMs - BREAKING_WINDOW_HOURS * 3600_000;
+  const cutoff45 = nowMs - OFFICIAL_WINDOW_DAYS * 86400_000;
+  const coverage = {};
+  for (const currency of COVERAGE_CURRENCIES) {
+    let count72 = 0;
+    let countOfficial = 0;
+    let lastMs = NaN;
+    let lastAt = null;
+    for (const item of list) {
+      const currencies = item?.currencies || item?.divisas || [];
+      if (!currencies.includes(currency)) continue;
+      const ms = itemTime(item);
+      if (!Number.isFinite(ms)) continue;
+      if (ms >= cutoff72) count72 += 1;
+      if (item.source_type === 'oficial' && ms >= cutoff45) countOfficial += 1;
+      if (!Number.isFinite(lastMs) || ms > lastMs) {
+        lastMs = ms;
+        lastAt = item.published_at;
+      }
+    }
+    coverage[currency] = Number.isFinite(lastMs)
+      ? {
+        count_72h: count72,
+        count_official_45d: countOfficial,
+        last_item_at: lastAt,
+        hours_since_last: roundHours(naturalHoursBetween(lastMs, nowMs)),
+        hours_since_last_business: roundHours(businessHoursBetween(lastMs, nowMs)),
+      }
+      : {
+        count_72h: count72,
+        count_official_45d: countOfficial,
+        last_item_at: null,
+        hours_since_last: null,
+        hours_since_last_business: null,
+      };
+  }
+  return coverage;
+}
+
+export function formatIrisFeedItem(n) {
+  return {
+    id: n.sha256,
+    sha256: n.sha256,
+    title: n.title,
+    url: n.url || '',
+    source: n.source,
+    source_id: n.source_id,
+    source_type: n.source_type,
+    published_at: n.published_at,
+    currencies: n.currencies || [],
+    divisas: n.currencies || [],
+    category: n.iris_category,
+    categories: n.iris_categories || [n.iris_category],
+    legacy_category: n.category,
+    ficha_v6: n.ficha_v6 ?? null,
+    mmt_lens: n.mmt_lens || 'CONTEXTO_GENERAL',
+    sovereignty_mmt: n.sovereignty_mmt || 'SOBERANO_EMISOR',
+    impact: n.impact ?? 1,
+    actual: n.actual ?? null,
+    forecast: n.forecast ?? null,
+    previous: n.previous ?? null,
+    calendar_title: n.calendar_title ?? null,
+    z: n.z ?? null,
+  };
+}
+
+/**
+ * Separa la memoria (todos los titulares de la ventana) de la cinta (300) y del feed (tope 3.000).
+ * La ventana ya aplicada en deduplicateAndFilterWindow es 72 h para breaking/agencia y 45 días para oficiales.
+ */
+export function retainHeadlines(freshItems = [], existingItems = [], nowMs = Date.now()) {
+  const { allWindowItems, irisWindowItems } = deduplicateAndFilterWindow(
+    freshItems,
+    existingItems,
+    nowMs,
+    BREAKING_WINDOW_HOURS,
+  );
+  const memoryItems = trimMemory(allWindowItems, STORE_CAP);
+  const feedItems = trimMemory(memoryItems, FEED_CAP);
+  const tapeItems = memoryItems.slice(0, TAPE_CAP);
+  const coverage = buildCoverage(memoryItems, nowMs);
+  return { allWindowItems, irisWindowItems, memoryItems, feedItems, tapeItems, coverage };
+}
+
+export function buildRadarStore(items, generatedAt = new Date().toISOString()) {
+  const list = Array.isArray(items) ? items : [];
+  return {
+    schema: 'radar-store/v1',
+    generated_at: generatedAt,
+    retention: {
+      breaking_hours: BREAKING_WINDOW_HOURS,
+      official_days: OFFICIAL_WINDOW_DAYS,
+      cap: STORE_CAP,
+    },
+    count: list.length,
+    items: list,
+  };
+}
+
+export function readRadarStore(value) {
+  if (!value || value.schema !== 'radar-store/v1' || !Array.isArray(value.items)) return null;
+  return value;
 }
 
 /**
@@ -316,7 +500,8 @@ export async function collectRadarAndIrisData({
   const sourcesHealth = pulledSources.map((p) => p.health);
   const freshItems = pulledSources.flatMap((p) => p.items);
 
-  const { allWindowItems, irisWindowItems } = deduplicateAndFilterWindow(freshItems, existingItems, nowMs, 72);
+  const retained = retainHeadlines(freshItems, existingItems, nowMs);
+  const { allWindowItems, irisWindowItems, memoryItems, feedItems, tapeItems, coverage } = retained;
   const existingKeys = new Set((existingItems || []).map((x) => x.sha256 || x.id).filter(Boolean));
 
   const calendarEvents = Array.isArray(calResult?.events) && calResult.events.length
@@ -394,7 +579,7 @@ export async function collectRadarAndIrisData({
     : (previousMarket || { updated_at: null, basketPct: {}, pairs: {} });
 
   const turbo = turboEvent(calendarEvents);
-  const tapeNews = allWindowItems.slice(0, 300);
+  const tapeNews = tapeItems;
 
   // Alertas recientes derivadas de titulares de alto impacto o breaking en las últimas 24h
   const alerts = irisWindowItems
@@ -413,30 +598,7 @@ export async function collectRadarAndIrisData({
       occurred_at: n.published_at || finishedAt,
     }));
 
-  const irisItemsFormatted = irisWindowItems.slice(0, 250).map((n) => ({
-    id: n.sha256,
-    sha256: n.sha256,
-    title: n.title,
-    url: n.url || '',
-    source: n.source,
-    source_id: n.source_id,
-    source_type: n.source_type,
-    published_at: n.published_at,
-    currencies: n.currencies || [],
-    divisas: n.currencies || [],
-    category: n.iris_category,
-    categories: n.iris_categories || [n.iris_category],
-    legacy_category: n.category,
-    ficha_v6: n.ficha_v6 ?? null,
-    mmt_lens: n.mmt_lens || 'CONTEXTO_GENERAL',
-    sovereignty_mmt: n.sovereignty_mmt || 'SOBERANO_EMISOR',
-    impact: n.impact ?? 1,
-    actual: n.actual ?? null,
-    forecast: n.forecast ?? null,
-    previous: n.previous ?? null,
-    calendar_title: n.calendar_title ?? null,
-    z: n.z ?? null,
-  }));
+  const irisItemsFormatted = feedItems.map(formatIrisFeedItem);
 
   // Ventana de Agenda (-24h a +48h) para el agente externo IRIS
   const agendaWindow = (calendarEvents || [])
@@ -524,6 +686,7 @@ export async function collectRadarAndIrisData({
     sources_ok: sourcesHealth.filter((s) => s.status === 'ok').length,
     sources_total: sourcesHealth.length,
     count: irisItemsFormatted.length,
+    coverage,
     currency_ranking_mmt: currencyRankingMmt,
     g8_ranking: g8RankingSummary,
     agenda_window: agendaWindow,
@@ -569,6 +732,7 @@ export async function collectRadarAndIrisData({
       retired: true,
     },
     sources: sourcesHealth,
+    coverage,
     news: tapeNews,
     items: irisItemsFormatted,
     currency_ranking_mmt: currencyRankingMmt,
@@ -595,5 +759,5 @@ export async function collectRadarAndIrisData({
     unread: 0,
   };
 
-  return { irisFeed, fullState };
+  return { irisFeed, fullState, memoryItems };
 }
