@@ -236,7 +236,7 @@ test('mmt-agent-op-v4.1-G8: Regla 1 (PMI < 50 + AiG AUD) y Ajustes v4.1 (Freno B
   assert.equal(nzdRow.ficha_v6, 'B2');
   assert.match(nzdRow.drivers[0], /Ficha B2 \/ Contracción Laboral/i);
 
-  // Regla 4: Candado de Agenda ⚑BC <48h (Candado CIRO) y ✓ POST-EVENTO
+  // Regla 4: Official Bank Rate dentro de 48 h es TOTAL; el dato ya publicado es POST-EVENTO.
   const calEvents = [
     {
       id: 'boe-1',
@@ -257,8 +257,11 @@ test('mmt-agent-op-v4.1-G8: Regla 1 (PMI < 50 + AiG AUD) y Ajustes v4.1 (Freno B
     },
   ];
   const gbpLock = computeCalendarLock('GBP', calEvents, now);
-  assert.equal(gbpLock.calendar_lock, '⚑BC <48h (Candado CIRO)');
+  assert.equal(gbpLock.lock_class, 'DECISION_BC');
+  assert.equal(gbpLock.lock_level, 'TOTAL');
+  assert.equal(gbpLock.calendar_lock, 'TOTAL');
   const nzdLock = computeCalendarLock('NZD', calEvents, now);
+  assert.equal(nzdLock.lock_level, 'NINGUNO');
   assert.equal(nzdLock.calendar_lock, '✓ POST-EVENTO');
   assert.match(nzdLock.post_event_status, /5\.7%.*5\.5%/);
 });

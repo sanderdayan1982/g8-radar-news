@@ -1,4 +1,5 @@
 import { inverseChange, rankRows, hasNoEvidence, connectionState, nextCalendarEvent, fxClosed, safeUrl } from './domain.js';
+import { classifyEventLock, lockSeverityIndex } from './lockSeverity.js';
 const CURRENCIES = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'CAD', 'AUD', 'NZD'];
 const BANK = { USD: 'Fed', EUR: 'BCE', GBP: 'BoE', JPY: 'BoJ', CHF: 'SNB', CAD: 'BoC', AUD: 'RBA', NZD: 'RBNZ' };
 // Market quoting convention: the higher-priority currency is the base of the pair.
@@ -377,35 +378,53 @@ function ledgerHtml(row) {
   return `<details><summary>Contribuciones MMT v4.1-G8 (${row.ledger.length} noticias)</summary>${row.ledger.map((x) => `<p>${esc(x.published_at)} · ${esc(x.channel)}${x.ficha_v6 ? ` · <b>Ficha ${esc(x.ficha_v6)}</b>` : ''}${x.mmt_lens ? ` (${esc(x.mmt_lens)})` : ''} · bruto ${Number(x.raw).toFixed(2)} · tras antigüedad/tope ${Number(x.contribution).toFixed(2)} · ${esc(x.title)}</p>`).join('')}</details>`;
 }
 
-const CB_UI_RE = /\b(official bank rate|monetary policy|fomc|rate decision|rate statement|cash rate|interest rate|policy rate|policy assessment|mpc\b|press conference|projections|gov(?:ernor)?\s+\w+\s+speaks|president\s+\w+\s+speaks|bailey speaks|lagarde speaks|powell speaks|ueda speaks|bullock speaks|orr speaks|macklem speaks|schlegel speaks)\b/i;
+function lockPillClass(level) {
+  return `cal-lock-pill lock lock-${String(level || '').toLowerCase().replace(/_/g, '-')}`;
+}
 
-function computeLiveCalendarBadge(currency, row, calEvents = []) {
-  const nowMs = Date.now();
-  const ccyEvents = (calEvents || []).filter((e) => e && e.currency === currency && (e.impact === 'High' || CB_UI_RE.test(e.title || '')));
-  const up48 = ccyEvents
-    .map((e) => ({ ...e, dtH: (Date.parse(e.event_at) - nowMs) / 3600_000 }))
-    .filter((e) => Number.isFinite(e.dtH) && e.dtH > 0 && e.dtH <= 48)
-    .sort((a, b) => a.dtH - b.dtH);
-  const rec24 = ccyEvents
-    .map((e) => ({ ...e, dtH: (nowMs - Date.parse(e.event_at)) / 3600_000 }))
-    .filter((e) => Number.isFinite(e.dtH) && e.dtH >= 0 && e.dtH <= 24)
-    .sort((a, b) => a.dtH - b.dtH);
+function formatLockHours(hours) {
+  if (hours < 1) return `${Math.max(1, Math.round(hours * 60))}m`;
+  return `${hours.toFixed(1)}h`;
+}
 
-  const nextEv = up48.find((e) => CB_UI_RE.test(e.title || '')) || up48[0];
-  const prevEv = rec24.find((e) => e.actual != null) || rec24[0];
+export function computeLiveCalendarBadge(currency, row, calEvents = [], nowMs = Date.now()) {
+  const classified = (calEvents || [])
+    .filter((e) => e && e.currency === currency)
+    .map((e) => ({ e, ...classifyEventLock(e, nowMs) }))
+    .filter((x) => x.lock_class && x.hours_until != null);
+
+  const active = classified.filter((x) => x.active).sort((a, b) => {
+    const byLevel = lockSeverityIndex(a.lock_level) - lockSeverityIndex(b.lock_level);
+    if (byLevel !== 0) return byLevel;
+    return a.hours_until - b.hours_until;
+  });
+  const top = active[0] || null;
+  const past = classified.filter((x) => x.in_post_window).sort((a, b) => b.hours_until - a.hours_until);
+  const prev = past.find((x) => x.e.actual != null) || past[0] || null;
 
   const pills = [];
-  if (nextEv) {
-    const hTxt = nextEv.dtH < 1 ? `${Math.max(1, Math.round(nextEv.dtH * 60))}m` : `${nextEv.dtH.toFixed(1)}h`;
-    pills.push(`<span class="cal-lock-pill lock" title="Candado de Agenda 48h: ${esc(nextEv.title)} en ${hTxt}">⚑BC &lt;48h · ${esc(nextEv.title.slice(0, 18))} (${hTxt})</span>`);
-  } else if (row.calendar_lock === '⚑BC <48h (Candado CIRO)') {
-    pills.push(`<span class="cal-lock-pill lock" title="${esc(row.calendar_lock_detail || 'Evento BC <48h')}">⚑BC &lt;48h (Candado CIRO)</span>`);
+  const paint = (info, extra = '') => {
+    const hTxt = formatLockHours(info.hours_until);
+    return `<span class="${lockPillClass(info.lock_level)}" title="${esc(info.lock_class)}: ${esc(info.e.title)} en ${hTxt}">${esc(info.lock_level)} · ${esc(String(info.e.title).slice(0, 22))} (${hTxt})${extra}</span>`;
+  };
+
+  if (top) {
+    pills.push(paint(top, top.retirar_limitadas ? ' · retirar limitadas' : ''));
+    const other = active.find((x) => x.retirar_limitadas && x !== top);
+    if (other) pills.push(paint(other, ' · retirar limitadas'));
+  } else if ((!calEvents || calEvents.length === 0) && row?.lock_level && row.lock_level !== 'NINGUNO') {
+    const ev0 = row.lock_events?.[0];
+    const title = ev0?.title ? ` · ${esc(String(ev0.title).slice(0, 22))}` : '';
+    const when = ev0?.hours_until != null ? ` (${ev0.hours_until}h)` : '';
+    const flag = row.retirar_limitadas ? ' · retirar limitadas' : '';
+    pills.push(`<span class="${lockPillClass(row.lock_level)}" title="${esc(row.calendar_lock_detail || row.lock_class || '')}">${esc(row.lock_level)}${title}${when}${flag}</span>`);
   }
 
-  if (prevEv) {
-    const actVsEst = prevEv.actual ? `Act ${prevEv.actual}${prevEv.forecast ? ` vs ${prevEv.forecast}` : ''}` : 'Publicado';
-    pills.push(`<span class="cal-lock-pill post" title="Evento publicado hace ${prevEv.dtH.toFixed(1)}h: ${esc(prevEv.title)} (${esc(actVsEst)})">✓ POST-EVENTO · ${esc(prevEv.title.slice(0, 16))} (${esc(actVsEst)})</span>`);
-  } else if (row.post_event_status) {
+  if (prev) {
+    const ago = (nowMs - Date.parse(prev.e.event_at)) / 3_600_000;
+    const actVsEst = prev.e.actual ? `Act ${prev.e.actual}${prev.e.forecast ? ` vs ${prev.e.forecast}` : ''}` : 'Publicado';
+    pills.push(`<span class="cal-lock-pill post" title="Evento publicado hace ${ago.toFixed(1)}h: ${esc(prev.e.title)} (${esc(actVsEst)})">✓ POST-EVENTO · ${esc(String(prev.e.title).slice(0, 16))} (${esc(actVsEst)})</span>`);
+  } else if (row?.post_event_status) {
     pills.push(`<span class="cal-lock-pill post" title="${esc(row.post_event_status)}">✓ POST-EVENTO</span>`);
   }
   return pills.join('');
@@ -672,9 +691,13 @@ function renderCalendar() {
         : '';
     const vals = [actHtml, e.forecast && `<span>Est <b>${esc(e.forecast)}</b></span>`, e.previous && `<span>Prev <b>${esc(e.previous)}</b></span>`].filter(Boolean).join('');
     const impactLabel = { High: 'Alto', Medium: 'Medio', Low: 'Bajo', Holiday: 'Festivo' }[e.impact] || e.impact;
+    const lockInfo = classifyEventLock(e, now);
+    const lockMark = lockInfo.active
+      ? `<span class="${lockPillClass(lockInfo.lock_level)}">${esc(lockInfo.lock_level)}${lockInfo.retirar_limitadas ? ' · retirar limitadas' : ''}</span> `
+      : '';
     html += `<div class="ev ${e.impact} ${past ? 'past' : ''} ${nextHigh && e.id === nextHigh.id ? 'next' : ''}" data-ev="${esc(e.id)}" title="Impacto ${impactLabel}">
       <span class="t">${e.impact === 'Holiday' ? 'Día' : fmtTime(e.event_at)}</span><span class="cur">${e.currency}</span>
-      <div><div class="title">${esc(e.title)}</div>${vals ? `<div class="vals">${vals}</div>` : ''}</div>
+      <div><div class="title">${lockMark}${esc(e.title)}</div>${vals ? `<div class="vals">${vals}</div>` : ''}</div>
     </div>`;
   }
   const first = !el.dataset.rendered;

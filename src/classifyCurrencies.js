@@ -1,6 +1,7 @@
 import { rankRows, hasNoEvidence } from '../public/domain.js';
 import { CURRENCIES, WINDOWS, BIAS_THRESHOLD } from './config.js';
 import { isHistoricalCommemoration } from './enrich.js';
+import { LOCK_LEVEL_BY_CLASS, classifyEventLock, lockSeverityIndex } from './lockSeverity.js';
 
 const INVERTED = /unemployment|jobless|claims|paro|desempleo/i;
 const CPI = /\b(cpi|inflation|ipc|pce|ppi|lkh|teuerung|preisstabilität)\b/i;
@@ -157,13 +158,13 @@ INVARIANTES v4.0-G8
 2. Regla PMI < 50 e Índices AiG: Cualquier PMI (Manufacturing, Services, Composite, ISM, Caixin) con Actual < 50.0 está en CONTRACCIÓN. Prohibido etiquetarlo como "Dato real fuerte" o darle +14..+30 pts; máximo +5 pts como "Contracción menor a la previa (PMI < 50)" y 0 si coincide con índices industriales negativos (AiG < 0). Solo Actual >= 50.0 batiendo consenso activa Ficha A5.
 3. Los 5 Tipos de Inflación (Módulo 12 MMT): Inflación o precios ligados a energía (WTI, Brent, TTF), cadenas de suministro o aranceles comerciales (USMCA/Carney/Trump) = COST_PUSH / RIESGO EA-1 (STAG_TRAP), nunca soporte alcista lineal por tasas.
 4. Separación Fiscal (NFA / Déficit) vs Monetaria (QE/QT / Tasas): Noticias del Tesoro / Presupuesto (NZ Treasury, CAD Budget, DMO, US Treasury) = FLUJO_FISCAL_NFA (Fichas A12 / B10 / C3 / B1), separadas de decisiones de tipos de Bancos Centrales (Fichas A1 / B2).
-5. Mapeo a Matriz Macro v6.0 (ficha_v6) y Candado de Agenda ⚑BC <48h / ✓ POST-EVENTO.
+5. Mapeo a Matriz Macro v6.0 (ficha_v6) y candado de agenda por severidad (TOTAL > TIER1 > NO_AMPLIAR > AVISO) en 48 h; al publicarse, ✓ POST-EVENTO durante 24 h.
 
 INVARIANTES DE ESPECIFICACIÓN (se conservan)
 6. CPI/inflación ALTO con economía DÉBIL no es soporte: canal de precio relativo con techo 0 en ese catalizador.
 7. CPI NO es el motor único: empleo, PMI, ventas y política del banco central puntúan por sí mismos.
 8. Deduplicación por fingerprint canónico: una noticia repetida no suma dos veces.
-9. Prohibido "long", "short", "sesgo largo/corto" y "vía libre operativa": lenguaje de mesa Soporte / Presión / Neutral / N/D.`;
+9. Prohibido "long", "short", "sesgo largo/corto", "vía libre operativa", "compra", "vende", "subirá" y "bajará": lenguaje de mesa Soporte / Presión / Neutral / N/D.`;
 
 function relativePrice(surprise, w, regime, text) {
   if (COST_PUSH_ENERGY_RE.test(text) || COST_PUSH_TARIFF_RE.test(text)) {
@@ -677,69 +678,104 @@ export function classifyItemMmtV4(item) {
 }
 
 /**
- * Regla 4 v4.0-G8: Cruce automático con la columna izquierda (Agenda de la semana - 113 eventos)
- * para activar el Candado `⚑BC <48h (Candado CIRO)` y el sello `✓ POST-EVENTO`.
+ * Candado de agenda por severidad (v5.1 Parte B).
+ * Activo con 0 < horas ≤ 48. Al publicarse termina y queda ✓ POST-EVENTO 24 h.
+ * Por divisa, lock_level es el evento activo más severo.
  */
-const CB_HIGH_EVENT_RE = /\b(official bank rate|monetary policy|fomc|rate decision|rate statement|cash rate|interest rate|policy rate|policy assessment|mpc\b|press conference|projections|gov(?:ernor)?\s+\w+\s+speaks|president\s+\w+\s+speaks|bailey speaks|lagarde speaks|powell speaks|ueda speaks|bullock speaks|orr speaks|macklem speaks|schlegel speaks)\b/i;
+function emptyCalendarLock() {
+  return {
+    calendar_lock: null,
+    calendar_lock_detail: null,
+    post_event_status: null,
+    upcoming_48h: [],
+    recent_24h: [],
+    lock_level: 'NINGUNO',
+    lock_class: null,
+    lock_events: [],
+    retirar_limitadas: false,
+  };
+}
+
+function lockProps(info) {
+  return {
+    calendar_lock: info.calendar_lock,
+    calendar_lock_detail: info.calendar_lock_detail,
+    post_event_status: info.post_event_status,
+    lock_level: info.lock_level,
+    lock_class: info.lock_class,
+    lock_events: info.lock_events,
+    retirar_limitadas: info.retirar_limitadas,
+  };
+}
 
 export function computeCalendarLock(currency, calendarEvents = [], nowMs = Date.now()) {
-  if (!Array.isArray(calendarEvents) || !calendarEvents.length) {
-    return {
-      calendar_lock: null,
-      calendar_lock_detail: null,
-      post_event_status: null,
-      upcoming_48h: [],
-      recent_24h: [],
-    };
-  }
+  if (!Array.isArray(calendarEvents) || !calendarEvents.length) return emptyCalendarLock();
 
-  const ccyEvents = calendarEvents.filter((e) => e && e.currency === currency);
   const upcoming48h = [];
   const recent24h = [];
+  const lockEvents = [];
 
-  for (const e of ccyEvents) {
-    const evMs = Date.parse(e.event_at || '');
-    if (!Number.isFinite(evMs)) continue;
-    const diffMs = evMs - nowMs;
-    const isHigh = e.impact === 'High';
-    const isCb = CB_HIGH_EVENT_RE.test(e.title || '');
-    if (!isHigh && !isCb) continue;
+  for (const e of calendarEvents) {
+    if (!e || e.currency !== currency) continue;
+    const info = classifyEventLock(e, nowMs);
+    if (!info.lock_class || info.hours_until == null) continue;
+    const isCb = info.lock_class === 'DECISION_BC' || info.lock_class === 'DISCURSO';
 
-    if (diffMs > 0 && diffMs <= 48 * 3600_000) {
+    if (info.active) {
       upcoming48h.push({
         title: e.title,
         event_at: e.event_at,
         impact: e.impact,
         is_cb: isCb,
-        hours_until: Math.round((diffMs / 3600_000) * 10) / 10,
+        hours_until: info.hours_until,
         forecast: e.forecast || null,
         previous: e.previous || null,
+        lock_class: info.lock_class,
+        lock_level: info.lock_level,
+        retirar_limitadas: info.retirar_limitadas,
       });
-    } else if (diffMs <= 0 && diffMs >= -24 * 3600_000) {
+      lockEvents.push({
+        lock_class: info.lock_class,
+        title: e.title,
+        time: e.event_at,
+        hours_until: info.hours_until,
+        retirar_limitadas: info.retirar_limitadas,
+      });
+    } else if (info.in_post_window) {
+      const evMs = Date.parse(e.event_at);
       recent24h.push({
         title: e.title,
         event_at: e.event_at,
         impact: e.impact,
         is_cb: isCb,
-        hours_ago: Math.round((Math.abs(diffMs) / 3600_000) * 10) / 10,
+        hours_ago: Math.round((Math.abs(evMs - nowMs) / 3_600_000) * 10) / 10,
         actual: e.actual || null,
         forecast: e.forecast || null,
         previous: e.previous || null,
+        lock_class: info.lock_class,
       });
     }
   }
 
   upcoming48h.sort((a, b) => a.hours_until - b.hours_until);
   recent24h.sort((a, b) => a.hours_ago - b.hours_ago);
+  lockEvents.sort((a, b) => a.hours_until - b.hours_until || String(a.title).localeCompare(String(b.title)));
 
-  // Priorizar eventos de Banco Central o High Impact en las próximas 48h para el Candado CIRO
-  const nextCbOrHigh = upcoming48h.find((e) => e.is_cb) || upcoming48h[0] || null;
+  let best = null;
+  for (const ev of lockEvents) {
+    const level = LOCK_LEVEL_BY_CLASS[ev.lock_class];
+    const candidate = { ...ev, lock_level: level };
+    if (!best) {
+      best = candidate;
+      continue;
+    }
+    const stricter = lockSeverityIndex(level) < lockSeverityIndex(best.lock_level);
+    const sameAndSooner = level === best.lock_level && ev.hours_until < best.hours_until;
+    if (stricter || sameAndSooner) best = candidate;
+  }
+
   const lastPublished = recent24h.find((e) => e.actual != null) || recent24h[0] || null;
-
-  let calendarLock = null;
-  let calendarLockDetail = null;
   let postEventStatus = null;
-
   if (lastPublished) {
     const actTxt = lastPublished.actual
       ? `Act ${lastPublished.actual}${lastPublished.forecast ? ` vs Est ${lastPublished.forecast}` : lastPublished.previous ? ` vs Prev ${lastPublished.previous}` : ''}`
@@ -747,9 +783,12 @@ export function computeCalendarLock(currency, calendarEvents = [], nowMs = Date.
     postEventStatus = `✓ POST-EVENTO (${lastPublished.title}: ${actTxt})`;
   }
 
-  if (nextCbOrHigh) {
-    calendarLock = '⚑BC <48h (Candado CIRO)';
-    calendarLockDetail = `${nextCbOrHigh.title} en ${nextCbOrHigh.hours_until}h`;
+  const retirar = lockEvents.some((ev) => ev.retirar_limitadas);
+  let calendarLock = null;
+  let calendarLockDetail = null;
+  if (best) {
+    calendarLock = best.lock_level;
+    calendarLockDetail = `${best.lock_class} · ${best.title} en ${best.hours_until}h${retirar ? ' · retirar limitadas' : ''}`;
   } else if (postEventStatus) {
     calendarLock = '✓ POST-EVENTO';
     calendarLockDetail = postEventStatus;
@@ -761,6 +800,10 @@ export function computeCalendarLock(currency, calendarEvents = [], nowMs = Date.
     post_event_status: postEventStatus,
     upcoming_48h: upcoming48h,
     recent_24h: recent24h,
+    lock_level: best ? best.lock_level : 'NINGUNO',
+    lock_class: best ? best.lock_class : null,
+    lock_events: lockEvents,
+    retirar_limitadas: retirar,
   };
 }
 
@@ -882,9 +925,7 @@ export function classifyAgent(items, now = Date.now(), calendarEvents = []) {
         bias: 'neutral',
         ficha_v6: 'A12 / B10 / C3',
         sovereignty_mmt: sovereigntyMmt,
-        calendar_lock: calLockInfo.calendar_lock,
-        calendar_lock_detail: calLockInfo.calendar_lock_detail,
-        post_event_status: calLockInfo.post_event_status,
+        ...lockProps(calLockInfo),
         drivers: ['Sin catalizadores en el ciclo'],
         rationale: `Sin catalizadores claros en 0 titulares recientes · ${sovereigntyMmt}.`,
         regime_note: '',
@@ -966,9 +1007,7 @@ export function classifyAgent(items, now = Date.now(), calendarEvents = []) {
         bias: 'neutral',
         ficha_v6: fichaV6,
         sovereignty_mmt: effectiveSov,
-        calendar_lock: calLockInfo.calendar_lock,
-        calendar_lock_detail: calLockInfo.calendar_lock_detail,
-        post_event_status: calLockInfo.post_event_status,
+        ...lockProps(calLockInfo),
         drivers: (fallback.length ? fallback : ['Sin catalizadores en el ciclo']).slice(0, 3),
         rationale: `${recent.length === 1 ? '1 titular' : `${recent.length} titulares`} · Ficha ${fichaV6} · ${effectiveSov} · Neutral.`,
         regime_note: '',
@@ -993,9 +1032,7 @@ export function classifyAgent(items, now = Date.now(), calendarEvents = []) {
       bias: biasFor(score),
       ficha_v6: fichaV6,
       sovereignty_mmt: effectiveSov,
-      calendar_lock: calLockInfo.calendar_lock,
-      calendar_lock_detail: calLockInfo.calendar_lock_detail,
-      post_event_status: calLockInfo.post_event_status,
+      ...lockProps(calLockInfo),
       drivers,
       rationale,
       regime_note: '',
