@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T06:55:22.398Z",
-  "started_at": "2026-11-10T06:55:19.578Z",
+  "generated_at": "2026-11-10T07:00:27.041Z",
+  "started_at": "2026-11-10T07:00:24.112Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -30,11 +30,30 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "20 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +42 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "21 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +42 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "GBP",
+      "rank": 2,
+      "score": 23,
+      "bias": "alcista",
+      "structural": 23,
+      "impulse": 10,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 1.5h",
+      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "Ventas al por menor fuertes"
+      ],
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + DATA_REAL · Est +23 | Imp 3h +10. Régimen real mixed."
     },
     {
       "currency": "CHF",
-      "rank": 2,
+      "rank": 3,
       "score": 21,
       "bias": "alcista",
       "structural": 21,
@@ -49,29 +68,29 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "EUR",
-      "rank": 3,
+      "rank": 4,
       "score": 14,
       "bias": "alcista",
       "structural": 14,
-      "impulse": 12,
+      "impulse": 11,
       "ficha_v6": "A5",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 25.3h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 25.2h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Mercado laboral firme (Pleno Empleo)"
       ],
-      "rationale": "11 titulares · Ficha A5 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est +14 | Imp 3h +12. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A5 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est +14 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "USD",
-      "rank": 4,
+      "rank": 5,
       "score": 4,
       "bias": "neutral",
       "structural": 4,
@@ -79,7 +98,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 2.1h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 2h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -87,26 +106,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t"
       ],
-      "rationale": "27 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +4 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "GBP",
-      "rank": 5,
-      "score": -1,
-      "bias": "neutral",
-      "structural": -1,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 1.6h",
-      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Dato real suave: UK BRC RETAIL SALES YOY ACTUAL 1.1% (FORECAST 1.2%, PREVI",
-        "Ventas al por menor fuertes"
-      ],
-      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est -1 | Imp 3h n/d. Régimen real weak."
+      "rationale": "28 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +4 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -164,7 +164,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar"
       ],
-      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -54 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -54 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -204,11 +204,30 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "20 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +42 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "21 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +42 | Imp 3h n/d. Régimen real mixed."
+    },
+    {
+      "currency": "GBP",
+      "rank": 2,
+      "score": 23,
+      "bias": "alcista",
+      "structural": 23,
+      "impulse": 10,
+      "ficha_v6": "A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 1.5h",
+      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "Repricing hawkish BC (Ficha A1)",
+        "Ventas al por menor fuertes"
+      ],
+      "rationale": "12 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · POLICY_PRICE + DATA_REAL · Est +23 | Imp 3h +10. Régimen real mixed."
     },
     {
       "currency": "CHF",
-      "rank": 2,
+      "rank": 3,
       "score": 21,
       "bias": "alcista",
       "structural": 21,
@@ -223,29 +242,29 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP)"
       ],
-      "rationale": "12 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est +21 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "EUR",
-      "rank": 3,
+      "rank": 4,
       "score": 14,
       "bias": "alcista",
       "structural": 14,
-      "impulse": 12,
+      "impulse": 11,
       "ficha_v6": "A5",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 25.3h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 25.2h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
         "Mercado laboral firme (Pleno Empleo)"
       ],
-      "rationale": "11 titulares · Ficha A5 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est +14 | Imp 3h +12. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A5 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est +14 | Imp 3h +11. Régimen real mixed."
     },
     {
       "currency": "USD",
-      "rank": 4,
+      "rank": 5,
       "score": 4,
       "bias": "neutral",
       "structural": 4,
@@ -253,7 +272,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 2.1h",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 2h",
       "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -261,26 +280,7 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t"
       ],
-      "rationale": "27 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +4 | Imp 3h n/d. Régimen real mixed."
-    },
-    {
-      "currency": "GBP",
-      "rank": 5,
-      "score": -1,
-      "bias": "neutral",
-      "structural": -1,
-      "impulse": null,
-      "ficha_v6": "B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 1.6h",
-      "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Dato real suave: UK BRC RETAIL SALES YOY ACTUAL 1.1% (FORECAST 1.2%, PREVI",
-        "Ventas al por menor fuertes"
-      ],
-      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · DATA_REAL · Est -1 | Imp 3h n/d. Régimen real weak."
+      "rationale": "28 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +4 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -338,7 +338,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar"
       ],
-      "rationale": "16 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -54 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "17 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -54 | Imp 3h n/d. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -351,7 +351,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -23.9,
+      "hours_from_now": -24,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -363,7 +363,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -21.4,
+      "hours_from_now": -21.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -375,7 +375,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -20.7,
+      "hours_from_now": -20.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -387,7 +387,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -20.7,
+      "hours_from_now": -20.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -411,7 +411,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -15.9,
+      "hours_from_now": -16,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -423,7 +423,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15.9,
+      "hours_from_now": -16,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -435,7 +435,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.7,
+      "hours_from_now": -13.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -447,7 +447,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.5,
+      "hours_from_now": -13.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -459,7 +459,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -7.4,
+      "hours_from_now": -7.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -471,7 +471,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -7.4,
+      "hours_from_now": -7.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -483,7 +483,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -7.1,
+      "hours_from_now": -7.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -495,7 +495,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -7.1,
+      "hours_from_now": -7.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -507,7 +507,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -7.1,
+      "hours_from_now": -7.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -519,7 +519,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -6.9,
+      "hours_from_now": -7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -531,7 +531,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -6.4,
+      "hours_from_now": -6.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -543,7 +543,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -3.3,
+      "hours_from_now": -3.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -555,7 +555,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -1.9,
+      "hours_from_now": -2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -567,7 +567,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -579,7 +579,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.1,
+      "hours_from_now": 2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -591,7 +591,7 @@
       "actual": null,
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": 4.1,
+      "hours_from_now": 4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -603,7 +603,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 4.6,
+      "hours_from_now": 4.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -615,7 +615,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 5.6,
+      "hours_from_now": 5.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -627,7 +627,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.3,
+      "hours_from_now": 6.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -639,7 +639,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 6.6,
+      "hours_from_now": 6.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -651,7 +651,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 6.6,
+      "hours_from_now": 6.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -663,7 +663,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 8.9,
+      "hours_from_now": 8.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -675,7 +675,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 11.1,
+      "hours_from_now": 11,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -687,7 +687,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.6,
+      "hours_from_now": 11.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -699,7 +699,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.6,
+      "hours_from_now": 11.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -711,7 +711,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.6,
+      "hours_from_now": 11.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -723,7 +723,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13.6,
+      "hours_from_now": 13.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -735,7 +735,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -747,7 +747,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.6,
+      "hours_from_now": 16.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -759,7 +759,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.6,
+      "hours_from_now": 16.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -771,7 +771,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 16.9,
+      "hours_from_now": 16.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -783,7 +783,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 23.1,
+      "hours_from_now": 23,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -795,7 +795,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 24.1,
+      "hours_from_now": 24,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -807,7 +807,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 24.1,
+      "hours_from_now": 24,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -819,7 +819,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.3,
+      "hours_from_now": 25.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -831,7 +831,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 26.1,
+      "hours_from_now": 26,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -843,7 +843,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 26.8,
+      "hours_from_now": 26.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -867,7 +867,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30.1,
+      "hours_from_now": 30,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -879,7 +879,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 30.1,
+      "hours_from_now": 30,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -891,7 +891,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 38.8,
+      "hours_from_now": 38.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -903,7 +903,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 40.9,
+      "hours_from_now": 40.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -915,7 +915,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 41.1,
+      "hours_from_now": 41,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -927,7 +927,103 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 41.1,
+      "hours_from_now": 41,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "99b8c664ab7d08b2",
+      "currency": "GBP",
+      "title": "GDP m/m",
+      "event_at": "2026-11-12T07:00:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": "0.0%",
+      "previous": "0.1%",
+      "hours_from_now": 48,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "6d7babe613583af6",
+      "currency": "GBP",
+      "title": "Prelim GDP q/q",
+      "event_at": "2026-11-12T07:00:00.000Z",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": "0.7%",
+      "previous": "0.5%",
+      "hours_from_now": 48,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "086a1ae951e64f23",
+      "currency": "GBP",
+      "title": "Construction Output m/m",
+      "event_at": "2026-11-12T07:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "0.0%",
+      "previous": "-0.2%",
+      "hours_from_now": 48,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "bd57f3f4417c282f",
+      "currency": "GBP",
+      "title": "Goods Trade Balance",
+      "event_at": "2026-11-12T07:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "-19.2B",
+      "previous": "-18.0B",
+      "hours_from_now": 48,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "5c9a8cf5082cb64b",
+      "currency": "GBP",
+      "title": "Index of Services 3m/3m",
+      "event_at": "2026-11-12T07:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "0.9%",
+      "previous": "0.9%",
+      "hours_from_now": 48,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "ad72bc7bbbabf108",
+      "currency": "GBP",
+      "title": "Industrial Production m/m",
+      "event_at": "2026-11-12T07:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "-0.4%",
+      "previous": "0.8%",
+      "hours_from_now": 48,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "5a3e56d9f39fcdaa",
+      "currency": "GBP",
+      "title": "Manufacturing Production m/m",
+      "event_at": "2026-11-12T07:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "-0.5%",
+      "previous": "1.2%",
+      "hours_from_now": 48,
+      "window_status": "⚑BC <48h (Candado CIRO)"
+    },
+    {
+      "id": "685e58d313d72337",
+      "currency": "GBP",
+      "title": "Prelim Business Investment q/q",
+      "event_at": "2026-11-12T07:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "0.4%",
+      "previous": "1.7%",
+      "hours_from_now": 48,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -943,6 +1039,125 @@
   },
   "items": [
     {
+      "id": "8f10d11ce4d79ef03fc7d37ecad99c6ff1a7aced65e051f70ed452694198f31a",
+      "sha256": "8f10d11ce4d79ef03fc7d37ecad99c6ff1a7aced65e051f70ed452694198f31a",
+      "title": "Adnoc CFO: Made no decisions on alternative LNG export facilities.",
+      "url": "https://t.me/FinancialJuice/145909",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:56:41.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e9d47b343dae552c05a86210be21b3bf5ab0d66eda1337f805216bf4a67e3c42",
+      "sha256": "e9d47b343dae552c05a86210be21b3bf5ab0d66eda1337f805216bf4a67e3c42",
+      "title": "Adnoc CFO:s LNG exports through Strait of Hormuz remain below preconflict level.",
+      "url": "https://t.me/FinancialJuice/145908",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:56:28.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "21329dfdb897c51534b64ef6684b106ab9e6d8adcc5f96689115caf9ac425b1f",
+      "sha256": "21329dfdb897c51534b64ef6684b106ab9e6d8adcc5f96689115caf9ac425b1f",
+      "title": "Adnoc CFO: Seeing month-by-month improvement in LNG cargoes exiting Strait.",
+      "url": "https://t.me/FinancialJuice/145907",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:56:01.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "68d5cfc85d36f32236f7fa021aaef33e1a7b6d636cd4a2f43a39d97af2647a88",
+      "sha256": "68d5cfc85d36f32236f7fa021aaef33e1a7b6d636cd4a2f43a39d97af2647a88",
+      "title": "ECB's Moulin: We see positive signs on energy prices.",
+      "url": "https://t.me/FinancialJuice/145906",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:55:05.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e2437976c7a3e8b7deb5d2c642d2b7cfdcb234b6566afba352660b4edad412dd",
       "sha256": "e2437976c7a3e8b7deb5d2c642d2b7cfdcb234b6566afba352660b4edad412dd",
       "title": "France's Foreign Minister: Europeans will be in the room for the Ukraine-Russia talks in Abu Dhabi.",
@@ -2563,6 +2778,39 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3f8bccd2048468c1b81956161b5d1c37cec66eb4a79c81d8c754b4138660b450",
+      "sha256": "3f8bccd2048468c1b81956161b5d1c37cec66eb4a79c81d8c754b4138660b450",
+      "title": "GDP monthly estimate, UK: December 2027 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4yTm4wR1BxZVdmSzNFTnNRUy1CNGxXbU9xSkZ6ZUpDT3pUbG5sSWNfWDl6LTExd2hrb0pGOGFFUk5ENUh0Z2pwREIzZEp4dWhaMTNnU0M5Y1RUTXVQR1VKUnAtYzJmV3k3Vnhnam4xZVpidw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:45:26.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7833,149 +8081,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6dbabd4c9346e20935f8bdf0b857629cd32d34a7e7b3003a99e958299b7a2312",
-      "sha256": "6dbabd4c9346e20935f8bdf0b857629cd32d34a7e7b3003a99e958299b7a2312",
-      "title": "Ny fed october survey shows 1.3 and 5 year inflation expectations unchanged",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T16:25:38.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ddd41f1d3c899bc12ffa9308ad596aea8306d6c005e19d69f64c23112ad97a99",
-      "sha256": "ddd41f1d3c899bc12ffa9308ad596aea8306d6c005e19d69f64c23112ad97a99",
-      "title": "China is willing to deepen economic, trade cooperation with Canada",
-      "url": "https://t.me/FinancialJuice/145714",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:23:38.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5e694c83a063491e481585f09d453925b97ae6da27725f03c4e6d0d3506fbce4",
-      "sha256": "5e694c83a063491e481585f09d453925b97ae6da27725f03c4e6d0d3506fbce4",
-      "title": "Fund manager Nick Train has best month since 2000 on back of AI sell-off",
-      "url": "https://www.ft.com/content/e3a7d3b9-5391-4f2d-a12a-2b252a18b73a?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T16:21:23.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e2c1eb3339de109990cb1816d520797134973eea5ebc008d3928cb148a262046",
-      "sha256": "e2c1eb3339de109990cb1816d520797134973eea5ebc008d3928cb148a262046",
-      "title": "Fund manager Nick Train has best month since 2000 on back of AI market rout",
-      "url": "https://www.ft.com/content/e3a7d3b9-5391-4f2d-a12a-2b252a18b73a?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T16:21:23.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1ab13b3f88dd45feb25a047748032a2ae642ad51bceb8502fa9db023a6a68ed8",
-      "sha256": "1ab13b3f88dd45feb25a047748032a2ae642ad51bceb8502fa9db023a6a68ed8",
-      "title": "Fed bids for 6-Month bills total $5.5 bln",
-      "url": "https://t.me/FinancialJuice/145713",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:16:22.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7985,6 +8090,125 @@
   ],
   "news": [
     {
+      "id": "8f10d11ce4d79ef03fc7d37ecad99c6ff1a7aced65e051f70ed452694198f31a",
+      "sha256": "8f10d11ce4d79ef03fc7d37ecad99c6ff1a7aced65e051f70ed452694198f31a",
+      "title": "Adnoc CFO: Made no decisions on alternative LNG export facilities.",
+      "url": "https://t.me/FinancialJuice/145909",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:56:41.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e9d47b343dae552c05a86210be21b3bf5ab0d66eda1337f805216bf4a67e3c42",
+      "sha256": "e9d47b343dae552c05a86210be21b3bf5ab0d66eda1337f805216bf4a67e3c42",
+      "title": "Adnoc CFO:s LNG exports through Strait of Hormuz remain below preconflict level.",
+      "url": "https://t.me/FinancialJuice/145908",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:56:28.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "21329dfdb897c51534b64ef6684b106ab9e6d8adcc5f96689115caf9ac425b1f",
+      "sha256": "21329dfdb897c51534b64ef6684b106ab9e6d8adcc5f96689115caf9ac425b1f",
+      "title": "Adnoc CFO: Seeing month-by-month improvement in LNG cargoes exiting Strait.",
+      "url": "https://t.me/FinancialJuice/145907",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:56:01.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "68d5cfc85d36f32236f7fa021aaef33e1a7b6d636cd4a2f43a39d97af2647a88",
+      "sha256": "68d5cfc85d36f32236f7fa021aaef33e1a7b6d636cd4a2f43a39d97af2647a88",
+      "title": "ECB's Moulin: We see positive signs on energy prices.",
+      "url": "https://t.me/FinancialJuice/145906",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T06:55:05.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e2437976c7a3e8b7deb5d2c642d2b7cfdcb234b6566afba352660b4edad412dd",
       "sha256": "e2437976c7a3e8b7deb5d2c642d2b7cfdcb234b6566afba352660b4edad412dd",
       "title": "France's Foreign Minister: Europeans will be in the room for the Ukraine-Russia talks in Abu Dhabi.",
@@ -9605,6 +9829,39 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3f8bccd2048468c1b81956161b5d1c37cec66eb4a79c81d8c754b4138660b450",
+      "sha256": "3f8bccd2048468c1b81956161b5d1c37cec66eb4a79c81d8c754b4138660b450",
+      "title": "GDP monthly estimate, UK: December 2027 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4yTm4wR1BxZVdmSzNFTnNRUy1CNGxXbU9xSkZ6ZUpDT3pUbG5sSWNfWDl6LTExd2hrb0pGOGFFUk5ENUh0Z2pwREIzZEp4dWhaMTNnU0M5Y1RUTXVQR1VKUnAtYzJmV3k3Vnhnam4xZVpidw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:45:26.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -14875,149 +15132,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6dbabd4c9346e20935f8bdf0b857629cd32d34a7e7b3003a99e958299b7a2312",
-      "sha256": "6dbabd4c9346e20935f8bdf0b857629cd32d34a7e7b3003a99e958299b7a2312",
-      "title": "Ny fed october survey shows 1.3 and 5 year inflation expectations unchanged",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T16:25:38.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ddd41f1d3c899bc12ffa9308ad596aea8306d6c005e19d69f64c23112ad97a99",
-      "sha256": "ddd41f1d3c899bc12ffa9308ad596aea8306d6c005e19d69f64c23112ad97a99",
-      "title": "China is willing to deepen economic, trade cooperation with Canada",
-      "url": "https://t.me/FinancialJuice/145714",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:23:38.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5e694c83a063491e481585f09d453925b97ae6da27725f03c4e6d0d3506fbce4",
-      "sha256": "5e694c83a063491e481585f09d453925b97ae6da27725f03c4e6d0d3506fbce4",
-      "title": "Fund manager Nick Train has best month since 2000 on back of AI sell-off",
-      "url": "https://www.ft.com/content/e3a7d3b9-5391-4f2d-a12a-2b252a18b73a?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T16:21:23.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e2c1eb3339de109990cb1816d520797134973eea5ebc008d3928cb148a262046",
-      "sha256": "e2c1eb3339de109990cb1816d520797134973eea5ebc008d3928cb148a262046",
-      "title": "Fund manager Nick Train has best month since 2000 on back of AI market rout",
-      "url": "https://www.ft.com/content/e3a7d3b9-5391-4f2d-a12a-2b252a18b73a?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T16:21:23.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1ab13b3f88dd45feb25a047748032a2ae642ad51bceb8502fa9db023a6a68ed8",
-      "sha256": "1ab13b3f88dd45feb25a047748032a2ae642ad51bceb8502fa9db023a6a68ed8",
-      "title": "Fed bids for 6-Month bills total $5.5 bln",
-      "url": "https://t.me/FinancialJuice/145713",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T16:16:22.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
