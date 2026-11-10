@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T02:34:38.648Z",
-  "started_at": "2026-11-10T02:34:35.672Z",
+  "generated_at": "2026-11-10T02:39:43.782Z",
+  "started_at": "2026-11-10T02:39:40.516Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -37,7 +37,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 8,
+      "impulse": 7,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -47,31 +47,11 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +8. Régimen real mixed."
-    },
-    {
-      "currency": "USD",
-      "rank": 3,
-      "score": 10,
-      "bias": "neutral",
-      "structural": 10,
-      "impulse": 8,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 6.4h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar"
-      ],
-      "rationale": "30 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +10 | Imp 3h +8. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +7. Régimen real mixed."
     },
     {
       "currency": "EUR",
-      "rank": 4,
+      "rank": 3,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -79,7 +59,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 29.7h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 29.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -88,6 +68,26 @@
         "French Foreign Minister Barrot: There will be EU sanctions against Iran."
       ],
       "rationale": "11 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 3,
+      "score": 0,
+      "bias": "neutral",
+      "structural": 0,
+      "impulse": -2,
+      "ficha_v6": "A12 / B10 / C3",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 6.3h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "FLUJO_FISCAL_NFA: Drenaje fiscal / superávit",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t"
+      ],
+      "rationale": "30 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA + RISK_GEO + TRADE_EXTERNAL · Est +0 | Imp 3h -2. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -99,7 +99,7 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 5.9h",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 5.8h",
       "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -114,7 +114,7 @@
       "score": -14,
       "bias": "bajista",
       "structural": -14,
-      "impulse": -11,
+      "impulse": -10,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -126,7 +126,7 @@
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONFIDENCE ACTUAL -15 (FORECAST -",
         "Dato real fuerte: AUSTRALIAN CONSUMER SENTIMENT ACTUAL -2.7% (FORECAST -, "
       ],
-      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -14 | Imp 3h -11. Régimen real mixed."
+      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -14 | Imp 3h -10. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -153,7 +153,7 @@
       "score": -59,
       "bias": "bajista",
       "structural": -59,
-      "impulse": -8,
+      "impulse": -7,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -165,7 +165,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -8. Régimen real mixed."
+      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -7. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -212,7 +212,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 8,
+      "impulse": 7,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -222,31 +222,11 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +8. Régimen real mixed."
-    },
-    {
-      "currency": "USD",
-      "rank": 3,
-      "score": 10,
-      "bias": "neutral",
-      "structural": 10,
-      "impulse": 8,
-      "ficha_v6": "A6 / B5 / B15",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Waller Speaks en 6.4h",
-      "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
-      "no_evidence": false,
-      "drivers": [
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar"
-      ],
-      "rationale": "30 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + TRADE_EXTERNAL + FISCAL_NFA · Est +10 | Imp 3h +8. Régimen real mixed."
+      "rationale": "13 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +7. Régimen real mixed."
     },
     {
       "currency": "EUR",
-      "rank": 4,
+      "rank": 3,
       "score": 0,
       "bias": "neutral",
       "structural": 0,
@@ -254,7 +234,7 @@
       "ficha_v6": "A12 / B10 / C3",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 29.7h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 29.6h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -263,6 +243,26 @@
         "French Foreign Minister Barrot: There will be EU sanctions against Iran."
       ],
       "rationale": "11 titulares · Ficha A12 / B10 / C3 (USUARIO_MONEDA) · ⚑BC <48h (Candado CIRO) · CONTEXTO_GENERAL · Est +0 | Imp 3h n/d · evidencia débil. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 3,
+      "score": 0,
+      "bias": "neutral",
+      "structural": 0,
+      "impulse": -2,
+      "ficha_v6": "A12 / B10 / C3",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Waller Speaks en 6.3h",
+      "post_event_status": "✓ POST-EVENTO (FOMC Member Barkin Speaks: Publicado)",
+      "no_evidence": false,
+      "drivers": [
+        "FLUJO_FISCAL_NFA: Drenaje fiscal / superávit",
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's Finance Minister: Granting t"
+      ],
+      "rationale": "30 titulares · Ficha A12 / B10 / C3 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA + RISK_GEO + TRADE_EXTERNAL · Est +0 | Imp 3h -2. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -274,7 +274,7 @@
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Breeden Speaks en 5.9h",
+      "calendar_lock_detail": "MPC Member Breeden Speaks en 5.8h",
       "post_event_status": "✓ POST-EVENTO (BOE Gov Bailey Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -289,7 +289,7 @@
       "score": -14,
       "bias": "bajista",
       "structural": -14,
-      "impulse": -11,
+      "impulse": -10,
       "ficha_v6": "B2",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -301,7 +301,7 @@
         "Dato real suave: AUSTRALIAN NAB BUSINESS CONFIDENCE ACTUAL -15 (FORECAST -",
         "Dato real fuerte: AUSTRALIAN CONSUMER SENTIMENT ACTUAL -2.7% (FORECAST -, "
       ],
-      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -14 | Imp 3h -11. Régimen real mixed."
+      "rationale": "12 titulares · Ficha B2 (SOBERANO_EMISOR) · DATA_REAL · Est -14 | Imp 3h -10. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -328,7 +328,7 @@
       "score": -59,
       "bias": "bajista",
       "structural": -59,
-      "impulse": -8,
+      "impulse": -7,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -340,7 +340,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's finance minister: Canada tar",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada Finance Minister: Canada modif"
       ],
-      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -8. Régimen real mixed."
+      "rationale": "19 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -59 | Imp 3h -7. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -353,7 +353,7 @@
       "actual": null,
       "forecast": "116.7%",
       "previous": "118.0%",
-      "hours_from_now": -21.6,
+      "hours_from_now": -21.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -365,7 +365,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -19.6,
+      "hours_from_now": -19.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -377,7 +377,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -17.1,
+      "hours_from_now": -17.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -389,7 +389,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.3,
+      "hours_from_now": -16.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -401,7 +401,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.3,
+      "hours_from_now": -16.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -413,7 +413,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -12.9,
+      "hours_from_now": -13,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -425,7 +425,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -11.6,
+      "hours_from_now": -11.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -437,7 +437,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -11.6,
+      "hours_from_now": -11.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -449,7 +449,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.3,
+      "hours_from_now": -9.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -473,7 +473,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -3.1,
+      "hours_from_now": -3.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -485,7 +485,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -3.1,
+      "hours_from_now": -3.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -497,7 +497,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -2.7,
+      "hours_from_now": -2.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -509,7 +509,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -2.7,
+      "hours_from_now": -2.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -521,7 +521,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -2.7,
+      "hours_from_now": -2.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -545,7 +545,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -2.1,
+      "hours_from_now": -2.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -557,7 +557,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": 1,
+      "hours_from_now": 0.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -569,7 +569,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": 2.4,
+      "hours_from_now": 2.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -581,7 +581,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 5.9,
+      "hours_from_now": 5.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -593,7 +593,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.4,
+      "hours_from_now": 6.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -605,7 +605,7 @@
       "actual": null,
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": 8.4,
+      "hours_from_now": 8.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -617,7 +617,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": 9,
+      "hours_from_now": 8.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -629,7 +629,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.9,
+      "hours_from_now": 9.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -641,7 +641,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 10.7,
+      "hours_from_now": 10.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -653,7 +653,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 10.9,
+      "hours_from_now": 10.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -665,7 +665,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": 10.9,
+      "hours_from_now": 10.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -677,7 +677,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13.3,
+      "hours_from_now": 13.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -701,7 +701,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.9,
+      "hours_from_now": 15.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -713,7 +713,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.9,
+      "hours_from_now": 15.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -725,7 +725,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.9,
+      "hours_from_now": 15.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -737,7 +737,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.9,
+      "hours_from_now": 17.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -749,7 +749,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.9,
+      "hours_from_now": 18.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -761,7 +761,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20.9,
+      "hours_from_now": 20.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -773,7 +773,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20.9,
+      "hours_from_now": 20.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -785,7 +785,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 21.3,
+      "hours_from_now": 21.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -797,7 +797,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 27.4,
+      "hours_from_now": 27.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -809,7 +809,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 28.4,
+      "hours_from_now": 28.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -833,7 +833,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 29.7,
+      "hours_from_now": 29.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -845,7 +845,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 30.4,
+      "hours_from_now": 30.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -857,7 +857,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.2,
+      "hours_from_now": 31.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -869,7 +869,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 32,
+      "hours_from_now": 31.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -881,7 +881,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 34.4,
+      "hours_from_now": 34.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -893,7 +893,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 34.4,
+      "hours_from_now": 34.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -905,7 +905,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 43.2,
+      "hours_from_now": 43.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -917,7 +917,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 45.3,
+      "hours_from_now": 45.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -929,7 +929,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 45.4,
+      "hours_from_now": 45.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -957,6 +957,323 @@
   },
   "items": [
     {
+      "id": "d097b5ce72f4e5cd5b7a76f39ebf595717f26fca481fb2df488f2e03f8902ccc",
+      "sha256": "d097b5ce72f4e5cd5b7a76f39ebf595717f26fca481fb2df488f2e03f8902ccc",
+      "title": "China October natural gas imports 10.01 mln tonnes vs 10.86 mln tonnes in September: customs",
+      "url": "https://t.me/FinancialJuice/145899",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:36:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "10.86",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b00ff4aa32f363aabe892bd58eeafd1e013faada20d481b43cb94adee993afe4",
+      "sha256": "b00ff4aa32f363aabe892bd58eeafd1e013faada20d481b43cb94adee993afe4",
+      "title": "China jan-oct unwrought copper and copper products imports total 4,211,000 tonnes, vs 4,456,000 tonnes a year earlier: customs",
+      "url": "https://t.me/FinancialJuice/145898",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:57.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "4,456,000",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2fe7580233f554f235893ef0b6a05363ca766a4a6e450a382eb94331cf98edc3",
+      "sha256": "2fe7580233f554f235893ef0b6a05363ca766a4a6e450a382eb94331cf98edc3",
+      "title": "China jan-oct natural gas shipments 99.22 mln tonnes vs 102.09 mln tonnes yr earlier: customs",
+      "url": "https://t.me/FinancialJuice/145897",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:55.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "102.09",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "60eda0d1395884b6be7abe7f85a3fa6dc291c3ed0c493dff5725ddf482d57ff2",
+      "sha256": "60eda0d1395884b6be7abe7f85a3fa6dc291c3ed0c493dff5725ddf482d57ff2",
+      "title": "China October unwrought copper and copper products imports 453,000 tonnes, vs 461,000 tonnes in September: customs",
+      "url": "https://t.me/FinancialJuice/145896",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:54.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "461,000",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f33476142e262f957a0ca6a59d6828f37e6bccea5756630386e47fe392907a8a",
+      "sha256": "f33476142e262f957a0ca6a59d6828f37e6bccea5756630386e47fe392907a8a",
+      "title": "China jan-oct crude oil imports 399.90 mln tonnes vs 470.94 mln tonnes yr earlier: customs",
+      "url": "https://t.me/FinancialJuice/145895",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:41.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "470.94",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "694ec36d7cd79b8547b03972dcc96734007fa3b67e42af1735e111cfc80eed7a",
+      "sha256": "694ec36d7cd79b8547b03972dcc96734007fa3b67e42af1735e111cfc80eed7a",
+      "title": "China Jan-Oct rare earth shipments 48,097.2 tonnes vs 52,699.1 tonnes year earlier: customs",
+      "url": "https://t.me/FinancialJuice/145893",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:37.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "52,699.1",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "04064061ec6da77fdaffb20a2f735300ee99cbdc0d9dbddc48f63795713ac6b2",
+      "sha256": "04064061ec6da77fdaffb20a2f735300ee99cbdc0d9dbddc48f63795713ac6b2",
+      "title": "China jan-oct unwrought aluminium and aluminium product exports total 5,914,000 tonnes vs 5,020,000 tonnes yr earlier - customs",
+      "url": "https://t.me/FinancialJuice/145894",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:37.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "5,020,000",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "03be37972c6ef1c08bdf1650a7bf1306b2170022c483403024262ded08487ab3",
+      "sha256": "03be37972c6ef1c08bdf1650a7bf1306b2170022c483403024262ded08487ab3",
+      "title": "China October crude oil imports 41.94 million tonnes vs 37.10 million tonnes in September: customs",
+      "url": "https://t.me/FinancialJuice/145892",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:33.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "37.10",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e8a832e3a73da324ecd1cb3b1d89832efdf9411326981ae00760e1e95a46e8f7",
+      "sha256": "e8a832e3a73da324ecd1cb3b1d89832efdf9411326981ae00760e1e95a46e8f7",
+      "title": "China October oil product imports 3.15 mln tonnes vs 1.85 mln tonnes in September: customs",
+      "url": "https://t.me/FinancialJuice/145891",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "1.85",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d1841a9941d358a73f994aecc4599eaf0dcc3626c35cec35160d2d9cd84f0f05",
+      "sha256": "d1841a9941d358a73f994aecc4599eaf0dcc3626c35cec35160d2d9cd84f0f05",
+      "title": "China October rare earth shipments 4,386 tonnes vs 4,269.8 tonnes in September - customs",
+      "url": "https://t.me/FinancialJuice/145890",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:27.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "4,269.8",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c0ed2c417e003ff9611bac593d77e4c716f9393ed93673e6730784fa7e827f05",
+      "sha256": "c0ed2c417e003ff9611bac593d77e4c716f9393ed93673e6730784fa7e827f05",
+      "title": "China jan-oct oil product imports at 27.15 million tonnes vs 34.19 million tonnes year earlier: customs",
+      "url": "https://t.me/FinancialJuice/145889",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:23.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "34.19",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a57419ee009de11bddbf984ea41bec7d84ce8fcd88b890672d5989f48d62889c",
+      "sha256": "a57419ee009de11bddbf984ea41bec7d84ce8fcd88b890672d5989f48d62889c",
+      "title": "China October trade surplus with United States $32.71 billion, customs data show",
+      "url": "https://t.me/FinancialJuice/145888",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:20.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "2ae23c33bf4b49b9567c933e04475697158c34e9b0f25e39c0d19f5374cba201",
       "sha256": "2ae23c33bf4b49b9567c933e04475697158c34e9b0f25e39c0d19f5374cba201",
       "title": "China October trade surplus 712.78 billion yuan",
@@ -7678,342 +7995,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a2cf6d8baf83a2c5371f09c073621d97017b91d5b9cbce3a6ced3122c34ecb42",
-      "sha256": "a2cf6d8baf83a2c5371f09c073621d97017b91d5b9cbce3a6ced3122c34ecb42",
-      "title": "DIRECTO JD VANCE | CRISIS REPUBLICANA TRAS LAS ELECCIONES, FRACTURA CON RUBIO Y LA GUERRA EN IRÁN",
-      "url": "https://t.me/negociostv/60414",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T15:35:04.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ce5f01f612fb1fae2d4457a9761d97b21fd42c1d370760f0a0d4119d258d64b0",
-      "sha256": "ce5f01f612fb1fae2d4457a9761d97b21fd42c1d370760f0a0d4119d258d64b0",
-      "title": "Senior Iranian Official: Iran's policies regarding negotiations with US have not changed - Press TV",
-      "url": "https://t.me/FinancialJuice/145693",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:34:50.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "18f29d23440ffeb7bab07215c349c48c041647c012e8ae1212639a196d3a663b",
-      "sha256": "18f29d23440ffeb7bab07215c349c48c041647c012e8ae1212639a196d3a663b",
-      "title": "Senior Iranian official to Press TV: Iran won't enter any talks with US in absence of practical action on 7 conditions",
-      "url": "https://t.me/FinancialJuice/145692",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:34:21.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "97a4cec1a29dd94ad84f6af928ad8c32e44e8130182631ee5b3a5e217e4fe438",
-      "sha256": "97a4cec1a29dd94ad84f6af928ad8c32e44e8130182631ee5b3a5e217e4fe438",
-      "title": "Senior official to Press TV: Iran won't enter any talks with US in absence of practical action on 7 conditions",
-      "url": "https://t.me/FinancialJuice/145691",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:34:01.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8e89d02f7a149125c166f10af4c0e0305cc0adc130120ef1e998b4942b5a8823",
-      "sha256": "8e89d02f7a149125c166f10af4c0e0305cc0adc130120ef1e998b4942b5a8823",
-      "title": "Russia caps petrol sales after wave of Ukrainian strikes on refineries",
-      "url": "https://www.ft.com/content/ae06452b-3447-4fee-bd94-355cd324d1c5?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T15:33:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "40a026119eb03da5f08509450c40386801eccdb781e4e12e29f098b6ec310037",
-      "sha256": "40a026119eb03da5f08509450c40386801eccdb781e4e12e29f098b6ec310037",
-      "title": "Fed's Goolsbee: Consumer spending has been main driver of growth",
-      "url": "https://t.me/FinancialJuice/145690",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:28:09.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Fiscal"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "042bba2c2439b44383218982d2d7c16704b25f641d1035dd89c7537271608f53",
-      "sha256": "042bba2c2439b44383218982d2d7c16704b25f641d1035dd89c7537271608f53",
-      "title": "Fed's Goolsbee: Data centers looking like old-fashioned overheating.",
-      "url": "https://t.me/FinancialJuice/145689",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:26:32.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ec9aa4722a1a28df59aca3e56c982ce0da7c38781c4e92d3fc2bb2eeae44e623",
-      "sha256": "ec9aa4722a1a28df59aca3e56c982ce0da7c38781c4e92d3fc2bb2eeae44e623",
-      "title": "Moody's affirms Verizon's Baa1 Sr unsecured; outlook stable. $VZ",
-      "url": "https://t.me/FinancialJuice/145687",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:25:38.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dcdb7784cea11dee3a0bd501f328df487de4ebaba26560d8e2a0368eb1c341d8",
-      "sha256": "dcdb7784cea11dee3a0bd501f328df487de4ebaba26560d8e2a0368eb1c341d8",
-      "title": "Fed's Goolsbee: We've got to come to terms with inflation failure",
-      "url": "https://t.me/FinancialJuice/145686",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:24:22.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "9f36be711d8c8e2263376f27ab65fe660be64ede890f1b776793f46bbe746ba1",
-      "sha256": "9f36be711d8c8e2263376f27ab65fe660be64ede890f1b776793f46bbe746ba1",
-      "title": "Fed's Goolsbee: Big problem has all been on the inflation side.",
-      "url": "https://t.me/FinancialJuice/145685",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:24:01.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "71370bdd0a0c273b0a3319f97e1de577a003e5e1005af3b06ec51b52643f1b3f",
-      "sha256": "71370bdd0a0c273b0a3319f97e1de577a003e5e1005af3b06ec51b52643f1b3f",
-      "title": "Fed's Goolsbee: Employment and growth are actually pretty stable.",
-      "url": "https://t.me/FinancialJuice/145684",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:23:40.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eb75b8ebe6e26a52323f4f07f4832dc5c2bcf68b8394bc498fefa357a38b7ce7",
-      "sha256": "eb75b8ebe6e26a52323f4f07f4832dc5c2bcf68b8394bc498fefa357a38b7ce7",
-      "title": "WATCH LIVE: Vance Delivers Remarks at a National Veterans Small Business Week Kickoff",
-      "url": "https://t.me/FinancialJuice/145683",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:20:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8023,6 +8004,323 @@
   ],
   "news": [
     {
+      "id": "d097b5ce72f4e5cd5b7a76f39ebf595717f26fca481fb2df488f2e03f8902ccc",
+      "sha256": "d097b5ce72f4e5cd5b7a76f39ebf595717f26fca481fb2df488f2e03f8902ccc",
+      "title": "China October natural gas imports 10.01 mln tonnes vs 10.86 mln tonnes in September: customs",
+      "url": "https://t.me/FinancialJuice/145899",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:36:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "10.86",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b00ff4aa32f363aabe892bd58eeafd1e013faada20d481b43cb94adee993afe4",
+      "sha256": "b00ff4aa32f363aabe892bd58eeafd1e013faada20d481b43cb94adee993afe4",
+      "title": "China jan-oct unwrought copper and copper products imports total 4,211,000 tonnes, vs 4,456,000 tonnes a year earlier: customs",
+      "url": "https://t.me/FinancialJuice/145898",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:57.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "4,456,000",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2fe7580233f554f235893ef0b6a05363ca766a4a6e450a382eb94331cf98edc3",
+      "sha256": "2fe7580233f554f235893ef0b6a05363ca766a4a6e450a382eb94331cf98edc3",
+      "title": "China jan-oct natural gas shipments 99.22 mln tonnes vs 102.09 mln tonnes yr earlier: customs",
+      "url": "https://t.me/FinancialJuice/145897",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:55.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "102.09",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "60eda0d1395884b6be7abe7f85a3fa6dc291c3ed0c493dff5725ddf482d57ff2",
+      "sha256": "60eda0d1395884b6be7abe7f85a3fa6dc291c3ed0c493dff5725ddf482d57ff2",
+      "title": "China October unwrought copper and copper products imports 453,000 tonnes, vs 461,000 tonnes in September: customs",
+      "url": "https://t.me/FinancialJuice/145896",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:54.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "461,000",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f33476142e262f957a0ca6a59d6828f37e6bccea5756630386e47fe392907a8a",
+      "sha256": "f33476142e262f957a0ca6a59d6828f37e6bccea5756630386e47fe392907a8a",
+      "title": "China jan-oct crude oil imports 399.90 mln tonnes vs 470.94 mln tonnes yr earlier: customs",
+      "url": "https://t.me/FinancialJuice/145895",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:41.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "470.94",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "694ec36d7cd79b8547b03972dcc96734007fa3b67e42af1735e111cfc80eed7a",
+      "sha256": "694ec36d7cd79b8547b03972dcc96734007fa3b67e42af1735e111cfc80eed7a",
+      "title": "China Jan-Oct rare earth shipments 48,097.2 tonnes vs 52,699.1 tonnes year earlier: customs",
+      "url": "https://t.me/FinancialJuice/145893",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:37.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "52,699.1",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "04064061ec6da77fdaffb20a2f735300ee99cbdc0d9dbddc48f63795713ac6b2",
+      "sha256": "04064061ec6da77fdaffb20a2f735300ee99cbdc0d9dbddc48f63795713ac6b2",
+      "title": "China jan-oct unwrought aluminium and aluminium product exports total 5,914,000 tonnes vs 5,020,000 tonnes yr earlier - customs",
+      "url": "https://t.me/FinancialJuice/145894",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:37.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "5,020,000",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "03be37972c6ef1c08bdf1650a7bf1306b2170022c483403024262ded08487ab3",
+      "sha256": "03be37972c6ef1c08bdf1650a7bf1306b2170022c483403024262ded08487ab3",
+      "title": "China October crude oil imports 41.94 million tonnes vs 37.10 million tonnes in September: customs",
+      "url": "https://t.me/FinancialJuice/145892",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:33.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "37.10",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e8a832e3a73da324ecd1cb3b1d89832efdf9411326981ae00760e1e95a46e8f7",
+      "sha256": "e8a832e3a73da324ecd1cb3b1d89832efdf9411326981ae00760e1e95a46e8f7",
+      "title": "China October oil product imports 3.15 mln tonnes vs 1.85 mln tonnes in September: customs",
+      "url": "https://t.me/FinancialJuice/145891",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:29.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "1.85",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d1841a9941d358a73f994aecc4599eaf0dcc3626c35cec35160d2d9cd84f0f05",
+      "sha256": "d1841a9941d358a73f994aecc4599eaf0dcc3626c35cec35160d2d9cd84f0f05",
+      "title": "China October rare earth shipments 4,386 tonnes vs 4,269.8 tonnes in September - customs",
+      "url": "https://t.me/FinancialJuice/145890",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:27.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "4,269.8",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c0ed2c417e003ff9611bac593d77e4c716f9393ed93673e6730784fa7e827f05",
+      "sha256": "c0ed2c417e003ff9611bac593d77e4c716f9393ed93673e6730784fa7e827f05",
+      "title": "China jan-oct oil product imports at 27.15 million tonnes vs 34.19 million tonnes year earlier: customs",
+      "url": "https://t.me/FinancialJuice/145889",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:23.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": "34.19",
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a57419ee009de11bddbf984ea41bec7d84ce8fcd88b890672d5989f48d62889c",
+      "sha256": "a57419ee009de11bddbf984ea41bec7d84ce8fcd88b890672d5989f48d62889c",
+      "title": "China October trade surplus with United States $32.71 billion, customs data show",
+      "url": "https://t.me/FinancialJuice/145888",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T02:35:20.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "2ae23c33bf4b49b9567c933e04475697158c34e9b0f25e39c0d19f5374cba201",
       "sha256": "2ae23c33bf4b49b9567c933e04475697158c34e9b0f25e39c0d19f5374cba201",
       "title": "China October trade surplus 712.78 billion yuan",
@@ -14744,342 +15042,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a2cf6d8baf83a2c5371f09c073621d97017b91d5b9cbce3a6ced3122c34ecb42",
-      "sha256": "a2cf6d8baf83a2c5371f09c073621d97017b91d5b9cbce3a6ced3122c34ecb42",
-      "title": "DIRECTO JD VANCE | CRISIS REPUBLICANA TRAS LAS ELECCIONES, FRACTURA CON RUBIO Y LA GUERRA EN IRÁN",
-      "url": "https://t.me/negociostv/60414",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T15:35:04.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ce5f01f612fb1fae2d4457a9761d97b21fd42c1d370760f0a0d4119d258d64b0",
-      "sha256": "ce5f01f612fb1fae2d4457a9761d97b21fd42c1d370760f0a0d4119d258d64b0",
-      "title": "Senior Iranian Official: Iran's policies regarding negotiations with US have not changed - Press TV",
-      "url": "https://t.me/FinancialJuice/145693",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:34:50.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "18f29d23440ffeb7bab07215c349c48c041647c012e8ae1212639a196d3a663b",
-      "sha256": "18f29d23440ffeb7bab07215c349c48c041647c012e8ae1212639a196d3a663b",
-      "title": "Senior Iranian official to Press TV: Iran won't enter any talks with US in absence of practical action on 7 conditions",
-      "url": "https://t.me/FinancialJuice/145692",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:34:21.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "97a4cec1a29dd94ad84f6af928ad8c32e44e8130182631ee5b3a5e217e4fe438",
-      "sha256": "97a4cec1a29dd94ad84f6af928ad8c32e44e8130182631ee5b3a5e217e4fe438",
-      "title": "Senior official to Press TV: Iran won't enter any talks with US in absence of practical action on 7 conditions",
-      "url": "https://t.me/FinancialJuice/145691",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:34:01.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8e89d02f7a149125c166f10af4c0e0305cc0adc130120ef1e998b4942b5a8823",
-      "sha256": "8e89d02f7a149125c166f10af4c0e0305cc0adc130120ef1e998b4942b5a8823",
-      "title": "Russia caps petrol sales after wave of Ukrainian strikes on refineries",
-      "url": "https://www.ft.com/content/ae06452b-3447-4fee-bd94-355cd324d1c5?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-markets",
-      "source_type": "agencia",
-      "published_at": "2026-11-09T15:33:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "40a026119eb03da5f08509450c40386801eccdb781e4e12e29f098b6ec310037",
-      "sha256": "40a026119eb03da5f08509450c40386801eccdb781e4e12e29f098b6ec310037",
-      "title": "Fed's Goolsbee: Consumer spending has been main driver of growth",
-      "url": "https://t.me/FinancialJuice/145690",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:28:09.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Fiscal"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "042bba2c2439b44383218982d2d7c16704b25f641d1035dd89c7537271608f53",
-      "sha256": "042bba2c2439b44383218982d2d7c16704b25f641d1035dd89c7537271608f53",
-      "title": "Fed's Goolsbee: Data centers looking like old-fashioned overheating.",
-      "url": "https://t.me/FinancialJuice/145689",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:26:32.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ec9aa4722a1a28df59aca3e56c982ce0da7c38781c4e92d3fc2bb2eeae44e623",
-      "sha256": "ec9aa4722a1a28df59aca3e56c982ce0da7c38781c4e92d3fc2bb2eeae44e623",
-      "title": "Moody's affirms Verizon's Baa1 Sr unsecured; outlook stable. $VZ",
-      "url": "https://t.me/FinancialJuice/145687",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:25:38.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dcdb7784cea11dee3a0bd501f328df487de4ebaba26560d8e2a0368eb1c341d8",
-      "sha256": "dcdb7784cea11dee3a0bd501f328df487de4ebaba26560d8e2a0368eb1c341d8",
-      "title": "Fed's Goolsbee: We've got to come to terms with inflation failure",
-      "url": "https://t.me/FinancialJuice/145686",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:24:22.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "9f36be711d8c8e2263376f27ab65fe660be64ede890f1b776793f46bbe746ba1",
-      "sha256": "9f36be711d8c8e2263376f27ab65fe660be64ede890f1b776793f46bbe746ba1",
-      "title": "Fed's Goolsbee: Big problem has all been on the inflation side.",
-      "url": "https://t.me/FinancialJuice/145685",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:24:01.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "71370bdd0a0c273b0a3319f97e1de577a003e5e1005af3b06ec51b52643f1b3f",
-      "sha256": "71370bdd0a0c273b0a3319f97e1de577a003e5e1005af3b06ec51b52643f1b3f",
-      "title": "Fed's Goolsbee: Employment and growth are actually pretty stable.",
-      "url": "https://t.me/FinancialJuice/145684",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:23:40.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "eb75b8ebe6e26a52323f4f07f4832dc5c2bcf68b8394bc498fefa357a38b7ce7",
-      "sha256": "eb75b8ebe6e26a52323f4f07f4832dc5c2bcf68b8394bc498fefa357a38b7ce7",
-      "title": "WATCH LIVE: Vance Delivers Remarks at a National Veterans Small Business Week Kickoff",
-      "url": "https://t.me/FinancialJuice/145683",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-09T15:20:28.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
