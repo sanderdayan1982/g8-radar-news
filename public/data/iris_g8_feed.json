@@ -5,40 +5,20 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T18:16:23.906Z",
-  "started_at": "2026-11-10T18:16:20.821Z",
+  "generated_at": "2026-11-10T18:21:29.091Z",
+  "started_at": "2026-11-10T18:21:26.476Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
   "count": 250,
   "currency_ranking_mmt": [
     {
-      "currency": "USD",
-      "rank": 1,
-      "score": 33,
-      "bias": "alcista",
-      "structural": 33,
-      "impulse": 25,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Schmid Speaks en 0.2h",
-      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari"
-      ],
-      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA + RISK_GEO + TRADE_EXTERNAL + POLICY_PRICE · Est +33 | Imp 3h +25. Régimen real mixed."
-    },
-    {
       "currency": "CHF",
-      "rank": 2,
+      "rank": 1,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 21,
+      "impulse": 20,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -48,15 +28,15 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "21 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +21. Régimen real mixed."
+      "rationale": "21 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +20. Régimen real mixed."
     },
     {
       "currency": "JPY",
-      "rank": 2,
+      "rank": 1,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 21,
+      "impulse": 20,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,7 +47,27 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +21. Régimen real mixed."
+      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +20. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 3,
+      "score": 22,
+      "bias": "alcista",
+      "structural": 22,
+      "impulse": 20,
+      "ficha_v6": "A6 / B5 / B15",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Schmid Speaks en 0.1h",
+      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
+      "no_evidence": false,
+      "drivers": [
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
+        "FLUJO_FISCAL_NFA: U s treasury sells 42 billion of 10 year not"
+      ],
+      "rationale": "41 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA + RISK_GEO + TRADE_EXTERNAL · Est +22 | Imp 3h +20. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -79,7 +79,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 0.2h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 0.1h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -137,7 +137,7 @@
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 14h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 13.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -153,7 +153,7 @@
       "score": -59,
       "bias": "bajista",
       "structural": -59,
-      "impulse": -19,
+      "impulse": -18,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -165,7 +165,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: I may meet Trump ",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: I spoke briefly t"
       ],
-      "rationale": "21 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -59 | Imp 3h -19. Régimen real mixed."
+      "rationale": "21 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -59 | Imp 3h -18. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -189,32 +189,12 @@
   ],
   "g8_ranking": [
     {
-      "currency": "USD",
-      "rank": 1,
-      "score": 33,
-      "bias": "alcista",
-      "structural": 33,
-      "impulse": 25,
-      "ficha_v6": "A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Schmid Speaks en 0.2h",
-      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
-      "no_evidence": false,
-      "drivers": [
-        "Repricing hawkish BC (Ficha A1)",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)",
-        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari"
-      ],
-      "rationale": "41 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA + RISK_GEO + TRADE_EXTERNAL + POLICY_PRICE · Est +33 | Imp 3h +25. Régimen real mixed."
-    },
-    {
       "currency": "CHF",
-      "rank": 2,
+      "rank": 1,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 21,
+      "impulse": 20,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -224,15 +204,15 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "21 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +21. Régimen real mixed."
+      "rationale": "21 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +20. Régimen real mixed."
     },
     {
       "currency": "JPY",
-      "rank": 2,
+      "rank": 1,
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 21,
+      "impulse": 20,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -243,7 +223,27 @@
         "Refugio Risk-Off (A6: USD/JPY/CHF)",
         "FLUJO_FISCAL_NFA: Auction Result of Treasury Discount Bills on"
       ],
-      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +21. Régimen real mixed."
+      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est +24 | Imp 3h +20. Régimen real mixed."
+    },
+    {
+      "currency": "USD",
+      "rank": 3,
+      "score": 22,
+      "bias": "alcista",
+      "structural": 22,
+      "impulse": 20,
+      "ficha_v6": "A6 / B5 / B15",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "calendar_lock": "⚑BC <48h (Candado CIRO)",
+      "calendar_lock_detail": "FOMC Member Schmid Speaks en 0.1h",
+      "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
+      "no_evidence": false,
+      "drivers": [
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari",
+        "FLUJO_FISCAL_NFA: U s treasury sells 42 billion of 10 year not"
+      ],
+      "rationale": "41 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · FISCAL_NFA + RISK_GEO + TRADE_EXTERNAL · Est +22 | Imp 3h +20. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -255,7 +255,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 0.2h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 0.1h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -313,7 +313,7 @@
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 14h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 13.9h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -329,7 +329,7 @@
       "score": -59,
       "bias": "bajista",
       "structural": -59,
-      "impulse": -19,
+      "impulse": -18,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -341,7 +341,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: I may meet Trump ",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: I spoke briefly t"
       ],
-      "rationale": "21 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -59 | Imp 3h -19. Régimen real mixed."
+      "rationale": "21 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -59 | Imp 3h -18. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -354,7 +354,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -35.3,
+      "hours_from_now": -35.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -366,7 +366,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -32.8,
+      "hours_from_now": -32.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -378,7 +378,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -27.3,
+      "hours_from_now": -27.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -390,7 +390,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -18.8,
+      "hours_from_now": -18.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -402,7 +402,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -18.8,
+      "hours_from_now": -18.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -414,7 +414,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -18.4,
+      "hours_from_now": -18.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -426,7 +426,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18.4,
+      "hours_from_now": -18.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -438,7 +438,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -18.4,
+      "hours_from_now": -18.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -462,7 +462,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -17.8,
+      "hours_from_now": -17.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -474,7 +474,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -14.7,
+      "hours_from_now": -14.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -486,7 +486,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -13.3,
+      "hours_from_now": -13.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -498,7 +498,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.8,
+      "hours_from_now": -9.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -510,7 +510,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.3,
+      "hours_from_now": -9.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -522,7 +522,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": -8.2,
+      "hours_from_now": -8.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -534,7 +534,7 @@
       "actual": "97.8",
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": -7.3,
+      "hours_from_now": -7.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -546,7 +546,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.8,
+      "hours_from_now": -5.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -558,7 +558,7 @@
       "actual": "19.75K",
       "forecast": null,
       "previous": "16.8K",
-      "hours_from_now": -5,
+      "hours_from_now": -5.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -570,7 +570,7 @@
       "actual": "0.3%",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -4.8,
+      "hours_from_now": -4.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -582,7 +582,7 @@
       "actual": "0.4%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": -4.8,
+      "hours_from_now": -4.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -594,7 +594,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -2.4,
+      "hours_from_now": -2.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -618,7 +618,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.2,
+      "hours_from_now": 0.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -630,7 +630,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.2,
+      "hours_from_now": 0.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -642,7 +642,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.2,
+      "hours_from_now": 0.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -654,7 +654,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.2,
+      "hours_from_now": 2.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -666,7 +666,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.2,
+      "hours_from_now": 3.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -678,7 +678,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 5.2,
+      "hours_from_now": 5.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -690,7 +690,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 5.2,
+      "hours_from_now": 5.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -702,7 +702,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 5.6,
+      "hours_from_now": 5.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -714,7 +714,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 11.7,
+      "hours_from_now": 11.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -726,7 +726,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 12.7,
+      "hours_from_now": 12.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -750,7 +750,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14,
+      "hours_from_now": 13.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -762,7 +762,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 14.7,
+      "hours_from_now": 14.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -774,7 +774,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.5,
+      "hours_from_now": 15.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -786,7 +786,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 16.3,
+      "hours_from_now": 16.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -798,7 +798,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.7,
+      "hours_from_now": 18.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -810,7 +810,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.7,
+      "hours_from_now": 18.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -822,7 +822,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 27.5,
+      "hours_from_now": 27.4,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -834,7 +834,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 29.6,
+      "hours_from_now": 29.5,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -846,7 +846,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 29.7,
+      "hours_from_now": 29.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -870,7 +870,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -882,7 +882,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -894,7 +894,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -906,7 +906,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -918,7 +918,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -930,7 +930,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -942,7 +942,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -954,7 +954,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -966,7 +966,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.7,
+      "hours_from_now": 38.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -978,7 +978,7 @@
       "actual": null,
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": 43.2,
+      "hours_from_now": 43.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -990,7 +990,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": 43.2,
+      "hours_from_now": 43.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1002,7 +1002,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.2,
+      "hours_from_now": 43.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1014,7 +1014,7 @@
       "actual": null,
       "forecast": "3.89M",
       "previous": "3.99M",
-      "hours_from_now": 44.7,
+      "hours_from_now": 44.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1026,7 +1026,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44.7,
+      "hours_from_now": 44.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1038,7 +1038,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 44.7,
+      "hours_from_now": 44.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1050,7 +1050,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.3%",
-      "hours_from_now": 45.2,
+      "hours_from_now": 45.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1062,7 +1062,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46,
+      "hours_from_now": 45.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1074,7 +1074,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.9M",
-      "hours_from_now": 46.7,
+      "hours_from_now": 46.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1086,7 +1086,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.2,
+      "hours_from_now": 47.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1110,7 +1110,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.9,
+      "hours_from_now": 47.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1125,6 +1125,36 @@
     "NZD": 0.3
   },
   "items": [
+    {
+      "id": "aec36ddc3f2dbdaf9179929fadc6f39bf8d4be8245f86c5aa75dfb6a94d71515",
+      "sha256": "aec36ddc3f2dbdaf9179929fadc6f39bf8d4be8245f86c5aa75dfb6a94d71515",
+      "title": "U s treasury sells 42 billion of 10 year notes at a high yield of 5.02",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:20:44.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "e3348f97c3fdb5054e02337b948904dc6de1197e52cadfd133476927b8989e93",
       "sha256": "e3348f97c3fdb5054e02337b948904dc6de1197e52cadfd133476927b8989e93",
@@ -1261,6 +1291,37 @@
       "z": null
     },
     {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T18:00:43.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "b62be0fab0e7f5ce3f5fe9cd5e9802d5c6e99b40a13698d239dbc730a25bf53d",
       "sha256": "b62be0fab0e7f5ce3f5fe9cd5e9802d5c6e99b40a13698d239dbc730a25bf53d",
       "title": "Treasury WI 10 Yr yield 5.010% before $42 billion auction",
@@ -1284,37 +1345,6 @@
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T18:00:39.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8292,37 +8322,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-10T09:01:14.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a295a3b1007137892d641e004359ae30bc5f667783359840016c1d268d642c5e",
-      "sha256": "a295a3b1007137892d641e004359ae30bc5f667783359840016c1d268d642c5e",
-      "title": "❗ Fed's Waller: Half-point Fed rate hike may be needed in december, if October core CPI inflation comes in around 0.3% or higher.",
-      "url": "https://t.me/FinancialJuice/145923",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T09:00:58.000Z",
       "currencies": [
         "USD"
       ],
@@ -8348,6 +8347,36 @@
   ],
   "news": [
     {
+      "id": "aec36ddc3f2dbdaf9179929fadc6f39bf8d4be8245f86c5aa75dfb6a94d71515",
+      "sha256": "aec36ddc3f2dbdaf9179929fadc6f39bf8d4be8245f86c5aa75dfb6a94d71515",
+      "title": "U s treasury sells 42 billion of 10 year notes at a high yield of 5.02",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T18:20:44.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e3348f97c3fdb5054e02337b948904dc6de1197e52cadfd133476927b8989e93",
       "sha256": "e3348f97c3fdb5054e02337b948904dc6de1197e52cadfd133476927b8989e93",
       "title": "Ecb s lane says the bar for directional rate guidance is high",
@@ -8483,6 +8512,37 @@
       "z": null
     },
     {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T18:00:43.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "b62be0fab0e7f5ce3f5fe9cd5e9802d5c6e99b40a13698d239dbc730a25bf53d",
       "sha256": "b62be0fab0e7f5ce3f5fe9cd5e9802d5c6e99b40a13698d239dbc730a25bf53d",
       "title": "Treasury WI 10 Yr yield 5.010% before $42 billion auction",
@@ -8506,37 +8566,6 @@
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T18:00:39.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -15514,37 +15543,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-10T09:01:14.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a295a3b1007137892d641e004359ae30bc5f667783359840016c1d268d642c5e",
-      "sha256": "a295a3b1007137892d641e004359ae30bc5f667783359840016c1d268d642c5e",
-      "title": "❗ Fed's Waller: Half-point Fed rate hike may be needed in december, if October core CPI inflation comes in around 0.3% or higher.",
-      "url": "https://t.me/FinancialJuice/145923",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T09:00:58.000Z",
       "currencies": [
         "USD"
       ],
