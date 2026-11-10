@@ -27,6 +27,7 @@ const SPEC_PATH = join(ROOT, 'SPEC.md');
 
 export const GITHUB_RAW_FULL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_news_full.json';
 export const GITHUB_RAW_STORE = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_store.json';
+export const GITHUB_RAW_STATUS = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_status.json';
 const GITHUB_RAW_POLY = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/polymarket_geo_history.json';
 // Document fetch for the Actions publication. Separate from the per-source live timeout below.
 const GITHUB_RAW_TIMEOUT_MS = 4000;
@@ -148,6 +149,19 @@ async function fetchGithubRawSeed(timeoutMs = GITHUB_RAW_TIMEOUT_MS) {
   return null;
 }
 
+// Heartbeat published on every Actions cycle. Same Raw fetch and the same 4 s budget as the feed.
+async function fetchGithubStatus(timeoutMs = GITHUB_RAW_TIMEOUT_MS) {
+  try {
+    const res = await fetch(`${GITHUB_RAW_STATUS}?t=${Date.now()}`, {
+      signal: AbortSignal.timeout(timeoutMs),
+    });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+}
+
 function itemsFromFull(full) {
   if (Array.isArray(full?.items) && full.items.length) return full.items;
   if (Array.isArray(full?.news)) return full.news;
@@ -155,8 +169,12 @@ function itemsFromFull(full) {
 }
 
 // Base is the latest Actions publication. The bundled JSON is used only when that fetch fails.
+// radar_status.json starts with the full document so the heartbeat stays inside that same timeout.
 async function resolvePublicationBase() {
-  const rawFull = await fetchGithubRawSeed();
+  const [rawFull, radarStatus] = await Promise.all([
+    fetchGithubRawSeed(),
+    fetchGithubStatus(),
+  ]);
   if (rawFull && Array.isArray(rawFull.sources)) {
     const rawStore = await fetchGithubStore();
     const storeItems = Array.isArray(rawStore?.items) ? rawStore.items : itemsFromFull(rawFull);
@@ -165,6 +183,7 @@ async function resolvePublicationBase() {
       basePublishedAt: publicationTime(rawFull),
       fullState: rawFull,
       storeItems,
+      radarStatus,
     };
   }
   const disk = loadSeedFromDisk();
@@ -175,6 +194,7 @@ async function resolvePublicationBase() {
     basePublishedAt: publicationTime(full),
     fullState: full,
     storeItems: Array.isArray(diskStore?.items) ? diskStore.items : itemsFromFull(full),
+    radarStatus,
   };
 }
 
@@ -222,7 +242,7 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
   const { fullState, memoryItems } = collected;
 
   const labeledAt = Date.now();
-  fullState.sources = labelLiveAgainstActions(fullState.sources, baseFull?.sources || [], labeledAt);
+  fullState.sources = labelLiveAgainstActions(fullState.sources, baseFull?.sources || [], labeledAt, base.radarStatus);
   // irisHealth is unchanged and counts status `ok` as sources_live. A successful pull is published
   // as `live`; that row is shown to the same function as `ok` so the v5.0 counts stay true.
   const healthSources = fullState.sources.map((s) => (s.status === 'live' ? { ...s, status: 'ok' } : s));
