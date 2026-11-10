@@ -304,6 +304,10 @@ export const STORE_CAP = 5_000;
 export const FEED_CAP = 3_000;
 export const TAPE_CAP = 300;
 export const COVERAGE_CURRENCIES = Object.freeze(['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'CAD', 'AUD', 'NZD', 'XAU']);
+/** PRE-REG_RADAR_v5.1, congelado el 10-nov-2026. Solo bandera: no cambia candados ni el nivel (Parte E). */
+export const SILENCE_BUSINESS_HOURS = 12;
+export const SILENCE_CURRENCIES = Object.freeze(['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'CAD', 'AUD', 'NZD']);
+const SILENCE_CURRENCY_SET = new Set(SILENCE_CURRENCIES);
 
 function itemTime(item) {
   const ms = Date.parse(item?.published_at || '');
@@ -396,21 +400,20 @@ export function buildCoverage(items, nowMs = Date.now()) {
         lastAt = item.published_at;
       }
     }
-    coverage[currency] = Number.isFinite(lastMs)
-      ? {
-        count_72h: count72,
-        count_official_45d: countOfficial,
-        last_item_at: lastAt,
-        hours_since_last: roundHours(naturalHoursBetween(lastMs, nowMs)),
-        hours_since_last_business: roundHours(businessHoursBetween(lastMs, nowMs)),
-      }
-      : {
-        count_72h: count72,
-        count_official_45d: countOfficial,
-        last_item_at: null,
-        hours_since_last: null,
-        hours_since_last_business: null,
-      };
+    const business = Number.isFinite(lastMs)
+      ? roundHours(businessHoursBetween(lastMs, nowMs))
+      : null;
+    const row = {
+      count_72h: count72,
+      count_official_45d: countOfficial,
+      last_item_at: Number.isFinite(lastMs) ? lastAt : null,
+      hours_since_last: Number.isFinite(lastMs) ? roundHours(naturalHoursBetween(lastMs, nowMs)) : null,
+      hours_since_last_business: business,
+    };
+    if (SILENCE_CURRENCY_SET.has(currency)) {
+      row.silence = !Number.isFinite(business) || business >= SILENCE_BUSINESS_HOURS;
+    }
+    coverage[currency] = row;
   }
   return coverage;
 }
@@ -481,7 +484,7 @@ export function readRadarStore(value) {
 }
 
 /**
- * Ejecuta la recolección paralela determinista completa (25 fuentes + Calendario + Spot FX + Agente MMT).
+ * Ejecuta la recolección paralela determinista completa (35 fuentes + Calendario + Spot FX + Agente MMT).
  */
 export async function collectRadarAndIrisData({
   existingItems = [],

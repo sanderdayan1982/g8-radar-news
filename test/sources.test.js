@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { SOURCES, PRESERVED_SOURCE_IDS, CURRENCIES } from '../src/config.js';
 import { isOfficialNoise, isRelevant, fingerprint, parseRss, parseTelegram, parseMacro, detectCurrencies, enrichRaw, headlineFromUrl } from '../src/enrich.js';
 
@@ -78,6 +79,79 @@ test('enrich asigna fuente oficial NZD', () => {
   });
   assert.ok(item.currencies.includes('NZD'));
   assert.equal(item.source_type, 'oficial');
+});
+
+test('Parte C: prensa NZD/CHF/AUD por Google News y RNZ negocios; swissinfo queda fuera', () => {
+  assert.equal(SOURCES.length, 35);
+  assert.equal(new Set(SOURCES.map((s) => s.id)).size, 35);
+
+  const expected = {
+    'nz-press': {
+      currency: 'NZD',
+      q: 'RBNZ OR "Reserve Bank of New Zealand" OR "Anna Breman" OR "official cash rate" New Zealand when:3d',
+      hl: 'en-NZ',
+      gl: 'NZ',
+      ceid: 'NZ:en',
+    },
+    'ch-press': {
+      currency: 'CHF',
+      q: 'SNB OR "Swiss National Bank" OR Schlegel OR Tschudin OR "Swiss franc" when:3d',
+      hl: 'en-US',
+      gl: 'CH',
+      ceid: 'CH:en',
+    },
+    'au-press': {
+      currency: 'AUD',
+      q: 'RBA OR "Reserve Bank of Australia" OR Bullock OR Hauser OR "cash rate" Australia when:3d',
+      hl: 'en-AU',
+      gl: 'AU',
+      ceid: 'AU:en',
+    },
+  };
+  for (const [id, spec] of Object.entries(expected)) {
+    const source = SOURCES.find((s) => s.id === id);
+    assert.ok(source, `falta ${id}`);
+    assert.equal(source.type, 'agencia');
+    assert.equal(source.kind, 'rss');
+    assert.equal(source.currency, spec.currency);
+    const url = new URL(source.url);
+    assert.equal(url.origin + url.pathname, 'https://news.google.com/rss/search');
+    assert.equal(url.searchParams.get('q'), spec.q);
+    assert.match(source.url, /when:3d/);
+    assert.equal(url.searchParams.get('hl'), spec.hl);
+    assert.equal(url.searchParams.get('gl'), spec.gl);
+    assert.equal(url.searchParams.get('ceid'), spec.ceid);
+  }
+
+  const rnz = SOURCES.find((s) => s.id === 'rnz-business');
+  assert.equal(rnz.type, 'agencia');
+  assert.equal(rnz.kind, 'rss');
+  assert.equal(rnz.currency, 'NZD');
+  assert.equal(rnz.url, 'https://www.rnz.co.nz/rss/business.xml');
+
+  assert.equal(SOURCES.some((s) => /swissinfo/i.test(`${s.id} ${s.url} ${s.name}`)), false);
+  const discarded = /zerohedge|fxstreet|marketwatch|investing\.com|cincodias|bloomberg\.com|wsj\.com|truthsocial|reuters|deitaone|firstsquawk/i;
+  for (const id of ['nz-press', 'ch-press', 'au-press', 'rnz-business']) {
+    const source = SOURCES.find((s) => s.id === id);
+    assert.doesNotMatch(`${source.id} ${source.url} ${source.name}`, discarded);
+  }
+
+  const spec = readFileSync(new URL('../SPEC.md', import.meta.url), 'utf8');
+  assert.match(spec, /35 fuentes/);
+  assert.match(spec, /nz-press/);
+  assert.match(spec, /ch-press/);
+  assert.match(spec, /au-press/);
+  assert.match(spec, /rnz-business/);
+  assert.match(spec, /swissinfo/);
+  assert.match(spec, /HTTP 410/);
+  assert.match(spec, /### 3\.7 Descartadas/);
+  const html = readFileSync(new URL('../public/index.html', import.meta.url), 'utf8');
+  assert.match(html, /35 fuentes/);
+  assert.doesNotMatch(html, /31 fuentes/);
+  const live = readFileSync(new URL('../netlify/functions/radar_live.mjs', import.meta.url), 'utf8');
+  assert.match(live, /SOURCES\.length/);
+  assert.doesNotMatch(live, /31sources/);
+  assert.doesNotMatch(live, />=\s*31\b/);
 });
 
 test('headlineFromUrl recupera PMI 57.9 vs 58.0 de un slug InvestingLive', () => {
