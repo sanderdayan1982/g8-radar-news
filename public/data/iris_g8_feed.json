@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T16:49:15.220Z",
-  "started_at": "2026-11-10T16:49:13.010Z",
+  "generated_at": "2026-11-10T16:54:25.584Z",
+  "started_at": "2026-11-10T16:54:23.038Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -18,11 +18,11 @@
       "score": 41,
       "bias": "alcista",
       "structural": 41,
-      "impulse": 61,
+      "impulse": 59,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Schmid Speaks en 1.7h",
+      "calendar_lock_detail": "FOMC Member Schmid Speaks en 1.6h",
       "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
@@ -30,7 +30,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Fed's Logan: Price pressures are also",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "34 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +41 | Imp 3h +61. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL + FISCAL_NFA · Est +41 | Imp 3h +59. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -38,7 +38,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 48,
+      "impulse": 46,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -48,7 +48,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +48. Régimen real mixed."
+      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +46. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -56,7 +56,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 48,
+      "impulse": 46,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -66,7 +66,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +48. Régimen real mixed."
+      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +46. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -78,7 +78,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 1.7h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 1.6h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -101,9 +101,10 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)"
+        "Presión Risk-Off sobre cíclica (B5 / B15)",
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
       ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -15 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -130,11 +131,11 @@
       "score": -40,
       "bias": "bajista",
       "structural": -40,
-      "impulse": -12,
+      "impulse": -11,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 15.4h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 15.3h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -142,7 +143,7 @@
         "Indigestión fiscal / prima por plazo (B1)",
         "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co"
       ],
-      "rationale": "12 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + FISCAL_NFA · Est -40 | Imp 3h -12. Régimen real mixed."
+      "rationale": "12 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + FISCAL_NFA · Est -40 | Imp 3h -11. Régimen real mixed."
     },
     {
       "currency": "CAD",
@@ -150,7 +151,7 @@
       "score": -60,
       "bias": "bajista",
       "structural": -60,
-      "impulse": -44,
+      "impulse": -42,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -162,7 +163,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: I may meet Trump ",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: I spoke briefly t"
       ],
-      "rationale": "20 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -60 | Imp 3h -44. Régimen real mixed."
+      "rationale": "20 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -60 | Imp 3h -42. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -191,11 +192,11 @@
       "score": 41,
       "bias": "alcista",
       "structural": 41,
-      "impulse": 61,
+      "impulse": 59,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Schmid Speaks en 1.7h",
+      "calendar_lock_detail": "FOMC Member Schmid Speaks en 1.6h",
       "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
@@ -203,7 +204,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Fed's Logan: Price pressures are also",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "34 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL · Est +41 | Imp 3h +61. Régimen real mixed."
+      "rationale": "35 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + POLICY_PRICE + TRADE_EXTERNAL + FISCAL_NFA · Est +41 | Imp 3h +59. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -211,7 +212,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 48,
+      "impulse": 46,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -221,7 +222,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +48. Régimen real mixed."
+      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +46. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -229,7 +230,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 48,
+      "impulse": 46,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -239,7 +240,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +48. Régimen real mixed."
+      "rationale": "22 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +46. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -251,7 +252,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 1.7h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 1.6h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -274,9 +275,10 @@
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
-        "Presión Risk-Off sobre cíclica (B5 / B15)"
+        "Presión Risk-Off sobre cíclica (B5 / B15)",
+        "FLUJO_FISCAL_NFA: Press conference, Parliament House, Canberra"
       ],
-      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est -15 | Imp 3h n/d. Régimen real mixed."
+      "rationale": "11 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO + FISCAL_NFA · Est -15 | Imp 3h n/d. Régimen real mixed."
     },
     {
       "currency": "NZD",
@@ -303,11 +305,11 @@
       "score": -40,
       "bias": "bajista",
       "structural": -40,
-      "impulse": -12,
+      "impulse": -11,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "German Buba President Nagel Speaks en 15.4h",
+      "calendar_lock_detail": "German Buba President Nagel Speaks en 15.3h",
       "post_event_status": null,
       "no_evidence": false,
       "drivers": [
@@ -315,7 +317,7 @@
         "Indigestión fiscal / prima por plazo (B1)",
         "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co"
       ],
-      "rationale": "12 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + FISCAL_NFA · Est -40 | Imp 3h -12. Régimen real mixed."
+      "rationale": "12 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + FISCAL_NFA · Est -40 | Imp 3h -11. Régimen real mixed."
     },
     {
       "currency": "CAD",
@@ -323,7 +325,7 @@
       "score": -60,
       "bias": "bajista",
       "structural": -60,
-      "impulse": -44,
+      "impulse": -42,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -335,7 +337,7 @@
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: I may meet Trump ",
         "COST_PUSH / RIESGO EA-1 (STAG_TRAP): Canada's PM Carney: I spoke briefly t"
       ],
-      "rationale": "20 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -60 | Imp 3h -44. Régimen real mixed."
+      "rationale": "20 titulares · Ficha EA-1 (SOBERANO_EMISOR) · TRADE_EXTERNAL + RISK_GEO · Est -60 | Imp 3h -42. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -348,7 +350,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -33.8,
+      "hours_from_now": -33.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -360,7 +362,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -31.3,
+      "hours_from_now": -31.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -372,7 +374,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -25.8,
+      "hours_from_now": -25.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -384,7 +386,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23.6,
+      "hours_from_now": -23.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -396,7 +398,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23.4,
+      "hours_from_now": -23.5,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -408,7 +410,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -17.3,
+      "hours_from_now": -17.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -420,7 +422,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -17.3,
+      "hours_from_now": -17.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -432,7 +434,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -17,
+      "hours_from_now": -17.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -444,7 +446,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -17,
+      "hours_from_now": -17.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -456,7 +458,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -17,
+      "hours_from_now": -17.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -468,7 +470,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -16.8,
+      "hours_from_now": -16.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -480,7 +482,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -16.3,
+      "hours_from_now": -16.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -492,7 +494,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -13.2,
+      "hours_from_now": -13.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -504,7 +506,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -11.8,
+      "hours_from_now": -11.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -516,7 +518,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.3,
+      "hours_from_now": -8.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -528,7 +530,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -7.8,
+      "hours_from_now": -7.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -540,7 +542,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -552,7 +554,7 @@
       "actual": "97.8",
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": -5.8,
+      "hours_from_now": -5.9,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -564,7 +566,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -4.3,
+      "hours_from_now": -4.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -576,7 +578,7 @@
       "actual": "19.75K",
       "forecast": null,
       "previous": "16.8K",
-      "hours_from_now": -3.6,
+      "hours_from_now": -3.7,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -588,7 +590,7 @@
       "actual": "0.3%",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -3.3,
+      "hours_from_now": -3.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -600,7 +602,7 @@
       "actual": "0.4%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": -3.3,
+      "hours_from_now": -3.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -612,7 +614,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1,
+      "hours_from_now": -1.1,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -624,7 +626,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 1.2,
+      "hours_from_now": 1.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -636,7 +638,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.7,
+      "hours_from_now": 1.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -648,7 +650,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.7,
+      "hours_from_now": 1.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -660,7 +662,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.7,
+      "hours_from_now": 1.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -672,7 +674,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.7,
+      "hours_from_now": 3.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -684,7 +686,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.7,
+      "hours_from_now": 4.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -696,7 +698,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.7,
+      "hours_from_now": 6.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -708,7 +710,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.7,
+      "hours_from_now": 6.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -720,7 +722,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 7,
+      "hours_from_now": 6.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -732,7 +734,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 13.2,
+      "hours_from_now": 13.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -744,7 +746,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 14.2,
+      "hours_from_now": 14.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -756,7 +758,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.2,
+      "hours_from_now": 14.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -768,7 +770,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.4,
+      "hours_from_now": 15.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -780,7 +782,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 16.2,
+      "hours_from_now": 16.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -792,7 +794,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.9,
+      "hours_from_now": 16.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -816,7 +818,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20.2,
+      "hours_from_now": 20.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -828,7 +830,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20.2,
+      "hours_from_now": 20.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -840,7 +842,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": 28.9,
+      "hours_from_now": 28.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -852,7 +854,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 31,
+      "hours_from_now": 30.9,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -864,7 +866,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 31.2,
+      "hours_from_now": 31.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -876,7 +878,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 31.2,
+      "hours_from_now": 31.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -888,7 +890,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 38.2,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -900,7 +902,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 38.2,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -912,7 +914,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 38.2,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -924,7 +926,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 38.2,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -936,7 +938,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 38.2,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -948,7 +950,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 38.2,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -960,7 +962,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 38.2,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -972,7 +974,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 38.2,
+      "hours_from_now": 38.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -984,7 +986,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 40.2,
+      "hours_from_now": 40.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -996,7 +998,7 @@
       "actual": null,
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": 44.7,
+      "hours_from_now": 44.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1008,7 +1010,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": 44.7,
+      "hours_from_now": 44.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1020,7 +1022,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 44.7,
+      "hours_from_now": 44.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1032,7 +1034,7 @@
       "actual": null,
       "forecast": "3.89M",
       "previous": "3.99M",
-      "hours_from_now": 46.2,
+      "hours_from_now": 46.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1044,7 +1046,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.2,
+      "hours_from_now": 46.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1056,7 +1058,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 46.2,
+      "hours_from_now": 46.1,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1068,7 +1070,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.3%",
-      "hours_from_now": 46.7,
+      "hours_from_now": 46.6,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1080,7 +1082,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.4,
+      "hours_from_now": 47.3,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1096,6 +1098,58 @@
   },
   "items": [
     {
+      "id": "81d622e4435c9688cb4b6c05ef9a2961c2da3e18993a5f414ee3db14e9b2c1d6",
+      "sha256": "81d622e4435c9688cb4b6c05ef9a2961c2da3e18993a5f414ee3db14e9b2c1d6",
+      "title": "Microsoft’s market value surpasses Nvidia for the first time since June 2025. $MSFT $NVDA",
+      "url": "https://t.me/FinancialJuice/146085",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T16:50:44.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3a3ada43d553fa18f66d6a135b6f2871a9b0a6a9ea058fb7cc36f47e82d61da4",
+      "sha256": "3a3ada43d553fa18f66d6a135b6f2871a9b0a6a9ea058fb7cc36f47e82d61da4",
+      "title": "Iran s rezaei no negotiations currently taking place between tehran and washington",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T16:50:44.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "99b3c25a37187d988e87130481347f060511e7bc89bc9eae69ce75c314d33e53",
       "sha256": "99b3c25a37187d988e87130481347f060511e7bc89bc9eae69ce75c314d33e53",
       "title": "Syria weighs sending troops to aid Saudi war with Houthis - NYT. Syrian reconnaissance teams have visited Saudi Arabia and Yemen ahead of a potential deployment, but a final decision has not been made, officials said. Syria is weighing whether to send thousands of troops to Saudi",
@@ -8261,63 +8315,6 @@
       "mmt_lens": "REPRICING_MONETARIO_A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "af073cb59bb32e596e8279cb11ddf59cb362902b9973ff5c539fa43d498830b6",
-      "sha256": "af073cb59bb32e596e8279cb11ddf59cb362902b9973ff5c539fa43d498830b6",
-      "title": "BoE's Lombardelli: Seeing a real fall-off in hiring in labour market, but not seeing much in the way of redundancies.",
-      "url": "https://t.me/FinancialJuice/145902",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T06:28:40.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d90b2e56dbb77f5852d3359d7903da69c2f1d420377dc0d4d48170c72211f38f",
-      "sha256": "d90b2e56dbb77f5852d3359d7903da69c2f1d420377dc0d4d48170c72211f38f",
-      "title": "Ukraine peace only one item in wider Abu Dhabi talks - IFX",
-      "url": "https://t.me/FinancialJuice/145901",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T06:28:22.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8327,6 +8324,58 @@
   ],
   "news": [
     {
+      "id": "81d622e4435c9688cb4b6c05ef9a2961c2da3e18993a5f414ee3db14e9b2c1d6",
+      "sha256": "81d622e4435c9688cb4b6c05ef9a2961c2da3e18993a5f414ee3db14e9b2c1d6",
+      "title": "Microsoft’s market value surpasses Nvidia for the first time since June 2025. $MSFT $NVDA",
+      "url": "https://t.me/FinancialJuice/146085",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T16:50:44.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3a3ada43d553fa18f66d6a135b6f2871a9b0a6a9ea058fb7cc36f47e82d61da4",
+      "sha256": "3a3ada43d553fa18f66d6a135b6f2871a9b0a6a9ea058fb7cc36f47e82d61da4",
+      "title": "Iran s rezaei no negotiations currently taking place between tehran and washington",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T16:50:44.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "99b3c25a37187d988e87130481347f060511e7bc89bc9eae69ce75c314d33e53",
       "sha256": "99b3c25a37187d988e87130481347f060511e7bc89bc9eae69ce75c314d33e53",
       "title": "Syria weighs sending troops to aid Saudi war with Houthis - NYT. Syrian reconnaissance teams have visited Saudi Arabia and Yemen ahead of a potential deployment, but a final decision has not been made, officials said. Syria is weighing whether to send thousands of troops to Saudi",
@@ -15492,63 +15541,6 @@
       "mmt_lens": "REPRICING_MONETARIO_A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "af073cb59bb32e596e8279cb11ddf59cb362902b9973ff5c539fa43d498830b6",
-      "sha256": "af073cb59bb32e596e8279cb11ddf59cb362902b9973ff5c539fa43d498830b6",
-      "title": "BoE's Lombardelli: Seeing a real fall-off in hiring in labour market, but not seeing much in the way of redundancies.",
-      "url": "https://t.me/FinancialJuice/145902",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T06:28:40.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d90b2e56dbb77f5852d3359d7903da69c2f1d420377dc0d4d48170c72211f38f",
-      "sha256": "d90b2e56dbb77f5852d3359d7903da69c2f1d420377dc0d4d48170c72211f38f",
-      "title": "Ukraine peace only one item in wider Abu Dhabi talks - IFX",
-      "url": "https://t.me/FinancialJuice/145901",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T06:28:22.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
