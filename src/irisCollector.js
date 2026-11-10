@@ -2,13 +2,13 @@ import { isPromotional } from './sourceHealth.js';
 import { createHash } from 'node:crypto';
 import { SOURCES, UA, ENGINE_NAME } from './config.js';
 import { enrichRaw, parseRss, parseTelegram, parseHtmlList } from './enrich.js';
-import { selectEvidence, evidenceContract } from './evidence.js';
-import { classifyAgent, attachRanks, classifyItemMmtV4, MMT_SOVEREIGNTY, biasFor, clamp } from './classifyCurrencies.js';
-import { buildAgendaWindow, rankingLockFields } from './lockSeverity.js';
-import { classifyAgentShadow, OP_VERSION, SHADOW_VERSION } from './shadowCalibration.js';
+import { classifyItemMmtV4 } from './classifyCurrencies.js';
+import { buildAgendaWindow } from './lockSeverity.js';
+import { OP_VERSION, SHADOW_VERSION } from './shadowCalibration.js';
 import { fetchCalendar, linkNewsToCalendar, turboEvent } from './calendar.js';
 import { fetchMarket } from './market.js';
 import { fetchPolymarketGeo } from './polymarketGeo.js';
+import { buildPairRisk, buildRiskMap } from './riskMap.js';
 import { sourceHealth, RELEASE } from './operations.js';
 
 /**
@@ -285,7 +285,7 @@ export function deduplicateAndFilterWindow(items, existingItems = [], nowMs = Da
     (a, b) => (Date.parse(b.published_at || 0) || 0) - (Date.parse(a.published_at || 0) || 0),
   );
 
-  // Recorte de 72 h usado por alertas y por la fila XAU. El feed IRIS publicado sale de retainHeadlines
+  // Recorte de 72 h usado por alertas. El feed IRIS publicado sale de retainHeadlines
   // (72 h de breaking/agencia más oficiales de 45 días), no de este recorte.
   const irisWindowItems = merged.filter((it) => {
     const ms = Date.parse(it.published_at || '');
@@ -485,7 +485,7 @@ export function readRadarStore(value) {
 }
 
 /**
- * Ejecuta la recolección paralela determinista completa (35 fuentes + Calendario + Spot FX + Agente MMT + Polymarket geo).
+ * Ejecuta la recolección paralela determinista completa (fuentes + Calendario + Spot FX + mapa de riesgo + Polymarket geo).
  */
 export async function collectRadarAndIrisData({
   existingItems = [],
@@ -540,46 +540,7 @@ export async function collectRadarAndIrisData({
     linkNewsToCalendar(allWindowItems, calendarEvents);
   }
 
-  // Preparar copias con solo las 8 divisas G8 para el motor determinista Agente MMT
-  const mmtInputNews = allWindowItems.map((it) => ({
-    ...it,
-    currencies: (it.g8_currencies && it.g8_currencies.length)
-      ? it.g8_currencies
-      : (it.currencies || []).filter((c) => c !== 'XAU'),
-  }));
-
-  const eligibleEvidence = selectEvidence(mmtInputNews, nowMs);
-  const contract = evidenceContract(eligibleEvidence, nowMs);
-  const shadowRows = classifyAgentShadow(eligibleEvidence, nowMs);
-  const shadowByCcy = new Map(shadowRows.map((s) => [s.currency, s]));
   const finishedAt = new Date().toISOString();
-
-  const agentRows = attachRanks(classifyAgent(eligibleEvidence, nowMs, calendarEvents)).map((r) => {
-    const sh = shadowByCcy.get(r.currency);
-    return {
-      ...r,
-      calibration: {
-        ...contract,
-        engine: 'agente',
-        engineLabel: ENGINE_NAME,
-        opVersion: OP_VERSION,
-        generatedAt: finishedAt,
-        evaluatedAt: contract.asOf,
-        empirical: false,
-        interpretationMode: 'deterministic_rules',
-      },
-      shadow: sh ? { ...sh, evidenceSet: contract.evidenceSet, deltaFromOp: sh.score - r.score } : null,
-    };
-  });
-
-  const engineSnapshot = {
-    engine: 'agente',
-    label: ENGINE_NAME,
-    snapshot_at: finishedAt,
-    regime_note: '',
-    rows: agentRows,
-    history: Object.fromEntries(agentRows.map((r) => [r.currency, [[finishedAt, r.score, r.rank]]])),
-  };
 
   const market = mktResult?.pairs && Object.keys(mktResult.pairs).length
     ? mktResult
@@ -610,49 +571,14 @@ export async function collectRadarAndIrisData({
   // Agenda: un actual se conserva en la lista hasta -48 h. El candado activo es 48 h
   // y la etiqueta POST-EVENTO dura 24 h. La severidad la pone buildAgendaWindow.
   const agendaWindow = buildAgendaWindow(calendarEvents, nowMs);
-
-  // Fila determinista adicional para XAU (Oro) en currency_ranking_mmt
-  const xauItems = irisWindowItems.filter((n) => (n.currencies || []).includes('XAU'));
-  const xauRawSum = xauItems.reduce((acc, n) => {
-    const t = `${n.title || ''} ${n.body || ''}`;
-    if (/\b(rises?|jumps?|surges?|record high|safe[- ]haven|bullion up|gains?)\b/i.test(t)) return acc + 8;
-    if (/\b(falls?|drops?|slumps?|retreats?|declines?)\b/i.test(t)) return acc - 8;
-    return acc + 2;
-  }, 0);
-  const xauScore = xauItems.length ? clamp(Math.round(xauRawSum), -60, 60) : 0;
-  const xauRowMmt = {
-    currency: 'XAU',
-    rank: null,
-    score: xauScore,
-    bias: xauItems.length ? biasFor(xauScore) : 'N/D',
-    structural: xauScore,
-    impulse: null,
-    ficha_v6: 'A6 / EA-7',
-    sovereignty_mmt: MMT_SOVEREIGNTY.XAU,
-    ...rankingLockFields(null),
-    no_evidence: xauItems.length === 0,
-    drivers: xauItems.length
-      ? xauItems.slice(0, 2).map((n) => `Oro refugio / MDP: ${n.title.slice(0, 42)}`)
-      : ['Sin catalizadores directos XAU en ventana'],
-    rationale: `${xauItems.length} titulares XAU · Ficha A6 / EA-7 (${MMT_SOVEREIGNTY.XAU}) · Score ${xauScore >= 0 ? '+' : ''}${xauScore}.`,
-  };
-
-  const g8RankingSummary = agentRows.map((r) => ({
-    currency: r.currency,
-    rank: r.rank,
-    score: r.score,
-    bias: r.noEvidence ? 'N/D' : r.bias,
-    structural: r.structural ?? r.score,
-    impulse: r.impulse ?? null,
-    ficha_v6: r.ficha_v6 || 'A1 / B2',
-    sovereignty_mmt: r.sovereignty_mmt || MMT_SOVEREIGNTY[r.currency] || 'SOBERANO_EMISOR',
-    ...rankingLockFields(r),
-    no_evidence: !!r.noEvidence,
-    drivers: r.drivers || [],
-    rationale: r.rationale || '',
-  }));
-
-  const currencyRankingMmt = [...g8RankingSummary, xauRowMmt];
+  const riskMap = buildRiskMap({
+    coverage,
+    calendarEvents,
+    items: allWindowItems,
+    polymarketGeo: polyResult.block,
+    nowMs,
+  });
+  const pairRisk = buildPairRisk(riskMap);
 
   const irisFeed = {
     schema: 'iris-g8-feed/v2-mmt-v4.0',
@@ -668,8 +594,8 @@ export async function collectRadarAndIrisData({
     sources_total: sourcesHealth.length,
     count: irisItemsFormatted.length,
     coverage,
-    currency_ranking_mmt: currencyRankingMmt,
-    g8_ranking: g8RankingSummary,
+    risk_map: riskMap,
+    pair_risk: pairRisk,
     agenda_window: agendaWindow,
     polymarket_geo: polyResult.block,
     market_basket_pct: market?.basketPct || {},
@@ -717,11 +643,11 @@ export async function collectRadarAndIrisData({
     coverage,
     news: tapeNews,
     items: irisItemsFormatted,
-    currency_ranking_mmt: currencyRankingMmt,
-    g8_ranking: g8RankingSummary,
+    risk_map: riskMap,
+    pair_risk: pairRisk,
     agenda_window: agendaWindow,
     polymarket_geo: polyResult.block,
-    engines: [engineSnapshot],
+    engines: [],
     market,
     calendar: calendarEvents,
     calendar_sync: { events: calendarEvents.length, ok: calendarEvents.length > 0 },
