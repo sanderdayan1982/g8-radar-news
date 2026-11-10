@@ -5,8 +5,8 @@
   "engine_version": "mmt-agent-op-v4.1-G8",
   "classification_mode": "deterministic_regex_keywords_zero_llm",
   "llm_calls": 0,
-  "generated_at": "2026-11-10T15:42:54.161Z",
-  "started_at": "2026-11-10T15:42:51.759Z",
+  "generated_at": "2026-11-10T15:48:00.513Z",
+  "started_at": "2026-11-10T15:47:56.449Z",
   "window_hours": 72,
   "sources_ok": 31,
   "sources_total": 31,
@@ -15,22 +15,22 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 63,
+      "score": 45,
       "bias": "alcista",
-      "structural": 63,
-      "impulse": 55,
+      "structural": 45,
+      "impulse": 46,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Logan Speaks en 0.1h",
+      "calendar_lock_detail": "FOMC Member Logan Speaks en 0h",
       "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
-        "CPI vs consenso",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari"
       ],
-      "rationale": "28 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL + RELATIVE_PRICE · Est +63 | Imp 3h +55. Régimen real mixed."
+      "rationale": "28 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +45 | Imp 3h +46. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -38,7 +38,7 @@
       "score": 33,
       "bias": "alcista",
       "structural": 33,
-      "impulse": 38,
+      "impulse": 36,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -49,7 +49,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "21 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +38. Régimen real mixed."
+      "rationale": "22 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +36. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -57,7 +57,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 38,
+      "impulse": 36,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -67,7 +67,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +38. Régimen real mixed."
+      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +36. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -79,7 +79,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 2.8h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 2.7h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -132,7 +132,7 @@
       "score": -30,
       "bias": "bajista",
       "structural": -30,
-      "impulse": -38,
+      "impulse": -36,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -144,7 +144,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "15 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h -38. Régimen real mixed."
+      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h -36. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -152,7 +152,7 @@
       "score": -41,
       "bias": "bajista",
       "structural": -41,
-      "impulse": -24,
+      "impulse": -23,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
@@ -164,7 +164,7 @@
         "Indigestión fiscal / prima por plazo (B1)",
         "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co"
       ],
-      "rationale": "13 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + FISCAL_NFA · Est -41 | Imp 3h -24. Régimen real mixed."
+      "rationale": "13 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + FISCAL_NFA · Est -41 | Imp 3h -23. Régimen real mixed."
     },
     {
       "currency": "XAU",
@@ -190,22 +190,22 @@
     {
       "currency": "USD",
       "rank": 1,
-      "score": 63,
+      "score": 45,
       "bias": "alcista",
-      "structural": 63,
-      "impulse": 55,
+      "structural": 45,
+      "impulse": 46,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "FOMC Member Logan Speaks en 0.1h",
+      "calendar_lock_detail": "FOMC Member Logan Speaks en 0h",
       "post_event_status": "✓ POST-EVENTO (Core CPI m/m: Act 0.3% vs Est 0.2%)",
       "no_evidence": false,
       "drivers": [
         "Repricing hawkish BC (Ficha A1)",
-        "CPI vs consenso",
-        "Refugio Risk-Off (A6: USD/JPY/CHF)"
+        "Refugio Risk-Off (A6: USD/JPY/CHF)",
+        "COST_PUSH / RIESGO EA-1 (STAG_TRAP): The Democrats’ partial return to tari"
       ],
-      "rationale": "28 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL + RELATIVE_PRICE · Est +63 | Imp 3h +55. Régimen real mixed."
+      "rationale": "28 titulares · Ficha A1 (SOBERANO_EMISOR) · ⚑BC <48h (Candado CIRO) · RISK_GEO + FISCAL_NFA + POLICY_PRICE + TRADE_EXTERNAL · Est +45 | Imp 3h +46. Régimen real mixed."
     },
     {
       "currency": "JPY",
@@ -213,7 +213,7 @@
       "score": 33,
       "bias": "alcista",
       "structural": 33,
-      "impulse": 38,
+      "impulse": 36,
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -224,7 +224,7 @@
         "Repricing hawkish BC (Ficha A1)",
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "21 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +38. Régimen real mixed."
+      "rationale": "22 titulares · Ficha A1 (SOBERANO_EMISOR) · RISK_GEO + POLICY_PRICE · Est +33 | Imp 3h +36. Régimen real mixed."
     },
     {
       "currency": "CHF",
@@ -232,7 +232,7 @@
       "score": 24,
       "bias": "alcista",
       "structural": 24,
-      "impulse": 38,
+      "impulse": 36,
       "ficha_v6": "A6 / B5 / B15",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -242,7 +242,7 @@
       "drivers": [
         "Refugio Risk-Off (A6: USD/JPY/CHF)"
       ],
-      "rationale": "19 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +38. Régimen real mixed."
+      "rationale": "20 titulares · Ficha A6 / B5 / B15 (SOBERANO_EMISOR) · RISK_GEO · Est +24 | Imp 3h +36. Régimen real mixed."
     },
     {
       "currency": "GBP",
@@ -254,7 +254,7 @@
       "ficha_v6": "A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
-      "calendar_lock_detail": "MPC Member Pill Speaks en 2.8h",
+      "calendar_lock_detail": "MPC Member Pill Speaks en 2.7h",
       "post_event_status": "✓ POST-EVENTO (MPC Member Lombardelli Speaks: Publicado)",
       "no_evidence": false,
       "drivers": [
@@ -307,7 +307,7 @@
       "score": -30,
       "bias": "bajista",
       "structural": -30,
-      "impulse": -38,
+      "impulse": -36,
       "ficha_v6": "EA-1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "calendar_lock": null,
@@ -319,7 +319,7 @@
         "Presión Risk-Off sobre cíclica (B5 / B15)",
         "CPI sin sorpresa"
       ],
-      "rationale": "15 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h -38. Régimen real mixed."
+      "rationale": "16 titulares · Ficha EA-1 (SOBERANO_EMISOR) · RISK_GEO + TRADE_EXTERNAL · Est -30 | Imp 3h -36. Régimen real mixed."
     },
     {
       "currency": "EUR",
@@ -327,7 +327,7 @@
       "score": -41,
       "bias": "bajista",
       "structural": -41,
-      "impulse": -24,
+      "impulse": -23,
       "ficha_v6": "B12",
       "sovereignty_mmt": "B12_EUR_FRAG_RIESGO",
       "calendar_lock": "⚑BC <48h (Candado CIRO)",
@@ -339,7 +339,7 @@
         "Indigestión fiscal / prima por plazo (B1)",
         "B12_EUR_FRAG_RIESGO: BoE's Lombardelli: A number of European co"
       ],
-      "rationale": "13 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + FISCAL_NFA · Est -41 | Imp 3h -24. Régimen real mixed."
+      "rationale": "13 titulares · Ficha B12 (B12_EUR_FRAG_RIESGO) · ⚑BC <48h (Candado CIRO) · FISCAL_SOVEREIGN_RISK + FISCAL_NFA · Est -41 | Imp 3h -23. Régimen real mixed."
     }
   ],
   "agenda_window": [
@@ -352,7 +352,7 @@
       "actual": "15.6B",
       "forecast": "19.2B",
       "previous": "19.5B",
-      "hours_from_now": -32.7,
+      "hours_from_now": -32.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -364,7 +364,7 @@
       "actual": "2.4",
       "forecast": "2.1",
       "previous": "2.7",
-      "hours_from_now": -30.2,
+      "hours_from_now": -30.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -376,7 +376,7 @@
       "actual": "0.7%",
       "forecast": "0.6%",
       "previous": "0.6%",
-      "hours_from_now": -24.7,
+      "hours_from_now": -24.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -400,7 +400,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -22.3,
+      "hours_from_now": -22.4,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -412,7 +412,7 @@
       "actual": "-2.7%",
       "forecast": null,
       "previous": "-4.7%",
-      "hours_from_now": -16.2,
+      "hours_from_now": -16.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -424,7 +424,7 @@
       "actual": "-6.8%",
       "forecast": "-3.1%",
       "previous": "-3.1%",
-      "hours_from_now": -16.2,
+      "hours_from_now": -16.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -436,7 +436,7 @@
       "actual": "5.2%",
       "forecast": "5.4%",
       "previous": "5.3%",
-      "hours_from_now": -15.9,
+      "hours_from_now": -16,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -448,7 +448,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15.9,
+      "hours_from_now": -16,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -460,7 +460,7 @@
       "actual": "2372.3T",
       "forecast": "2.81T",
       "previous": "2.98T",
-      "hours_from_now": -15.9,
+      "hours_from_now": -16,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -472,7 +472,7 @@
       "actual": "1.1%",
       "forecast": "1.2%",
       "previous": "1.0%",
-      "hours_from_now": -15.7,
+      "hours_from_now": -15.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -484,7 +484,7 @@
       "actual": "-15",
       "forecast": null,
       "previous": "-13",
-      "hours_from_now": -15.2,
+      "hours_from_now": -15.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -496,7 +496,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.11|3.9",
-      "hours_from_now": -12.1,
+      "hours_from_now": -12.2,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -508,7 +508,7 @@
       "actual": null,
       "forecast": "47.1",
       "previous": "47.0",
-      "hours_from_now": -10.7,
+      "hours_from_now": -10.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -520,7 +520,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -7.2,
+      "hours_from_now": -7.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -532,7 +532,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.7,
+      "hours_from_now": -6.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -544,7 +544,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.52|3.8",
-      "hours_from_now": -5.7,
+      "hours_from_now": -5.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -556,7 +556,7 @@
       "actual": "97.8",
       "forecast": "98.0",
       "previous": "97.9",
-      "hours_from_now": -4.7,
+      "hours_from_now": -4.8,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -568,7 +568,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.2,
+      "hours_from_now": -3.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -580,7 +580,7 @@
       "actual": "19.75K",
       "forecast": null,
       "previous": "16.8K",
-      "hours_from_now": -2.5,
+      "hours_from_now": -2.6,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -592,7 +592,7 @@
       "actual": "0.3%",
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -2.2,
+      "hours_from_now": -2.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -604,7 +604,7 @@
       "actual": "0.4%",
       "forecast": "0.3%",
       "previous": "0.6%",
-      "hours_from_now": -2.2,
+      "hours_from_now": -2.3,
       "window_status": "✓ POST-EVENTO"
     },
     {
@@ -616,8 +616,8 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.1,
-      "window_status": "⚑BC <48h (Candado CIRO)"
+      "hours_from_now": 0,
+      "window_status": "✓ POST-EVENTO"
     },
     {
       "id": "beed386445c6b6b6",
@@ -628,7 +628,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.30|2.8",
-      "hours_from_now": 2.3,
+      "hours_from_now": 2.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -640,7 +640,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.8,
+      "hours_from_now": 2.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -652,7 +652,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.8,
+      "hours_from_now": 2.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -664,7 +664,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.8,
+      "hours_from_now": 2.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -676,7 +676,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.8,
+      "hours_from_now": 4.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -688,7 +688,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 5.8,
+      "hours_from_now": 5.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -700,7 +700,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.8,
+      "hours_from_now": 7.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -712,7 +712,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.8,
+      "hours_from_now": 7.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -724,7 +724,7 @@
       "actual": null,
       "forecast": "2.1%",
       "previous": "2.0%",
-      "hours_from_now": 8.1,
+      "hours_from_now": 8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -736,7 +736,7 @@
       "actual": null,
       "forecast": null,
       "previous": "60.4%",
-      "hours_from_now": 14.3,
+      "hours_from_now": 14.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -748,7 +748,7 @@
       "actual": null,
       "forecast": "-0.2%",
       "previous": "-0.2%",
-      "hours_from_now": 15.3,
+      "hours_from_now": 15.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -760,7 +760,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.3,
+      "hours_from_now": 15.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -784,7 +784,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "-1.3%",
-      "hours_from_now": 17.3,
+      "hours_from_now": 17.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -808,7 +808,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": 18.9,
+      "hours_from_now": 18.8,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -820,7 +820,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.3,
+      "hours_from_now": 21.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -832,7 +832,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.3,
+      "hours_from_now": 21.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -856,7 +856,7 @@
       "actual": null,
       "forecast": "6.5%",
       "previous": "6.8%",
-      "hours_from_now": 32.1,
+      "hours_from_now": 32,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -868,7 +868,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.3%",
-      "hours_from_now": 32.3,
+      "hours_from_now": 32.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -880,7 +880,7 @@
       "actual": null,
       "forecast": "-33%",
       "previous": "-32%",
-      "hours_from_now": 32.3,
+      "hours_from_now": 32.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -892,7 +892,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -904,7 +904,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -916,7 +916,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -928,7 +928,7 @@
       "actual": null,
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -940,7 +940,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.9%",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -952,7 +952,7 @@
       "actual": null,
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -964,7 +964,7 @@
       "actual": null,
       "forecast": "-0.5%",
       "previous": "1.2%",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -976,7 +976,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -988,7 +988,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41.3,
+      "hours_from_now": 41.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1000,7 +1000,7 @@
       "actual": null,
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": 45.8,
+      "hours_from_now": 45.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1012,7 +1012,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": 45.8,
+      "hours_from_now": 45.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1024,7 +1024,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.8,
+      "hours_from_now": 45.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1036,7 +1036,7 @@
       "actual": null,
       "forecast": "3.89M",
       "previous": "3.99M",
-      "hours_from_now": 47.3,
+      "hours_from_now": 47.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1048,7 +1048,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.3,
+      "hours_from_now": 47.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1060,7 +1060,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 47.3,
+      "hours_from_now": 47.2,
       "window_status": "⚑BC <48h (Candado CIRO)"
     },
     {
@@ -1072,7 +1072,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.3%",
-      "hours_from_now": 47.8,
+      "hours_from_now": 47.7,
       "window_status": "⚑BC <48h (Candado CIRO)"
     }
   ],
@@ -1087,6 +1087,99 @@
     "NZD": 0.3
   },
   "items": [
+    {
+      "id": "b5d8998075528a96e6be732cc3e75912836d5375cd5182b2326ebae4077a1b8e",
+      "sha256": "b5d8998075528a96e6be732cc3e75912836d5375cd5182b2326ebae4077a1b8e",
+      "title": "UKMTO: Tanker struck by unknown projectile.",
+      "url": "https://t.me/FinancialJuice/146048",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T15:44:25.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1a7652bc46d7e8908f4e5f459e4b2bb5d54ce75524fb2ee0980226776f037054",
+      "sha256": "1a7652bc46d7e8908f4e5f459e4b2bb5d54ce75524fb2ee0980226776f037054",
+      "title": "Top Federal Reserve official considers largest rate rise since 2022",
+      "url": "https://www.ft.com/content/72abed21-6043-4b2b-81b1-f3a2547da5b7?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T15:43:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2f6e156a2add52b1e1d331815d339d58b688160d7fd84ab1b8ff34d56780ce5e",
+      "sha256": "2f6e156a2add52b1e1d331815d339d58b688160d7fd84ab1b8ff34d56780ce5e",
+      "title": "UKMTO receives a report of an incident near Oman’s Lima on November 10th.",
+      "url": "https://t.me/FinancialJuice/146047",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T15:42:56.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "a72a222d31cb143c5151ca08a10cfa640c69a47e72140956a24c2e3247864226",
       "sha256": "a72a222d31cb143c5151ca08a10cfa640c69a47e72140956a24c2e3247864226",
@@ -1308,6 +1401,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "bab2f5a600aebd3eb5d6bc7b815bf079ff67e7802f29077744e863f6c4b87f37",
+      "sha256": "bab2f5a600aebd3eb5d6bc7b815bf079ff67e7802f29077744e863f6c4b87f37",
+      "title": "BoE policymaker refuses to rule out back-to-back rate rises",
+      "url": "https://www.ft.com/content/212d4b87-9fce-4141-b21f-7e4a81c8074f?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T15:15:50.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -5939,37 +6062,6 @@
       "z": null
     },
     {
-      "id": "1a7652bc46d7e8908f4e5f459e4b2bb5d54ce75524fb2ee0980226776f037054",
-      "sha256": "1a7652bc46d7e8908f4e5f459e4b2bb5d54ce75524fb2ee0980226776f037054",
-      "title": "Top Federal Reserve official considers largest rate rise since 2022",
-      "url": "https://www.ft.com/content/72abed21-6043-4b2b-81b1-f3a2547da5b7?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T09:00:09.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "fbeeb4db81c4d34733facd37ac20e6edc8308c77d56b92c46501df1ea2227c52",
       "sha256": "fbeeb4db81c4d34733facd37ac20e6edc8308c77d56b92c46501df1ea2227c52",
       "title": "BoE Breeden: Firms now very good at adapting to cost shocks.",
@@ -8134,92 +8226,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-10T01:08:23.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "17af08f5db6ff3c94e40ba1daf9058d81f7e12d9affdc1a50e1d5d00e8dfa808",
-      "sha256": "17af08f5db6ff3c94e40ba1daf9058d81f7e12d9affdc1a50e1d5d00e8dfa808",
-      "title": "South Korea president Lee: Seoul must foster cooperation with US Congress, expand ties with US state governments",
-      "url": "https://t.me/FinancialJuice/145877",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T01:07:33.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "853259bc67ec11026d772a83705e0ce4fc66da6a5ef7207adeaab5bec8f9f2ce",
-      "sha256": "853259bc67ec11026d772a83705e0ce4fc66da6a5ef7207adeaab5bec8f9f2ce",
-      "title": "Australia PM Albanese: AI protections to be overseen by new dedicated AI safety regulator",
-      "url": "https://t.me/FinancialJuice/145876",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T01:06:28.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ec31151e0ed7471407b8088ea0951d15ed8789f688d159fbb4f1a44a7e3c0f7b",
-      "sha256": "ec31151e0ed7471407b8088ea0951d15ed8789f688d159fbb4f1a44a7e3c0f7b",
-      "title": "Australia PM Albanese announces mandatory AI safety and security measures",
-      "url": "https://t.me/FinancialJuice/145875",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T01:06:05.000Z",
       "currencies": [
         "AUD"
       ],
@@ -8244,6 +8250,99 @@
   ],
   "news": [
     {
+      "id": "b5d8998075528a96e6be732cc3e75912836d5375cd5182b2326ebae4077a1b8e",
+      "sha256": "b5d8998075528a96e6be732cc3e75912836d5375cd5182b2326ebae4077a1b8e",
+      "title": "UKMTO: Tanker struck by unknown projectile.",
+      "url": "https://t.me/FinancialJuice/146048",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T15:44:25.000Z",
+      "currencies": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "divisas": [
+        "USD",
+        "JPY",
+        "CHF",
+        "CAD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1a7652bc46d7e8908f4e5f459e4b2bb5d54ce75524fb2ee0980226776f037054",
+      "sha256": "1a7652bc46d7e8908f4e5f459e4b2bb5d54ce75524fb2ee0980226776f037054",
+      "title": "Top Federal Reserve official considers largest rate rise since 2022",
+      "url": "https://www.ft.com/content/72abed21-6043-4b2b-81b1-f3a2547da5b7?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T15:43:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2f6e156a2add52b1e1d331815d339d58b688160d7fd84ab1b8ff34d56780ce5e",
+      "sha256": "2f6e156a2add52b1e1d331815d339d58b688160d7fd84ab1b8ff34d56780ce5e",
+      "title": "UKMTO receives a report of an incident near Oman’s Lima on November 10th.",
+      "url": "https://t.me/FinancialJuice/146047",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-10T15:42:56.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "a72a222d31cb143c5151ca08a10cfa640c69a47e72140956a24c2e3247864226",
       "sha256": "a72a222d31cb143c5151ca08a10cfa640c69a47e72140956a24c2e3247864226",
       "title": "WATCH LIVE: Fed's Logan Speaks 10:50 ET",
@@ -8464,6 +8563,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "bab2f5a600aebd3eb5d6bc7b815bf079ff67e7802f29077744e863f6c4b87f37",
+      "sha256": "bab2f5a600aebd3eb5d6bc7b815bf079ff67e7802f29077744e863f6c4b87f37",
+      "title": "BoE policymaker refuses to rule out back-to-back rate rises",
+      "url": "https://www.ft.com/content/212d4b87-9fce-4141-b21f-7e4a81c8074f?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-10T15:15:50.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -13095,37 +13224,6 @@
       "z": null
     },
     {
-      "id": "1a7652bc46d7e8908f4e5f459e4b2bb5d54ce75524fb2ee0980226776f037054",
-      "sha256": "1a7652bc46d7e8908f4e5f459e4b2bb5d54ce75524fb2ee0980226776f037054",
-      "title": "Top Federal Reserve official considers largest rate rise since 2022",
-      "url": "https://www.ft.com/content/72abed21-6043-4b2b-81b1-f3a2547da5b7?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T09:00:09.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "fbeeb4db81c4d34733facd37ac20e6edc8308c77d56b92c46501df1ea2227c52",
       "sha256": "fbeeb4db81c4d34733facd37ac20e6edc8308c77d56b92c46501df1ea2227c52",
       "title": "BoE Breeden: Firms now very good at adapting to cost shocks.",
@@ -15290,92 +15388,6 @@
       "source_id": "financialjuice",
       "source_type": "breaking",
       "published_at": "2026-11-10T01:08:23.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "17af08f5db6ff3c94e40ba1daf9058d81f7e12d9affdc1a50e1d5d00e8dfa808",
-      "sha256": "17af08f5db6ff3c94e40ba1daf9058d81f7e12d9affdc1a50e1d5d00e8dfa808",
-      "title": "South Korea president Lee: Seoul must foster cooperation with US Congress, expand ties with US state governments",
-      "url": "https://t.me/FinancialJuice/145877",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T01:07:33.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "853259bc67ec11026d772a83705e0ce4fc66da6a5ef7207adeaab5bec8f9f2ce",
-      "sha256": "853259bc67ec11026d772a83705e0ce4fc66da6a5ef7207adeaab5bec8f9f2ce",
-      "title": "Australia PM Albanese: AI protections to be overseen by new dedicated AI safety regulator",
-      "url": "https://t.me/FinancialJuice/145876",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T01:06:28.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ec31151e0ed7471407b8088ea0951d15ed8789f688d159fbb4f1a44a7e3c0f7b",
-      "sha256": "ec31151e0ed7471407b8088ea0951d15ed8789f688d159fbb4f1a44a7e3c0f7b",
-      "title": "Australia PM Albanese announces mandatory AI safety and security measures",
-      "url": "https://t.me/FinancialJuice/145875",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T01:06:05.000Z",
       "currencies": [
         "AUD"
       ],
