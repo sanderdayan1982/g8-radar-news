@@ -1,9 +1,6 @@
-import { inverseChange, rankRows, hasNoEvidence, connectionState, nextCalendarEvent, fxClosed, safeUrl, sourceFetchedLive } from './domain.js';
+import { inverseChange, connectionState, nextCalendarEvent, safeUrl, sourceFetchedLive } from './domain.js';
 import { classifyEventLock, lockSeverityIndex } from './lockSeverity.js';
 const CURRENCIES = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'CAD', 'AUD', 'NZD'];
-const BANK = { USD: 'Fed', EUR: 'BCE', GBP: 'BoE', JPY: 'BoJ', CHF: 'SNB', CAD: 'BoC', AUD: 'RBA', NZD: 'RBNZ' };
-// Market quoting convention: the higher-priority currency is the base of the pair.
-const PAIR_PRIORITY = ['EUR', 'GBP', 'AUD', 'NZD', 'USD', 'CAD', 'CHF', 'JPY'];
 const CATEGORY_LABEL = { dato_macro: 'Dato', banco_central: 'Banco central', geopolitica: 'Geopolítica', mercado: 'Mercado', analisis: 'Análisis', otro: 'General' };
 const LEVEL_LABEL = { critico: 'Crítico', alto: 'Alto', medio: 'Medio' };
 const TYPE_LABEL = { breaking: 'Breaking', dato_macro: 'Dato macro', cambio_regimen: 'Cambio de régimen', cambio_ranking: 'Cambio de ranking', calendario: 'Agenda', titular: 'Titular' };
@@ -15,14 +12,7 @@ const SESSIONS = [
   { city: 'Nueva York', tz: 'America/New_York', open: 8, close: 17 },
 ];
 const INVERTED = /unemployment|jobless|claims/i;
-const BIAS_LABEL = { alcista: 'Soporte', bajista: 'Presión', neutral: 'Neutral' };
-const BIAS_THRESHOLD = 12;
 const ENGINE_NAME = 'Agente MMT';
-
-const pressureLabel = (r) => {
-  if (r.noEvidence) return 'N/D';
-  return BIAS_LABEL[r.bias] || 'Neutral';
-};
 
 export function hasComparableScore(row) {
   return !!row && !row.noEvidence && typeof row.score === 'number' && Number.isFinite(row.score);
@@ -44,10 +34,16 @@ const $ = (sel) => (typeof document !== 'undefined' ? document.querySelector(sel
 const $$ = (sel) => (typeof document !== 'undefined' ? [...document.querySelectorAll(sel)] : []);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
+function riskTone(level) {
+  const tone = String(level || '').toLowerCase();
+  return tone === 'alto' || tone === 'medio' || tone === 'bajo' ? tone : 'bajo';
+}
+
 export function riskMapBoardHtml(rows = [], open = new Set()) {
   return (rows || []).map((r) => {
     const ccy = esc(r.currency);
     const level = esc(r.risk_level || '');
+    const tone = riskTone(r.risk_level);
     const reasons = (Array.isArray(r.reasons) ? r.reasons : []).map((x) => esc(x)).filter(Boolean);
     const reasonText = reasons.join(' · ');
     const lock = r.lock_level && r.lock_level !== 'NINGUNO'
@@ -55,12 +51,12 @@ export function riskMapBoardHtml(rows = [], open = new Set()) {
       : '';
     const silence = r.silence === true ? '<span>silencio</span>' : '';
     const expanded = open.has(r.currency);
-    return `<li class="ccy-row${expanded ? ' open' : ''}" data-ccy="${ccy}">
-      <button class="ccy-line" type="button" aria-expanded="${expanded}" aria-label="${ccy}: ${level}">
+    return `<li class="ccy-row risk-${tone}${expanded ? ' open' : ''}" data-ccy="${ccy}">
+      <button class="ccy-line risk-line" type="button" aria-expanded="${expanded}" aria-label="${ccy}: ${level}">
         <span class="code">${ccy}</span>
-        <span class="risk-level">${level}</span>
+        <span class="risk-level ${tone}">${level}</span>
       </button>
-      <div class="ccy-meta"><span>${level}</span>${lock}${silence}</div>
+      <div class="ccy-meta">${lock}${silence}</div>
       <p class="driver" title="${reasonText}">${reasonText}</p>
       <div class="ccy-detail"><p>${reasonText}</p></div>
     </li>`;
@@ -69,14 +65,29 @@ export function riskMapBoardHtml(rows = [], open = new Set()) {
 
 export function pairRiskHtml(pairs = []) {
   return (pairs || []).map((p) => {
+    const tone = riskTone(p.risk_level);
     const lock = p.lock_level && p.lock_level !== 'NINGUNO' ? ` · ${esc(p.lock_level)}` : '';
-    return `<div class="pair"><b>${esc(p.pair)}</b><span>${esc(p.risk_level || '')}${lock}</span></div>`;
+    return `<div class="pair risk-${tone}"><b>${esc(p.pair)}</b><span class="risk-level ${tone}">${esc(p.risk_level || '')}${lock}</span></div>`;
+  }).join('');
+}
+
+export function polymarketGeoHtml(block) {
+  const markets = Array.isArray(block?.markets) ? block.markets : [];
+  if (!markets.length) {
+    const note = block?.status === 'STALE' ? 'Sin lectura reciente.' : 'Sin mercados en la ventana.';
+    return `<p class="state-msg">${note}</p>`;
+  }
+  return markets.map((m) => {
+    const prob = typeof m.prob === 'number' ? `${m.prob}%` : '—';
+    const delta = m.d24h_pp == null || m.d24h_pp === ''
+      ? 'Δ24h —'
+      : `Δ24h ${Number(m.d24h_pp) > 0 ? '+' : ''}${m.d24h_pp} pp`;
+    const title = m.question || m.event_title || '';
+    return `<article class="geo-row"><div class="geo-q">${esc(title)}</div><div class="geo-meta"><span>${esc(m.theme || '')}</span><span>${esc(prob)}</span><span>${esc(delta)}</span></div></article>`;
   }).join('');
 }
 
 const num = (v) => { const m = /-?\d+(?:\.\d+)?/.exec(String(v ?? '').replace(/,/g, '')); return m ? Number(m[0]) : null; };
-const signed = (n) => (n > 0 ? `+${n}` : `${n}`);
-const fmtImpulse = (v) => (v == null ? 'n/d' : signed(v));
 
 const storageGet = (k) => {try {return typeof localStorage !== 'undefined' ? localStorage.getItem(k) : null;} catch {return null;}};
 
@@ -85,6 +96,7 @@ const ui = {
   filter: 'all',
   ccy: null,
   engine: 'agente',
+  boardTab: 'mapa',
   calImpact: storageGet('rn-cal') || 'Medium',
   open: new Set(),
   knownNews: new Set(),
@@ -216,7 +228,7 @@ function renderStatus() {
     band.textContent = `Sin sincronizar desde ${fmtTime(last)}. El servidor reintenta automáticamente.`;
   } else if (cov.degraded) {
     band.hidden = false;
-    band.textContent = `Datos degradados: cobertura Act ${cov.matched}/${cov.total}. Fuentes operativas no equivalen a integridad; el ranking opera con evidencia incompleta.`;
+    band.textContent = `Datos degradados: cobertura Act ${cov.matched}/${cov.total}. Fuentes operativas no equivalen a integridad.`;
   } else {
     band.hidden = true;
     band.textContent = '';
@@ -331,84 +343,6 @@ function renderTape() {
 
 // ---------------------------------------------------------------- board
 
-const SETUP_META = {
-  confluencia: { label: 'Confluencia', title: 'Sesgo estructural (72h) e impulso táctico (3h) alineados en la misma dirección' },
-  giro: { label: 'Giro intradía', title: 'El impulso táctico de las últimas 3h contradice el sesgo estructural de 72h' },
-  impulso: { label: 'Impulso 3h', title: 'Ruptura táctica reciente sobre base estructural neutral' },
-};
-
-function calcSetup(structural, impulse) {
-  if (impulse == null) return '';
-  if (Math.abs(structural) >= 18 && Math.abs(impulse) >= 12 && Math.sign(structural) === Math.sign(impulse)) return 'confluencia';
-  if (Math.abs(structural) >= 18 && Math.abs(impulse) >= 15 && Math.sign(structural) !== Math.sign(impulse)) return 'giro';
-  if (Math.abs(structural) < 18 && Math.abs(impulse) >= 18) return 'impulso';
-  return '';
-}
-
-const isNoEvidence = hasNoEvidence;
-const sortAndRankWithEvidence = rankRows;
-const isFxWeekend = () => fxClosed();
-
-function engineView() {
-  const engines = (ui.data?.engines || []).filter((e) => e.engine === 'agente' && e.rows?.length);
-  if (!engines.length) return null;
-  const e = engines[0];
-  const rawRows = e.rows.map((r) => {
-    const h = e.history?.[r.currency] || [];
-    const structural = r.structural ?? r.score;
-    const impulse = r.impulse == null ? null : r.impulse;
-    return {
-      ...r,
-      structural,
-      impulse,
-      setup: r.setup || calcSetup(structural, impulse),
-      prevRank: h.length > 1 ? h[h.length - 2][2] : null,
-      series: h.map((p) => p[1]),
-    };
-  });
-  const rows = sortAndRankWithEvidence(rawRows);
-  return {
-    label: ENGINE_NAME,
-    snapshot_at: e.snapshot_at,
-    regime_note: e.regime_note,
-    rows,
-  };
-}
-
-function sparkline(series) {
-  if (!series || series.length < 2) return '';
-  const pts = series.slice(-48);
-  const w = 120; const h = 22;
-  const x = (i) => (i / (pts.length - 1)) * w;
-  const y = (v) => h / 2 - (v / 100) * (h / 2 - 1);
-  const d = pts.map((v, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join('');
-  const last = pts[pts.length - 1];
-  const color = last > 0 ? '#22c55e' : last < 0 ? '#ef4444' : '#7c8794';
-  return `<div class="spark-row"><svg class="spark" viewBox="0 0 ${w} ${h}"><line x1="0" x2="${w}" y1="${h / 2}" y2="${h / 2}" stroke="#2a323d"/><path d="${d}" fill="none" stroke="${color}" stroke-width="1.5"/></svg>Últimas 48 observaciones</div>`;
-}
-
-function renderEngineTabs() {
-  const el = $('#engine-tabs');
-  if (!el) return;
-  el.innerHTML = `<button data-engine="agente" class="active">${ENGINE_NAME}</button>`;
-}
-
-const driversList = (drivers) => `<ul>${(drivers || []).map((x) => `<li>${esc(x)}</li>`).join('') || '<li>Sin catalizadores</li>'}</ul>`;
-
-function cleanRationale(s) {
-  return String(s || '')
-    .replace(/\[[0-9a-f]{7,40}\]/gi, '')
-    .replace(/\b[0-9a-f]{32,40}\b/gi, '')
-    .replace(/\s{2,}/g, ' ')
-    .replace(/\s+([.,;:])/g, '$1')
-    .trim();
-}
-
-function ledgerHtml(row) {
-  if (!row.ledger?.length) return '';
-  return `<details><summary>Contribuciones MMT v4.1-G8 (${row.ledger.length} noticias)</summary>${row.ledger.map((x) => `<p>${esc(x.published_at)} · ${esc(x.channel)}${x.ficha_v6 ? ` · <b>Ficha ${esc(x.ficha_v6)}</b>` : ''}${x.mmt_lens ? ` (${esc(x.mmt_lens)})` : ''} · bruto ${Number(x.raw).toFixed(2)} · tras antigüedad/tope ${Number(x.contribution).toFixed(2)} · ${esc(x.title)}</p>`).join('')}</details>`;
-}
-
 function lockPillClass(level) {
   return `cal-lock-pill lock lock-${String(level || '').toLowerCase().replace(/_/g, '-')}`;
 }
@@ -462,228 +396,32 @@ export function computeLiveCalendarBadge(currency, row, calEvents = [], nowMs = 
 }
 
 function renderBoard() {
-  renderEngineTabs();
-  if (Array.isArray(ui.data?.risk_map) && ui.data.risk_map.length) {
-    const board = $('#board');
-    const opVer = ui.data?.engine_meta?.op_version || '';
-    const when = ui.data?.generated_at ? fmtTime(ui.data.generated_at) : '';
-    const batch = $('#batch-time');
-    if (batch) batch.textContent = ['Mapa de riesgo de evento', opVer, when].filter(Boolean).join(' · ');
-    if (board) board.innerHTML = riskMapBoardHtml(ui.data.risk_map, ui.open);
-    const matrix = $('#matrix');
-    if (matrix) matrix.innerHTML = '';
-    const top = $('#top-pairs');
-    if (top) top.innerHTML = pairRiskHtml(ui.data.pair_risk);
-    const sheet = $('#pair-sheet');
-    if (sheet) { sheet.hidden = true; sheet.innerHTML = ''; }
-    const regime = $('#regime');
-    if (regime) { regime.hidden = true; regime.textContent = ''; }
-    return;
+  const tabs = $$('#board-tabs button');
+  for (const b of tabs) {
+    const on = b.dataset.boardTab === ui.boardTab;
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-selected', String(on));
   }
-  const view = engineView();
+  const hasMap = Array.isArray(ui.data?.risk_map) && ui.data.risk_map.length > 0;
+  const showPairs = ui.boardTab === 'pares';
   const board = $('#board');
-  if (!view) {
-    board.innerHTML = '<li class="state-msg">Sin clasificación todavía. Se genera tras la primera sincronización.</li>';
-    $('#matrix').innerHTML = '';
-    $('#top-pairs').innerHTML = '';
-    $('#batch-time').textContent = '';
-    return;
+  const pairPanel = $('#pair-panel');
+  const pairs = $('#top-pairs');
+  const batch = $('#batch-time');
+  const geo = $('#geo-panel');
+  if (board) board.hidden = showPairs;
+  if (pairPanel) pairPanel.hidden = !showPairs;
+  if (!hasMap) {
+    if (batch) batch.textContent = '';
+    if (board) board.innerHTML = '<li class="state-msg">mapa no disponible</li>';
+    if (pairs) pairs.innerHTML = '<div class="state-msg">mapa no disponible</div>';
+  } else {
+    const when = ui.data?.generated_at ? fmtTime(ui.data.generated_at) : '';
+    if (batch) batch.textContent = ['Mapa de riesgo de evento', when].filter(Boolean).join(' · ');
+    if (board) board.innerHTML = riskMapBoardHtml(ui.data.risk_map, ui.open);
+    if (pairs) pairs.innerHTML = pairRiskHtml(ui.data.pair_risk);
   }
-
-  const opVer = ui.data?.engine_meta?.op_version || 'mmt-agent-op-v4.1-G8';
-  $('#batch-time').textContent = view.snapshot_at
-    ? `${ENGINE_NAME} (${opVer}) · ${fmtTime(view.snapshot_at)} · Curso Maestro MMT + Matriz v6.0 · umbral ±${BIAS_THRESHOLD}`
-    : `${ENGINE_NAME} (${opVer}) · Escala MMT descriptiva`;
-
-  const cov = liveCoverage();
-  if (cov.degraded) {
-    $('#batch-time').textContent += ` · datos degradados ${cov.matched}/${cov.total} Act`;
-  }
-
-  const basketPct = ui.data.market?.basketPct || {};
-  const wknd = isFxWeekend();
-  const spotLabel = wknd ? 'Spot (vie.)' : 'Spot';
-  const spotTitle = wknd
-    ? 'Variación spot al cierre del viernes frente a cesta G8 (mercado FX cerrado en fin de semana)'
-    : 'Variación media spot 24h frente a cesta G8';
-
-  board.innerHTML = view.rows.map((r) => {
-    const w = Math.abs(r.score) / 2;
-    const cls = r.score > 0 ? 'pos' : r.score < 0 ? 'neg' : 'zero';
-    let delta = '<span class="delta"></span>';
-    if (!r.noEvidence && !r.tied && r.prevRank && r.rank && r.prevRank !== r.rank) {
-      const up = r.prevRank > r.rank;
-      delta = `<span class="delta ${up ? 'up' : 'down'}" title="Antes #${r.prevRank}">${up ? '▲' : '▼'} ${Math.abs(r.prevRank - r.rank)}</span>`;
-    }
-    const detail = `${driversList(r.drivers)}<div>${esc(cleanRationale(r.rationale || ''))}</div>${ledgerHtml(r)}`;
-    const impCls = r.impulse == null ? '' : r.impulse > 0 ? 'pos' : r.impulse < 0 ? 'neg' : '';
-    const setupMeta = SETUP_META[r.setup];
-    const setupHtml = setupMeta ? `<span class="setup-pill ${r.setup}" title="${setupMeta.title}">${setupMeta.label}</span>` : '';
-    const bPct = basketPct[r.currency];
-    const fxHtml = typeof bPct === 'number' && bPct !== 0
-      ? `<span class="fx-pct ${bPct > 0 ? 'up' : 'down'}" title="${spotTitle}">${spotLabel} ${bPct > 0 ? '+' : ''}${bPct.toFixed(2)}%</span>`
-      : '';
-    const fichaV6 = r.ficha_v6 || 'A1 / B2';
-    const fichaHtml = `<span class="ficha-pill" title="Escenario Matriz Macro Institucional v6.0">Ficha ${esc(fichaV6)}</span>`;
-    const sovMmt = r.sovereignty_mmt || (r.currency === 'EUR' ? 'USUARIO_MONEDA' : 'SOBERANO_EMISOR');
-    const isB12 = sovMmt === 'B12_EUR_FRAG_RIESGO' || (r.currency === 'EUR' && fichaV6 === 'B12');
-    const sovHtml = isB12
-      ? `<span class="mmt-sov-pill b12" title="Matriz v6.0 Ficha B12: Veto alcista activo por riesgo de fragmentación fiscal en Eurozona">B12_EUR_FRAG_RIESGO</span>`
-      : `<span class="mmt-sov-pill ${sovMmt === 'USUARIO_MONEDA' ? 'user' : 'sov'}" title="Naturaleza Monetaria Curso Maestro MMT (Regla #1 y #9)">${sovMmt === 'USUARIO_MONEDA' ? 'USUARIO_MONEDA' : 'SOBERANO_EMISOR'}</span>`;
-    const calLockHtml = computeLiveCalendarBadge(r.currency, r, ui.data?.calendar || []);
-    const biasText = r.noEvidence ? 'N/D' : pressureLabel(r);
-    const drvText = r.drivers?.[0] || 'Sin catalizadores claros';
-    const rankLabel = r.noEvidence ? '<span class="rank" title="Sin evidencia medida en la ventana">—</span>' : `<span class="rank" title="${r.tied ? 'Empate' : 'Posición'}">${r.tied ? '=' : ''}${r.rank}</span>`;
-
-    return `<li class="ccy-row ${ui.open.has(r.currency) ? 'open' : ''} ${r.noEvidence ? 'nd' : ''}" data-ccy="${r.currency}">
-      <button class="ccy-line" type="button" aria-expanded="${ui.open.has(r.currency)}" aria-controls="detail-${r.currency}" aria-label="${r.currency}: ${r.noEvidence ? 'sin evidencia' : signed(r.score)}. Ver contribuciones">
-        ${rankLabel}<span class="code">${r.currency}</span>
-        <span class="score ${cls}">${signed(r.score)}</span>${delta}
-      </button>
-      <div class="bar" aria-hidden="true"><span class="mid"></span><span class="fill ${cls}" style="width:${w}%"></span></div>
-      <div class="ccy-meta">
-        <span class="bias ${r.noEvidence ? 'nd' : r.bias}" title="${r.noEvidence ? 'Sin catalizadores medidos en la ventana actual' : ''}">${biasText}</span>
-        ${fichaHtml}${sovHtml}
-        <span class="vec-pill" title="Impulso táctico últimas 3 horas. n/d = sin prints en la ventana">Imp 3h <b class="${impCls}">${fmtImpulse(r.impulse)}</b></span>
-        ${setupHtml}${fxHtml}${calLockHtml}
-      </div>
-      <p class="driver" title="${esc(drvText)}">${esc(drvText)}</p>
-      <div class="ccy-detail" id="detail-${r.currency}">${detail}${sparkline(r.series)}</div>
-    </li>`;
-  }).join('');
-
-  const regime = $('#regime');
-  regime.hidden = !view.regime_note;
-  regime.textContent = view.regime_note ? `Régimen · ${view.regime_note}` : '';
-  renderMatrix(view.rows);
-}
-
-function cellColor(v) {
-  const a = Math.min(1, Math.abs(v) / 120);
-  return v > 0 ? `rgba(34,197,94,${0.06 + a * 0.5})` : v < 0 ? `rgba(239,68,68,${0.06 + a * 0.5})` : '#0a0d11';
-}
-
-function pairConfluence(diff, changePct) {
-  if (changePct == null || Math.abs(diff) < 20) return null;
-  const sameSign = Math.sign(diff) === Math.sign(changePct);
-  if (sameSign && Math.abs(changePct) >= 0.85) {
-    return {
-      kind: 'agotamiento',
-      label: 'Priced-in / Ext.',
-      title: 'Extensión de precio: Spot 24h ≥ 0.85% alineado con el diferencial narrativo (|ΔScore| ≥ 20). Posible descuento en precio.',
-    };
-  }
-  if (sameSign && Math.abs(changePct) >= 0.10) {
-    return {
-      kind: 'confirmado',
-      label: 'Alineado con spot',
-      title: 'Alineación precio-narrativa: diferencial |ΔScore| ≥ 20 pts y Spot 24h ≥ 0.10% en la misma dirección.',
-    };
-  }
-  if (!sameSign && Math.abs(diff) >= 28 && Math.abs(changePct) >= 0.18) {
-    return {
-      kind: 'divergencia',
-      label: 'Divergencia precio',
-      title: 'Divergencia precio-narrativa: el precio Spot (≥ 0.18%) se mueve en sentido opuesto al diferencial narrativo (|ΔScore| ≥ 28 pts).',
-    };
-  }
-  return null;
-}
-
-function renderPairSheet(rows) {
-  const sheet = $('#pair-sheet');
-  if (!sheet) return;
-  if (!ui.selectedPair) {
-    sheet.hidden = true;
-    return;
-  }
-  const [base, quote] = ui.selectedPair.split('/');
-  const byCcy = Object.fromEntries(rows.map((r) => [r.currency, r]));
-  const bRow = byCcy[base];
-  const qRow = byCcy[quote];
-  if (!bRow || !qRow) { sheet.hidden = true; return; }
-  const comparable = hasComparableScore(bRow) && hasComparableScore(qRow);
-  const diff = comparable ? bRow.score - qRow.score : null;
-  const mkt = lookupMarketPair(ui.data.market?.pairs, base, quote);
-  const conf = comparable ? pairConfluence(diff, mkt?.changePct) : null;
-  const wknd = isFxWeekend();
-  const spotPrefix = wknd ? 'Spot (cierre vie.)' : 'Spot';
-  const now = Date.now();
-  const upcoming = (ui.data.calendar || []).filter((e) => (e.currency === base || e.currency === quote) && e.impact === 'High' && Date.parse(e.event_at) > now && Date.parse(e.event_at) - now <= 48 * 3600_000).slice(0, 3);
-  const riskHtml = upcoming.length
-    ? `<b>Riesgo en agenda (48h):</b> ` + upcoming.map((e) => `${e.currency} ${esc(e.title)} (${fmtTime(e.event_at)})`).join(' · ')
-    : `<b>Riesgo en agenda (48h):</b> Sin eventos de impacto alto próximos para ${base} o ${quote}.`;
-
-  sheet.hidden = false;
-  sheet.innerHTML = `
-    <div class="pair-sheet-head">
-      <div class="pair-sheet-title">
-        <span>Ficha comparativa (${ENGINE_NAME}) · ${base}/${quote}</span>
-        <span class="${diff >= 0 ? 'up' : 'down'}">${comparable ? `${diff >= 0 ? '▲' : '▼'} ${Math.abs(diff)} pts (${diff >= 0 ? `Soporte relativo ${base}` : `Soporte relativo ${quote}`})` : 'Sin diferencial válido · evidencia insuficiente'}</span>
-        ${mkt ? `<span class="spot-tag">${spotPrefix} ${mkt.rate} (${mkt.changePct > 0 ? '+' : ''}${mkt.changePct}%)</span>` : `<span class="spot-tag muted">sin precio</span>`}
-        ${conf ? `<span class="conf-badge ${conf.kind}" title="${esc(conf.title || '')}">${conf.label}</span>` : ''}
-      </div>
-      <button class="link" id="close-pair-sheet" type="button">Cerrar ✕</button>
-    </div>
-    <div class="pair-sheet-grid">
-      <div class="pair-col">
-        <h5><span>${base} (${BANK[base]})</span><span class="${bRow.score >= 0 ? 'up' : 'down'}">${hasComparableScore(bRow) ? signed(bRow.score) : pressureLabel(bRow)} · Est ${hasComparableScore(bRow) ? signed(bRow.structural) : '—'} | Imp 3h ${fmtImpulse(bRow.impulse)}</span></h5>
-        ${driversList(bRow.drivers)}
-      </div>
-      <div class="pair-col">
-        <h5><span>${quote} (${BANK[quote]})</span><span class="${qRow.score >= 0 ? 'up' : 'down'}">${hasComparableScore(qRow) ? signed(qRow.score) : pressureLabel(qRow)} · Est ${hasComparableScore(qRow) ? signed(qRow.structural) : '—'} | Imp 3h ${fmtImpulse(qRow.impulse)}</span></h5>
-        ${driversList(qRow.drivers)}
-      </div>
-    </div>
-    <div class="pair-risk">${riskHtml}</div>
-  `;
-}
-
-function renderMatrix(rows) {
-  const s = Object.fromEntries(rows.map((r) => [r.currency, hasComparableScore(r) ? r.score : null]));
-  const order = rows.map((r) => r.currency);
-  let html = '<span></span>' + order.map((c) => `<span class="h">${c}</span>`).join('');
-  for (const a of order) {
-    html += `<span class="rh">${a}</span>`;
-    for (const b of order) {
-      if (a === b) { html += '<span class="self">·</span>'; continue; }
-      if (s[a] == null || s[b] == null) { html += '<span class="self" title="Sin evidencia medida">—</span>'; continue; }
-      const v = s[a] - s[b];
-      const [base, quote] = PAIR_PRIORITY.indexOf(a) < PAIR_PRIORITY.indexOf(b) ? [a, b] : [b, a];
-      html += `<button type="button" data-pair="${base}/${quote}" aria-label="${base}/${quote}: diferencial ${signed(v)}" style="background:${cellColor(v)}" title="${a} vs ${b}: ${signed(v)} (clic para ficha)">${signed(v)}</button>`;
-    }
-  }
-  $('#matrix').innerHTML = html;
-
-  const mktPairs = ui.data.market?.pairs || {};
-  const wknd = isFxWeekend();
-  const pairs = [];
-  for (let i = 0; i < CURRENCIES.length; i++) {
-    for (let j = i + 1; j < CURRENCIES.length; j++) {
-      const [x, y] = [CURRENCIES[i], CURRENCIES[j]];
-      const [base, quote] = PAIR_PRIORITY.indexOf(x) < PAIR_PRIORITY.indexOf(y) ? [x, y] : [y, x];
-      if (s[base] == null || s[quote] == null) continue;
-      const key = `${base}/${quote}`;
-      pairs.push({ key, base, quote, v: s[base] - s[quote], mkt: lookupMarketPair(mktPairs, base, quote) });
-    }
-  }
-  pairs.sort((a, b) => Math.abs(b.v) - Math.abs(a.v));
-  $('#top-pairs').innerHTML = pairs.slice(0, 6).map((p) => {
-    const conf = pairConfluence(p.v, p.mkt?.changePct);
-    const spotHtml = p.mkt
-      ? `<span class="spot-tag">${p.mkt.rate} <b class="${p.mkt.changePct > 0 ? 'up' : p.mkt.changePct < 0 ? 'down' : ''}">${p.mkt.changePct > 0 ? '+' : ''}${p.mkt.changePct}%${wknd ? ' (vie.)' : ''}</b></span>`
-      : `<span class="spot-tag muted">sin precio</span>`;
-    const confHtml = conf ? `<span class="conf-badge ${conf.kind}" title="${esc(conf.title || '')}">${conf.label}</span>` : '';
-    return `<button type="button" class="pair ${ui.selectedPair === p.key ? 'active' : ''}" data-pair="${p.key}">
-      <div>
-        <b>${p.key}</b>
-        <small>${p.v > 0 ? p.base : p.quote} más fuerte</small>
-        <div class="pair-meta">${spotHtml}${confHtml}</div>
-      </div>
-      <span class="${p.v > 0 ? 'up' : 'down'}">${p.v > 0 ? '▲' : '▼'} ${Math.abs(p.v)}</span>
-    </button>`;
-  }).join('');
-  renderPairSheet(rows);
+  if (geo) geo.innerHTML = polymarketGeoHtml(ui.data?.polymarket_geo);
 }
 
 // ---------------------------------------------------------------- agenda
@@ -1361,19 +1099,11 @@ function bind() {
     li.classList.toggle('open');
     li.querySelector('button').setAttribute('aria-expanded',String(ui.open.has(c)));
   });
-  const onPairClick = (e) => {
-    const el = e.target.closest('[data-pair]');
-    if (!el) return;
-    ui.selectedPair = ui.selectedPair === el.dataset.pair ? null : el.dataset.pair;
+  $('#board-tabs')?.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-board-tab]');
+    if (!b) return;
+    ui.boardTab = b.dataset.boardTab === 'pares' ? 'pares' : 'mapa';
     renderBoard();
-  };
-  $('#top-pairs')?.addEventListener('click', onPairClick);
-  $('#matrix')?.addEventListener('click', onPairClick);
-  $('#pair-sheet')?.addEventListener('click', (e) => {
-    if (e.target.closest('#close-pair-sheet')) {
-      ui.selectedPair = null;
-      renderBoard();
-    }
   });
   $('#cal-filter').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-impact]');

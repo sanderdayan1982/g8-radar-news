@@ -1,6 +1,6 @@
 # RadarNews — Especificación del producto
 
-> Terminal de noticias financieras personal que monitoriza fuentes de bancos centrales, agencias y análisis para clasificar la fuerza narrativa de 8 divisas en tiempo real, con marco Mosler / MMT.
+> Terminal de noticias financieras que agrega las fuentes seleccionadas, clasifica cada titular y publica un mapa de riesgo de evento por divisa, sin puesto y sin dirección.
 
 ## 1. Visión
 
@@ -8,11 +8,14 @@ Un terminal privado (estilo Bloomberg simplificado, pensado para una mesa macro)
 
 1. **Agrega** todos los titulares publicados por las 35 fuentes seleccionadas (canales de breaking, feeds oficiales de bancos centrales y fuentes de análisis).
 2. **Conserva en la cinta y notifica cada noticia nueva** sin descartes por impacto o divisa en la recepción; los filtros de relevancia macro/MMT se aplican únicamente a la capa de análisis.
-3. **Clasifica** la fuerza narrativa de cada divisa de −100 a +100 con el motor determinista único **Agente MMT**, **según noticias, no precios**, bajo Soft Currency Economics (Mosler / MMT).
-4. **Sigue el calendario económico de la semana** y avisa de los datos de alto impacto.
-5. **Alerta** al usuario de cada noticia nueva dentro de la app y mediante cola persistente Web Push — **nunca por email**.
+3. **Clasifica cada titular** (ficha v6.0, lente MMT, categoría IRIS, impacto) con el motor determinista **Agente MMT**, según noticias, no precios, bajo Soft Currency Economics (Mosler / MMT).
+4. **Publica un mapa de riesgo de evento** para USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD y XAU. El mapa no ordena divisas y no asigna dirección.
+5. **Sigue el calendario económico de la semana** y avisa de los datos de alto impacto.
+6. **Alerta** al usuario de cada noticia nueva dentro de la app y mediante cola persistente Web Push — **nunca por email**.
 
-El usuario no ve gráficos de precios como señal. Ve la cinta, el ranking, el calendario y entiende *por qué* se mueve cada divisa. Lenguaje de mesa: **Soporte / Presión / Neutral / N/D**. Prohibido “long”, “short”, “sesgo largo/corto”, “vía libre operativa”, “compra”, “vende”, “subirá”, “bajará” en cualquier texto generado.
+El usuario no ve gráficos de precios como señal. Ve la cinta, el mapa de riesgo de evento, los pares y el calendario, y entiende qué riesgo de evento pesa sobre cada divisa. Prohibido “long”, “short”, “sesgo largo/corto”, “vía libre operativa”, “compra”, “vende”, “subirá”, “bajará” en cualquier texto generado.
+
+**Retirada del ranking (10-nov-2026).** Decisión de Sander: el mapa de riesgo de evento sustituye al ranking de divisas. Salen del contrato `currency_ranking_mmt` y `g8_ranking`, y con ellos `score`, `rank`, `bias`, `impulse`, `structural` y las etiquetas de mesa Soporte / Presión. El clasificador de titulares se queda.
 
 ## 2. Universo de divisas
 
@@ -29,7 +32,7 @@ El usuario no ve gráficos de precios como señal. Ve la cinta, el ranking, el c
 | AUD | RBA | aussie, rba, australia |
 | NZD | RBNZ | kiwi, rbnz, new zealand |
 
-Una divisa **sin titulares propios** no se rankea (`rank: null`, etiqueta **N/D · Sin evidencia**). No hereda narrativa de otra región.
+Una divisa **sin titulares propios** no hereda el riesgo de otra región. El puesto `rank: null` y la etiqueta N/D pertenecían al ranking retirado el 10-nov-2026.
 
 ## 3. Fuentes de noticias
 
@@ -132,7 +135,7 @@ Frecuencia: GitHub retrasa o salta los cron de 5 min, así que un disparador hor
 
 ## 5. Clasificación — Mosler / Soft Currency Economics
 
-**Marco interpretativo declarado:** un único motor determinista Agente MMT interpreta las noticias con reglas Mosler / Soft Currency Economics. Los scores describen evidencia narrativa; no son probabilidades ni rentabilidad validada. `empirical: false`. El motor operativo y las hipótesis en sombra mantienen sus versiones y parámetros anteriores a esta revisión.
+**Marco interpretativo declarado:** un único motor determinista Agente MMT interpreta los titulares con reglas Mosler / Soft Currency Economics (ficha, lente, categoría, impacto). Esa capa no ordena divisas. La salida publicada por divisa es el mapa de riesgo de evento: `ALTO`, `MEDIO` o `BAJO`, en orden fijo, sin puntuación y sin dirección. Los umbrales están congelados en el pre-registro del 10-nov-2026 y esta parte no los cambia. `empirical: false` sigue siendo cierto para la sombra histórica, que no se ejecuta en el colector ni en la función live. `llm_calls` sigue en 0.
 
 Canales: `DATA_REAL`, `RELATIVE_PRICE`, `POLICY_PRICE`, `FISCAL_NFA`, `RISK_GEO`, `TRADE_EXTERNAL`, `OPERATIONAL`. No se ejecuta Gemini ni existe consenso entre motores.
 
@@ -143,23 +146,25 @@ Reglas Mosler:
 3. El overnight es el **precio** del dinero. Un hike en cost-push **no suma**.
 4. El déficit no financia gasto; la emisión drena reservas (IRMA). Déficit/downgrade de un **emisor soberano** (USD, JPY, GBP, CAD, AUD, NZD, CHF) **no es presión automática**. El **EUR es usuario de moneda** (v4.0): la tensión de déficit periférico activa B12 EUR_FRAG y sí puede presionar.
 5. Interés sobre pasivos públicos = ingreso del no-gobierno.
-6. Sin evidencia ⇒ score 0, N/D, `rank: null`. No alerta de régimen.
-7. Evidencia débil ⇒ −40…+40. Máx. 3 drivers, < 60 caracteres, español.
-8. `bias` interno: alcista > 12, bajista < −12 (umbral de etiqueta, no constante Mosler); UI: Soporte / Presión / Neutral / N/D / En conflicto.
-9. Structural = 72 h (oficiales hasta 30 d, vida media 36 h / 10 d). Impulse = 3 h; **sin prints en la ventana se muestra n/d, no 0**.
-10. Refugio severo: USD/JPY/CHF soporte; AUD/NZD/CAD presión.
+6. Sin evidencia de evento, el nivel es `BAJO`. El silencio por sí solo no sube el nivel.
+7. Las razones del mapa son frases cortas en español, sin dirección. Máximo las que dispare la regla; no hay puesto.
+8. Retirado el 10-nov-2026 (decisión de Sander): la escala numérica, `bias`, el impulso, el estructural y las etiquetas Soporte / Presión. Ya no se publican.
+9. Retirado con el ranking: structural de 72 h e impulse de 3 h como filas de la divisa.
+10. El refugio severo sigue siendo una regla del lente de titulares, no un orden de divisas.
 
-Los empates comparten rango; una divisa sin evidencia no recibe posición. El orden alfabético de los empates es únicamente de presentación.
+El mapa no desempata ni ordena. El orden de las nueve filas es fijo aunque cambien los niveles.
 
 ## 6. Interfaz
 
-Grafito, Inter + JetBrains Mono. Verde/rojo solo dirección. PWA: Mac Dock, iPhone/iPad Home Screen. Push VAPID a **todos** los dispositivos a la vez, badge de no leídas. HTTPS público con sesión de acceso; no se necesita VPN. El servidor escucha únicamente en localhost detrás del proxy HTTPS.
+Grafito, Inter + JetBrains Mono. En el mapa, BAJO es gris, MEDIO es ámbar y ALTO es rojo. PWA: Mac Dock, iPhone/iPad Home Screen. Push VAPID a **todos** los dispositivos a la vez, badge de no leídas. HTTPS público con sesión de acceso; no se necesita VPN. El servidor de producción es la función Netlify; `src/server.js` no está en ese camino (ver §8).
 
 La cinta usa la **fecha de publicación del comunicado** (RSS, URL o `meta-info` de SECO), no la de captura. Un FOMC del 16-sep o un forecast SECO del 17-sep no se rejuvenece al reescrapear el 24-oct. Tooltip: publicado vs capturado cuando diferencian > 2 h.
 
 Cruces sin cotización muestran **sin precio**. La coincidencia precio-narrativa se llama **Alineado con spot**, no “Flujo confirmado”.
 
 Si la cobertura de actuals en vivo cae por debajo del 50 % (≥ 4 eventos con consenso), la UI muestra **datos degradados**: fuentes operativas ≠ integridad de la información.
+
+Columna central: «Mapa de riesgo de evento». Nueve tarjetas en orden fijo (USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD, XAU), con el candado y las razones. Pestaña «Pares» con los 29 (28 pares + XAUUSD) en el orden fijo del contrato. Panel «Geopolítica (Polymarket)» con la probabilidad y el Δ24h. Si el payload no trae `risk_map`, la columna muestra el texto «mapa no disponible» y no recupera el ranking. No hay flechas de puesto ni la palabra Soporte / Presión.
 
 ## 7. Alertas
 
@@ -171,9 +176,11 @@ Solo in-app + push. Sin correo. Breaking, dato, agenda −15 min High, cambio de
 
 **Limitaciones conocidas del modo serverless:** no hay envío Web Push (solo existe en el servidor Node descrito abajo); no hay sesión de acceso (el repositorio y los datos son públicos).
 
+**`src/server.js` es legado y está fuera de producción (10-nov-2026).** No está cableado a Netlify ni al ciclo de Actions. No se borra: las pruebas de la cola push importan `processPushQueue` y `dispatchAlertsNow`. Esas pruebas no leen un ranking del servidor. El archivo no publica el contrato `iris-g8-feed/v3-risk`.
+
 **Despliegue alternativo (servidor propio, no activo):**
 
-Node.js 22+ con `node:sqlite`, systemd, SQLite WAL. Código `/opt/radarnews/app`, datos `/var/lib/radarnews`. HTTPS público existente y login de aplicación. Conservar `settings.json` (VAPID), base de datos y claves de sesión. Copia consistente antes de desplegar; procedimiento en DEPLOY.md. Los cuatro dispositivos se registran por separado.
+Node.js 22+ con `node:sqlite`, systemd, SQLite WAL. Código `/opt/radarnews/app`, datos `/var/lib/radarnews`. HTTPS público existente y login de aplicación. Conservar `settings.json` (VAPID), base de datos y claves de sesión. Copia consistente antes de desplegar; procedimiento en DEPLOY.md. Los cuatro dispositivos se registran por separado. Ese camino no es el de producción y esta parte no lo vuelve a conectar.
 
 ## 9. Decisiones inquebrantables
 
@@ -194,7 +201,7 @@ La memoria y la presentación van separadas. Constantes congeladas el 10-nov-202
 - `public/data/radar_store.json` (`schema: radar-store/v1`) guarda todos los titulares deduplicados dentro de su ventana. `scripts/sync_feeds.mjs` lo reutiliza como `existingItems`. La cinta `news` de `radar_news_full.json` sigue en 300 y no es memoria: usarla recortaba la ventana real a unas 12 h.
 - Si la memoria supera 5.000, salen primero los breaking más antiguos y después el resto de no oficiales. Un oficial dentro de su ventana no se elimina; si los oficiales solos superan el tope, la lista puede pasarse de 5.000. El feed IRIS (`items`) publica la misma ventana con tope 3.000 y la misma regla.
 - `coverage` en el feed, por divisa y en este orden (USD, EUR, GBP, JPY, CHF, CAD, AUD, NZD, XAU): `count_72h`, `count_official_45d` (oficiales de los 45 días; un oficial de las últimas 72 h cuenta en los dos), `last_item_at`, `hours_since_last` (horas naturales, un decimal) y `hours_since_last_business` (sin sábados ni domingos UTC; los festivos sí cuentan). Las horas del JSON comprometido se refrescan cuando el ciclo reescribe el feed; la función live las recalcula en cada petición.
-- `silence` (v5.1 Parte C, umbral congelado ≥ 12 h hábiles): en USD, EUR, GBP, JPY, CHF, CAD, AUD y NZD, `silence: true` cuando `hours_since_last_business` ≥ 12 (el valor ya redondeado a un decimal) o cuando no hay ningún titular (`hours_since_last_business` null). Con 11,9 h queda en `false`. Un hueco de fin de semana no cuenta: el sábado y el domingo UTC se excluyen igual que en `hours_since_last_business`. XAU no lleva el campo. La bandera no bloquea, no cambia `lock_level` y no sube el nivel por sí sola; el cruce con un evento activo es la Parte E y no está aplicado.
+- `silence` (v5.1 Parte C, umbral congelado ≥ 12 h hábiles): en USD, EUR, GBP, JPY, CHF, CAD, AUD y NZD, `silence: true` cuando `hours_since_last_business` ≥ 12 (el valor ya redondeado a un decimal) o cuando no hay ningún titular (`hours_since_last_business` null). Con 11,9 h queda en `false`. Un hueco de fin de semana no cuenta: el sábado y el domingo UTC se excluyen igual que en `hours_since_last_business`. XAU no lleva el campo. La bandera no bloquea y no cambia `lock_level`. Por sí sola no sube el nivel. Si coincide con un evento activo (`lock_level` distinto de `NINGUNO`), el mapa sube un nivel y anota la razón «silencio con evento».
 
 ## Contrato de candados (v5.1 Parte B)
 
@@ -210,7 +217,17 @@ Cada evento High o de banco central de la agenda recibe `lock_class` y `lock_lev
 
 Un `DISCURSO` de impacto Low, o sin impacto, sigue en la agenda con `lock_class: "DISCURSO"` y no entra en el `lock_level` de la divisa. `DECISION_BC` y `PRESUPUESTO` no dependen del impacto. Severidad: `TOTAL` > `TIER1` > `NO_AMPLIAR` > `AVISO` > `NINGUNO`. Fuera de la ventana el nivel es `NINGUNO` y la clase reconocida se conserva. Cuando el evento ya ocurrió, el candado termina y `✓ POST-EVENTO` muestra Act/Est/Prev durante 24 h. Un actual puede seguir en la lista de agenda hasta 48 h después (retención del 4-nov); entre 24 h y 48 h el evento sigue en la lista con Act/Est/Prev y `window_status` null. Por divisa, `lock_level` es el evento activo más severo y `lock_events` lista `lock_class`, `title`, `time` y `hours_until`. `TIER1` no decide solo: CIRO lo cruza con el posicionamiento que aporta ARGOS.
 
-El esquema del feed sigue en `iris-g8-feed/v2-mmt-v4.0`. `agenda_window` añade `lock_class`, `lock_level` y `retirar_limitadas`. `window_status` de un evento activo pasa a ser el nivel (`TOTAL`, `TIER1`, `NO_AMPLIAR`, `AVISO`); dentro de las 24 h posteriores es `✓ POST-EVENTO`; el resto queda en null. En el ranking, `calendar_lock` de un candado activo pasa a ser ese nivel, y se añaden `lock_level`, `lock_class`, `lock_events` y `retirar_limitadas`. La sincronización y `netlify/functions/radar_live.mjs` usan el mismo `buildAgendaWindow`.
+`agenda_window` lleva `lock_class`, `lock_level` y `retirar_limitadas`. `window_status` de un evento activo es el nivel (`TOTAL`, `TIER1`, `NO_AMPLIAR`, `AVISO`); dentro de las 24 h posteriores es `✓ POST-EVENTO`; el resto queda en null. El mapa publica, por divisa, `lock_level`, `lock_events` y `retirar_limitadas`. La sincronización y `netlify/functions/radar_live.mjs` usan el mismo `buildAgendaWindow`. El esquema del feed es el contrato v3-risk de más abajo, no `iris-g8-feed/v2-mmt-v4.0`.
+
+## Contrato IRIS (`iris-g8-feed/v3-risk`, v5.1 Parte F)
+
+`public/data/iris_g8_feed.json` (lo escribe el colector en `scripts/sync_feeds.mjs`) y `/api/iris-feed` publican exactamente estos campos, en este orden:
+
+`schema_version` (`"iris-g8-feed/v3-risk"`), `version`, `engine_version`, `llm_calls` (0), `generated_at`, `health`, `coverage`, `risk_map`, `pair_risk`, `agenda_window`, `polymarket_geo`, `items`.
+
+No entran `currency_ranking_mmt`, `g8_ranking`, `news`, `score`, `rank`, `bias`, `impulse` ni `structural`. `risk_map` son las 9 divisas en orden fijo, nunca ordenadas por nivel. `pair_risk` son los 29 pares en orden fijo. `agenda_window` incluye `lock_class` y `lock_level`.
+
+`health` es el bloque de hoy: `sources_active`, `sources_live`, `sources_cached`, `sources_total`, `sources_empty`, `sources_error`, `agenda_events_count` y `status`. En `/api/iris-feed` el mismo objeto añade `base_source` y `base_published_at` (Parte C-bis). Esos dos no son campos sueltos del feed: van dentro de `health`. `/api/health` y `/api/radar-full` siguen publicándolos también en la raíz de su propia respuesta.
 
 ## Contrato de salud IRIS
 `iris_g8_feed.json` y `/api/health` publican `health`: `sources_active` (vivas + copia de la última sincronización), `sources_live`, `sources_cached`, `sources_total`, `sources_empty`, `sources_error`, `agenda_events_count` y `status`: `CLEAN` si no hay errores ni fuentes vacías, `DEGRADED` si al menos el 80 % están activas, `CRITICAL` por debajo y `UNKNOWN` sin fuentes. `sources_total` es el número de fuentes configuradas: 35 desde la Parte C (31 anteriores, más `nz-press`, `ch-press`, `au-press` y `rnz-business`). Las reglas CLEAN / DEGRADED / CRITICAL no cambian: `cached` cuenta como activa. `public/data/radar_status.json` es el latido de cada ciclo y no lleva el estado por fuente.
@@ -239,7 +256,7 @@ Se excluyen, aunque una palabra clave encaje: deportes, cripto, entretenimiento 
 
 `status` es `OK` cuando la última lectura de Gamma tuvo éxito (como mucho hace 30 min) y `STALE` cuando falló. `updated_at` es siempre la hora de ese último éxito, o `null` si todavía no hubo ninguno. Historia: `public/data/polymarket_geo_history.json` (`schema: polymarket-geo-history/v1`), instantáneas de 8 días. El ciclo de Actions la incluye en el commit de datos y conserva el candado `[skip netlify]`. La espera tras un fallo es la del calendario: 15 min, se duplica, tope 6 h, guardada en disco para que el siguiente proceso del bucle la respete.
 
-El bloque `polymarket_geo` es `{status, updated_at, markets:[{theme, event_title, question, prob, d24h_pp, volume, liquidity, end_date, url, currencies}]}`. Se añade a `iris_g8_feed.json` y a `radar_news_full.json`. El esquema sigue en `iris-g8-feed/v2-mmt-v4.0` hasta la Parte F. `llm_calls` sigue en 0. La función live lee la historia en GitHub Raw (`public/data/polymarket_geo_history.json`) y, si esa descarga falla, la copia empaquetada.
+El bloque `polymarket_geo` es `{status, updated_at, markets:[{theme, event_title, question, prob, d24h_pp, volume, liquidity, end_date, url, currencies}]}`. Va dentro del contrato `iris-g8-feed/v3-risk` y también en `radar_news_full.json`. `llm_calls` sigue en 0. La función live lee la historia en GitHub Raw (`public/data/polymarket_geo_history.json`) y, si esa descarga falla, la copia empaquetada. El panel de la columna central muestra la probabilidad y el Δ24h de cada mercado.
 
 ## Alertas y acceso (decisión de la mesa, 8-nov-2026)
 Push desactivado en el despliegue serverless: las alertas se ven dentro de la app (pestaña Alertas y contador). La app y sus datos son públicos.

@@ -1,12 +1,12 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { classifyIrisItem, deduplicateAndFilterWindow, trimMemory, formatIrisFeedItem, buildCoverage, buildRadarStore, STORE_CAP, FEED_CAP, TAPE_CAP } from '../src/irisCollector.js';
-import { classifyAgent, attachRanks, MMT_SOVEREIGNTY, biasFor, clamp } from '../src/classifyCurrencies.js';
-import { buildAgendaWindow, rankingLockFields } from '../src/lockSeverity.js';
-import { classifyAgentShadow, OP_VERSION, SHADOW_VERSION } from '../src/shadowCalibration.js';
-import { selectEvidence, evidenceContract } from '../src/evidence.js';
+import { classifyIrisItem, deduplicateAndFilterWindow, trimMemory, formatIrisFeedItem, buildCoverage, buildRadarStore, projectIrisFeed, STORE_CAP, FEED_CAP, TAPE_CAP } from '../src/irisCollector.js';
+import { buildAgendaWindow } from '../src/lockSeverity.js';
 import { linkNewsToCalendar, turboEvent } from '../src/calendar.js';
+import { buildPairRisk, buildRiskMap } from '../src/riskMap.js';
+import { irisHealth } from '../src/sourceHealth.js';
+import { OP_VERSION, SHADOW_VERSION } from '../src/shadowCalibration.js';
 import { ENGINE_NAME } from '../src/config.js';
 import { RELEASE } from '../src/operations.js';
 
@@ -65,7 +65,7 @@ const calendarEvents = (prevFull.calendar || []).map((ev) => {
   }
   return ev;
 });
-const { allWindowItems, irisWindowItems } = deduplicateAndFilterWindow(existingItems, [], nowMs, 72);
+const { allWindowItems } = deduplicateAndFilterWindow(existingItems, [], nowMs, 72);
 const memoryItems = trimMemory(allWindowItems, STORE_CAP);
 const feedItems = trimMemory(memoryItems, FEED_CAP);
 
@@ -73,91 +73,29 @@ if (calendarEvents.length > 0) {
   linkNewsToCalendar(allWindowItems, calendarEvents);
 }
 
-const mmtInputNews = allWindowItems.map((it) => ({
-  ...it,
-  currencies: (it.g8_currencies && it.g8_currencies.length)
-    ? it.g8_currencies
-    : (it.currencies || []).filter((c) => c !== 'XAU'),
-}));
-
-const eligibleEvidence = selectEvidence(mmtInputNews, nowMs);
-const contract = evidenceContract(eligibleEvidence, nowMs);
-const shadowRows = classifyAgentShadow(eligibleEvidence, nowMs);
-const shadowByCcy = new Map(shadowRows.map((s) => [s.currency, s]));
-
-const agentRows = attachRanks(classifyAgent(eligibleEvidence, nowMs, calendarEvents)).map((r) => {
-  const sh = shadowByCcy.get(r.currency);
-  return {
-    ...r,
-    calibration: {
-      ...contract,
-      engine: 'agente',
-      engineLabel: ENGINE_NAME,
-      opVersion: OP_VERSION,
-      generatedAt: finishedAt,
-      evaluatedAt: contract.asOf,
-      empirical: false,
-      interpretationMode: 'deterministic_rules',
-    },
-    shadow: sh ? { ...sh, evidenceSet: contract.evidenceSet, deltaFromOp: sh.score - r.score } : null,
-  };
-});
-
-const engineSnapshot = {
-  engine: 'agente',
-  label: ENGINE_NAME,
-  snapshot_at: finishedAt,
-  regime_note: '',
-  rows: agentRows,
-  history: Object.fromEntries(agentRows.map((r) => [r.currency, [[finishedAt, r.score, r.rank]]])),
-};
-
 const irisItemsFormatted = feedItems.map(formatIrisFeedItem);
 const coverage = buildCoverage(memoryItems, nowMs);
-
 const agendaWindow = buildAgendaWindow(calendarEvents, nowMs);
 
-const xauItems = irisWindowItems.filter((n) => (n.currencies || []).includes('XAU'));
-const xauRawSum = xauItems.reduce((acc, n) => {
-  const t = `${n.title || ''} ${n.body || ''}`;
-  if (/\b(rises?|jumps?|surges?|record high|safe[- ]haven|bullion up|gains?)\b/i.test(t)) return acc + 8;
-  if (/\b(falls?|drops?|slumps?|retreats?|declines?)\b/i.test(t)) return acc - 8;
-  return acc + 2;
-}, 0);
-const xauScore = xauItems.length ? clamp(Math.round(xauRawSum), -60, 60) : 0;
-const xauRowMmt = {
-  currency: 'XAU',
-  rank: null,
-  score: xauScore,
-  bias: xauItems.length ? biasFor(xauScore) : 'N/D',
-  structural: xauScore,
-  impulse: null,
-  ficha_v6: 'A6 / EA-7',
-  sovereignty_mmt: MMT_SOVEREIGNTY.XAU,
-  ...rankingLockFields(null),
-  no_evidence: xauItems.length === 0,
-  drivers: xauItems.length
-    ? xauItems.slice(0, 2).map((n) => `Oro refugio / MDP: ${n.title.slice(0, 42)}`)
-    : ['Sin catalizadores directos XAU en ventana'],
-  rationale: `${xauItems.length} titulares XAU · Ficha A6 / EA-7 (${MMT_SOVEREIGNTY.XAU}) · Score ${xauScore >= 0 ? '+' : ''}${xauScore}.`,
-};
+let prevIris = null;
+try { prevIris = JSON.parse(readFileSync(irisPath, 'utf8')); } catch { prevIris = null; }
+const polymarket_geo = prevIris?.polymarket_geo && Array.isArray(prevIris.polymarket_geo.markets)
+  ? {
+      status: prevIris.polymarket_geo.status === 'OK' ? 'OK' : 'STALE',
+      updated_at: prevIris.polymarket_geo.updated_at ?? null,
+      markets: prevIris.polymarket_geo.markets,
+    }
+  : { status: 'STALE', updated_at: null, markets: [] };
 
-const g8RankingSummary = agentRows.map((r) => ({
-  currency: r.currency,
-  rank: r.rank,
-  score: r.score,
-  bias: r.noEvidence ? 'N/D' : r.bias,
-  structural: r.structural ?? r.score,
-  impulse: r.impulse ?? null,
-  ficha_v6: r.ficha_v6 || 'A1 / B2',
-  sovereignty_mmt: r.sovereignty_mmt || MMT_SOVEREIGNTY[r.currency] || 'SOBERANO_EMISOR',
-  ...rankingLockFields(r),
-  no_evidence: !!r.noEvidence,
-  drivers: r.drivers || [],
-  rationale: r.rationale || '',
-}));
-
-const currencyRankingMmt = [...g8RankingSummary, xauRowMmt];
+const riskMap = buildRiskMap({
+  coverage,
+  calendarEvents,
+  items: allWindowItems,
+  polymarketGeo: polymarket_geo,
+  nowMs,
+});
+const pairRisk = buildPairRisk(riskMap);
+const health = irisHealth(prevFull.sources || [], calendarEvents.length);
 
 const nextFull = {
   ...prevFull,
@@ -178,42 +116,34 @@ const nextFull = {
   news: memoryItems.slice(0, TAPE_CAP),
   items: irisItemsFormatted,
   calendar: calendarEvents,
-  currency_ranking_mmt: currencyRankingMmt,
-  g8_ranking: g8RankingSummary,
+  risk_map: riskMap,
+  pair_risk: pairRisk,
   agenda_window: agendaWindow,
-  engines: [engineSnapshot],
+  polymarket_geo,
+  engines: [],
   turbo: turboEvent(calendarEvents) ? { currency: turboEvent(calendarEvents).currency, title: turboEvent(calendarEvents).title } : null,
 };
+delete nextFull.currency_ranking_mmt;
+delete nextFull.g8_ranking;
 
-const nextIris = {
-  schema: 'iris-g8-feed/v2-mmt-v4.0',
+const nextIris = projectIrisFeed({
   version: RELEASE,
-  engine: ENGINE_NAME,
   engine_version: OP_VERSION,
-  classification_mode: 'deterministic_regex_keywords_zero_llm',
-  llm_calls: 0,
   generated_at: finishedAt,
-  started_at: prevFull.last_sync?.started_at || finishedAt,
-  window_hours: 72,
-  sources_ok: (prevFull.sources || []).filter((s) => s.status === 'ok').length,
-  sources_total: (prevFull.sources || []).length,
-  count: irisItemsFormatted.length,
+  health,
   coverage,
-  currency_ranking_mmt: currencyRankingMmt,
-  g8_ranking: g8RankingSummary,
+  risk_map: riskMap,
+  pair_risk: pairRisk,
   agenda_window: agendaWindow,
-  market_basket_pct: prevFull.market?.basketPct || {},
+  polymarket_geo,
   items: irisItemsFormatted,
-  news: irisItemsFormatted,
-};
+});
 
 writeFileSync(fullPath, JSON.stringify(nextFull, null, 2));
 writeFileSync(irisPath, JSON.stringify(nextIris, null, 2));
 writeFileSync(storePath, JSON.stringify(buildRadarStore(memoryItems, finishedAt), null, 2));
 
-console.log(`=== RANKING ${OP_VERSION} ===`);
-for (const r of currencyRankingMmt) {
-  console.log(
-    `${r.rank ? `#${r.rank}` : '— '} ${r.currency.padEnd(4)} | Score: ${String(r.score).padStart(4)} (${r.bias.padEnd(7)}) | Ficha: ${String(r.ficha_v6).padEnd(14)} | ${r.sovereignty_mmt.padEnd(16)} | Lock: ${r.calendar_lock || '—'} | Driver: ${r.drivers[0] || ''}`,
-  );
+console.log(`=== MAPA DE RIESGO ${OP_VERSION} ===`);
+for (const r of riskMap) {
+  console.log(`${r.currency.padEnd(4)} ${r.risk_level.padEnd(5)} candado ${r.lock_level} ${r.reasons.join(' · ')}`);
 }

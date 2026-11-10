@@ -33,7 +33,10 @@ test('Gemini y Consenso han sido completamente retirados de la interfaz y archiv
   assert.doesNotMatch(html, /Modo degradado: solo Agente/i);
   assert.doesNotMatch(app, /Modo degradado: solo Agente/i);
   assert.doesNotMatch(app, /classifyWithGemini/i);
-  assert.match(html, /Ranking de divisas · Agente MMT/);
+  assert.match(html, /Mapa de riesgo de evento/);
+  assert.match(html, />Pares</);
+  assert.match(html, /Geopolítica \(Polymarket\)/);
+  assert.doesNotMatch(html, /Ranking de divisas/);
 });
 
 test('el mapa de riesgo no aprieta el nivel y la razón en una línea nowrap', () => {
@@ -54,9 +57,10 @@ test('el mapa de riesgo no aprieta el nivel y la razón en una línea nowrap', (
   assert.doesNotMatch(css, /\.ccy-sub \.driver \{[^}]*white-space:\s*nowrap/);
 });
 
-test('los pares del mapa no venden flujo ni dejan el spot en blanco', () => {
+test('los pares del mapa no venden flujo y sin mapa no vuelve el ranking', () => {
   assert.doesNotMatch(app, /Flujo confirmado/);
-  assert.match(app, /sin precio/);
+  assert.match(app, /mapa no disponible/);
+  assert.doesNotMatch(app, /Soporte relativo|class="rank"|class="score"/);
   assert.match(app, /datos degradados/i);
   const html = pairRiskHtml([
     { pair: 'EURUSD', risk_level: 'ALTO', lock_level: 'TOTAL' },

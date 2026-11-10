@@ -79,10 +79,15 @@ function speechLocks(impact) {
   return level === 'high' || level === 'medium';
 }
 
+function hasBalanceWord(title) {
+  return /\bbalance\b/i.test(String(title || ''));
+}
+
 export function matchLockClass(title, impact) {
   const text = String(title || '');
   if (DECISION_PHRASES.some((phrase) => includesPhrase(text, phrase))) return 'DECISION_BC';
-  if (PRESUPUESTO_PHRASES.some((phrase) => includesPhrase(text, phrase))) return 'PRESUPUESTO';
+  // «balance» es un dato (p. ej. Federal Budget Balance), no un presupuesto.
+  if (!hasBalanceWord(text) && PRESUPUESTO_PHRASES.some((phrase) => includesPhrase(text, phrase))) return 'PRESUPUESTO';
   if (/\bspeaks\b/i.test(text) || includesPhrase(text, 'testifies') || includesPhrase(text, 'testimony')) {
     return 'DISCURSO';
   }

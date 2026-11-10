@@ -2,7 +2,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { SOURCES } from '../../src/config.js';
-import { collectRadarAndIrisData, readRadarStore } from '../../src/irisCollector.js';
+import { collectRadarAndIrisData, projectIrisFeed, readRadarStore } from '../../src/irisCollector.js';
 import { readPolymarketHistory } from '../../src/polymarketGeo.js';
 import { labelLiveAgainstActions, irisHealth } from '../../src/sourceHealth.js';
 
@@ -211,13 +211,15 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
 
   // Consulta paralela ultrarrápida (con timeout corto para garantizar respuesta < 1s cuando ya hay semilla)
   const perSourceTimeoutMs = existingItems.length > 0 ? 700 : 3800;
-  const { irisFeed, fullState, memoryItems } = await collectRadarAndIrisData({
+  const collected = await collectRadarAndIrisData({
     existingItems,
     previousMarket,
     previousCalendar,
     polymarketHistory: polyHistory,
     timeoutMs: perSourceTimeoutMs,
   });
+  let { irisFeed } = collected;
+  const { fullState, memoryItems } = collected;
 
   const labeledAt = Date.now();
   fullState.sources = labelLiveAgainstActions(fullState.sources, baseFull?.sources || [], labeledAt);
@@ -229,10 +231,7 @@ async function getFreshOrCachedBundle(forceRefresh = false) {
     base_source: base.baseSource,
     base_published_at: base.basePublishedAt,
   };
-  irisFeed.sources_ok = fullState.sources.filter((s) => s.status === 'live').length;
-  irisFeed.health = health;
-  irisFeed.base_source = base.baseSource;
-  irisFeed.base_published_at = base.basePublishedAt;
+  irisFeed = projectIrisFeed({ ...irisFeed, health });
   fullState.base_source = base.baseSource;
   fullState.base_published_at = base.basePublishedAt;
   fullState.health = health;
@@ -290,7 +289,7 @@ export async function handler(event) {
     return {
       statusCode: 200,
       headers: responseHeaders,
-      body: JSON.stringify({ ...irisFeed, cache_status: cacheStatus, response_ms: elapsedMs }),
+      body: JSON.stringify(irisFeed),
     };
   }
 
@@ -305,12 +304,12 @@ export async function handler(event) {
         cache_status: cacheStatus,
         response_ms: elapsedMs,
         last_sync_at: fullState.last_sync?.finished_at || null,
-        sources_ok: irisFeed.sources_ok,
+        sources_ok: (fullState.sources || []).filter((s) => s.status === 'live').length,
         health: irisFeed.health,
-        base_source: irisFeed.base_source || null,
-        base_published_at: irisFeed.base_published_at || null,
-        sources_total: irisFeed.sources_total,
-        count: irisFeed.count,
+        base_source: fullState.base_source || irisFeed.health?.base_source || null,
+        base_published_at: fullState.base_published_at || irisFeed.health?.base_published_at || null,
+        sources_total: (fullState.sources || []).length,
+        count: Array.isArray(irisFeed.items) ? irisFeed.items.length : 0,
       }),
     };
   }
