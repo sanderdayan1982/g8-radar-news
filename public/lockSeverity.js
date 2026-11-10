@@ -74,6 +74,11 @@ function includesPhrase(title, phrase) {
   return String(title || '').toLowerCase().includes(phrase);
 }
 
+function speechLocks(impact) {
+  const level = String(impact || '').toLowerCase();
+  return level === 'high' || level === 'medium';
+}
+
 export function matchLockClass(title, impact) {
   const text = String(title || '');
   if (DECISION_PHRASES.some((phrase) => includesPhrase(text, phrase))) return 'DECISION_BC';
@@ -89,6 +94,8 @@ export function matchLockClass(title, impact) {
 /**
  * Clasifica un evento de agenda.
  * Ventana activa: 0 < horas exactas ≤ 48. Fuera de ella lock_level es NINGUNO.
+ * Un DISCURSO solo bloquea con impacto High o Medium (enmienda B-bis).
+ * Low o sin impacto conserva la clase y no cuenta para el candado de la divisa.
  * hours_until se publica a 0,1 h, igual que hours_from_now.
  */
 export function classifyEventLock(event, nowMs = Date.now()) {
@@ -97,7 +104,8 @@ export function classifyEventLock(event, nowMs = Date.now()) {
   const known = Number.isFinite(evMs);
   const diffMs = known ? evMs - nowMs : null;
   const hoursUntil = known ? Math.round((diffMs / 3_600_000) * 10) / 10 : null;
-  const active = lockClass != null && known && diffMs > 0 && diffMs <= WINDOW_MS;
+  const speechActive = lockClass !== 'DISCURSO' || speechLocks(event?.impact);
+  const active = lockClass != null && speechActive && known && diffMs > 0 && diffMs <= WINDOW_MS;
   const inPost = known && diffMs <= 0 && diffMs >= -POST_MS;
   return {
     lock_class: lockClass,

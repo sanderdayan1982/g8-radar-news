@@ -78,11 +78,13 @@ test('FOMC Member Bowman Speaks a 1,5 h → retirar_limitadas: true', () => {
   assert.equal(row.retirar_limitadas, true);
   const atTwo = classifyEventLock(event({
     title: 'FOMC Member Bowman Speaks',
+    impact: 'Medium',
     offsetMs: 2 * H,
   }), NOW);
   assert.equal(atTwo.retirar_limitadas, true);
   const afterTwo = classifyEventLock(event({
     title: 'FOMC Member Bowman Speaks',
+    impact: 'Medium',
     offsetMs: 2 * H + 60_000,
   }), NOW);
   assert.equal(afterTwo.lock_level, 'NO_AMPLIAR');
@@ -114,6 +116,91 @@ test('ISM Services PMI High → AVISO', () => {
   const row = classifyEventLock(event({ title: 'ISM Services PMI', impact: 'High', offsetMs: 6 * H }), NOW);
   assert.equal(row.lock_class, 'OTRO_HIGH');
   assert.equal(row.lock_level, 'AVISO');
+});
+
+test('FOMC Member Bowman Speaks Low a 10 h → NINGUNO (clase DISCURSO)', () => {
+  const row = classifyEventLock(event({
+    title: 'FOMC Member Bowman Speaks',
+    impact: 'Low',
+    offsetMs: 10 * H,
+  }), NOW);
+  assert.equal(row.lock_class, 'DISCURSO');
+  assert.equal(row.lock_level, 'NINGUNO');
+  assert.equal(row.retirar_limitadas, false);
+  const unlabeled = classifyEventLock(event({
+    title: 'FOMC Member Bowman Speaks',
+    offsetMs: 10 * H,
+  }), NOW);
+  assert.equal(unlabeled.lock_class, 'DISCURSO');
+  assert.equal(unlabeled.lock_level, 'NINGUNO');
+  assert.equal(unlabeled.retirar_limitadas, false);
+  const agenda = buildAgendaWindow([event({
+    title: 'FOMC Member Bowman Speaks',
+    impact: 'Low',
+    offsetMs: 10 * H,
+  })], NOW);
+  assert.equal(agenda.length, 1);
+  assert.equal(agenda[0].title, 'FOMC Member Bowman Speaks');
+  assert.equal(agenda[0].lock_class, 'DISCURSO');
+  assert.equal(agenda[0].lock_level, 'NINGUNO');
+  const lock = computeCalendarLock('USD', [event({
+    title: 'FOMC Member Bowman Speaks',
+    impact: 'Low',
+    offsetMs: 10 * H,
+  })], NOW);
+  assert.equal(lock.lock_level, 'NINGUNO');
+  assert.deepEqual(lock.lock_events, []);
+});
+
+test('ECB President Lagarde Speaks Medium a 14 h → NO_AMPLIAR', () => {
+  const row = classifyEventLock(event({
+    title: 'ECB President Lagarde Speaks',
+    currency: 'EUR',
+    impact: 'Medium',
+    offsetMs: 14 * H,
+  }), NOW);
+  assert.equal(row.lock_class, 'DISCURSO');
+  assert.equal(row.lock_level, 'NO_AMPLIAR');
+  assert.equal(row.retirar_limitadas, false);
+});
+
+test('ECB President Lagarde Speaks Medium a 1,5 h → retirar_limitadas: true', () => {
+  const row = classifyEventLock(event({
+    title: 'ECB President Lagarde Speaks',
+    currency: 'EUR',
+    impact: 'Medium',
+    offsetMs: 1.5 * H,
+  }), NOW);
+  assert.equal(row.lock_class, 'DISCURSO');
+  assert.equal(row.lock_level, 'NO_AMPLIAR');
+  assert.equal(row.hours_until, 1.5);
+  assert.equal(row.retirar_limitadas, true);
+});
+
+test('MPC Member Pill Speaks Low a 1 h → NINGUNO y retirar_limitadas false', () => {
+  const row = classifyEventLock(event({
+    title: 'MPC Member Pill Speaks',
+    currency: 'GBP',
+    impact: 'Low',
+    offsetMs: 1 * H,
+  }), NOW);
+  assert.equal(row.lock_class, 'DISCURSO');
+  assert.equal(row.lock_level, 'NINGUNO');
+  assert.equal(row.retirar_limitadas, false);
+  const agenda = buildAgendaWindow([event({
+    title: 'MPC Member Pill Speaks',
+    currency: 'GBP',
+    impact: 'Low',
+    offsetMs: 1 * H,
+  })], NOW);
+  assert.equal(agenda.length, 1);
+  assert.equal(agenda[0].lock_level, 'NINGUNO');
+  const lock = computeCalendarLock('GBP', [
+    event({ title: 'MPC Member Pill Speaks', currency: 'GBP', impact: 'Low', offsetMs: 1 * H }),
+    event({ title: 'ISM Services PMI', currency: 'GBP', impact: 'High', offsetMs: 6 * H }),
+  ], NOW);
+  assert.equal(lock.lock_level, 'AVISO');
+  assert.equal(lock.lock_events.some((e) => e.lock_class === 'DISCURSO'), false);
 });
 
 test('German Buba President Nagel Speaks → NO_AMPLIAR', () => {
@@ -159,7 +246,7 @@ test('divisa con DISCURSO y DECISION_BC activos → TOTAL', () => {
 test('la severidad elige TIER1 por encima de NO_AMPLIAR y AVISO', () => {
   const events = [
     event({ title: 'ISM Services PMI', impact: 'High', offsetMs: 40 * H }),
-    event({ title: 'FOMC Member Bowman Speaks', offsetMs: 20 * H }),
+    event({ title: 'FOMC Member Bowman Speaks', impact: 'Medium', offsetMs: 20 * H }),
     event({ title: 'GDP m/m', impact: 'High', offsetMs: 30 * H }),
   ];
   const lock = computeCalendarLock('USD', events, NOW);
@@ -282,7 +369,7 @@ test('la UI distingue TOTAL, NO_AMPLIAR y AVISO y conserva POST-EVENTO', () => {
   assert.doesNotMatch(decision, /⚑BC/);
 
   const speech = computeLiveCalendarBadge('EUR', {}, [
-    event({ title: 'German Buba President Nagel Speaks', currency: 'EUR', offsetMs: 9 * H }),
+    event({ title: 'German Buba President Nagel Speaks', currency: 'EUR', impact: 'Medium', offsetMs: 9 * H }),
   ], NOW);
   assert.match(speech, /NO_AMPLIAR/);
   assert.doesNotMatch(speech, /TOTAL/);
@@ -312,7 +399,7 @@ test('la UI distingue TOTAL, NO_AMPLIAR y AVISO y conserva POST-EVENTO', () => {
 test('el texto generado del candado no usa lenguaje de ejecución', () => {
   const events = [
     event({ title: 'Federal Funds Rate', impact: 'High', offsetMs: 10 * H }),
-    event({ title: 'FOMC Member Bowman Speaks', offsetMs: 1.5 * H }),
+    event({ title: 'FOMC Member Bowman Speaks', impact: 'Medium', offsetMs: 1.5 * H }),
     event({ title: 'Annual Budget Release', offsetMs: 12 * H }),
   ];
   const lock = computeCalendarLock('USD', events, NOW);
