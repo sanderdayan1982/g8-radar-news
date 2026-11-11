@@ -33,8 +33,35 @@ export function projectIrisFeed(input = {}) {
 
 /**
  * Diccionario determinista de divisas G8 + XAU (Oro) en milisegundos (Cero llamadas a LLMs / Gemini).
+ * RADAR-v5.1.2 (Sander, 11-nov-2026). Cada nombre completo admite una inicial intermedia
+ * opcional: letra, punto opcional y espacio entre el nombre y el apellido.
+ * «Philip Lane» y «Philip R. Lane». El límite \b del patrón se mantiene.
  */
-const IRIS_USD_STRONG = /\b(usd|united states|dollar|greenback|dxy|fed\b|fomc|powell|waller|jefferson|john williams|bostic|barkin|kashkari|goolsbee|bowman|kugler|musalem|hammack|daly|treasury|ust\b|jackson hole|white house)\b/i;
+const FULL_PERSONS = [
+  'brad jones',
+  'sarah hunter',
+  'christopher kent',
+  'antoine martin',
+  'alan taylor',
+  'philip lane',
+  'nicolas vincent',
+  'carolyn rogers',
+  'john williams',
+  'karen silk',
+  'paul conway',
+];
+
+function allowMiddleInitial(re) {
+  let src = re.source;
+  for (const name of FULL_PERSONS) {
+    if (!src.includes(name)) continue;
+    const [first, last] = name.split(' ');
+    src = src.replaceAll(name, `${first}(?: [a-z]\\.?)? ${last}`);
+  }
+  return new RegExp(src, re.flags);
+}
+
+const IRIS_USD_STRONG = allowMiddleInitial(/\b(usd|united states|dollar|greenback|dxy|fed\b|fomc|powell|waller|jefferson|john williams|bostic|barkin|kashkari|goolsbee|bowman|kugler|musalem|hammack|daly|treasury|ust\b|jackson hole|white house)\b/i);
 const IRIS_USD_GENERIC = /\b(payrolls?|nonfarm|nfp\b|cpi\b|pce\b|ppi\b|ism\b|jolts|adp\b|michigan|tariff)\b/i;
 
 export const IRIS_CURRENCY_RULES = {
@@ -45,13 +72,13 @@ export const IRIS_CURRENCY_RULES = {
       return assignsUsd(text, IRIS_USD_STRONG, IRIS_USD_GENERIC, IRIS_CURRENCY_RULES);
     },
   },
-  EUR: /\b(eur\b|euro\b|eurozone|euro area|ecb\b|bce\b|lagarde|guindos|schnabel|philip lane|villeroy|nagel|knot|holzmann|cipollone|panetta|wunsch|kazaks|rehn|bundesbank|germany|german|bunds?|france|french|oat\b|italy|italian|btp\b|spain|eurostat|zew\b|ifo\b)\b/i,
-  GBP: /\b(gbp\b|sterling|pound|cable\b|boe\b|bank of england|mpc\b|bailey|pill\b|mann\b|greene\b|ramsden|breeden|lombardelli|dhingra|alan taylor|uk\b|u\.k\.|britain|british|ons\b|gilts?|chancellor|reeves|sunak|starmer)\b/i,
+  EUR: allowMiddleInitial(/\b(eur\b|euro\b|eurozone|euro area|ecb\b|bce\b|lagarde|guindos|schnabel|philip lane|villeroy|nagel|knot|holzmann|cipollone|panetta|wunsch|kazaks|rehn|bundesbank|germany|german|bunds?|france|french|oat\b|italy|italian|btp\b|spain|eurostat|zew\b|ifo\b)\b/i),
+  GBP: allowMiddleInitial(/\b(gbp\b|sterling|pound|cable\b|boe\b|bank of england|mpc\b|bailey|pill\b|mann\b|greene\b|ramsden|breeden|lombardelli|dhingra|alan taylor|uk\b|u\.k\.|britain|british|ons\b|gilts?|chancellor|reeves|sunak|starmer)\b/i),
   JPY: /\b(jpy\b|yen\b|boj\b|bank of japan|ueda|himino|uchida|takata|tamura|nakagawa|noguchi|adachi|nakamura|japan|japanese|tokyo|tankan|jgb\b|mof\b|ministry of finance|kanda|mimura|katayama|ishiba|shunto|nikkei)\b/i,
-  AUD: /\b(aud\b|aussie|rba\b|reserve bank of australia|bullock|hauser|sarah hunter|christopher kent|brad jones|australia|australian|abs\b|sydney|canberra|iron ore)\b/i,
-  NZD: /\b(nzd\b|kiwi|rbnz|reserve bank of new zealand|ocr\b|orr\b|hawkesby|paul conway|karen silk|new zealand|wellington|auckland|stats nz|nz treasury|nzdm|gdt\b|fonterra|dairy)\b/i,
-  CAD: /\b(cad\b|loonie|boc\b|bank of canada|macklem|carolyn rogers|gravelle|kozicki|nicolas vincent|mendes|canada|canadian|ottawa|statcan|statistics canada|ivi|ivey pmi|wti\b|oil sands)\b/i,
-  CHF: /\b(chf\b|franc|swissie|snb\b|swiss national bank|schlegel|antoine martin|tschudin|jordan\b|swiss|switzerland|seco\b|bfs\b|zurich|bern|kof\b|sight deposits)\b/i,
+  AUD: allowMiddleInitial(/\b(aud\b|aussie|rba\b|reserve bank of australia|bullock|hauser|sarah hunter|christopher kent|brad jones|australia|australian|abs\b|sydney|canberra|iron ore)\b/i),
+  NZD: allowMiddleInitial(/\b(nzd\b|kiwi|rbnz|reserve bank of new zealand|ocr\b|orr\b|hawkesby|paul conway|karen silk|new zealand|wellington|auckland|stats nz|nz treasury|nzdm|gdt\b|fonterra|dairy)\b/i),
+  CAD: allowMiddleInitial(/\b(cad\b|loonie|boc\b|bank of canada|macklem|carolyn rogers|gravelle|kozicki|nicolas vincent|mendes|canada|canadian|ottawa|statcan|statistics canada|ivi|ivey pmi|wti\b|oil sands)\b/i),
+  CHF: allowMiddleInitial(/\b(chf\b|franc|swissie|snb\b|swiss national bank|schlegel|antoine martin|tschudin|jordan\b|swiss|switzerland|seco\b|bfs\b|zurich|bern|kof\b|sight deposits)\b/i),
   XAU: /\b(xau|xauusd|gold\b|bullion|oro\b|spot gold|comex gold|precious metals?|safe[- ]haven gold)\b/i,
 };
 

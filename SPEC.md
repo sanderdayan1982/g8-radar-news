@@ -34,6 +34,8 @@ El usuario no ve gráficos de precios como señal. Ve la cinta, el mapa de riesg
 
 RADAR-v5.1.1 (Sander, 11-nov-2026). Una sola función asigna el USD en `CCY_KEYWORDS` y en `IRIS_CURRENCY_RULES`. El USD fuerte se asigna siempre: lo que ya estaba (usd, united states, dollar, greenback, dxy, fed, fomc, powell, treasury, ust, white house, jackson hole y los miembros del FOMC), más `US` solo en mayúsculas, `U.S.` con puntos (también ante espacio, puntuación o fin), `american` y `trump`. El USD genérico (`cpi`, `ppi`, `pce`, `ism`, `adp`, `jolts`, `nonfarm`, `nfp`, `payrolls`, `michigan`, `tariff`, cada uno solo donde ya estaba) asigna USD solo si el titular no encajó con EUR, GBP, JPY, AUD, NZD, CAD ni CHF. Los apellidos sueltos del léxico IRIS pasan a nombre completo: Brad Jones, Sarah Hunter, Christopher Kent, Antoine Martin, Alan Taylor, Philip Lane, Nicolas Vincent, Carolyn Rogers, John Williams, Karen Silk y Paul Conway.
 
+RADAR-v5.1.2 (Sander, 11-nov-2026). Esos nombres completos admiten una inicial intermedia opcional: una letra, un punto opcional y un espacio entre el nombre y el apellido. «Philip Lane» y «Philip R. Lane» son EUR. «John Williams» y «John C. Williams» son USD. «Shane Jones» y «Hunter McMaster» siguen fuera de AUD. El límite de palabra se mantiene. Esos nombres no están en `CCY_KEYWORDS`.
+
 Una divisa **sin titulares propios** no hereda el riesgo de otra región. El puesto `rank: null` y la etiqueta N/D pertenecían al ranking retirado el 10-nov-2026.
 
 ## 3. Fuentes de noticias
