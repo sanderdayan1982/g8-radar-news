@@ -79,3 +79,50 @@ test('el nombre completo sigue asignando su divisa', () => {
     assert.equal(byIris(title).includes(ccy), true, title);
   }
 });
+
+test('ECB\'s Philip R. Lane says… asigna EUR', () => {
+  assert.equal(byIris("ECB's Philip R. Lane says…").includes('EUR'), true);
+});
+
+test('NY Fed\'s John C. Williams… asigna USD', () => {
+  assert.equal(byIris("NY Fed's John C. Williams…").includes('USD'), true);
+});
+
+test('Philip Lane sigue asignando EUR', () => {
+  assert.deepEqual(byIris('Philip Lane'), ['EUR']);
+});
+
+test('la inicial intermedia opcional asigna la misma divisa', () => {
+  const rows = [
+    ['Brad R. Jones', 'AUD'],
+    ['Brad R Jones', 'AUD'],
+    ['Sarah R. Hunter', 'AUD'],
+    ['Sarah R Hunter', 'AUD'],
+    ['Christopher R. Kent', 'AUD'],
+    ['Christopher R Kent', 'AUD'],
+    ['Antoine R. Martin', 'CHF'],
+    ['Antoine R Martin', 'CHF'],
+    ['Alan R. Taylor', 'GBP'],
+    ['Alan R Taylor', 'GBP'],
+    ['Philip R. Lane', 'EUR'],
+    ['Philip R Lane', 'EUR'],
+    ['Nicolas R. Vincent', 'CAD'],
+    ['Nicolas R Vincent', 'CAD'],
+    ['Carolyn R. Rogers', 'CAD'],
+    ['Carolyn R Rogers', 'CAD'],
+    ['John C. Williams', 'USD'],
+    ['John C Williams', 'USD'],
+    ['Karen R. Silk', 'NZD'],
+    ['Karen R Silk', 'NZD'],
+    ['Paul R. Conway', 'NZD'],
+    ['Paul R Conway', 'NZD'],
+  ];
+  for (const [title, ccy] of rows) {
+    assert.deepEqual(byIris(title), [ccy], title);
+  }
+});
+
+test('un segundo nombre no cuenta como inicial', () => {
+  assert.equal(byIris('Philip Road Lane').includes('EUR'), false);
+  assert.equal(byIris('John Middle Williams').includes('USD'), false);
+});
