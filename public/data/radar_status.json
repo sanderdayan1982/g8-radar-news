@@ -1,25 +1,17 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-11T21:22:53.632Z",
-  "feed_generated_at": "2026-11-11T21:22:53.579Z",
+  "last_check_at": "2026-11-11T21:28:00.064Z",
+  "feed_generated_at": "2026-11-11T21:28:00.012Z",
   "wrote_full_feed": true,
-  "new_items": 3,
+  "new_items": 2,
   "sources": {
-    "ok": 34,
+    "ok": 35,
     "cached": 0,
     "empty": 0,
-    "error": 1,
+    "error": 0,
     "total": 35
   },
-  "failing_sources": [
-    {
-      "id": "fed",
-      "status": "error",
-      "last_error": "HTTP 404",
-      "last_success_at": "2026-11-11T21:17:44.817Z",
-      "consecutive_failures": 1
-    }
-  ],
+  "failing_sources": [],
   "calendar_events": 97,
   "cadence": "Hourly GitHub Actions trigger + self-clocked loop: every 5 min, every 60 s within 15 min of a High-impact event"
 }
