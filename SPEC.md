@@ -36,6 +36,8 @@ RADAR-v5.1.1 (Sander, 11-nov-2026). Una sola función asigna el USD en `CCY_KEYW
 
 RADAR-v5.1.2 (Sander, 11-nov-2026). Esos nombres completos admiten una inicial intermedia opcional: una letra, un punto opcional y un espacio entre el nombre y el apellido. «Philip Lane» y «Philip R. Lane» son EUR. «John Williams» y «John C. Williams» son USD. «Shane Jones» y «Hunter McMaster» siguen fuera de AUD. El límite de palabra se mantiene. Esos nombres no están en `CCY_KEYWORDS`.
 
+RADAR-v5.1.3 (Sander, 11-nov-2026). El léxico EUR de `CCY_KEYWORDS` y de `IRIS_CURRENCY_RULES` añade, con los mismos tokens y con límite de palabra, los países de la zona euro que faltaban y su gentilicio: Portugal/Portuguese, Netherlands/Dutch, Belgium/Belgian, Austria/Austrian, Ireland/Irish, Greece/Greek, Finland/Finnish, Slovakia/Slovak, Slovenia/Slovenian, Lithuania/Lithuanian, Latvia/Latvian, Estonia/Estonian, Luxembourg/Luxembourgish, Malta/Maltese, Cyprus/Cypriot y Croatia/Croatian. «Austria» no entra en «Australia» ni «Malta» dentro de otra palabra. «Northern Ireland» es Reino Unido: Ireland e Irish no asignan EUR si van precedidos de Northern (`(?<!northern\s)`), y «northern ireland» asigna GBP en los dos léxicos. Holland no se añade: no había precedente en el léxico.
+
 Una divisa **sin titulares propios** no hereda el riesgo de otra región. El puesto `rank: null` y la etiqueta N/D pertenecían al ranking retirado el 10-nov-2026.
 
 ## 3. Fuentes de noticias

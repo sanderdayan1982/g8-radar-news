@@ -72,8 +72,8 @@ export const IRIS_CURRENCY_RULES = {
       return assignsUsd(text, IRIS_USD_STRONG, IRIS_USD_GENERIC, IRIS_CURRENCY_RULES);
     },
   },
-  EUR: allowMiddleInitial(/\b(eur\b|euro\b|eurozone|euro area|ecb\b|bce\b|lagarde|guindos|schnabel|philip lane|villeroy|nagel|knot|holzmann|cipollone|panetta|wunsch|kazaks|rehn|bundesbank|germany|german|bunds?|france|french|oat\b|italy|italian|btp\b|spain|eurostat|zew\b|ifo\b)\b/i),
-  GBP: allowMiddleInitial(/\b(gbp\b|sterling|pound|cable\b|boe\b|bank of england|mpc\b|bailey|pill\b|mann\b|greene\b|ramsden|breeden|lombardelli|dhingra|alan taylor|uk\b|u\.k\.|britain|british|ons\b|gilts?|chancellor|reeves|sunak|starmer)\b/i),
+  EUR: allowMiddleInitial(/\b(eur\b|euro\b|eurozone|euro area|ecb\b|bce\b|lagarde|guindos|schnabel|philip lane|villeroy|nagel|knot|holzmann|cipollone|panetta|wunsch|kazaks|rehn|bundesbank|germany|german|bunds?|france|french|oat\b|italy|italian|btp\b|spain|eurostat|zew\b|ifo\b|portugal|portuguese|netherlands|dutch|belgium|belgian|austria|austrian|(?<!northern\s)ireland|(?<!northern\s)irish|greece|greek|finland|finnish|slovakia|slovak|slovenia|slovenian|lithuania|lithuanian|latvia|latvian|estonia|estonian|luxembourg|luxembourgish|malta|maltese|cyprus|cypriot|croatia|croatian)\b/i),
+  GBP: allowMiddleInitial(/\b(gbp\b|sterling|pound|cable\b|boe\b|bank of england|mpc\b|bailey|pill\b|mann\b|greene\b|ramsden|breeden|lombardelli|dhingra|alan taylor|uk\b|u\.k\.|britain|british|ons\b|gilts?|chancellor|reeves|sunak|starmer|northern ireland)\b/i),
   JPY: /\b(jpy\b|yen\b|boj\b|bank of japan|ueda|himino|uchida|takata|tamura|nakagawa|noguchi|adachi|nakamura|japan|japanese|tokyo|tankan|jgb\b|mof\b|ministry of finance|kanda|mimura|katayama|ishiba|shunto|nikkei)\b/i,
   AUD: allowMiddleInitial(/\b(aud\b|aussie|rba\b|reserve bank of australia|bullock|hauser|sarah hunter|christopher kent|brad jones|australia|australian|abs\b|sydney|canberra|iron ore)\b/i),
   NZD: allowMiddleInitial(/\b(nzd\b|kiwi|rbnz|reserve bank of new zealand|ocr\b|orr\b|hawkesby|paul conway|karen silk|new zealand|wellington|auckland|stats nz|nz treasury|nzdm|gdt\b|fonterra|dairy)\b/i),
