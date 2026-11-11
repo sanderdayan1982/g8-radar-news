@@ -3,24 +3,24 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-11T08:37:06.350Z",
+  "generated_at": "2026-11-11T08:37:26.128Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 35,
+    "sources_live": 35,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 0,
-    "sources_error": 1,
+    "sources_error": 0,
     "agenda_events_count": 97,
-    "status": "DEGRADED"
+    "status": "CLEAN"
   },
   "coverage": {
     "USD": {
       "count_72h": 227,
       "count_official_45d": 161,
       "last_item_at": "2026-11-11T08:28:10.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "EUR": {
@@ -51,8 +51,8 @@
       "count_72h": 54,
       "count_official_45d": 16,
       "last_item_at": "2026-11-11T08:28:10.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "CAD": {
@@ -8543,6 +8543,37 @@
       "z": null
     },
     {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T19:43:41.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "f7ba824ac8cba31c92280275f6cd5e5a5893e76232cd300bad8df40672070051",
       "sha256": "f7ba824ac8cba31c92280275f6cd5e5a5893e76232cd300bad8df40672070051",
       "title": "GDP monthly estimate, UK: June 2027 time series - Office for National Statistics",
@@ -8569,37 +8600,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T19:43:22.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -19232,6 +19232,62 @@
       "z": null
     },
     {
+      "id": "1fd3d00149aff7f68843b57dc8dc8051caa48a35e395eefb2c0a046ae5463489",
+      "sha256": "1fd3d00149aff7f68843b57dc8dc8051caa48a35e395eefb2c0a046ae5463489",
+      "title": "The Danish pension system in a long-term perspective",
+      "url": "https://www.bis.org/speeches/20261110-danish-pension-system-long-term-perspective",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b6b63463393d2d5e2f5e28e9eedc2e48e1222d13aa0c95ed320887e62003bf2d",
+      "sha256": "b6b63463393d2d5e2f5e28e9eedc2e48e1222d13aa0c95ed320887e62003bf2d",
+      "title": "Trust, expectations and monetary policy",
+      "url": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "d77cabd7d9ddf0a55148844f39850419f1754952de02eeda187063f1bbcc0635",
       "sha256": "d77cabd7d9ddf0a55148844f39850419f1754952de02eeda187063f1bbcc0635",
       "title": "Navigating stormy waters - reflections on monetary policy",
@@ -19475,62 +19531,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1fd3d00149aff7f68843b57dc8dc8051caa48a35e395eefb2c0a046ae5463489",
-      "sha256": "1fd3d00149aff7f68843b57dc8dc8051caa48a35e395eefb2c0a046ae5463489",
-      "title": "The Danish pension system in a long-term perspective",
-      "url": "https://www.bis.org/speeches/20261110-danish-pension-system-long-term-perspective",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b6b63463393d2d5e2f5e28e9eedc2e48e1222d13aa0c95ed320887e62003bf2d",
-      "sha256": "b6b63463393d2d5e2f5e28e9eedc2e48e1222d13aa0c95ed320887e62003bf2d",
-      "title": "Trust, expectations and monetary policy",
-      "url": "https://www.bis.org/speeches/20261110-trust-expectations-and-monetary-policy",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -22073,6 +22073,32 @@
       "z": null
     },
     {
+      "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
+      "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
+      "title": "Leading today, building for tomorrow",
+      "url": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
       "sha256": "8b44a0ae5184792a75e53653fc657990af6316d527c72dadb3c9b0a3c970eae2",
       "title": "Safeguarding trust and monetary sovereignty in a digital payments era",
@@ -22202,32 +22228,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
-      "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
-      "title": "Leading today, building for tomorrow",
-      "url": "https://www.bis.org/speeches/20261109-leading-today-building-tomorrow",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -26366,6 +26366,36 @@
       "z": null
     },
     {
+      "id": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
+      "sha256": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
+      "title": "Marking our tenth anniversary - one conviction, two principles and three challenges",
+      "url": "https://www.bis.org/speeches/20261103-marking-our-tenth-anniversary-one-conviction-two-principles-and-three-challenges",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "99e8ba5e0d0b1f9feecb6e2d1d39fbf76eb999929ed0255e5f13c9173251651e",
       "sha256": "99e8ba5e0d0b1f9feecb6e2d1d39fbf76eb999929ed0255e5f13c9173251651e",
       "title": "Payments in a fragmenting world - sovereignty, strategy and system design",
@@ -26570,36 +26600,6 @@
       "sha256": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
       "title": "Stable banks, strong capital markets - Europe’s financial system for the future",
       "url": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
-      "sha256": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
-      "title": "Marking our tenth anniversary - one conviction, two principles and three challenges",
-      "url": "https://www.bis.org/speeches/20261103-marking-our-tenth-anniversary-one-conviction-two-principles-and-three-challenges",
       "source": "BIS",
       "source_id": "bis-speeches",
       "source_type": "oficial",
@@ -27170,6 +27170,36 @@
       "z": null
     },
     {
+      "id": "7f24904d04b19580d38ccc9c91f30237a60efb8185eee8ae85d3dc91cd8cf8a7",
+      "sha256": "7f24904d04b19580d38ccc9c91f30237a60efb8185eee8ae85d3dc91cd8cf8a7",
+      "title": "Savings in a changing society",
+      "url": "https://www.bis.org/speeches/20261102-savings-changing-society",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "02a239f03947badcce7499922df4a599e04d9766975ddf90d116f7e60e9cd222",
       "sha256": "02a239f03947badcce7499922df4a599e04d9766975ddf90d116f7e60e9cd222",
       "title": "Capital needs AI, and AI needs capital - Europe's opportunity for more growth",
@@ -27334,36 +27364,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7f24904d04b19580d38ccc9c91f30237a60efb8185eee8ae85d3dc91cd8cf8a7",
-      "sha256": "7f24904d04b19580d38ccc9c91f30237a60efb8185eee8ae85d3dc91cd8cf8a7",
-      "title": "Savings in a changing society",
-      "url": "https://www.bis.org/speeches/20261102-savings-changing-society",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
@@ -28251,38 +28251,6 @@
       "z": null
     },
     {
-      "id": "7d56bf244b503a5653061eb059e0df3e45ce4594477a2950b6f3a8982f700dc3",
-      "sha256": "7d56bf244b503a5653061eb059e0df3e45ce4594477a2950b6f3a8982f700dc3",
-      "title": "An introduction to the UK National Accounts - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPY0w1VzQ5QjRPekhBRDhHQkowZEFKNEZUQmdGMkROVWpqbTlMd3ZON1ZPLXRDaUtXNWlVbzZSOXBCMTZiMmhobU1PSklsZEZ1YkxVZjJVdmdQenlhVVpOVFVDY0lBS3FVZ0VuUGpzZ3ZtTkE1bmlhdkR5dFlsV0c0LXJCTUg2Si1DRUxHOEY4cW0wcDc0MmphQUJ5WkRKTlJzUFNWekxEcXNyVHJnTkNSNlhuYzFaQ0FweTdYWVF0amxqNHBWcmhrdVAxaThCdENwMXllQm1nZ09uLV9iM0owekViQQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-10-30T07:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "91cd796f4210f5135376f4d1bef58140ae878e28bb7b3c06d36397d565a8b298",
       "sha256": "91cd796f4210f5135376f4d1bef58140ae878e28bb7b3c06d36397d565a8b298",
       "title": "Non-financial corporations - Office for National Statistics",
@@ -28485,6 +28453,38 @@
       ],
       "divisas": [
         "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7d56bf244b503a5653061eb059e0df3e45ce4594477a2950b6f3a8982f700dc3",
+      "sha256": "7d56bf244b503a5653061eb059e0df3e45ce4594477a2950b6f3a8982f700dc3",
+      "title": "An introduction to the UK National Accounts - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPY0w1VzQ5QjRPekhBRDhHQkowZEFKNEZUQmdGMkROVWpqbTlMd3ZON1ZPLXRDaUtXNWlVbzZSOXBCMTZiMmhobU1PSklsZEZ1YkxVZjJVdmdQenlhVVpOVFVDY0lBS3FVZ0VuUGpzZ3ZtTkE1bmlhdkR5dFlsV0c0LXJCTUg2Si1DRUxHOEY4cW0wcDc0MmphQUJ5WkRKTlJzUFNWekxEcXNyVHJnTkNSNlhuYzFaQ0FweTdYWVF0amxqNHBWcmhrdVAxaThCdENwMXllQm1nZ09uLV9iM0owekViQQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-10-30T07:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
         "USD"
       ],
       "category": "Fiscal",
@@ -29554,6 +29554,58 @@
       "z": null
     },
     {
+      "id": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
+      "sha256": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
+      "title": "Economic resilience, thinner buffers, emerging risks globally - where does India stand?",
+      "url": "https://www.bis.org/speeches/20261029-economic-resilience-thinner-buffers-emerging-risks-globally-where-does-india-stand",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "03bc388917d94118a6e130077f7a5d350c49d6e9ff09d2448b5f4d66769768c0",
+      "sha256": "03bc388917d94118a6e130077f7a5d350c49d6e9ff09d2448b5f4d66769768c0",
+      "title": "Connecting sustainable finance with climate-resilient growth",
+      "url": "https://www.bis.org/speeches/20261029-connecting-sustainable-finance-climate-resilient-growth",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4753ed7b467a7738c9967663a5693453f0fa3489478727e8a55253e76953a050",
       "sha256": "4753ed7b467a7738c9967663a5693453f0fa3489478727e8a55253e76953a050",
       "title": "National Bank of Ukraine press briefing - monetary policy decisions",
@@ -29660,58 +29712,6 @@
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
-      "sha256": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
-      "title": "Economic resilience, thinner buffers, emerging risks globally - where does India stand?",
-      "url": "https://www.bis.org/speeches/20261029-economic-resilience-thinner-buffers-emerging-risks-globally-where-does-india-stand",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "03bc388917d94118a6e130077f7a5d350c49d6e9ff09d2448b5f4d66769768c0",
-      "sha256": "03bc388917d94118a6e130077f7a5d350c49d6e9ff09d2448b5f4d66769768c0",
-      "title": "Connecting sustainable finance with climate-resilient growth",
-      "url": "https://www.bis.org/speeches/20261029-connecting-sustainable-finance-climate-resilient-growth",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -30599,6 +30599,62 @@
       "z": null
     },
     {
+      "id": "b65ac135d11a2bcf2deb70540b26aec4985fe012273d1c4877364ea527d9ed8a",
+      "sha256": "b65ac135d11a2bcf2deb70540b26aec4985fe012273d1c4877364ea527d9ed8a",
+      "title": "Statement to the International Monetary and Financial Committee (IMFC)",
+      "url": "https://www.bis.org/speeches/20261027-statement-international-monetary-and-financial-committee-imfc",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-27T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "61729ae7a24260c6f99843e4f04a349c513f07f490858b6b0a25078fcf078bea",
+      "sha256": "61729ae7a24260c6f99843e4f04a349c513f07f490858b6b0a25078fcf078bea",
+      "title": "The two-tier system in transition - public foundations, private innovation",
+      "url": "https://www.bis.org/speeches/20261027-two-tier-system-transition-public-foundations-private-innovation",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-27T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "f2f4ba1c6815d6c5676bf8fe3298cd851b5d814cb4de8104445723721149e618",
       "sha256": "f2f4ba1c6815d6c5676bf8fe3298cd851b5d814cb4de8104445723721149e618",
       "title": "Deepening foreign exchange opening-up to better serve China’s new development paradigm",
@@ -30835,62 +30891,6 @@
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b65ac135d11a2bcf2deb70540b26aec4985fe012273d1c4877364ea527d9ed8a",
-      "sha256": "b65ac135d11a2bcf2deb70540b26aec4985fe012273d1c4877364ea527d9ed8a",
-      "title": "Statement to the International Monetary and Financial Committee (IMFC)",
-      "url": "https://www.bis.org/speeches/20261027-statement-international-monetary-and-financial-committee-imfc",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-27T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "61729ae7a24260c6f99843e4f04a349c513f07f490858b6b0a25078fcf078bea",
-      "sha256": "61729ae7a24260c6f99843e4f04a349c513f07f490858b6b0a25078fcf078bea",
-      "title": "The two-tier system in transition - public foundations, private innovation",
-      "url": "https://www.bis.org/speeches/20261027-two-tier-system-transition-public-foundations-private-innovation",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-27T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -32749,19 +32749,19 @@
       "z": null
     },
     {
-      "id": "e01f81437df449ce4c7e36287e7565263969e2b55afffaa92a7c79c1f04a6625",
-      "sha256": "e01f81437df449ce4c7e36287e7565263969e2b55afffaa92a7c79c1f04a6625",
-      "title": "2026-09-30 - Quarterly Bulletin 3/2026",
-      "url": "https://www.snb.ch/en/publications/quarterly-bulletin/2026/quartbul_2026_3_komplett",
-      "source": "SNB",
-      "source_id": "snb-mopo",
+      "id": "bbb29cc4752eb2687b59c1bb3dc6222cca115b46bf32041a9aa9cac2b86d6830",
+      "sha256": "bbb29cc4752eb2687b59c1bb3dc6222cca115b46bf32041a9aa9cac2b86d6830",
+      "title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
+      "source": "Fed",
+      "source_id": "fed",
       "source_type": "oficial",
       "published_at": "2026-09-30T13:00:00.000Z",
       "currencies": [
-        "CHF"
+        "USD"
       ],
       "divisas": [
-        "CHF"
+        "USD"
       ],
       "category": "BC",
       "categories": [
@@ -32779,19 +32779,19 @@
       "z": null
     },
     {
-      "id": "bbb29cc4752eb2687b59c1bb3dc6222cca115b46bf32041a9aa9cac2b86d6830",
-      "sha256": "bbb29cc4752eb2687b59c1bb3dc6222cca115b46bf32041a9aa9cac2b86d6830",
-      "title": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
-      "source": "Fed",
-      "source_id": "fed",
+      "id": "e01f81437df449ce4c7e36287e7565263969e2b55afffaa92a7c79c1f04a6625",
+      "sha256": "e01f81437df449ce4c7e36287e7565263969e2b55afffaa92a7c79c1f04a6625",
+      "title": "2026-09-30 - Quarterly Bulletin 3/2026",
+      "url": "https://www.snb.ch/en/publications/quarterly-bulletin/2026/quartbul_2026_3_komplett",
+      "source": "SNB",
+      "source_id": "snb-mopo",
       "source_type": "oficial",
       "published_at": "2026-09-30T13:00:00.000Z",
       "currencies": [
-        "USD"
+        "CHF"
       ],
       "divisas": [
-        "USD"
+        "CHF"
       ],
       "category": "BC",
       "categories": [
