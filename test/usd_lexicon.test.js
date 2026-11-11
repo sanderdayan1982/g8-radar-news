@@ -1,7 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { detectCurrencies } from '../src/enrich.js';
-import { classifyIrisItem } from '../src/irisCollector.js';
+import { classifyIrisItem, IRIS_CURRENCY_RULES } from '../src/irisCollector.js';
+import { assignsUsd, CCY_KEYWORDS } from '../src/config.js';
 
 function byConfig(title) {
   return detectCurrencies(title).filter((ccy) => ccy !== 'XAU').sort();
@@ -125,4 +126,57 @@ test('la inicial intermedia opcional asigna la misma divisa', () => {
 test('un segundo nombre no cuenta como inicial', () => {
   assert.equal(byIris('Philip Road Lane').includes('EUR'), false);
   assert.equal(byIris('John Middle Williams').includes('USD'), false);
+});
+
+test('Portugal CPI asigna EUR y no USD', () => {
+  assert.equal(assignsUsd('Portugal CPI', CCY_KEYWORDS.USD.strong, CCY_KEYWORDS.USD.generic, CCY_KEYWORDS), false);
+  assert.equal(assignsUsd('Portugal CPI', IRIS_CURRENCY_RULES.USD.strong, IRIS_CURRENCY_RULES.USD.generic, IRIS_CURRENCY_RULES), false);
+  assert.deepEqual(byConfig('Portugal CPI'), ['EUR']);
+  assert.deepEqual(byIris('Portugal CPI'), ['EUR']);
+});
+
+test('cada país de la zona euro que faltaba asigna EUR', () => {
+  const rows = [
+    ['Portugal', 'Portuguese'],
+    ['Netherlands', 'Dutch'],
+    ['Belgium', 'Belgian'],
+    ['Austria', 'Austrian'],
+    ['Ireland', 'Irish'],
+    ['Greece', 'Greek'],
+    ['Finland', 'Finnish'],
+    ['Slovakia', 'Slovak'],
+    ['Slovenia', 'Slovenian'],
+    ['Lithuania', 'Lithuanian'],
+    ['Latvia', 'Latvian'],
+    ['Estonia', 'Estonian'],
+    ['Luxembourg', 'Luxembourgish'],
+    ['Malta', 'Maltese'],
+    ['Cyprus', 'Cypriot'],
+    ['Croatia', 'Croatian'],
+  ];
+  for (const [name, demonym] of rows) {
+    assert.equal(byConfig(name).includes('EUR'), true, name);
+    assert.equal(byIris(name).includes('EUR'), true, name);
+    assert.equal(byConfig(demonym).includes('EUR'), true, demonym);
+    assert.equal(byIris(demonym).includes('EUR'), true, demonym);
+  }
+});
+
+test('Australia y Australian no asignan EUR', () => {
+  for (const title of ['Australia', 'Australian']) {
+    assert.equal(byConfig(title).includes('EUR'), false, title);
+    assert.equal(byIris(title).includes('EUR'), false, title);
+  }
+});
+
+test('Northern Ireland inflation asigna GBP y no EUR', () => {
+  assert.deepEqual(byConfig('Northern Ireland inflation'), ['GBP']);
+  assert.deepEqual(byIris('Northern Ireland inflation'), ['GBP']);
+});
+
+test('Ireland GDP asigna EUR', () => {
+  assert.equal(byConfig('Ireland GDP').includes('EUR'), true);
+  assert.equal(byIris('Ireland GDP').includes('EUR'), true);
+  assert.equal(byConfig('Ireland GDP').includes('GBP'), false);
+  assert.equal(byIris('Ireland GDP').includes('GBP'), false);
 });

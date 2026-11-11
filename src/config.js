@@ -377,8 +377,8 @@ export const CCY_KEYWORDS = {
       return assignsUsd(text, CCY_USD_STRONG, CCY_USD_GENERIC, CCY_KEYWORDS);
     },
   },
-  EUR: /\b(eur\b|euro\b|eurozone|euro area|ecb|bce|lagarde|germany|bund|france|italy)\b/i,
-  GBP: /\b(gbp|sterling|pound|boe|bank of england|bailey|uk\b|britain|gilt)\b/i,
+  EUR: /\b(eur\b|euro\b|eurozone|euro area|ecb|bce|lagarde|germany|bund|france|italy|portugal|portuguese|netherlands|dutch|belgium|belgian|austria|austrian|(?<!northern\s)ireland|(?<!northern\s)irish|greece|greek|finland|finnish|slovakia|slovak|slovenia|slovenian|lithuania|lithuanian|latvia|latvian|estonia|estonian|luxembourg|luxembourgish|malta|maltese|cyprus|cypriot|croatia|croatian)\b/i,
+  GBP: /\b(gbp|sterling|pound|boe|bank of england|bailey|uk\b|britain|gilt|northern ireland)\b/i,
   JPY: /\b(jpy|yen\b|boj|bank of japan|ueda|japan(?!ese knot))\b/i,
   CHF: /\b(chf|franc|snb|swiss|switzerland|seco|bfs|zurich|bern)\b/i,
   CAD: /\b(cad|loonie|boc|bank of canada|canada|macklem|oil sands)\b/i,
