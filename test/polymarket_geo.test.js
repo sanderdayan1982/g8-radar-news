@@ -49,7 +49,7 @@ test('la tabla y los umbrales congelados viven en config, sin dirección', () =>
   ]);
   assert.deepEqual(POLYMARKET_GEO_THEMES[0].keywords, ['iran', 'iranian', 'israel', 'israeli', 'hormuz', 'houthi', 'gaza', 'saudi', 'strike on']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[0].currencies, ['USD', 'CHF', 'JPY', 'CAD', 'EUR', 'XAU']);
-  assert.deepEqual(POLYMARKET_GEO_THEMES[1].keywords, ['russia', 'ukraine', 'putin', 'zelensky', 'ceasefire', 'nato']);
+  assert.deepEqual(POLYMARKET_GEO_THEMES[1].keywords, ['russia', 'ukraine', 'putin', 'zelensky', 'nato']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[1].currencies, ['EUR', 'CHF', 'GBP', 'XAU']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[2].keywords, ['tariff', 'trade deal', 'trade war', 'usmca', 'section 232', 'section 301']);
   assert.deepEqual(POLYMARKET_GEO_THEMES[2].currencies, ['CAD', 'AUD', 'NZD', 'EUR', 'JPY', 'CHF']);
@@ -129,7 +129,7 @@ test('la palabra clave empieza en un límite de palabra', () => {
 });
 
 test('la respuesta fija de Gamma selecciona, filtra y excluye', () => {
-  const rows = selectPolymarketMarkets(fixture);
+  const rows = selectPolymarketMarkets(fixture, NOW);
   assert.deepEqual(titles(rows, 'IRAN_ORIENTE_MEDIO'), [
     'Will the US invade Iran before 2027?',
     'Strait of Hormuz traffic returns to normal?',
@@ -182,14 +182,8 @@ test('la respuesta fija de Gamma selecciona, filtra y excluye', () => {
   assert.equal(byTitle(rows, 'Xi Jinping out before 2027').url, null);
   assert.deepEqual(byTitle(rows, 'Will China invade Taiwan by end of 2026?').currencies, ['AUD', 'NZD', 'JPY', 'USD']);
 
-  assert.deepEqual(titles(rows, 'ARANCELES_COMERCIO'), [
-    'US tariff schedule and trade war talks',
-    'China tariff package',
-    'Section 232 steel review',
-  ]);
-  assert.equal(byTitle(rows, 'Section 232 steel review').volume, 1_000_000);
-  assert.equal(byTitle(rows, 'Section 232 steel review').liquidity, 30_000.5);
-  assert.deepEqual(byTitle(rows, 'China tariff package').currencies, ['CAD', 'AUD', 'NZD', 'EUR', 'JPY', 'CHF']);
+  // EE. UU. y una contraparte (G8 distinta, China o México). Estas tres no cumplen las dos.
+  assert.deepEqual(titles(rows, 'ARANCELES_COMERCIO'), []);
   const chinaCopy = rows.filter((row) => row.event_title === 'China tariff package' && row.theme === 'CHINA_TAIWAN');
   assert.equal(chinaCopy.length, 1);
   assert.deepEqual(chinaCopy[0].currencies, ['AUD', 'NZD', 'JPY', 'USD']);
@@ -239,7 +233,7 @@ test('la respuesta fija de Gamma selecciona, filtra y excluye', () => {
 });
 
 test('d24h_pp usa la instantánea más cercana a 24 h dentro de ±1 h', () => {
-  const rows = selectPolymarketMarkets(fixture);
+  const rows = selectPolymarketMarkets(fixture, NOW);
   const iran = byTitle(rows, 'Will the US invade Iran before 2027?');
   const exact = '2026-11-09T18:00:00.000Z';
   const nearerOther = '2026-11-09T18:40:00.000Z';
@@ -343,7 +337,7 @@ test('Gamma fijo: OK, cadencia de 30 min, STALE sin inventar y espera creciente'
     assert.equal(calls, 2);
     assert.equal(third.history.snapshots.length, 2);
 
-    const prior = selectPolymarketMarkets(fixture).find((row) => row.event_title.startsWith('Will the US invade'));
+    const prior = selectPolymarketMarkets(fixture, NOW).find((row) => row.event_title.startsWith('Will the US invade'));
     const history = {
       schema: POLYMARKET_HISTORY_SCHEMA,
       latest: { at: '2026-11-10T10:00:00.000Z', markets: [prior] },
@@ -492,6 +486,9 @@ test('el colector, la sincronización, la función live y la puerta publican el 
   assert.match(live, /polymarket_geo_history\.json/);
   assert.match(live, /polymarketHistory/);
   assert.match(workflow, /test\/polymarket_geo\.test\.js/);
+  assert.match(workflow, /test\/polymarket_geo_ceasefire\.test\.js/);
+  assert.match(workflow, /test\/polymarket_geo_end_date\.test\.js/);
+  assert.match(workflow, /test\/polymarket_geo_aranceles\.test\.js/);
   assert.match(workflow, /test\/live_base\.test\.js/);
   assert.match(spec, /Contrato Polymarket geopolítico/);
   assert.match(source, /gamma-api\.polymarket\.com/);
