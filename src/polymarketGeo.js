@@ -146,11 +146,13 @@ function wordsRe(phrases) {
 
 /**
  * Estados Unidos en el texto de ARANCELES.
- * US, U.S., USA, United States, America/American.
- * «Trump» y «Trump administration» no: CCY_KEYWORDS.USD y el léxico USD de irisCollector no los tratan como EE. UU.
+ * US, U.S., USA, United States, America/American, y Trump
+ * (por tanto «Trump administration»).
+ * Orden de Sander, 11-nov-2026: Trump cuenta como EE. UU. solo en este requisito.
+ * CCY_KEYWORDS.USD y el léxico USD de irisCollector no cambian.
  */
 const UNITED_STATES_RE = wordsRe([
-  'united states', 'usa', 'us', 'america', 'american', 'americans',
+  'united states', 'usa', 'us', 'america', 'american', 'americans', 'trump',
 ]);
 const UNITED_STATES_DOTTED_RE = /\bu\.s\b/i;
 

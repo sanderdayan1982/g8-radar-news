@@ -1,5 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { CCY_KEYWORDS } from '../src/config.js';
+import { IRIS_CURRENCY_RULES } from '../src/irisCollector.js';
 import { selectPolymarketMarkets } from '../src/polymarketGeo.js';
 
 const NOW = Date.parse('2026-11-11T06:00:00.000Z');
@@ -44,10 +46,11 @@ test('ARANCELES exige a EE. UU. y a una economía G8, China o México', () => {
     'US tariff schedule and trade war talks?',
   ).length, 0);
 
+  // Orden de Sander, 11-nov-2026: «Trump administration» nombra a EE. UU. en ARANCELES.
   assert.equal(aranceles(
     'Trump administration tariff deal with Canada before 2027?',
     'Trump administration tariff deal with Canada before 2027?',
-  ).length, 0);
+  ).length, 1);
 
   const china = aranceles(
     'US-China tariff agreement before 2027?',
@@ -82,4 +85,24 @@ test('ARANCELES exige a EE. UU. y a una economía G8, China o México', () => {
     'United States trade deal with the European Union before 2027?',
     'United States trade deal with the European Union before 2027?',
   ).length, 1);
+});
+
+test('Trump cuenta como EE. UU. solo en el requisito de ARANCELES', () => {
+  const trumpChina = aranceles(
+    'Will Trump agree to a tariff deal with China before 2027?',
+    'Will Trump agree to a tariff deal with China before 2027?',
+  );
+  assert.equal(trumpChina.length, 1);
+  assert.equal(trumpChina[0].theme, 'ARANCELES_COMERCIO');
+  assert.equal(trumpChina[0].end_date, FUTURE);
+
+  assert.equal(aranceles(
+    'Trump trade deal with Pakistan',
+    'Trump trade deal with Pakistan',
+  ).length, 0);
+
+  assert.equal(CCY_KEYWORDS.USD.test('Trump'), false);
+  assert.equal(CCY_KEYWORDS.USD.test('Trump administration'), false);
+  assert.equal(IRIS_CURRENCY_RULES.USD.test('Trump'), false);
+  assert.equal(IRIS_CURRENCY_RULES.USD.test('Trump administration'), false);
 });
