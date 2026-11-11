@@ -1,6 +1,6 @@
 import { isPromotional } from './sourceHealth.js';
 import { createHash } from 'node:crypto';
-import { SOURCES, UA, ENGINE_NAME } from './config.js';
+import { assignsUsd, SOURCES, UA, ENGINE_NAME } from './config.js';
 import { enrichRaw, parseRss, parseTelegram, parseHtmlList } from './enrich.js';
 import { classifyItemMmtV4 } from './classifyCurrencies.js';
 import { buildAgendaWindow } from './lockSeverity.js';
@@ -34,15 +34,24 @@ export function projectIrisFeed(input = {}) {
 /**
  * Diccionario determinista de divisas G8 + XAU (Oro) en milisegundos (Cero llamadas a LLMs / Gemini).
  */
+const IRIS_USD_STRONG = /\b(usd|united states|dollar|greenback|dxy|fed\b|fomc|powell|waller|jefferson|john williams|bostic|barkin|kashkari|goolsbee|bowman|kugler|musalem|hammack|daly|treasury|ust\b|jackson hole|white house)\b/i;
+const IRIS_USD_GENERIC = /\b(payrolls?|nonfarm|nfp\b|cpi\b|pce\b|ppi\b|ism\b|jolts|adp\b|michigan|tariff)\b/i;
+
 export const IRIS_CURRENCY_RULES = {
-  USD: /\b(usd|u\.s\.a?|united states|dollar|greenback|dxy|fed\b|fomc|powell|waller|jefferson|williams|bostic|barkin|kashkari|goolsbee|bowman|kugler|musalem|hammack|daly|treasury|ust\b|payrolls?|nonfarm|nfp\b|cpi\b|pce\b|ppi\b|ism\b|jolts|adp\b|michigan|jackson hole|white house|tariff)\b/i,
-  EUR: /\b(eur\b|euro\b|eurozone|euro area|ecb\b|bce\b|lagarde|guindos|schnabel|lane\b|villeroy|nagel|knot|holzmann|cipollone|panetta|wunsch|kazaks|rehn|bundesbank|germany|german|bunds?|france|french|oat\b|italy|italian|btp\b|spain|eurostat|zew\b|ifo\b)\b/i,
-  GBP: /\b(gbp\b|sterling|pound|cable\b|boe\b|bank of england|mpc\b|bailey|pill\b|mann\b|greene\b|ramsden|breeden|lombardelli|dhingra|taylor|uk\b|u\.k\.|britain|british|ons\b|gilts?|chancellor|reeves|sunak|starmer)\b/i,
+  USD: {
+    strong: IRIS_USD_STRONG,
+    generic: IRIS_USD_GENERIC,
+    test(text) {
+      return assignsUsd(text, IRIS_USD_STRONG, IRIS_USD_GENERIC, IRIS_CURRENCY_RULES);
+    },
+  },
+  EUR: /\b(eur\b|euro\b|eurozone|euro area|ecb\b|bce\b|lagarde|guindos|schnabel|philip lane|villeroy|nagel|knot|holzmann|cipollone|panetta|wunsch|kazaks|rehn|bundesbank|germany|german|bunds?|france|french|oat\b|italy|italian|btp\b|spain|eurostat|zew\b|ifo\b)\b/i,
+  GBP: /\b(gbp\b|sterling|pound|cable\b|boe\b|bank of england|mpc\b|bailey|pill\b|mann\b|greene\b|ramsden|breeden|lombardelli|dhingra|alan taylor|uk\b|u\.k\.|britain|british|ons\b|gilts?|chancellor|reeves|sunak|starmer)\b/i,
   JPY: /\b(jpy\b|yen\b|boj\b|bank of japan|ueda|himino|uchida|takata|tamura|nakagawa|noguchi|adachi|nakamura|japan|japanese|tokyo|tankan|jgb\b|mof\b|ministry of finance|kanda|mimura|katayama|ishiba|shunto|nikkei)\b/i,
-  AUD: /\b(aud\b|aussie|rba\b|reserve bank of australia|bullock|hauser|hunter|kent\b|jones\b|australia|australian|abs\b|sydney|canberra|iron ore)\b/i,
-  NZD: /\b(nzd\b|kiwi|rbnz|reserve bank of new zealand|ocr\b|orr\b|hawkesby|conway|silk\b|new zealand|wellington|auckland|stats nz|nz treasury|nzdm|gdt\b|fonterra|dairy)\b/i,
-  CAD: /\b(cad\b|loonie|boc\b|bank of canada|macklem|rogers|gravelle|kozicki|vincent|mendes|canada|canadian|ottawa|statcan|statistics canada|ivi|ivey pmi|wti\b|oil sands)\b/i,
-  CHF: /\b(chf\b|franc|swissie|snb\b|swiss national bank|schlegel|martin\b|tschudin|jordan\b|swiss|switzerland|seco\b|bfs\b|zurich|bern|kof\b|sight deposits)\b/i,
+  AUD: /\b(aud\b|aussie|rba\b|reserve bank of australia|bullock|hauser|sarah hunter|christopher kent|brad jones|australia|australian|abs\b|sydney|canberra|iron ore)\b/i,
+  NZD: /\b(nzd\b|kiwi|rbnz|reserve bank of new zealand|ocr\b|orr\b|hawkesby|paul conway|karen silk|new zealand|wellington|auckland|stats nz|nz treasury|nzdm|gdt\b|fonterra|dairy)\b/i,
+  CAD: /\b(cad\b|loonie|boc\b|bank of canada|macklem|carolyn rogers|gravelle|kozicki|nicolas vincent|mendes|canada|canadian|ottawa|statcan|statistics canada|ivi|ivey pmi|wti\b|oil sands)\b/i,
+  CHF: /\b(chf\b|franc|swissie|snb\b|swiss national bank|schlegel|antoine martin|tschudin|jordan\b|swiss|switzerland|seco\b|bfs\b|zurich|bern|kof\b|sight deposits)\b/i,
   XAU: /\b(xau|xauusd|gold\b|bullion|oro\b|spot gold|comex gold|precious metals?|safe[- ]haven gold)\b/i,
 };
 

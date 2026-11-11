@@ -87,7 +87,7 @@ test('ARANCELES exige a EE. UU. y a una economía G8, China o México', () => {
   ).length, 1);
 });
 
-test('Trump cuenta como EE. UU. solo en el requisito de ARANCELES', () => {
+test('Trump cuenta en ARANCELES y, desde v5.1.1, también asigna USD', () => {
   const trumpChina = aranceles(
     'Will Trump agree to a tariff deal with China before 2027?',
     'Will Trump agree to a tariff deal with China before 2027?',
@@ -101,8 +101,8 @@ test('Trump cuenta como EE. UU. solo en el requisito de ARANCELES', () => {
     'Trump trade deal with Pakistan',
   ).length, 0);
 
-  assert.equal(CCY_KEYWORDS.USD.test('Trump'), false);
-  assert.equal(CCY_KEYWORDS.USD.test('Trump administration'), false);
-  assert.equal(IRIS_CURRENCY_RULES.USD.test('Trump'), false);
-  assert.equal(IRIS_CURRENCY_RULES.USD.test('Trump administration'), false);
+  assert.equal(CCY_KEYWORDS.USD.test('Trump'), true);
+  assert.equal(CCY_KEYWORDS.USD.test('Trump administration'), true);
+  assert.equal(IRIS_CURRENCY_RULES.USD.test('Trump'), true);
+  assert.equal(IRIS_CURRENCY_RULES.USD.test('Trump administration'), true);
 });
