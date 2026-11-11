@@ -136,6 +136,81 @@ function keywordAtWordStart(title, keyword) {
   return new RegExp(`\\b${escaped}`, 'i').test(String(title || ''));
 }
 
+function wordsRe(phrases) {
+  const body = [...phrases]
+    .sort((a, b) => b.length - a.length)
+    .map((phrase) => phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .join('|');
+  return new RegExp(`\\b(?:${body})\\b`, 'i');
+}
+
+/**
+ * Estados Unidos en el texto de ARANCELES.
+ * US, U.S., USA, United States, America/American.
+ * «Trump» y «Trump administration» no: CCY_KEYWORDS.USD y el léxico USD de irisCollector no los tratan como EE. UU.
+ */
+const UNITED_STATES_RE = wordsRe([
+  'united states', 'usa', 'us', 'america', 'american', 'americans',
+]);
+const UNITED_STATES_DOTTED_RE = /\bu\.s\b/i;
+
+/**
+ * Contraparte de ARANCELES: economía del bloque distinta de EE. UU., China o México.
+ * Eurozona (miembros a 2026, incluida Bulgaria desde el 1-ene-2026), EU, euro area
+ * (el mismo referente que CCY_KEYWORDS.EUR), Reino Unido, Japón, Suiza, Canadá, Australia, Nueva Zelanda.
+ * U.K. es la misma abreviatura que UK.
+ */
+const ARANCELES_COUNTERPARTY_RE = wordsRe([
+  'eurozone', 'european union', 'euro area', 'eu',
+  'austria', 'belgium', 'belgian', 'bulgaria', 'bulgarian',
+  'croatia', 'croatian', 'cyprus', 'estonia', 'finland', 'finnish',
+  'france', 'french', 'germany', 'german', 'greece', 'greek',
+  'ireland', 'irish', 'italy', 'italian', 'latvia', 'lithuania',
+  'luxembourg', 'malta', 'maltese', 'netherlands', 'dutch',
+  'portugal', 'portuguese', 'slovakia', 'slovak', 'slovenia', 'slovenian',
+  'spain', 'spanish',
+  'uk', 'britain', 'british', 'united kingdom',
+  'japan', 'japanese',
+  'switzerland', 'swiss',
+  'canada', 'canadian',
+  'australia', 'australian',
+  'new zealand',
+  'china', 'chinese',
+  'mexico', 'mexican',
+]);
+const ARANCELES_COUNTERPARTY_DOTTED_RE = /\bu\.k\b/i;
+
+function namesUnitedStates(text) {
+  return UNITED_STATES_RE.test(text) || UNITED_STATES_DOTTED_RE.test(text);
+}
+
+function namesArancelesCounterparty(text) {
+  return ARANCELES_COUNTERPARTY_RE.test(text) || ARANCELES_COUNTERPARTY_DOTTED_RE.test(text);
+}
+
+/** Título del evento y pregunta del mercado representativo. */
+function arancelesQualifies(eventTitle, question) {
+  const text = `${eventTitle || ''}\n${question || ''}`;
+  return namesUnitedStates(text) && namesArancelesCounterparty(text);
+}
+
+/**
+ * Milisegundos de end_date, o null si falta o no se puede leer.
+ * Ese null no excluye: el selector ya publicaba el mercado con null o con el texto crudo.
+ */
+function endMillis(value) {
+  if (value == null || value === '') return null;
+  if (typeof value === 'number') return Number.isFinite(value) ? value : null;
+  const parsed = Date.parse(String(value));
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function endDateIsPast(value, now) {
+  const t = endMillis(value);
+  if (t == null) return false;
+  return t < now;
+}
+
 export function themesForTitle(title) {
   if (!String(title || '').trim()) return [];
   return POLYMARKET_GEO_THEMES.filter((theme) => theme.keywords.some((keyword) => keywordAtWordStart(title, keyword)));
@@ -156,12 +231,13 @@ function marketVolume(market) {
   return numberOrZero(market?.volumeNum ?? market?.volume);
 }
 
-function representativeMarket(event) {
+function representativeMarket(event, now) {
   const open = (Array.isArray(event?.markets) ? event.markets : []).filter(isOpen);
   open.sort((a, b) => marketVolume(b) - marketVolume(a) || String(a?.id || '').localeCompare(String(b?.id || ''), 'en'));
   for (const market of open) {
     if (!String(market?.question || '').trim()) continue;
     if (yesProbability(market) == null) continue;
+    if (endDateIsPast(market.endDate || event?.endDate || null, now)) continue;
     return market;
   }
   return null;
@@ -181,9 +257,10 @@ function marketKey(theme, event, market) {
 /**
  * Eventos abiertos que encajan, con el filtro de volumen y liquidez.
  * Máximo 5 por tema, por volumen del evento. Una fila por evento:
- * el mercado abierto de mayor volumen y su probabilidad Yes.
+ * el mercado abierto de mayor volumen, con end_date no anterior a `now`, y su probabilidad Yes.
+ * ARANCELES_COMERCIO exige además EE. UU. y una contraparte en el título o la pregunta.
  */
-export function selectPolymarketMarkets(events) {
+export function selectPolymarketMarkets(events, now = Date.now()) {
   const grouped = new Map(POLYMARKET_GEO_THEMES.map((theme) => [theme.theme, []]));
   for (const event of events || []) {
     if (!isOpen(event)) continue;
@@ -193,10 +270,11 @@ export function selectPolymarketMarkets(events) {
     const volume = numberOrZero(event.volume);
     const liquidity = numberOrZero(event.liquidity);
     if (volume < POLYMARKET_MIN_VOLUME_USD || liquidity < POLYMARKET_MIN_LIQUIDITY_USD) continue;
-    const market = representativeMarket(event);
+    const market = representativeMarket(event, now);
     if (!market) continue;
     const prob = yesProbability(market);
     for (const theme of themes) {
+      if (theme.theme === 'ARANCELES_COMERCIO' && !arancelesQualifies(event?.title, market.question)) continue;
       grouped.get(theme.theme).push({
         key: marketKey(theme.theme, event, market),
         theme: theme.theme,
@@ -405,7 +483,7 @@ export async function fetchPolymarketGeo({
     }
     const events = await fetchOpenEvents(fetchImpl);
     const nowIso = new Date(now).toISOString();
-    const rows = applyD24h(selectPolymarketMarkets(events), trimmed.snapshots, now);
+    const rows = applyD24h(selectPolymarketMarkets(events, now), trimmed.snapshots, now);
     const block = { status: 'OK', updated_at: nowIso, markets: rows.map(toPublicMarket) };
     const next = appendSnapshot(trimmed, rows, nowIso, now);
     clock.lastOk = now;

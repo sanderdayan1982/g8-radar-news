@@ -298,7 +298,8 @@ export const POLYMARKET_GEO_THEMES = [
   },
   {
     theme: 'RUSIA_UCRANIA',
-    keywords: ['russia', 'ukraine', 'putin', 'zelensky', 'ceasefire', 'nato'],
+    // «ceasefire» no está: un alto el fuego de otro conflicto no es este tema.
+    keywords: ['russia', 'ukraine', 'putin', 'zelensky', 'nato'],
     currencies: ['EUR', 'CHF', 'GBP', 'XAU'],
   },
   {
