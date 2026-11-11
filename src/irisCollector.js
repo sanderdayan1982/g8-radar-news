@@ -10,8 +10,9 @@ import { fetchMarket } from './market.js';
 import { fetchPolymarketGeo } from './polymarketGeo.js';
 import { buildPairRisk, buildRiskMap } from './riskMap.js';
 import { sourceHealth, RELEASE } from './operations.js';
+import { buildExecutionWindows } from './executionWindows.js';
 
-/** Contrato IRIS publicado (Parte F). Ningún campo fuera de esta lista. */
+/** Contrato IRIS publicado (Parte F + execution_windows, FLUJOS-01). Ningún campo fuera de esta lista. */
 export const IRIS_SCHEMA_VERSION = 'iris-g8-feed/v3-risk';
 
 export function projectIrisFeed(input = {}) {
@@ -27,6 +28,9 @@ export function projectIrisFeed(input = {}) {
     pair_risk: input.pair_risk,
     agenda_window: input.agenda_window,
     polymarket_geo: input.polymarket_geo,
+    execution_windows: Object.hasOwn(input, 'execution_windows')
+      ? input.execution_windows
+      : buildExecutionWindows(input.generated_at),
     items: input.items,
   };
 }
@@ -693,6 +697,7 @@ export async function collectRadarAndIrisData({
     pair_risk: pairRisk,
     agenda_window: agendaWindow,
     polymarket_geo: polyResult.block,
+    execution_windows: irisFeed.execution_windows,
     engines: [],
     market,
     calendar: calendarEvents,

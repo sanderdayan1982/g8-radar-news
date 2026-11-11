@@ -2367,6 +2367,56 @@
       }
     ]
   },
+  "execution_windows": {
+    "tz": "Africa/Malabo",
+    "analysis": {
+      "date": "2026-11-12",
+      "eom": false,
+      "qend_window": false,
+      "yend_window": false,
+      "gotobi": false,
+      "fix_tokyo": {
+        "wat": "01:55",
+        "gotobi": false
+      },
+      "fix_london": {
+        "wat": "17:00"
+      },
+      "nyc_cut": {
+        "wat": "16:00"
+      },
+      "blocked_entry": []
+    },
+    "next_business_day": {
+      "date": "2026-11-13",
+      "eom": false,
+      "qend_window": false,
+      "yend_window": false,
+      "gotobi": true,
+      "fix_tokyo": {
+        "wat": "01:55",
+        "gotobi": true
+      },
+      "fix_london": {
+        "wat": "17:00"
+      },
+      "nyc_cut": {
+        "wat": "16:00"
+      },
+      "blocked_entry": [
+        {
+          "fix": "fix_tokyo",
+          "from": "00:55",
+          "to": "01:55"
+        },
+        {
+          "fix": "fix_london",
+          "from": "16:00",
+          "to": "17:00"
+        }
+      ]
+    }
+  },
   "items": [
     {
       "id": "280e12348ebf95b27a3fa78e347c524133532f33bad717c264182f7fb7b08b37",
