@@ -346,8 +346,37 @@ export const POLYMARKET_GEO_EXCLUSIONS = {
   centralBankPhrases: ['fed rate', 'rate cut', 'rate hike', 'fomc', 'federal funds', 'interest rate', 'policy rate', 'basis point', 'monetary policy', 'central bank', 'fed decision', 'fedwatch', 'bank of england', 'bank of japan', 'bank of canada', 'reserve bank'],
 };
 
+const US_EXACT = /\bUS\b/;
+const US_DOTTED = /\bu\.s\.(?:a\b)?/i;
+const USD_SHARED_STRONG = /\b(?:american|trump)\b/i;
+const USD_OTHER_G8 = ['EUR', 'GBP', 'JPY', 'AUD', 'NZD', 'CAD', 'CHF'];
+
+/**
+ * RADAR-v5.1.1 (Sander, 11-nov-2026).
+ * USD fuerte siempre. USD genérico solo si ninguna otra divisa G8 encajó.
+ * «US» solo en mayúsculas. «U.S.» encaja con espacio, puntuación o fin detrás.
+ * La misma función alimenta CCY_KEYWORDS e IRIS_CURRENCY_RULES.
+ */
+export function assignsUsd(text, strong, generic, rules) {
+  const s = String(text ?? '');
+  if (US_EXACT.test(s) || US_DOTTED.test(s) || USD_SHARED_STRONG.test(s) || strong.test(s)) return true;
+  for (const ccy of USD_OTHER_G8) {
+    if (rules?.[ccy]?.test(s)) return false;
+  }
+  return generic.test(s);
+}
+
+const CCY_USD_STRONG = /\b(usd|united states|dollar|greenback|fed\b|fomc|powell|treasury|jackson hole)\b/i;
+const CCY_USD_GENERIC = /\b(payrolls?|nonfarm|cpi|pce|ism)\b/i;
+
 export const CCY_KEYWORDS = {
-  USD: /\b(usd|u\.s\.a?|united states|dollar|greenback|fed\b|fomc|powell|treasury|payrolls?|nonfarm|cpi|pce|ism|jackson hole)\b/i,
+  USD: {
+    strong: CCY_USD_STRONG,
+    generic: CCY_USD_GENERIC,
+    test(text) {
+      return assignsUsd(text, CCY_USD_STRONG, CCY_USD_GENERIC, CCY_KEYWORDS);
+    },
+  },
   EUR: /\b(eur\b|euro\b|eurozone|euro area|ecb|bce|lagarde|germany|bund|france|italy)\b/i,
   GBP: /\b(gbp|sterling|pound|boe|bank of england|bailey|uk\b|britain|gilt)\b/i,
   JPY: /\b(jpy|yen\b|boj|bank of japan|ueda|japan(?!ese knot))\b/i,

@@ -74,7 +74,7 @@ test('sustituye «CPI alto con economía débil no suma soporte»: ficha del CPI
   const retail = headline('UK retail sales miss: contraction, weak economy', ['GBP'], { actual: '-0.7', forecast: '0.2' });
   const pmi = headline('UK PMI services falls below 50, slowdown', ['GBP'], { actual: '48.1', forecast: '51.0' });
   const cpiIris = expectFicha(cpi, 'GBP', { ficha: 'A1', lens: 'INFLATION_PRINT', category: 'Inflacion_Empleo', impact: 4, sovereignty: 'SOBERANO_EMISOR' });
-  assert.ok(cpiIris.g8_currencies.includes('USD'));
+  assert.equal(cpiIris.g8_currencies.includes('USD'), false);
   expectFicha(retail, 'GBP', { ficha: 'B2', lens: 'CONTRACCION_REAL', category: 'Inflacion_Empleo', impact: 4 });
   expectFicha(pmi, 'GBP', { ficha: 'B2', lens: 'PMI_CONTRACCION_SUB50', category: 'Inflacion_Empleo', impact: 4 });
   expectQuiet(quietMap([cpi, retail, pmi]).find((row) => row.currency === 'GBP'));
@@ -144,7 +144,7 @@ test('sustituye «oficial de hace 20 días sigue en ventana»: la ficha no caduc
   });
   expectFicha(official, 'NZD', { ficha: 'A1 / B2', lens: 'REPRICING_MONETARIO', category: 'BC', impact: 2 });
   const kiwi = expectFicha(breaking, 'NZD', { ficha: 'B2', lens: 'INFLATION_PRINT', category: 'Inflacion_Empleo', impact: 4 });
-  assert.ok(kiwi.g8_currencies.includes('USD'));
+  assert.equal(kiwi.g8_currencies.includes('USD'), false);
   const rows = quietMap([official, breaking]);
   expectQuiet(rows.find((row) => row.currency === 'NZD'));
   assert.equal(rows.find((row) => row.currency === 'NZD').ea4_24h, false);
