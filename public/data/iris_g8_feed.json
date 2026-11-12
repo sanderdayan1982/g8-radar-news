@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-12T07:01:46.528Z",
+  "generated_at": "2026-11-12T07:02:50.823Z",
   "health": {
     "sources_active": 35,
     "sources_live": 35,
@@ -32,9 +32,9 @@
       "silence": false
     },
     "GBP": {
-      "count_72h": 82,
+      "count_72h": 83,
       "count_official_45d": 55,
-      "last_item_at": "2026-11-12T07:01:20.000Z",
+      "last_item_at": "2026-11-12T07:01:41.000Z",
       "hours_since_last": 0,
       "hours_since_last_business": 0,
       "silence": false
@@ -43,28 +43,28 @@
       "count_72h": 105,
       "count_official_45d": 67,
       "last_item_at": "2026-11-12T06:59:30.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "CHF": {
       "count_72h": 75,
       "count_official_45d": 18,
       "last_item_at": "2026-11-12T06:59:30.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "CAD": {
       "count_72h": 45,
       "count_official_45d": 7,
       "last_item_at": "2026-11-12T06:59:30.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "AUD": {
-      "count_72h": 74,
+      "count_72h": 75,
       "count_official_45d": 57,
       "last_item_at": "2026-11-12T06:15:40.000Z",
       "hours_since_last": 0.8,
@@ -83,8 +83,8 @@
       "count_72h": 8,
       "count_official_45d": 0,
       "last_item_at": "2026-11-12T01:05:37.000Z",
-      "hours_since_last": 5.9,
-      "hours_since_last_business": 5.9
+      "hours_since_last": 6,
+      "hours_since_last_business": 6
     }
   },
   "risk_map": [
@@ -1088,7 +1088,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.80|1.4",
-      "hours_from_now": -20.4,
+      "hours_from_now": -20.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2292,6 +2292,36 @@
       "z": null
     },
     {
+      "id": "14bf72259865d1257566be891dad67807b4c90187e6ef71d379e3117ef02c3e8",
+      "sha256": "14bf72259865d1257566be891dad67807b4c90187e6ef71d379e3117ef02c3e8",
+      "title": "UK GDP Q3 2026 Estimate",
+      "url": "https://t.me/FinancialJuice/146555",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-12T07:01:41.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "bf9a1ae43fbdd5e8f8337efc8510bbc7b99d988f8f7d871107c974f223f016f0",
       "sha256": "bf9a1ae43fbdd5e8f8337efc8510bbc7b99d988f8f7d871107c974f223f016f0",
       "title": "SWEDISH CPI MOM ACTUAL 0.0% (FORECAST 0%, PREVIOUS 0.0%) $MACRO",
@@ -2845,6 +2875,36 @@
       "published_at": "2026-11-12T06:56:53.000Z",
       "currencies": [],
       "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "47048770cc7cce9d1ad8572342dbc2e227aed7593caa662479f5bd0aef386e52",
+      "sha256": "47048770cc7cce9d1ad8572342dbc2e227aed7593caa662479f5bd0aef386e52",
+      "title": "RNZ board assured unlawful overdraft did not need approval",
+      "url": "https://www.rnz.co.nz/news/business/2550132/rnz-board-assured-unlawful-overdraft-did-not-need-approval",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-12T06:42:57.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -4604,38 +4664,6 @@
       "z": null
     },
     {
-      "id": "163288cc66443dd46777e82dfcf9a8dc202264884aa3c074142c472dad3578c7",
-      "sha256": "163288cc66443dd46777e82dfcf9a8dc202264884aa3c074142c472dad3578c7",
-      "title": "New Zealand Dollar faces pressure against US Dollar as traders consider bigger Fed rate hike | FXStreet - شبكة تواصل الإخبارية",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9wbmFIRGtTekd5OThCTFlFR1NyVzdvR3RsSEdLOTN3NkpqWXA1ZFEyMUIxdERWZlktenVtZzJsNXUtTDdnU0pVWHg1bHJKUUxybHVN?oc=5",
-      "source": "Prensa NZ",
-      "source_id": "nz-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-12T03:29:06.000Z",
-      "currencies": [
-        "USD",
-        "NZD"
-      ],
-      "divisas": [
-        "USD",
-        "NZD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "db885e8a788d6999e1c60b9c1db6e8d2c3176d3de03230b5e72394d01070d454",
       "sha256": "db885e8a788d6999e1c60b9c1db6e8d2c3176d3de03230b5e72394d01070d454",
       "title": "Cba s chambers sees room for higher us 10 year yields despite the slide in oil prices",
@@ -4663,19 +4691,21 @@
       "z": null
     },
     {
-      "id": "07038c59bdf133a2e102fbfeac9417ea51c01c03a0b8da1b3f5ba7c14088b066",
-      "sha256": "07038c59bdf133a2e102fbfeac9417ea51c01c03a0b8da1b3f5ba7c14088b066",
-      "title": "Savings account rate increases after RBA cash rate hike: November 2026 - Savings.com.au",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kbWZtdUQ4U0pTMjVoZ2FzVW1pU1pXODUtdW9EZ1J5WUNEaWZKem5Ud3lPNWJtLWU0RWNGLTc0ZW14cnZOalh6bmlaZm9DUk9tbVhmM1ZtaU1FOUgtc3pqTWFDSEhjQUlEODdoQWFn?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
+      "id": "b4ea229787f79b699e521259f6676ad17f71ddc63e15b4ba60fbe92096b0cf9a",
+      "sha256": "b4ea229787f79b699e521259f6676ad17f71ddc63e15b4ba60fbe92096b0cf9a",
+      "title": "New Zealand Dollar faces pressure against US Dollar as traders consider bigger Fed rate hike - FXStreet",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcjdkMGZic0VoY2hIeGFvS0Z0ZFl0Y1Zyc3I5MGxVNTVSREVQaDYxM1JJVGlyU3E0UTFseGZhQ2tOcUlBRHBTcFZFci01LU02ZWRockI3NnJ0RW5iYTRkM1B2ZzdJem5kTkdITWJ0Q2lhZWZoOGpYeUtEbUMzUHdZUEVLUmdHQ1I4THRENHlfVzFfM1EzT0lJSlpGcmhBS2IzemQ4VEY3c2R1RnNHSWFfVk52S3k5YXBpMGY1b0Z3aVpudWlMTkFnRXpRTHllc1Bs?oc=5",
+      "source": "Prensa NZ",
+      "source_id": "nz-press",
       "source_type": "agencia",
-      "published_at": "2026-11-12T03:16:49.000Z",
+      "published_at": "2026-11-12T03:19:47.000Z",
       "currencies": [
-        "AUD"
+        "USD",
+        "NZD"
       ],
       "divisas": [
-        "AUD"
+        "USD",
+        "NZD"
       ],
       "category": "BC",
       "categories": [
@@ -4779,36 +4809,6 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "47048770cc7cce9d1ad8572342dbc2e227aed7593caa662479f5bd0aef386e52",
-      "sha256": "47048770cc7cce9d1ad8572342dbc2e227aed7593caa662479f5bd0aef386e52",
-      "title": "RNZ board assured unlawful overdraft did not need approval",
-      "url": "https://www.rnz.co.nz/news/business/2550132/rnz-board-assured-unlawful-overdraft-did-not-need-approval",
-      "source": "RNZ",
-      "source_id": "rnz-business",
-      "source_type": "agencia",
-      "published_at": "2026-11-12T03:04:42.000Z",
-      "currencies": [
-        "NZD"
-      ],
-      "divisas": [
-        "NZD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -15503,6 +15503,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "07038c59bdf133a2e102fbfeac9417ea51c01c03a0b8da1b3f5ba7c14088b066",
+      "sha256": "07038c59bdf133a2e102fbfeac9417ea51c01c03a0b8da1b3f5ba7c14088b066",
+      "title": "Savings account rate increases after RBA cash rate hike: November 2026 - Savings.com.au",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kbWZtdUQ4U0pTMjVoZ2FzVW1pU1pXODUtdW9EZ1J5WUNEaWZKem5Ud3lPNWJtLWU0RWNGLTc0ZW14cnZOalh6bmlaZm9DUk9tbVhmM1ZtaU1FOUgtc3pqTWFDSEhjQUlEODdoQWFn?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-11T09:32:58.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -35174,6 +35204,36 @@
       "legacy_category": "otro",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b890b0e3b1f8382c57614802ba0c1d6f9a45e096f5b3e2a7220a893b941ad832",
+      "sha256": "b890b0e3b1f8382c57614802ba0c1d6f9a45e096f5b3e2a7220a893b941ad832",
+      "title": "This week’s Australian Property Market Update – Latest Data, State by State November 10th 2026 - Property Update",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84MFhXelJEYlV6a1FBY0lUVHZHRWlWY3VpV0paOVRGTkxBYllNY0wwenI1WEpRRjlISG16bWoySkdiblVsb3YzMVVLX2VFa2QwalJEc2FJaWUzYXVfNFZjUTUwdTd0SzNI?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-09T08:00:00.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
