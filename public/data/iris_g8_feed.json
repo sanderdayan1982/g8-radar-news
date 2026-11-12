@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-12T07:12:40.541Z",
+  "generated_at": "2026-11-12T07:13:45.478Z",
   "health": {
     "sources_active": 35,
     "sources_live": 35,
@@ -67,8 +67,8 @@
       "count_72h": 75,
       "count_official_45d": 57,
       "last_item_at": "2026-11-12T06:15:40.000Z",
-      "hours_since_last": 0.9,
-      "hours_since_last_business": 0.9,
+      "hours_since_last": 1,
+      "hours_since_last_business": 1,
       "silence": false
     },
     "NZD": {
@@ -1493,7 +1493,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11,
+      "hours_from_now": 10.9,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1748,7 +1748,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31,
+      "hours_from_now": 30.9,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1778,7 +1778,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.5,
+      "hours_from_now": 31.4,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -41436,38 +41436,6 @@
       "z": null
     },
     {
-      "id": "7d56bf244b503a5653061eb059e0df3e45ce4594477a2950b6f3a8982f700dc3",
-      "sha256": "7d56bf244b503a5653061eb059e0df3e45ce4594477a2950b6f3a8982f700dc3",
-      "title": "An introduction to the UK National Accounts - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPY0w1VzQ5QjRPekhBRDhHQkowZEFKNEZUQmdGMkROVWpqbTlMd3ZON1ZPLXRDaUtXNWlVbzZSOXBCMTZiMmhobU1PSklsZEZ1YkxVZjJVdmdQenlhVVpOVFVDY0lBS3FVZ0VuUGpzZ3ZtTkE1bmlhdkR5dFlsV0c0LXJCTUg2Si1DRUxHOEY4cW0wcDc0MmphQUJ5WkRKTlJzUFNWekxEcXNyVHJnTkNSNlhuYzFaQ0FweTdYWVF0amxqNHBWcmhrdVAxaThCdENwMXllQm1nZ09uLV9iM0owekViQQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-10-30T07:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "91cd796f4210f5135376f4d1bef58140ae878e28bb7b3c06d36397d565a8b298",
       "sha256": "91cd796f4210f5135376f4d1bef58140ae878e28bb7b3c06d36397d565a8b298",
       "title": "Non-financial corporations - Office for National Statistics",
@@ -41638,6 +41606,38 @@
       ],
       "divisas": [
         "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7d56bf244b503a5653061eb059e0df3e45ce4594477a2950b6f3a8982f700dc3",
+      "sha256": "7d56bf244b503a5653061eb059e0df3e45ce4594477a2950b6f3a8982f700dc3",
+      "title": "An introduction to the UK National Accounts - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPY0w1VzQ5QjRPekhBRDhHQkowZEFKNEZUQmdGMkROVWpqbTlMd3ZON1ZPLXRDaUtXNWlVbzZSOXBCMTZiMmhobU1PSklsZEZ1YkxVZjJVdmdQenlhVVpOVFVDY0lBS3FVZ0VuUGpzZ3ZtTkE1bmlhdkR5dFlsV0c0LXJCTUg2Si1DRUxHOEY4cW0wcDc0MmphQUJ5WkRKTlJzUFNWekxEcXNyVHJnTkNSNlhuYzFaQ0FweTdYWVF0amxqNHBWcmhrdVAxaThCdENwMXllQm1nZ09uLV9iM0owekViQQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-10-30T07:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
         "USD"
       ],
       "category": "Fiscal",
