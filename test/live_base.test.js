@@ -168,7 +168,7 @@ describe('live base from the latest Actions publication', { concurrency: false }
     assert.equal(body.schema_version, 'iris-g8-feed/v3-risk');
     assert.deepEqual(Object.keys(body), [
       'schema_version', 'version', 'engine_version', 'llm_calls', 'generated_at',
-      'health', 'coverage', 'risk_map', 'pair_risk', 'agenda_window', 'polymarket_geo', 'items',
+      'health', 'coverage', 'risk_map', 'pair_risk', 'agenda_window', 'polymarket_geo', 'execution_windows', 'items',
     ]);
     assert.equal(body.llm_calls, 0);
     assert.equal(Object.hasOwn(body, 'base_source'), false);

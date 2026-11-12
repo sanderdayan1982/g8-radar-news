@@ -1,5 +1,6 @@
 import { inverseChange, connectionState, nextCalendarEvent, safeUrl, sourceFetchedLive } from './domain.js';
 import { classifyEventLock, lockSeverityIndex } from './lockSeverity.js';
+import { buildExecutionWindows, executionWindowHeader } from './executionWindows.js';
 const CURRENCIES = ['USD', 'EUR', 'GBP', 'JPY', 'CHF', 'CAD', 'AUD', 'NZD'];
 const CATEGORY_LABEL = { dato_macro: 'Dato', banco_central: 'Banco central', geopolitica: 'Geopolítica', mercado: 'Mercado', analisis: 'Análisis', otro: 'General' };
 const LEVEL_LABEL = { critico: 'Crítico', alto: 'Alto', medio: 'Medio' };
@@ -156,7 +157,18 @@ async function api(path, opts = {}) {
 
 // ---------------------------------------------------------------- header
 
+function renderExecutionWindow() {
+  const el = $('#exec-window');
+  if (!el) return;
+  try {
+    el.textContent = executionWindowHeader(buildExecutionWindows(new Date()));
+  } catch {
+    el.textContent = '⏱ calendario no disponible';
+  }
+}
+
 function renderSessions() {
+  renderExecutionWindow();
   const now = new Date();
   $('#sessions').innerHTML = SESSIONS.map((s) => {
     const parts = Object.fromEntries(new Intl.DateTimeFormat('en-GB', { timeZone: s.tz, hour: '2-digit', minute: '2-digit', weekday: 'short', hour12: false })

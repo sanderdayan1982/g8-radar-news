@@ -491,7 +491,7 @@ test('el colector y la función live dejan de publicar el ranking', () => {
 
 const IRIS_KEYS = [
   'schema_version', 'version', 'engine_version', 'llm_calls', 'generated_at',
-  'health', 'coverage', 'risk_map', 'pair_risk', 'agenda_window', 'polymarket_geo', 'items',
+  'health', 'coverage', 'risk_map', 'pair_risk', 'agenda_window', 'polymarket_geo', 'execution_windows', 'items',
 ];
 
 test('projectIrisFeed publica exactamente iris-g8-feed/v3-risk', () => {

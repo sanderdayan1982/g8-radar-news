@@ -50,12 +50,23 @@ code, kbd { font-family: var(--mono); font-size: 0.92em; }
 .topbar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
-  height: 56px;
-  padding: 0 16px 0 18px;
+  height: auto;
+  min-height: 56px;
+  padding: 0 16px 6px 18px;
   padding-top: env(safe-area-inset-top);
   border-bottom: 1px solid var(--line);
   background: linear-gradient(#0d1116, var(--bg));
+}
+.exec-window {
+  flex: 1 0 100%;
+  margin: 0;
+  padding: 0 2px;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.35;
+  color: var(--amber);
 }
 .brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
 .brand-icon { width: 30px; height: 30px; margin: 0 -2px; transform: scale(1.2); }

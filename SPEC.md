@@ -229,9 +229,28 @@ Un `DISCURSO` de impacto Low, o sin impacto, sigue en la agenda con `lock_class:
 
 `public/data/iris_g8_feed.json` (lo escribe el colector en `scripts/sync_feeds.mjs`) y `/api/iris-feed` publican exactamente estos campos, en este orden:
 
-`schema_version` (`"iris-g8-feed/v3-risk"`), `version`, `engine_version`, `llm_calls` (0), `generated_at`, `health`, `coverage`, `risk_map`, `pair_risk`, `agenda_window`, `polymarket_geo`, `items`.
+`schema_version` (`"iris-g8-feed/v3-risk"`), `version`, `engine_version`, `llm_calls` (0), `generated_at`, `health`, `coverage`, `risk_map`, `pair_risk`, `agenda_window`, `polymarket_geo`, `execution_windows`, `items`.
 
 No entran `currency_ranking_mmt`, `g8_ranking`, `news`, `score`, `rank`, `bias`, `impulse` ni `structural`. `risk_map` son las 9 divisas en orden fijo, nunca ordenadas por nivel. `pair_risk` son los 29 pares en orden fijo. `agenda_window` incluye `lock_class` y `lock_level`.
+
+### Ventanas de ejecución (FLUJOS-01, Sander, 12-nov-2026)
+
+`execution_windows` es un campo nuevo del mismo contrato. Va después de `polymarket_geo` y antes de `items`. No sustituye ningún campo anterior. `llm_calls` sigue en 0. Es una compuerta de timing: no da dirección.
+
+Zona `Africa/Malabo` (WAT, UTC+1 fijo). El bloque trae el día de análisis (fecha civil WAT de `generated_at`) y el siguiente día hábil. Sesión hábil: lunes a viernes que no está en la tabla de Tokio, ni en la de Londres, ni en la de Nueva York. Años tabulados: 2026 y 2027. Fuera de esa tabla el valor es `UNAVAILABLE`. No se reutiliza `fixingCalendar.js`.
+
+| Campo | Regla |
+|---|---|
+| `eom` | `true` si la fecha es la última sesión hábil del mes |
+| `qend_window` | marzo, junio, septiembre y diciembre: `true` si la fecha es una de las últimas 10 sesiones hábiles |
+| `yend_window` | diciembre: esas mismas últimas 10 sesiones hábiles |
+| `gotobi` | días 5, 10, 15, 20, 25 y el último de calendario; si cae en fin de semana o festivo de Tokio, el hábil anterior de Tokio |
+| `fix_tokyo` | 09:55 `Asia/Tokyo` en WAT, con `gotobi` `true` o `false` |
+| `fix_london` | 16:00 `Europe/London` en WAT |
+| `nyc_cut` | 10:00 `America/New_York` en WAT |
+| `blocked_entry` | si el día es `gotobi`, `eom`, `qend_window` o `yend_window`, la hora WAT previa a `fix_tokyo` y la previa a `fix_london` |
+
+Tokio: Cabinet Office / NAOJ. Londres: bank holidays de Inglaterra y Gales (GOV.UK). Nueva York: festivos federales observados (OPM). La cabecera muestra una línea con la misma regla, por ejemplo «⏱ Fin de trimestre T-7 · gotobi mañana».
 
 `health` es el bloque de hoy: `sources_active`, `sources_live`, `sources_cached`, `sources_total`, `sources_empty`, `sources_error`, `agenda_events_count` y `status`. En `/api/iris-feed` el mismo objeto añade `base_source` y `base_published_at` (Parte C-bis). Esos dos no son campos sueltos del feed: van dentro de `health`. `/api/health` y `/api/radar-full` siguen publicándolos también en la raíz de su propia respuesta.
 

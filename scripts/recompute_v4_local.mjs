@@ -138,6 +138,7 @@ const nextIris = projectIrisFeed({
   polymarket_geo,
   items: irisItemsFormatted,
 });
+nextFull.execution_windows = nextIris.execution_windows;
 
 writeFileSync(fullPath, JSON.stringify(nextFull, null, 2));
 writeFileSync(irisPath, JSON.stringify(nextIris, null, 2));
