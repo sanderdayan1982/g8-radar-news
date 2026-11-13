@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-13T13:34:15.852Z",
+  "generated_at": "2026-11-13T13:35:22.236Z",
   "health": {
     "sources_active": 35,
     "sources_live": 35,
@@ -16,11 +16,11 @@
   },
   "coverage": {
     "USD": {
-      "count_72h": 619,
-      "count_official_45d": 204,
+      "count_72h": 620,
+      "count_official_45d": 205,
       "last_item_at": "2026-11-13T13:31:29.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "EUR": {
@@ -75,8 +75,8 @@
       "count_72h": 102,
       "count_official_45d": 59,
       "last_item_at": "2026-11-13T12:38:00.000Z",
-      "hours_since_last": 0.9,
-      "hours_since_last_business": 0.9,
+      "hours_since_last": 1,
+      "hours_since_last_business": 1,
       "silence": false
     },
     "XAU": {
@@ -1495,7 +1495,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.3,
+      "hours_from_now": 2.2,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2144,6 +2144,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d11181aaa8c1f2f9a82f027791259c76e59e5165ba0502d5019741fa202bc194",
+      "sha256": "d11181aaa8c1f2f9a82f027791259c76e59e5165ba0502d5019741fa202bc194",
+      "title": "Producer Price Index News Release - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53R19TSFd5Y2tPcWt2eUJrNDlnSUNGR09oR1lManRvVmZCTTZ2N3lDM01oZ3dQNDZMQmlXUy1ScHhWVmRiTFoxUlBRNVRqaHMwWko2ZTlUXzZEa1FGZnFPVF9IcVFvQno5YUE?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T13:30:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -51243,10 +51273,10 @@
       "z": null
     },
     {
-      "id": "788e197b8290d30c6255e202784fef0a25dd9214e688146803c3e1661b2311bd",
-      "sha256": "788e197b8290d30c6255e202784fef0a25dd9214e688146803c3e1661b2311bd",
+      "id": "4d68fc78f66dc6c5fd0167635f198d6b04ee42851a520c5f5bc30d1df1a79a97",
+      "sha256": "4d68fc78f66dc6c5fd0167635f198d6b04ee42851a520c5f5bc30d1df1a79a97",
       "title": "Public sector employment and earnings, 2025-26 financial year - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPelU2VzExNFFoTmNreEMwS2UyQklaNENtTk10UWczRlNvY2VURzFIanZZcnhLcTJWZW1ocExBODI3MXBTZFpTWW5wbWs5X253blhnTUR5eklTRDdqUjhWbGt1VXVmQlVtNDRUVHIyN1VnR0FqZWYzRjFQQ3h6VFg2dl9oVTJZQU0zaEwwTG1vRGo1aEZRUUh5aGV3X3ExYmZsOG9MRE94a01URUNXeC0yZURPcWQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOHlnOS01VGZkREpfTzRrQmkweHJIVm9sNjE3bnhCYl90b2ZrYXdsNV9iNmtQNXFNQmFJb21WalJtYlRkZFptb2NERnFhZldOVW91M0pDZGt0djMzNXNzLTRFd3lXVlhzVlIwaldDZjgzX0Z3TDdoVVI1SzhxZXhlOXFKeGNJNEhRdlg3ZzRkRTh1dlViR3c2MnFxVFEzQ2tiOXd4c0lTRXMwMW5OeldjS1IwZ3pmVU4tWkZxVThB?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
