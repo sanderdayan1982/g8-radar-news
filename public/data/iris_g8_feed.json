@@ -3,88 +3,88 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-13T09:53:09.515Z",
+  "generated_at": "2026-11-13T09:58:16.665Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 35,
+    "sources_live": 35,
     "sources_cached": 0,
     "sources_total": 35,
-    "sources_empty": 1,
+    "sources_empty": 0,
     "sources_error": 0,
     "agenda_events_count": 97,
-    "status": "DEGRADED"
+    "status": "CLEAN"
   },
   "coverage": {
     "USD": {
-      "count_72h": 625,
+      "count_72h": 622,
       "count_official_45d": 201,
       "last_item_at": "2026-11-13T09:36:55.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "hours_since_last": 0.4,
+      "hours_since_last_business": 0.4,
       "silence": false
     },
     "EUR": {
       "count_72h": 114,
       "count_official_45d": 91,
       "last_item_at": "2026-11-13T09:18:20.000Z",
-      "hours_since_last": 0.6,
-      "hours_since_last_business": 0.6,
+      "hours_since_last": 0.7,
+      "hours_since_last_business": 0.7,
       "silence": false
     },
     "GBP": {
       "count_72h": 99,
       "count_official_45d": 72,
       "last_item_at": "2026-11-13T09:00:00.000Z",
-      "hours_since_last": 0.9,
-      "hours_since_last_business": 0.9,
+      "hours_since_last": 1,
+      "hours_since_last_business": 1,
       "silence": false
     },
     "JPY": {
       "count_72h": 141,
       "count_official_45d": 70,
       "last_item_at": "2026-11-13T09:02:31.000Z",
-      "hours_since_last": 0.8,
-      "hours_since_last_business": 0.8,
+      "hours_since_last": 0.9,
+      "hours_since_last_business": 0.9,
       "silence": false
     },
     "CHF": {
       "count_72h": 103,
       "count_official_45d": 18,
       "last_item_at": "2026-11-13T09:27:44.000Z",
-      "hours_since_last": 0.4,
-      "hours_since_last_business": 0.4,
+      "hours_since_last": 0.5,
+      "hours_since_last_business": 0.5,
       "silence": false
     },
     "CAD": {
       "count_72h": 58,
       "count_official_45d": 7,
       "last_item_at": "2026-11-13T09:02:31.000Z",
-      "hours_since_last": 0.8,
-      "hours_since_last_business": 0.8,
+      "hours_since_last": 0.9,
+      "hours_since_last_business": 0.9,
       "silence": false
     },
     "AUD": {
       "count_72h": 73,
       "count_official_45d": 59,
       "last_item_at": "2026-11-13T09:36:55.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "hours_since_last": 0.4,
+      "hours_since_last_business": 0.4,
       "silence": false
     },
     "NZD": {
       "count_72h": 101,
       "count_official_45d": 59,
       "last_item_at": "2026-11-13T08:24:14.000Z",
-      "hours_since_last": 1.5,
-      "hours_since_last_business": 1.5,
+      "hours_since_last": 1.6,
+      "hours_since_last_business": 1.6,
       "silence": false
     },
     "XAU": {
       "count_72h": 12,
       "count_official_45d": 0,
       "last_item_at": "2026-11-13T08:40:06.000Z",
-      "hours_since_last": 1.2,
-      "hours_since_last_business": 1.2
+      "hours_since_last": 1.3,
+      "hours_since_last_business": 1.3
     }
   },
   "risk_map": [
@@ -97,14 +97,14 @@
           "lock_class": "OTRO_HIGH",
           "title": "Core PPI m/m",
           "time": "2026-11-13T13:30:00.000Z",
-          "hours_until": 3.6,
+          "hours_until": 3.5,
           "retirar_limitadas": false
         },
         {
           "lock_class": "OTRO_HIGH",
           "title": "PPI m/m",
           "time": "2026-11-13T13:30:00.000Z",
-          "hours_until": 3.6,
+          "hours_until": 3.5,
           "retirar_limitadas": false
         }
       ],
@@ -119,12 +119,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Kharg Island no longer under Iranian control by December 31?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -1.1
+          "d24h_pp": -0.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -134,7 +134,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.1
+          "d24h_pp": 0.05
         },
         {
           "theme": "WASHINGTON",
@@ -144,7 +144,7 @@
         {
           "theme": "WASHINGTON",
           "question": "Pete Hegseth impeached by December 31, 2026?",
-          "d24h_pp": 0.65
+          "d24h_pp": 0.85
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -169,7 +169,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Japan military clash before 2027?",
-          "d24h_pp": -0.55
+          "d24h_pp": 0.2
         }
       ],
       "ea4_24h": false,
@@ -194,12 +194,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Kharg Island no longer under Iranian control by December 31?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -1.1
+          "d24h_pp": -0.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -209,7 +209,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.1
+          "d24h_pp": 0.05
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -300,12 +300,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Kharg Island no longer under Iranian control by December 31?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -1.1
+          "d24h_pp": -0.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -315,7 +315,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.1
+          "d24h_pp": 0.05
         },
         {
           "theme": "ARANCELES_COMERCIO",
@@ -345,7 +345,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Japan military clash before 2027?",
-          "d24h_pp": -0.55
+          "d24h_pp": 0.2
         }
       ],
       "ea4_24h": true,
@@ -370,12 +370,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Kharg Island no longer under Iranian control by December 31?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -1.1
+          "d24h_pp": -0.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -385,7 +385,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.1
+          "d24h_pp": 0.05
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -439,12 +439,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Kharg Island no longer under Iranian control by December 31?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -1.1
+          "d24h_pp": -0.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -454,7 +454,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.1
+          "d24h_pp": 0.05
         },
         {
           "theme": "ARANCELES_COMERCIO",
@@ -503,7 +503,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Japan military clash before 2027?",
-          "d24h_pp": -0.55
+          "d24h_pp": 0.2
         }
       ],
       "ea4_24h": false,
@@ -545,7 +545,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Japan military clash before 2027?",
-          "d24h_pp": -0.55
+          "d24h_pp": 0.2
         }
       ],
       "ea4_24h": false,
@@ -566,12 +566,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Kharg Island no longer under Iranian control by December 31?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -1.1
+          "d24h_pp": -0.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -581,7 +581,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.1
+          "d24h_pp": 0.05
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -616,7 +616,7 @@
         {
           "theme": "WASHINGTON",
           "question": "Pete Hegseth impeached by December 31, 2026?",
-          "d24h_pp": 0.65
+          "d24h_pp": 0.85
         }
       ],
       "ea4_24h": false,
@@ -994,7 +994,7 @@
       "actual": "2290%",
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": -36.1,
+      "hours_from_now": -36.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1009,7 +1009,7 @@
       "actual": "0.2%",
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": -26.9,
+      "hours_from_now": -27,
       "window_status": null,
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -1024,7 +1024,7 @@
       "actual": "0.7%",
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": -26.9,
+      "hours_from_now": -27,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1039,7 +1039,7 @@
       "actual": "0.8%",
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": -26.9,
+      "hours_from_now": -27,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1054,7 +1054,7 @@
       "actual": "-22.291B",
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": -26.9,
+      "hours_from_now": -27,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1069,7 +1069,7 @@
       "actual": "0.3%",
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": -26.9,
+      "hours_from_now": -27,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1084,7 +1084,7 @@
       "actual": "0.43%",
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": -26.9,
+      "hours_from_now": -27,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1099,7 +1099,7 @@
       "actual": "-4.1%",
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": -20.4,
+      "hours_from_now": -20.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1114,7 +1114,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": -20.4,
+      "hours_from_now": -20.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1129,7 +1129,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -20.4,
+      "hours_from_now": -20.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1144,7 +1144,7 @@
       "actual": "3.75M",
       "forecast": "3.89M",
       "previous": "3.99M",
-      "hours_from_now": -18.9,
+      "hours_from_now": -19,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1159,7 +1159,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18.9,
+      "hours_from_now": -19,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1174,7 +1174,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.3%",
-      "hours_from_now": -18.4,
+      "hours_from_now": -18.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1189,7 +1189,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -17.6,
+      "hours_from_now": -17.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1204,7 +1204,7 @@
       "actual": null,
       "forecast": "-0.6M",
       "previous": "-0.9M",
-      "hours_from_now": -16.9,
+      "hours_from_now": -17,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1219,7 +1219,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.4,
+      "hours_from_now": -16.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1234,7 +1234,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.62|2.5",
-      "hours_from_now": -15.9,
+      "hours_from_now": -16,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1249,7 +1249,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15.7,
+      "hours_from_now": -15.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1264,7 +1264,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15.4,
+      "hours_from_now": -15.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1279,7 +1279,7 @@
       "actual": "-404.064B",
       "forecast": "-298.6B",
       "previous": "-26.9B",
-      "hours_from_now": -14.9,
+      "hours_from_now": -15,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1294,7 +1294,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -14.4,
+      "hours_from_now": -14.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1309,7 +1309,7 @@
       "actual": null,
       "forecast": null,
       "previous": "56.5",
-      "hours_from_now": -12.4,
+      "hours_from_now": -12.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1324,7 +1324,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1339,7 +1339,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.9%",
-      "hours_from_now": -2.9,
+      "hours_from_now": -3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1354,7 +1354,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -2.4,
+      "hours_from_now": -2.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1369,7 +1369,7 @@
       "actual": "0.4%",
       "forecast": "0.4%",
       "previous": "0.4%",
-      "hours_from_now": -2.1,
+      "hours_from_now": -2.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1384,7 +1384,7 @@
       "actual": "2.083B",
       "forecast": "2.84B",
       "previous": "1.77B",
-      "hours_from_now": -0.9,
+      "hours_from_now": -1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1399,7 +1399,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.1%",
-      "hours_from_now": 0.1,
+      "hours_from_now": 0,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1414,7 +1414,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.4%",
-      "hours_from_now": 0.1,
+      "hours_from_now": 0,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1429,7 +1429,7 @@
       "actual": null,
       "forecast": "-4.5B",
       "previous": "-6.8B",
-      "hours_from_now": 0.1,
+      "hours_from_now": 0,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1444,7 +1444,7 @@
       "actual": null,
       "forecast": "0.1%",
       "previous": "1.5%",
-      "hours_from_now": 3.6,
+      "hours_from_now": 3.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1459,7 +1459,7 @@
       "actual": null,
       "forecast": "0.5%",
       "previous": "-1.6%",
-      "hours_from_now": 3.6,
+      "hours_from_now": 3.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1474,7 +1474,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.7%",
-      "hours_from_now": 3.6,
+      "hours_from_now": 3.5,
       "window_status": "AVISO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "AVISO",
@@ -1489,7 +1489,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.3%",
-      "hours_from_now": 3.6,
+      "hours_from_now": 3.5,
       "window_status": "AVISO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "AVISO",
@@ -1504,7 +1504,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.3,
+      "hours_from_now": 4.2,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1519,7 +1519,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.1%",
-      "hours_from_now": 4.6,
+      "hours_from_now": 4.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1534,7 +1534,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.8,
+      "hours_from_now": 4.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1549,7 +1549,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 5.4,
+      "hours_from_now": 5.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1564,7 +1564,7 @@
       "actual": null,
       "forecast": "65B",
       "previous": "77B",
-      "hours_from_now": 5.6,
+      "hours_from_now": 5.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1594,7 +1594,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.1,
+      "hours_from_now": 6,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1609,7 +1609,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.1,
+      "hours_from_now": 7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1624,7 +1624,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.1,
+      "hours_from_now": 14,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1639,7 +1639,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.1,
+      "hours_from_now": 25,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1674,7 +1674,7 @@
         "event_title": "Kharg Island no longer under Iranian control by...?",
         "question": "Kharg Island no longer under Iranian control by December 31?",
         "prob": 3.35,
-        "d24h_pp": 0.05,
+        "d24h_pp": 0.1,
         "volume": 77530974.28,
         "liquidity": 207280.09,
         "end_date": "2027-01-01T04:59:00Z",
@@ -1693,7 +1693,7 @@
         "event_title": "Israel x Iran ceasefire continues through...?",
         "question": "Israel x Iran ceasefire continues through November 15?",
         "prob": 96.35,
-        "d24h_pp": -1.1,
+        "d24h_pp": -0.75,
         "volume": 53189582.2,
         "liquidity": 894728.35,
         "end_date": "2026-11-16T04:59:00Z",
@@ -1731,7 +1731,7 @@
         "event_title": "Iran leader end of 2026?",
         "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
         "prob": 93.65,
-        "d24h_pp": 0.1,
+        "d24h_pp": 0.05,
         "volume": 41072806.3,
         "liquidity": 1730256.97,
         "end_date": "2026-12-31T17:00:00Z",
@@ -1869,7 +1869,7 @@
         "event_title": "Pete Hegseth impeached by...?",
         "question": "Pete Hegseth impeached by December 31, 2026?",
         "prob": 3.2,
-        "d24h_pp": 0.65,
+        "d24h_pp": 0.85,
         "volume": 888530.43,
         "liquidity": 176471.24,
         "end_date": "2027-01-01T04:59:00Z",
@@ -1952,7 +1952,7 @@
         "event_title": "China x Japan military clash before 2027?",
         "question": "China x Japan military clash before 2027?",
         "prob": 2.1,
-        "d24h_pp": -0.55,
+        "d24h_pp": 0.2,
         "volume": 1474014.23,
         "liquidity": 52075.97,
         "end_date": "2027-01-01T04:59:00Z",
@@ -23686,6 +23686,118 @@
       "z": null
     },
     {
+      "id": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
+      "sha256": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
+      "title": "Competitiveness and resilience in the financial sector - oxymoron or complementarity?",
+      "url": "https://www.bis.org/speeches/20261112-competitiveness-and-resilience-financial-sector-oxymoron-or-complementarity",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "412a3eb979514efc9ec0142345a769183956b868a513d639713a8bd313285505",
+      "sha256": "412a3eb979514efc9ec0142345a769183956b868a513d639713a8bd313285505",
+      "title": "Cash and the digital euro - two sides of the same coin",
+      "url": "https://www.bis.org/speeches/20261112-cash-and-digital-euro-two-sides-same-coin",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f634812a920b5549d542a2de4026fbedf17eb3dd39fce65da3f02ac50f2c4122",
+      "sha256": "f634812a920b5549d542a2de4026fbedf17eb3dd39fce65da3f02ac50f2c4122",
+      "title": "The Czech National Bank’s first DLT bond and the new physics of the digital koruna",
+      "url": "https://www.bis.org/speeches/20261112-czech-national-banks-first-dlt-bond-and-new-physics-digital-koruna",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b274eadf4f1fabb3240089e89e2cabca98bbe8c81c36f6d147d5e71b3c3eacac",
+      "sha256": "b274eadf4f1fabb3240089e89e2cabca98bbe8c81c36f6d147d5e71b3c3eacac",
+      "title": "Opening remarks - Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks",
+      "url": "https://www.bis.org/speeches/20261112-opening-remarks-joint-central-bank-kuwait-and-global-finance-magazine-roundtable-discussion-kuwait-banks",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "098d93fbc24aacb09d1a0c1dd4c60e3574f2d6023a9d9a6074daf6ef9bfb5ecf",
       "sha256": "098d93fbc24aacb09d1a0c1dd4c60e3574f2d6023a9d9a6074daf6ef9bfb5ecf",
       "title": "Foundations for innovative and resilient capital markets",
@@ -23924,118 +24036,6 @@
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
-      "sha256": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
-      "title": "Competitiveness and resilience in the financial sector - oxymoron or complementarity?",
-      "url": "https://www.bis.org/speeches/20261112-competitiveness-and-resilience-financial-sector-oxymoron-or-complementarity",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "412a3eb979514efc9ec0142345a769183956b868a513d639713a8bd313285505",
-      "sha256": "412a3eb979514efc9ec0142345a769183956b868a513d639713a8bd313285505",
-      "title": "Cash and the digital euro - two sides of the same coin",
-      "url": "https://www.bis.org/speeches/20261112-cash-and-digital-euro-two-sides-same-coin",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f634812a920b5549d542a2de4026fbedf17eb3dd39fce65da3f02ac50f2c4122",
-      "sha256": "f634812a920b5549d542a2de4026fbedf17eb3dd39fce65da3f02ac50f2c4122",
-      "title": "The Czech National Bank’s first DLT bond and the new physics of the digital koruna",
-      "url": "https://www.bis.org/speeches/20261112-czech-national-banks-first-dlt-bond-and-new-physics-digital-koruna",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b274eadf4f1fabb3240089e89e2cabca98bbe8c81c36f6d147d5e71b3c3eacac",
-      "sha256": "b274eadf4f1fabb3240089e89e2cabca98bbe8c81c36f6d147d5e71b3c3eacac",
-      "title": "Opening remarks - Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks",
-      "url": "https://www.bis.org/speeches/20261112-opening-remarks-joint-central-bank-kuwait-and-global-finance-magazine-roundtable-discussion-kuwait-banks",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -48014,97 +48014,6 @@
       "z": null
     },
     {
-      "id": "cbcf5cf2b6df4f498caf102ef2a0993e1f1351955fb3e1a6eb41dcb65f0573aa",
-      "sha256": "cbcf5cf2b6df4f498caf102ef2a0993e1f1351955fb3e1a6eb41dcb65f0573aa",
-      "title": "ORELLA: \"Trump quiere cerrar la guerra de Irán a lo grande y va a lanzar un ataque sin precedentes\"",
-      "url": "https://t.me/negociostv/60426",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T09:56:38.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b52a29a749a29c22bc117cd65ec593bbb7ad5ae4c9a4c0439acdf547131da320",
-      "sha256": "b52a29a749a29c22bc117cd65ec593bbb7ad5ae4c9a4c0439acdf547131da320",
-      "title": "Fed's Waller: We need to raise rates to put downward pressure on inflation.",
-      "url": "https://t.me/FinancialJuice/145942",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T09:53:38.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7a03dbd6edda52b3c2e4603a6d23675122a983b0b5c3ef5b1c8a0056bb8a8c56",
-      "sha256": "7a03dbd6edda52b3c2e4603a6d23675122a983b0b5c3ef5b1c8a0056bb8a8c56",
-      "title": "Fed's Waller: Real rates have to rise to maintain level of restrictiveness in monetary policy.",
-      "url": "https://t.me/FinancialJuice/145941",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T09:53:28.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "7b924b2371dfa1c615e50bfc0ce346994b766670a342848f4537796b5f265c32",
       "sha256": "7b924b2371dfa1c615e50bfc0ce346994b766670a342848f4537796b5f265c32",
       "title": "Track your Fairness - composite-indicators.jrc.ec.europa.eu",
@@ -48746,6 +48655,88 @@
       "z": null
     },
     {
+      "id": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
+      "sha256": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
+      "title": "The future of FinTech",
+      "url": "https://www.bis.org/speeches/20261110-future-fintech",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "dce7da0e2394739bb64ad4307bdbfeff1fece92671b4f1fb6a5b64d697bf8e77",
+      "sha256": "dce7da0e2394739bb64ad4307bdbfeff1fece92671b4f1fb6a5b64d697bf8e77",
+      "title": "What happens to the economy as “intelligence” gets cheaper?",
+      "url": "https://www.bis.org/speeches/20261110-what-happens-economy-as-intelligence-gets-cheaper",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1fd3d00149aff7f68843b57dc8dc8051caa48a35e395eefb2c0a046ae5463489",
+      "sha256": "1fd3d00149aff7f68843b57dc8dc8051caa48a35e395eefb2c0a046ae5463489",
+      "title": "The Danish pension system in a long-term perspective",
+      "url": "https://www.bis.org/speeches/20261110-danish-pension-system-long-term-perspective",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "b6b63463393d2d5e2f5e28e9eedc2e48e1222d13aa0c95ed320887e62003bf2d",
       "sha256": "b6b63463393d2d5e2f5e28e9eedc2e48e1222d13aa0c95ed320887e62003bf2d",
       "title": "Trust, expectations and monetary policy",
@@ -48961,88 +48952,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
-      "sha256": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
-      "title": "The future of FinTech",
-      "url": "https://www.bis.org/speeches/20261110-future-fintech",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dce7da0e2394739bb64ad4307bdbfeff1fece92671b4f1fb6a5b64d697bf8e77",
-      "sha256": "dce7da0e2394739bb64ad4307bdbfeff1fece92671b4f1fb6a5b64d697bf8e77",
-      "title": "What happens to the economy as “intelligence” gets cheaper?",
-      "url": "https://www.bis.org/speeches/20261110-what-happens-economy-as-intelligence-gets-cheaper",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1fd3d00149aff7f68843b57dc8dc8051caa48a35e395eefb2c0a046ae5463489",
-      "sha256": "1fd3d00149aff7f68843b57dc8dc8051caa48a35e395eefb2c0a046ae5463489",
-      "title": "The Danish pension system in a long-term perspective",
-      "url": "https://www.bis.org/speeches/20261110-danish-pension-system-long-term-perspective",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -49514,6 +49423,62 @@
       "z": null
     },
     {
+      "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
+      "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
+      "title": "Message for the SEACEN masterclass - central bank communication",
+      "url": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
+      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
+      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
       "sha256": "88adb6afd33b0ebce3854418a55ef2bb71e9d19ba7935289fcf8e2518a3d4f9c",
       "title": "Leading today, building for tomorrow",
@@ -49617,62 +49582,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
-      "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
-      "title": "Message for the SEACEN masterclass - central bank communication",
-      "url": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
-      "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
-      "url": "https://www.bis.org/speeches/20261109-integrated-open-and-resilient-europes-strengths-fragmenting-world",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
@@ -52254,6 +52163,36 @@
       "z": null
     },
     {
+      "id": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
+      "sha256": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
+      "title": "Collateral Accepted by the Bank of Japan (End of Oct.)",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/col/col2610.xlsx",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T08:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "780423d150a20c5f778f20ca7b6c2fcae1c8586adce0c99163064cf45b506b9b",
       "sha256": "780423d150a20c5f778f20ca7b6c2fcae1c8586adce0c99163064cf45b506b9b",
       "title": "Quarterly Refunding Statement of Assistant Secretary for Financial Markets Hunter McMaster - U.S. Department of the Treasury (.gov)",
@@ -52423,36 +52362,6 @@
       "category": "Fiscal",
       "categories": [
         "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
-      "sha256": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
-      "title": "Collateral Accepted by the Bank of Japan (End of Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/col/col2610.xlsx",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-04T08:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
       ],
       "legacy_category": "otro",
       "ficha_v6": null,
@@ -53283,6 +53192,93 @@
       "z": null
     },
     {
+      "id": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
+      "sha256": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
+      "title": "A new payment scheme for Iceland - building a sovereign and secure payment system",
+      "url": "https://www.bis.org/speeches/20261103-new-payment-scheme-iceland-building-sovereign-and-secure-payment-system",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
+      "sha256": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
+      "title": "Stable banks, strong capital markets - Europe’s financial system for the future",
+      "url": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
+      "sha256": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
+      "title": "Marking our tenth anniversary - one conviction, two principles and three challenges",
+      "url": "https://www.bis.org/speeches/20261103-marking-our-tenth-anniversary-one-conviction-two-principles-and-three-challenges",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "99e8ba5e0d0b1f9feecb6e2d1d39fbf76eb999929ed0255e5f13c9173251651e",
       "sha256": "99e8ba5e0d0b1f9feecb6e2d1d39fbf76eb999929ed0255e5f13c9173251651e",
       "title": "Payments in a fragmenting world - sovereignty, strategy and system design",
@@ -53452,93 +53448,6 @@
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
-      "sha256": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
-      "title": "A new payment scheme for Iceland - building a sovereign and secure payment system",
-      "url": "https://www.bis.org/speeches/20261103-new-payment-scheme-iceland-building-sovereign-and-secure-payment-system",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
-      "sha256": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
-      "title": "Stable banks, strong capital markets - Europe’s financial system for the future",
-      "url": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
-      "sha256": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
-      "title": "Marking our tenth anniversary - one conviction, two principles and three challenges",
-      "url": "https://www.bis.org/speeches/20261103-marking-our-tenth-anniversary-one-conviction-two-principles-and-three-challenges",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -53828,6 +53737,36 @@
       "z": null
     },
     {
+      "id": "2d5ef12a93aa3a52c922d21658c79a8c71257ed762cf06bc6ff039d4c558dba7",
+      "sha256": "2d5ef12a93aa3a52c922d21658c79a8c71257ed762cf06bc6ff039d4c558dba7",
+      "title": "Announcement of 30-year JGBs to Be Issued in November 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRUNLX2FCZXFSalRObENwT0ZLdnQ5Vi00RUhabERRQ1I2WXhqZFFWLUZxUWUzalNOMWo1ZmdaWUhocmkya2Q0U1E4WVBWY0lXcmtQM01DZkM2MXp4NGVBMnFtX0ZiMnVYWjZhLUNnZkhqSnc5Q3l5bGxkNzJUVEZhUzVBVDNqMGNWakFnaU12Y25XemM?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T08:21:56.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "ba59b94464077af40b59700c997b6efd8639abaac83aab13bb96574689690264",
       "sha256": "ba59b94464077af40b59700c997b6efd8639abaac83aab13bb96574689690264",
       "title": "Treasury Discount Bills to Be Auctioned on November 9, 2026 : Ministry of Finance - 財務省",
@@ -53851,36 +53790,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2d5ef12a93aa3a52c922d21658c79a8c71257ed762cf06bc6ff039d4c558dba7",
-      "sha256": "2d5ef12a93aa3a52c922d21658c79a8c71257ed762cf06bc6ff039d4c558dba7",
-      "title": "Announcement of 30-year JGBs to Be Issued in November 2026 : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRUNLX2FCZXFSalRObENwT0ZLdnQ5Vi00RUhabERRQ1I2WXhqZFFWLUZxUWUzalNOMWo1ZmdaWUhocmkya2Q0U1E4WVBWY0lXcmtQM01DZkM2MXp4NGVBMnFtX0ZiMnVYWjZhLUNnZkhqSnc5Q3l5bGxkNzJUVEZhUzVBVDNqMGNWakFnaU12Y25XemM?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T08:21:56.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -53982,6 +53891,36 @@
       "z": null
     },
     {
+      "id": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
+      "sha256": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
+      "title": "Sources of Changes in Current Account Balances and Market Operations (Oct.)",
+      "url": "http://www.boj.or.jp/en/statistics/boj/fm/juqf/juqf10.xlsx",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T04:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "d6e8855ce76792fcc4ecf698474e3a814ec9ad74187700d1f91f85b5d9705d97",
       "sha256": "d6e8855ce76792fcc4ecf698474e3a814ec9ad74187700d1f91f85b5d9705d97",
       "title": "RIF grant to help build replacement Tinopai Wharf",
@@ -54005,36 +53944,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
-      "sha256": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
-      "title": "Sources of Changes in Current Account Balances and Market Operations (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/fm/juqf/juqf10.xlsx",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T04:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -54100,6 +54009,66 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c3eff5814c3bbde0803bbfc10ede0facbbad0c389872fef89e82182fd16ef8d8",
+      "sha256": "c3eff5814c3bbde0803bbfc10ede0facbbad0c389872fef89e82182fd16ef8d8",
+      "title": "AI adoption in Europe",
+      "url": "https://www.bis.org/speeches/20261102-ai-adoption-europe",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7f24904d04b19580d38ccc9c91f30237a60efb8185eee8ae85d3dc91cd8cf8a7",
+      "sha256": "7f24904d04b19580d38ccc9c91f30237a60efb8185eee8ae85d3dc91cd8cf8a7",
+      "title": "Savings in a changing society",
+      "url": "https://www.bis.org/speeches/20261102-savings-changing-society",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -54242,66 +54211,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c3eff5814c3bbde0803bbfc10ede0facbbad0c389872fef89e82182fd16ef8d8",
-      "sha256": "c3eff5814c3bbde0803bbfc10ede0facbbad0c389872fef89e82182fd16ef8d8",
-      "title": "AI adoption in Europe",
-      "url": "https://www.bis.org/speeches/20261102-ai-adoption-europe",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7f24904d04b19580d38ccc9c91f30237a60efb8185eee8ae85d3dc91cd8cf8a7",
-      "sha256": "7f24904d04b19580d38ccc9c91f30237a60efb8185eee8ae85d3dc91cd8cf8a7",
-      "title": "Savings in a changing society",
-      "url": "https://www.bis.org/speeches/20261102-savings-changing-society",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
@@ -56512,6 +56421,62 @@
       "z": null
     },
     {
+      "id": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
+      "sha256": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
+      "title": "Release of the Monetary Policy Report",
+      "url": "https://www.bis.org/speeches/20261029-release-monetary-policy-report",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
+      "sha256": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
+      "title": "Economic resilience, thinner buffers, emerging risks globally - where does India stand?",
+      "url": "https://www.bis.org/speeches/20261029-economic-resilience-thinner-buffers-emerging-risks-globally-where-does-india-stand",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "03bc388917d94118a6e130077f7a5d350c49d6e9ff09d2448b5f4d66769768c0",
       "sha256": "03bc388917d94118a6e130077f7a5d350c49d6e9ff09d2448b5f4d66769768c0",
       "title": "Connecting sustainable finance with climate-resilient growth",
@@ -56614,62 +56579,6 @@
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
-      "sha256": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
-      "title": "Release of the Monetary Policy Report",
-      "url": "https://www.bis.org/speeches/20261029-release-monetary-policy-report",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
-      "sha256": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
-      "title": "Economic resilience, thinner buffers, emerging risks globally - where does India stand?",
-      "url": "https://www.bis.org/speeches/20261029-economic-resilience-thinner-buffers-emerging-risks-globally-where-does-india-stand",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -58690,6 +58599,36 @@
       "z": null
     },
     {
+      "id": "0eeb78ac3b2753d9deaa6cd030986f7ca4a91e874db85e30b0b141269f484a59",
+      "sha256": "0eeb78ac3b2753d9deaa6cd030986f7ca4a91e874db85e30b0b141269f484a59",
+      "title": "The Fifteenth Tripartite Governors' Meeting among PBOC, BOJ, and BOK",
+      "url": "http://www.boj.or.jp/en/intl_finance/cooperate/coop261014a.pdf",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-10-14T11:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "9fb5bef16a10550e0945617b1a7b63186c5fbd071eed742fd70836a0b48ae6f0",
       "sha256": "9fb5bef16a10550e0945617b1a7b63186c5fbd071eed742fd70836a0b48ae6f0",
       "title": "APRA and RBNZ complete joint bank stress test to promote trans-Tasman resilience",
@@ -58736,36 +58675,6 @@
       ],
       "divisas": [
         "NZD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0eeb78ac3b2753d9deaa6cd030986f7ca4a91e874db85e30b0b141269f484a59",
-      "sha256": "0eeb78ac3b2753d9deaa6cd030986f7ca4a91e874db85e30b0b141269f484a59",
-      "title": "The Fifteenth Tripartite Governors' Meeting among PBOC, BOJ, and BOK",
-      "url": "http://www.boj.or.jp/en/intl_finance/cooperate/coop261014a.pdf",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-10-14T11:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
       ],
       "category": "BC",
       "categories": [
