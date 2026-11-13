@@ -3,88 +3,88 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-13T12:32:52.321Z",
+  "generated_at": "2026-11-13T12:38:04.427Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 35,
+    "sources_live": 35,
     "sources_cached": 0,
     "sources_total": 35,
-    "sources_empty": 1,
+    "sources_empty": 0,
     "sources_error": 0,
     "agenda_events_count": 97,
-    "status": "DEGRADED"
+    "status": "CLEAN"
   },
   "coverage": {
     "USD": {
       "count_72h": 617,
       "count_official_45d": 204,
       "last_item_at": "2026-11-13T11:30:52.000Z",
-      "hours_since_last": 1,
-      "hours_since_last_business": 1,
+      "hours_since_last": 1.1,
+      "hours_since_last_business": 1.1,
       "silence": false
     },
     "EUR": {
       "count_72h": 122,
       "count_official_45d": 97,
       "last_item_at": "2026-11-13T10:52:30.000Z",
-      "hours_since_last": 1.7,
-      "hours_since_last_business": 1.7,
+      "hours_since_last": 1.8,
+      "hours_since_last_business": 1.8,
       "silence": false
     },
     "GBP": {
-      "count_72h": 92,
+      "count_72h": 86,
       "count_official_45d": 72,
       "last_item_at": "2026-11-13T10:16:02.000Z",
-      "hours_since_last": 2.3,
-      "hours_since_last_business": 2.3,
+      "hours_since_last": 2.4,
+      "hours_since_last_business": 2.4,
       "silence": false
     },
     "JPY": {
       "count_72h": 140,
       "count_official_45d": 70,
       "last_item_at": "2026-11-13T12:03:47.000Z",
-      "hours_since_last": 0.5,
-      "hours_since_last_business": 0.5,
+      "hours_since_last": 0.6,
+      "hours_since_last_business": 0.6,
       "silence": false
     },
     "CHF": {
       "count_72h": 97,
       "count_official_45d": 18,
       "last_item_at": "2026-11-13T09:27:44.000Z",
-      "hours_since_last": 3.1,
-      "hours_since_last_business": 3.1,
+      "hours_since_last": 3.2,
+      "hours_since_last_business": 3.2,
       "silence": false
     },
     "CAD": {
       "count_72h": 57,
       "count_official_45d": 7,
       "last_item_at": "2026-11-13T09:02:31.000Z",
-      "hours_since_last": 3.5,
-      "hours_since_last_business": 3.5,
+      "hours_since_last": 3.6,
+      "hours_since_last_business": 3.6,
       "silence": false
     },
     "AUD": {
       "count_72h": 74,
       "count_official_45d": 60,
       "last_item_at": "2026-11-13T09:36:55.000Z",
-      "hours_since_last": 2.9,
-      "hours_since_last_business": 2.9,
+      "hours_since_last": 3,
+      "hours_since_last_business": 3,
       "silence": false
     },
     "NZD": {
       "count_72h": 101,
       "count_official_45d": 59,
       "last_item_at": "2026-11-13T08:24:14.000Z",
-      "hours_since_last": 4.1,
-      "hours_since_last_business": 4.1,
+      "hours_since_last": 4.2,
+      "hours_since_last_business": 4.2,
       "silence": false
     },
     "XAU": {
       "count_72h": 12,
       "count_official_45d": 0,
       "last_item_at": "2026-11-13T08:40:06.000Z",
-      "hours_since_last": 3.9,
-      "hours_since_last_business": 3.9
+      "hours_since_last": 4,
+      "hours_since_last_business": 4
     }
   },
   "risk_map": [
@@ -97,14 +97,14 @@
           "lock_class": "OTRO_HIGH",
           "title": "Core PPI m/m",
           "time": "2026-11-13T13:30:00.000Z",
-          "hours_until": 1,
+          "hours_until": 0.9,
           "retirar_limitadas": false
         },
         {
           "lock_class": "OTRO_HIGH",
           "title": "PPI m/m",
           "time": "2026-11-13T13:30:00.000Z",
-          "hours_until": 1,
+          "hours_until": 0.9,
           "retirar_limitadas": false
         }
       ],
@@ -964,7 +964,7 @@
       "actual": "2290%",
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": -38.8,
+      "hours_from_now": -38.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -979,7 +979,7 @@
       "actual": "0.2%",
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": -29.5,
+      "hours_from_now": -29.6,
       "window_status": null,
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -994,7 +994,7 @@
       "actual": "0.7%",
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": -29.5,
+      "hours_from_now": -29.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1009,7 +1009,7 @@
       "actual": "0.8%",
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": -29.5,
+      "hours_from_now": -29.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1024,7 +1024,7 @@
       "actual": "-22.291B",
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": -29.5,
+      "hours_from_now": -29.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1039,7 +1039,7 @@
       "actual": "0.3%",
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": -29.5,
+      "hours_from_now": -29.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1054,7 +1054,7 @@
       "actual": "0.43%",
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": -29.5,
+      "hours_from_now": -29.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1069,7 +1069,7 @@
       "actual": "-4.1%",
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": -23,
+      "hours_from_now": -23.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1084,7 +1084,7 @@
       "actual": null,
       "forecast": "194K",
       "previous": "189K",
-      "hours_from_now": -23,
+      "hours_from_now": -23.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1099,7 +1099,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23,
+      "hours_from_now": -23.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1114,7 +1114,7 @@
       "actual": "3.75M",
       "forecast": "3.89M",
       "previous": "3.99M",
-      "hours_from_now": -21.5,
+      "hours_from_now": -21.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1129,7 +1129,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -21.5,
+      "hours_from_now": -21.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1144,7 +1144,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.3%",
-      "hours_from_now": -21,
+      "hours_from_now": -21.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1159,7 +1159,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -20.3,
+      "hours_from_now": -20.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1174,7 +1174,7 @@
       "actual": null,
       "forecast": "-0.6M",
       "previous": "-0.9M",
-      "hours_from_now": -19.5,
+      "hours_from_now": -19.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1189,7 +1189,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -19,
+      "hours_from_now": -19.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1204,7 +1204,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.62|2.5",
-      "hours_from_now": -18.5,
+      "hours_from_now": -18.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1219,7 +1219,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18.4,
+      "hours_from_now": -18.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1234,7 +1234,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18,
+      "hours_from_now": -18.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1249,7 +1249,7 @@
       "actual": "-404.064B",
       "forecast": "-298.6B",
       "previous": "-26.9B",
-      "hours_from_now": -17.5,
+      "hours_from_now": -17.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1264,7 +1264,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -17,
+      "hours_from_now": -17.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1279,7 +1279,7 @@
       "actual": null,
       "forecast": null,
       "previous": "56.5",
-      "hours_from_now": -15,
+      "hours_from_now": -15.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1294,7 +1294,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13,
+      "hours_from_now": -13.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1309,7 +1309,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.9%",
-      "hours_from_now": -5.5,
+      "hours_from_now": -5.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1324,7 +1324,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -5,
+      "hours_from_now": -5.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1339,7 +1339,7 @@
       "actual": "0.4%",
       "forecast": "0.4%",
       "previous": "0.4%",
-      "hours_from_now": -4.8,
+      "hours_from_now": -4.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1354,7 +1354,7 @@
       "actual": "2.083B",
       "forecast": "2.84B",
       "previous": "1.77B",
-      "hours_from_now": -3.5,
+      "hours_from_now": -3.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1369,7 +1369,7 @@
       "actual": "0%",
       "forecast": "0.2%",
       "previous": "0.1%",
-      "hours_from_now": -2.5,
+      "hours_from_now": -2.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1384,7 +1384,7 @@
       "actual": "0.4%",
       "forecast": "0.4%",
       "previous": "0.4%",
-      "hours_from_now": -2.5,
+      "hours_from_now": -2.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1399,7 +1399,7 @@
       "actual": "-10.3B",
       "forecast": "-4.5B",
       "previous": "-6.8B",
-      "hours_from_now": -2.5,
+      "hours_from_now": -2.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1414,7 +1414,7 @@
       "actual": null,
       "forecast": "0.1%",
       "previous": "1.5%",
-      "hours_from_now": 1,
+      "hours_from_now": 0.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1429,7 +1429,7 @@
       "actual": null,
       "forecast": "0.5%",
       "previous": "-1.6%",
-      "hours_from_now": 1,
+      "hours_from_now": 0.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1444,7 +1444,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.7%",
-      "hours_from_now": 1,
+      "hours_from_now": 0.9,
       "window_status": "AVISO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "AVISO",
@@ -1459,7 +1459,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.3%",
-      "hours_from_now": 1,
+      "hours_from_now": 0.9,
       "window_status": "AVISO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "AVISO",
@@ -1474,7 +1474,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1489,7 +1489,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.1%",
-      "hours_from_now": 2,
+      "hours_from_now": 1.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1504,7 +1504,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.1,
+      "hours_from_now": 2,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1519,7 +1519,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 2.7,
+      "hours_from_now": 2.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1534,7 +1534,7 @@
       "actual": null,
       "forecast": "65B",
       "previous": "77B",
-      "hours_from_now": 3,
+      "hours_from_now": 2.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1549,7 +1549,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.3,
+      "hours_from_now": 3.2,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1564,7 +1564,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.5,
+      "hours_from_now": 3.4,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1579,7 +1579,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.5,
+      "hours_from_now": 4.4,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1594,7 +1594,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 11.5,
+      "hours_from_now": 11.4,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1609,7 +1609,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22.5,
+      "hours_from_now": 22.4,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1969,6 +1969,58 @@
   },
   "items": [
     {
+      "id": "0bd6840037ee4f6b23958ea20ffa401a6d221d91798e73c417cd6ad3d9b11e2a",
+      "sha256": "0bd6840037ee4f6b23958ea20ffa401a6d221d91798e73c417cd6ad3d9b11e2a",
+      "title": "Jensen Huang’s years-long effort to get close to China",
+      "url": "https://www.ft.com/content/3efa9733-fbb4-47c2-83ba-b01e548ef277?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-13T12:36:28.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a6efcff57c416ee8cc6645f3cdcd4ed33e12ad35b9d8cac8d1ca2de07c5f2ce1",
+      "sha256": "a6efcff57c416ee8cc6645f3cdcd4ed33e12ad35b9d8cac8d1ca2de07c5f2ce1",
+      "title": "DIRECTO | CLAVES DEL DÍA: El plan de Irán contra EEUU, amenaza a Europa y Coreweave se dispara",
+      "url": "https://t.me/negociostv/60516",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-13T12:33:01.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "3513e73fbc3e8c1db7713963e147ba6a449d1d7e6b5cfd365b85d7bc231699c7",
       "sha256": "3513e73fbc3e8c1db7713963e147ba6a449d1d7e6b5cfd365b85d7bc231699c7",
       "title": "Microsoft races to restore services after global outage",
@@ -2012,32 +2064,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0bd6840037ee4f6b23958ea20ffa401a6d221d91798e73c417cd6ad3d9b11e2a",
-      "sha256": "0bd6840037ee4f6b23958ea20ffa401a6d221d91798e73c417cd6ad3d9b11e2a",
-      "title": "Jensen Huang’s years-long effort to get close to China",
-      "url": "https://www.ft.com/content/3efa9733-fbb4-47c2-83ba-b01e548ef277?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-13T12:04:12.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
@@ -31151,32 +31177,6 @@
       "z": null
     },
     {
-      "id": "71c37d3e988aff58a28c3e8dc41954d67dcb5d817027fa7d2d8fc76111eda6c6",
-      "sha256": "71c37d3e988aff58a28c3e8dc41954d67dcb5d817027fa7d2d8fc76111eda6c6",
-      "title": "DIRECTO | CLAVES DEL DÍA: El plan de Irán contra EEUU, amenaza a Europa y Coreweave se dispara",
-      "url": "https://t.me/negociostv/60461",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-11T12:32:47.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "7660edc9b5c87628616f0176362e552a3d281ffd0e8103bce1e6a619d589ee62",
       "sha256": "7660edc9b5c87628616f0176362e552a3d281ffd0e8103bce1e6a619d589ee62",
       "title": "Nvidia removed as top pick at Morgan Stanley; keeps overweight $NVDA",
@@ -47486,214 +47486,6 @@
       "z": null
     },
     {
-      "id": "530069f9d739aa7f262fd9713610e539b9f843b00fe4c547347758c959edb69b",
-      "sha256": "530069f9d739aa7f262fd9713610e539b9f843b00fe4c547347758c959edb69b",
-      "title": "BoE's Lombardelli: Conditions for persistent inflationary dynamics over the medium-term are crystallising.",
-      "url": "https://t.me/FinancialJuice/145968",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T12:36:23.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d4407bd8c2362b9fed64ec9d0c9eb3ccf73865aa3eee4ac0c166b6c802af4790",
-      "sha256": "d4407bd8c2362b9fed64ec9d0c9eb3ccf73865aa3eee4ac0c166b6c802af4790",
-      "title": "BoE's Lombardelli: Balance of risks to inflation remains to the upside.",
-      "url": "https://t.me/FinancialJuice/145967",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T12:35:35.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1d1fb1a2288efda22756029592a4c90da693575384404162f02fdd6d7af3890f",
-      "sha256": "1d1fb1a2288efda22756029592a4c90da693575384404162f02fdd6d7af3890f",
-      "title": "BoE's Lombardelli: Balance of inflation risks to the upside.",
-      "url": "https://t.me/FinancialJuice/145966",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T12:35:02.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "9c0ae8e667305388c0e6056fa04acdf5559c90ac4e0cb9723498337badc84d34",
-      "sha256": "9c0ae8e667305388c0e6056fa04acdf5559c90ac4e0cb9723498337badc84d34",
-      "title": "BoE's Lombardelli: The longer energy costs stay high, the greater pressure there will be on businesses to restore margins.",
-      "url": "https://t.me/FinancialJuice/145965",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T12:34:47.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "COST_PUSH_STAG_TRAP",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "44239cef2fde2c0e43257ddbc8bbdf2acd4ab8183fea1eba5a9791f255d2e0f3",
-      "sha256": "44239cef2fde2c0e43257ddbc8bbdf2acd4ab8183fea1eba5a9791f255d2e0f3",
-      "title": "DIRECTO | CLAVES DEL DÍA: ¿Impeachment inminente a Hegseth?, susto en Antrhopic y el crudo se hunde",
-      "url": "https://t.me/negociostv/60436",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T12:34:08.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "dce305d2478cdb389bc44e103fc2bc529f8063e2e44fb8d8130f7ebeae7e2cc8",
-      "sha256": "dce305d2478cdb389bc44e103fc2bc529f8063e2e44fb8d8130f7ebeae7e2cc8",
-      "title": "BoE's Lombardelli: Greater prospect of second-round effects.",
-      "url": "https://t.me/FinancialJuice/145964",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T12:33:39.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "415478f51defff70ebc03e8512347d36bb80f3f5e2a112e993416220ef4225ec",
-      "sha256": "415478f51defff70ebc03e8512347d36bb80f3f5e2a112e993416220ef4225ec",
-      "title": "BoE's Lombardelli: Energy shock has become more persistent.",
-      "url": "https://t.me/FinancialJuice/145963",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T12:33:03.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "COST_PUSH_STAG_TRAP",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "f96cc526da9ff8cc5e465259595a9313173fecff63a6edf37f07e991e5828a7d",
       "sha256": "f96cc526da9ff8cc5e465259595a9313173fecff63a6edf37f07e991e5828a7d",
       "title": "Exchange of letters between the Governor and the Chancellor on the Asset Purchase Facility - November 2026",
@@ -51903,6 +51695,36 @@
       "z": null
     },
     {
+      "id": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
+      "sha256": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
+      "title": "Collateral Accepted by the Bank of Japan (End of Oct.)",
+      "url": "http://www.boj.or.jp/en/statistics/boj/other/col/col2610.xlsx",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T08:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "780423d150a20c5f778f20ca7b6c2fcae1c8586adce0c99163064cf45b506b9b",
       "sha256": "780423d150a20c5f778f20ca7b6c2fcae1c8586adce0c99163064cf45b506b9b",
       "title": "Quarterly Refunding Statement of Assistant Secretary for Financial Markets Hunter McMaster - U.S. Department of the Treasury (.gov)",
@@ -52072,36 +51894,6 @@
       "category": "Fiscal",
       "categories": [
         "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
-      "sha256": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
-      "title": "Collateral Accepted by the Bank of Japan (End of Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/col/col2610.xlsx",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-04T08:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
       ],
       "legacy_category": "otro",
       "ficha_v6": null,
@@ -53631,6 +53423,36 @@
       "z": null
     },
     {
+      "id": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
+      "sha256": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
+      "title": "Sources of Changes in Current Account Balances and Market Operations (Oct.)",
+      "url": "http://www.boj.or.jp/en/statistics/boj/fm/juqf/juqf10.xlsx",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T04:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "d6e8855ce76792fcc4ecf698474e3a814ec9ad74187700d1f91f85b5d9705d97",
       "sha256": "d6e8855ce76792fcc4ecf698474e3a814ec9ad74187700d1f91f85b5d9705d97",
       "title": "RIF grant to help build replacement Tinopai Wharf",
@@ -53654,36 +53476,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
-      "sha256": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
-      "title": "Sources of Changes in Current Account Balances and Market Operations (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/fm/juqf/juqf10.xlsx",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T04:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -58339,6 +58131,36 @@
       "z": null
     },
     {
+      "id": "0eeb78ac3b2753d9deaa6cd030986f7ca4a91e874db85e30b0b141269f484a59",
+      "sha256": "0eeb78ac3b2753d9deaa6cd030986f7ca4a91e874db85e30b0b141269f484a59",
+      "title": "The Fifteenth Tripartite Governors' Meeting among PBOC, BOJ, and BOK",
+      "url": "http://www.boj.or.jp/en/intl_finance/cooperate/coop261014a.pdf",
+      "source": "BoJ",
+      "source_id": "boj",
+      "source_type": "oficial",
+      "published_at": "2026-10-14T11:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "9fb5bef16a10550e0945617b1a7b63186c5fbd071eed742fd70836a0b48ae6f0",
       "sha256": "9fb5bef16a10550e0945617b1a7b63186c5fbd071eed742fd70836a0b48ae6f0",
       "title": "APRA and RBNZ complete joint bank stress test to promote trans-Tasman resilience",
@@ -58385,36 +58207,6 @@
       ],
       "divisas": [
         "NZD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0eeb78ac3b2753d9deaa6cd030986f7ca4a91e874db85e30b0b141269f484a59",
-      "sha256": "0eeb78ac3b2753d9deaa6cd030986f7ca4a91e874db85e30b0b141269f484a59",
-      "title": "The Fifteenth Tripartite Governors' Meeting among PBOC, BOJ, and BOK",
-      "url": "http://www.boj.or.jp/en/intl_finance/cooperate/coop261014a.pdf",
-      "source": "BoJ",
-      "source_id": "boj",
-      "source_type": "oficial",
-      "published_at": "2026-10-14T11:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
       ],
       "category": "BC",
       "categories": [
