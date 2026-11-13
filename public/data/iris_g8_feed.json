@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-13T17:58:45.442Z",
+  "generated_at": "2026-11-13T17:59:03.874Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -17,7 +17,7 @@
   "coverage": {
     "USD": {
       "count_72h": 636,
-      "count_official_45d": 208,
+      "count_official_45d": 209,
       "last_item_at": "2026-11-13T17:52:44.000Z",
       "hours_since_last": 0.1,
       "hours_since_last_business": 0.1,
@@ -33,7 +33,7 @@
     },
     "GBP": {
       "count_72h": 71,
-      "count_official_45d": 72,
+      "count_official_45d": 73,
       "last_item_at": "2026-11-13T16:15:25.000Z",
       "hours_since_last": 1.7,
       "hours_since_last_business": 1.7,
@@ -58,7 +58,7 @@
     "CAD": {
       "count_72h": 48,
       "count_official_45d": 7,
-      "last_item_at": "2026-11-13T15:56:14.000Z",
+      "last_item_at": "2026-11-13T15:56:28.000Z",
       "hours_since_last": 2,
       "hours_since_last_business": 2,
       "silence": false
@@ -1405,7 +1405,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -2.1,
+      "hours_from_now": -2.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -3368,7 +3368,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-13T15:56:14.000Z",
+      "published_at": "2026-11-13T15:56:28.000Z",
       "currencies": [
         "CAD"
       ],
@@ -48470,6 +48470,39 @@
       "z": null
     },
     {
+      "id": "791a0f3ff317c29225bfb14ac5d50ec88aa0638473ba1f4528490df4d5db178f",
+      "sha256": "791a0f3ff317c29225bfb14ac5d50ec88aa0638473ba1f4528490df4d5db178f",
+      "title": "Producer price inflation, UK: January 2027 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9FRVQxaFlKVkVDVml6S3hzb09DbUZVZnZKTHF1eXVDb04tY1E5YjZMUDBSa2c0RnA1VzN4VnlKckJBSUJ5T2pSRkRURENNUFFTbWcwVGJpUW1jSEJReXFHMGZXN3pMekxQalRtdDNCYzZBNFE4T3c?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T11:33:45.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "63d920a6dcba80c7d8277d08c90367844959b79b87fbfa4147fa7cb82927dd98",
       "sha256": "63d920a6dcba80c7d8277d08c90367844959b79b87fbfa4147fa7cb82927dd98",
       "title": "Index of Services, UK: December 2026 - Office for National Statistics",
@@ -49964,6 +49997,36 @@
       "z": null
     },
     {
+      "id": "299bc9e2fe3b7b120fdf597264769a5d8687a66dc20ec3e0225cb71bf4602912",
+      "sha256": "299bc9e2fe3b7b120fdf597264769a5d8687a66dc20ec3e0225cb71bf4602912",
+      "title": "[sdg_08_10] Real GDP per capita - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS0p5TDBwQU50OWRCSk85aTdwZ0otRDdoWHJTLWl0WFJ3WGxlcVBkbmR1SzJCcmcwWjY1dDctd1kyeFZSLWNpUFVrRzA2Ny1kelNGMkxmbzBKM1Q1RWNXaURnbk5pR1NOYzI2SFJqVlRQLU1oZzJ3X2ttSm54WUc5S2I3SDNIZXNuVEJDd0R4bjBxSFU0VnF5d1R2aE8yRUo3WmpXWFp6cWNsOXFCcUx0OWV1cmRhMmxLc3B6VWVLcjJXUXZRQUs3dHRwWm9tSFVJc3lyMFAxclZkYW83MmFtYw?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T07:22:29.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "0e43a9d226ddd1057157f80076720ac2b3d68a44d6d77cb12a7c0c0ca755dc0b",
       "sha256": "0e43a9d226ddd1057157f80076720ac2b3d68a44d6d77cb12a7c0c0ca755dc0b",
       "title": "(IMES Newsletter) 2026 BoC - Philadelphia Fed - BOJ Joint Workshop",
@@ -50608,36 +50671,6 @@
         "Inflacion_Empleo"
       ],
       "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
-      "sha256": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
-      "title": "[sdg_08_10] Real GDP per capita - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0bDdrSXBtVUdsZWJmOEJxSmJ4Z1ZTRU1YbWJ1eWZweGZjdmJ2WnFiZzN5S0FMQUlEU1FVQ0x2R0ZuOE9rbEpNOFhiTXhCN3RfSVhldi1TNWZOWGxGNC04UWFLdHM3NG5LX1N0dmw1Wmtub0xOQTVuTHhzeGRTVVk?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
