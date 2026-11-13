@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-13T13:35:22.236Z",
+  "generated_at": "2026-11-13T13:36:27.468Z",
   "health": {
     "sources_active": 35,
     "sources_live": 35,
@@ -16,19 +16,19 @@
   },
   "coverage": {
     "USD": {
-      "count_72h": 620,
+      "count_72h": 619,
       "count_official_45d": 205,
-      "last_item_at": "2026-11-13T13:31:29.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "last_item_at": "2026-11-13T13:35:25.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "EUR": {
       "count_72h": 123,
       "count_official_45d": 97,
       "last_item_at": "2026-11-13T13:15:17.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "hours_since_last": 0.4,
+      "hours_since_last_business": 0.4,
       "silence": false
     },
     "GBP": {
@@ -940,7 +940,7 @@
       "actual": "2290%",
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": -39.8,
+      "hours_from_now": -39.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1105,7 +1105,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -21.3,
+      "hours_from_now": -21.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1285,7 +1285,7 @@
       "actual": "0.4%",
       "forecast": "0.4%",
       "previous": "0.4%",
-      "hours_from_now": -5.8,
+      "hours_from_now": -5.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1465,7 +1465,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 1.7,
+      "hours_from_now": 1.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1914,6 +1914,37 @@
     }
   },
   "items": [
+    {
+      "id": "608e447b7019733d45c6530764922a95cc734965e258d5f177737d4d79d8e569",
+      "sha256": "608e447b7019733d45c6530764922a95cc734965e258d5f177737d4d79d8e569",
+      "title": "❗ Traders price in less Fed tightening after PPI report.",
+      "url": "https://t.me/FinancialJuice/146982",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-13T13:35:25.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "8c2118edd7b34e9d9701d9cad1284df911c7d5b61259ac36346e2c2e1db65ac4",
       "sha256": "8c2118edd7b34e9d9701d9cad1284df911c7d5b61259ac36346e2c2e1db65ac4",
@@ -47216,67 +47247,6 @@
       "legacy_category": "geopolitica",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f13c30c25b8365d8110f9ad3dc92ee44f57741188cae9b7bc8d810eb607938bb",
-      "sha256": "f13c30c25b8365d8110f9ad3dc92ee44f57741188cae9b7bc8d810eb607938bb",
-      "title": "Morning kickstart oil slides as waller puts a half point hike in play markets brace for cpi",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T13:35:42.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo",
-        "Commodities_ToT"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7b070d8cf4c403fcde655bcacacc5b2dd2deb62fbfb0eea3c3a083e6fd180126",
-      "sha256": "7b070d8cf4c403fcde655bcacacc5b2dd2deb62fbfb0eea3c3a083e6fd180126",
-      "title": "❗ Traders boost bets on a half-point Fed rate hike next month.",
-      "url": "https://t.me/FinancialJuice/146003",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T13:35:20.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
