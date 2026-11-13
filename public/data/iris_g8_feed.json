@@ -3,64 +3,64 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-13T16:57:11.277Z",
+  "generated_at": "2026-11-13T17:02:18.984Z",
   "health": {
-    "sources_active": 35,
-    "sources_live": 35,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
-    "sources_empty": 0,
+    "sources_empty": 1,
     "sources_error": 0,
     "agenda_events_count": 96,
-    "status": "CLEAN"
+    "status": "DEGRADED"
   },
   "coverage": {
     "USD": {
-      "count_72h": 622,
+      "count_72h": 621,
       "count_official_45d": 208,
       "last_item_at": "2026-11-13T16:51:52.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "EUR": {
       "count_72h": 115,
       "count_official_45d": 97,
       "last_item_at": "2026-11-13T16:26:20.000Z",
-      "hours_since_last": 0.5,
-      "hours_since_last_business": 0.5,
+      "hours_since_last": 0.6,
+      "hours_since_last_business": 0.6,
       "silence": false
     },
     "GBP": {
-      "count_72h": 73,
+      "count_72h": 72,
       "count_official_45d": 72,
       "last_item_at": "2026-11-13T16:15:25.000Z",
-      "hours_since_last": 0.7,
-      "hours_since_last_business": 0.7,
+      "hours_since_last": 0.8,
+      "hours_since_last_business": 0.8,
       "silence": false
     },
     "JPY": {
       "count_72h": 135,
       "count_official_45d": 70,
       "last_item_at": "2026-11-13T15:50:38.000Z",
-      "hours_since_last": 1.1,
-      "hours_since_last_business": 1.1,
+      "hours_since_last": 1.2,
+      "hours_since_last_business": 1.2,
       "silence": false
     },
     "CHF": {
-      "count_72h": 88,
+      "count_72h": 87,
       "count_official_45d": 18,
       "last_item_at": "2026-11-13T16:09:05.000Z",
-      "hours_since_last": 0.8,
-      "hours_since_last_business": 0.8,
+      "hours_since_last": 0.9,
+      "hours_since_last_business": 0.9,
       "silence": false
     },
     "CAD": {
       "count_72h": 50,
       "count_official_45d": 7,
       "last_item_at": "2026-11-13T15:56:13.000Z",
-      "hours_since_last": 1,
-      "hours_since_last_business": 1,
+      "hours_since_last": 1.1,
+      "hours_since_last_business": 1.1,
       "silence": false
     },
     "AUD": {
@@ -75,16 +75,16 @@
       "count_72h": 100,
       "count_official_45d": 59,
       "last_item_at": "2026-11-13T15:52:36.000Z",
-      "hours_since_last": 1.1,
-      "hours_since_last_business": 1.1,
+      "hours_since_last": 1.2,
+      "hours_since_last_business": 1.2,
       "silence": false
     },
     "XAU": {
       "count_72h": 13,
       "count_official_45d": 0,
       "last_item_at": "2026-11-13T15:52:25.000Z",
-      "hours_since_last": 1.1,
-      "hours_since_last_business": 1.1
+      "hours_since_last": 1.2,
+      "hours_since_last_business": 1.2
     }
   },
   "risk_map": [
@@ -99,7 +99,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -109,12 +109,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -0.55
+          "d24h_pp": -1.45
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -5.95
+          "d24h_pp": -5.9
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -149,7 +149,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Taiwan military clash before 2027?",
-          "d24h_pp": 0.65
+          "d24h_pp": 0.6
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -159,7 +159,7 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -173,7 +173,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -183,12 +183,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -0.55
+          "d24h_pp": -1.45
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -5.95
+          "d24h_pp": -5.9
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -208,7 +208,7 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
-          "d24h_pp": -2
+          "d24h_pp": -1
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -223,7 +223,7 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -247,7 +247,7 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
-          "d24h_pp": -2
+          "d24h_pp": -1
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -274,7 +274,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -284,12 +284,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -0.55
+          "d24h_pp": -1.45
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -5.95
+          "d24h_pp": -5.9
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -314,7 +314,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Taiwan military clash before 2027?",
-          "d24h_pp": 0.65
+          "d24h_pp": 0.6
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -325,7 +325,7 @@
       "ea4_24h": true,
       "reasons": [
         "intervención en 24 h",
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -339,7 +339,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -349,12 +349,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -0.55
+          "d24h_pp": -1.45
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -5.95
+          "d24h_pp": -5.9
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -374,7 +374,7 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
-          "d24h_pp": -2
+          "d24h_pp": -1
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -389,7 +389,7 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -403,7 +403,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -413,12 +413,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -0.55
+          "d24h_pp": -1.45
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -5.95
+          "d24h_pp": -5.9
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -428,7 +428,7 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -457,7 +457,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Taiwan military clash before 2027?",
-          "d24h_pp": 0.65
+          "d24h_pp": 0.6
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -494,7 +494,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Taiwan military clash before 2027?",
-          "d24h_pp": 0.65
+          "d24h_pp": 0.6
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -515,7 +515,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -525,12 +525,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": -0.55
+          "d24h_pp": -1.45
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -5.95
+          "d24h_pp": -5.9
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -550,7 +550,7 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
-          "d24h_pp": -2
+          "d24h_pp": -1
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -575,7 +575,7 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     }
   ],
@@ -589,7 +589,7 @@
         "quote": "USD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -601,7 +601,7 @@
         "quote": "USD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -613,7 +613,7 @@
         "quote": "JPY"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp",
         "intervención en 24 h"
       ]
     },
@@ -626,7 +626,7 @@
         "quote": "CHF"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -638,7 +638,7 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -650,7 +650,7 @@
         "quote": "USD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -662,7 +662,7 @@
         "quote": "USD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -674,7 +674,7 @@
         "quote": "GBP"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -686,7 +686,7 @@
         "quote": "JPY"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp",
         "intervención en 24 h"
       ]
     },
@@ -699,7 +699,7 @@
         "quote": "CHF"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -711,7 +711,7 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -723,7 +723,7 @@
         "quote": "AUD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -735,7 +735,7 @@
         "quote": "NZD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -748,7 +748,7 @@
       },
       "reasons": [
         "intervención en 24 h",
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -760,7 +760,7 @@
         "quote": "CHF"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -772,7 +772,7 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -805,7 +805,7 @@
       },
       "reasons": [
         "intervención en 24 h",
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -817,7 +817,7 @@
         "quote": "CHF"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -829,7 +829,7 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -852,7 +852,7 @@
       },
       "reasons": [
         "intervención en 24 h",
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -864,7 +864,7 @@
         "quote": "CHF"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -876,7 +876,7 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -888,7 +888,7 @@
         "quote": "JPY"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp",
         "intervención en 24 h"
       ]
     },
@@ -901,7 +901,7 @@
         "quote": "CHF"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     },
     {
@@ -913,7 +913,7 @@
         "quote": "JPY"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp",
         "intervención en 24 h"
       ]
     },
@@ -926,7 +926,7 @@
         "quote": "USD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 5.9 pp"
       ]
     }
   ],
@@ -940,7 +940,7 @@
       "actual": "2290%",
       "forecast": null,
       "previous": "2.8%",
-      "hours_from_now": -43.2,
+      "hours_from_now": -43.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1067,21 +1067,6 @@
       "retirar_limitadas": false
     },
     {
-      "id": "5a786f6fa9f865bf",
-      "currency": "USD",
-      "title": "Crude Oil Inventories",
-      "event_at": "2026-11-12T17:00:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "-0.6M",
-      "previous": "-0.9M",
-      "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
       "id": "17f7b23e4b176890",
       "currency": "EUR",
       "title": "German Buba President Nagel Speaks",
@@ -1105,7 +1090,7 @@
       "actual": null,
       "forecast": null,
       "previous": "5.62|2.5",
-      "hours_from_now": -22.9,
+      "hours_from_now": -23,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1120,7 +1105,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -22.8,
+      "hours_from_now": -22.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1240,7 +1225,7 @@
       "actual": "0.4%",
       "forecast": "0.4%",
       "previous": "0.4%",
-      "hours_from_now": -9.2,
+      "hours_from_now": -9.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1375,7 +1360,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -2.8,
+      "hours_from_now": -2.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1405,7 +1390,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -2.3,
+      "hours_from_now": -2.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1435,7 +1420,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1.1,
+      "hours_from_now": -1.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1466,7 +1451,7 @@
       "forecast": null,
       "previous": null,
       "hours_from_now": 0,
-      "window_status": null,
+      "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
@@ -1504,16 +1489,16 @@
   ],
   "polymarket_geo": {
     "status": "OK",
-    "updated_at": "2026-11-13T16:31:40.127Z",
+    "updated_at": "2026-11-13T17:02:14.134Z",
     "markets": [
       {
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "Will the U.S. invade Iran before 2027?",
         "question": "Will the U.S. invade Iran before 2027?",
-        "prob": 7.5,
-        "d24h_pp": 0,
-        "volume": 80141653.68,
-        "liquidity": 404851.12,
+        "prob": 8.5,
+        "d24h_pp": 1,
+        "volume": 80142341.07,
+        "liquidity": 399427.81,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
         "currencies": [
@@ -1532,7 +1517,7 @@
         "prob": 3.25,
         "d24h_pp": 0,
         "volume": 77538765.41,
-        "liquidity": 209870.48,
+        "liquidity": 210535.89,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/kharg-island-no-longer-under-iranian-control-by-march-31",
         "currencies": [
@@ -1548,10 +1533,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "Israel x Iran ceasefire continues through...?",
         "question": "Israel x Iran ceasefire continues through November 15?",
-        "prob": 95.85,
-        "d24h_pp": -0.55,
-        "volume": 53362068.62,
-        "liquidity": 584909.53,
+        "prob": 94.95,
+        "d24h_pp": -1.45,
+        "volume": 53388453.17,
+        "liquidity": 639393.31,
         "end_date": "2026-11-16T04:59:00Z",
         "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
         "currencies": [
@@ -1567,10 +1552,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "US announces end of Iranian blockade by...?",
         "question": "US announces end of Iranian blockade by December 31, 2026?",
-        "prob": 24.3,
-        "d24h_pp": -5.95,
-        "volume": 52686169.23,
-        "liquidity": 838041.16,
+        "prob": 24.35,
+        "d24h_pp": -5.9,
+        "volume": 52687239.1,
+        "liquidity": 772862.01,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
         "currencies": [
@@ -1589,7 +1574,7 @@
         "prob": 93.6,
         "d24h_pp": 0.05,
         "volume": 41073142.09,
-        "liquidity": 1483188.69,
+        "liquidity": 1490499.31,
         "end_date": "2026-12-31T17:00:00Z",
         "url": "https://polymarket.com/event/iran-leader-end-of-2026",
         "currencies": [
@@ -1607,8 +1592,8 @@
         "question": "Putin out as President of Russia by December 31, 2026?",
         "prob": 1.65,
         "d24h_pp": 0,
-        "volume": 32477758.56,
-        "liquidity": 578194.11,
+        "volume": 32478258.55,
+        "liquidity": 572868.22,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/putin-out-before-2027",
         "currencies": [
@@ -1625,7 +1610,7 @@
         "prob": 10.5,
         "d24h_pp": 0,
         "volume": 13389801.61,
-        "liquidity": 72915.09,
+        "liquidity": 65804.2,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/nato-x-russia-military-clash-in-2025",
         "currencies": [
@@ -1639,10 +1624,10 @@
         "theme": "RUSIA_UCRANIA",
         "event_title": "Russia x Ukraine ceasefire agreement by...?",
         "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
-        "prob": 10.5,
-        "d24h_pp": -2,
+        "prob": 11.5,
+        "d24h_pp": -1,
         "volume": 10888618.59,
-        "liquidity": 808806.78,
+        "liquidity": 769965.64,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by",
         "currencies": [
@@ -1659,7 +1644,7 @@
         "prob": 0.7,
         "d24h_pp": 0,
         "volume": 6387274.67,
-        "liquidity": 68302.71,
+        "liquidity": 68202.71,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-us-withdraw-from-nato-before-2027",
         "currencies": [
@@ -1676,7 +1661,7 @@
         "prob": 1.85,
         "d24h_pp": 0,
         "volume": 5625722.33,
-        "liquidity": 72018.95,
+        "liquidity": 71918.95,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-russia-invade-a-nato-country-in-2025",
         "currencies": [
@@ -1693,7 +1678,7 @@
         "prob": 1.15,
         "d24h_pp": 0.1,
         "volume": 1313329.99,
-        "liquidity": 170068.87,
+        "liquidity": 168024.36,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026",
         "currencies": [
@@ -1708,7 +1693,7 @@
         "prob": 3.2,
         "d24h_pp": 0.1,
         "volume": 890563.34,
-        "liquidity": 130359.13,
+        "liquidity": 131395.67,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/pete-hegseth-impeached-by-june-30",
         "currencies": [
@@ -1722,8 +1707,8 @@
         "question": "Will China invade Taiwan by end of 2026?",
         "prob": 1.5,
         "d24h_pp": -0.05,
-        "volume": 46378398.18,
-        "liquidity": 345250.98,
+        "volume": 46378635.55,
+        "liquidity": 347924.4,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027",
         "currencies": [
@@ -1739,8 +1724,8 @@
         "question": "Xi Jinping out before 2027?",
         "prob": 1.65,
         "d24h_pp": 0,
-        "volume": 17282704.36,
-        "liquidity": 354785.03,
+        "volume": 17282775.39,
+        "liquidity": 357863.74,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/xi-jinping-out-before-2027",
         "currencies": [
@@ -1757,7 +1742,7 @@
         "prob": 8,
         "d24h_pp": 0.5,
         "volume": 3767450.41,
-        "liquidity": 172881.73,
+        "liquidity": 170194.32,
         "end_date": "2028-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-by-december-31-2027",
         "currencies": [
@@ -1771,10 +1756,10 @@
         "theme": "CHINA_TAIWAN",
         "event_title": "China x Taiwan military clash before 2027?",
         "question": "China x Taiwan military clash before 2027?",
-        "prob": 2.85,
-        "d24h_pp": 0.65,
+        "prob": 2.8,
+        "d24h_pp": 0.6,
         "volume": 3551793.55,
-        "liquidity": 69089.74,
+        "liquidity": 79524.23,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/china-x-taiwan-military-clash-before-2027",
         "currencies": [
@@ -1791,7 +1776,7 @@
         "prob": 2.15,
         "d24h_pp": 0.1,
         "volume": 1474014.23,
-        "liquidity": 49537.87,
+        "liquidity": 49863.71,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/china-x-japan-military-clash-before-2027",
         "currencies": [
@@ -28538,6 +28523,66 @@
       "z": null
     },
     {
+      "id": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
+      "sha256": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
+      "title": "Competitiveness and resilience in the financial sector - oxymoron or complementarity?",
+      "url": "https://www.bis.org/speeches/20261112-competitiveness-and-resilience-financial-sector-oxymoron-or-complementarity",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "412a3eb979514efc9ec0142345a769183956b868a513d639713a8bd313285505",
+      "sha256": "412a3eb979514efc9ec0142345a769183956b868a513d639713a8bd313285505",
+      "title": "Cash and the digital euro - two sides of the same coin",
+      "url": "https://www.bis.org/speeches/20261112-cash-and-digital-euro-two-sides-same-coin",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "f634812a920b5549d542a2de4026fbedf17eb3dd39fce65da3f02ac50f2c4122",
       "sha256": "f634812a920b5549d542a2de4026fbedf17eb3dd39fce65da3f02ac50f2c4122",
       "title": "The Czech National Bank’s first DLT bond and the new physics of the digital koruna",
@@ -28828,66 +28873,6 @@
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
-      "sha256": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
-      "title": "Competitiveness and resilience in the financial sector - oxymoron or complementarity?",
-      "url": "https://www.bis.org/speeches/20261112-competitiveness-and-resilience-financial-sector-oxymoron-or-complementarity",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "412a3eb979514efc9ec0142345a769183956b868a513d639713a8bd313285505",
-      "sha256": "412a3eb979514efc9ec0142345a769183956b868a513d639713a8bd313285505",
-      "title": "Cash and the digital euro - two sides of the same coin",
-      "url": "https://www.bis.org/speeches/20261112-cash-and-digital-euro-two-sides-same-coin",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -46648,172 +46633,6 @@
       "z": null
     },
     {
-      "id": "96d295b0139ec11981c699d678b8cc1bed786cfbbd564d3fbc4737d55a23abf2",
-      "sha256": "96d295b0139ec11981c699d678b8cc1bed786cfbbd564d3fbc4737d55a23abf2",
-      "title": "As yields run higher so does the us dollar what next technically for the major currency pairs",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T17:00:57.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "2b5debcb7e2a07fd23220fbfedf619758ae413002aa3e352926350acc40c7c73",
-      "sha256": "2b5debcb7e2a07fd23220fbfedf619758ae413002aa3e352926350acc40c7c73",
-      "title": "WASDE CORN END STOCKS ACTUAL 1758M (FORECAST 1.87M, PREVIOUS 1.849M) $MACRO",
-      "url": "https://t.me/FinancialJuice/146088",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T17:00:42.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A5",
-      "mmt_lens": "EXPANSION_REAL_A5",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "1758",
-      "forecast": "1.87",
-      "previous": "1.849",
-      "calendar_title": null,
-      "z": 11707.5
-    },
-    {
-      "id": "93fcf4eb15bb62d3ac3c6df2eafc67f572cf97b24ab122851a1396d29fae2b90",
-      "sha256": "93fcf4eb15bb62d3ac3c6df2eafc67f572cf97b24ab122851a1396d29fae2b90",
-      "title": "WASDE COTTON END STOCKS ACTUAL 3.7M (FORECAST 3.6M, PREVIOUS 3.8M) $MACRO",
-      "url": "https://t.me/FinancialJuice/146089",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T17:00:42.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A5",
-      "mmt_lens": "EXPANSION_REAL_A5",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "3.7",
-      "forecast": "3.6",
-      "previous": "3.8",
-      "calendar_title": null,
-      "z": 0.7
-    },
-    {
-      "id": "2ad4918e3bd35b84ca5b5e74fea805947b879fee17ffc32a992207d2ecc6bd87",
-      "sha256": "2ad4918e3bd35b84ca5b5e74fea805947b879fee17ffc32a992207d2ecc6bd87",
-      "title": "WASDE SOYBEAN END STOCKS ACTUAL 300M (FORECAST 330M, PREVIOUS 315M) $MACRO",
-      "url": "https://t.me/FinancialJuice/146087",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T17:00:41.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "B2",
-      "mmt_lens": "CONTRACCION_REAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "300",
-      "forecast": "330",
-      "previous": "315",
-      "calendar_title": null,
-      "z": -2.3
-    },
-    {
-      "id": "6e7312c91081c5fbff250d5133c6a211f25c14c4a4f1bd825295a8748393c606",
-      "sha256": "6e7312c91081c5fbff250d5133c6a211f25c14c4a4f1bd825295a8748393c606",
-      "title": "WASDE WHEAT END STOCKS ACTUAL 743M (FORECAST 740M, PREVIOUS 740M) $MACRO",
-      "url": "https://t.me/FinancialJuice/146086",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-10T17:00:31.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A5",
-      "mmt_lens": "EXPANSION_REAL_A5",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "743",
-      "forecast": "740",
-      "previous": "740",
-      "calendar_title": null,
-      "z": 0.1
-    },
-    {
-      "id": "a0cffa0568365315d106a75dd945c1347e9ebd46efb79d66b6871e5c49ce87da",
-      "sha256": "a0cffa0568365315d106a75dd945c1347e9ebd46efb79d66b6871e5c49ce87da",
-      "title": "Swiss National Bank (SNBN.SW) Seasonal returns chart - Yahoo Finance UK",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5OUk1UZUF3UW15c3h1eUNFbUUteU84Uk5EdUFNa1V4TEk4RHMwZ3A0M2F6NTBRZm5CY0JsRUQ2cldBSWVuVG0ycS1ONmtISGp6S3cwMTBHQjBGVEcxWDE3M1BGVVkzZw?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-10T16:58:46.000Z",
-      "currencies": [
-        "GBP",
-        "CHF"
-      ],
-      "divisas": [
-        "GBP",
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "c6cd25cb0ea7753ee664b0d7ccffe7906a6f7d5c34f8a69e725334e208547958",
       "sha256": "c6cd25cb0ea7753ee664b0d7ccffe7906a6f7d5c34f8a69e725334e208547958",
       "title": "Philip R. Lane: The science and practice of monetary policy communication: the ECB experience",
@@ -47847,6 +47666,32 @@
       "z": null
     },
     {
+      "id": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
+      "sha256": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
+      "title": "The future of FinTech",
+      "url": "https://www.bis.org/speeches/20261110-future-fintech",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "dce7da0e2394739bb64ad4307bdbfeff1fece92671b4f1fb6a5b64d697bf8e77",
       "sha256": "dce7da0e2394739bb64ad4307bdbfeff1fece92671b4f1fb6a5b64d697bf8e77",
       "title": "What happens to the economy as “intelligence” gets cheaper?",
@@ -48105,32 +47950,6 @@
       "sha256": "def3d62200843a03d9c4b9c1072e257cd3830359d0608e5d2e3c41ef8f57392f",
       "title": "We have kept the policy rate unchanged",
       "url": "https://www.bis.org/speeches/20261110-we-have-kept-policy-rate-unchanged",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
-      "sha256": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
-      "title": "The future of FinTech",
-      "url": "https://www.bis.org/speeches/20261110-future-fintech",
       "source": "BIS",
       "source_id": "bis-speeches",
       "source_type": "oficial",
@@ -48615,6 +48434,32 @@
       "z": null
     },
     {
+      "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
+      "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
+      "title": "Message for the SEACEN masterclass - central bank communication",
+      "url": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
       "sha256": "d801fc3dddbed286709f55c33a9a8201be14b75254932ee34fbc0da83bc077d5",
       "title": "Integrated, open and resilient - Europe’s strengths in a fragmenting world",
@@ -48749,32 +48594,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
-      "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
-      "title": "Message for the SEACEN masterclass - central bank communication",
-      "url": "https://www.bis.org/speeches/20261109-message-seacen-masterclass-central-bank-communication",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -49580,38 +49399,6 @@
       "z": null
     },
     {
-      "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
-      "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
-      "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZUNnZDljUE1RcW9VZXU5QjZpZUdGTUNoazBCM1JRQmxfVGFWcnhnNnd3YUNycE0xZURiUmVKRXpoUkkwMFljSE9TRzV4Z29nOEFPVDZPVWFvekNLY0VIXzBCYWtmTEJvUE5vVlFzVS1JRFZzb21IQU1wQ3loYU1odkQzZ2RDaWFqdDNCVDYtalNWTnV3bmFQRlhB?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T08:00:00.000Z",
-      "currencies": [
-        "USD",
-        "JPY"
-      ],
-      "divisas": [
-        "USD",
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "acd528f217dac17e574a273442503c48ade357a084db62d47f90091272a22a6d",
       "sha256": "acd528f217dac17e574a273442503c48ade357a084db62d47f90091272a22a6d",
       "title": "Public service productivity, quarterly, UK - Office for National Statistics",
@@ -49667,6 +49454,38 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
+      "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
+      "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZUNnZDljUE1RcW9VZXU5QjZpZUdGTUNoazBCM1JRQmxfVGFWcnhnNnd3YUNycE0xZURiUmVKRXpoUkkwMFljSE9TRzV4Z29nOEFPVDZPVWFvekNLY0VIXzBCYWtmTEJvUE5vVlFzVS1JRFZzb21IQU1wQ3loYU1odkQzZ2RDaWFqdDNCVDYtalNWTnV3bmFQRlhB?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -49854,36 +49673,6 @@
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "299bc9e2fe3b7b120fdf597264769a5d8687a66dc20ec3e0225cb71bf4602912",
-      "sha256": "299bc9e2fe3b7b120fdf597264769a5d8687a66dc20ec3e0225cb71bf4602912",
-      "title": "[sdg_08_10] Real GDP per capita - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOS0p5TDBwQU50OWRCSk85aTdwZ0otRDdoWHJTLWl0WFJ3WGxlcVBkbmR1SzJCcmcwWjY1dDctd1kyeFZSLWNpUFVrRzA2Ny1kelNGMkxmbzBKM1Q1RWNXaURnbk5pR1NOYzI2SFJqVlRQLU1oZzJ3X2ttSm54WUc5S2I3SDNIZXNuVEJDd0R4bjBxSFU0VnF5d1R2aE8yRUo3WmpXWFp6cWNsOXFCcUx0OWV1cmRhMmxLc3B6VWVLcjJXUXZRQUs3dHRwWm9tSFVJc3lyMFAxclZkYW83MmFtYw?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T07:22:29.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -50536,6 +50325,36 @@
         "Inflacion_Empleo"
       ],
       "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
+      "sha256": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
+      "title": "[sdg_08_10] Real GDP per capita - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0bDdrSXBtVUdsZWJmOEJxSmJ4Z1ZTRU1YbWJ1eWZweGZjdmJ2WnFiZzN5S0FMQUlEU1FVQ0x2R0ZuOE9rbEpNOFhiTXhCN3RfSVhldi1TNWZOWGxGNC04UWFLdHM3NG5LX1N0dmw1Wmtub0xOQTVuTHhzeGRTVVk?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-05T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -52354,6 +52173,63 @@
       "z": null
     },
     {
+      "id": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
+      "sha256": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
+      "title": "A new payment scheme for Iceland - building a sovereign and secure payment system",
+      "url": "https://www.bis.org/speeches/20261103-new-payment-scheme-iceland-building-sovereign-and-secure-payment-system",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
+      "sha256": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
+      "title": "Stable banks, strong capital markets - Europe’s financial system for the future",
+      "url": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
       "sha256": "300e8aeab731c5a3154c34af744d14dcdadba2f3efb8ac457e4b2eeb85b6aa0d",
       "title": "Marking our tenth anniversary - one conviction, two principles and three challenges",
@@ -52553,63 +52429,6 @@
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
-      "sha256": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
-      "title": "A new payment scheme for Iceland - building a sovereign and secure payment system",
-      "url": "https://www.bis.org/speeches/20261103-new-payment-scheme-iceland-building-sovereign-and-secure-payment-system",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
-      "sha256": "d6a0c08fc7453b8e2bc72dd723d0202668c79ca5e9c17a7e4a800da158bcd809",
-      "title": "Stable banks, strong capital markets - Europe’s financial system for the future",
-      "url": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -55583,6 +55402,36 @@
       "z": null
     },
     {
+      "id": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
+      "sha256": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
+      "title": "Release of the Monetary Policy Report",
+      "url": "https://www.bis.org/speeches/20261029-release-monetary-policy-report",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
       "sha256": "f7dbf9da48bbd87bccec15b03cde067da5f14630b9e30be92bbe137817b62360",
       "title": "Economic resilience, thinner buffers, emerging risks globally - where does India stand?",
@@ -55702,36 +55551,6 @@
       "published_at": "2026-10-29T00:00:00.000Z",
       "currencies": [],
       "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
-      "sha256": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
-      "title": "Release of the Monetary Policy Report",
-      "url": "https://www.bis.org/speeches/20261029-release-monetary-policy-report",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
       "category": "BC",
       "categories": [
         "BC"
