@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-14T16:33:13.024Z",
+  "generated_at": "2026-11-14T16:33:29.993Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -17,14 +17,14 @@
   "coverage": {
     "USD": {
       "count_72h": 588,
-      "count_official_45d": 228,
+      "count_official_45d": 229,
       "last_item_at": "2026-11-14T16:25:15.000Z",
       "hours_since_last": 0.1,
       "hours_since_last_business": 0,
       "silence": false
     },
     "EUR": {
-      "count_72h": 67,
+      "count_72h": 68,
       "count_official_45d": 100,
       "last_item_at": "2026-11-14T12:18:44.000Z",
       "hours_since_last": 4.2,
@@ -65,14 +65,14 @@
     },
     "AUD": {
       "count_72h": 68,
-      "count_official_45d": 63,
+      "count_official_45d": 64,
       "last_item_at": "2026-11-14T08:33:48.000Z",
       "hours_since_last": 8,
       "hours_since_last_business": 0,
       "silence": false
     },
     "NZD": {
-      "count_72h": 90,
+      "count_72h": 89,
       "count_official_45d": 65,
       "last_item_at": "2026-11-14T08:35:35.000Z",
       "hours_since_last": 8,
@@ -2761,6 +2761,36 @@
       "mmt_lens": "ACTIVO_REAL_REFUGIO",
       "sovereignty_mmt": "ACTIVO_REAL_REFUGIO",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "166813693188e06f2f3b28d5b056b7c40e5a55c82fda31cbb6cdb5fc53444920",
+      "sha256": "166813693188e06f2f3b28d5b056b7c40e5a55c82fda31cbb6cdb5fc53444920",
+      "title": "[sdg_08_10] Real GDP per capita - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTGJfTEdaNUJMbFZia01Gb0JmS2NTU3hmS09YNVgtT0RhMkNsekQ0RXIzZGhJdWkzbXdiOE1qU2piQ2QxdHRlMC1VWDVRc3JCM2ZtQUxmOXQ0Y1pONG5EMHh2VVJhdjNwdWs0Nkh0cXI5WFZ0aE9uN2paYVRSbW1PZ0JVaUFtaTN0ajNrYVBtZVhucnRmaWRkTGs1Z0NEcElOUUJZNlMxTDl4eGx0cmREejVCWUU5a3FDcVBMTzh1Wnl4XzRB?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-14T07:28:55.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7021,7 +7051,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-13T20:55:41.000Z",
+      "published_at": "2026-11-13T20:55:36.000Z",
       "currencies": [
         "CAD"
       ],
@@ -38117,17 +38147,15 @@
       "sha256": "1cab1811437f20a599a1287efcfccda75f1cae3c026efbf3ac5f9365f42b1567",
       "title": "Why Australia hiked interest rates faster and harder than any other advanced economy this year - Switzer Daily",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnpBTlZucFpwWkJxMDB3UHFnazNlUTJ4a2FIQUROZnpibGtxMGZrYmZhY0FLenRZUmdOQUVac3NjZFQ3U0hGaXR6WERQRUk4MEtPR2VIWDA3YmhUU1VfRWFvbnV0YnpZTkFlNWE4RjNDajRGc3hjUlZlelF1aEtDNWU0UXVHaFY0bURGMHMwY3ctOXFMczRpdTlGZmpMNGhhdlVCdjdRNUFGenoxaURpNEhYbXc1c1phVHc?oc=5",
-      "source": "Prensa NZ",
-      "source_id": "nz-press",
+      "source": "Prensa AU",
+      "source_id": "au-press",
       "source_type": "agencia",
       "published_at": "2026-11-11T22:25:05.000Z",
       "currencies": [
-        "AUD",
-        "NZD"
+        "AUD"
       ],
       "divisas": [
-        "AUD",
-        "NZD"
+        "AUD"
       ],
       "category": "BC",
       "categories": [
@@ -41087,6 +41115,38 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a7af3cb54872c029a9f650bff4a993d8e4d8a40eb1e5754602039c57d79681ba",
+      "sha256": "a7af3cb54872c029a9f650bff4a993d8e4d8a40eb1e5754602039c57d79681ba",
+      "title": "2026 Census Privacy Statement - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdzhBTlpmNHowdVdsUm9qVXQ1c0x4b1l1OWlLY0szZjN2VmRPM0gtc1hBOVZuMDFTT0RCVDdYb3NBQmlOTUt0aWxFY192dHVTaURiRDZyNngzVkEtUTZDanp4R1Z4SFg4cUJwQnYtTnczZ3JFN3I2ZnZqbmpnc0tIZnZJSTdWdUNpRjBidERqQ3lKR0xqR3VuR0NJbTNwN29fWG5v?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -44415,10 +44475,10 @@
       "z": null
     },
     {
-      "id": "24ef7a55c7336a205b739706ba06e0ba600e7023e165c2357a4a6809e26f984a",
-      "sha256": "24ef7a55c7336a205b739706ba06e0ba600e7023e165c2357a4a6809e26f984a",
-      "title": "[sdg_08_40] Long-term unemployment rate by sex - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONlVLNFc5dzdDbXBucFFrWFM1MGI2Rlo0TXEyUi1GdDh0QTBHRms4YXBLQTgybTFwbFNmbmRTU3pjalM5WU14M1VXSzN1OGNibnBvWEdXazRTakxEVkJHMHFEc1pmNFBuWGg2RjRIdFBienRmT2xlT194MDh4MnAyb0pGZnVVRU1KelRZU1dQWkw?oc=5",
+      "id": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
+      "sha256": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
+      "title": "[une_educ_a] Unemployment by educational attainment level - annual data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5MS1ZcW1xaUFCNGdGcXAxOU1Zb2NZcXdZcnVQZ040akJybU5uSkNDZjdEb1dpTlhKM00weTRTNkN5MWNUbmVQU1BScmoyMnpCOWNFc0JnUmVxajNEQlZwTjFFcFN5SUZMSXpDS3VnME9VQ0hGVWpyVG9BT1ZXeFk?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -44541,10 +44601,10 @@
       "z": null
     },
     {
-      "id": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
-      "sha256": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
-      "title": "[une_educ_a] Unemployment by educational attainment level - annual data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5MS1ZcW1xaUFCNGdGcXAxOU1Zb2NZcXdZcnVQZ040akJybU5uSkNDZjdEb1dpTlhKM00weTRTNkN5MWNUbmVQU1BScmoyMnpCOWNFc0JnUmVxajNEQlZwTjFFcFN5SUZMSXpDS3VnME9VQ0hGVWpyVG9BT1ZXeFk?oc=5",
+      "id": "24ef7a55c7336a205b739706ba06e0ba600e7023e165c2357a4a6809e26f984a",
+      "sha256": "24ef7a55c7336a205b739706ba06e0ba600e7023e165c2357a4a6809e26f984a",
+      "title": "[sdg_08_40] Long-term unemployment rate by sex - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONlVLNFc5dzdDbXBucFFrWFM1MGI2Rlo0TXEyUi1GdDh0QTBHRms4YXBLQTgybTFwbFNmbmRTU3pjalM5WU14M1VXSzN1OGNibnBvWEdXazRTakxEVkJHMHFEc1pmNFBuWGg2RjRIdFBienRmT2xlT194MDh4MnAyb0pGZnVVRU1KelRZU1dQWkw?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -45384,10 +45444,10 @@
       "z": null
     },
     {
-      "id": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
-      "sha256": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
-      "title": "[sdg_08_10] Real GDP per capita - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0bDdrSXBtVUdsZWJmOEJxSmJ4Z1ZTRU1YbWJ1eWZweGZjdmJ2WnFiZzN5S0FMQUlEU1FVQ0x2R0ZuOE9rbEpNOFhiTXhCN3RfSVhldi1TNWZOWGxGNC04UWFLdHM3NG5LX1N0dmw1Wmtub0xOQTVuTHhzeGRTVVk?oc=5",
+      "id": "78f3d84893c2159fec25e3168942c01b95062a6a655d31c21f77b3ea39452245",
+      "sha256": "78f3d84893c2159fec25e3168942c01b95062a6a655d31c21f77b3ea39452245",
+      "title": "[une_rt_m] Unemployment by sex and age - monthly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQM1ltUzBTb1l4Mnd3eFZVMDYxcFN0bHRDajRaMmlIVTBPN0RCazBfSFRhY3JuSW9lNW0zNVQ3X293WHZ0RTJQQ1hrR2hSbkZlUWFDY3g3bnVqTHJ2T2VPVzQ3dnJvT0tQQVREOUt4cHVTeEp0UzZGSG4zb3djdDhNb2w3QW5MREJlNjAwRFVwaFg1TTBaVThucw?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -45402,7 +45462,7 @@
       "categories": [
         "Inflacion_Empleo"
       ],
-      "legacy_category": "dato_macro",
+      "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -46029,36 +46089,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6a1dc58955496d24ba40789b15f11312ff1febb00647447031671885f0e8f15c",
-      "sha256": "6a1dc58955496d24ba40789b15f11312ff1febb00647447031671885f0e8f15c",
-      "title": "[une_rt_m] Unemployment by sex and age - monthly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5lZzVCNFlRelV6SjVFM1M0emRjdjhOMVc4cWl2NGJLQnBBQ2NSeDdkSVhGZW5BdVppbEh6Zkk3dmZHWWFRR2dpNS1HT05sYlZSVEgwM1NwUjdHckNiRGFPSlQtWDRiRDlFVkdMMFliWTNQc0g0YjBKZnREa0o?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-04T16:28:49.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
