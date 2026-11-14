@@ -137,6 +137,8 @@ export function eventFamily(title) {
   if (/claims|jobless claims/.test(t)) return 'claims';
   if (/wage|labor cost|labour cost|earnings/.test(t)) return 'wages';
   if (/jobless|payroll|employment|job growth|\bnfp\b/.test(t)) return 'employment';
+  if (/\bppi\b|producer price/.test(t)) return 'ppi';
+  if (/\bwpi\b|wholesale price/.test(t)) return 'wpi';
   if (/\bcpi\b|\bipc\b|inflation/.test(t)) return 'cpi';
   if (/\bgdp\b|\bpib\b/.test(t)) return 'gdp';
   if (/housing|home sales|building permit/.test(t)) return 'housing';
