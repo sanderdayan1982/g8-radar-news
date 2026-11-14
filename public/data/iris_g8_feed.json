@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-14T05:16:24.509Z",
+  "generated_at": "2026-11-14T05:16:45.826Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -35,7 +35,7 @@
       "count_72h": 80,
       "count_official_45d": 74,
       "last_item_at": "2026-11-14T05:13:22.000Z",
-      "hours_since_last": 0,
+      "hours_since_last": 0.1,
       "hours_since_last_business": 0,
       "silence": false
     },
@@ -43,7 +43,7 @@
       "count_72h": 120,
       "count_official_45d": 70,
       "last_item_at": "2026-11-13T21:49:35.000Z",
-      "hours_since_last": 7.4,
+      "hours_since_last": 7.5,
       "hours_since_last_business": 2.2,
       "silence": false
     },
@@ -51,7 +51,7 @@
       "count_72h": 81,
       "count_official_45d": 18,
       "last_item_at": "2026-11-13T21:49:35.000Z",
-      "hours_since_last": 7.4,
+      "hours_since_last": 7.5,
       "hours_since_last_business": 2.2,
       "silence": false
     },
@@ -67,7 +67,7 @@
       "count_72h": 68,
       "count_official_45d": 61,
       "last_item_at": "2026-11-14T03:43:39.000Z",
-      "hours_since_last": 1.5,
+      "hours_since_last": 1.6,
       "hours_since_last_business": 0,
       "silence": false
     },
@@ -5642,7 +5642,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-13T20:56:03.000Z",
+      "published_at": "2026-11-13T20:55:51.000Z",
       "currencies": [
         "CAD"
       ],
@@ -49611,36 +49611,6 @@
       "z": null
     },
     {
-      "id": "78f3d84893c2159fec25e3168942c01b95062a6a655d31c21f77b3ea39452245",
-      "sha256": "78f3d84893c2159fec25e3168942c01b95062a6a655d31c21f77b3ea39452245",
-      "title": "[une_rt_m] Unemployment by sex and age - monthly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQM1ltUzBTb1l4Mnd3eFZVMDYxcFN0bHRDajRaMmlIVTBPN0RCazBfSFRhY3JuSW9lNW0zNVQ3X293WHZ0RTJQQ1hrR2hSbkZlUWFDY3g3bnVqTHJ2T2VPVzQ3dnJvT0tQQVREOUt4cHVTeEp0UzZGSG4zb3djdDhNb2w3QW5MREJlNjAwRFVwaFg1TTBaVThucw?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
       "sha256": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
       "title": "[sdg_08_10] Real GDP per capita - European Commission",
@@ -50286,6 +50256,36 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6a1dc58955496d24ba40789b15f11312ff1febb00647447031671885f0e8f15c",
+      "sha256": "6a1dc58955496d24ba40789b15f11312ff1febb00647447031671885f0e8f15c",
+      "title": "[une_rt_m] Unemployment by sex and age - monthly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5lZzVCNFlRelV6SjVFM1M0emRjdjhOMVc4cWl2NGJLQnBBQ2NSeDdkSVhGZW5BdVppbEh6Zkk3dmZHWWFRR2dpNS1HT05sYlZSVEgwM1NwUjdHckNiRGFPSlQtWDRiRDlFVkdMMFliWTNQc0g0YjBKZnREa0o?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T16:28:49.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
