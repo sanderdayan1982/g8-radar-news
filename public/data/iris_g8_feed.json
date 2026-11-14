@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-14T06:48:54.435Z",
+  "generated_at": "2026-11-14T06:54:01.912Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -19,7 +19,7 @@
       "count_72h": 633,
       "count_official_45d": 224,
       "last_item_at": "2026-11-14T02:01:03.000Z",
-      "hours_since_last": 4.8,
+      "hours_since_last": 4.9,
       "hours_since_last_business": 0,
       "silence": false
     },
@@ -27,7 +27,7 @@
       "count_72h": 103,
       "count_official_45d": 98,
       "last_item_at": "2026-11-13T21:06:44.000Z",
-      "hours_since_last": 9.7,
+      "hours_since_last": 9.8,
       "hours_since_last_business": 2.9,
       "silence": false
     },
@@ -35,7 +35,7 @@
       "count_72h": 82,
       "count_official_45d": 74,
       "last_item_at": "2026-11-14T06:04:53.000Z",
-      "hours_since_last": 0.7,
+      "hours_since_last": 0.8,
       "hours_since_last_business": 0,
       "silence": false
     },
@@ -43,15 +43,15 @@
       "count_72h": 120,
       "count_official_45d": 70,
       "last_item_at": "2026-11-13T21:49:35.000Z",
-      "hours_since_last": 9,
+      "hours_since_last": 9.1,
       "hours_since_last_business": 2.2,
       "silence": false
     },
     "CHF": {
-      "count_72h": 81,
+      "count_72h": 79,
       "count_official_45d": 18,
       "last_item_at": "2026-11-13T21:49:35.000Z",
-      "hours_since_last": 9,
+      "hours_since_last": 9.1,
       "hours_since_last_business": 2.2,
       "silence": false
     },
@@ -59,7 +59,7 @@
       "count_72h": 37,
       "count_official_45d": 7,
       "last_item_at": "2026-11-14T00:04:47.000Z",
-      "hours_since_last": 6.7,
+      "hours_since_last": 6.8,
       "hours_since_last_business": 0,
       "silence": false
     },
@@ -67,7 +67,7 @@
       "count_72h": 68,
       "count_official_45d": 61,
       "last_item_at": "2026-11-14T03:43:39.000Z",
-      "hours_since_last": 3.1,
+      "hours_since_last": 3.2,
       "hours_since_last_business": 0,
       "silence": false
     },
@@ -75,7 +75,7 @@
       "count_72h": 94,
       "count_official_45d": 66,
       "last_item_at": "2026-11-14T01:54:54.000Z",
-      "hours_since_last": 4.9,
+      "hours_since_last": 5,
       "hours_since_last_business": 0,
       "silence": false
     },
@@ -83,14 +83,14 @@
       "count_72h": 12,
       "count_official_45d": 0,
       "last_item_at": "2026-11-13T15:52:25.000Z",
-      "hours_since_last": 14.9,
+      "hours_since_last": 15,
       "hours_since_last_business": 8.1
     }
   },
   "risk_map": [
     {
       "currency": "USD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -109,17 +109,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": 1.9
+          "d24h_pp": 2.15
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -4.9
+          "d24h_pp": -5.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.15
+          "d24h_pp": 0.1
         },
         {
           "theme": "WASHINGTON",
@@ -129,7 +129,7 @@
         {
           "theme": "WASHINGTON",
           "question": "Pete Hegseth impeached by December 31, 2026?",
-          "d24h_pp": -0.6
+          "d24h_pp": -0.75
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -158,11 +158,13 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "currency": "EUR",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -181,17 +183,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": 1.9
+          "d24h_pp": 2.15
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -4.9
+          "d24h_pp": -5.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.15
+          "d24h_pp": 0.1
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -220,7 +222,9 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "currency": "GBP",
@@ -261,7 +265,7 @@
     },
     {
       "currency": "JPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -280,17 +284,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": 1.9
+          "d24h_pp": 2.15
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -4.9
+          "d24h_pp": -5.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.15
+          "d24h_pp": 0.1
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -319,11 +323,13 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "currency": "CHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -342,17 +348,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": 1.9
+          "d24h_pp": 2.15
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -4.9
+          "d24h_pp": -5.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.15
+          "d24h_pp": 0.1
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -381,11 +387,13 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "currency": "CAD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -404,21 +412,23 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": 1.9
+          "d24h_pp": 2.15
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -4.9
+          "d24h_pp": -5.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.15
+          "d24h_pp": 0.1
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "currency": "AUD",
@@ -496,7 +506,7 @@
     },
     {
       "currency": "XAU",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -514,17 +524,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through November 15?",
-          "d24h_pp": 1.9
+          "d24h_pp": 2.15
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -4.9
+          "d24h_pp": -5.1
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.15
+          "d24h_pp": 0.1
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -559,173 +569,207 @@
         {
           "theme": "WASHINGTON",
           "question": "Pete Hegseth impeached by December 31, 2026?",
-          "d24h_pp": -0.6
+          "d24h_pp": -0.75
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     }
   ],
   "pair_risk": [
     {
       "pair": "EURUSD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "GBPUSD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "USDJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "USD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "USDCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "USD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "USDCAD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "USD",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "AUDUSD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "AUD",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "NZDUSD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "EURGBP",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "GBP"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "EURJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "EURCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "EURCAD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "EURAUD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "AUD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "EURNZD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "NZD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "GBPJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "GBPCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "GBPCAD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "GBPAUD",
@@ -749,33 +793,39 @@
     },
     {
       "pair": "AUDJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "AUD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "AUDCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "AUD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "AUDCAD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "AUD",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "AUDNZD",
@@ -789,73 +839,87 @@
     },
     {
       "pair": "NZDJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "NZDCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "NZDCAD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "CADJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "CAD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "CADCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "CAD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "CHFJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "CHF",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     },
     {
       "pair": "XAUUSD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "XAU",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5.1 pp"
+      ]
     }
   ],
   "agenda_window": [
@@ -868,7 +932,7 @@
       "actual": "0.2%",
       "forecast": "0.0%",
       "previous": "0.1%",
-      "hours_from_now": -47.8,
+      "hours_from_now": -47.9,
       "window_status": null,
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -883,7 +947,7 @@
       "actual": "0.7%",
       "forecast": "0.7%",
       "previous": "0.5%",
-      "hours_from_now": -47.8,
+      "hours_from_now": -47.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -898,7 +962,7 @@
       "actual": "0.8%",
       "forecast": "0.0%",
       "previous": "-0.2%",
-      "hours_from_now": -47.8,
+      "hours_from_now": -47.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -913,7 +977,7 @@
       "actual": "-22.291B",
       "forecast": "-19.2B",
       "previous": "-18.0B",
-      "hours_from_now": -47.8,
+      "hours_from_now": -47.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -928,7 +992,7 @@
       "actual": "0.3%",
       "forecast": "-0.4%",
       "previous": "0.8%",
-      "hours_from_now": -47.8,
+      "hours_from_now": -47.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -943,7 +1007,7 @@
       "actual": "0.43%",
       "forecast": "0.4%",
       "previous": "1.7%",
-      "hours_from_now": -47.8,
+      "hours_from_now": -47.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -958,7 +1022,7 @@
       "actual": "-4.1%",
       "forecast": "-4.0%",
       "previous": "8.8%",
-      "hours_from_now": -41.3,
+      "hours_from_now": -41.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -973,7 +1037,7 @@
       "actual": "3.75M",
       "forecast": "3.89M",
       "previous": "3.99M",
-      "hours_from_now": -39.8,
+      "hours_from_now": -39.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -988,7 +1052,7 @@
       "actual": "-404.064B",
       "forecast": "-298.6B",
       "previous": "-26.9B",
-      "hours_from_now": -35.8,
+      "hours_from_now": -35.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1003,7 +1067,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.9%",
-      "hours_from_now": -23.8,
+      "hours_from_now": -23.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1018,7 +1082,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -23.3,
+      "hours_from_now": -23.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1048,7 +1112,7 @@
       "actual": "2.083B",
       "forecast": "2.84B",
       "previous": "1.77B",
-      "hours_from_now": -21.8,
+      "hours_from_now": -21.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1063,7 +1127,7 @@
       "actual": "0%",
       "forecast": "0.2%",
       "previous": "0.1%",
-      "hours_from_now": -20.8,
+      "hours_from_now": -20.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1078,7 +1142,7 @@
       "actual": "0.4%",
       "forecast": "0.4%",
       "previous": "0.4%",
-      "hours_from_now": -20.8,
+      "hours_from_now": -20.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1093,7 +1157,7 @@
       "actual": "-10.3B",
       "forecast": "-4.5B",
       "previous": "-6.8B",
-      "hours_from_now": -20.8,
+      "hours_from_now": -20.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1108,7 +1172,7 @@
       "actual": "0%",
       "forecast": "0.1%",
       "previous": "1.5%",
-      "hours_from_now": -17.3,
+      "hours_from_now": -17.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1123,7 +1187,7 @@
       "actual": "0.7%",
       "forecast": "0.5%",
       "previous": "-1.6%",
-      "hours_from_now": -17.3,
+      "hours_from_now": -17.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1138,7 +1202,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.7%",
-      "hours_from_now": -17.3,
+      "hours_from_now": -17.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "NINGUNO",
@@ -1153,7 +1217,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "1.3%",
-      "hours_from_now": -17.3,
+      "hours_from_now": -17.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "NINGUNO",
@@ -1168,7 +1232,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.6,
+      "hours_from_now": -16.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1183,7 +1247,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.1%",
-      "hours_from_now": -16.3,
+      "hours_from_now": -16.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1198,7 +1262,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.1,
+      "hours_from_now": -16.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1213,7 +1277,7 @@
       "actual": null,
       "forecast": "65B",
       "previous": "77B",
-      "hours_from_now": -15.3,
+      "hours_from_now": -15.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1228,7 +1292,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -15,
+      "hours_from_now": -15.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1243,7 +1307,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -14.8,
+      "hours_from_now": -14.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1258,7 +1322,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.8,
+      "hours_from_now": -13.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1273,7 +1337,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.8,
+      "hours_from_now": -9.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1288,7 +1352,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1303,7 +1367,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.2,
+      "hours_from_now": 4.1,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1312,7 +1376,7 @@
   ],
   "polymarket_geo": {
     "status": "OK",
-    "updated_at": "2026-11-14T06:23:16.854Z",
+    "updated_at": "2026-11-14T06:53:56.998Z",
     "markets": [
       {
         "theme": "IRAN_ORIENTE_MEDIO",
@@ -1321,7 +1385,7 @@
         "prob": 8.5,
         "d24h_pp": 1,
         "volume": 80174975.04,
-        "liquidity": 477156.31,
+        "liquidity": 463632.63,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
         "currencies": [
@@ -1340,7 +1404,7 @@
         "prob": 3.15,
         "d24h_pp": -0.1,
         "volume": 77544702.43,
-        "liquidity": 216911.67,
+        "liquidity": 217878.2,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/kharg-island-no-longer-under-iranian-control-by-march-31",
         "currencies": [
@@ -1356,10 +1420,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "Israel x Iran ceasefire continues through...?",
         "question": "Israel x Iran ceasefire continues through November 15?",
-        "prob": 98,
-        "d24h_pp": 1.9,
-        "volume": 53894272.18,
-        "liquidity": 643962.97,
+        "prob": 98.25,
+        "d24h_pp": 2.15,
+        "volume": 53894662.09,
+        "liquidity": 662915.95,
         "end_date": "2026-11-16T04:59:00Z",
         "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
         "currencies": [
@@ -1375,10 +1439,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "US announces end of Iranian blockade by...?",
         "question": "US announces end of Iranian blockade by December 31, 2026?",
-        "prob": 22.25,
-        "d24h_pp": -4.9,
-        "volume": 52829994.87,
-        "liquidity": 1078095.94,
+        "prob": 22.05,
+        "d24h_pp": -5.1,
+        "volume": 52831809.96,
+        "liquidity": 1073600.71,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
         "currencies": [
@@ -1394,10 +1458,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "Iran leader end of 2026?",
         "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-        "prob": 93.65,
-        "d24h_pp": 0.15,
-        "volume": 41073961.41,
-        "liquidity": 1550714.58,
+        "prob": 93.6,
+        "d24h_pp": 0.1,
+        "volume": 41074221.37,
+        "liquidity": 1550587.56,
         "end_date": "2026-12-31T17:00:00Z",
         "url": "https://polymarket.com/event/iran-leader-end-of-2026",
         "currencies": [
@@ -1415,8 +1479,8 @@
         "question": "Putin out as President of Russia by December 31, 2026?",
         "prob": 1.65,
         "d24h_pp": 0.1,
-        "volume": 32489336.53,
-        "liquidity": 637872.81,
+        "volume": 32489791.23,
+        "liquidity": 643376.6,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/putin-out-before-2027",
         "currencies": [
@@ -1433,7 +1497,7 @@
         "prob": 10.5,
         "d24h_pp": 0,
         "volume": 13393742.55,
-        "liquidity": 75851.09,
+        "liquidity": 78728.69,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/nato-x-russia-military-clash-in-2025",
         "currencies": [
@@ -1449,8 +1513,8 @@
         "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
         "prob": 10.5,
         "d24h_pp": 0,
-        "volume": 10909818.96,
-        "liquidity": 885466.06,
+        "volume": 10909844.06,
+        "liquidity": 904311.5,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by",
         "currencies": [
@@ -1467,7 +1531,7 @@
         "prob": 0.65,
         "d24h_pp": -0.05,
         "volume": 6392310.37,
-        "liquidity": 81824.17,
+        "liquidity": 79324.53,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-us-withdraw-from-nato-before-2027",
         "currencies": [
@@ -1484,7 +1548,7 @@
         "prob": 1.8,
         "d24h_pp": 0,
         "volume": 5625722.33,
-        "liquidity": 77710.43,
+        "liquidity": 76210.44,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-russia-invade-a-nato-country-in-2025",
         "currencies": [
@@ -1501,7 +1565,7 @@
         "prob": 1.2,
         "d24h_pp": 0.05,
         "volume": 1318181.36,
-        "liquidity": 173204.46,
+        "liquidity": 171441.14,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026",
         "currencies": [
@@ -1513,10 +1577,10 @@
         "theme": "WASHINGTON",
         "event_title": "Pete Hegseth impeached by...?",
         "question": "Pete Hegseth impeached by December 31, 2026?",
-        "prob": 2.6,
-        "d24h_pp": -0.6,
+        "prob": 2.45,
+        "d24h_pp": -0.75,
         "volume": 901295.28,
-        "liquidity": 126503.36,
+        "liquidity": 130533.17,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/pete-hegseth-impeached-by-june-30",
         "currencies": [
@@ -1531,7 +1595,7 @@
         "prob": 1.55,
         "d24h_pp": 0.1,
         "volume": 46403227.07,
-        "liquidity": 348902.47,
+        "liquidity": 348908.38,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027",
         "currencies": [
@@ -1548,7 +1612,7 @@
         "prob": 1.65,
         "d24h_pp": 0.1,
         "volume": 17282951.3,
-        "liquidity": 378923.39,
+        "liquidity": 378515.62,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/xi-jinping-out-before-2027",
         "currencies": [
@@ -1565,7 +1629,7 @@
         "prob": 8.5,
         "d24h_pp": 1,
         "volume": 3767710.79,
-        "liquidity": 200002.58,
+        "liquidity": 197650.73,
         "end_date": "2028-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-by-december-31-2027",
         "currencies": [
@@ -1582,7 +1646,7 @@
         "prob": 3.25,
         "d24h_pp": 1.05,
         "volume": 3553782.05,
-        "liquidity": 90854.94,
+        "liquidity": 85248.44,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/china-x-taiwan-military-clash-before-2027",
         "currencies": [
@@ -1599,7 +1663,7 @@
         "prob": 2.2,
         "d24h_pp": 0.1,
         "volume": 1474019.28,
-        "liquidity": 49827.86,
+        "liquidity": 49837.81,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/china-x-japan-military-clash-before-2027",
         "currencies": [
@@ -45331,66 +45395,6 @@
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "21bb60dafe0ab6a23d6554e814e6d86ff3de3b0222107e56e7d13251debe4315",
-      "sha256": "21bb60dafe0ab6a23d6554e814e6d86ff3de3b0222107e56e7d13251debe4315",
-      "title": "SNB Commends Idris Over Licence Fee Suspension, Seeks Presidential Assent To Bill - TG NEWS",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM1Bhblh5bnYxRFNwamVRRTVNWXM1ZTQxSmpfTVUxOGhIWnhiMWxpRUFDbDFyWnM5XzRQUE5lVEdtV0tJSmtyTEtFdDNSdjFGVUJYclJ5WlQ3b29KRFNBLTFMMGtvQUlYeUg3Qzh4c2k4U3hWRWRmeHdjV0FnRzBwN0JuYTVZamxSMTZrVjBQX0JGZW9IVGhscExGc3pwNm54MXhwZDl3?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-11T06:51:30.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "956e3169f5ad7d4479f14d8e9f08ec3e7823e94c5f4382ce85eb040023a7c2ab",
-      "sha256": "956e3169f5ad7d4479f14d8e9f08ec3e7823e94c5f4382ce85eb040023a7c2ab",
-      "title": "SNB Commends Idris Over Licence Fee Suspension, Seeks Presidential Assent To Bill - tgnews.com.ng",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOM1Bhblh5bnYxRFNwamVRRTVNWXM1ZTQxSmpfTVUxOGhIWnhiMWxpRUFDbDFyWnM5XzRQUE5lVEdtV0tJSmtyTEtFdDNSdjFGVUJYclJ5WlQ3b29KRFNBLTFMMGtvQUlYeUg3Qzh4c2k4U3hWRWRmeHdjV0FnRzBwN0JuYTVZamxSMTZrVjBQX0JGZW9IVGhscExGc3pwNm54MXhwZDl3?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-11T06:51:30.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
