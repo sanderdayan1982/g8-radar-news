@@ -3,28 +3,28 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-15T16:55:52.140Z",
+  "generated_at": "2026-11-15T16:56:11.649Z",
   "health": {
-    "sources_active": 25,
-    "sources_live": 25,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 9,
+    "sources_error": 0,
     "agenda_events_count": 110,
-    "status": "CRITICAL"
+    "status": "DEGRADED"
   },
   "coverage": {
     "USD": {
-      "count_72h": 408,
-      "count_official_45d": 239,
+      "count_72h": 409,
+      "count_official_45d": 240,
       "last_item_at": "2026-11-15T16:30:36.000Z",
       "hours_since_last": 0.4,
       "hours_since_last_business": 0,
       "silence": false
     },
     "EUR": {
-      "count_72h": 45,
+      "count_72h": 44,
       "count_official_45d": 100,
       "last_item_at": "2026-11-15T15:01:27.000Z",
       "hours_since_last": 1.9,
@@ -32,8 +32,8 @@
       "silence": false
     },
     "GBP": {
-      "count_72h": 29,
-      "count_official_45d": 72,
+      "count_72h": 30,
+      "count_official_45d": 73,
       "last_item_at": "2026-11-15T12:00:05.000Z",
       "hours_since_last": 4.9,
       "hours_since_last_business": 0,
@@ -58,13 +58,13 @@
     "CAD": {
       "count_72h": 25,
       "count_official_45d": 7,
-      "last_item_at": "2026-11-15T16:54:26.000Z",
-      "hours_since_last": 0,
+      "last_item_at": "2026-11-15T16:07:40.000Z",
+      "hours_since_last": 0.8,
       "hours_since_last_business": 0,
       "silence": false
     },
     "AUD": {
-      "count_72h": 49,
+      "count_72h": 50,
       "count_official_45d": 67,
       "last_item_at": "2026-11-15T14:14:33.000Z",
       "hours_since_last": 2.7,
@@ -1183,7 +1183,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.2,
+      "hours_from_now": 21.1,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2158,37 +2158,6 @@
   },
   "items": [
     {
-      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
-      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
-      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-15T16:54:26.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "d127603cedcfa801846e9c75a0a8f9978532eef014a321a4bae216383be65f80",
       "sha256": "d127603cedcfa801846e9c75a0a8f9978532eef014a321a4bae216383be65f80",
       "title": "Why being boring might help the NZX",
@@ -2294,6 +2263,37 @@
         "Inflacion_Empleo"
       ],
       "legacy_category": "geopolitica",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "sha256": "67be21b3f3b474f9c96b903fa7ee7d2dbef558edddf9daccaa2a2ed3484ef01d",
+      "title": "Joint Statement of the Government of Canada and the Bank of Canada on the Renewal of the Monetary Policy Framework",
+      "url": "https://www.bankofcanada.ca/2026/11/joint-statement-of-the-government-of-canada-and-the-bank-of-canada-on-the-renewal-of-the-monetary-policy-framework-2026/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-15T16:07:40.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
       "ficha_v6": "C2",
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -2745,6 +2745,39 @@
       "z": null
     },
     {
+      "id": "3cc17a8f64e7098213c12bf7a5798c45c5c49ecdc6ece2900a23d233501d6561",
+      "sha256": "3cc17a8f64e7098213c12bf7a5798c45c5c49ecdc6ece2900a23d233501d6561",
+      "title": "GDP monthly estimate, UK: February 2027 time series - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9RZXRxSS1ab2xnemJsaHNnTTJvbXVvdUx6UU5SdDBBTXVVbG9PYlpIUS03YWpmb09tNFpwWTRTcVZJc1U5c0E3RGdVblFRTEVZczMyckFuWjFxbXVSaXNsX0NjSTl1QlRkdHVJR2QyS3FVdjAtLWxjcVdQWGV4Ukk?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-15T11:19:40.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "3e84889db5edf3305ef20711bdc76e7ba2bb9dfe4bcab5417c039712dd840f67",
       "sha256": "3e84889db5edf3305ef20711bdc76e7ba2bb9dfe4bcab5417c039712dd840f67",
       "title": "Ukraine: missile hits petrochemical plant and oil refinery in Russia’s Tatarstan, defense facility in Bryansk",
@@ -3007,6 +3040,38 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "09367ded48d68aa1f0a30fe8e468dc7eeaebd6ec4dc23ff4f97b4e01b081ca15",
+      "sha256": "09367ded48d68aa1f0a30fe8e468dc7eeaebd6ec4dc23ff4f97b4e01b081ca15",
+      "title": "Release calendar - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTUdmNjEwWEdrYmJFRGpuYjV3dkJLZWVMbUlFcXd6SUxUSHIwZGRBZ2JtT0ZKek9mSXkzNGZIN0VTMWNoVDNUanpZTDAyU19XQ2pobXF3MEF4d0NEVUdVeFNLTnlQMmRwX1pJaURsVnpmUTJfT3FPMkhKNXpjU2Y2ckdmZUhFUlQ5SEE?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-15T06:40:26.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -10705,38 +10770,6 @@
       "z": null
     },
     {
-      "id": "75888dd0dcd85b3405948745beba68040c35522c2c116b6c552c7b573f565d5d",
-      "sha256": "75888dd0dcd85b3405948745beba68040c35522c2c116b6c552c7b573f565d5d",
-      "title": "Swiss Franc Forecast: USD/CHF 3% Rally Threatens Multi-Year Downtrend - FOREX.com",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUE9QT2pEY1VxV3RaMlJqLW9qUE4tVmJEc19vMWJoN2NYWmZKZGNxVld6MzdmSmVPLWQ4eXlCdlNHRGtxbFY5VTVyNEpxcFRTaDh5VERBTFYxalY1bm5vakRzdERKVldwN0QxRW9rN2djZ2tFS3p5X0w2dzFiYUhqOVpYMC1XZ3VCdDB6cmZFU3RZSDI0LVNZR25wcnJoWFA1dkliZVVVVVRBdDYwMkJqVVJEcEliYXJCcDFlWHpBeXh5d05YMFhn0gHTAUFVX3lxTE85WVl2VFh4NnU0MThRLVRISE13dC1ORHZqM05ubWFGRVFpbEd3ajVVMjg1d3A1UnBuZXBMVUlPVXQ3aW5Oak5aSHduZlVnT0tLazZzaUZRakJ3WVZxajYxXzN4WXBxT2Zjd0d6RFVFMkwtblRTZkwwUnpiZDE1amJoT1Q3cWVlVVFYbWxKa0hpb2tKN0tGcEhEc1F2aHZyZ3VZRHZZODVlczAza0pVSmtUSllieWtKazRRMkpWZlZoM2pkUzV3d1p2QW84M2N4MHhNLWM?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-13T18:46:42.000Z",
-      "currencies": [
-        "USD",
-        "CHF"
-      ],
-      "divisas": [
-        "USD",
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "aca3d05070e1df3c93146c9984e258c795c05c4ba825681e61d2e5e7a6b8ac3f",
       "sha256": "aca3d05070e1df3c93146c9984e258c795c05c4ba825681e61d2e5e7a6b8ac3f",
       "title": "Microsoft asked for info about outage by lawmaker - Politico. $MSFT",
@@ -10874,6 +10907,38 @@
       "mmt_lens": "REPRICING_MONETARIO_A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "978131883476ad63dcb8a91fc4e08cfd9477912c8c4b56d7d21ee79768360c41",
+      "sha256": "978131883476ad63dcb8a91fc4e08cfd9477912c8c4b56d7d21ee79768360c41",
+      "title": "Swiss Franc Forecast: USD/CHF 3% Rally Threatens Multi-Year Downtrend - FOREX.com",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRHNSV0ZkaHk2R3J5ZC1oTm5uME9iQnVKU0JWOHExVDFscXpNRGdkbFpHbmd6RE1uU3Q2M2V6cFFhalB1dFhCSXZwWVRmQXB2QkxoX1pmUDNlX1htZ1dpazBZTnJJOHZTUnJnMThOOUFpYXdDNU9sR0o1Vy1SSnBWUzh3MFk3Nk1RcE5kMk54WGdMckhFYXJPTWtRWWxBMlI2WEdaSjJweVZSU0tockZEc2R2Zk5id2FGWFZzV3pERHFHdWdyZ2EwSUxveHZndWvSAc8BQVVfeXFMT0RzUldGZGh5NkdyeWQtaE5ubjBPYkJ1SlNCVjhxMVQxbHF6TURnZGxaR25nekRNblN0NjNlenBRYWpQdXRYQkl2cFlUZkFwdkJMaF9aZlAzZV9YbWdXaWswWU5ySTh2U1JyZzE4TjlBaWF3QzVPbEdKNVctUkpwVlM4dzBZNzZNUXBOZDJOeFhnTHJIRWFyT01rUVlsQTJSNlhHWkoycHlWUlNLaHJGRHNkdmZOYndhRlhWc1d6RERxR3VncmdhMElMb3h2Z3Vr?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-13T18:07:55.000Z",
+      "currencies": [
+        "USD",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -27368,66 +27433,6 @@
       "z": null
     },
     {
-      "id": "9266e213ae5260e97af70a19c104d53c2c7938cc6df64c22df9745a07a4baba6",
-      "sha256": "9266e213ae5260e97af70a19c104d53c2c7938cc6df64c22df9745a07a4baba6",
-      "title": "US probing if Alice Huang helped smuggle Super Micro products. $NVDA $SMCI",
-      "url": "https://t.me/FinancialJuice/146723",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-12T16:55:57.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a1ebe8c5c61791a9996715e47c20cc6f3d494080eb018167c1fad54ea8a2d976",
-      "sha256": "a1ebe8c5c61791a9996715e47c20cc6f3d494080eb018167c1fad54ea8a2d976",
-      "title": "Euro falls to the lowest since april 2025",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-12T16:55:46.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "b0f406421ee5fb8f2e5235b37dfda6c5a60c29175cc4b46a5bd9523341b53e93",
       "sha256": "b0f406421ee5fb8f2e5235b37dfda6c5a60c29175cc4b46a5bd9523341b53e93",
       "title": "Postpandemic employment recovery by industry sector and selected states - Bureau of Labor Statistics (.gov)",
@@ -36495,38 +36500,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "be38aef7307cde22657e2327e3bb343c7c403380f828b4929537ab7efd09e236",
-      "sha256": "be38aef7307cde22657e2327e3bb343c7c403380f828b4929537ab7efd09e236",
-      "title": "Release calendar - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPd1cycVA2T0xRSF9BbVRVRnczd1FCN0xReXY0ZWVOcVFOY2tjb29xRWtaeWJUSm1kaUVKaWljdmJ4RjBMendXQTVXbWlweUx0Z3BPTnFkLVM1Z2pkNGQ0RTZGVldRWUJvWjNZRkE5aGlrbGZsMFZ4MVhHOGhidFd0STQwV2xXU1FfRlM1VA?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-10-31T21:43:45.000Z",
-      "currencies": [
-        "AUD",
-        "USD"
-      ],
-      "divisas": [
-        "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
