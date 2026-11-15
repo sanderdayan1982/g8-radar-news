@@ -9,6 +9,23 @@ import {
 } from '../src/executionWindows.js';
 import { projectIrisFeed } from '../src/irisCollector.js';
 
+// Slice of CME_FXVOL_shadow.json (session 2026-11-12, generated_utc 2026-11-14T01:38:17Z).
+// The publisher fetches the same document. imm is absent in that file.
+const FXVOL_FOR_PUBLISHED = {
+  generated_utc: '2026-11-14T01:38:17Z',
+  session: '2026-11-12',
+  fut_roll_window: { start: '2026-12-07', end: '2026-12-19', active: false },
+  currencies: {
+    EUR: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
+    JPY: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
+    GBP: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
+    AUD: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
+    CAD: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
+    CHF: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
+    NZD: { status: 'NA', exp1: null, dte1: null },
+  },
+};
+
 const FORBIDDEN = /\blong\b|\bshort\b|\bcompra\b|\bvende\b|subirá|bajará/i;
 const IRIS_KEYS = [
   'schema_version', 'version', 'engine_version', 'llm_calls', 'generated_at',
@@ -79,22 +96,20 @@ test('el cambio horario de marzo y de octubre mueve Londres y Nueva York en WAT'
 });
 
 test('el 31-dic-2026 es fin de mes, de trimestre y de año, y gotobi', () => {
+  // RELOJES-01 C1, orden Sander 15-nov
   const block = buildExecutionWindows('2026-12-31T12:00:00+01:00');
   assert.equal(block.tz, 'Africa/Malabo');
   assert.equal(block.analysis.date, '2026-12-31');
-  assert.equal(block.analysis.eom, true);
-  assert.equal(block.analysis.qend_window, true);
-  assert.equal(block.analysis.yend_window, true);
-  assert.equal(block.analysis.gotobi, true);
+  assert.equal(block.analysis.eom, false);
+  assert.equal(block.analysis.qend_window, false);
+  assert.equal(block.analysis.yend_window, false);
+  assert.equal(block.analysis.gotobi, false);
   assert.equal(block.analysis.fix_tokyo.wat, '01:55');
-  assert.equal(block.analysis.fix_tokyo.gotobi, true);
+  assert.equal(block.analysis.fix_tokyo.gotobi, false);
   assert.equal(block.analysis.fix_london.wat, '17:00');
   assert.equal(block.analysis.nyc_cut.wat, '16:00');
-  assert.deepEqual(block.analysis.blocked_entry, [
-    { fix: 'fix_tokyo', from: '00:55', to: '01:55' },
-    { fix: 'fix_london', from: '16:00', to: '17:00' },
-  ]);
-  assert.equal(executionWindowHeader(block), '⏱ Fin de trimestre y de año T-0 · gotobi');
+  assert.deepEqual(block.analysis.blocked_entry, []);
+  assert.equal(executionWindowHeader(block), '⏱ sin ventana');
   assert.equal(block.next_business_day.date, '2027-01-04');
 });
 
@@ -116,10 +131,11 @@ test('2026-12-25 sigue siendo gotobi: Tokio abre, Londres y Nueva York no', () =
 });
 
 test('2027-12-31 no es sesión hábil: Nueva York observa el año nuevo', () => {
+  // RELOJES-01 C1, orden Sander 15-nov
   const block = buildExecutionWindows('2027-12-31T12:00:00+01:00');
   assert.equal(block.analysis.eom, false);
   assert.equal(block.analysis.qend_window, false);
-  assert.equal(block.analysis.gotobi, true);
+  assert.equal(block.analysis.gotobi, false);
   const eve = buildExecutionWindows('2027-12-30T12:00:00+01:00');
   assert.equal(eve.analysis.eom, true);
   assert.equal(eve.analysis.qend_window, true);
@@ -181,5 +197,5 @@ test('el feed IRIS suma execution_windows y conserva el contrato', () => {
   const published = JSON.parse(readFileSync(new URL('../public/data/iris_g8_feed.json', import.meta.url), 'utf8'));
   assert.deepEqual(Object.keys(published), IRIS_KEYS);
   assert.equal(published.llm_calls, 0);
-  assert.deepEqual(published.execution_windows, buildExecutionWindows(published.generated_at));
+  assert.deepEqual(published.execution_windows, buildExecutionWindows(published.generated_at, FXVOL_FOR_PUBLISHED));
 });

@@ -74,6 +74,7 @@ const prevStoreIds = (prevStore?.items || []).map(itemKey).join('\n');
 const nextStoreIds = memoryItems.map(itemKey).join('\n');
 const storeChanged = !prevStore || prevStoreIds !== nextStoreIds;
 const polyChanged = JSON.stringify(irisFeed.polymarket_geo) !== JSON.stringify(prevIris?.polymarket_geo);
+const windowsChanged = JSON.stringify(irisFeed.execution_windows) !== JSON.stringify(prevIris?.execution_windows);
 const historyChanged = JSON.stringify(polymarketHistory) !== JSON.stringify(prevPoly);
 const shouldWrite = !prevFull
   || newItemsCount > 0
@@ -81,6 +82,7 @@ const shouldWrite = !prevFull
   || schemaChanged
   || itemsChanged
   || polyChanged
+  || windowsChanged
   || historyChanged
   || (prevFull?.items?.length || 0) === 0
   || (prevFull?.sources?.length || 0) !== fullState.sources.length

@@ -14,6 +14,27 @@
  * Sesión hábil: lunes a viernes que no está en ninguna de las tres tablas.
  * Fuera de 2026–2027 no hay tabla: el dato sale UNAVAILABLE.
  *
+ * RELOJES-01 C1 (Sander, 15-nov-2026): Tokio no tenía el cierre bancario de fin
+ * de año. Se añaden 31-dic y 2-ene y 3-ene donde la tabla publicada llega:
+ * 2026-12-31, 2027-01-02, 2027-01-03 y 2027-12-31. El 1-ene ya estaba.
+ * 2028-01-02 y 2028-01-03 caen fuera de 2026–2027 y no se insertan: ese año
+ * sigue en UNAVAILABLE.
+ *
+ * FAMILIAS-01 A (Sander, 15-nov-2026), REVISION_TRIPLE §3.A. Campos SHADOW
+ * en el día: fx_roll, imm, opex, fiscal_jp, fiscal_us. No entran en
+ * blocked_entry y no reescriben eom, gotobi, las ventanas ni los fixings.
+ * fx_roll, imm y opex salen de CME_FXVOL_shadow.json (g8-macro-pipeline,
+ * scripts/cme_fxvol_shadow.py). El escritor del feed lo pide con
+ * fetchFxvolShadow (raw de GitHub) y lo pasa a buildExecutionWindows.
+ * Si falta o está
+ * viejo, UNAVAILABLE y null. No se rellena con 0 ni con el dato anterior.
+ * La ventana de fx_roll no se desplaza: el active del productor se conserva
+ * y el estado BEFORE / INSIDE / AFTER se calcula sobre esas fechas.
+ * imm se lee de fut_roll_window.imm. Hoy el productor no lo escribe (calcula
+ * el tercer miércoles y no lo guarda). Sin esa clave, UNAVAILABLE: no se
+ * inventa el miércoles. opex es exp1 por divisa (vencimiento del modelo,
+ * DTE >= 7), sin fundir fechas. fiscal_jp y fiscal_us son por regla.
+ *
  * public/executionWindows.js es la misma copia: el navegador no importa src/.
  */
 
@@ -28,11 +49,11 @@ const TOKYO = new Set([
   '2026-01-01', '2026-01-12', '2026-02-11', '2026-02-23', '2026-03-20',
   '2026-04-29', '2026-05-03', '2026-05-04', '2026-05-05', '2026-05-06',
   '2026-07-20', '2026-08-11', '2026-09-21', '2026-09-22', '2026-09-23',
-  '2026-10-12', '2026-11-03', '2026-11-23',
-  '2027-01-01', '2027-01-11', '2027-02-11', '2027-02-23', '2027-03-21', '2027-03-22',
+  '2026-10-12', '2026-11-03', '2026-11-23', '2026-12-31',
+  '2027-01-01', '2027-01-02', '2027-01-03', '2027-01-11', '2027-02-11', '2027-02-23', '2027-03-21', '2027-03-22',
   '2027-04-29', '2027-05-03', '2027-05-04', '2027-05-05',
   '2027-07-19', '2027-08-11', '2027-09-20', '2027-09-23',
-  '2027-10-11', '2027-11-03', '2027-11-23',
+  '2027-10-11', '2027-11-03', '2027-11-23', '2027-12-31',
 ]);
 
 const LONDON = new Set([
@@ -132,6 +153,13 @@ function gotobiSet(year, month) {
 }
 
 function isGotobiDate(value) {
+  // Un cierre tabulado de Tokio no recibe el gotobi: shiftGotobi solo devuelve
+  // un día hábil de Tokio. No hace falta el mes siguiente para saberlo
+  // (RELOJES-01 C1). El fin de semana que no está en la tabla sigue el camino
+  // de antes.
+  const closed = plazaClosed(value, TOKYO);
+  if (closed === 'UNAVAILABLE') return 'UNAVAILABLE';
+  if (closed === true) return false;
   const own = gotobiSet(yearOf(value), monthOf(value));
   if (own === 'UNAVAILABLE') return 'UNAVAILABLE';
   if (own.has(value)) return true;
@@ -257,6 +285,172 @@ function minusHour(hhmm) {
   return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
 }
 
+// CME options publica a las 13:30 y a las 17:00 UTC. 72 h cubren el viernes
+// 17:00 UTC hasta el lunes antes de la pasada siguiente. Pasado ese plazo el
+// documento es STALE: no se arrastra la sesión anterior.
+export const FXVOL_MAX_AGE_MS = 72 * 60 * 60 * 1000;
+
+export const FXVOL_SHADOW_URL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-macro-pipeline/main/data/CME_FXVOL_shadow.json';
+
+const FXVOL_CCY = ['EUR', 'JPY', 'GBP', 'AUD', 'CAD', 'CHF', 'NZD'];
+
+const OPEX_NOTE = 'exp1 es el vencimiento del modelo (DTE >= 7), no todos los vencimientos';
+
+function isIsoDate(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [y, m, d] = value.split('-').map(Number);
+  const utc = new Date(Date.UTC(y, m - 1, d));
+  return utc.getUTCFullYear() === y && utc.getUTCMonth() === m - 1 && utc.getUTCDate() === d;
+}
+
+function spanState(value, start, end) {
+  if (value < start) return 'BEFORE';
+  if (value > end) return 'AFTER';
+  return 'INSIDE';
+}
+
+function blankRoll(reason) {
+  return {
+    mode: 'SHADOW',
+    status: 'UNAVAILABLE',
+    reason,
+    start: null,
+    end: null,
+    active: null,
+    state: 'UNAVAILABLE',
+  };
+}
+
+function blankImm(reason) {
+  return { mode: 'SHADOW', status: 'UNAVAILABLE', reason, date: null };
+}
+
+function blankOpex(reason) {
+  return {
+    mode: 'SHADOW',
+    status: 'UNAVAILABLE',
+    reason,
+    note: OPEX_NOTE,
+    currencies: null,
+    earliest: null,
+  };
+}
+
+export function fiscalCalendar(value) {
+  const y = yearOf(value);
+  const jpStartYear = value < iso(y, 4, 1) ? y - 1 : y;
+  const jpStart = iso(jpStartYear, 4, 1);
+  const jpEnd = iso(jpStartYear + 1, 3, 31);
+  const usStartYear = value < iso(y, 10, 1) ? y - 1 : y;
+  const usStart = iso(usStartYear, 10, 1);
+  const usEnd = iso(usStartYear + 1, 9, 30);
+  const baseline = [
+    iso(usStartYear, 12, 15),
+    iso(usStartYear + 1, 1, 15),
+    iso(usStartYear + 1, 4, 15),
+    iso(usStartYear + 1, 6, 15),
+    iso(usStartYear + 1, 9, 15),
+  ].map((date) => ({ date, scope: 'BASELINE', effect: 'TGA/reserves' }));
+  return {
+    fiscal_jp: {
+      mode: 'SHADOW',
+      status: 'OK',
+      start: jpStart,
+      end: jpEnd,
+      state: spanState(value, jpStart, jpEnd),
+    },
+    fiscal_us: {
+      mode: 'SHADOW',
+      status: 'OK',
+      start: usStart,
+      end: usEnd,
+      state: spanState(value, usStart, usEnd),
+      baseline,
+    },
+  };
+}
+
+function resolveFxvol(fxvol, instant) {
+  if (fxvol == null) return { kind: 'MISSING' };
+  if (typeof fxvol !== 'object' || Array.isArray(fxvol)) return { kind: 'STALE' };
+  const generated = Date.parse(fxvol.generated_utc);
+  const at = instant.getTime();
+  if (!Number.isFinite(generated) || !Number.isFinite(at)) return { kind: 'STALE' };
+  const age = at - generated;
+  if (age < 0 || age > FXVOL_MAX_AGE_MS) return { kind: 'STALE' };
+  return { kind: 'FRESH', doc: fxvol };
+}
+
+function fxRollFor(value, fx) {
+  if (fx.kind !== 'FRESH') return blankRoll(fx.kind === 'MISSING' ? 'MISSING' : 'STALE');
+  const roll = fx.doc.fut_roll_window;
+  if (roll == null || typeof roll !== 'object' || Array.isArray(roll)) return blankRoll('ABSENT');
+  const start = isIsoDate(roll.start) ? roll.start : null;
+  const end = isIsoDate(roll.end) ? roll.end : null;
+  if (start == null || end == null || end < start) return blankRoll('INVALID');
+  return {
+    mode: 'SHADOW',
+    status: 'OK',
+    reason: null,
+    start,
+    end,
+    active: typeof roll.active === 'boolean' ? roll.active : null,
+    state: spanState(value, start, end),
+  };
+}
+
+function immFor(fx) {
+  if (fx.kind !== 'FRESH') return blankImm(fx.kind === 'MISSING' ? 'MISSING' : 'STALE');
+  const roll = fx.doc.fut_roll_window;
+  const raw = roll != null && typeof roll === 'object' && !Array.isArray(roll) ? roll.imm : undefined;
+  if (!isIsoDate(raw)) return blankImm('ABSENT');
+  return { mode: 'SHADOW', status: 'OK', reason: null, date: raw };
+}
+
+function opexFor(fx) {
+  if (fx.kind !== 'FRESH') return blankOpex(fx.kind === 'MISSING' ? 'MISSING' : 'STALE');
+  const table = fx.doc.currencies;
+  if (table == null || typeof table !== 'object' || Array.isArray(table)) return blankOpex('ABSENT');
+  const keys = Object.keys(table);
+  const ordered = [
+    ...FXVOL_CCY.filter((code) => keys.includes(code)),
+    ...keys.filter((code) => !FXVOL_CCY.includes(code)),
+  ];
+  const currencies = {};
+  let earliest = null;
+  for (const currency of ordered) {
+    const row = table[currency];
+    const rowObj = row != null && typeof row === 'object' && !Array.isArray(row) ? row : null;
+    const exp1 = rowObj != null && isIsoDate(rowObj.exp1) ? rowObj.exp1 : null;
+    const dte1 = rowObj != null && typeof rowObj.dte1 === 'number' && Number.isFinite(rowObj.dte1) ? rowObj.dte1 : null;
+    currencies[currency] = { exp1, dte1 };
+    if (exp1 == null) continue;
+    if (earliest == null || exp1 < earliest.exp1) earliest = { exp1, currencies: [currency] };
+    else if (exp1 === earliest.exp1) earliest.currencies.push(currency);
+  }
+  const any = earliest != null;
+  return {
+    mode: 'SHADOW',
+    status: any ? 'OK' : 'UNAVAILABLE',
+    reason: any ? null : 'ABSENT',
+    note: OPEX_NOTE,
+    currencies,
+    earliest,
+  };
+}
+
+export async function fetchFxvolShadow(fetchImpl = globalThis.fetch) {
+  try {
+    const res = await fetchImpl(FXVOL_SHADOW_URL, { signal: AbortSignal.timeout(4000) });
+    if (res == null || res.ok !== true) return null;
+    const doc = await res.json();
+    if (doc == null || typeof doc !== 'object' || Array.isArray(doc)) return null;
+    return doc;
+  } catch {
+    return null;
+  }
+}
+
 function blockedEntry(value, flags) {
   const triggers = [flags.eom, flags.qend_window, flags.yend_window, flags.gotobi];
   if (triggers.includes('UNAVAILABLE')) return 'UNAVAILABLE';
@@ -269,11 +463,12 @@ function blockedEntry(value, flags) {
   ];
 }
 
-function dayBlock(value) {
+function dayBlock(value, fx) {
   const gotobi = isGotobiDate(value);
   const eom = isEom(value);
   const qendWindow = inQendWindow(value);
   const yendWindow = inYendWindow(value);
+  const fiscal = fiscalCalendar(value);
   return {
     date: value,
     eom,
@@ -289,6 +484,11 @@ function dayBlock(value) {
       yend_window: yendWindow,
       gotobi,
     }),
+    fx_roll: fxRollFor(value, fx),
+    imm: immFor(fx),
+    opex: opexFor(fx),
+    fiscal_jp: fiscal.fiscal_jp,
+    fiscal_us: fiscal.fiscal_us,
   };
 }
 
@@ -302,18 +502,19 @@ export function watDate(instant) {
   return `${parts.year}-${parts.month}-${parts.day}`;
 }
 
-export function buildExecutionWindows(instant) {
+export function buildExecutionWindows(instant, fxvol) {
   const date = instant == null || instant === ''
     ? new Date()
     : instant instanceof Date ? instant : new Date(instant);
   if (!Number.isFinite(date.getTime())) return { tz: WAT_TZ, status: 'UNAVAILABLE' };
   const analysisDate = watDate(date);
   if (!COVERED_YEARS.has(yearOf(analysisDate))) return { tz: WAT_TZ, status: 'UNAVAILABLE' };
+  const fx = resolveFxvol(fxvol, date);
   const next = nextBusinessDay(analysisDate);
   return {
     tz: WAT_TZ,
-    analysis: dayBlock(analysisDate),
-    next_business_day: next === 'UNAVAILABLE' ? 'UNAVAILABLE' : dayBlock(next),
+    analysis: dayBlock(analysisDate, fx),
+    next_business_day: next === 'UNAVAILABLE' ? 'UNAVAILABLE' : dayBlock(next, fx),
   };
 }
 
