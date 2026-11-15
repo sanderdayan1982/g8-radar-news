@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-15T05:42:28.619Z",
+  "generated_at": "2026-11-15T05:42:47.266Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -11,7 +11,7 @@
     "sources_total": 35,
     "sources_empty": 1,
     "sources_error": 0,
-    "agenda_events_count": 97,
+    "agenda_events_count": 110,
     "status": "DEGRADED"
   },
   "coverage": {
@@ -90,9 +90,17 @@
   "risk_map": [
     {
       "currency": "USD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
-      "lock_events": [],
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
+      "lock_events": [
+        {
+          "lock_class": "DISCURSO",
+          "title": "Fed Chairman Warsh Speaks",
+          "time": "2026-11-16T17:00:00.000Z",
+          "hours_until": 35.3,
+          "retirar_limitadas": false
+        }
+      ],
       "retirar_limitadas": false,
       "silence": false,
       "polymarket": [
@@ -158,7 +166,9 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "currency": "EUR",
@@ -385,9 +395,31 @@
     },
     {
       "currency": "CAD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
-      "lock_events": [],
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
+      "lock_events": [
+        {
+          "lock_class": "TIER1_DATO",
+          "title": "CPI m/m",
+          "time": "2026-11-16T13:30:00.000Z",
+          "hours_until": 31.8,
+          "retirar_limitadas": false
+        },
+        {
+          "lock_class": "TIER1_DATO",
+          "title": "Median CPI y/y",
+          "time": "2026-11-16T13:30:00.000Z",
+          "hours_until": 31.8,
+          "retirar_limitadas": false
+        },
+        {
+          "lock_class": "TIER1_DATO",
+          "title": "Trimmed CPI y/y",
+          "time": "2026-11-16T13:30:00.000Z",
+          "hours_until": 31.8,
+          "retirar_limitadas": false
+        }
+      ],
       "retirar_limitadas": false,
       "silence": false,
       "polymarket": [
@@ -418,13 +450,23 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "currency": "AUD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
-      "lock_events": [],
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
+      "lock_events": [
+        {
+          "lock_class": "DISCURSO",
+          "title": "RBA Gov Bullock Speaks",
+          "time": "2026-11-16T22:50:00.000Z",
+          "hours_until": 41.1,
+          "retirar_limitadas": false
+        }
+      ],
       "retirar_limitadas": false,
       "silence": false,
       "polymarket": [
@@ -455,13 +497,23 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "currency": "NZD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
-      "lock_events": [],
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
+      "lock_events": [
+        {
+          "lock_class": "OTRO_HIGH",
+          "title": "Inflation Expectations q/q",
+          "time": "2026-11-17T02:00:00.000Z",
+          "hours_until": 44.3,
+          "retirar_limitadas": false
+        }
+      ],
       "retirar_limitadas": false,
       "silence": false,
       "polymarket": [
@@ -492,7 +544,9 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "evento de alto impacto"
+      ]
     },
     {
       "currency": "XAU",
@@ -569,73 +623,89 @@
   "pair_risk": [
     {
       "pair": "EURUSD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "EUR",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "GBPUSD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "GBP",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "USDJPY",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "USD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "USDCHF",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "USD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "USDCAD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "USD",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso",
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "AUDUSD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "AUD",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "NZDUSD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "NZD",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "evento de alto impacto",
+        "discurso"
+      ]
     },
     {
       "pair": "EURGBP",
@@ -669,33 +739,39 @@
     },
     {
       "pair": "EURCAD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "EUR",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "EURAUD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "EUR",
         "quote": "AUD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "EURNZD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "legs": {
         "base": "EUR",
         "quote": "NZD"
       },
-      "reasons": []
+      "reasons": [
+        "evento de alto impacto"
+      ]
     },
     {
       "pair": "GBPJPY",
@@ -719,123 +795,150 @@
     },
     {
       "pair": "GBPCAD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "GBP",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "GBPAUD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "GBP",
         "quote": "AUD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "GBPNZD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "legs": {
         "base": "GBP",
         "quote": "NZD"
       },
-      "reasons": []
+      "reasons": [
+        "evento de alto impacto"
+      ]
     },
     {
       "pair": "AUDJPY",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "AUD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "AUDCHF",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "AUD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     },
     {
       "pair": "AUDCAD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "AUD",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso",
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "AUDNZD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "AUD",
         "quote": "NZD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso",
+        "evento de alto impacto"
+      ]
     },
     {
       "pair": "NZDJPY",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "legs": {
         "base": "NZD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "evento de alto impacto"
+      ]
     },
     {
       "pair": "NZDCHF",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "legs": {
         "base": "NZD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "evento de alto impacto"
+      ]
     },
     {
       "pair": "NZDCAD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "NZD",
         "quote": "CAD"
       },
-      "reasons": []
+      "reasons": [
+        "evento de alto impacto",
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "CADJPY",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "CAD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "CADCHF",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "CAD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "CHFJPY",
@@ -849,193 +952,345 @@
     },
     {
       "pair": "XAUUSD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "XAU",
         "quote": "USD"
       },
-      "reasons": []
+      "reasons": [
+        "discurso"
+      ]
     }
   ],
   "agenda_window": [
     {
-      "id": "2f6830c848103eac",
-      "currency": "EUR",
-      "title": "German WPI m/m",
-      "event_at": "2026-11-13T07:00:00.000Z",
+      "id": "9317ac1243da07bb",
+      "currency": "NZD",
+      "title": "BusinessNZ Services Index",
+      "event_at": "2026-11-15T21:30:00.000Z",
       "impact": "Low",
-      "actual": "0.4%",
-      "forecast": "0.4%",
-      "previous": "1.9%",
-      "hours_from_now": -46.7,
+      "actual": null,
+      "forecast": null,
+      "previous": "50.9",
+      "hours_from_now": 15.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
     },
     {
-      "id": "268af281b559179c",
-      "currency": "CHF",
-      "title": "PPI m/m",
-      "event_at": "2026-11-13T07:30:00.000Z",
+      "id": "efceae9bf24c3c40",
+      "currency": "JPY",
+      "title": "Prelim GDP Price Index y/y",
+      "event_at": "2026-11-15T23:50:00.000Z",
       "impact": "Low",
-      "actual": "0.9%",
-      "forecast": "0.2%",
-      "previous": "0.3%",
-      "hours_from_now": -46.2,
+      "actual": null,
+      "forecast": "2.6%",
+      "previous": "2.6%",
+      "hours_from_now": 18.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
     },
     {
-      "id": "8a25674002730d1e",
-      "currency": "EUR",
-      "title": "French Final CPI m/m",
-      "event_at": "2026-11-13T07:45:00.000Z",
+      "id": "a0d27edeb943ea90",
+      "currency": "JPY",
+      "title": "Prelim GDP q/q",
+      "event_at": "2026-11-15T23:50:00.000Z",
       "impact": "Low",
-      "actual": "0.4%",
-      "forecast": "0.4%",
-      "previous": "0.4%",
-      "hours_from_now": -46,
-      "window_status": null,
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "7e28401999b4a816",
-      "currency": "EUR",
-      "title": "Italian Trade Balance",
-      "event_at": "2026-11-13T09:00:00.000Z",
-      "impact": "Low",
-      "actual": "2.083B",
-      "forecast": "2.84B",
-      "previous": "1.77B",
-      "hours_from_now": -44.7,
-      "window_status": null,
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "34ef6d8b5c221e38",
-      "currency": "EUR",
-      "title": "Flash Employment Change q/q",
-      "event_at": "2026-11-13T10:00:00.000Z",
-      "impact": "Low",
-      "actual": "0%",
-      "forecast": "0.2%",
-      "previous": "0.1%",
-      "hours_from_now": -43.7,
-      "window_status": null,
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "565be7bf88e70788",
-      "currency": "EUR",
-      "title": "Flash GDP q/q",
-      "event_at": "2026-11-13T10:00:00.000Z",
-      "impact": "Low",
-      "actual": "0.4%",
-      "forecast": "0.4%",
-      "previous": "0.4%",
-      "hours_from_now": -43.7,
-      "window_status": null,
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "c7415691194049a7",
-      "currency": "EUR",
-      "title": "Trade Balance",
-      "event_at": "2026-11-13T10:00:00.000Z",
-      "impact": "Low",
-      "actual": "-10.3B",
-      "forecast": "-4.5B",
-      "previous": "-6.8B",
-      "hours_from_now": -43.7,
-      "window_status": null,
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "a7ac787c19670216",
-      "currency": "CAD",
-      "title": "Manufacturing Sales m/m",
-      "event_at": "2026-11-13T13:30:00.000Z",
-      "impact": "Low",
-      "actual": "0%",
+      "actual": null,
       "forecast": "0.1%",
-      "previous": "1.5%",
-      "hours_from_now": -40.2,
+      "previous": "0.3%",
+      "hours_from_now": 18.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
     },
     {
-      "id": "f3d29c5f48b9931e",
-      "currency": "CAD",
-      "title": "Wholesale Sales m/m",
-      "event_at": "2026-11-13T13:30:00.000Z",
-      "impact": "Low",
-      "actual": "0.7%",
-      "forecast": "0.5%",
-      "previous": "-1.6%",
-      "hours_from_now": -40.2,
-      "window_status": null,
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "d5a230505d685b51",
-      "currency": "USD",
-      "title": "Core PPI m/m",
-      "event_at": "2026-11-13T13:30:00.000Z",
-      "impact": "High",
-      "actual": "0.3%",
-      "forecast": "0.3%",
-      "previous": "0.7%",
-      "hours_from_now": -40.2,
-      "window_status": null,
-      "lock_class": "OTRO_HIGH",
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "5ea2e270ebd13d98",
-      "currency": "USD",
-      "title": "PPI m/m",
-      "event_at": "2026-11-13T13:30:00.000Z",
-      "impact": "High",
-      "actual": "0.3%",
-      "forecast": "0.4%",
-      "previous": "1.3%",
-      "hours_from_now": -40.2,
-      "window_status": null,
-      "lock_class": "OTRO_HIGH",
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "8d5a5a2d36efe31e",
+      "id": "ade90090b0e9bb84",
       "currency": "GBP",
-      "title": "MPC Member Greene Speaks",
-      "event_at": "2026-11-14T11:00:00.000Z",
+      "title": "Rightmove HPI m/m",
+      "event_at": "2026-11-16T00:01:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": null,
+      "previous": "1.0%",
+      "hours_from_now": 18.3,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "cb50473897959c34",
+      "currency": "JPY",
+      "title": "Revised Industrial Production m/m",
+      "event_at": "2026-11-16T04:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "2.2%",
+      "previous": "2.2%",
+      "hours_from_now": 22.8,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "7232f61bbd11e1ce",
+      "currency": "EUR",
+      "title": "Industrial Production m/m",
+      "event_at": "2026-11-16T10:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "0.3%",
+      "previous": "-0.5%",
+      "hours_from_now": 28.3,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "ffcdb098a51663f9",
+      "currency": "USD",
+      "title": "FOMC Member Barr Speaks",
+      "event_at": "2026-11-16T10:00:00.000Z",
       "impact": "Low",
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18.7,
-      "window_status": "✓ POST-EVENTO",
+      "hours_from_now": 28.3,
+      "window_status": null,
       "lock_class": "DISCURSO",
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "4416d10ba8cf9ec5",
+      "currency": "CAD",
+      "title": "CPI m/m",
+      "event_at": "2026-11-16T13:30:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": "0.3%",
+      "previous": "0.1%",
+      "hours_from_now": 31.8,
+      "window_status": "TIER1",
+      "lock_class": "TIER1_DATO",
+      "lock_level": "TIER1",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "c4c3e489da2f1f77",
+      "currency": "CAD",
+      "title": "Median CPI y/y",
+      "event_at": "2026-11-16T13:30:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": "2.0%",
+      "previous": "1.9%",
+      "hours_from_now": 31.8,
+      "window_status": "TIER1",
+      "lock_class": "TIER1_DATO",
+      "lock_level": "TIER1",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "916e9b2e54dbcbf1",
+      "currency": "CAD",
+      "title": "Trimmed CPI y/y",
+      "event_at": "2026-11-16T13:30:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": "1.9%",
+      "previous": "1.8%",
+      "hours_from_now": 31.8,
+      "window_status": "TIER1",
+      "lock_class": "TIER1_DATO",
+      "lock_level": "TIER1",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "2d86e670e4828f68",
+      "currency": "CAD",
+      "title": "Common CPI y/y",
+      "event_at": "2026-11-16T13:30:00.000Z",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": "2.5%",
+      "previous": "2.4%",
+      "hours_from_now": 31.8,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "43f20c2dce743578",
+      "currency": "CAD",
+      "title": "Core CPI m/m",
+      "event_at": "2026-11-16T13:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "0.2%",
+      "previous": "0.0%",
+      "hours_from_now": 31.8,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "1b33a802162da5dd",
+      "currency": "USD",
+      "title": "Empire State Manufacturing Index",
+      "event_at": "2026-11-16T13:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "17.6",
+      "previous": "25.5",
+      "hours_from_now": 31.8,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "23c2709de468faf6",
+      "currency": "USD",
+      "title": "FOMC Member Williams Speaks",
+      "event_at": "2026-11-16T14:05:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 32.4,
+      "window_status": null,
+      "lock_class": "DISCURSO",
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "731dce3ebd6bc266",
+      "currency": "USD",
+      "title": "Cleveland Fed Inflation Expectations",
+      "event_at": "2026-11-16T14:48:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": null,
+      "previous": "3.3%",
+      "hours_from_now": 33.1,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "5c3e47c1f5d11e9e",
+      "currency": "USD",
+      "title": "Fed Chairman Warsh Speaks",
+      "event_at": "2026-11-16T17:00:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 35.3,
+      "window_status": "NO_AMPLIAR",
+      "lock_class": "DISCURSO",
+      "lock_level": "NO_AMPLIAR",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "dffb1ea7814526ab",
+      "currency": "NZD",
+      "title": "RBNZ Financial Stability Report",
+      "event_at": "2026-11-16T20:00:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 38.3,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "991e5721d2e729a6",
+      "currency": "NZD",
+      "title": "FPI m/m",
+      "event_at": "2026-11-16T21:45:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": null,
+      "previous": "0.0%",
+      "hours_from_now": 40,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "389fb217bdb19467",
+      "currency": "AUD",
+      "title": "RBA Gov Bullock Speaks",
+      "event_at": "2026-11-16T22:50:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 41.1,
+      "window_status": "NO_AMPLIAR",
+      "lock_class": "DISCURSO",
+      "lock_level": "NO_AMPLIAR",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "4b020c455022b0e2",
+      "currency": "AUD",
+      "title": "Monetary Policy Meeting Minutes",
+      "event_at": "2026-11-17T00:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 42.8,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "1b5af48e10925283",
+      "currency": "NZD",
+      "title": "Inflation Expectations q/q",
+      "event_at": "2026-11-17T02:00:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": null,
+      "previous": "2.34%",
+      "hours_from_now": 44.3,
+      "window_status": "AVISO",
+      "lock_class": "OTRO_HIGH",
+      "lock_level": "AVISO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "66efd2d1b604dc17",
+      "currency": "JPY",
+      "title": "Tertiary Industry Activity m/m",
+      "event_at": "2026-11-17T04:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "0.0%",
+      "previous": "-0.1%",
+      "hours_from_now": 46.8,
+      "window_status": null,
+      "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
     }
@@ -1898,7 +2153,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-14T18:32:06.000Z",
+      "published_at": "2026-11-14T18:31:35.000Z",
       "currencies": [
         "CAD"
       ],
@@ -12885,7 +13140,7 @@
       "actual": "6.5",
       "forecast": "6.6",
       "previous": null,
-      "calendar_title": "PPI m/m",
+      "calendar_title": null,
       "z": -0.4
     },
     {
@@ -39047,36 +39302,6 @@
       "z": null
     },
     {
-      "id": "24ef7a55c7336a205b739706ba06e0ba600e7023e165c2357a4a6809e26f984a",
-      "sha256": "24ef7a55c7336a205b739706ba06e0ba600e7023e165c2357a4a6809e26f984a",
-      "title": "[sdg_08_40] Long-term unemployment rate by sex - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONlVLNFc5dzdDbXBucFFrWFM1MGI2Rlo0TXEyUi1GdDh0QTBHRms4YXBLQTgybTFwbFNmbmRTU3pjalM5WU14M1VXSzN1OGNibnBvWEdXazRTakxEVkJHMHFEc1pmNFBuWGg2RjRIdFBienRmT2xlT194MDh4MnAyb0pGZnVVRU1KelRZU1dQWkw?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
       "sha256": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
       "title": "[une_educ_a] Unemployment by educational attainment level - annual data - European Commission",
@@ -39195,6 +39420,36 @@
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "24ef7a55c7336a205b739706ba06e0ba600e7023e165c2357a4a6809e26f984a",
+      "sha256": "24ef7a55c7336a205b739706ba06e0ba600e7023e165c2357a4a6809e26f984a",
+      "title": "[sdg_08_40] Long-term unemployment rate by sex - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxONlVLNFc5dzdDbXBucFFrWFM1MGI2Rlo0TXEyUi1GdDh0QTBHRms4YXBLQTgybTFwbFNmbmRTU3pjalM5WU14M1VXSzN1OGNibnBvWEdXazRTakxEVkJHMHFEc1pmNFBuWGg2RjRIdFBienRmT2xlT194MDh4MnAyb0pGZnVVRU1KelRZU1dQWkw?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
