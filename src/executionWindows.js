@@ -24,8 +24,9 @@
  * en el día: fx_roll, imm, opex, fiscal_jp, fiscal_us. No entran en
  * blocked_entry y no reescriben eom, gotobi, las ventanas ni los fixings.
  * fx_roll, imm y opex salen de CME_FXVOL_shadow.json (g8-macro-pipeline,
- * scripts/cme_fxvol_shadow.py). El radar no lo descarga solo: se pasa el
- * documento, o fetchFxvolShadow lo pide al raw de GitHub. Si falta o está
+ * scripts/cme_fxvol_shadow.py). El escritor del feed lo pide con
+ * fetchFxvolShadow (raw de GitHub) y lo pasa a buildExecutionWindows.
+ * Si falta o está
  * viejo, UNAVAILABLE y null. No se rellena con 0 ni con el dato anterior.
  * La ventana de fx_roll no se desplaza: el active del productor se conserva
  * y el estado BEFORE / INSIDE / AFTER se calcula sobre esas fechas.

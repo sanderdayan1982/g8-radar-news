@@ -10,7 +10,7 @@ import { fetchMarket } from './market.js';
 import { fetchPolymarketGeo } from './polymarketGeo.js';
 import { buildPairRisk, buildRiskMap } from './riskMap.js';
 import { sourceHealth, RELEASE } from './operations.js';
-import { buildExecutionWindows } from './executionWindows.js';
+import { buildExecutionWindows, fetchFxvolShadow } from './executionWindows.js';
 
 /** Contrato IRIS publicado (Parte F + execution_windows, FLUJOS-01). Ningún campo fuera de esta lista. */
 export const IRIS_SCHEMA_VERSION = 'iris-g8-feed/v3-risk';
@@ -30,7 +30,7 @@ export function projectIrisFeed(input = {}) {
     polymarket_geo: input.polymarket_geo,
     execution_windows: Object.hasOwn(input, 'execution_windows')
       ? input.execution_windows
-      : buildExecutionWindows(input.generated_at),
+      : buildExecutionWindows(input.generated_at, input.fxvol),
     items: input.items,
   };
 }
@@ -557,11 +557,12 @@ export async function collectRadarAndIrisData({
   const startedAt = new Date().toISOString();
   const nowMs = Date.now();
 
-  const [pulledSources, calResult, mktResult, polyResult] = await Promise.all([
+  const [pulledSources, calResult, mktResult, polyResult, fxvol] = await Promise.all([
     Promise.all(SOURCES.map((s) => pullSingleSourceFast(s, nowMs, timeoutMs))),
     fetchCalendar().catch((err) => ({ events: previousCalendar || [], error: String(err.message || err) })),
     fetchMarket(previousMarket).catch(() => previousMarket || { updated_at: null, basketPct: {}, pairs: {} }),
     fetchPolymarketGeo({ history: polymarketHistory, now: nowMs }),
+    fetchFxvolShadow(),
   ]);
 
   const sourcesHealth = pulledSources.map((p) => p.health);
@@ -650,6 +651,7 @@ export async function collectRadarAndIrisData({
     pair_risk: pairRisk,
     agenda_window: agendaWindow,
     polymarket_geo: polyResult.block,
+    fxvol,
     items: irisItemsFormatted,
   });
 

@@ -133,8 +133,17 @@ test('el JSON ausente deja fx_roll, imm y opex en UNAVAILABLE y no toca lo publi
   const full = JSON.parse(readFileSync(new URL('../public/data/radar_news_full.json', import.meta.url), 'utf8'));
   assert.deepEqual(legacyWindows(iris.execution_windows), PUBLISHED_BEFORE);
   assert.deepEqual(legacyWindows(full.execution_windows), PUBLISHED_BEFORE);
-  assert.deepEqual(iris.execution_windows, buildExecutionWindows(iris.generated_at));
-  assert.deepEqual(full.execution_windows, buildExecutionWindows(full.generated_at));
+  assert.equal(iris.execution_windows.analysis.fx_roll.start, '2026-12-07');
+  assert.equal(iris.execution_windows.analysis.fx_roll.end, '2026-12-19');
+  assert.equal(iris.execution_windows.analysis.fx_roll.active, false);
+  assert.equal(iris.execution_windows.analysis.fx_roll.state, 'BEFORE');
+  assert.equal(iris.execution_windows.analysis.imm.reason, 'ABSENT');
+  assert.equal(iris.execution_windows.analysis.imm.date, null);
+  assert.equal(iris.execution_windows.analysis.opex.currencies.EUR.exp1, '2026-12-04');
+  assert.equal(iris.execution_windows.analysis.opex.currencies.EUR.dte1, 22);
+  assert.equal(iris.execution_windows.analysis.opex.currencies.NZD.exp1, null);
+  assert.equal(iris.execution_windows.analysis.opex.currencies.NZD.dte1, null);
+  assert.deepEqual(full.execution_windows, iris.execution_windows);
 });
 
 test('los bordes de fx_roll son inclusivos y la ventana no se mueve en fin de semana ni en festivo', () => {
