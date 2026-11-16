@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, appendFileSync } fr
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { collectRadarAndIrisData, buildRadarStore, readRadarStore, projectIrisFeed } from '../src/irisCollector.js';
+import { runSurpCycle, surpPublishEnabled } from '../src/surp.js';
 import { readPolymarketHistory, writePolymarketHistory } from '../src/polymarketGeo.js';
 import { mergeSourceHealth, healthSummary, publishSignature, irisHealth } from '../src/sourceHealth.js';
 
@@ -58,6 +59,21 @@ irisFeed = projectIrisFeed({
   ...irisFeed,
   health: irisHealth(fullState.sources, fullState.calendar?.length || 0),
 });
+
+if (surpPublishEnabled()) {
+  try {
+    const surp = await runSurpCycle({
+      events: fullState.calendar || [],
+      now: fullState.generated_at,
+      loopUpdatedAt: fullState.generated_at,
+      sourceUpdatedAt: fullState.calendar_sync?.ok ? fullState.generated_at : (readJson(STATUS_PATH)?.last_check_at || null),
+      env: process.env,
+    });
+    if (surp?.method) irisFeed = { ...irisFeed, method: surp.method };
+  } catch {
+    // Sin valores: un fallo del escritor no cambia el feed ya proyectado.
+  }
+}
 
 const newItemsCount = irisFeed.items.filter((x) => !prevShaSet.has(x.sha256)).length;
 // Publish when consumers would see a difference: new headlines, calendar values (consensus/actual), source states.
