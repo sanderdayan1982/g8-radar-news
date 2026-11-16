@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-16T22:49:30.751Z",
+  "generated_at": "2026-11-16T22:50:35.271Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 33,
+    "sources_live": 33,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 0,
+    "sources_error": 1,
     "agenda_events_count": 115,
     "status": "DEGRADED"
   },
@@ -19,8 +19,8 @@
       "count_72h": 176,
       "count_official_45d": 251,
       "last_item_at": "2026-11-16T22:46:59.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "EUR": {
@@ -67,8 +67,8 @@
       "count_72h": 40,
       "count_official_45d": 70,
       "last_item_at": "2026-11-16T22:46:43.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "NZD": {
@@ -480,18 +480,10 @@
     },
     {
       "currency": "AUD",
-      "risk_level": "MEDIO",
-      "lock_level": "NO_AMPLIAR",
-      "lock_events": [
-        {
-          "lock_class": "DISCURSO",
-          "title": "RBA Gov Bullock Speaks",
-          "time": "2026-11-16T22:50:00.000Z",
-          "hours_until": 0,
-          "retirar_limitadas": true
-        }
-      ],
-      "retirar_limitadas": true,
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
+      "lock_events": [],
+      "retirar_limitadas": false,
       "silence": false,
       "polymarket": [
         {
@@ -521,9 +513,7 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": [
-        "discurso"
-      ]
+      "reasons": []
     },
     {
       "currency": "NZD",
@@ -723,7 +713,6 @@
         "quote": "USD"
       },
       "reasons": [
-        "discurso",
         "dato de primer nivel en 24 h"
       ]
     },
@@ -858,8 +847,7 @@
         "quote": "AUD"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h",
-        "discurso"
+        "dato de primer nivel entre 24 y 48 h"
       ]
     },
     {
@@ -877,39 +865,33 @@
     },
     {
       "pair": "AUDJPY",
-      "risk_level": "MEDIO",
-      "lock_level": "NO_AMPLIAR",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "AUD",
         "quote": "JPY"
       },
-      "reasons": [
-        "discurso"
-      ]
+      "reasons": []
     },
     {
       "pair": "AUDCHF",
-      "risk_level": "MEDIO",
-      "lock_level": "NO_AMPLIAR",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "AUD",
         "quote": "CHF"
       },
-      "reasons": [
-        "discurso"
-      ]
+      "reasons": []
     },
     {
       "pair": "AUDCAD",
-      "risk_level": "MEDIO",
-      "lock_level": "NO_AMPLIAR",
+      "risk_level": "BAJO",
+      "lock_level": "NINGUNO",
       "legs": {
         "base": "AUD",
         "quote": "CAD"
       },
-      "reasons": [
-        "discurso"
-      ]
+      "reasons": []
     },
     {
       "pair": "AUDNZD",
@@ -1192,7 +1174,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.7,
+      "hours_from_now": -8.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1283,10 +1265,10 @@
       "forecast": null,
       "previous": null,
       "hours_from_now": 0,
-      "window_status": "NO_AMPLIAR",
+      "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
-      "lock_level": "NO_AMPLIAR",
-      "retirar_limitadas": true
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
     },
     {
       "id": "38f636bd5e0cf6a4",
@@ -2092,7 +2074,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.8,
+      "hours_from_now": 43.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -17076,36 +17058,6 @@
       "z": null
     },
     {
-      "id": "4bd5347a56acbe666a87a7ea25118964cb8af57f83ad0a3a93b68ec9df3e7675",
-      "sha256": "4bd5347a56acbe666a87a7ea25118964cb8af57f83ad0a3a93b68ec9df3e7675",
-      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZ3dxbFJEVUtxdWE0eHRMaG9nN0djQnU4SktILUxaY1pyaG5rSW5zb1dYUkJ3MHJoeFc5QWhSTHAtcGxhZ3BZUkRWYk5McXRUMWZOS2FUY3hXOTBEbG15ejNqZFcxQXJzdi02T0ptOV9DVHEtc3lYbkRrbkNIN3pPU0NwVlh6MzVBbWhIWWltVUhxQzJBNTUyZEx1SQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
       "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
       "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
@@ -19121,6 +19073,36 @@
       "sha256": "994281aa5e6174ea2b61b603248fafe2da85b6d1d9f4709c2e5b7639d53930a5",
       "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - annual data - European Commission",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZldpSVVhdVlzcGZvU0VoNnh4Q01TSVBMNkdvMDNSY2ZrOF93Q1lGQ2tmZW9GV1cwcDllaG0yT082eTRuMGZEQzNMaGIzcVZlUmwzV3JLZFRnNDV6QTJjVVNVYWs3LTBhajdZcHl1N29ZNERmaEQwZzhPaGU1Mm03Q3ZEZlprNVJfdkh2QTNJd1p6eDg?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
+      "sha256": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
+      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdVF3UUF0ci0wOUtXdGVuUlpLVEJBejQtSE9DdkhQNXRNcVlMNGlmQkR1SUNaSUZWQVljSmMtNmgxLVhtUXJrZlVFSjM2OHFKWllUeXpDV1Y1MF9wV01SWFpKb3hINENUQVNwdF9mTlM0NWJwUmJnV1FJa3UzNW56QUlEWi16eHF6UjlabDBrRVY5SS1oUENYaG9LS1pUdC01U0ptZ0YxZFdtc3o4bmMteTA2bjNhUDNwTFItdGxIRjI5VVFa?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -22567,36 +22549,6 @@
       "z": null
     },
     {
-      "id": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
-      "sha256": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
-      "title": "[une_educ_a] Unemployment by educational attainment level - annual data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5MS1ZcW1xaUFCNGdGcXAxOU1Zb2NZcXdZcnVQZ040akJybU5uSkNDZjdEb1dpTlhKM00weTRTNkN5MWNUbmVQU1BScmoyMnpCOWNFc0JnUmVxajNEQlZwTjFFcFN5SUZMSXpDS3VnME9VQ0hGVWpyVG9BT1ZXeFk?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "b821e01e214ebdbed2bbca5898be9cf826b933bd1f14160fbb92339d103751f8",
       "sha256": "b821e01e214ebdbed2bbca5898be9cf826b933bd1f14160fbb92339d103751f8",
       "title": "[une_rt_a] Unemployment by sex and age - annual data - European Commission",
@@ -22676,6 +22628,36 @@
         "Inflacion_Empleo"
       ],
       "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
+      "sha256": "672fe74b3d2c792686cb82f4071e83fb870c538737ab72c7e36c3bc6eaddfcd9",
+      "title": "[une_educ_a] Unemployment by educational attainment level - annual data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5MS1ZcW1xaUFCNGdGcXAxOU1Zb2NZcXdZcnVQZ040akJybU5uSkNDZjdEb1dpTlhKM00weTRTNkN5MWNUbmVQU1BScmoyMnpCOWNFc0JnUmVxajNEQlZwTjFFcFN5SUZMSXpDS3VnME9VQ0hGVWpyVG9BT1ZXeFk?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
@@ -24555,10 +24537,10 @@
       "z": null
     },
     {
-      "id": "c3a3514fa35102e8c68f4826040ebc775f7ef3091714f652e5e32628b798dd74",
-      "sha256": "c3a3514fa35102e8c68f4826040ebc775f7ef3091714f652e5e32628b798dd74",
-      "title": "Inflation in the euro area - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNEZ4YnBQSE85eXotRjZFUTJJS3IwcGduU190Vlc0bGR5Q0xwYmkzU25mQlNuRHB6NnZPMlNIX3dvQmhTWndRLXpIZ1JNZ0RYOUpUcXlia0pSekxNbVdaZk9nTnc0NVZBQzVUa3kxY0NDbzYtaFJKZURZVWF0aTFRSkVMc3haVl92bUU3cU84ZENBdzY3STl4OA?oc=5",
+      "id": "c0fed5a2695062d10c30042b37857c486dc03eccd71dd2b5df51e53e91d148e7",
+      "sha256": "c0fed5a2695062d10c30042b37857c486dc03eccd71dd2b5df51e53e91d148e7",
+      "title": "Inflation in the euro area Statistics Explained - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQzRua2psTmhpSjg1ZjE4UGZycWJueXhtaS1EcllRa1k2b1llTFR5V2xtcTFVVExsWTFFdWNtMjVUamxBTDJDNFNUdDhHSUY3NTlBNUlxc01keGsxb0h0dTgtLUowdS1TVWJQTnQzUGRqOWxDemlVbWhOVF9ZZ0R2X1Brc3ZMX1RvYU03b2k1SXJueW56akE?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -24585,10 +24567,10 @@
       "z": null
     },
     {
-      "id": "c0fed5a2695062d10c30042b37857c486dc03eccd71dd2b5df51e53e91d148e7",
-      "sha256": "c0fed5a2695062d10c30042b37857c486dc03eccd71dd2b5df51e53e91d148e7",
-      "title": "Inflation in the euro area Statistics Explained - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQzRua2psTmhpSjg1ZjE4UGZycWJueXhtaS1EcllRa1k2b1llTFR5V2xtcTFVVExsWTFFdWNtMjVUamxBTDJDNFNUdDhHSUY3NTlBNUlxc01keGsxb0h0dTgtLUowdS1TVWJQTnQzUGRqOWxDemlVbWhOVF9ZZ0R2X1Brc3ZMX1RvYU03b2k1SXJueW56akE?oc=5",
+      "id": "bbaa42a11d4ee7f507a7d8df463dc4ca067c46a6dae7561b183d29a706aff2c7",
+      "sha256": "bbaa42a11d4ee7f507a7d8df463dc4ca067c46a6dae7561b183d29a706aff2c7",
+      "title": "Inflation in the euro area - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQV1k1N1U0NkNnYWU3TENhb2xaVmVFMGphbHFtUFdLRDVjZW1VU1FjRjRtTUpGaDZMM2dobDBUS0IyMVRscmhYVW9GYzBLWGdVUk9uOUlfb2F1a1JnTFVTenlkbUhIZmU5OW1tdTh2a0JZTzhpQnZmeGZFdXdncjVYZEhFNDBSRUpyb3dibjRuLXU5alVXZUlVSlBYek5FOGVPVjlzQlZfSHJJRWdmUzBTRWM1OEh5SmlXc29mMl9FSW5ZbTducGxvX2hEd1BUOERl?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
