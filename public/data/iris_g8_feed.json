@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-16T22:58:09.262Z",
+  "generated_at": "2026-11-16T22:59:13.630Z",
   "health": {
-    "sources_active": 33,
-    "sources_live": 33,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 1,
+    "sources_error": 0,
     "agenda_events_count": 115,
     "status": "DEGRADED"
   },
@@ -1004,7 +1004,7 @@
       "actual": null,
       "forecast": "2.6%",
       "previous": "2.6%",
-      "hours_from_now": -23.1,
+      "hours_from_now": -23.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1019,7 +1019,7 @@
       "actual": null,
       "forecast": "0.1%",
       "previous": "0.3%",
-      "hours_from_now": -23.1,
+      "hours_from_now": -23.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1274,7 +1274,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.1,
+      "hours_from_now": -0.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1649,7 +1649,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.0%",
-      "hours_from_now": 16.9,
+      "hours_from_now": 16.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1739,7 +1739,7 @@
       "actual": null,
       "forecast": "-0.90T",
       "previous": "-0.70T",
-      "hours_from_now": 24.9,
+      "hours_from_now": 24.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -17029,6 +17029,38 @@
       "z": null
     },
     {
+      "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
+      "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
+      "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "cdcaba09a06d950b51d92d4fefc27862ed6c7c1c65f1954824883efe2c5bd952",
       "sha256": "cdcaba09a06d950b51d92d4fefc27862ed6c7c1c65f1954824883efe2c5bd952",
       "title": "What's New November, 2026 : Ministry of Finance - 財務省",
@@ -17200,38 +17232,6 @@
       ],
       "divisas": [
         "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
-      "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
-      "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
         "USD"
       ],
       "category": "Fiscal",
@@ -23638,6 +23638,38 @@
       "z": null
     },
     {
+      "id": "3dcbfa95ae471ed71ac964450f1864cd499284abf5254a412e0916fadb6bf2ea",
+      "sha256": "3dcbfa95ae471ed71ac964450f1864cd499284abf5254a412e0916fadb6bf2ea",
+      "title": "Business insights and impact on the UK economy: 5 November 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOME9HRUZHYjlUZWVoRGNVOU9fWFhpR3lvei0yeGNTLWdaZ2hwVkJ1OXh3RlY0SEFVTHV2RV8xT2hHQ1BfeE1wbHJYcTBJd291Y2h6UFNwR0pnZGZMTkR4cFlDbE5XWkVQRG41bHF5bFBmdE5wcHhZUkxiWHFSUjBvN1VWczJxMWhGWWtnYWxVbDZjQkRVUkRjM0JycWRGQkFmOWI4VENyMDBZY0RxUjJCWVUzODhVUFF1NElwSUZ0UUFBbGFCMG5NMDQxY3R6NTZCV0lz?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-05T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4c09462c767cd633f8e2b5e3d80563ff6a1589e5b7c749750e4dbc179567eed1",
       "sha256": "4c09462c767cd633f8e2b5e3d80563ff6a1589e5b7c749750e4dbc179567eed1",
       "title": "Public sector employment and earnings growth moderates in 2025-26 - Australian Bureau of Statistics",
@@ -23791,38 +23823,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3dcbfa95ae471ed71ac964450f1864cd499284abf5254a412e0916fadb6bf2ea",
-      "sha256": "3dcbfa95ae471ed71ac964450f1864cd499284abf5254a412e0916fadb6bf2ea",
-      "title": "Business insights and impact on the UK economy: 5 November 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOME9HRUZHYjlUZWVoRGNVOU9fWFhpR3lvei0yeGNTLWdaZ2hwVkJ1OXh3RlY0SEFVTHV2RV8xT2hHQ1BfeE1wbHJYcTBJd291Y2h6UFNwR0pnZGZMTkR4cFlDbE5XWkVQRG41bHF5bFBmdE5wcHhZUkxiWHFSUjBvN1VWczJxMWhGWWtnYWxVbDZjQkRVUkRjM0JycWRGQkFmOWI4VENyMDBZY0RxUjJCWVUzODhVUFF1NElwSUZ0UUFBbGFCMG5NMDQxY3R6NTZCV0lz?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
