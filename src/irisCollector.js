@@ -11,12 +11,13 @@ import { fetchPolymarketGeo } from './polymarketGeo.js';
 import { buildPairRisk, buildRiskMap } from './riskMap.js';
 import { sourceHealth, RELEASE } from './operations.js';
 import { buildExecutionWindows, fetchFxvolShadow } from './executionWindows.js';
+import { surpPublishEnabled } from './surp.js';
 
-/** Contrato IRIS publicado (Parte F + execution_windows, FLUJOS-01). Ningún campo fuera de esta lista. */
+/** Contrato IRIS publicado (Parte F + execution_windows, FLUJOS-01). Ningún campo fuera de esta lista salvo el bloque method cuando SURP_PUBLISH=true. */
 export const IRIS_SCHEMA_VERSION = 'iris-g8-feed/v3-risk';
 
 export function projectIrisFeed(input = {}) {
-  return {
+  const feed = {
     schema_version: IRIS_SCHEMA_VERSION,
     version: input.version,
     engine_version: input.engine_version,
@@ -33,6 +34,8 @@ export function projectIrisFeed(input = {}) {
       : buildExecutionWindows(input.generated_at, input.fxvol),
     items: input.items,
   };
+  if (surpPublishEnabled() && input.method != null) feed.method = input.method;
+  return feed;
 }
 
 /**
