@@ -1,9 +1,9 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-16T21:50:18.545Z",
-  "feed_generated_at": "2026-11-16T21:50:18.490Z",
+  "last_check_at": "2026-11-16T21:55:23.802Z",
+  "feed_generated_at": "2026-11-16T21:55:23.742Z",
   "wrote_full_feed": true,
-  "new_items": 5,
+  "new_items": 3,
   "sources": {
     "ok": 33,
     "cached": 0,
@@ -13,20 +13,20 @@
   },
   "failing_sources": [
     {
+      "id": "fed",
+      "status": "error",
+      "last_error": "HTTP 404",
+      "last_success_at": "2026-11-16T21:50:14.633Z",
+      "consecutive_failures": 1
+    },
+    {
       "id": "snb-bills",
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 702
-    },
-    {
-      "id": "eurostat",
-      "status": "error",
-      "last_error": "HTTP 429",
-      "last_success_at": "2026-11-16T21:45:09.388Z",
-      "consecutive_failures": 1
+      "consecutive_failures": 703
     }
   ],
-  "calendar_events": 114,
+  "calendar_events": 115,
   "cadence": "Hourly GitHub Actions trigger + self-clocked loop: every 5 min, every 60 s within 15 min of a High-impact event"
 }
