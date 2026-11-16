@@ -97,10 +97,11 @@ function findNamed(dir, name, found = []) {
 }
 
 test('T-S1 sigma with 11/12/24/25 releases', () => {
-  const expectSigma = (count, surprises) => {
-    const scored = scoreReleases(seriesOf(count));
+  const expectSigma = (previous, surprises) => {
+    const scored = scoreReleases(seriesOf(previous + 1));
     const last = scored[scored.length - 1];
-    if (count < SURP_SPEC.sigmaMinReleases) {
+    if (surprises) assert.equal(surprises.includes(last.surprise), false);
+    if (previous < SURP_SPEC.sigmaMinReleases) {
       assert.equal(last.sigma_prov, true);
       near(last.sigma, 0.4);
       return;
@@ -526,7 +527,7 @@ test('T-S16 thresholds in code = signed table', () => {
     destinationRepo: 'sanderdayan1982/g8-macro-data',
     destinationPath: 'surp_daily.csv',
     writerDisabledLog: 'SURP writer disabled',
-    tokenEnv: 'G8_MACRO_DATA_TOKEN',
+    tokenEnv: 'G8_DATA_WRITE',
   };
   assert.deepEqual(SURP_SPEC, signed);
   assert.equal(Object.isFrozen(SURP_SPEC), true);
@@ -605,12 +606,24 @@ test('T-S15 flag off: public/ and feed byte-identical, surpriseZ unchanged', asy
     assert.equal(hashPublic(), before);
     assert.equal(findNamed(ROOT.pathname, 'surp_daily.csv').length, 0);
 
+    logs.length = 0;
+    calls = 0;
+    await runSurpCycle({
+      events: [release()],
+      now: CLOSE,
+      ...fresh(CLOSE),
+      env: { SURP_PUBLISH: 'true', GITHUB_TOKEN: 'unused', GH_TOKEN: 'unused' },
+      fetchImpl: async () => { calls += 1; return { ok: false, status: 404, json: async () => ({}) }; },
+    });
+    assert.deepEqual(logs, [SURP_SPEC.writerDisabledLog]);
+    assert.equal(calls, 0);
+
     const urls = [];
     await runSurpCycle({
       events: [],
       now: CLOSE,
       ...fresh(CLOSE),
-      env: { SURP_PUBLISH: 'true', G8_MACRO_DATA_TOKEN: 'test-token-not-real' },
+      env: { SURP_PUBLISH: 'true', G8_DATA_WRITE: 'present' },
       fetchImpl: async (url, init) => {
         urls.push(String(url));
         if (init?.method === 'PUT') return { ok: true, json: async () => ({}) };

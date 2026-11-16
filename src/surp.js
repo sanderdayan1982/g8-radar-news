@@ -62,7 +62,7 @@ export const SURP_SPEC = Object.freeze({
   destinationRepo: 'sanderdayan1982/g8-macro-data',
   destinationPath: 'surp_daily.csv',
   writerDisabledLog: 'SURP writer disabled',
-  tokenEnv: 'G8_MACRO_DATA_TOKEN',
+  tokenEnv: 'G8_DATA_WRITE',
 });
 
 const DAY_MS = 86400000;
@@ -266,12 +266,13 @@ export function prepareRelease(raw) {
   };
 }
 
-function sigmaOf(surprises, forecast) {
-  if (surprises.length < SURP_SPEC.sigmaMinReleases) {
+// previous is the indicator's earlier surprises only. The release being scored is not included.
+function sigmaOf(previous, forecast) {
+  if (previous.length < SURP_SPEC.sigmaMinReleases) {
     return { sigma: provisionalSigma(forecast), sigma_prov: true };
   }
-  const start = Math.max(0, surprises.length - SURP_SPEC.sigmaWindow);
-  return { sigma: populationStdev(surprises.slice(start)), sigma_prov: false };
+  const start = Math.max(0, previous.length - SURP_SPEC.sigmaWindow);
+  return { sigma: populationStdev(previous.slice(start)), sigma_prov: false };
 }
 
 function zOf(surprise, sigma, title) {
@@ -309,12 +310,12 @@ export function scoreReleases(releases) {
       history.set(row.seriesKey, list);
       continue;
     }
-    list.push({ id: row.id, surprise: row.surprise });
-    history.set(row.seriesKey, list);
     const scored = sigmaOf(list.map((item) => item.surprise), row.forecast);
     row.sigma = scored.sigma;
     row.sigma_prov = scored.sigma_prov;
     row.z = zOf(row.surprise, scored.sigma, row.title);
+    list.push({ id: row.id, surprise: row.surprise });
+    history.set(row.seriesKey, list);
   }
   return prepared;
 }
