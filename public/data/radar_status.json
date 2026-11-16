@@ -1,14 +1,14 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-16T20:38:37.264Z",
-  "feed_generated_at": "2026-11-16T20:38:37.204Z",
+  "last_check_at": "2026-11-16T20:43:42.686Z",
+  "feed_generated_at": "2026-11-16T20:43:42.626Z",
   "wrote_full_feed": true,
-  "new_items": 2,
+  "new_items": 3,
   "sources": {
-    "ok": 33,
+    "ok": 32,
     "cached": 0,
     "empty": 1,
-    "error": 1,
+    "error": 2,
     "total": 35
   },
   "failing_sources": [
@@ -17,14 +17,21 @@
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 687
+      "consecutive_failures": 688
+    },
+    {
+      "id": "uk-ons-hmt",
+      "status": "error",
+      "last_error": "HTTP 429",
+      "last_success_at": "2026-11-16T20:38:34.536Z",
+      "consecutive_failures": 1
     },
     {
       "id": "ch-press",
       "status": "error",
       "last_error": "HTTP 429",
       "last_success_at": "2026-11-16T20:33:28.595Z",
-      "consecutive_failures": 1
+      "consecutive_failures": 2
     }
   ],
   "calendar_events": 111,
