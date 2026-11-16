@@ -3,24 +3,24 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-16T20:18:16.734Z",
+  "generated_at": "2026-11-16T20:23:21.355Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 33,
+    "sources_live": 33,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 0,
+    "sources_error": 1,
     "agenda_events_count": 111,
     "status": "DEGRADED"
   },
   "coverage": {
     "USD": {
       "count_72h": 189,
-      "count_official_45d": 248,
+      "count_official_45d": 249,
       "last_item_at": "2026-11-16T20:17:02.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "EUR": {
@@ -33,50 +33,50 @@
     },
     "GBP": {
       "count_72h": 32,
-      "count_official_45d": 79,
+      "count_official_45d": 80,
       "last_item_at": "2026-11-16T17:49:49.000Z",
-      "hours_since_last": 2.5,
-      "hours_since_last_business": 2.5,
+      "hours_since_last": 2.6,
+      "hours_since_last_business": 2.6,
       "silence": false
     },
     "JPY": {
       "count_72h": 24,
       "count_official_45d": 79,
       "last_item_at": "2026-11-16T20:17:02.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "CHF": {
       "count_72h": 39,
       "count_official_45d": 14,
       "last_item_at": "2026-11-16T20:17:02.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "CAD": {
       "count_72h": 16,
       "count_official_45d": 8,
       "last_item_at": "2026-11-16T20:17:02.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "AUD": {
       "count_72h": 35,
       "count_official_45d": 70,
       "last_item_at": "2026-11-16T18:23:03.000Z",
-      "hours_since_last": 1.9,
-      "hours_since_last_business": 1.9,
+      "hours_since_last": 2,
+      "hours_since_last_business": 2,
       "silence": false
     },
     "NZD": {
       "count_72h": 56,
       "count_official_45d": 64,
       "last_item_at": "2026-11-16T20:03:43.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "hours_since_last": 0.3,
+      "hours_since_last_business": 0.3,
       "silence": false
     },
     "XAU": {
@@ -97,21 +97,21 @@
           "lock_class": "TIER1_DATO",
           "title": "Core Retail Sales m/m",
           "time": "2026-11-17T13:30:00.000Z",
-          "hours_until": 17.2,
+          "hours_until": 17.1,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Retail Sales m/m",
           "time": "2026-11-17T13:30:00.000Z",
-          "hours_until": 17.2,
+          "hours_until": 17.1,
           "retirar_limitadas": false
         },
         {
           "lock_class": "OTRO_HIGH",
           "title": "FOMC Meeting Minutes",
           "time": "2026-11-18T19:00:00.000Z",
-          "hours_until": 46.7,
+          "hours_until": 46.6,
           "retirar_limitadas": false
         }
       ],
@@ -193,7 +193,7 @@
           "lock_class": "DISCURSO",
           "title": "ECB President Lagarde Speaks",
           "time": "2026-11-18T14:25:00.000Z",
-          "hours_until": 42.1,
+          "hours_until": 42,
           "retirar_limitadas": false
         }
       ],
@@ -265,21 +265,21 @@
           "lock_class": "TIER1_DATO",
           "title": "CPI y/y",
           "time": "2026-11-18T07:00:00.000Z",
-          "hours_until": 34.7,
+          "hours_until": 34.6,
           "retirar_limitadas": false
         },
         {
           "lock_class": "DISCURSO",
           "title": "BOE Gov Bailey Speaks",
           "time": "2026-11-18T07:30:00.000Z",
-          "hours_until": 35.2,
+          "hours_until": 35.1,
           "retirar_limitadas": false
         },
         {
           "lock_class": "DISCURSO",
           "title": "BOE Gov Bailey Speaks",
           "time": "2026-11-18T15:00:00.000Z",
-          "hours_until": 42.7,
+          "hours_until": 42.6,
           "retirar_limitadas": false
         }
       ],
@@ -487,7 +487,7 @@
           "lock_class": "DISCURSO",
           "title": "RBA Gov Bullock Speaks",
           "time": "2026-11-16T22:50:00.000Z",
-          "hours_until": 2.5,
+          "hours_until": 2.4,
           "retirar_limitadas": false
         }
       ],
@@ -534,14 +534,14 @@
           "lock_class": "OTRO_HIGH",
           "title": "Inflation Expectations q/q",
           "time": "2026-11-17T02:00:00.000Z",
-          "hours_until": 5.7,
+          "hours_until": 5.6,
           "retirar_limitadas": false
         },
         {
           "lock_class": "DISCURSO",
           "title": "RBNZ Gov Breman Speaks",
           "time": "2026-11-18T18:00:00.000Z",
-          "hours_until": 45.7,
+          "hours_until": 45.6,
           "retirar_limitadas": false
         }
       ],
@@ -1012,7 +1012,7 @@
       "actual": null,
       "forecast": null,
       "previous": "50.9",
-      "hours_from_now": -22.8,
+      "hours_from_now": -22.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1027,7 +1027,7 @@
       "actual": null,
       "forecast": "2.6%",
       "previous": "2.6%",
-      "hours_from_now": -20.5,
+      "hours_from_now": -20.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1042,7 +1042,7 @@
       "actual": null,
       "forecast": "0.1%",
       "previous": "0.3%",
-      "hours_from_now": -20.5,
+      "hours_from_now": -20.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1057,7 +1057,7 @@
       "actual": null,
       "forecast": null,
       "previous": "1.0%",
-      "hours_from_now": -20.3,
+      "hours_from_now": -20.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1072,7 +1072,7 @@
       "actual": null,
       "forecast": "2.2%",
       "previous": "2.2%",
-      "hours_from_now": -15.8,
+      "hours_from_now": -15.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1087,7 +1087,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "-0.5%",
-      "hours_from_now": -10.3,
+      "hours_from_now": -10.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1102,7 +1102,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10.3,
+      "hours_from_now": -10.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1117,7 +1117,7 @@
       "actual": "3.1%",
       "forecast": "0.3%",
       "previous": "0.1%",
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -1132,7 +1132,7 @@
       "actual": null,
       "forecast": "2.0%",
       "previous": "1.9%",
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -1147,7 +1147,7 @@
       "actual": null,
       "forecast": "1.9%",
       "previous": "1.8%",
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -1162,7 +1162,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "2.4%",
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1177,7 +1177,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.0%",
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1192,7 +1192,7 @@
       "actual": "7.80",
       "forecast": "17.6",
       "previous": "25.5",
-      "hours_from_now": -6.8,
+      "hours_from_now": -6.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1207,7 +1207,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.2,
+      "hours_from_now": -6.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1237,7 +1237,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.3,
+      "hours_from_now": -3.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1267,7 +1267,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.3,
+      "hours_from_now": -0.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1297,7 +1297,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.5,
+      "hours_from_now": 2.4,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1312,7 +1312,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.2,
+      "hours_from_now": 4.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1327,7 +1327,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.34%",
-      "hours_from_now": 5.7,
+      "hours_from_now": 5.6,
       "window_status": "AVISO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "AVISO",
@@ -1342,7 +1342,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "-0.1%",
-      "hours_from_now": 8.2,
+      "hours_from_now": 8.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1357,7 +1357,7 @@
       "actual": null,
       "forecast": "3.5%",
       "previous": "3.7%",
-      "hours_from_now": 10.7,
+      "hours_from_now": 10.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1372,7 +1372,7 @@
       "actual": null,
       "forecast": "28.1K",
       "previous": "30.3K",
-      "hours_from_now": 10.7,
+      "hours_from_now": 10.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1387,7 +1387,7 @@
       "actual": null,
       "forecast": "4.7%",
       "previous": "4.7%",
-      "hours_from_now": 10.7,
+      "hours_from_now": 10.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1402,7 +1402,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13.7,
+      "hours_from_now": 13.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1417,7 +1417,7 @@
       "actual": null,
       "forecast": "18.3",
       "previous": "18.5",
-      "hours_from_now": 13.7,
+      "hours_from_now": 13.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1432,7 +1432,7 @@
       "actual": null,
       "forecast": "28.3",
       "previous": "28.1",
-      "hours_from_now": 13.7,
+      "hours_from_now": 13.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1447,7 +1447,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 16.2,
+      "hours_from_now": 16.1,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1492,7 +1492,7 @@
       "actual": null,
       "forecast": "14.85B",
       "previous": "-17.31B",
-      "hours_from_now": 17.2,
+      "hours_from_now": 17.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1507,7 +1507,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.9%",
-      "hours_from_now": 17.2,
+      "hours_from_now": 17.1,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1522,7 +1522,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.8%",
-      "hours_from_now": 17.2,
+      "hours_from_now": 17.1,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1537,7 +1537,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "1.1%",
-      "hours_from_now": 17.2,
+      "hours_from_now": 17.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1552,7 +1552,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.9,
+      "hours_from_now": 17.8,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1597,7 +1597,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.2,
+      "hours_from_now": 18.1,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1612,7 +1612,7 @@
       "actual": null,
       "forecast": "0.5%",
       "previous": "0.4%",
-      "hours_from_now": 18.7,
+      "hours_from_now": 18.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1627,7 +1627,7 @@
       "actual": null,
       "forecast": "29",
       "previous": "29",
-      "hours_from_now": 18.7,
+      "hours_from_now": 18.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1642,7 +1642,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.0%",
-      "hours_from_now": 19.5,
+      "hours_from_now": 19.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1657,7 +1657,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.1,
+      "hours_from_now": 23,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1672,7 +1672,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.2,
+      "hours_from_now": 25.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1717,7 +1717,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.1%",
-      "hours_from_now": 27.2,
+      "hours_from_now": 27.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1732,7 +1732,7 @@
       "actual": null,
       "forecast": "-0.88T",
       "previous": "-0.70T",
-      "hours_from_now": 27.5,
+      "hours_from_now": 27.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1747,7 +1747,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "0.8%",
-      "hours_from_now": 28.2,
+      "hours_from_now": 28.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1777,7 +1777,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.5%",
-      "hours_from_now": 34.7,
+      "hours_from_now": 34.6,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1792,7 +1792,7 @@
       "actual": null,
       "forecast": "2.8%",
       "previous": "2.8%",
-      "hours_from_now": 34.7,
+      "hours_from_now": 34.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1807,7 +1807,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "1.5%",
-      "hours_from_now": 34.7,
+      "hours_from_now": 34.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1822,7 +1822,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.8%",
-      "hours_from_now": 34.7,
+      "hours_from_now": 34.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1837,7 +1837,7 @@
       "actual": null,
       "forecast": "4.1%",
       "previous": "3.9%",
-      "hours_from_now": 34.7,
+      "hours_from_now": 34.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1852,7 +1852,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.2,
+      "hours_from_now": 35.1,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1867,7 +1867,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.7,
+      "hours_from_now": 36.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1882,7 +1882,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.9%",
-      "hours_from_now": 37.2,
+      "hours_from_now": 37.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1897,7 +1897,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "2.5%",
-      "hours_from_now": 37.7,
+      "hours_from_now": 37.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1912,7 +1912,7 @@
       "actual": null,
       "forecast": "4.0%",
       "previous": "4.0%",
-      "hours_from_now": 37.7,
+      "hours_from_now": 37.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1927,7 +1927,7 @@
       "actual": null,
       "forecast": "0.1%",
       "previous": "-0.2%",
-      "hours_from_now": 41.2,
+      "hours_from_now": 41.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1942,7 +1942,7 @@
       "actual": null,
       "forecast": "1.38M",
       "previous": "1.40M",
-      "hours_from_now": 41.2,
+      "hours_from_now": 41.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1957,7 +1957,7 @@
       "actual": null,
       "forecast": "1.25M",
       "previous": "1.22M",
-      "hours_from_now": 41.2,
+      "hours_from_now": 41.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1972,7 +1972,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1987,7 +1987,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 42.7,
+      "hours_from_now": 42.6,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -2002,7 +2002,7 @@
       "actual": null,
       "forecast": "-2.3%",
       "previous": "-7.3%",
-      "hours_from_now": 42.7,
+      "hours_from_now": 42.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2017,7 +2017,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.7M",
-      "hours_from_now": 43.2,
+      "hours_from_now": 43.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2032,7 +2032,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.2,
+      "hours_from_now": 45.1,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2047,7 +2047,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.7,
+      "hours_from_now": 45.6,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -2062,7 +2062,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.3,
+      "hours_from_now": 46.2,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2077,7 +2077,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.7,
+      "hours_from_now": 46.6,
       "window_status": "AVISO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "AVISO",
@@ -2092,7 +2092,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.2,
+      "hours_from_now": 47.1,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2646,6 +2646,32 @@
     }
   },
   "items": [
+    {
+      "id": "c132c27caf022eb8f4d4f4a80fb2a65dfdada99c97c5c4d2f064b4461c02d13e",
+      "sha256": "c132c27caf022eb8f4d4f4a80fb2a65dfdada99c97c5c4d2f064b4461c02d13e",
+      "title": "Tuesday FX Options Expiries",
+      "url": "https://t.me/FinancialJuice/147624",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-16T20:22:30.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "64c5f9b707e63668c2690229d09015322188cd6a6dbe8321ada453dd7b9d4244",
       "sha256": "64c5f9b707e63668c2690229d09015322188cd6a6dbe8321ada453dd7b9d4244",
@@ -16257,32 +16283,6 @@
       "z": null
     },
     {
-      "id": "9eda8e9652a6c93633257b6728f98bd47aa65b921121282bddd445026341d29c",
-      "sha256": "9eda8e9652a6c93633257b6728f98bd47aa65b921121282bddd445026341d29c",
-      "title": "Monday FX Options Expiries",
-      "url": "https://t.me/FinancialJuice/147120",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-13T20:22:59.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "f40fc9ee1bb4f8087f9ca6b72ae18984b6ec8cf792e5bf0e61dbdcfded5bf9bf",
       "sha256": "f40fc9ee1bb4f8087f9ca6b72ae18984b6ec8cf792e5bf0e61dbdcfded5bf9bf",
       "title": "Climate Change Minister heads to COP 31",
@@ -16675,36 +16675,6 @@
       "z": null
     },
     {
-      "id": "4bd5347a56acbe666a87a7ea25118964cb8af57f83ad0a3a93b68ec9df3e7675",
-      "sha256": "4bd5347a56acbe666a87a7ea25118964cb8af57f83ad0a3a93b68ec9df3e7675",
-      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZ3dxbFJEVUtxdWE0eHRMaG9nN0djQnU4SktILUxaY1pyaG5rSW5zb1dYUkJ3MHJoeFc5QWhSTHAtcGxhZ3BZUkRWYk5McXRUMWZOS2FUY3hXOTBEbG15ejNqZFcxQXJzdi02T0ptOV9DVHEtc3lYbkRrbkNIN3pPU0NwVlh6MzVBbWhIWWltVUhxQzJBNTUyZEx1SQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
       "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
       "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
@@ -16918,6 +16888,36 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4bd5347a56acbe666a87a7ea25118964cb8af57f83ad0a3a93b68ec9df3e7675",
+      "sha256": "4bd5347a56acbe666a87a7ea25118964cb8af57f83ad0a3a93b68ec9df3e7675",
+      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZ3dxbFJEVUtxdWE0eHRMaG9nN0djQnU4SktILUxaY1pyaG5rSW5zb1dYUkJ3MHJoeFc5QWhSTHAtcGxhZ3BZUkRWYk5McXRUMWZOS2FUY3hXOTBEbG15ejNqZFcxQXJzdi02T0ptOV9DVHEtc3lYbkRrbkNIN3pPU0NwVlh6MzVBbWhIWWltVUhxQzJBNTUyZEx1SQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -17958,128 +17958,6 @@
       "z": null
     },
     {
-      "id": "8fe4712480e5bbb0e896536cae7d2044e5270299a54f7c9d2046326085af87f1",
-      "sha256": "8fe4712480e5bbb0e896536cae7d2044e5270299a54f7c9d2046326085af87f1",
-      "title": "The science and practice of monetary policy communication - the European Central Bank experience",
-      "url": "https://www.bis.org/speeches/20261112-science-and-practice-monetary-policy-communication-european-central-bank-experience",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "EUR"
-      ],
-      "divisas": [
-        "GBP",
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "39614157f4cbbc56230a94170c4e84721c1e3ffa8b4ac09578c21ffcf12206fa",
-      "sha256": "39614157f4cbbc56230a94170c4e84721c1e3ffa8b4ac09578c21ffcf12206fa",
-      "title": "One policy, many realities - why differences matter for monetary policy",
-      "url": "https://www.bis.org/speeches/20261112-one-policy-many-realities-why-differences-matter-monetary-policy",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1a4dc208dec3df6d083d9c18f2a1818cd1ab42cdf2804fa2fb809ac1d6521218",
-      "sha256": "1a4dc208dec3df6d083d9c18f2a1818cd1ab42cdf2804fa2fb809ac1d6521218",
-      "title": "The economic outlook and some thoughts on labor market dynamism",
-      "url": "https://www.bis.org/speeches/20261112-economic-outlook-and-some-thoughts-labor-market-dynamism",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ff67ff1be76dad37b4055d8a47455712ed9cd141990ad98d031e78cb4914475c",
-      "sha256": "ff67ff1be76dad37b4055d8a47455712ed9cd141990ad98d031e78cb4914475c",
-      "title": "The low-gear labour market",
-      "url": "https://www.bis.org/speeches/20261112-low-gear-labour-market",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [
-        "GBP"
-      ],
-      "divisas": [
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
       "sha256": "db640763ed142bea5f8da3775d7888a0b4482cdcf2b79e1cda3f261ac37271ff",
       "title": "Competitiveness and resilience in the financial sector - oxymoron or complementarity?",
@@ -18306,6 +18184,128 @@
       "legacy_category": "banco_central",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8fe4712480e5bbb0e896536cae7d2044e5270299a54f7c9d2046326085af87f1",
+      "sha256": "8fe4712480e5bbb0e896536cae7d2044e5270299a54f7c9d2046326085af87f1",
+      "title": "The science and practice of monetary policy communication - the European Central Bank experience",
+      "url": "https://www.bis.org/speeches/20261112-science-and-practice-monetary-policy-communication-european-central-bank-experience",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "EUR"
+      ],
+      "divisas": [
+        "GBP",
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "39614157f4cbbc56230a94170c4e84721c1e3ffa8b4ac09578c21ffcf12206fa",
+      "sha256": "39614157f4cbbc56230a94170c4e84721c1e3ffa8b4ac09578c21ffcf12206fa",
+      "title": "One policy, many realities - why differences matter for monetary policy",
+      "url": "https://www.bis.org/speeches/20261112-one-policy-many-realities-why-differences-matter-monetary-policy",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1a4dc208dec3df6d083d9c18f2a1818cd1ab42cdf2804fa2fb809ac1d6521218",
+      "sha256": "1a4dc208dec3df6d083d9c18f2a1818cd1ab42cdf2804fa2fb809ac1d6521218",
+      "title": "The economic outlook and some thoughts on labor market dynamism",
+      "url": "https://www.bis.org/speeches/20261112-economic-outlook-and-some-thoughts-labor-market-dynamism",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "analisis",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ff67ff1be76dad37b4055d8a47455712ed9cd141990ad98d031e78cb4914475c",
+      "sha256": "ff67ff1be76dad37b4055d8a47455712ed9cd141990ad98d031e78cb4914475c",
+      "title": "The low-gear labour market",
+      "url": "https://www.bis.org/speeches/20261112-low-gear-labour-market",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
@@ -18684,96 +18684,6 @@
       "z": null
     },
     {
-      "id": "994281aa5e6174ea2b61b603248fafe2da85b6d1d9f4709c2e5b7639d53930a5",
-      "sha256": "994281aa5e6174ea2b61b603248fafe2da85b6d1d9f4709c2e5b7639d53930a5",
-      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - annual data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZldpSVVhdVlzcGZvU0VoNnh4Q01TSVBMNkdvMDNSY2ZrOF93Q1lGQ2tmZW9GV1cwcDllaG0yT082eTRuMGZEQzNMaGIzcVZlUmwzV3JLZFRnNDV6QTJjVVNVYWs3LTBhajdZcHl1N29ZNERmaEQwZzhPaGU1Mm03Q3ZEZlprNVJfdkh2QTNJd1p6eDg?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
-      "sha256": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
-      "title": "[namq_10_gdp] Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV2JHZ0ZFQVo5Smt3UmozZ0xKem92YU1fci0tR0lnd2dGSEJLNXAxaXRPV2pWYUxkSXhnc1lsOG1iVDFZOWFYRHVOdWhxQU9ZVVhkUG5HZ1p1bzhjeG9ZLXBCVlU2X3hCUEJTWXhpUm9JeDBOeEkyeGRhMEk2N2xoSmo4RFhzZFItSVdEaUJIVHhTRlU?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
-      "sha256": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
-      "title": "[nama_10_a10] Gross value added and income by main industry (NACE Rev.2 ) - annual data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdTlET3JCSHprTVFqdWxoYmI0T0RuVEhQX2gwWXlQTkt5b09LejU1emN1ZkY2cEE0UVgtenFMVmNpbEMxWjVzY004NDB3eE9aTnJEZXB3MXpGQjN1M2pmeU44UTUwV3d5d0g0U0JFUFRRclVoVUlVRkRkVnU3c3VYMEtGVTF3cWd0UkNuVFo2QndVT0NsQ0dKWmtFRQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
       "sha256": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
       "title": "2026 Census Employment Collection Notice - Australian Bureau of Statistics",
@@ -18863,6 +18773,96 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "994281aa5e6174ea2b61b603248fafe2da85b6d1d9f4709c2e5b7639d53930a5",
+      "sha256": "994281aa5e6174ea2b61b603248fafe2da85b6d1d9f4709c2e5b7639d53930a5",
+      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - annual data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZldpSVVhdVlzcGZvU0VoNnh4Q01TSVBMNkdvMDNSY2ZrOF93Q1lGQ2tmZW9GV1cwcDllaG0yT082eTRuMGZEQzNMaGIzcVZlUmwzV3JLZFRnNDV6QTJjVVNVYWs3LTBhajdZcHl1N29ZNERmaEQwZzhPaGU1Mm03Q3ZEZlprNVJfdkh2QTNJd1p6eDg?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
+      "sha256": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
+      "title": "[namq_10_gdp] Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV2JHZ0ZFQVo5Smt3UmozZ0xKem92YU1fci0tR0lnd2dGSEJLNXAxaXRPV2pWYUxkSXhnc1lsOG1iVDFZOWFYRHVOdWhxQU9ZVVhkUG5HZ1p1bzhjeG9ZLXBCVlU2X3hCUEJTWXhpUm9JeDBOeEkyeGRhMEk2N2xoSmo4RFhzZFItSVdEaUJIVHhTRlU?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
+      "sha256": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
+      "title": "[nama_10_a10] Gross value added and income by main industry (NACE Rev.2 ) - annual data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdTlET3JCSHprTVFqdWxoYmI0T0RuVEhQX2gwWXlQTkt5b09LejU1emN1ZkY2cEE0UVgtenFMVmNpbEMxWjVzY004NDB3eE9aTnJEZXB3MXpGQjN1M2pmeU44UTUwV3d5d0g0U0JFUFRRclVoVUlVRkRkVnU3c3VYMEtGVTF3cWd0UkNuVFo2QndVT0NsQ0dKWmtFRQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -20361,114 +20361,6 @@
       "z": null
     },
     {
-      "id": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
-      "sha256": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
-      "title": "Opening remarks - Monetary Policy Report (IPOM) press conference, third quarter of 2026",
-      "url": "https://www.bis.org/speeches/20261110-opening-remarks-monetary-policy-report-ipom-press-conference-third-quarter-2026",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "d3645fa7c8b4da8f0c34869ab7a0256263e0f0606a11c455f150da2ab55e57b1",
-      "sha256": "d3645fa7c8b4da8f0c34869ab7a0256263e0f0606a11c455f150da2ab55e57b1",
-      "title": "Transmission and conduct of monetary policy in Switzerland",
-      "url": "https://www.bis.org/speeches/20261110-transmission-and-conduct-monetary-policy-switzerland",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "04541cb36639491ad0480e296f9f0f3d3b5b701cea846c2dbf06077675454c04",
-      "sha256": "04541cb36639491ad0480e296f9f0f3d3b5b701cea846c2dbf06077675454c04",
-      "title": "Introductory remarks - Official Monetary and Financial Institutions Forum (OMFIF)",
-      "url": "https://www.bis.org/speeches/20261110-introductory-remarks-official-monetary-and-financial-institutions-forum-omfif",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "def3d62200843a03d9c4b9c1072e257cd3830359d0608e5d2e3c41ef8f57392f",
-      "sha256": "def3d62200843a03d9c4b9c1072e257cd3830359d0608e5d2e3c41ef8f57392f",
-      "title": "We have kept the policy rate unchanged",
-      "url": "https://www.bis.org/speeches/20261110-we-have-kept-policy-rate-unchanged",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
       "sha256": "97c7bf0dff984db9354754815d44ceb688b875a4ce4457a06ed4dd2fce7e0725",
       "title": "The future of FinTech",
@@ -20659,6 +20551,114 @@
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
+      "sha256": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
+      "title": "Opening remarks - Monetary Policy Report (IPOM) press conference, third quarter of 2026",
+      "url": "https://www.bis.org/speeches/20261110-opening-remarks-monetary-policy-report-ipom-press-conference-third-quarter-2026",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d3645fa7c8b4da8f0c34869ab7a0256263e0f0606a11c455f150da2ab55e57b1",
+      "sha256": "d3645fa7c8b4da8f0c34869ab7a0256263e0f0606a11c455f150da2ab55e57b1",
+      "title": "Transmission and conduct of monetary policy in Switzerland",
+      "url": "https://www.bis.org/speeches/20261110-transmission-and-conduct-monetary-policy-switzerland",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "04541cb36639491ad0480e296f9f0f3d3b5b701cea846c2dbf06077675454c04",
+      "sha256": "04541cb36639491ad0480e296f9f0f3d3b5b701cea846c2dbf06077675454c04",
+      "title": "Introductory remarks - Official Monetary and Financial Institutions Forum (OMFIF)",
+      "url": "https://www.bis.org/speeches/20261110-introductory-remarks-official-monetary-and-financial-institutions-forum-omfif",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "def3d62200843a03d9c4b9c1072e257cd3830359d0608e5d2e3c41ef8f57392f",
+      "sha256": "def3d62200843a03d9c4b9c1072e257cd3830359d0608e5d2e3c41ef8f57392f",
+      "title": "We have kept the policy rate unchanged",
+      "url": "https://www.bis.org/speeches/20261110-we-have-kept-policy-rate-unchanged",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -20880,36 +20880,6 @@
       "z": null
     },
     {
-      "id": "49781fe5b74bfe776d6fc63a39a06f5f2938e840652af566f6f1bcb47edb3b48",
-      "sha256": "49781fe5b74bfe776d6fc63a39a06f5f2938e840652af566f6f1bcb47edb3b48",
-      "title": "Mental health - health.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90U005SzJuSnRmUFNOdm5tZVBPQ2pSX2cxS3k1Sm5PLURaOEw4TUNVbGd0TW5RMlNUdEI1eG5KSkNiUHdzVDU3OFVRdmQ1TDcyQ3BIT3F0ZDBhNUFWenNCZGY0VE94bGNrdkRJQklqRDdUUU5rQUJYSll3?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T12:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "859f19a307e7f4ef293bf30c7cd4d3a6a7aab5f6349261a750909131d6920022",
       "sha256": "859f19a307e7f4ef293bf30c7cd4d3a6a7aab5f6349261a750909131d6920022",
       "title": "Address to the United States Studies Centre - Treasury.gov.au",
@@ -20934,6 +20904,36 @@
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "49781fe5b74bfe776d6fc63a39a06f5f2938e840652af566f6f1bcb47edb3b48",
+      "sha256": "49781fe5b74bfe776d6fc63a39a06f5f2938e840652af566f6f1bcb47edb3b48",
+      "title": "Mental health - health.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90U005SzJuSnRmUFNOdm5tZVBPQ2pSX2cxS3k1Sm5PLURaOEw4TUNVbGd0TW5RMlNUdEI1eG5KSkNiUHdzVDU3OFVRdmQ1TDcyQ3BIT3F0ZDBhNUFWenNCZGY0VE94bGNrdkRJQklqRDdUUU5rQUJYSll3?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T12:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -21222,36 +21222,6 @@
       "z": null
     },
     {
-      "id": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
-      "sha256": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
-      "title": "Making AI-driven finance work for consumers",
-      "url": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
       "sha256": "a8f19c4f638bba409cfb530b1f84088903b59226a8c22d7ea6802f991a0d2e86",
       "title": "Message for the SEACEN masterclass - central bank communication",
@@ -21390,6 +21360,36 @@
       "z": null
     },
     {
+      "id": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
+      "sha256": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
+      "title": "Making AI-driven finance work for consumers",
+      "url": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "b9b7f7c872701b0314ff7aa57fbc5657635e18e9aae3a3e7d710aaa460b3d6f2",
       "sha256": "b9b7f7c872701b0314ff7aa57fbc5657635e18e9aae3a3e7d710aaa460b3d6f2",
       "title": "Market Operations by the Bank of Japan (Oct.)",
@@ -21469,6 +21469,39 @@
         "BC"
       ],
       "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "728a1da1c3477106e90043e5ab3fb017d1b7a7be7581c6e27ad88b4e70dc8adf",
+      "sha256": "728a1da1c3477106e90043e5ab3fb017d1b7a7be7581c6e27ad88b4e70dc8adf",
+      "title": "GDP monthly estimate, UK: October 2027 time series - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1VLXEwYVVKelk1YnVCaHF1RUVIOTdoVWJ5X19sdElPTHpxeHk3SVRmaXRMME5hSGYteWlwYV9raE5qRU5ZUmpFeUtmYmJzSFhTbkI1T1hWWUVZZk0tMG9XXzUyeVJxOE9CZjhKdjI1Zy1QbUdQcGxrLTJ5a0ZYUQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-08T21:31:12.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -22101,6 +22134,38 @@
       "z": null
     },
     {
+      "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
+      "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
+      "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZUNnZDljUE1RcW9VZXU5QjZpZUdGTUNoazBCM1JRQmxfVGFWcnhnNnd3YUNycE0xZURiUmVKRXpoUkkwMFljSE9TRzV4Z29nOEFPVDZPVWFvekNLY0VIXzBCYWtmTEJvUE5vVlFzVS1JRFZzb21IQU1wQ3loYU1odkQzZ2RDaWFqdDNCVDYtalNWTnV3bmFQRlhB?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "b821e01e214ebdbed2bbca5898be9cf826b933bd1f14160fbb92339d103751f8",
       "sha256": "b821e01e214ebdbed2bbca5898be9cf826b933bd1f14160fbb92339d103751f8",
       "title": "[une_rt_a] Unemployment by sex and age - annual data - European Commission",
@@ -22244,38 +22309,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
-      "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
-      "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZUNnZDljUE1RcW9VZXU5QjZpZUdGTUNoazBCM1JRQmxfVGFWcnhnNnd3YUNycE0xZURiUmVKRXpoUkkwMFljSE9TRzV4Z29nOEFPVDZPVWFvekNLY0VIXzBCYWtmTEJvUE5vVlFzVS1JRFZzb21IQU1wQ3loYU1odkQzZ2RDaWFqdDNCVDYtalNWTnV3bmFQRlhB?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T08:00:00.000Z",
-      "currencies": [
-        "USD",
-        "JPY"
-      ],
-      "divisas": [
-        "USD",
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -23221,36 +23254,6 @@
       "z": null
     },
     {
-      "id": "d246285327cdbb7811561ecff0ec9669e096d2e10ad480a6dfe0ec38c6c384ca",
-      "sha256": "d246285327cdbb7811561ecff0ec9669e096d2e10ad480a6dfe0ec38c6c384ca",
-      "title": "[une_rt_m] Unemployment by sex and age - monthly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSHkxWHRWemJEN2JBendjSVJTUGVZQnNqLU9KdjE0X0NJbzByNHlSTEZ6Vmt5Z1NDbjV0QU9yUXJudnVtSGRFQ0xBMWhNandjRGJIM093dG5UYlVjaXhSOEJUZ29vQWpUSVpNQWJRdE1tc09MN3RfUWhqR1hUazBRWDRFWnAxSWRRVUlQMGlhTQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "4c09462c767cd633f8e2b5e3d80563ff6a1589e5b7c749750e4dbc179567eed1",
       "sha256": "4c09462c767cd633f8e2b5e3d80563ff6a1589e5b7c749750e4dbc179567eed1",
       "title": "Public sector employment and earnings growth moderates in 2025-26 - Australian Bureau of Statistics",
@@ -23381,6 +23384,68 @@
       "z": null
     },
     {
+      "id": "97d5cbb1da8ad7a6da5d6047ca7cd8030fba1fc3cea09729996d73958b651f2f",
+      "sha256": "97d5cbb1da8ad7a6da5d6047ca7cd8030fba1fc3cea09729996d73958b651f2f",
+      "title": "Opinion piece: AI lets novices catch up while the biggest gains flow to capital - Treasury.gov.au",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNckJRd0dRRTA4TXhXV0pPUGFXTnVXODRhamZtcEdyc0hkLXoyZGN3NW9uVUJ0TXpHX0RTZzBidDFxMHdfb1p6cmNidnNyX2VUVnh4LUFCaEx4T3ltRFUwYm1GOWNtRG1IZ25GVXRWb1FPUllvT0p6ekY0cHkwU3VhQUdKR2tTUC0wVVYxN2JqV3Q3TDNYSFRfY3RURmRTazU3RXNUaFcxeEdaMmlsbkhLOHlyRlVYYTV0dk9oNndoWHM4SkIzb1p5d05JTQ?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-05T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d246285327cdbb7811561ecff0ec9669e096d2e10ad480a6dfe0ec38c6c384ca",
+      "sha256": "d246285327cdbb7811561ecff0ec9669e096d2e10ad480a6dfe0ec38c6c384ca",
+      "title": "[une_rt_m] Unemployment by sex and age - monthly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSHkxWHRWemJEN2JBendjSVJTUGVZQnNqLU9KdjE0X0NJbzByNHlSTEZ6Vmt5Z1NDbjV0QU9yUXJudnVtSGRFQ0xBMWhNandjRGJIM093dG5UYlVjaXhSOEJUZ29vQWpUSVpNQWJRdE1tc09MN3RfUWhqR1hUazBRWDRFWnAxSWRRVUlQMGlhTQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-05T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "2cb541250c8749f46d879ca0a850c108bab8aece93c3b06e4a0408412e41b285",
       "sha256": "2cb541250c8749f46d879ca0a850c108bab8aece93c3b06e4a0408412e41b285",
       "title": "[nama_10_an6] Gross fixed capital formation by main asset type - annual data - European Commission",
@@ -23433,38 +23498,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "97d5cbb1da8ad7a6da5d6047ca7cd8030fba1fc3cea09729996d73958b651f2f",
-      "sha256": "97d5cbb1da8ad7a6da5d6047ca7cd8030fba1fc3cea09729996d73958b651f2f",
-      "title": "Opinion piece: AI lets novices catch up while the biggest gains flow to capital - Treasury.gov.au",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNckJRd0dRRTA4TXhXV0pPUGFXTnVXODRhamZtcEdyc0hkLXoyZGN3NW9uVUJ0TXpHX0RTZzBidDFxMHdfb1p6cmNidnNyX2VUVnh4LUFCaEx4T3ltRFUwYm1GOWNtRG1IZ25GVXRWb1FPUllvT0p6ekY0cHkwU3VhQUdKR2tTUC0wVVYxN2JqV3Q3TDNYSFRfY3RURmRTazU3RXNUaFcxeEdaMmlsbkhLOHlyRlVYYTV0dk9oNndoWHM4SkIzb1p5d05JTQ?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T08:00:00.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -24059,6 +24092,70 @@
       "z": null
     },
     {
+      "id": "8a560438d2467f0474436d194a7055e1ed77177beeb888656c4cd6acb5ff95f1",
+      "sha256": "8a560438d2467f0474436d194a7055e1ed77177beeb888656c4cd6acb5ff95f1",
+      "title": "Job Vacancies, Australia, August 2026 - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQU3lEdUhRUzl5RUJFSHBZUWRUX3lYcG1nRDJtRENnSmJOQjhMd0lKc3ZxbmhYT3FuOVQ1RE9sTUdzc3lURmhfMzFlOHBrc0luQ0Y1a09CdVk4YUZMZEFoUkhGQldQRDg4S2FBSERPQnRhUXFjVkoyOEdDR2Ytd3ZLdUl0UDNpN215R2JETw?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T08:00:00.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c6e6e4089b6fcd73b7d69b21af8530e51a67c9f823559979c6af5b0664e89d84",
+      "sha256": "c6e6e4089b6fcd73b7d69b21af8530e51a67c9f823559979c6af5b0664e89d84",
+      "title": "Monthly Household Spending Indicator, September 2026 - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVjlXOVNBTVhxVVA3eHJGVVNZUll4YWg0ejI3N3IxQzBkTGgxOU0zemZTY3hxTGJMLVVXMmdWQlVYX0tWdTBYNmVabnJ2LW1TN290RzJnaEdjalNzVml1RzJjbWtDdlZyM0plN3RBZXBhb1hEdldTV1NxdzZLZ2xkZ0tXb0s5dXo5TlNZR3hWdVROYjJ3UGZ5NG82OTVIeUtwdmVr?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-04T08:00:00.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "8878aab60f304c3b53e9715fb4d3bd6ce5b790402c7081b9683af67241cf7cc5",
       "sha256": "8878aab60f304c3b53e9715fb4d3bd6ce5b790402c7081b9683af67241cf7cc5",
       "title": "Euro area annual inflation up to 4.0% - European Commission",
@@ -24141,70 +24238,6 @@
       "ficha_v6": "C2",
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8a560438d2467f0474436d194a7055e1ed77177beeb888656c4cd6acb5ff95f1",
-      "sha256": "8a560438d2467f0474436d194a7055e1ed77177beeb888656c4cd6acb5ff95f1",
-      "title": "Job Vacancies, Australia, August 2026 - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQU3lEdUhRUzl5RUJFSHBZUWRUX3lYcG1nRDJtRENnSmJOQjhMd0lKc3ZxbmhYT3FuOVQ1RE9sTUdzc3lURmhfMzFlOHBrc0luQ0Y1a09CdVk4YUZMZEFoUkhGQldQRDg4S2FBSERPQnRhUXFjVkoyOEdDR2Ytd3ZLdUl0UDNpN215R2JETw?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-04T08:00:00.000Z",
-      "currencies": [
-        "AUD",
-        "USD"
-      ],
-      "divisas": [
-        "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c6e6e4089b6fcd73b7d69b21af8530e51a67c9f823559979c6af5b0664e89d84",
-      "sha256": "c6e6e4089b6fcd73b7d69b21af8530e51a67c9f823559979c6af5b0664e89d84",
-      "title": "Monthly Household Spending Indicator, September 2026 - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVjlXOVNBTVhxVVA3eHJGVVNZUll4YWg0ejI3N3IxQzBkTGgxOU0zemZTY3hxTGJMLVVXMmdWQlVYX0tWdTBYNmVabnJ2LW1TN290RzJnaEdjalNzVml1RzJjbWtDdlZyM0plN3RBZXBhb1hEdldTV1NxdzZLZ2xkZ0tXb0s5dXo5TlNZR3hWdVROYjJ3UGZ5NG82OTVIeUtwdmVr?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-04T08:00:00.000Z",
-      "currencies": [
-        "AUD",
-        "USD"
-      ],
-      "divisas": [
-        "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -25058,123 +25091,6 @@
       "z": null
     },
     {
-      "id": "fd4ac8bfe1b2f28f7eb2babcd67c757b4b192c705d591ad2920cf54e53c2a528",
-      "sha256": "fd4ac8bfe1b2f28f7eb2babcd67c757b4b192c705d591ad2920cf54e53c2a528",
-      "title": "Economic transitions - technology",
-      "url": "https://www.bis.org/speeches/20261103-economic-transitions-technology",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "376af7e2a5877d52ea45278e37489c7cac85c1a0c38e60af66e45cdb186e28fa",
-      "sha256": "376af7e2a5877d52ea45278e37489c7cac85c1a0c38e60af66e45cdb186e28fa",
-      "title": "Building sills for Africa’s home-grown development",
-      "url": "https://www.bis.org/speeches/20261103-building-sills-africas-home-grown-development",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f8f4c0aabbe634bd2f0b87c029cfeec8bf12a4339e9082b7b9b72b22a86e4c41",
-      "sha256": "f8f4c0aabbe634bd2f0b87c029cfeec8bf12a4339e9082b7b9b72b22a86e4c41",
-      "title": "The path back to 2 % has become less comfortable",
-      "url": "https://www.bis.org/speeches/20261103-path-back-2-has-become-less-comfortable",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "analisis",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fea0c8bad4f4868259d5a2465f82d6be7a9ff9d53c752ab777f057f12b61cb8d",
-      "sha256": "fea0c8bad4f4868259d5a2465f82d6be7a9ff9d53c752ab777f057f12b61cb8d",
-      "title": "Credit unionism and the development of Barbados",
-      "url": "https://www.bis.org/speeches/20261103-credit-unionism-and-development-barbados",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-03T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
       "sha256": "6726b583d50a9c2e1b497b3a6b3b107afd625b72f299c7b9d7f781564c1ef561",
       "title": "A new payment scheme for Iceland - building a sovereign and secure payment system",
@@ -25314,6 +25230,123 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fd4ac8bfe1b2f28f7eb2babcd67c757b4b192c705d591ad2920cf54e53c2a528",
+      "sha256": "fd4ac8bfe1b2f28f7eb2babcd67c757b4b192c705d591ad2920cf54e53c2a528",
+      "title": "Economic transitions - technology",
+      "url": "https://www.bis.org/speeches/20261103-economic-transitions-technology",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "376af7e2a5877d52ea45278e37489c7cac85c1a0c38e60af66e45cdb186e28fa",
+      "sha256": "376af7e2a5877d52ea45278e37489c7cac85c1a0c38e60af66e45cdb186e28fa",
+      "title": "Building sills for Africa’s home-grown development",
+      "url": "https://www.bis.org/speeches/20261103-building-sills-africas-home-grown-development",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f8f4c0aabbe634bd2f0b87c029cfeec8bf12a4339e9082b7b9b72b22a86e4c41",
+      "sha256": "f8f4c0aabbe634bd2f0b87c029cfeec8bf12a4339e9082b7b9b72b22a86e4c41",
+      "title": "The path back to 2 % has become less comfortable",
+      "url": "https://www.bis.org/speeches/20261103-path-back-2-has-become-less-comfortable",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "analisis",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fea0c8bad4f4868259d5a2465f82d6be7a9ff9d53c752ab777f057f12b61cb8d",
+      "sha256": "fea0c8bad4f4868259d5a2465f82d6be7a9ff9d53c752ab777f057f12b61cb8d",
+      "title": "Credit unionism and the development of Barbados",
+      "url": "https://www.bis.org/speeches/20261103-credit-unionism-and-development-barbados",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-03T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -25915,67 +25948,6 @@
       "z": null
     },
     {
-      "id": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
-      "sha256": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
-      "title": "Liquidity against collateral - the Swiss National Bank’s approach",
-      "url": "https://www.bis.org/speeches/20261102-liquidity-against-collateral-swiss-national-banks-approach",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "edd5a14defeedce30b05a14d70870ab107d62979d108de2608cc8dba03bacb77",
-      "sha256": "edd5a14defeedce30b05a14d70870ab107d62979d108de2608cc8dba03bacb77",
-      "title": "Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
-      "url": "https://www.bis.org/speeches/20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "c3eff5814c3bbde0803bbfc10ede0facbbad0c389872fef89e82182fd16ef8d8",
       "sha256": "c3eff5814c3bbde0803bbfc10ede0facbbad0c389872fef89e82182fd16ef8d8",
       "title": "AI adoption in Europe",
@@ -26110,6 +26082,67 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
+      "sha256": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
+      "title": "Liquidity against collateral - the Swiss National Bank’s approach",
+      "url": "https://www.bis.org/speeches/20261102-liquidity-against-collateral-swiss-national-banks-approach",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "edd5a14defeedce30b05a14d70870ab107d62979d108de2608cc8dba03bacb77",
+      "sha256": "edd5a14defeedce30b05a14d70870ab107d62979d108de2608cc8dba03bacb77",
+      "title": "Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
+      "url": "https://www.bis.org/speeches/20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -28289,63 +28322,6 @@
       "z": null
     },
     {
-      "id": "e447de7a134a1453539f07e1ff559564587bd9172ea30e9c09a99928072d8f28",
-      "sha256": "e447de7a134a1453539f07e1ff559564587bd9172ea30e9c09a99928072d8f28",
-      "title": "Opening Statement to the Senate Economics Legislation Committee (Supplementary Budget Estimates)",
-      "url": "https://www.bis.org/speeches/20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "9bd4b326028c7f6ba865d7aee39bb702d8ad57638a7cd2bb15a7f939acbe69bb",
-      "sha256": "9bd4b326028c7f6ba865d7aee39bb702d8ad57638a7cd2bb15a7f939acbe69bb",
-      "title": "Chile's September 2026 Monetary Policy Report",
-      "url": "https://www.bis.org/speeches/20261029-chiles-september-2026-monetary-policy-report",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-10-29T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
       "sha256": "e57b711c2ab474e0701346b4ea9d9c5559a057c81acebb4f7660f299da222514",
       "title": "Release of the Monetary Policy Report",
@@ -28432,6 +28408,63 @@
       "sha256": "4753ed7b467a7738c9967663a5693453f0fa3489478727e8a55253e76953a050",
       "title": "National Bank of Ukraine press briefing - monetary policy decisions",
       "url": "https://www.bis.org/speeches/20261102-national-bank-ukraine-press-briefing-monetary-policy-decisions",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e447de7a134a1453539f07e1ff559564587bd9172ea30e9c09a99928072d8f28",
+      "sha256": "e447de7a134a1453539f07e1ff559564587bd9172ea30e9c09a99928072d8f28",
+      "title": "Opening Statement to the Senate Economics Legislation Committee (Supplementary Budget Estimates)",
+      "url": "https://www.bis.org/speeches/20261029-opening-statement-senate-economics-legislation-committee-supplementary-budget-estimates",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-10-29T00:00:00.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "9bd4b326028c7f6ba865d7aee39bb702d8ad57638a7cd2bb15a7f939acbe69bb",
+      "sha256": "9bd4b326028c7f6ba865d7aee39bb702d8ad57638a7cd2bb15a7f939acbe69bb",
+      "title": "Chile's September 2026 Monetary Policy Report",
+      "url": "https://www.bis.org/speeches/20261029-chiles-september-2026-monetary-policy-report",
       "source": "BIS",
       "source_id": "bis-speeches",
       "source_type": "oficial",
