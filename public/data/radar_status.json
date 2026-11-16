@@ -1,7 +1,7 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-16T21:55:23.802Z",
-  "feed_generated_at": "2026-11-16T21:55:23.742Z",
+  "last_check_at": "2026-11-16T22:00:29.106Z",
+  "feed_generated_at": "2026-11-16T22:00:29.046Z",
   "wrote_full_feed": true,
   "new_items": 3,
   "sources": {
@@ -13,18 +13,18 @@
   },
   "failing_sources": [
     {
-      "id": "fed",
-      "status": "error",
-      "last_error": "HTTP 404",
-      "last_success_at": "2026-11-16T21:50:14.633Z",
-      "consecutive_failures": 1
-    },
-    {
       "id": "snb-bills",
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 703
+      "consecutive_failures": 704
+    },
+    {
+      "id": "ch-press",
+      "status": "error",
+      "last_error": "HTTP 429",
+      "last_success_at": "2026-11-16T21:55:21.076Z",
+      "consecutive_failures": 1
     }
   ],
   "calendar_events": 115,
