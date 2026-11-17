@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-17T11:18:59.555Z",
+  "generated_at": "2026-11-17T11:19:20.612Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -1218,7 +1218,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -12.1,
+      "hours_from_now": -12.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1503,7 +1503,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.9,
+      "hours_from_now": 2.8,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -22201,6 +22201,36 @@
       "z": null
     },
     {
+      "id": "448e43fcecc553517375546404399636153a9a543978a431a45956ec02edab26",
+      "sha256": "448e43fcecc553517375546404399636153a9a543978a431a45956ec02edab26",
+      "title": "[namq_10_gdp] Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPY3pGNk5UQ0t4YUJnMEwwdFNCMm9vM0VCUFR6UjF2MUJMVWhjcXVOREFJbjNaTlZGNDJPclJvTUlaT3Jqdkx6bk8xOFlYc3Vxa1RudG1KTV9nd29GVnoxYVlzcEtMSmtuVGJxSG5IcUs4eWl2VGJISHpLTGl1VVh6LVIwMjgzTjhhRlpvaFFEX1dwZWlMLTVIZzBqVVVoQTBfRzJneVpqaHhLaHZNUndVWjVVcm8yZ2p3N3ZzRURFX1pNX3JPVDdKTzBnQjNpYlpRbDBqUjYyaHozZG9CWmVWaGtoLTVUa3hoc0VEbzkzYmgzNF9B?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T14:29:04.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "13aa4156a5d033eeee75727eb82cc57e445410d0e6918a27fe457fd8671d081e",
       "sha256": "13aa4156a5d033eeee75727eb82cc57e445410d0e6918a27fe457fd8671d081e",
       "title": "Producer Price Indexes - October 2026 - Bureau of Labor Statistics (.gov)",
@@ -22471,10 +22501,10 @@
       "z": null
     },
     {
-      "id": "b258b0dd9599c1e1b653cce9cd3a79a29c1e715dceb2963b2487011b77278119",
-      "sha256": "b258b0dd9599c1e1b653cce9cd3a79a29c1e715dceb2963b2487011b77278119",
-      "title": "[lfst_r_lfu3rt] Unemployment rates by educational attainment level and NUTS 2 region - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQloyVzhHS2VJT25DNWNFUzluRmFNLXJUM0ttNjhMVjBieEJKdkphdG11eFVDdUlUVEFOWjcwTk1jVXk0TXVxYUNmeVRtRFVCWm1Hc1l5STBObDhYYXl2WDZ4dkNGbVFQWjczWXpoWmpESk14M2wweWl1UVZVTVNOWjNkUUtKbHI4MnU2WkNmMTB1UE5UV3d5cWdtMWRucVZtNEI0MGEzSHZiblNTdEhRUlJGVW5KOU9ESXl4V0ZPVXZoM3B3?oc=5",
+      "id": "db6a4761d5f55100fb66c83249da56b7454405f058a65f951046fce002202456",
+      "sha256": "db6a4761d5f55100fb66c83249da56b7454405f058a65f951046fce002202456",
+      "title": "[tipsen10] Net trade balance of energy products - % of GDP - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOU1c4Rk9OVlByWkVoSXI0YWRvNGlRNlZQaXZ3VFZsRzYxZjJCazdmaXJwQ2VkaDc3b0VwazlheWVQNjZvZnc4SXZIa21XUVlEWDdUYmswX1FLaFdYNWZLOTZKRlhzREVESk9iRUFRV1UzWldzNzRuRXU0Y3hYbmluTzVacw?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -22487,11 +22517,12 @@
       ],
       "category": "Inflacion_Empleo",
       "categories": [
-        "Inflacion_Empleo"
+        "Inflacion_Empleo",
+        "Commodities_ToT"
       ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
+      "legacy_category": "dato_macro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
@@ -22724,10 +22755,10 @@
       "z": null
     },
     {
-      "id": "db6a4761d5f55100fb66c83249da56b7454405f058a65f951046fce002202456",
-      "sha256": "db6a4761d5f55100fb66c83249da56b7454405f058a65f951046fce002202456",
-      "title": "[tipsen10] Net trade balance of energy products - % of GDP - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOU1c4Rk9OVlByWkVoSXI0YWRvNGlRNlZQaXZ3VFZsRzYxZjJCazdmaXJwQ2VkaDc3b0VwazlheWVQNjZvZnc4SXZIa21XUVlEWDdUYmswX1FLaFdYNWZLOTZKRlhzREVESk9iRUFRV1UzWldzNzRuRXU0Y3hYbmluTzVacw?oc=5",
+      "id": "b258b0dd9599c1e1b653cce9cd3a79a29c1e715dceb2963b2487011b77278119",
+      "sha256": "b258b0dd9599c1e1b653cce9cd3a79a29c1e715dceb2963b2487011b77278119",
+      "title": "[lfst_r_lfu3rt] Unemployment rates by educational attainment level and NUTS 2 region - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQloyVzhHS2VJT25DNWNFUzluRmFNLXJUM0ttNjhMVjBieEJKdkphdG11eFVDdUlUVEFOWjcwTk1jVXk0TXVxYUNmeVRtRFVCWm1Hc1l5STBObDhYYXl2WDZ4dkNGbVFQWjczWXpoWmpESk14M2wweWl1UVZVTVNOWjNkUUtKbHI4MnU2WkNmMTB1UE5UV3d5cWdtMWRucVZtNEI0MGEzSHZiblNTdEhRUlJGVW5KOU9ESXl4V0ZPVXZoM3B3?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -22740,12 +22771,11 @@
       ],
       "category": "Inflacion_Empleo",
       "categories": [
-        "Inflacion_Empleo",
-        "Commodities_ToT"
+        "Inflacion_Empleo"
       ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
@@ -24605,66 +24635,6 @@
       "z": null
     },
     {
-      "id": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
-      "sha256": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
-      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdVF3UUF0ci0wOUtXdGVuUlpLVEJBejQtSE9DdkhQNXRNcVlMNGlmQkR1SUNaSUZWQVljSmMtNmgxLVhtUXJrZlVFSjM2OHFKWllUeXpDV1Y1MF9wV01SWFpKb3hINENUQVNwdF9mTlM0NWJwUmJnV1FJa3UzNW56QUlEWi16eHF6UjlabDBrRVY5SS1oUENYaG9LS1pUdC01U0ptZ0YxZFdtc3o4bmMteTA2bjNhUDNwTFItdGxIRjI5VVFa?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
-      "sha256": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
-      "title": "[namq_10_gdp] Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV2JHZ0ZFQVo5Smt3UmozZ0xKem92YU1fci0tR0lnd2dGSEJLNXAxaXRPV2pWYUxkSXhnc1lsOG1iVDFZOWFYRHVOdWhxQU9ZVVhkUG5HZ1p1bzhjeG9ZLXBCVlU2X3hCUEJTWXhpUm9JeDBOeEkyeGRhMEk2N2xoSmo4RFhzZFItSVdEaUJIVHhTRlU?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "sha256": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "title": "[nama_10_a10] Gross value added and income by main industry (NACE Rev.2 ) - annual data - European Commission",
@@ -24784,6 +24754,36 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
+      "sha256": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
+      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdVF3UUF0ci0wOUtXdGVuUlpLVEJBejQtSE9DdkhQNXRNcVlMNGlmQkR1SUNaSUZWQVljSmMtNmgxLVhtUXJrZlVFSjM2OHFKWllUeXpDV1Y1MF9wV01SWFpKb3hINENUQVNwdF9mTlM0NWJwUmJnV1FJa3UzNW56QUlEWi16eHF6UjlabDBrRVY5SS1oUENYaG9LS1pUdC01U0ptZ0YxZFdtc3o4bmMteTA2bjNhUDNwTFItdGxIRjI5VVFa?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -26282,6 +26282,36 @@
       "z": null
     },
     {
+      "id": "ddd8bd23e8301d029062a076caba879c15f75caa92d680e8a9f6a9f85ba7c38a",
+      "sha256": "ddd8bd23e8301d029062a076caba879c15f75caa92d680e8a9f6a9f85ba7c38a",
+      "title": "Welcome address - Fourth Women in Central Banking Workshop",
+      "url": "https://www.bis.org/speeches/20261110-welcome-address-fourth-women-central-banking-workshop",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T00:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
       "sha256": "2ed907d0d1f2524d7d24b511865e6cdea5865487ad7bcbe240d6dd00e75ae47f",
       "title": "Opening remarks - Monetary Policy Report (IPOM) press conference, third quarter of 2026",
@@ -26550,36 +26580,6 @@
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ddd8bd23e8301d029062a076caba879c15f75caa92d680e8a9f6a9f85ba7c38a",
-      "sha256": "ddd8bd23e8301d029062a076caba879c15f75caa92d680e8a9f6a9f85ba7c38a",
-      "title": "Welcome address - Fourth Women in Central Banking Workshop",
-      "url": "https://www.bis.org/speeches/20261110-welcome-address-fourth-women-central-banking-workshop",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T00:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -27143,6 +27143,32 @@
       "z": null
     },
     {
+      "id": "0dcba325c4b73366e7a6a3a1f7daaa97984c9383d1c9007bf4bf291c9eef7de8",
+      "sha256": "0dcba325c4b73366e7a6a3a1f7daaa97984c9383d1c9007bf4bf291c9eef7de8",
+      "title": "Opening remarks - 2026 Market Practitioners Group Conference",
+      "url": "https://www.bis.org/speeches/20261109-opening-remarks-2026-market-practitioners-group-conference",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-09T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
       "sha256": "c71e52f194117791d693a43b333a7afaffcd8babd0defae939dcc93ccdc0e28c",
       "title": "Making AI-driven finance work for consumers",
@@ -27277,32 +27303,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0dcba325c4b73366e7a6a3a1f7daaa97984c9383d1c9007bf4bf291c9eef7de8",
-      "sha256": "0dcba325c4b73366e7a6a3a1f7daaa97984c9383d1c9007bf4bf291c9eef7de8",
-      "title": "Opening remarks - 2026 Market Practitioners Group Conference",
-      "url": "https://www.bis.org/speeches/20261109-opening-remarks-2026-market-practitioners-group-conference",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-09T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -28175,36 +28175,6 @@
       "z": null
     },
     {
-      "id": "86647fb4ca81527f2e8a3b7bb028da3c88e939ce57b80582217347e69ce6efe5",
-      "sha256": "86647fb4ca81527f2e8a3b7bb028da3c88e939ce57b80582217347e69ce6efe5",
-      "title": "[sdg_08_40] Long-term unemployment rate by sex - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tUnlJZlQ0ejZvdkJhbWlIeWhpWWgxSFJnNEg2bmVCdWNZSTJxZkxnMVlXakpTN0doWXhPSHdoTktrajdGdmp5M2Q5UmZDVTh1QVJiR2gxdmlrcnNuZ0tjZDBFQm91NkxpNkFWdFVUX3JETUJBRmt1X0tB?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
       "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
       "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
@@ -28261,6 +28231,36 @@
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "86647fb4ca81527f2e8a3b7bb028da3c88e939ce57b80582217347e69ce6efe5",
+      "sha256": "86647fb4ca81527f2e8a3b7bb028da3c88e939ce57b80582217347e69ce6efe5",
+      "title": "[sdg_08_40] Long-term unemployment rate by sex - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tUnlJZlQ0ejZvdkJhbWlIeWhpWWgxSFJnNEg2bmVCdWNZSTJxZkxnMVlXakpTN0doWXhPSHdoTktrajdGdmp5M2Q5UmZDVTh1QVJiR2gxdmlrcnNuZ0tjZDBFQm91NkxpNkFWdFVUX3JETUJBRmt1X0tB?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -29205,10 +29205,10 @@
       "z": null
     },
     {
-      "id": "4d68fc78f66dc6c5fd0167635f198d6b04ee42851a520c5f5bc30d1df1a79a97",
-      "sha256": "4d68fc78f66dc6c5fd0167635f198d6b04ee42851a520c5f5bc30d1df1a79a97",
-      "title": "Public sector employment and earnings, 2025-26 financial year - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOHlnOS01VGZkREpfTzRrQmkweHJIVm9sNjE3bnhCYl90b2ZrYXdsNV9iNmtQNXFNQmFJb21WalJtYlRkZFptb2NERnFhZldOVW91M0pDZGt0djMzNXNzLTRFd3lXVlhzVlIwaldDZjgzX0Z3TDdoVVI1SzhxZXhlOXFKeGNJNEhRdlg3ZzRkRTh1dlViR3c2MnFxVFEzQ2tiOXd4c0lTRXMwMW5OeldjS1IwZ3pmVU4tWkZxVThB?oc=5",
+      "id": "4c09462c767cd633f8e2b5e3d80563ff6a1589e5b7c749750e4dbc179567eed1",
+      "sha256": "4c09462c767cd633f8e2b5e3d80563ff6a1589e5b7c749750e4dbc179567eed1",
+      "title": "Public sector employment and earnings growth moderates in 2025-26 - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORHBHZjZBWTBWMTdqU3FIYUhuT2FTM29uRlZQM2I2M01PMVgxWWVsYTRCNEUwVU8wVFl0NXZfSk5TVE9vYUxOS1BidlZMRkIxYVBNdU5Rdk1oOVBQd2M5anZ3bU9sN3E5MnpiT2N3ZFJJRWEtZmNKWFFSZnp0WFRNMW1LV3FGNXhNbHUyenZqZ3p5dWYwQTlpMElhRzMxRmJMbzZvbUhuaG55RnJyTjJ6REFNSQ?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -29238,10 +29238,10 @@
       "z": null
     },
     {
-      "id": "4c09462c767cd633f8e2b5e3d80563ff6a1589e5b7c749750e4dbc179567eed1",
-      "sha256": "4c09462c767cd633f8e2b5e3d80563ff6a1589e5b7c749750e4dbc179567eed1",
-      "title": "Public sector employment and earnings growth moderates in 2025-26 - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORHBHZjZBWTBWMTdqU3FIYUhuT2FTM29uRlZQM2I2M01PMVgxWWVsYTRCNEUwVU8wVFl0NXZfSk5TVE9vYUxOS1BidlZMRkIxYVBNdU5Rdk1oOVBQd2M5anZ3bU9sN3E5MnpiT2N3ZFJJRWEtZmNKWFFSZnp0WFRNMW1LV3FGNXhNbHUyenZqZ3p5dWYwQTlpMElhRzMxRmJMbzZvbUhuaG55RnJyTjJ6REFNSQ?oc=5",
+      "id": "4d68fc78f66dc6c5fd0167635f198d6b04ee42851a520c5f5bc30d1df1a79a97",
+      "sha256": "4d68fc78f66dc6c5fd0167635f198d6b04ee42851a520c5f5bc30d1df1a79a97",
+      "title": "Public sector employment and earnings, 2025-26 financial year - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOHlnOS01VGZkREpfTzRrQmkweHJIVm9sNjE3bnhCYl90b2ZrYXdsNV9iNmtQNXFNQmFJb21WalJtYlRkZFptb2NERnFhZldOVW91M0pDZGt0djMzNXNzLTRFd3lXVlhzVlIwaldDZjgzX0Z3TDdoVVI1SzhxZXhlOXFKeGNJNEhRdlg3ZzRkRTh1dlViR3c2MnFxVFEzQ2tiOXd4c0lTRXMwMW5OeldjS1IwZ3pmVU4tWkZxVThB?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -31869,6 +31869,32 @@
       "z": null
     },
     {
+      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
+      "title": "Statement - base rate of the National Bank of Kazakhstan",
+      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-02T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "sha256": "85fef8d9e5df54afa505ed909f0e662762dbdfb891ab4a4521bfb4621dc98591",
       "title": "Liquidity against collateral - the Swiss National Bank’s approach",
@@ -32037,32 +32063,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A1 / B2",
       "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "sha256": "0c291957cd4a5fb03da029c8145cba036c79ebddd7ca7516a8128b6ce2e46e83",
-      "title": "Statement - base rate of the National Bank of Kazakhstan",
-      "url": "https://www.bis.org/speeches/20261102-statement-base-rate-national-bank-kazakhstan",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-02T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
