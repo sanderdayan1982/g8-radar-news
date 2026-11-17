@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-17T23:50:34.442Z",
+  "generated_at": "2026-11-17T23:55:40.342Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -16,35 +16,35 @@
   },
   "coverage": {
     "USD": {
-      "count_72h": 308,
+      "count_72h": 309,
       "count_official_45d": 273,
-      "last_item_at": "2026-11-17T23:12:45.000Z",
-      "hours_since_last": 0.6,
-      "hours_since_last_business": 0.6,
+      "last_item_at": "2026-11-17T23:50:40.000Z",
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "EUR": {
       "count_72h": 54,
       "count_official_45d": 116,
       "last_item_at": "2026-11-17T18:30:00.000Z",
-      "hours_since_last": 5.3,
-      "hours_since_last_business": 5.3,
+      "hours_since_last": 5.4,
+      "hours_since_last_business": 5.4,
       "silence": false
     },
     "GBP": {
       "count_72h": 41,
       "count_official_45d": 91,
       "last_item_at": "2026-11-17T18:31:11.000Z",
-      "hours_since_last": 5.3,
-      "hours_since_last_business": 5.3,
+      "hours_since_last": 5.4,
+      "hours_since_last_business": 5.4,
       "silence": false
     },
     "JPY": {
-      "count_72h": 59,
+      "count_72h": 69,
       "count_official_45d": 81,
-      "last_item_at": "2026-11-17T21:42:30.000Z",
-      "hours_since_last": 2.1,
-      "hours_since_last_business": 2.1,
+      "last_item_at": "2026-11-17T23:51:02.000Z",
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "CHF": {
@@ -59,32 +59,32 @@
       "count_72h": 50,
       "count_official_45d": 8,
       "last_item_at": "2026-11-17T21:22:29.000Z",
-      "hours_since_last": 2.5,
-      "hours_since_last_business": 2.5,
+      "hours_since_last": 2.6,
+      "hours_since_last_business": 2.6,
       "silence": false
     },
     "AUD": {
       "count_72h": 103,
       "count_official_45d": 75,
       "last_item_at": "2026-11-17T23:43:48.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "NZD": {
       "count_72h": 124,
       "count_official_45d": 71,
-      "last_item_at": "2026-11-17T23:20:16.000Z",
-      "hours_since_last": 0.5,
-      "hours_since_last_business": 0.5,
+      "last_item_at": "2026-11-17T23:41:55.000Z",
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "XAU": {
       "count_72h": 11,
       "count_official_45d": 0,
       "last_item_at": "2026-11-17T16:30:15.000Z",
-      "hours_since_last": 7.3,
-      "hours_since_last_business": 7.3
+      "hours_since_last": 7.4,
+      "hours_since_last_business": 7.4
     }
   },
   "risk_map": [
@@ -97,7 +97,7 @@
           "lock_class": "OTRO_HIGH",
           "title": "FOMC Meeting Minutes",
           "time": "2026-11-18T19:00:00.000Z",
-          "hours_until": 19.2,
+          "hours_until": 19.1,
           "retirar_limitadas": false
         }
       ],
@@ -184,14 +184,14 @@
           "lock_class": "DISCURSO",
           "title": "ECB President Lagarde Speaks",
           "time": "2026-11-18T14:25:00.000Z",
-          "hours_until": 14.6,
+          "hours_until": 14.5,
           "retirar_limitadas": false
         },
         {
           "lock_class": "DISCURSO",
           "title": "ECB President Lagarde Speaks",
           "time": "2026-11-19T13:30:00.000Z",
-          "hours_until": 37.7,
+          "hours_until": 37.6,
           "retirar_limitadas": false
         }
       ],
@@ -263,21 +263,21 @@
           "lock_class": "TIER1_DATO",
           "title": "CPI y/y",
           "time": "2026-11-18T07:00:00.000Z",
-          "hours_until": 7.2,
+          "hours_until": 7.1,
           "retirar_limitadas": false
         },
         {
           "lock_class": "DISCURSO",
           "title": "BOE Gov Bailey Speaks",
           "time": "2026-11-18T07:30:00.000Z",
-          "hours_until": 7.7,
+          "hours_until": 7.6,
           "retirar_limitadas": false
         },
         {
           "lock_class": "DISCURSO",
           "title": "BOE Gov Bailey Speaks",
           "time": "2026-11-18T15:00:00.000Z",
-          "hours_until": 15.2,
+          "hours_until": 15.1,
           "retirar_limitadas": false
         }
       ],
@@ -317,7 +317,7 @@
     },
     {
       "currency": "JPY",
-      "risk_level": "BAJO",
+      "risk_level": "ALTO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -374,8 +374,10 @@
           "d24h_pp": -0.05
         }
       ],
-      "ea4_24h": false,
-      "reasons": []
+      "ea4_24h": true,
+      "reasons": [
+        "intervención en 24 h"
+      ]
     },
     {
       "currency": "CHF",
@@ -485,14 +487,14 @@
           "lock_class": "TIER1_DATO",
           "title": "Employment Change",
           "time": "2026-11-19T00:30:00.000Z",
-          "hours_until": 24.7,
+          "hours_until": 24.6,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Unemployment Rate",
           "time": "2026-11-19T00:30:00.000Z",
-          "hours_until": 24.7,
+          "hours_until": 24.6,
           "retirar_limitadas": false
         }
       ],
@@ -539,7 +541,7 @@
           "lock_class": "DISCURSO",
           "title": "RBNZ Gov Breman Speaks",
           "time": "2026-11-18T18:00:00.000Z",
-          "hours_until": 18.2,
+          "hours_until": 18.1,
           "retirar_limitadas": false
         }
       ],
@@ -683,14 +685,15 @@
     },
     {
       "pair": "USDJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "ALTO",
       "lock_level": "AVISO",
       "legs": {
         "base": "USD",
         "quote": "JPY"
       },
       "reasons": [
-        "evento de alto impacto"
+        "evento de alto impacto",
+        "intervención en 24 h"
       ]
     },
     {
@@ -758,14 +761,15 @@
     },
     {
       "pair": "EURJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "ALTO",
       "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "EUR",
         "quote": "JPY"
       },
       "reasons": [
-        "discurso"
+        "discurso",
+        "intervención en 24 h"
       ]
     },
     {
@@ -826,7 +830,8 @@
         "quote": "JPY"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "dato de primer nivel en 24 h",
+        "intervención en 24 h"
       ]
     },
     {
@@ -881,14 +886,15 @@
     },
     {
       "pair": "AUDJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "ALTO",
       "lock_level": "TIER1",
       "legs": {
         "base": "AUD",
         "quote": "JPY"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "intervención en 24 h"
       ]
     },
     {
@@ -930,14 +936,15 @@
     },
     {
       "pair": "NZDJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "ALTO",
       "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "NZD",
         "quote": "JPY"
       },
       "reasons": [
-        "discurso"
+        "discurso",
+        "intervención en 24 h"
       ]
     },
     {
@@ -966,13 +973,15 @@
     },
     {
       "pair": "CADJPY",
-      "risk_level": "BAJO",
+      "risk_level": "ALTO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "CAD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "intervención en 24 h"
+      ]
     },
     {
       "pair": "CADCHF",
@@ -986,13 +995,15 @@
     },
     {
       "pair": "CHFJPY",
-      "risk_level": "BAJO",
+      "risk_level": "ALTO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "CHF",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "intervención en 24 h"
+      ]
     },
     {
       "pair": "XAUUSD",
@@ -1017,7 +1028,7 @@
       "actual": "3.1%",
       "forecast": "0.3%",
       "previous": "0.1%",
-      "hours_from_now": -34.3,
+      "hours_from_now": -34.4,
       "window_status": null,
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -1032,7 +1043,7 @@
       "actual": "7.80",
       "forecast": "17.6",
       "previous": "25.5",
-      "hours_from_now": -34.3,
+      "hours_from_now": -34.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1047,7 +1058,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23.8,
+      "hours_from_now": -23.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1062,7 +1073,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23.3,
+      "hours_from_now": -23.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1077,7 +1088,7 @@
       "actual": null,
       "forecast": null,
       "previous": "2.34%",
-      "hours_from_now": -21.8,
+      "hours_from_now": -21.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "NINGUNO",
@@ -1092,7 +1103,7 @@
       "actual": null,
       "forecast": "0.1%",
       "previous": "-0.1%",
-      "hours_from_now": -19.3,
+      "hours_from_now": -19.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1107,7 +1118,7 @@
       "actual": "3.5%",
       "forecast": "3.5%",
       "previous": "3.7%",
-      "hours_from_now": -16.8,
+      "hours_from_now": -16.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1122,7 +1133,7 @@
       "actual": null,
       "forecast": "25.4K",
       "previous": "30.3K",
-      "hours_from_now": -16.8,
+      "hours_from_now": -16.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1137,7 +1148,7 @@
       "actual": "4.6%",
       "forecast": "4.7%",
       "previous": "4.7%",
-      "hours_from_now": -16.8,
+      "hours_from_now": -16.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1152,7 +1163,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.8,
+      "hours_from_now": -13.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1167,7 +1178,7 @@
       "actual": "26.5",
       "forecast": "19.1",
       "previous": "18.5",
-      "hours_from_now": -13.8,
+      "hours_from_now": -13.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1182,7 +1193,7 @@
       "actual": "35.6",
       "forecast": "28.8",
       "previous": "28.1",
-      "hours_from_now": -13.8,
+      "hours_from_now": -13.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1197,7 +1208,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -11.3,
+      "hours_from_now": -11.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1212,7 +1223,7 @@
       "actual": null,
       "forecast": "241K",
       "previous": "249K",
-      "hours_from_now": -10.6,
+      "hours_from_now": -10.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1227,7 +1238,7 @@
       "actual": "23.75K",
       "forecast": null,
       "previous": "19.8K",
-      "hours_from_now": -10.6,
+      "hours_from_now": -10.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1242,7 +1253,7 @@
       "actual": null,
       "forecast": "14.85B",
       "previous": "-17.31B",
-      "hours_from_now": -10.3,
+      "hours_from_now": -10.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1257,7 +1268,7 @@
       "actual": "0.6%",
       "forecast": "0.4%",
       "previous": "0.9%",
-      "hours_from_now": -10.3,
+      "hours_from_now": -10.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -1272,7 +1283,7 @@
       "actual": "0.2%",
       "forecast": "0.1%",
       "previous": "0.8%",
-      "hours_from_now": -10.3,
+      "hours_from_now": -10.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
       "lock_level": "NINGUNO",
@@ -1287,7 +1298,7 @@
       "actual": "1.1%",
       "forecast": "0.7%",
       "previous": "1.1%",
-      "hours_from_now": -10.3,
+      "hours_from_now": -10.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1302,7 +1313,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.7,
+      "hours_from_now": -9.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1317,7 +1328,7 @@
       "actual": "76.4%",
       "forecast": "76.8%",
       "previous": "76.9%",
-      "hours_from_now": -9.6,
+      "hours_from_now": -9.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1332,7 +1343,7 @@
       "actual": "-0.4%",
       "forecast": "0.0%",
       "previous": "0.7%",
-      "hours_from_now": -9.6,
+      "hours_from_now": -9.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1362,7 +1373,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.3,
+      "hours_from_now": -9.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1377,7 +1388,7 @@
       "actual": "0.5%",
       "forecast": "0.5%",
       "previous": "0.4%",
-      "hours_from_now": -8.8,
+      "hours_from_now": -8.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1392,7 +1403,7 @@
       "actual": "25",
       "forecast": "29",
       "previous": "29",
-      "hours_from_now": -8.8,
+      "hours_from_now": -8.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1407,7 +1418,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -4.4,
+      "hours_from_now": -4.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1422,7 +1433,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -2.3,
+      "hours_from_now": -2.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1437,7 +1448,7 @@
       "actual": null,
       "forecast": "1.5%",
       "previous": "2.9%",
-      "hours_from_now": -2.1,
+      "hours_from_now": -2.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1452,7 +1463,7 @@
       "actual": null,
       "forecast": "1.1%",
       "previous": "1.6%",
-      "hours_from_now": -2.1,
+      "hours_from_now": -2.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1467,7 +1478,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-0.1%",
-      "hours_from_now": -0.3,
+      "hours_from_now": -0.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1479,10 +1490,10 @@
       "title": "Trade Balance",
       "event_at": "2026-11-17T23:50:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "-476.5T",
       "forecast": "-0.90T",
       "previous": "-0.70T",
-      "hours_from_now": 0,
+      "hours_from_now": -0.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1497,7 +1508,7 @@
       "actual": null,
       "forecast": "1.0%",
       "previous": "0.8%",
-      "hours_from_now": 0.7,
+      "hours_from_now": 0.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1512,7 +1523,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 2.9,
+      "hours_from_now": 2.8,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1527,7 +1538,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.5%",
-      "hours_from_now": 7.2,
+      "hours_from_now": 7.1,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1542,7 +1553,7 @@
       "actual": null,
       "forecast": "2.8%",
       "previous": "2.8%",
-      "hours_from_now": 7.2,
+      "hours_from_now": 7.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1557,7 +1568,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "1.5%",
-      "hours_from_now": 7.2,
+      "hours_from_now": 7.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1572,7 +1583,7 @@
       "actual": null,
       "forecast": "0.6%",
       "previous": "0.8%",
-      "hours_from_now": 7.2,
+      "hours_from_now": 7.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1587,7 +1598,7 @@
       "actual": null,
       "forecast": "4.1%",
       "previous": "3.9%",
-      "hours_from_now": 7.2,
+      "hours_from_now": 7.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1602,7 +1613,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.7,
+      "hours_from_now": 7.6,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1617,7 +1628,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.2,
+      "hours_from_now": 9.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1632,7 +1643,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "0.9%",
-      "hours_from_now": 9.7,
+      "hours_from_now": 9.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1647,7 +1658,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "2.5%",
-      "hours_from_now": 10.2,
+      "hours_from_now": 10.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1662,7 +1673,7 @@
       "actual": null,
       "forecast": "4.0%",
       "previous": "4.0%",
-      "hours_from_now": 10.2,
+      "hours_from_now": 10.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1677,7 +1688,7 @@
       "actual": null,
       "forecast": "0.1%",
       "previous": "-0.2%",
-      "hours_from_now": 13.7,
+      "hours_from_now": 13.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1692,7 +1703,7 @@
       "actual": null,
       "forecast": "1.38M",
       "previous": "1.40M",
-      "hours_from_now": 13.7,
+      "hours_from_now": 13.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1707,7 +1718,7 @@
       "actual": null,
       "forecast": "1.25M",
       "previous": "1.22M",
-      "hours_from_now": 13.7,
+      "hours_from_now": 13.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1722,7 +1733,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1737,7 +1748,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 15.2,
+      "hours_from_now": 15.1,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1752,7 +1763,7 @@
       "actual": null,
       "forecast": "-2.0%",
       "previous": "-7.3%",
-      "hours_from_now": 15.2,
+      "hours_from_now": 15.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1767,7 +1778,7 @@
       "actual": null,
       "forecast": "0.4M",
       "previous": "4.7M",
-      "hours_from_now": 15.7,
+      "hours_from_now": 15.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1782,7 +1793,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.4,
+      "hours_from_now": 17.3,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1797,7 +1808,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.7,
+      "hours_from_now": 17.6,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1812,7 +1823,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 18.2,
+      "hours_from_now": 18.1,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1842,7 +1853,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 19.2,
+      "hours_from_now": 19.1,
       "window_status": "AVISO",
       "lock_class": "OTRO_HIGH",
       "lock_level": "AVISO",
@@ -1857,7 +1868,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 19.7,
+      "hours_from_now": 19.6,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1872,7 +1883,7 @@
       "actual": null,
       "forecast": "160.7B",
       "previous": "279.2B",
-      "hours_from_now": 21.2,
+      "hours_from_now": 21.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1887,7 +1898,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 21.4,
+      "hours_from_now": 21.3,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1902,7 +1913,7 @@
       "actual": null,
       "forecast": "-1650M",
       "previous": "-1971M",
-      "hours_from_now": 21.9,
+      "hours_from_now": 21.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1917,7 +1928,7 @@
       "actual": null,
       "forecast": "1.3%",
       "previous": "5.2%",
-      "hours_from_now": 24,
+      "hours_from_now": 23.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1932,7 +1943,7 @@
       "actual": null,
       "forecast": "25.5K",
       "previous": "-39.3K",
-      "hours_from_now": 24.7,
+      "hours_from_now": 24.6,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1947,7 +1958,7 @@
       "actual": null,
       "forecast": "4.7%",
       "previous": "4.7%",
-      "hours_from_now": 24.7,
+      "hours_from_now": 24.6,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1962,7 +1973,7 @@
       "actual": null,
       "forecast": "16.6B",
       "previous": "8.7B",
-      "hours_from_now": 33.2,
+      "hours_from_now": 33.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1977,7 +1988,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.2,
+      "hours_from_now": 35.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1992,7 +2003,7 @@
       "actual": null,
       "forecast": "-29",
       "previous": "-32",
-      "hours_from_now": 35.2,
+      "hours_from_now": 35.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2007,7 +2018,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.4,
+      "hours_from_now": 36.3,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2022,7 +2033,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "2.0%",
-      "hours_from_now": 37.7,
+      "hours_from_now": 37.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2037,7 +2048,7 @@
       "actual": null,
       "forecast": "0.9%",
       "previous": "4.8%",
-      "hours_from_now": 37.7,
+      "hours_from_now": 37.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2052,7 +2063,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.7,
+      "hours_from_now": 37.6,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -2067,7 +2078,7 @@
       "actual": null,
       "forecast": "20.6",
       "previous": "20.9",
-      "hours_from_now": 37.7,
+      "hours_from_now": 37.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2082,7 +2093,7 @@
       "actual": null,
       "forecast": "198K",
       "previous": "200K",
-      "hours_from_now": 37.7,
+      "hours_from_now": 37.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2097,7 +2108,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38,
+      "hours_from_now": 37.9,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2112,7 +2123,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.6,
+      "hours_from_now": 38.5,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2127,7 +2138,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.0%",
-      "hours_from_now": 39.2,
+      "hours_from_now": 39.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2142,7 +2153,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": 39.4,
+      "hours_from_now": 39.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2157,7 +2168,7 @@
       "actual": null,
       "forecast": "25B",
       "previous": "61B",
-      "hours_from_now": 39.7,
+      "hours_from_now": 39.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2172,7 +2183,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41.7,
+      "hours_from_now": 41.6,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2187,7 +2198,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 43.4,
+      "hours_from_now": 43.3,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2202,7 +2213,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.2,
+      "hours_from_now": 45.1,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2217,7 +2228,7 @@
       "actual": null,
       "forecast": "2.3%",
       "previous": "2.1%",
-      "hours_from_now": 47.7,
+      "hours_from_now": 47.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2232,7 +2243,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.7,
+      "hours_from_now": 47.6,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2724,6 +2735,309 @@
   },
   "items": [
     {
+      "id": "fd3c78010caa001280381e36222909e21d6242f2a46bf22e1f7f064628d6321d",
+      "sha256": "fd3c78010caa001280381e36222909e21d6242f2a46bf22e1f7f064628d6321d",
+      "title": "Japan's October exports to Asia rise 22% year on year: MoF",
+      "url": "https://t.me/FinancialJuice/148052",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:51:02.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e695da74fcbb6bc87ff74c5ee7d5a9663674d131f78637a7a43538b7d9ae4775",
+      "sha256": "e695da74fcbb6bc87ff74c5ee7d5a9663674d131f78637a7a43538b7d9ae4775",
+      "title": "Japan October exports to EU up 22.1% year/year: MOF",
+      "url": "https://t.me/FinancialJuice/148050",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:51:01.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "96d1601aedefeb67b8b376b329b8988bae6563fa61db706bc0e5cdc362bab668",
+      "sha256": "96d1601aedefeb67b8b376b329b8988bae6563fa61db706bc0e5cdc362bab668",
+      "title": "Japan Oct imports rise 21.6% year/year: Ministry of Finance (poll 25.8%)",
+      "url": "https://t.me/FinancialJuice/148051",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:51:01.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f1ef4d8aaa95c18eb1e53ebd58ba5c265b49e2e0d32ca20952c879f3807daa92",
+      "sha256": "f1ef4d8aaa95c18eb1e53ebd58ba5c265b49e2e0d32ca20952c879f3807daa92",
+      "title": "Japan October trade deficit 476.5 billion yen: Ministry of Finance (poll: 956 billion yen)",
+      "url": "https://t.me/FinancialJuice/148049",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:50:47.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Intervencion_EA4",
+      "categories": [
+        "Intervencion_EA4",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-4",
+      "mmt_lens": "INTERVENCION_SOBERANA_EA4",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4a344dfb434cc0b598b06484226700ec1405b377b2fa426eb81b69aacb254feb",
+      "sha256": "4a344dfb434cc0b598b06484226700ec1405b377b2fa426eb81b69aacb254feb",
+      "title": "Japan oct exports rise 20.5% y/y: MOF (poll 20.0%)",
+      "url": "https://t.me/FinancialJuice/148048",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:50:44.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1974cab83bff06d542c55bcfa1ff7945e2841e16e1d3cd5c87d5d8aa05fba1fc",
+      "sha256": "1974cab83bff06d542c55bcfa1ff7945e2841e16e1d3cd5c87d5d8aa05fba1fc",
+      "title": "Japan October exports to China rise 13.3% year/year: MOF",
+      "url": "https://t.me/FinancialJuice/148046",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:50:40.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d68a214520295057103483d22f578badae219a367d25c692e0a01aeb1f5a0f42",
+      "sha256": "d68a214520295057103483d22f578badae219a367d25c692e0a01aeb1f5a0f42",
+      "title": "Japan Oct exports to U.S. rise 23.9% year/year: MOF",
+      "url": "https://t.me/FinancialJuice/148047",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:50:40.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e20c9a4a29dd27e8d2968f297eb0daf5600d39eeeff1aab9c1597d929d936fa6",
+      "sha256": "e20c9a4a29dd27e8d2968f297eb0daf5600d39eeeff1aab9c1597d929d936fa6",
+      "title": "❗ JAPANESE TOTAL TRADE BALANCE ACTUAL -476.5B (FORECAST -1078.4B, PREVIOUS -536.6B) $MACRO",
+      "url": "https://t.me/FinancialJuice/148045",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:50:39.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "-476.5",
+      "forecast": "-1078.4",
+      "previous": "-536.6",
+      "calendar_title": "Trade Balance",
+      "z": 14
+    },
+    {
+      "id": "13d27ee17f04727dc984a92ec73bed2fd0e577d422834916bcf5d64db2ff793d",
+      "sha256": "13d27ee17f04727dc984a92ec73bed2fd0e577d422834916bcf5d64db2ff793d",
+      "title": "❗ JAPANESE EXPORTS YOY ACTUAL 20.5% (FORECAST 20.4%, PREVIOUS 16.7%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148044",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:50:31.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "20.5%",
+      "forecast": "20.4%",
+      "previous": "16.7%",
+      "calendar_title": null,
+      "z": 0.1
+    },
+    {
+      "id": "d6f119e1bd5c3109299e91c4b7544e155e99c4aa177023639513519929a3afc6",
+      "sha256": "d6f119e1bd5c3109299e91c4b7544e155e99c4aa177023639513519929a3afc6",
+      "title": "❗ JAPANESE IMPORTS YOY ACTUAL 21.6% (FORECAST 25.9%, PREVIOUS 18.9%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148043",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-17T23:50:29.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "21.6%",
+      "forecast": "25.9%",
+      "previous": "18.9%",
+      "calendar_title": null,
+      "z": -4.2
+    },
+    {
       "id": "92d6f98ef64d07cf9fca63d052779b7c87e0ba0c7ff4f6c8e5116d34092035fd",
       "sha256": "92d6f98ef64d07cf9fca63d052779b7c87e0ba0c7ff4f6c8e5116d34092035fd",
       "title": "Nvidia interim CEO Kress: we want to focus on expanding our business now - CNBC interview",
@@ -2826,6 +3140,36 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "442f6426a6408e8d6a3871fe3a70c371f54669e4c3d6c91db08aca840b9f967a",
+      "sha256": "442f6426a6408e8d6a3871fe3a70c371f54669e4c3d6c91db08aca840b9f967a",
+      "title": "Over 50% of homes in some districts face moderate to high flood risk",
+      "url": "https://www.rnz.co.nz/news/environment_climate/2647104/over-50-percent-of-homes-in-some-districts-face-moderate-to-high-flood-risk",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-17T23:41:55.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -4670,36 +5014,6 @@
       "source_id": "rnz-business",
       "source_type": "agencia",
       "published_at": "2026-11-17T20:19:15.000Z",
-      "currencies": [
-        "NZD"
-      ],
-      "divisas": [
-        "NZD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "442f6426a6408e8d6a3871fe3a70c371f54669e4c3d6c91db08aca840b9f967a",
-      "sha256": "442f6426a6408e8d6a3871fe3a70c371f54669e4c3d6c91db08aca840b9f967a",
-      "title": "Over 50% of homes in some districts face moderate to high flood risk",
-      "url": "https://www.rnz.co.nz/news/environment_climate/2647104/over-50-percent-of-homes-in-some-districts-face-moderate-to-high-flood-risk",
-      "source": "RNZ",
-      "source_id": "rnz-business",
-      "source_type": "agencia",
-      "published_at": "2026-11-17T19:50:14.000Z",
       "currencies": [
         "NZD"
       ],
@@ -33574,36 +33888,6 @@
       "z": null
     },
     {
-      "id": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
-      "sha256": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
-      "title": "[namq_10_gdp] Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV2JHZ0ZFQVo5Smt3UmozZ0xKem92YU1fci0tR0lnd2dGSEJLNXAxaXRPV2pWYUxkSXhnc1lsOG1iVDFZOWFYRHVOdWhxQU9ZVVhkUG5HZ1p1bzhjeG9ZLXBCVlU2X3hCUEJTWXhpUm9JeDBOeEkyeGRhMEk2N2xoSmo4RFhzZFItSVdEaUJIVHhTRlU?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "sha256": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "title": "[nama_10_a10] Gross value added and income by main industry (NACE Rev.2 ) - annual data - European Commission",
@@ -38101,6 +38385,36 @@
         "Inflacion_Empleo"
       ],
       "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "128f69dab4a54aabae716eee3099ac31ede85ba085d837cab2889b0da8b4acf7",
+      "sha256": "128f69dab4a54aabae716eee3099ac31ede85ba085d837cab2889b0da8b4acf7",
+      "title": "[namq_10_gdp] Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSnduMEZhOUY3b1J6NTM3ZHpRbnZhZjJFTjlHUnZoaWZGd09xLTNJZmR0SkJaUkpxMWRubWxFSmhZMUp3VzNPY09tTXYyVlR6MU5PaWIyTTE5LTVhN0tISjFmbEpUSy1weFBVZ2VSNVNKNEgwc1ctd1U2U1pfc3lSWG5UdTdYaHBnd05DekxXXzJpM2c?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-05T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
