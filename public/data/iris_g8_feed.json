@@ -3,21 +3,21 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-17T03:47:52.701Z",
+  "generated_at": "2026-11-17T03:48:11.808Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 33,
+    "sources_live": 33,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 0,
+    "sources_error": 1,
     "agenda_events_count": 116,
     "status": "DEGRADED"
   },
   "coverage": {
     "USD": {
-      "count_72h": 145,
-      "count_official_45d": 252,
+      "count_72h": 148,
+      "count_official_45d": 255,
       "last_item_at": "2026-11-17T03:39:23.000Z",
       "hours_since_last": 0.1,
       "hours_since_last_business": 0.1,
@@ -27,8 +27,8 @@
       "count_72h": 19,
       "count_official_45d": 104,
       "last_item_at": "2026-11-16T23:08:52.000Z",
-      "hours_since_last": 4.6,
-      "hours_since_last_business": 4.6,
+      "hours_since_last": 4.7,
+      "hours_since_last_business": 4.7,
       "silence": false
     },
     "GBP": {
@@ -72,8 +72,8 @@
       "silence": false
     },
     "NZD": {
-      "count_72h": 82,
-      "count_official_45d": 65,
+      "count_72h": 85,
+      "count_official_45d": 68,
       "last_item_at": "2026-11-17T10:45:00.000Z",
       "hours_since_last": 0,
       "hours_since_last_business": 0,
@@ -1163,7 +1163,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.3%",
-      "hours_from_now": -13,
+      "hours_from_now": -13.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1193,7 +1193,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.5,
+      "hours_from_now": -8.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1223,7 +1223,7 @@
       "actual": null,
       "forecast": null,
       "previous": "0.0%",
-      "hours_from_now": -6,
+      "hours_from_now": -6.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1448,7 +1448,7 @@
       "actual": null,
       "forecast": "241K",
       "previous": "249K",
-      "hours_from_now": 9.5,
+      "hours_from_now": 9.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1463,7 +1463,7 @@
       "actual": null,
       "forecast": null,
       "previous": "19.8K",
-      "hours_from_now": 9.5,
+      "hours_from_now": 9.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1553,7 +1553,7 @@
       "actual": null,
       "forecast": "76.8%",
       "previous": "76.9%",
-      "hours_from_now": 10.5,
+      "hours_from_now": 10.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1568,7 +1568,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.7%",
-      "hours_from_now": 10.5,
+      "hours_from_now": 10.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1673,7 +1673,7 @@
       "actual": null,
       "forecast": "1.5%",
       "previous": "2.9%",
-      "hours_from_now": 18,
+      "hours_from_now": 17.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1688,7 +1688,7 @@
       "actual": null,
       "forecast": "1.1%",
       "previous": "1.6%",
-      "hours_from_now": 18,
+      "hours_from_now": 17.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1748,7 +1748,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23,
+      "hours_from_now": 22.9,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2018,7 +2018,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.5,
+      "hours_from_now": 37.4,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2123,7 +2123,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41.5,
+      "hours_from_now": 41.4,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2138,7 +2138,7 @@
       "actual": null,
       "forecast": "-1650M",
       "previous": "-1971M",
-      "hours_from_now": 42,
+      "hours_from_now": 41.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -3787,6 +3787,38 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "26622c1e674d3d95380f99d1e709c7d111cc5a8f63614be625c0250b7a327579",
+      "sha256": "26622c1e674d3d95380f99d1e709c7d111cc5a8f63614be625c0250b7a327579",
+      "title": "Survey of Expectations - November 2026 - Reserve Bank of New Zealand",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOMjVZaGp3ZnA5NXhKa2RwT3gtMUo2VXpUVklUYUJjSEk3d25fX0xzZzFLWlQxdGp0VGhYSXBsNjBWb1U5UGdsMUc1RjNuNkkwMzdBRzhRTEJBa3VQUTMyYlFfWW5FeThXOHN5bGszQVNKN3poTkhrbUJTUV9tNGhBd0JDdG1PNXJ5WDM2WHlhYTQzV3VoNkZwQnN4VzluWkUzVG9XSTIyRjhmRC1JRjNscV9rRlVJMlUyaEIyRHYtcTBCcDV3NWxyV1dHNVdpbzFjT0E?oc=5",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T02:04:19.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -6852,7 +6884,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-16T21:23:26.000Z",
+      "published_at": "2026-11-16T21:23:23.000Z",
       "currencies": [
         "CAD"
       ],
@@ -7853,6 +7885,71 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "328c38e09c5eb41cc6e07bb688df71653f0f00dd0b2e1a5ec6671fb27e1ad0af",
+      "sha256": "328c38e09c5eb41cc6e07bb688df71653f0f00dd0b2e1a5ec6671fb27e1ad0af",
+      "title": "Financial system remains resilient as global risks increase - Reserve Bank of New Zealand",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRnZ6bjdmNVhzdFFObzlwUmswUjFqUC1YX3RYMmFNSnJ5aDUweTliVXBSbUZOcXJNMnQ2aTJ5SmV5QUdwTVgtT21obU54Q2pySEE1S1U1bV9PdXowMDNERklxaVpBQjg0MjNnX0d2RFpWTUJWeXR5dFo1YTBTTUNGMXpKa1hKUUo0bDNmN3F2dS1Da01GU0ZHWVZrNjVlYTVtZkFQMzVOalV3T2N1N2o4T2tkTQ?oc=5",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-16T20:02:55.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1f95e4932c26c9bd428ccca7e744721b0e92c5e569949f70ede9880207bccd1a",
+      "sha256": "1f95e4932c26c9bd428ccca7e744721b0e92c5e569949f70ede9880207bccd1a",
+      "title": "Financial Stability Report November 2026 - Reserve Bank of New Zealand",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPckU0YnNHT1oySkRNa3ppQ3JMUU4xbDRYVzZyV1dBWVBtLUtuN2ZjSmp6X3JRdzlGeGZ3bVRJOEl2elJjZW12dzEwaG80YnV0bFppYTZ2Nk5Dcmtsb1FKZGlTQXVDWHREczRnLUpMRm9idTRJT01SbjhaUlNzdnJQX1hwdy1PemNzWFpZdGhTZF8wZG1LUDh4a2ZXYVptOXhoalp2UEJVc1l3ODExc1RSUWROMlh1dHkyS29MTWRSM2x6bGdqVFBDekJ4ZW81dVhxcTFmc0NRYl9zVkR6XzlmQ25RYw?oc=5",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-16T20:02:55.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal",
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -27596,38 +27693,6 @@
       "z": null
     },
     {
-      "id": "da5efa34b1b6311bb67cd982a293e3b75f9d822aa1389123e2bdb883d2624e39",
-      "sha256": "da5efa34b1b6311bb67cd982a293e3b75f9d822aa1389123e2bdb883d2624e39",
-      "title": "Government Bonds - Secondary Market Turnover - New Zealand Debt Management",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYS1KSXNsYnFOUUM4c2pBZFJIbFg1VGloQkpjenFiZGtSbnpvRzZWT0g2Y3JYU1paYnZsZ1h5UlhldXJpelVqNmNkTDc0cndOUHRIc3YtakNOeTNLWGtGdHpNNWdXYVhlTVRGY1VGVXQ0d3pwZVVMSjBPWTNGUVlHWUxKNEloMlpDZWhnRUhvVDY0ZnBnbmc?oc=5",
-      "source": "NZ Treasury",
-      "source_id": "nz-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-10-30T12:00:00.000Z",
-      "currencies": [
-        "NZD",
-        "USD"
-      ],
-      "divisas": [
-        "NZD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "eb9c26ad9239838c77cf35eb4ede14e39a6b288c31c99dd658f6ac6d4a845ba9",
       "sha256": "eb9c26ad9239838c77cf35eb4ede14e39a6b288c31c99dd658f6ac6d4a845ba9",
       "title": "Household living costs increase 3.0 percent annually",
@@ -27774,6 +27839,38 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "da5efa34b1b6311bb67cd982a293e3b75f9d822aa1389123e2bdb883d2624e39",
+      "sha256": "da5efa34b1b6311bb67cd982a293e3b75f9d822aa1389123e2bdb883d2624e39",
+      "title": "Government Bonds - Secondary Market Turnover - New Zealand Debt Management",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYS1KSXNsYnFOUUM4c2pBZFJIbFg1VGloQkpjenFiZGtSbnpvRzZWT0g2Y3JYU1paYnZsZ1h5UlhldXJpelVqNmNkTDc0cndOUHRIc3YtakNOeTNLWGtGdHpNNWdXYVhlTVRGY1VGVXQ0d3pwZVVMSjBPWTNGUVlHWUxKNEloMlpDZWhnRUhvVDY0ZnBnbmc?oc=5",
+      "source": "NZ Treasury",
+      "source_id": "nz-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-10-30T07:00:00.000Z",
+      "currencies": [
+        "NZD",
+        "USD"
+      ],
+      "divisas": [
+        "NZD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
