@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-17T13:29:06.130Z",
+  "generated_at": "2026-11-17T13:31:15.112Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -75,8 +75,8 @@
       "count_72h": 102,
       "count_official_45d": 68,
       "last_item_at": "2026-11-17T10:45:00.000Z",
-      "hours_since_last": 2.7,
-      "hours_since_last_business": 2.7,
+      "hours_since_last": 2.8,
+      "hours_since_last_business": 2.8,
       "silence": false
     },
     "XAU": {
@@ -90,23 +90,9 @@
   "risk_map": [
     {
       "currency": "USD",
-      "risk_level": "ALTO",
-      "lock_level": "TIER1",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "lock_events": [
-        {
-          "lock_class": "TIER1_DATO",
-          "title": "Core Retail Sales m/m",
-          "time": "2026-11-17T13:30:00.000Z",
-          "hours_until": 0,
-          "retirar_limitadas": false
-        },
-        {
-          "lock_class": "TIER1_DATO",
-          "title": "Retail Sales m/m",
-          "time": "2026-11-17T13:30:00.000Z",
-          "hours_until": 0,
-          "retirar_limitadas": false
-        },
         {
           "lock_class": "OTRO_HIGH",
           "title": "FOMC Meeting Minutes",
@@ -181,7 +167,7 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "evento de alto impacto"
       ]
     },
     {
@@ -194,6 +180,13 @@
           "title": "ECB President Lagarde Speaks",
           "time": "2026-11-18T14:25:00.000Z",
           "hours_until": 24.9,
+          "retirar_limitadas": false
+        },
+        {
+          "lock_class": "DISCURSO",
+          "title": "ECB President Lagarde Speaks",
+          "time": "2026-11-19T13:30:00.000Z",
+          "hours_until": 48,
           "retirar_limitadas": false
         }
       ],
@@ -654,15 +647,15 @@
   "pair_risk": [
     {
       "pair": "EURUSD",
-      "risk_level": "ALTO",
-      "lock_level": "TIER1",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "EUR",
         "quote": "USD"
       },
       "reasons": [
         "discurso",
-        "dato de primer nivel en 24 h"
+        "evento de alto impacto"
       ]
     },
     {
@@ -674,48 +667,49 @@
         "quote": "USD"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "dato de primer nivel en 24 h",
+        "evento de alto impacto"
       ]
     },
     {
       "pair": "USDJPY",
-      "risk_level": "ALTO",
-      "lock_level": "TIER1",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "legs": {
         "base": "USD",
         "quote": "JPY"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "evento de alto impacto"
       ]
     },
     {
       "pair": "USDCHF",
-      "risk_level": "ALTO",
-      "lock_level": "TIER1",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "legs": {
         "base": "USD",
         "quote": "CHF"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "evento de alto impacto"
       ]
     },
     {
       "pair": "USDCAD",
-      "risk_level": "ALTO",
-      "lock_level": "TIER1",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "legs": {
         "base": "USD",
         "quote": "CAD"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "evento de alto impacto"
       ]
     },
     {
       "pair": "AUDUSD",
-      "risk_level": "ALTO",
+      "risk_level": "MEDIO",
       "lock_level": "TIER1",
       "legs": {
         "base": "AUD",
@@ -723,20 +717,20 @@
       },
       "reasons": [
         "dato de primer nivel entre 24 y 48 h",
-        "dato de primer nivel en 24 h"
+        "evento de alto impacto"
       ]
     },
     {
       "pair": "NZDUSD",
-      "risk_level": "ALTO",
-      "lock_level": "TIER1",
+      "risk_level": "MEDIO",
+      "lock_level": "NO_AMPLIAR",
       "legs": {
         "base": "NZD",
         "quote": "USD"
       },
       "reasons": [
         "discurso",
-        "dato de primer nivel en 24 h"
+        "evento de alto impacto"
       ]
     },
     {
@@ -992,14 +986,14 @@
     },
     {
       "pair": "XAUUSD",
-      "risk_level": "ALTO",
-      "lock_level": "TIER1",
+      "risk_level": "MEDIO",
+      "lock_level": "AVISO",
       "legs": {
         "base": "XAU",
         "quote": "USD"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "evento de alto impacto"
       ]
     }
   ],
@@ -1014,68 +1008,8 @@
       "forecast": "0.3%",
       "previous": "0.1%",
       "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
+      "window_status": null,
       "lock_class": "TIER1_DATO",
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "c4c3e489da2f1f77",
-      "currency": "CAD",
-      "title": "Median CPI y/y",
-      "event_at": "2026-11-16T13:30:00.000Z",
-      "impact": "High",
-      "actual": null,
-      "forecast": "2.0%",
-      "previous": "1.9%",
-      "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": "TIER1_DATO",
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "916e9b2e54dbcbf1",
-      "currency": "CAD",
-      "title": "Trimmed CPI y/y",
-      "event_at": "2026-11-16T13:30:00.000Z",
-      "impact": "High",
-      "actual": null,
-      "forecast": "1.9%",
-      "previous": "1.8%",
-      "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": "TIER1_DATO",
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "2d86e670e4828f68",
-      "currency": "CAD",
-      "title": "Common CPI y/y",
-      "event_at": "2026-11-16T13:30:00.000Z",
-      "impact": "Medium",
-      "actual": null,
-      "forecast": "2.5%",
-      "previous": "2.4%",
-      "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "43f20c2dce743578",
-      "currency": "CAD",
-      "title": "Core CPI m/m",
-      "event_at": "2026-11-16T13:30:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "0.2%",
-      "previous": "0.0%",
-      "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
     },
@@ -1089,7 +1023,7 @@
       "forecast": "17.6",
       "previous": "25.5",
       "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
+      "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
@@ -1118,7 +1052,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.3%",
-      "hours_from_now": -22.7,
+      "hours_from_now": -22.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1148,7 +1082,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18.2,
+      "hours_from_now": -18.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1178,7 +1112,7 @@
       "actual": null,
       "forecast": null,
       "previous": "0.0%",
-      "hours_from_now": -15.7,
+      "hours_from_now": -15.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1208,7 +1142,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -14.3,
+      "hours_from_now": -14.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1403,7 +1337,7 @@
       "actual": null,
       "forecast": "241K",
       "previous": "249K",
-      "hours_from_now": -0.2,
+      "hours_from_now": -0.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1418,7 +1352,7 @@
       "actual": "23.75K",
       "forecast": null,
       "previous": "19.8K",
-      "hours_from_now": -0.2,
+      "hours_from_now": -0.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1434,7 +1368,7 @@
       "forecast": "14.85B",
       "previous": "-17.31B",
       "hours_from_now": 0,
-      "window_status": null,
+      "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
@@ -1449,9 +1383,9 @@
       "forecast": "0.4%",
       "previous": "0.9%",
       "hours_from_now": 0,
-      "window_status": "TIER1",
+      "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
-      "lock_level": "TIER1",
+      "lock_level": "NINGUNO",
       "retirar_limitadas": false
     },
     {
@@ -1464,9 +1398,9 @@
       "forecast": "0.1%",
       "previous": "0.8%",
       "hours_from_now": 0,
-      "window_status": "TIER1",
+      "window_status": "✓ POST-EVENTO",
       "lock_class": "TIER1_DATO",
-      "lock_level": "TIER1",
+      "lock_level": "NINGUNO",
       "retirar_limitadas": false
     },
     {
@@ -1479,7 +1413,7 @@
       "forecast": "0.7%",
       "previous": "1.1%",
       "hours_from_now": 0,
-      "window_status": null,
+      "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
@@ -1493,7 +1427,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0.7,
+      "hours_from_now": 0.6,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1508,7 +1442,7 @@
       "actual": null,
       "forecast": "76.8%",
       "previous": "76.9%",
-      "hours_from_now": 0.8,
+      "hours_from_now": 0.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1523,7 +1457,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.7%",
-      "hours_from_now": 0.8,
+      "hours_from_now": 0.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1628,7 +1562,7 @@
       "actual": null,
       "forecast": "1.5%",
       "previous": "2.9%",
-      "hours_from_now": 8.3,
+      "hours_from_now": 8.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1643,7 +1577,7 @@
       "actual": null,
       "forecast": "1.1%",
       "previous": "1.6%",
-      "hours_from_now": 8.3,
+      "hours_from_now": 8.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1703,7 +1637,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 13.3,
+      "hours_from_now": 13.2,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1973,7 +1907,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 27.8,
+      "hours_from_now": 27.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2078,7 +2012,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.8,
+      "hours_from_now": 31.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2093,7 +2027,7 @@
       "actual": null,
       "forecast": "-1650M",
       "previous": "-1971M",
-      "hours_from_now": 32.3,
+      "hours_from_now": 32.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2198,9 +2132,84 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 46.8,
+      "hours_from_now": 46.7,
       "window_status": null,
       "lock_class": "DISCURSO",
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "55466cc09b9becfa",
+      "currency": "CAD",
+      "title": "IPPI m/m",
+      "event_at": "2026-11-19T13:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "1.2%",
+      "previous": "2.0%",
+      "hours_from_now": 48,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "8660eca0d1276d60",
+      "currency": "CAD",
+      "title": "RMPI m/m",
+      "event_at": "2026-11-19T13:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "2.0%",
+      "previous": "4.8%",
+      "hours_from_now": 48,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "6bb4bd3ba89cbd6a",
+      "currency": "EUR",
+      "title": "ECB President Lagarde Speaks",
+      "event_at": "2026-11-19T13:30:00.000Z",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "hours_from_now": 48,
+      "window_status": "NO_AMPLIAR",
+      "lock_class": "DISCURSO",
+      "lock_level": "NO_AMPLIAR",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "25e7e408175c29f6",
+      "currency": "USD",
+      "title": "Philly Fed Manufacturing Index",
+      "event_at": "2026-11-19T13:30:00.000Z",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": "19.2",
+      "previous": "20.9",
+      "hours_from_now": 48,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "dfa6777e551ebf28",
+      "currency": "USD",
+      "title": "Unemployment Claims",
+      "event_at": "2026-11-19T13:30:00.000Z",
+      "impact": "Medium",
+      "actual": null,
+      "forecast": "199K",
+      "previous": "200K",
+      "hours_from_now": 48,
+      "window_status": null,
+      "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
     }
@@ -11111,9 +11120,9 @@
       "z": null
     },
     {
-      "id": "f82b9afeb621386fc144d63adae45a8606ce17c36c6c7f30b9ff7092ba6cb603",
-      "sha256": "f82b9afeb621386fc144d63adae45a8606ce17c36c6c7f30b9ff7092ba6cb603",
-      "title": "RBA’s Bullock Says Inflation Risks Remain Skewed to Upside - Bloomberg.com",
+      "id": "4900be407cbda843976b3fcaf181129ffe609e3be4cc2147259b223212c3bf84",
+      "sha256": "4900be407cbda843976b3fcaf181129ffe609e3be4cc2147259b223212c3bf84",
+      "title": "RBA’s Bullock Says Inflation Risks Still Skewed to the Upside - Bloomberg.com",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTFFicGZWRlNlQ1BoU1o2bzFPOGdPTFg1VXBzaDFNWTdaTTh2Y2RGOVBvMmJ5SC1pazJmZTR6LUhSckxVM1UwZmdROERYZU9iaEpLa2JoV25SSGZydjYybjFwOXM0dUVqdnBSQmJ1cTRaRmF6YUdwX3VSS2V2OWIwUk5nUmlWWWp2THRjUmZVZ1p2eGl4amJvVHN6dWJGRXI2VGs4TFU5SlNMbTdBdWIwTHV3?oc=5",
       "source": "Prensa AU",
       "source_id": "au-press",
@@ -11142,9 +11151,9 @@
       "z": null
     },
     {
-      "id": "4900be407cbda843976b3fcaf181129ffe609e3be4cc2147259b223212c3bf84",
-      "sha256": "4900be407cbda843976b3fcaf181129ffe609e3be4cc2147259b223212c3bf84",
-      "title": "RBA’s Bullock Says Inflation Risks Still Skewed to the Upside - Bloomberg.com",
+      "id": "f82b9afeb621386fc144d63adae45a8606ce17c36c6c7f30b9ff7092ba6cb603",
+      "sha256": "f82b9afeb621386fc144d63adae45a8606ce17c36c6c7f30b9ff7092ba6cb603",
+      "title": "RBA’s Bullock Says Inflation Risks Remain Skewed to Upside - Bloomberg.com",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOTFFicGZWRlNlQ1BoU1o2bzFPOGdPTFg1VXBzaDFNWTdaTTh2Y2RGOVBvMmJ5SC1pazJmZTR6LUhSckxVM1UwZmdROERYZU9iaEpLa2JoV25SSGZydjYybjFwOXM0dUVqdnBSQmJ1cTRaRmF6YUdwX3VSS2V2OWIwUk5nUmlWWWp2THRjUmZVZ1p2eGl4amJvVHN6dWJGRXI2VGs4TFU5SlNMbTdBdWIwTHV3?oc=5",
       "source": "Prensa AU",
       "source_id": "au-press",
@@ -29741,36 +29750,6 @@
       "z": null
     },
     {
-      "id": "86647fb4ca81527f2e8a3b7bb028da3c88e939ce57b80582217347e69ce6efe5",
-      "sha256": "86647fb4ca81527f2e8a3b7bb028da3c88e939ce57b80582217347e69ce6efe5",
-      "title": "[sdg_08_40] Long-term unemployment rate by sex - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tUnlJZlQ0ejZvdkJhbWlIeWhpWWgxSFJnNEg2bmVCdWNZSTJxZkxnMVlXakpTN0doWXhPSHdoTktrajdGdmp5M2Q5UmZDVTh1QVJiR2gxdmlrcnNuZ0tjZDBFQm91NkxpNkFWdFVUX3JETUJBRmt1X0tB?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-06T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
       "sha256": "b2717a942e1ad4f703d39813abd131f343707e2554961cf63a56d789459ec38b",
       "title": "Treasury Discount Bills to Be Auctioned on November 13, 2026 : Ministry of Finance - 財務省",
@@ -29827,6 +29806,36 @@
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "86647fb4ca81527f2e8a3b7bb028da3c88e939ce57b80582217347e69ce6efe5",
+      "sha256": "86647fb4ca81527f2e8a3b7bb028da3c88e939ce57b80582217347e69ce6efe5",
+      "title": "[sdg_08_40] Long-term unemployment rate by sex - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0tUnlJZlQ0ejZvdkJhbWlIeWhpWWgxSFJnNEg2bmVCdWNZSTJxZkxnMVlXakpTN0doWXhPSHdoTktrajdGdmp5M2Q5UmZDVTh1QVJiR2gxdmlrcnNuZ0tjZDBFQm91NkxpNkFWdFVUX3JETUJBRmt1X0tB?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-06T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
