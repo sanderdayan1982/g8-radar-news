@@ -1,14 +1,14 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-17T02:36:19.487Z",
-  "feed_generated_at": "2026-11-17T02:36:19.439Z",
+  "last_check_at": "2026-11-17T02:41:27.987Z",
+  "feed_generated_at": "2026-11-17T02:41:27.941Z",
   "wrote_full_feed": true,
-  "new_items": 6,
+  "new_items": 1,
   "sources": {
-    "ok": 32,
+    "ok": 33,
     "cached": 0,
     "empty": 1,
-    "error": 2,
+    "error": 1,
     "total": 35
   },
   "failing_sources": [
@@ -17,20 +17,13 @@
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 801
+      "consecutive_failures": 802
     },
     {
-      "id": "ch-press",
+      "id": "us-treasury",
       "status": "error",
       "last_error": "HTTP 429",
-      "last_success_at": "2026-11-17T02:31:09.752Z",
-      "consecutive_failures": 1
-    },
-    {
-      "id": "au-press",
-      "status": "error",
-      "last_error": "HTTP 429",
-      "last_success_at": "2026-11-17T02:31:09.752Z",
+      "last_success_at": "2026-11-17T02:36:16.584Z",
       "consecutive_failures": 1
     }
   ],
