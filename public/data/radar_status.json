@@ -1,14 +1,14 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-18T05:41:26.372Z",
-  "feed_generated_at": "2026-11-18T05:41:26.315Z",
+  "last_check_at": "2026-11-18T05:46:45.396Z",
+  "feed_generated_at": "2026-11-18T05:46:45.340Z",
   "wrote_full_feed": true,
-  "new_items": 4,
+  "new_items": 0,
   "sources": {
-    "ok": 23,
+    "ok": 24,
     "cached": 0,
     "empty": 2,
-    "error": 10,
+    "error": 9,
     "total": 35
   },
   "failing_sources": [
@@ -17,84 +17,77 @@
       "status": "empty_feed",
       "last_error": "HTTP null con 0 titulares extraídos",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
-    },
-    {
-      "id": "snb-speeches",
-      "status": "error",
-      "last_error": "HTTP 503",
-      "last_success_at": "2026-11-18T05:35:52.044Z",
-      "consecutive_failures": 1
+      "consecutive_failures": 8
     },
     {
       "id": "snb-bills",
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 1161
+      "consecutive_failures": 1162
     },
     {
       "id": "us-treasury",
       "status": "error",
-      "last_error": "HTTP 503",
+      "last_error": "The operation was aborted due to timeout",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     },
     {
       "id": "us-bls-bea",
       "status": "error",
-      "last_error": "The operation was aborted due to timeout",
+      "last_error": "HTTP 503",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     },
     {
       "id": "eurostat",
       "status": "error",
-      "last_error": "The operation was aborted due to timeout",
+      "last_error": "HTTP 503",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     },
     {
       "id": "uk-ons-hmt",
       "status": "error",
-      "last_error": "The operation was aborted due to timeout",
+      "last_error": "HTTP 503",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     },
     {
       "id": "jp-mof",
       "status": "error",
-      "last_error": "The operation was aborted due to timeout",
+      "last_error": "HTTP 503",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     },
     {
       "id": "au-abs-treasury",
       "status": "error",
-      "last_error": "HTTP 429",
+      "last_error": "The operation was aborted due to timeout",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     },
     {
       "id": "nz-press",
       "status": "error",
       "last_error": "HTTP 503",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     },
     {
       "id": "ch-press",
       "status": "error",
       "last_error": "HTTP 503",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     },
     {
       "id": "au-press",
       "status": "error",
-      "last_error": "HTTP 429",
+      "last_error": "HTTP 503",
       "last_success_at": "2026-11-18T05:08:50.002Z",
-      "consecutive_failures": 7
+      "consecutive_failures": 8
     }
   ],
   "calendar_events": 116,
