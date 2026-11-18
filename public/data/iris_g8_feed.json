@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-18T02:19:16.042Z",
+  "generated_at": "2026-11-18T02:19:39.461Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 33,
+    "sources_live": 33,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 0,
+    "sources_error": 1,
     "agenda_events_count": 116,
     "status": "DEGRADED"
   },
@@ -58,9 +58,9 @@
     "CAD": {
       "count_72h": 50,
       "count_official_45d": 8,
-      "last_item_at": "2026-11-17T21:22:29.000Z",
-      "hours_since_last": 4.9,
-      "hours_since_last_business": 4.9,
+      "last_item_at": "2026-11-17T21:22:31.000Z",
+      "hours_since_last": 5,
+      "hours_since_last_business": 5,
       "silence": false
     },
     "AUD": {
@@ -6379,7 +6379,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-17T21:22:29.000Z",
+      "published_at": "2026-11-17T21:22:31.000Z",
       "currencies": [
         "CAD"
       ],
@@ -14261,6 +14261,36 @@
       "z": null
     },
     {
+      "id": "f91f409f02436fdc490f732c48cf8c0e8d6731e904f452f51514a1d25d46d61e",
+      "sha256": "f91f409f02436fdc490f732c48cf8c0e8d6731e904f452f51514a1d25d46d61e",
+      "title": "Southern Province Cement reschedules $383m SNB financing - TradeArabia",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUTNaVnVjaGFua2Qxd1hwWjNCRGM3aVN0dE04eE15ckRHX0p5ZnQ2TW9TZHktelRDcE91cVFiZTRoQWppYmdZNS1KblhZQWhJOHNEVzFzNjhqWVR1VWZyLS1EVUZuUlpsRk1fOExFZms1RzdHa1ZqMW9yd05jV0lhSzdGS0JOMTNXdEVjeFdnaEp1RmtxTUZwWmhWSkdlU1k?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-17T11:39:09.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e97c27e765c2dcd76481d06b22de832a027fbe684afb60bbf7e4a699b515fa94",
       "sha256": "e97c27e765c2dcd76481d06b22de832a027fbe684afb60bbf7e4a699b515fa94",
       "title": "RBA Designates Prosegur Under Australia’s New Cash Distribution Framework - Kalkine",
@@ -16030,36 +16060,6 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "255c2642c0c1d9768fa3bf4155714a7d32a778ae19927a05bde24fb46e011242",
-      "sha256": "255c2642c0c1d9768fa3bf4155714a7d32a778ae19927a05bde24fb46e011242",
-      "title": "Southern Province Cement reschedules $383m SNB financing - TradeArabia",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZDRlTjJ4bUVBVW9JS1QyRW56aTZwTU1Dbm5SSG5xbUw4SEotcFUtYkdYdWlGZ190RlBtREJYMnJJVFJPV3BTLWwxb3FNODc4Sk9XY2VpQlhVNUhIZGcyejRmYWxjM2poblFESm9RNUNCNllwYU1MYWpJckswTmREeGNGRk9XdU02cC1uTkhFUXNxVm83S2F6THRR?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-17T10:03:18.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -44225,7 +44225,7 @@
       "title": "2026-10-30 - Interim results of the Swiss National Bank as at 30 September 2026",
       "url": "https://www.snb.ch/en/publications/communication/press-releases/2026/pre_20261030",
       "source": "SNB",
-      "source_id": "snb-press",
+      "source_id": "snb-adhoc",
       "source_type": "oficial",
       "published_at": "2026-10-30T06:15:00.000Z",
       "currencies": [
