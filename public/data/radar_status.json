@@ -1,14 +1,14 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-18T07:00:14.649Z",
-  "feed_generated_at": "2026-11-18T07:00:14.582Z",
+  "last_check_at": "2026-11-18T07:01:21.893Z",
+  "feed_generated_at": "2026-11-18T07:01:21.823Z",
   "wrote_full_feed": true,
-  "new_items": 1,
+  "new_items": 6,
   "sources": {
-    "ok": 34,
+    "ok": 33,
     "cached": 0,
     "empty": 1,
-    "error": 0,
+    "error": 1,
     "total": 35
   },
   "failing_sources": [
@@ -17,7 +17,14 @@
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 1184
+      "consecutive_failures": 1185
+    },
+    {
+      "id": "nz-press",
+      "status": "error",
+      "last_error": "HTTP 429",
+      "last_success_at": "2026-11-18T07:00:11.103Z",
+      "consecutive_failures": 1
     }
   ],
   "calendar_events": 116,

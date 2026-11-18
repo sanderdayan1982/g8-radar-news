@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-18T07:00:14.582Z",
+  "generated_at": "2026-11-18T07:01:21.823Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 33,
+    "sources_live": 33,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 0,
+    "sources_error": 1,
     "agenda_events_count": 116,
     "status": "DEGRADED"
   },
@@ -32,11 +32,11 @@
       "silence": false
     },
     "GBP": {
-      "count_72h": 40,
+      "count_72h": 46,
       "count_official_45d": 91,
-      "last_item_at": "2026-11-18T03:45:02.000Z",
-      "hours_since_last": 3.3,
-      "hours_since_last_business": 3.3,
+      "last_item_at": "2026-11-18T07:00:50.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "JPY": {
@@ -83,8 +83,8 @@
       "count_72h": 13,
       "count_official_45d": 0,
       "last_item_at": "2026-11-18T04:45:45.000Z",
-      "hours_since_last": 2.2,
-      "hours_since_last_business": 2.2
+      "hours_since_last": 2.3,
+      "hours_since_last_business": 2.3
     }
   },
   "risk_map": [
@@ -1229,7 +1229,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.8,
+      "hours_from_now": -16.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1466,7 +1466,7 @@
       "title": "Core CPI y/y",
       "event_at": "2026-11-18T07:00:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "2.8%",
       "forecast": "2.8%",
       "previous": "2.8%",
       "hours_from_now": 0,
@@ -1481,7 +1481,7 @@
       "title": "PPI Input m/m",
       "event_at": "2026-11-18T07:00:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "0.4%",
       "forecast": "0.8%",
       "previous": "1.5%",
       "hours_from_now": 0,
@@ -2725,6 +2725,186 @@
     }
   },
   "items": [
+    {
+      "id": "b99e36add3eaaae6e9ee5128096c45cc3f6e138910b1f626fc2d078d952ecfa1",
+      "sha256": "b99e36add3eaaae6e9ee5128096c45cc3f6e138910b1f626fc2d078d952ecfa1",
+      "title": "UK RPI MOM ACTUAL 0.6% (FORECAST 0.5%, PREVIOUS 0.1%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148156",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-18T07:00:50.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "0.6%",
+      "forecast": "0.5%",
+      "previous": "0.1%",
+      "calendar_title": null,
+      "z": 0.7
+    },
+    {
+      "id": "d225221847b42c3a372d992f0d0668dc3d3eda90c89fcc036104eff938e7ba97",
+      "sha256": "d225221847b42c3a372d992f0d0668dc3d3eda90c89fcc036104eff938e7ba97",
+      "title": "❗ UK CORE CPI YOY ACTUAL 2.8% (FORECAST 2.8%, PREVIOUS 2.8%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148155",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-18T07:00:47.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "2.8%",
+      "forecast": "2.8%",
+      "previous": "2.8%",
+      "calendar_title": "Core CPI y/y",
+      "z": 0
+    },
+    {
+      "id": "447dd7478a417ef9776d9a5ef0c6f58c274fee79d6e44865bc1d41dd9512f91c",
+      "sha256": "447dd7478a417ef9776d9a5ef0c6f58c274fee79d6e44865bc1d41dd9512f91c",
+      "title": "UK CPI MOM ACTUAL 0.5% (FORECAST 0.5%, PREVIOUS 0.4%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148154",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-18T07:00:43.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.5%",
+      "forecast": "0.5%",
+      "previous": "0.4%",
+      "calendar_title": null,
+      "z": 0
+    },
+    {
+      "id": "07f438418c77917d92fe159f2e2520aa5e9f1d7143075a8075bc38f15b709a22",
+      "sha256": "07f438418c77917d92fe159f2e2520aa5e9f1d7143075a8075bc38f15b709a22",
+      "title": "UK PPI INPUT PRICES MOM ACTUAL 2.2% (FORECAST 0.8%, PREVIOUS 1.5%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148153",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-18T07:00:40.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "2.2%",
+      "forecast": "0.8%",
+      "previous": "1.5%",
+      "calendar_title": "PPI Input m/m",
+      "z": 9.3
+    },
+    {
+      "id": "e65c80f306d5d73c45ed7027f599cf6e8bd5d7863e1575b6ffce5b9a23361dcf",
+      "sha256": "e65c80f306d5d73c45ed7027f599cf6e8bd5d7863e1575b6ffce5b9a23361dcf",
+      "title": "UK PPI OUTPUT PRICES MOM ACTUAL 0.4% (FORECAST 0.6%, PREVIOUS 0.8%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148152",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-18T07:00:37.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.4%",
+      "forecast": "0.6%",
+      "previous": "0.8%",
+      "calendar_title": "PPI Input m/m",
+      "z": -1.3
+    },
+    {
+      "id": "6734f77a21df03dd89b60507005e672bdc540df7fdbe72111e455284f6429f8c",
+      "sha256": "6734f77a21df03dd89b60507005e672bdc540df7fdbe72111e455284f6429f8c",
+      "title": "UK PPI INPUT PRICES YOY ACTUAL 10.8% (FORECAST 9.2%, PREVIOUS 8.3%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148151",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-18T07:00:33.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "10.8%",
+      "forecast": "9.2%",
+      "previous": "8.3%",
+      "calendar_title": null,
+      "z": 4.3
+    },
     {
       "id": "901d60eaaf392c29ef5ae4651c7827494370cfd38cc84373d7dbcd5684ee6bd6",
       "sha256": "901d60eaaf392c29ef5ae4651c7827494370cfd38cc84373d7dbcd5684ee6bd6",
