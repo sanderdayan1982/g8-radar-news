@@ -1,30 +1,23 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-18T10:40:16.714Z",
-  "feed_generated_at": "2026-11-18T10:40:16.664Z",
+  "last_check_at": "2026-11-18T10:45:21.979Z",
+  "feed_generated_at": "2026-11-18T10:45:21.930Z",
   "wrote_full_feed": true,
-  "new_items": 1,
+  "new_items": 6,
   "sources": {
-    "ok": 33,
+    "ok": 34,
     "cached": 0,
     "empty": 1,
-    "error": 1,
+    "error": 0,
     "total": 35
   },
   "failing_sources": [
-    {
-      "id": "snb-speeches",
-      "status": "error",
-      "last_error": "HTTP 503",
-      "last_success_at": "2026-11-18T10:35:06.982Z",
-      "consecutive_failures": 1
-    },
     {
       "id": "snb-bills",
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 1240
+      "consecutive_failures": 1241
     }
   ],
   "calendar_events": 116,
