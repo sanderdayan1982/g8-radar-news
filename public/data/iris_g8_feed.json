@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-18T07:03:32.732Z",
+  "generated_at": "2026-11-18T07:04:40.968Z",
   "health": {
-    "sources_active": 33,
-    "sources_live": 33,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 1,
+    "sources_error": 0,
     "agenda_events_count": 116,
     "status": "DEGRADED"
   },
@@ -27,16 +27,16 @@
       "count_72h": 56,
       "count_official_45d": 117,
       "last_item_at": "2026-11-18T05:31:23.000Z",
-      "hours_since_last": 1.5,
-      "hours_since_last_business": 1.5,
+      "hours_since_last": 1.6,
+      "hours_since_last_business": 1.6,
       "silence": false
     },
     "GBP": {
       "count_72h": 50,
       "count_official_45d": 91,
       "last_item_at": "2026-11-18T07:01:08.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "JPY": {
@@ -184,7 +184,7 @@
           "lock_class": "DISCURSO",
           "title": "ECB President Lagarde Speaks",
           "time": "2026-11-18T14:25:00.000Z",
-          "hours_until": 7.4,
+          "hours_until": 7.3,
           "retirar_limitadas": false
         },
         {
@@ -1334,7 +1334,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -11.6,
+      "hours_from_now": -11.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1649,7 +1649,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 7.4,
+      "hours_from_now": 7.3,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -2039,7 +2039,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 31.4,
+      "hours_from_now": 31.3,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -2174,7 +2174,7 @@
       "actual": null,
       "forecast": "-22",
       "previous": "-24",
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -16969,6 +16969,36 @@
       "z": null
     },
     {
+      "id": "f91f409f02436fdc490f732c48cf8c0e8d6731e904f452f51514a1d25d46d61e",
+      "sha256": "f91f409f02436fdc490f732c48cf8c0e8d6731e904f452f51514a1d25d46d61e",
+      "title": "Southern Province Cement reschedules $383m SNB financing - TradeArabia",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUTNaVnVjaGFua2Qxd1hwWjNCRGM3aVN0dE04eE15ckRHX0p5ZnQ2TW9TZHktelRDcE91cVFiZTRoQWppYmdZNS1KblhZQWhJOHNEVzFzNjhqWVR1VWZyLS1EVUZuUlpsRk1fOExFZms1RzdHa1ZqMW9yd05jV0lhSzdGS0JOMTNXdEVjeFdnaEp1RmtxTUZwWmhWSkdlU1k?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-17T11:39:09.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e97c27e765c2dcd76481d06b22de832a027fbe684afb60bbf7e4a699b515fa94",
       "sha256": "e97c27e765c2dcd76481d06b22de832a027fbe684afb60bbf7e4a699b515fa94",
       "title": "RBA Designates Prosegur Under Australia’s New Cash Distribution Framework - Kalkine",
@@ -18738,36 +18768,6 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "255c2642c0c1d9768fa3bf4155714a7d32a778ae19927a05bde24fb46e011242",
-      "sha256": "255c2642c0c1d9768fa3bf4155714a7d32a778ae19927a05bde24fb46e011242",
-      "title": "Southern Province Cement reschedules $383m SNB financing - TradeArabia",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZDRlTjJ4bUVBVW9JS1QyRW56aTZwTU1Dbm5SSG5xbUw4SEotcFUtYkdYdWlGZ190RlBtREJYMnJJVFJPV3BTLWwxb3FNODc4Sk9XY2VpQlhVNUhIZGcyejRmYWxjM2poblFESm9RNUNCNllwYU1MYWpJckswTmREeGNGRk9XdU02cC1uTkhFUXNxVm83S2F6THRR?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-17T10:03:18.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -38157,36 +38157,6 @@
       "z": null
     },
     {
-      "id": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
-      "sha256": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
-      "title": "[namq_10_gdp] Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV2JHZ0ZFQVo5Smt3UmozZ0xKem92YU1fci0tR0lnd2dGSEJLNXAxaXRPV2pWYUxkSXhnc1lsOG1iVDFZOWFYRHVOdWhxQU9ZVVhkUG5HZ1p1bzhjeG9ZLXBCVlU2X3hCUEJTWXhpUm9JeDBOeEkyeGRhMEk2N2xoSmo4RFhzZFItSVdEaUJIVHhTRlU?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "sha256": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "title": "[nama_10_a10] Gross value added and income by main industry (NACE Rev.2 ) - annual data - European Commission",
@@ -38306,6 +38276,36 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
+      "sha256": "45bd9603576043068f2cf7da05f91f6bdda50e5c0989718be1bb91af5032c343",
+      "title": "[namq_10_gdp] Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQV2JHZ0ZFQVo5Smt3UmozZ0xKem92YU1fci0tR0lnd2dGSEJLNXAxaXRPV2pWYUxkSXhnc1lsOG1iVDFZOWFYRHVOdWhxQU9ZVVhkUG5HZ1p1bzhjeG9ZLXBCVlU2X3hCUEJTWXhpUm9JeDBOeEkyeGRhMEk2N2xoSmo4RFhzZFItSVdEaUJIVHhTRlU?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
