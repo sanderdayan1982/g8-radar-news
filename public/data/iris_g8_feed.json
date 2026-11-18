@@ -3,14 +3,14 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-18T16:22:09.414Z",
+  "generated_at": "2026-11-18T16:22:29.373Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 33,
+    "sources_live": 33,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 0,
+    "sources_error": 1,
     "agenda_events_count": 116,
     "status": "DEGRADED"
   },
@@ -43,8 +43,8 @@
       "count_72h": 93,
       "count_official_45d": 82,
       "last_item_at": "2026-11-18T16:01:25.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "hours_since_last": 0.4,
+      "hours_since_last_business": 0.4,
       "silence": false
     },
     "CHF": {
@@ -42675,38 +42675,6 @@
       "z": null
     },
     {
-      "id": "d8c7e800175b1547347ff5d4bbaadd0339ba406f7fd429e40f8cd965d338d888",
-      "sha256": "d8c7e800175b1547347ff5d4bbaadd0339ba406f7fd429e40f8cd965d338d888",
-      "title": "Regional gross value added (balanced) by industry: local authorities by ITL1 region - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTFJfNEp3SWw1Zi14NmdlYjNMbkFFdzhtbXdNVHdvSEc5N2swSEtBRkZSQzhnb3FBSlRzRUV2RWUyQ0Qwbk1adGt2aEIxX2tlWE1QU1ZIQ1QwSjI5dExBQ1psMGpzVW5hdFhnZWpYaWpJVExMT2pzOGhzSUh4eWdTT2l4QzNpWkJCQVpwdGVBSG9XQWxJQ3VMN2xCbVRaTVZDdjJfNlYzQ3U4U3I3Tl95YW9mSXRTUVJOa1RyNWdZTElkZjhSdmc0SDE1WlhmQQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
       "sha256": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
       "title": "Regional gross value added (balanced) per head and income components - Office for National Statistics",
@@ -42848,6 +42816,38 @@
       ],
       "divisas": [
         "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "d8c7e800175b1547347ff5d4bbaadd0339ba406f7fd429e40f8cd965d338d888",
+      "sha256": "d8c7e800175b1547347ff5d4bbaadd0339ba406f7fd429e40f8cd965d338d888",
+      "title": "Regional gross value added (balanced) by industry: local authorities by ITL1 region - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTFJfNEp3SWw1Zi14NmdlYjNMbkFFdzhtbXdNVHdvSEc5N2swSEtBRkZSQzhnb3FBSlRzRUV2RWUyQ0Qwbk1adGt2aEIxX2tlWE1QU1ZIQ1QwSjI5dExBQ1psMGpzVW5hdFhnZWpYaWpJVExMT2pzOGhzSUh4eWdTT2l4QzNpWkJCQVpwdGVBSG9XQWxJQ3VMN2xCbVRaTVZDdjJfNlYzQ3U4U3I3Tl95YW9mSXRTUVJOa1RyNWdZTElkZjhSdmc0SDE1WlhmQQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
         "USD"
       ],
       "category": "Fiscal",
@@ -44810,6 +44810,36 @@
       "z": null
     },
     {
+      "id": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
+      "sha256": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
+      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdVF3UUF0ci0wOUtXdGVuUlpLVEJBejQtSE9DdkhQNXRNcVlMNGlmQkR1SUNaSUZWQVljSmMtNmgxLVhtUXJrZlVFSjM2OHFKWllUeXpDV1Y1MF9wV01SWFpKb3hINENUQVNwdF9mTlM0NWJwUmJnV1FJa3UzNW56QUlEWi16eHF6UjlabDBrRVY5SS1oUENYaG9LS1pUdC01U0ptZ0YxZFdtc3o4bmMteTA2bjNhUDNwTFItdGxIRjI5VVFa?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "sha256": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "title": "[nama_10_a10] Gross value added and income by main industry (NACE Rev.2 ) - annual data - European Commission",
@@ -44929,36 +44959,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
-      "sha256": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
-      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdVF3UUF0ci0wOUtXdGVuUlpLVEJBejQtSE9DdkhQNXRNcVlMNGlmQkR1SUNaSUZWQVljSmMtNmgxLVhtUXJrZlVFSjM2OHFKWllUeXpDV1Y1MF9wV01SWFpKb3hINENUQVNwdF9mTlM0NWJwUmJnV1FJa3UzNW56QUlEWi16eHF6UjlabDBrRVY5SS1oUENYaG9LS1pUdC01U0ptZ0YxZFdtc3o4bmMteTA2bjNhUDNwTFItdGxIRjI5VVFa?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -49348,6 +49348,38 @@
       "z": null
     },
     {
+      "id": "3dcbfa95ae471ed71ac964450f1864cd499284abf5254a412e0916fadb6bf2ea",
+      "sha256": "3dcbfa95ae471ed71ac964450f1864cd499284abf5254a412e0916fadb6bf2ea",
+      "title": "Business insights and impact on the UK economy: 5 November 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOME9HRUZHYjlUZWVoRGNVOU9fWFhpR3lvei0yeGNTLWdaZ2hwVkJ1OXh3RlY0SEFVTHV2RV8xT2hHQ1BfeE1wbHJYcTBJd291Y2h6UFNwR0pnZGZMTkR4cFlDbE5XWkVQRG41bHF5bFBmdE5wcHhZUkxiWHFSUjBvN1VWczJxMWhGWWtnYWxVbDZjQkRVUkRjM0JycWRGQkFmOWI4VENyMDBZY0RxUjJCWVUzODhVUFF1NElwSUZ0UUFBbGFCMG5NMDQxY3R6NTZCV0lz?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-05T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4d68fc78f66dc6c5fd0167635f198d6b04ee42851a520c5f5bc30d1df1a79a97",
       "sha256": "4d68fc78f66dc6c5fd0167635f198d6b04ee42851a520c5f5bc30d1df1a79a97",
       "title": "Public sector employment and earnings, 2025-26 financial year - Australian Bureau of Statistics",
@@ -49557,38 +49589,6 @@
       ],
       "divisas": [
         "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "3dcbfa95ae471ed71ac964450f1864cd499284abf5254a412e0916fadb6bf2ea",
-      "sha256": "3dcbfa95ae471ed71ac964450f1864cd499284abf5254a412e0916fadb6bf2ea",
-      "title": "Business insights and impact on the UK economy: 5 November 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOME9HRUZHYjlUZWVoRGNVOU9fWFhpR3lvei0yeGNTLWdaZ2hwVkJ1OXh3RlY0SEFVTHV2RV8xT2hHQ1BfeE1wbHJYcTBJd291Y2h6UFNwR0pnZGZMTkR4cFlDbE5XWkVQRG41bHF5bFBmdE5wcHhZUkxiWHFSUjBvN1VWczJxMWhGWWtnYWxVbDZjQkRVUkRjM0JycWRGQkFmOWI4VENyMDBZY0RxUjJCWVUzODhVUFF1NElwSUZ0UUFBbGFCMG5NMDQxY3R6NTZCV0lz?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-05T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
         "USD"
       ],
       "category": "Fiscal",
