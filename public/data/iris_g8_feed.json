@@ -3,24 +3,24 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-18T06:02:41.009Z",
+  "generated_at": "2026-11-18T06:03:03.359Z",
   "health": {
-    "sources_active": 24,
-    "sources_live": 24,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
-    "sources_empty": 2,
-    "sources_error": 9,
+    "sources_empty": 1,
+    "sources_error": 0,
     "agenda_events_count": 116,
-    "status": "CRITICAL"
+    "status": "DEGRADED"
   },
   "coverage": {
     "USD": {
-      "count_72h": 337,
-      "count_official_45d": 275,
-      "last_item_at": "2026-11-18T05:19:27.000Z",
-      "hours_since_last": 0.7,
-      "hours_since_last_business": 0.7,
+      "count_72h": 339,
+      "count_official_45d": 276,
+      "last_item_at": "2026-11-18T05:42:43.000Z",
+      "hours_since_last": 0.3,
+      "hours_since_last_business": 0.3,
       "silence": false
     },
     "EUR": {
@@ -48,11 +48,11 @@
       "silence": false
     },
     "CHF": {
-      "count_72h": 72,
+      "count_72h": 74,
       "count_official_45d": 15,
-      "last_item_at": "2026-11-18T04:22:08.000Z",
-      "hours_since_last": 1.7,
-      "hours_since_last_business": 1.7,
+      "last_item_at": "2026-11-18T05:42:43.000Z",
+      "hours_since_last": 0.3,
+      "hours_since_last_business": 0.3,
       "silence": false
     },
     "CAD": {
@@ -64,8 +64,8 @@
       "silence": false
     },
     "AUD": {
-      "count_72h": 116,
-      "count_official_45d": 77,
+      "count_72h": 117,
+      "count_official_45d": 78,
       "last_item_at": "2026-11-18T05:19:04.000Z",
       "hours_since_last": 0.7,
       "hours_since_last_business": 0.7,
@@ -2816,6 +2816,38 @@
       "z": null
     },
     {
+      "id": "4266d41d3202ff3935db496e0ec01a722e8e106866b3b954a30aa88cd691e0a8",
+      "sha256": "4266d41d3202ff3935db496e0ec01a722e8e106866b3b954a30aa88cd691e0a8",
+      "title": "Swiss Franc weakens as US Dollar remains stronger ahead of FOMC Meeting Minutes - FXStreet",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOV2JMbUhzNktjV0x3X3lzbVRmelM3NlpwQ3pBVWVBY0ZSZF9LUFQ0UEUzM0dCbjZfZ21YZnNoLXlpUmlBMkNPZWlQMVo4UzVkQkEyS0tCYmpKcnlubUQ2LW5ycG1ra2xjUU9hS3F3VXB1RGFuZEFPNjVhaW51c0dNeFZiSl9jbUtnck1vcUxBczUycVJ2WHZnQVo3eE0ydWdzQ1BRdnk5VzI1OVpGQ2lZS0lrZnNxeGJXMnpDNEJxRQ?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-18T05:42:43.000Z",
+      "currencies": [
+        "USD",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "927176e90f769b200554427718eb9b1258e957da37cf8096779e41e41c17549c",
       "sha256": "927176e90f769b200554427718eb9b1258e957da37cf8096779e41e41c17549c",
       "title": "Zuru quizzed over size of Lego wording on boxes",
@@ -3499,6 +3531,38 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "79f91db98fa670bd5141eef05e334f2162df7281db26574a5d7f3859c338ae50",
+      "sha256": "79f91db98fa670bd5141eef05e334f2162df7281db26574a5d7f3859c338ae50",
+      "title": "Interview with Steve Austin, Brisbane Mornings, ABC Radio - Treasury.gov.au",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcmFXcl9MVDNMVzBDbFJDRmNTUFRvUmJTMGxuTGk5T2FKRmNoS0cwd3RIaU8wMXV6WlpOTnFJUTdGQ2lIOEJrVnJ4d3hXY3RhZ1pDdDlLUjhHNUQwOHNuQ3hKdEZYTTJpb1hTbDlpYU1SbGZJN0JDNHpSRnBIYzhoSTBFdTBBcmVzMF90TlNFRmRVci1uTWlZTU1zRk9FV1RaWHk0Zi1oSWxkQk41QUVXblNJUXVzQTFreXJlMlgyY1BYdw?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-18T04:28:11.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -8413,36 +8477,6 @@
       "z": null
     },
     {
-      "id": "0d3828c29c670328e8f1ca236cca4bacc7c25ba07da6820390bcee9ecfbc670d",
-      "sha256": "0d3828c29c670328e8f1ca236cca4bacc7c25ba07da6820390bcee9ecfbc670d",
-      "title": "Bank of Canada Governor Tiff Macklem to step down in June 2027",
-      "url": "https://www.bankofcanada.ca/2026/11/bank-of-canada-governor-tiff-macklem-to-step-down-in-june-2027/",
-      "source": "BoC",
-      "source_id": "boc",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T21:25:02.000Z",
-      "currencies": [
-        "CAD"
-      ],
-      "divisas": [
-        "CAD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "73ea5396a98a10866bc25448dd1500cc9c9ad5082aa00b876f06d2c65feb36ef",
       "sha256": "73ea5396a98a10866bc25448dd1500cc9c9ad5082aa00b876f06d2c65feb36ef",
       "title": "NVIDIA: Shipments of data center Hopper products to China $2.4B. $NVDA",
@@ -8514,6 +8548,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0d3828c29c670328e8f1ca236cca4bacc7c25ba07da6820390bcee9ecfbc670d",
+      "sha256": "0d3828c29c670328e8f1ca236cca4bacc7c25ba07da6820390bcee9ecfbc670d",
+      "title": "Bank of Canada Governor Tiff Macklem to step down in June 2027",
+      "url": "https://www.bankofcanada.ca/2026/11/bank-of-canada-governor-tiff-macklem-to-step-down-in-june-2027/",
+      "source": "BoC",
+      "source_id": "boc",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T21:22:31.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -16348,36 +16412,6 @@
       "z": null
     },
     {
-      "id": "f91f409f02436fdc490f732c48cf8c0e8d6731e904f452f51514a1d25d46d61e",
-      "sha256": "f91f409f02436fdc490f732c48cf8c0e8d6731e904f452f51514a1d25d46d61e",
-      "title": "Southern Province Cement reschedules $383m SNB financing - TradeArabia",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUTNaVnVjaGFua2Qxd1hwWjNCRGM3aVN0dE04eE15ckRHX0p5ZnQ2TW9TZHktelRDcE91cVFiZTRoQWppYmdZNS1KblhZQWhJOHNEVzFzNjhqWVR1VWZyLS1EVUZuUlpsRk1fOExFZms1RzdHa1ZqMW9yd05jV0lhSzdGS0JOMTNXdEVjeFdnaEp1RmtxTUZwWmhWSkdlU1k?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-17T11:39:09.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "e97c27e765c2dcd76481d06b22de832a027fbe684afb60bbf7e4a699b515fa94",
       "sha256": "e97c27e765c2dcd76481d06b22de832a027fbe684afb60bbf7e4a699b515fa94",
       "title": "RBA Designates Prosegur Under Australia’s New Cash Distribution Framework - Kalkine",
@@ -18147,6 +18181,36 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "255c2642c0c1d9768fa3bf4155714a7d32a778ae19927a05bde24fb46e011242",
+      "sha256": "255c2642c0c1d9768fa3bf4155714a7d32a778ae19927a05bde24fb46e011242",
+      "title": "Southern Province Cement reschedules $383m SNB financing - TradeArabia",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZDRlTjJ4bUVBVW9JS1QyRW56aTZwTU1Dbm5SSG5xbUw4SEotcFUtYkdYdWlGZ190RlBtREJYMnJJVFJPV3BTLWwxb3FNODc4Sk9XY2VpQlhVNUhIZGcyejRmYWxjM2poblFESm9RNUNCNllwYU1MYWpJckswTmREeGNGRk9XdU02cC1uTkhFUXNxVm83S2F6THRR?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-17T10:03:18.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -25003,6 +25067,36 @@
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "02ec321ec5566b5b419134de85ce64d16e9a4ab38e236c8632d6e222b3c57c52",
+      "sha256": "02ec321ec5566b5b419134de85ce64d16e9a4ab38e236c8632d6e222b3c57c52",
+      "title": "Convert 0.001 AEDZ (Zand AED) to CHF (Swiss Franc) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE83N21RX01Vc2U0YVgwNlEyTE9YcV9iYUNWVklnd1hiei1rWWtVTXgzd09QbU9wU2JrTnpzTTJ4ZWJFbmxxdVlfbUppUy1lZU1QQVA4ZTB0UU0tbGNhYklqcw?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-17T00:00:00.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
