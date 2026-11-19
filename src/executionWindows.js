@@ -439,16 +439,62 @@ function opexFor(fx) {
   };
 }
 
-export async function fetchFxvolShadow(fetchImpl = globalThis.fetch) {
-  try {
-    const res = await fetchImpl(FXVOL_SHADOW_URL, { signal: AbortSignal.timeout(4000) });
-    if (res == null || res.ok !== true) return null;
-    const doc = await res.json();
-    if (doc == null || typeof doc !== 'object' || Array.isArray(doc)) return null;
-    return doc;
-  } catch {
-    return null;
+// raw.githubusercontent.com already timed out at 4 s (g8-radar-news, 18-nov).
+// Three tries with backoff and a 10 s timeout per try. On a total failure the
+// caller keeps a previously published STALE/OK block instead of writing MISSING.
+export const FXVOL_FETCH_TIMEOUT_MS = 10_000;
+export const FXVOL_FETCH_ATTEMPTS = 3;
+export const FXVOL_FETCH_BACKOFF_MS = 1000;
+
+function defaultSleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export async function fetchFxvolShadow(fetchImpl = globalThis.fetch, options = {}) {
+  const timeoutMs = options.timeoutMs ?? FXVOL_FETCH_TIMEOUT_MS;
+  const attempts = options.attempts ?? FXVOL_FETCH_ATTEMPTS;
+  const backoffMs = options.backoffMs ?? FXVOL_FETCH_BACKOFF_MS;
+  const sleep = options.sleep ?? defaultSleep;
+  for (let i = 1; i <= attempts; i += 1) {
+    try {
+      const res = await fetchImpl(FXVOL_SHADOW_URL, { signal: AbortSignal.timeout(timeoutMs) });
+      if (res != null && res.ok === true) {
+        const doc = await res.json();
+        if (doc != null && typeof doc === 'object' && !Array.isArray(doc)) return doc;
+      }
+    } catch {
+      // timeout, network or invalid JSON: retry, then give up
+    }
+    if (i < attempts) await sleep(backoffMs * i);
   }
+  return null;
+}
+
+const SHADOW_DAY_KEYS = ['fx_roll', 'imm', 'opex'];
+
+export function publishedWindowsHaveValidStale(windows) {
+  if (windows == null || typeof windows !== 'object' || Array.isArray(windows)) return false;
+  const days = [windows.analysis, windows.next_business_day].filter(
+    (day) => day != null && typeof day === 'object' && !Array.isArray(day),
+  );
+  for (const day of days) {
+    for (const key of SHADOW_DAY_KEYS) {
+      const block = day[key];
+      if (block == null || typeof block !== 'object' || Array.isArray(block)) continue;
+      if (block.reason === 'STALE' || block.status === 'OK') return true;
+    }
+  }
+  return false;
+}
+
+// Fetch failure must not downgrade a published STALE/OK block to MISSING.
+// A successful fetch still wins, even if the new document is itself STALE by age.
+export function resolvePublishedFxvolInput(fetched, previousWindows) {
+  if (fetched != null) return { fxvol: fetched };
+  if (publishedWindowsHaveValidStale(previousWindows)) {
+    return { execution_windows: previousWindows };
+  }
+  return { fxvol: null };
 }
 
 function blockedEntry(value, flags) {
