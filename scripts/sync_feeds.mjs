@@ -40,12 +40,14 @@ const prevShaSet = new Set(
     .filter(Boolean),
 );
 
+const prevIris = readJson(IRIS_PATH);
 const t0 = Date.now();
 const collected = await collectRadarAndIrisData({
   existingItems,
   previousMarket: prevFull?.market || null,
   previousCalendar: prevFull?.calendar || [],
   polymarketHistory: prevPoly,
+  previousExecutionWindows: prevIris?.execution_windows || prevFull?.execution_windows || null,
   timeoutMs: 8000,
 });
 let { irisFeed } = collected;
@@ -79,7 +81,6 @@ const newItemsCount = irisFeed.items.filter((x) => !prevShaSet.has(x.sha256)).le
 // Publish when consumers would see a difference: new headlines, calendar values (consensus/actual), source states.
 const signatureChanged = publishSignature(fullState) !== publishSignature(prevFull);
 // A contract change (new top-level fields) must reach consumers without waiting for a new headline.
-const prevIris = readJson(IRIS_PATH);
 const prevIrisKeys = prevIris ? Object.keys(prevIris).sort().join(',') : '';
 const schemaChanged = prevIrisKeys !== Object.keys(irisFeed).sort().join(',');
 const itemKey = (item) => item?.sha256 || item?.id || '';

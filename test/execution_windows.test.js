@@ -4,27 +4,14 @@ import { readFileSync } from 'node:fs';
 import {
   buildExecutionWindows,
   executionWindowHeader,
+  fetchFxvolShadow,
+  FXVOL_SHADOW_URL,
+  publishedWindowsHaveValidStale,
+  resolvePublishedFxvolInput,
   shiftGotobi,
   WAT_TZ,
 } from '../src/executionWindows.js';
 import { projectIrisFeed } from '../src/irisCollector.js';
-
-// Slice of CME_FXVOL_shadow.json (session 2026-11-12, generated_utc 2026-11-14T01:38:17Z).
-// The publisher fetches the same document. imm is absent in that file.
-const FXVOL_FOR_PUBLISHED = {
-  generated_utc: '2026-11-14T01:38:17Z',
-  session: '2026-11-12',
-  fut_roll_window: { start: '2026-12-07', end: '2026-12-19', active: false },
-  currencies: {
-    EUR: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
-    JPY: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
-    GBP: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
-    AUD: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
-    CAD: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
-    CHF: { status: 'OK', exp1: '2026-12-04', dte1: 22 },
-    NZD: { status: 'NA', exp1: null, dte1: null },
-  },
-};
 
 const FORBIDDEN = /\blong\b|\bshort\b|\bcompra\b|\bvende\b|subirá|bajará/i;
 const IRIS_KEYS = [
@@ -32,6 +19,49 @@ const IRIS_KEYS = [
   'health', 'coverage', 'risk_map', 'pair_risk', 'agenda_window', 'polymarket_geo',
   'execution_windows', 'items',
 ];
+
+
+const DAY_KEYS = [
+  'date', 'eom', 'qend_window', 'yend_window', 'gotobi',
+  'fix_tokyo', 'fix_london', 'nyc_cut', 'blocked_entry',
+  'fx_roll', 'imm', 'opex', 'fiscal_jp', 'fiscal_us',
+];
+
+function assertExecutionWindowsContract(windows) {
+  assert.equal(typeof windows, 'object');
+  assert.ok(windows);
+  assert.equal(windows.tz, WAT_TZ);
+  if (windows.status === 'UNAVAILABLE') {
+    assert.deepEqual(Object.keys(windows).sort(), ['status', 'tz']);
+    return;
+  }
+  assert.equal(Object.hasOwn(windows, 'status'), false);
+  assert.deepEqual(Object.keys(windows).sort(), ['analysis', 'next_business_day', 'tz']);
+  for (const key of ['analysis', 'next_business_day']) {
+    const day = windows[key];
+    if (key === 'next_business_day' && day === 'UNAVAILABLE') continue;
+    assert.equal(typeof day, 'object');
+    assert.ok(day);
+    for (const field of DAY_KEYS) {
+      assert.equal(Object.hasOwn(day, field), true, field);
+    }
+    assert.match(String(day.date), /^\d{4}-\d{2}-\d{2}$/);
+    const roll = day.fx_roll;
+    assert.equal(roll.mode, 'SHADOW');
+    assert.ok(['OK', 'UNAVAILABLE'].includes(roll.status));
+    assert.ok(['MISSING', 'STALE', 'ABSENT', 'INVALID', null].includes(roll.reason));
+    assert.ok(['BEFORE', 'INSIDE', 'AFTER', 'UNAVAILABLE'].includes(roll.state));
+    const imm = day.imm;
+    assert.equal(imm.mode, 'SHADOW');
+    assert.ok(['OK', 'UNAVAILABLE'].includes(imm.status));
+    assert.ok(['MISSING', 'STALE', 'ABSENT', null].includes(imm.reason));
+    const opex = day.opex;
+    assert.equal(opex.mode, 'SHADOW');
+    assert.ok(['OK', 'UNAVAILABLE'].includes(opex.status));
+    assert.ok(['MISSING', 'STALE', 'ABSENT', null].includes(opex.reason));
+    assert.equal(typeof opex.note, 'string');
+  }
+}
 
 function weekday(iso) {
   const [y, m, d] = iso.split('-').map(Number);
@@ -194,8 +224,73 @@ test('el feed IRIS suma execution_windows y conserva el contrato', () => {
   assert.equal(feed.agenda_window[0].lock_level, 'TOTAL');
   assert.equal(Object.hasOwn(feed, 'currency_ranking_mmt'), false);
   assert.deepEqual(feed.execution_windows, buildExecutionWindows('2026-11-12T00:20:40.609Z'));
+  assertExecutionWindowsContract(feed.execution_windows);
   const published = JSON.parse(readFileSync(new URL('../public/data/iris_g8_feed.json', import.meta.url), 'utf8'));
   assert.deepEqual(Object.keys(published), IRIS_KEYS);
   assert.equal(published.llm_calls, 0);
-  assert.deepEqual(published.execution_windows, buildExecutionWindows(published.generated_at, FXVOL_FOR_PUBLISHED));
+  assertExecutionWindowsContract(published.execution_windows);
+});
+
+test('fetchFxvolShadow reintenta y conserva un STALE publicado si el fetch falla', async () => {
+  const calls = [];
+  const doc = { generated_utc: '2026-11-15T12:00:00Z', fut_roll_window: { start: '2026-12-07', end: '2026-12-19', active: false } };
+  const staleWindows = buildExecutionWindows('2026-11-19T12:00:00Z', { generated_utc: '2026-11-12T00:00:00Z' });
+  assert.equal(staleWindows.analysis.fx_roll.reason, 'STALE');
+  assert.equal(publishedWindowsHaveValidStale(staleWindows), true);
+  assert.equal(publishedWindowsHaveValidStale(buildExecutionWindows('2026-11-19T12:00:00Z', null)), false);
+  assert.equal(publishedWindowsHaveValidStale(null), false);
+
+  const fetched = await fetchFxvolShadow(async (url) => {
+    calls.push(url);
+    if (calls.length < 3) throw new Error('down');
+    return { ok: true, json: async () => doc };
+  }, { backoffMs: 0, sleep: async () => {} });
+  assert.equal(calls.length, 3);
+  assert.deepEqual(calls, [FXVOL_SHADOW_URL, FXVOL_SHADOW_URL, FXVOL_SHADOW_URL]);
+  assert.equal(fetched.generated_utc, doc.generated_utc);
+
+  const failedCalls = [];
+  const missed = await fetchFxvolShadow(async () => {
+    failedCalls.push(1);
+    throw new Error('down');
+  }, { backoffMs: 0, sleep: async () => {} });
+  assert.equal(missed, null);
+  assert.equal(failedCalls.length, 3);
+
+  const kept = resolvePublishedFxvolInput(null, staleWindows);
+  assert.deepEqual(kept, { execution_windows: staleWindows });
+  const rebuilt = projectIrisFeed({
+    version: '3.0.0',
+    engine_version: 'mmt-agent-op-v4.1-G8',
+    generated_at: '2026-11-19T12:00:00Z',
+    health: { status: 'CLEAN', sources_live: 1 },
+    coverage: {},
+    risk_map: [],
+    pair_risk: [],
+    agenda_window: [],
+    polymarket_geo: { status: 'STALE', updated_at: null, markets: [] },
+    items: [],
+    ...kept,
+  });
+  assert.equal(rebuilt.execution_windows.analysis.fx_roll.reason, 'STALE');
+  assert.notEqual(rebuilt.execution_windows.analysis.fx_roll.reason, 'MISSING');
+
+  const missingPrev = buildExecutionWindows('2026-11-19T12:00:00Z', null);
+  const downgrade = projectIrisFeed({
+    version: '3.0.0',
+    engine_version: 'mmt-agent-op-v4.1-G8',
+    generated_at: '2026-11-19T12:00:00Z',
+    health: { status: 'CLEAN', sources_live: 1 },
+    coverage: {},
+    risk_map: [],
+    pair_risk: [],
+    agenda_window: [],
+    polymarket_geo: { status: 'STALE', updated_at: null, markets: [] },
+    items: [],
+    ...resolvePublishedFxvolInput(null, missingPrev),
+  });
+  assert.equal(downgrade.execution_windows.analysis.fx_roll.reason, 'MISSING');
+
+  const freshWins = resolvePublishedFxvolInput(doc, staleWindows);
+  assert.deepEqual(freshWins, { fxvol: doc });
 });

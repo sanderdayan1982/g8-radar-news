@@ -10,7 +10,7 @@ import { fetchMarket } from './market.js';
 import { fetchPolymarketGeo } from './polymarketGeo.js';
 import { buildPairRisk, buildRiskMap } from './riskMap.js';
 import { sourceHealth, RELEASE } from './operations.js';
-import { buildExecutionWindows, fetchFxvolShadow } from './executionWindows.js';
+import { buildExecutionWindows, fetchFxvolShadow, resolvePublishedFxvolInput } from './executionWindows.js';
 import { surpPublishEnabled } from './surp.js';
 
 /** Contrato IRIS publicado (Parte F + execution_windows, FLUJOS-01). Ningún campo fuera de esta lista salvo el bloque method cuando SURP_PUBLISH=true. */
@@ -555,6 +555,7 @@ export async function collectRadarAndIrisData({
   previousMarket = null,
   previousCalendar = [],
   polymarketHistory = null,
+  previousExecutionWindows = null,
   timeoutMs = 4000,
 } = {}) {
   const startedAt = new Date().toISOString();
@@ -654,7 +655,7 @@ export async function collectRadarAndIrisData({
     pair_risk: pairRisk,
     agenda_window: agendaWindow,
     polymarket_geo: polyResult.block,
-    fxvol,
+    ...resolvePublishedFxvolInput(fxvol, previousExecutionWindows),
     items: irisItemsFormatted,
   });
 
