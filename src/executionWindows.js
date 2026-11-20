@@ -23,17 +23,17 @@
  * FAMILIAS-01 A (Sander, 15-nov-2026), REVISION_TRIPLE §3.A. Campos SHADOW
  * en el día: fx_roll, imm, opex, fiscal_jp, fiscal_us. No entran en
  * blocked_entry y no reescriben eom, gotobi, las ventanas ni los fixings.
- * fx_roll, imm y opex salen de CME_FXVOL_shadow.json (g8-macro-pipeline,
- * scripts/cme_fxvol_shadow.py). El escritor del feed lo pide con
- * fetchFxvolShadow (raw de GitHub) y lo pasa a buildExecutionWindows.
- * Si falta o está
+ * fx_roll, imm y opex salen de data/public/CME_FXVOL_public.json
+ * (g8-macro-pipeline, proyección pública, sin cifras). El escritor del
+ * feed lo pide con fetchFxvolShadow (raw de GitHub) y lo pasa a
+ * buildExecutionWindows. Si falta o está
  * viejo, UNAVAILABLE y null. No se rellena con 0 ni con el dato anterior.
  * La ventana de fx_roll no se desplaza: el active del productor se conserva
  * y el estado BEFORE / INSIDE / AFTER se calcula sobre esas fechas.
- * imm se lee de fut_roll_window.imm. Hoy el productor no lo escribe (calcula
- * el tercer miércoles y no lo guarda). Sin esa clave, UNAVAILABLE: no se
+ * imm se lee de fut_roll_window.imm. Sin esa clave, UNAVAILABLE: no se
  * inventa el miércoles. opex es exp1 por divisa (vencimiento del modelo,
- * DTE >= 7), sin fundir fechas. fiscal_jp y fiscal_us son por regla.
+ * DTE >= 7), sin fundir fechas; los días que faltan se calculan desde
+ * exp1. fiscal_jp y fiscal_us son por regla.
  *
  * public/executionWindows.js es la misma copia: el navegador no importa src/.
  */
@@ -290,7 +290,7 @@ function minusHour(hhmm) {
 // documento es STALE: no se arrastra la sesión anterior.
 export const FXVOL_MAX_AGE_MS = 72 * 60 * 60 * 1000;
 
-export const FXVOL_SHADOW_URL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-macro-pipeline/main/data/CME_FXVOL_shadow.json';
+export const FXVOL_SHADOW_URL = 'https://raw.githubusercontent.com/sanderdayan1982/g8-macro-pipeline/main/data/public/CME_FXVOL_public.json';
 
 const FXVOL_CCY = ['EUR', 'JPY', 'GBP', 'AUD', 'CAD', 'CHF', 'NZD'];
 
@@ -370,10 +370,23 @@ export function fiscalCalendar(value) {
   };
 }
 
+function isPublicFxvol(doc) {
+  return doc != null && typeof doc === 'object' && !Array.isArray(doc) && Object.hasOwn(doc, 'as_of');
+}
+
+function freshnessInstant(fxvol) {
+  const generated = Date.parse(fxvol.generated_utc);
+  if (Number.isFinite(generated)) return generated;
+  if (isPublicFxvol(fxvol) && isIsoDate(fxvol.as_of)) {
+    return Date.parse(`${fxvol.as_of}T00:00:00Z`);
+  }
+  return Number.NaN;
+}
+
 function resolveFxvol(fxvol, instant) {
   if (fxvol == null) return { kind: 'MISSING' };
   if (typeof fxvol !== 'object' || Array.isArray(fxvol)) return { kind: 'STALE' };
-  const generated = Date.parse(fxvol.generated_utc);
+  const generated = freshnessInstant(fxvol);
   const at = instant.getTime();
   if (!Number.isFinite(generated) || !Number.isFinite(at)) return { kind: 'STALE' };
   const age = at - generated;
@@ -407,7 +420,14 @@ function immFor(fx) {
   return { mode: 'SHADOW', status: 'OK', reason: null, date: raw };
 }
 
-function opexFor(fx) {
+function daysFromExp1(exp1, analysisDate) {
+  if (!isIsoDate(exp1) || !isIsoDate(analysisDate)) return null;
+  const [ey, em, ed] = exp1.split('-').map(Number);
+  const [ay, am, ad] = analysisDate.split('-').map(Number);
+  return Math.round((Date.UTC(ey, em - 1, ed) - Date.UTC(ay, am - 1, ad)) / 86400000);
+}
+
+function opexFor(fx, analysisDate) {
   if (fx.kind !== 'FRESH') return blankOpex(fx.kind === 'MISSING' ? 'MISSING' : 'STALE');
   const table = fx.doc.currencies;
   if (table == null || typeof table !== 'object' || Array.isArray(table)) return blankOpex('ABSENT');
@@ -422,7 +442,9 @@ function opexFor(fx) {
     const row = table[currency];
     const rowObj = row != null && typeof row === 'object' && !Array.isArray(row) ? row : null;
     const exp1 = rowObj != null && isIsoDate(rowObj.exp1) ? rowObj.exp1 : null;
-    const dte1 = rowObj != null && typeof rowObj.dte1 === 'number' && Number.isFinite(rowObj.dte1) ? rowObj.dte1 : null;
+    const dte1 = isPublicFxvol(fx.doc)
+      ? daysFromExp1(exp1, analysisDate)
+      : (rowObj != null && typeof rowObj.dte1 === 'number' && Number.isFinite(rowObj.dte1) ? rowObj.dte1 : null);
     currencies[currency] = { exp1, dte1 };
     if (exp1 == null) continue;
     if (earliest == null || exp1 < earliest.exp1) earliest = { exp1, currencies: [currency] };
@@ -532,7 +554,7 @@ function dayBlock(value, fx) {
     }),
     fx_roll: fxRollFor(value, fx),
     imm: immFor(fx),
-    opex: opexFor(fx),
+    opex: opexFor(fx, value),
     fiscal_jp: fiscal.fiscal_jp,
     fiscal_us: fiscal.fiscal_us,
   };
