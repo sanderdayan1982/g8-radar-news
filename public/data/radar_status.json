@@ -1,25 +1,95 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-20T12:42:47.829Z",
-  "feed_generated_at": "2026-11-20T12:42:47.754Z",
+  "last_check_at": "2026-11-20T12:44:04.036Z",
+  "feed_generated_at": "2026-11-20T12:44:03.994Z",
   "wrote_full_feed": true,
-  "new_items": 2,
+  "new_items": 0,
   "sources": {
-    "ok": 34,
+    "ok": 24,
     "cached": 0,
-    "empty": 1,
-    "error": 0,
+    "empty": 2,
+    "error": 9,
     "total": 35
   },
   "failing_sources": [
+    {
+      "id": "nz-treasury",
+      "status": "empty_feed",
+      "last_error": "HTTP null con 0 titulares extraídos",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
     {
       "id": "snb-bills",
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 1521
+      "consecutive_failures": 1522
+    },
+    {
+      "id": "us-treasury",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "us-bls-bea",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "eurostat",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "uk-ons-hmt",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "jp-mof",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "au-abs-treasury",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "nz-press",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "ch-press",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "au-press",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-20T12:42:42.537Z",
+      "consecutive_failures": 1
     }
   ],
-  "calendar_events": 116,
+  "calendar_events": 117,
   "cadence": "Hourly GitHub Actions trigger + self-clocked loop: every 5 min, every 60 s within 15 min of a High-impact event"
 }
