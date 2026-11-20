@@ -1,23 +1,30 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-20T21:00:31.968Z",
-  "feed_generated_at": "2026-11-20T21:00:31.841Z",
+  "last_check_at": "2026-11-20T21:05:41.621Z",
+  "feed_generated_at": "2026-11-20T21:05:41.535Z",
   "wrote_full_feed": true,
-  "new_items": 2,
+  "new_items": 1,
   "sources": {
-    "ok": 34,
+    "ok": 33,
     "cached": 0,
     "empty": 1,
-    "error": 0,
+    "error": 1,
     "total": 35
   },
   "failing_sources": [
+    {
+      "id": "financialjuice",
+      "status": "error",
+      "last_error": "fetch failed",
+      "last_success_at": "2026-11-20T21:00:23.097Z",
+      "consecutive_failures": 1
+    },
     {
       "id": "snb-bills",
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 1624
+      "consecutive_failures": 1625
     }
   ],
   "calendar_events": 118,
