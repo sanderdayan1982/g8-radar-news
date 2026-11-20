@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-20T17:27:08.110Z",
+  "generated_at": "2026-11-20T17:32:16.068Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -16,19 +16,19 @@
   },
   "coverage": {
     "USD": {
-      "count_72h": 381,
+      "count_72h": 386,
       "count_official_45d": 318,
-      "last_item_at": "2026-11-20T17:17:56.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "last_item_at": "2026-11-20T17:31:17.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "EUR": {
       "count_72h": 76,
       "count_official_45d": 170,
       "last_item_at": "2026-11-20T15:37:28.000Z",
-      "hours_since_last": 1.8,
-      "hours_since_last_business": 1.8,
+      "hours_since_last": 1.9,
+      "hours_since_last_business": 1.9,
       "silence": false
     },
     "GBP": {
@@ -43,36 +43,36 @@
       "count_72h": 87,
       "count_official_45d": 89,
       "last_item_at": "2026-11-20T16:50:56.000Z",
-      "hours_since_last": 0.6,
-      "hours_since_last_business": 0.6,
+      "hours_since_last": 0.7,
+      "hours_since_last_business": 0.7,
       "silence": false
     },
     "CHF": {
       "count_72h": 79,
       "count_official_45d": 16,
       "last_item_at": "2026-11-20T16:50:56.000Z",
-      "hours_since_last": 0.6,
-      "hours_since_last_business": 0.6,
+      "hours_since_last": 0.7,
+      "hours_since_last_business": 0.7,
       "silence": false
     },
     "CAD": {
       "count_72h": 31,
       "count_official_45d": 8,
       "last_item_at": "2026-11-20T17:00:13.000Z",
-      "hours_since_last": 0.4,
-      "hours_since_last_business": 0.4,
+      "hours_since_last": 0.5,
+      "hours_since_last_business": 0.5,
       "silence": false
     },
     "AUD": {
       "count_72h": 128,
       "count_official_45d": 87,
       "last_item_at": "2026-11-20T13:20:48.000Z",
-      "hours_since_last": 4.1,
-      "hours_since_last_business": 4.1,
+      "hours_since_last": 4.2,
+      "hours_since_last_business": 4.2,
       "silence": false
     },
     "NZD": {
-      "count_72h": 101,
+      "count_72h": 100,
       "count_official_45d": 80,
       "last_item_at": "2026-11-20T11:05:56.000Z",
       "hours_since_last": 6.4,
@@ -83,8 +83,8 @@
       "count_72h": 13,
       "count_official_45d": 0,
       "last_item_at": "2026-11-20T16:40:06.000Z",
-      "hours_since_last": 0.8,
-      "hours_since_last_business": 0.8
+      "hours_since_last": 0.9,
+      "hours_since_last_business": 0.9
     }
   },
   "risk_map": [
@@ -860,21 +860,6 @@
   ],
   "agenda_window": [
     {
-      "id": "5ff4d9c4fc220b59",
-      "currency": "USD",
-      "title": "FOMC Member Goolsbee Speaks",
-      "event_at": "2026-11-19T17:30:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": "DISCURSO",
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
       "id": "da2b653fefc51705",
       "currency": "USD",
       "title": "FOMC Member Barr Speaks",
@@ -883,7 +868,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -22.2,
+      "hours_from_now": -22.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -943,7 +928,7 @@
       "actual": null,
       "forecast": "-22",
       "previous": "-24",
-      "hours_from_now": -17.4,
+      "hours_from_now": -17.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1018,7 +1003,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -9.2,
+      "hours_from_now": -9.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1048,7 +1033,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -4,
+      "hours_from_now": -4.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1153,7 +1138,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.2,
+      "hours_from_now": -0.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1640,6 +1625,156 @@
     }
   },
   "items": [
+    {
+      "id": "83c334ba117a2d2f2164eb4968674e60892db90969c335d5528e24903173448f",
+      "sha256": "83c334ba117a2d2f2164eb4968674e60892db90969c335d5528e24903173448f",
+      "title": "Trump: I want to make a real deal with Iran.",
+      "url": "https://t.me/FinancialJuice/149050",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T17:31:17.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c0604955e5c24dd41af723c57af128433dcbd34d4f15c8b91d95afc84601a0cc",
+      "sha256": "c0604955e5c24dd41af723c57af128433dcbd34d4f15c8b91d95afc84601a0cc",
+      "title": "Trump: Iran wants a deal that is not acceptable to me.",
+      "url": "https://t.me/FinancialJuice/149049",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T17:30:53.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b28b8f4aa12480d2f392c22f7f92e918663c9e689814efe709d2caf8736fe949",
+      "sha256": "b28b8f4aa12480d2f392c22f7f92e918663c9e689814efe709d2caf8736fe949",
+      "title": "Trump: Gas prices depend on how we settle with Iran.",
+      "url": "https://t.me/FinancialJuice/149048",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T17:30:44.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6b0a1624a40b328f657a9a31c7994ee3c2e92f0c2449073ec607097f9e13cbc7",
+      "sha256": "6b0a1624a40b328f657a9a31c7994ee3c2e92f0c2449073ec607097f9e13cbc7",
+      "title": "Trump: Ten other trade deals coming very soon after Asia trip.",
+      "url": "https://t.me/FinancialJuice/149047",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T17:28:16.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ebe283825c1bafeb08e9206e635bd138650051d2ef2e4e0318c1e7b285d055d5",
+      "sha256": "ebe283825c1bafeb08e9206e635bd138650051d2ef2e4e0318c1e7b285d055d5",
+      "title": "DIRECTO TRUMP | GUERRA EN UCRANIA Y OTAN, POSIBLE ATAQUE DE ISRAEL A IRÁN Y CUMBRE CON XI Y PUTIN",
+      "url": "https://t.me/negociostv/60692",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-20T17:27:38.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "2f9cddc8ac739f18006fde3c6c050e5a049fdd0c144d5fc888bcbd2b25900453",
       "sha256": "2f9cddc8ac739f18006fde3c6c050e5a049fdd0c144d5fc888bcbd2b25900453",
@@ -3955,6 +4090,36 @@
       "published_at": "2026-11-20T14:08:50.000Z",
       "currencies": [],
       "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5bf775ff03c5a4089ba223822edb00e826cafea92018875d2ea0d31825255c3d",
+      "sha256": "5bf775ff03c5a4089ba223822edb00e826cafea92018875d2ea0d31825255c3d",
+      "title": "US tech rout deepens as Anthropic shares tumble",
+      "url": "https://www.ft.com/content/23fa83d8-e078-4853-959e-bd1f19d14ff5?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-20T14:01:58.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -18254,14 +18419,14 @@
       "z": null
     },
     {
-      "id": "130cdb280e6c56936c45591f82e5fdcbc649b09f17f3b4fe4ec1bb613096ee90",
-      "sha256": "130cdb280e6c56936c45591f82e5fdcbc649b09f17f3b4fe4ec1bb613096ee90",
+      "id": "cce151ac81d214011a0501622f0e90bb598c259e901f6afa8739b710c39b42df",
+      "sha256": "cce151ac81d214011a0501622f0e90bb598c259e901f6afa8739b710c39b42df",
       "title": "Enquiries - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQekJ2SHhPc1VtVFJzMUNRME5Rc0xfOGRUMGdVVHBoMVFRUGdoZnItMmZsbk9CZ2hEcVFrNlk0cEN0aEtoMTdyMTUxU1VVOVFvV1p4TGUwQnkza2d5WkdZSkVibTVuUWVTMUtsY2thUHVmVm9McFZwNzhFYjJuZlJWYVk5cXRtWTNmbkNZajFvRWpRd3dGTmlwb0hPZzZlZUdvVzJWdDB0eGdUQi03eGZWWWR5Z21nX3V6a1E?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcnFYamNkWl9MUVlQYlhYVjJNN09ZR2RzcS1OZWFscERPSHlwRGJtRlcxSE93Mnp1Wm55UkZuRnN6U0ZIWnhZMTBTMUc2M0prVXk4cy05YUZtUm90SWt6UWY3UWNUd0NWaUpiMzlwaGpicWhoM1NHQmczVzB4MDh1MzdqNm5CVXZoc2lJQ0FkZWk3YjZ0em9jOEtwZ2dXLTgzY29JYWREU1ppazVUYTREaE9mRnFTMXgxdEE?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
-      "published_at": "2026-11-19T01:10:59.000Z",
+      "published_at": "2026-11-19T01:11:10.000Z",
       "currencies": [
         "AUD",
         "USD"
@@ -36848,92 +37013,6 @@
       "z": null
     },
     {
-      "id": "e54389d5b0913064e50e9f0b786d9d8af87221376844232de3865166c5c91136",
-      "sha256": "e54389d5b0913064e50e9f0b786d9d8af87221376844232de3865166c5c91136",
-      "title": "Trump Media investors learn the Truth about betting on bitcoin",
-      "url": "https://www.ft.com/content/2c686fe5-0a39-45ad-a26e-87c1f813ec7d?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-currencies",
-      "source_type": "agencia",
-      "published_at": "2026-11-17T17:30:01.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7e7876b13314a7c095dad448c69d52bbcdbeea4dd5184e0a4fb80a551f521ac3",
-      "sha256": "7e7876b13314a7c095dad448c69d52bbcdbeea4dd5184e0a4fb80a551f521ac3",
-      "title": "Political parties not committing to securing KiwiSaver age",
-      "url": "https://www.rnz.co.nz/news/business/2647938/political-parties-not-committing-to-securing-kiwisaver-age",
-      "source": "RNZ",
-      "source_id": "rnz-business",
-      "source_type": "agencia",
-      "published_at": "2026-11-17T17:29:07.000Z",
-      "currencies": [
-        "NZD"
-      ],
-      "divisas": [
-        "NZD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e6d72fcd47c7f1f7655a2494bab67c53533312af2f7f9f64dd87ac8301c9e6a5",
-      "sha256": "e6d72fcd47c7f1f7655a2494bab67c53533312af2f7f9f64dd87ac8301c9e6a5",
-      "title": "Amazon CEO Jassy, on not opening Amazon .com to AI agents: It just has to be a good customer experience, which it hasn’t been to date - Semafor Event. $AMZN",
-      "url": "https://t.me/FinancialJuice/147952",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-17T17:27:23.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "33a5f540ec6b3e454f8f0176a929d2a87a22827e500da4a65a015c2e205e6225",
       "sha256": "33a5f540ec6b3e454f8f0176a929d2a87a22827e500da4a65a015c2e205e6225",
       "title": "FinCEN Issues Proposed Rule to Strengthen Customer Due Diligence Requirements for Covered Financial Institutions - U.S. Department of the Treasury (.gov)",
@@ -37424,6 +37503,36 @@
       "z": null
     },
     {
+      "id": "f9888c585655d012cc0447a978352d1b29128d978fec968647b5c48adf8550d5",
+      "sha256": "f9888c585655d012cc0447a978352d1b29128d978fec968647b5c48adf8550d5",
+      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMDc3ckVDSUxZU2JLZ2hHbGU5RE5qVXdVQXI2Ukx3N2hsZWJtMGp1U2FYRVpBZnczWk9MMTVLRmxSa1cydlVkYUc2RUNqS2NTMW5Xa1Zya1pPTldTNFBHNThkbm1GMXY0SHBveUIzVmNzRkpDcm9MSFhlR2s5VDFIY1JCSmdtbl9JbnpOYkl0STNPQXE4cEFndlNVc2o?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "0ed82b946e870c9a994fd1c3bb49c765ce284a4887681ecb965b4d3071cea18d",
       "sha256": "0ed82b946e870c9a994fd1c3bb49c765ce284a4887681ecb965b4d3071cea18d",
       "title": "Economic forecast for Netherlands - economy-finance.ec.europa.eu",
@@ -37544,10 +37653,10 @@
       "z": null
     },
     {
-      "id": "df346188952d1cd66bbcd5851c0f764d5d1180dc7640426f20304ac71bf5fb1b",
-      "sha256": "df346188952d1cd66bbcd5851c0f764d5d1180dc7640426f20304ac71bf5fb1b",
-      "title": "Economic forecast for Romania - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbXBiU2VRSzNEU3B0MGVndzJ5ZE9vQ2psN1Bza2xzT2R1Z1BfVEF2b1ZkSnZMSzA1cXl0TDJTbXVtM1RfeGpJYnN0NGU5Z3FhQXVNcmVhY2E4alpGSTVnRTlxVHJLbjkxWU4yRVIyYXBrdVBVQ2Fmc0RIRV9wYWRLX2VBcVhYTlBBOEhtZmtiaVFJMDNqQXBNb0RqR3lRMkR3ek5qcmJ5blFjWEtrTDhCX1g4LWQ4ZHh2WTJGWWxzV2c2Y1VNNkhoRWZCSV91RklCWGZ6NVpISDFJYXNDaUx0ZkFHQ18zYk0?oc=5",
+      "id": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
+      "sha256": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
+      "title": "Economic forecast for Cyprus - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeE43ZHpfdllKckVscXBvQXBMa19KOV9HTEdhbFVhRVJqUk01NWRZVHByMi1TVlFodmZwVkhUV3lvVVlYYl90bGlJZ005U3QxZHhyZ2EzUG1MR3ZCYXIyV2hubmUxQkllcDM1cEttUTdnRjAyR0hEZDByMDBEUXdYX2d4QXlFU0ZoLXRfRzZJSnA1LWJ6ZzRxcnVwWmxIdENIV2pIVVV0LXg2SXVIRHN1cHpRdnRQLUlCYjdXTjgtOTYwTm10ZDlHN1VseGt6UnVoOHhTcHZ3RkEzanBNeEZHM1hFZXE?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -37816,6 +37925,36 @@
       "z": null
     },
     {
+      "id": "df346188952d1cd66bbcd5851c0f764d5d1180dc7640426f20304ac71bf5fb1b",
+      "sha256": "df346188952d1cd66bbcd5851c0f764d5d1180dc7640426f20304ac71bf5fb1b",
+      "title": "Economic forecast for Romania - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbXBiU2VRSzNEU3B0MGVndzJ5ZE9vQ2psN1Bza2xzT2R1Z1BfVEF2b1ZkSnZMSzA1cXl0TDJTbXVtM1RfeGpJYnN0NGU5Z3FhQXVNcmVhY2E4alpGSTVnRTlxVHJLbjkxWU4yRVIyYXBrdVBVQ2Fmc0RIRV9wYWRLX2VBcVhYTlBBOEhtZmtiaVFJMDNqQXBNb0RqR3lRMkR3ek5qcmJ5blFjWEtrTDhCX1g4LWQ4ZHh2WTJGWWxzV2c2Y1VNNkhoRWZCSV91RklCWGZ6NVpISDFJYXNDaUx0ZkFHQ18zYk0?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "8d01b0aaf93cc04236d92ccca806fbec3864e76bda085a50b81e14b278662457",
       "sha256": "8d01b0aaf93cc04236d92ccca806fbec3864e76bda085a50b81e14b278662457",
       "title": "Long-term labour market implications of demographic changes in the EU - economy-finance.ec.europa.eu",
@@ -37932,36 +38071,6 @@
       "ficha_v6": "EA-1",
       "mmt_lens": "TOT_COMMODITIES_EA1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
-      "sha256": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
-      "title": "Economic forecast for Cyprus - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeE43ZHpfdllKckVscXBvQXBMa19KOV9HTEdhbFVhRVJqUk01NWRZVHByMi1TVlFodmZwVkhUV3lvVVlYYl90bGlJZ005U3QxZHhyZ2EzUG1MR3ZCYXIyV2hubmUxQkllcDM1cEttUTdnRjAyR0hEZDByMDBEUXdYX2d4QXlFU0ZoLXRfRzZJSnA1LWJ6ZzRxcnVwWmxIdENIV2pIVVV0LXg2SXVIRHN1cHpRdnRQLUlCYjdXTjgtOTYwTm10ZDlHN1VseGt6UnVoOHhTcHZ3RkEzanBNeEZHM1hFZXE?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -42420,36 +42529,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
-      "sha256": "765cfa1a6ba49e4004bccb73bcb56bc53cd60abe2947ea14c24ed7441d8a1691",
-      "title": "Gross domestic product (GDP) and main components (output, expenditure and income) - quarterly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdVF3UUF0ci0wOUtXdGVuUlpLVEJBejQtSE9DdkhQNXRNcVlMNGlmQkR1SUNaSUZWQVljSmMtNmgxLVhtUXJrZlVFSjM2OHFKWllUeXpDV1Y1MF9wV01SWFpKb3hINENUQVNwdF9mTlM0NWJwUmJnV1FJa3UzNW56QUlEWi16eHF6UjlabDBrRVY5SS1oUENYaG9LS1pUdC01U0ptZ0YxZFdtc3o4bmMteTA2bjNhUDNwTFItdGxIRjI5VVFa?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
