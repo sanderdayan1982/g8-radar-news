@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-20T13:26:33.042Z",
+  "generated_at": "2026-11-20T13:31:52.105Z",
   "health": {
     "sources_active": 24,
     "sources_live": 24,
@@ -16,75 +16,75 @@
   },
   "coverage": {
     "USD": {
-      "count_72h": 393,
+      "count_72h": 390,
       "count_official_45d": 314,
-      "last_item_at": "2026-11-20T12:58:26.000Z",
-      "hours_since_last": 0.5,
-      "hours_since_last_business": 0.5,
-      "silence": false
-    },
-    "EUR": {
-      "count_72h": 76,
-      "count_official_45d": 165,
-      "last_item_at": "2026-11-20T13:24:58.000Z",
+      "last_item_at": "2026-11-20T13:29:13.000Z",
       "hours_since_last": 0,
       "hours_since_last_business": 0,
       "silence": false
     },
+    "EUR": {
+      "count_72h": 78,
+      "count_official_45d": 165,
+      "last_item_at": "2026-11-20T13:26:00.000Z",
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
+      "silence": false
+    },
     "GBP": {
-      "count_72h": 90,
+      "count_72h": 89,
       "count_official_45d": 105,
       "last_item_at": "2026-11-20T13:09:05.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "hours_since_last": 0.4,
+      "hours_since_last_business": 0.4,
       "silence": false
     },
     "JPY": {
       "count_72h": 92,
       "count_official_45d": 89,
       "last_item_at": "2026-11-20T12:13:11.000Z",
-      "hours_since_last": 1.2,
-      "hours_since_last_business": 1.2,
+      "hours_since_last": 1.3,
+      "hours_since_last_business": 1.3,
       "silence": false
     },
     "CHF": {
       "count_72h": 77,
       "count_official_45d": 16,
       "last_item_at": "2026-11-20T12:13:11.000Z",
-      "hours_since_last": 1.2,
-      "hours_since_last_business": 1.2,
+      "hours_since_last": 1.3,
+      "hours_since_last_business": 1.3,
       "silence": false
     },
     "CAD": {
-      "count_72h": 30,
+      "count_72h": 32,
       "count_official_45d": 8,
-      "last_item_at": "2026-11-20T08:01:52.000Z",
-      "hours_since_last": 5.4,
-      "hours_since_last_business": 5.4,
+      "last_item_at": "2026-11-20T13:30:35.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "AUD": {
-      "count_72h": 126,
+      "count_72h": 125,
       "count_official_45d": 86,
       "last_item_at": "2026-11-20T11:19:49.000Z",
-      "hours_since_last": 2.1,
-      "hours_since_last_business": 2.1,
+      "hours_since_last": 2.2,
+      "hours_since_last_business": 2.2,
       "silence": false
     },
     "NZD": {
-      "count_72h": 102,
+      "count_72h": 101,
       "count_official_45d": 80,
       "last_item_at": "2026-11-20T08:43:57.000Z",
-      "hours_since_last": 4.7,
-      "hours_since_last_business": 4.7,
+      "hours_since_last": 4.8,
+      "hours_since_last_business": 4.8,
       "silence": false
     },
     "XAU": {
       "count_72h": 11,
       "count_official_45d": 0,
       "last_item_at": "2026-11-20T09:10:04.000Z",
-      "hours_since_last": 4.3,
-      "hours_since_last_business": 4.3
+      "hours_since_last": 4.4,
+      "hours_since_last_business": 4.4
     }
   },
   "risk_map": [
@@ -860,21 +860,6 @@
   ],
   "agenda_window": [
     {
-      "id": "404d44639b2d8521",
-      "currency": "USD",
-      "title": "Building Permits",
-      "event_at": "2026-11-18T13:30:00.000Z",
-      "impact": "Low",
-      "actual": "1.309M",
-      "forecast": "1.38M",
-      "previous": "1.40M",
-      "hours_from_now": -47.9,
-      "window_status": null,
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
       "id": "471e29a284eaeeff",
       "currency": "USD",
       "title": "Pending Home Sales m/m",
@@ -883,83 +868,8 @@
       "actual": "-4.7%",
       "forecast": "-2.0%",
       "previous": "-7.3%",
-      "hours_from_now": -46.4,
+      "hours_from_now": -46.5,
       "window_status": null,
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "55466cc09b9becfa",
-      "currency": "CAD",
-      "title": "IPPI m/m",
-      "event_at": "2026-11-19T13:30:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "0.4%",
-      "previous": "2.0%",
-      "hours_from_now": -23.9,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "8660eca0d1276d60",
-      "currency": "CAD",
-      "title": "RMPI m/m",
-      "event_at": "2026-11-19T13:30:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "0.9%",
-      "previous": "4.8%",
-      "hours_from_now": -23.9,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "6bb4bd3ba89cbd6a",
-      "currency": "EUR",
-      "title": "ECB President Lagarde Speaks",
-      "event_at": "2026-11-19T13:30:00.000Z",
-      "impact": "Medium",
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "hours_from_now": -23.9,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": "DISCURSO",
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "25e7e408175c29f6",
-      "currency": "USD",
-      "title": "Philly Fed Manufacturing Index",
-      "event_at": "2026-11-19T13:30:00.000Z",
-      "impact": "Medium",
-      "actual": null,
-      "forecast": "20.6",
-      "previous": "20.9",
-      "hours_from_now": -23.9,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
-      "id": "dfa6777e551ebf28",
-      "currency": "USD",
-      "title": "Unemployment Claims",
-      "event_at": "2026-11-19T13:30:00.000Z",
-      "impact": "Medium",
-      "actual": null,
-      "forecast": "198K",
-      "previous": "200K",
-      "hours_from_now": -23.9,
-      "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
@@ -973,7 +883,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23.6,
+      "hours_from_now": -23.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -988,7 +898,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -23,
+      "hours_from_now": -23.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1003,7 +913,7 @@
       "actual": null,
       "forecast": "0.0%",
       "previous": "0.0%",
-      "hours_from_now": -22.4,
+      "hours_from_now": -22.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1018,7 +928,7 @@
       "actual": null,
       "forecast": "25B",
       "previous": "61B",
-      "hours_from_now": -21.9,
+      "hours_from_now": -22,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1033,7 +943,7 @@
       "actual": null,
       "forecast": null,
       "previous": "4.37%",
-      "hours_from_now": -21.7,
+      "hours_from_now": -21.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1048,7 +958,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -19.9,
+      "hours_from_now": -20,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1063,7 +973,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -18.2,
+      "hours_from_now": -18.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1078,7 +988,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -16.4,
+      "hours_from_now": -16.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1093,7 +1003,7 @@
       "actual": "2.2%",
       "forecast": "2.3%",
       "previous": "2.1%",
-      "hours_from_now": -13.9,
+      "hours_from_now": -14,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1108,7 +1018,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -13.9,
+      "hours_from_now": -14,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1123,7 +1033,7 @@
       "actual": null,
       "forecast": "-22",
       "previous": "-24",
-      "hours_from_now": -13.4,
+      "hours_from_now": -13.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1138,7 +1048,7 @@
       "actual": null,
       "forecast": null,
       "previous": "6.9%",
-      "hours_from_now": -11.4,
+      "hours_from_now": -11.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1153,7 +1063,7 @@
       "actual": "1.4%",
       "forecast": "0.9%",
       "previous": "1.9%",
-      "hours_from_now": -6.4,
+      "hours_from_now": -6.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1168,7 +1078,7 @@
       "actual": "0.7%",
       "forecast": "0.0%",
       "previous": "-0.4%",
-      "hours_from_now": -6.4,
+      "hours_from_now": -6.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1183,7 +1093,7 @@
       "actual": null,
       "forecast": "18.0B",
       "previous": "24.5B",
-      "hours_from_now": -6.4,
+      "hours_from_now": -6.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1198,7 +1108,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.2,
+      "hours_from_now": -5.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1213,7 +1123,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.4,
+      "hours_from_now": -0.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1228,7 +1138,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 0,
+      "hours_from_now": -0.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1240,11 +1150,11 @@
       "title": "Core Retail Sales m/m",
       "event_at": "2026-11-20T13:30:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "1.0%",
       "forecast": "0.7%",
       "previous": "1.2%",
-      "hours_from_now": 0.1,
-      "window_status": null,
+      "hours_from_now": 0,
+      "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
@@ -1255,11 +1165,11 @@
       "title": "Retail Sales m/m",
       "event_at": "2026-11-20T13:30:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "0.8%",
       "forecast": "0.7%",
       "previous": "1.2%",
-      "hours_from_now": 0.1,
-      "window_status": null,
+      "hours_from_now": 0,
+      "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
@@ -1273,7 +1183,7 @@
       "actual": "-32",
       "forecast": "-18",
       "previous": "-18",
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1288,7 +1198,7 @@
       "actual": null,
       "forecast": "51.7",
       "previous": "51.0",
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1303,7 +1213,7 @@
       "actual": "2.3%",
       "forecast": null,
       "previous": "4.3%",
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1318,7 +1228,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 3.8,
+      "hours_from_now": 3.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1327,7 +1237,7 @@
   ],
   "polymarket_geo": {
     "status": "OK",
-    "updated_at": "2026-11-20T12:59:44.093Z",
+    "updated_at": "2026-11-20T13:31:35.329Z",
     "markets": [
       {
         "theme": "IRAN_ORIENTE_MEDIO",
@@ -1335,8 +1245,8 @@
         "question": "Will the U.S. invade Iran before 2027?",
         "prob": 6.5,
         "d24h_pp": null,
-        "volume": 80773747.58,
-        "liquidity": 281614.24,
+        "volume": 80778906.74,
+        "liquidity": 277972.71,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
         "currencies": [
@@ -1355,7 +1265,7 @@
         "prob": 3.35,
         "d24h_pp": null,
         "volume": 77687823.36,
-        "liquidity": 160624.48,
+        "liquidity": 158964.39,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/kharg-island-no-longer-under-iranian-control-by-march-31",
         "currencies": [
@@ -1373,8 +1283,8 @@
         "question": "Israel x Iran ceasefire continues through December 31?",
         "prob": 62.5,
         "d24h_pp": null,
-        "volume": 58762816.15,
-        "liquidity": 222883.01,
+        "volume": 58797980.81,
+        "liquidity": 265030.25,
         "end_date": "2026-12-31T20:29:00Z",
         "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
         "currencies": [
@@ -1390,10 +1300,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "US announces end of Iranian blockade by...?",
         "question": "US announces end of Iranian blockade by December 31, 2026?",
-        "prob": 13.2,
+        "prob": 13.15,
         "d24h_pp": null,
-        "volume": 54297522.98,
-        "liquidity": 607869.14,
+        "volume": 54297759.99,
+        "liquidity": 608917.61,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
         "currencies": [
@@ -1411,8 +1321,8 @@
         "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
         "prob": 94.05,
         "d24h_pp": null,
-        "volume": 41132625.88,
-        "liquidity": 2031772.31,
+        "volume": 41133099.03,
+        "liquidity": 2089773.87,
         "end_date": "2026-12-31T17:00:00Z",
         "url": "https://polymarket.com/event/iran-leader-end-of-2026",
         "currencies": [
@@ -1430,8 +1340,8 @@
         "question": "Putin out as President of Russia by December 31, 2026?",
         "prob": 1.4,
         "d24h_pp": null,
-        "volume": 32833860.65,
-        "liquidity": 532490.5,
+        "volume": 32834246.01,
+        "liquidity": 516038.78,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/putin-out-before-2027",
         "currencies": [
@@ -1445,10 +1355,10 @@
         "theme": "RUSIA_UCRANIA",
         "event_title": "NATO x Russia military clash by...?",
         "question": "NATO x Russia military clash by December 31, 2026?",
-        "prob": 11.5,
+        "prob": 12,
         "d24h_pp": null,
-        "volume": 13637459.71,
-        "liquidity": 94768.57,
+        "volume": 13637675.89,
+        "liquidity": 96081.98,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/nato-x-russia-military-clash-in-2025",
         "currencies": [
@@ -1464,8 +1374,8 @@
         "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
         "prob": 7.5,
         "d24h_pp": null,
-        "volume": 11303791.07,
-        "liquidity": 1227589.73,
+        "volume": 11303799.18,
+        "liquidity": 1205972.93,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by",
         "currencies": [
@@ -1499,7 +1409,7 @@
         "prob": 2.35,
         "d24h_pp": null,
         "volume": 6253270.18,
-        "liquidity": 30733.03,
+        "liquidity": 30506.75,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/russia-nuclear-test-by",
         "currencies": [
@@ -1516,7 +1426,7 @@
         "prob": 1.15,
         "d24h_pp": null,
         "volume": 1382069.41,
-        "liquidity": 221899.04,
+        "liquidity": 210923.44,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026",
         "currencies": [
@@ -1531,7 +1441,7 @@
         "prob": 1.55,
         "d24h_pp": null,
         "volume": 950562.23,
-        "liquidity": 112335.27,
+        "liquidity": 109634.43,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/pete-hegseth-impeached-by-june-30",
         "currencies": [
@@ -1545,8 +1455,8 @@
         "question": "Will China invade Taiwan by end of 2026?",
         "prob": 1.65,
         "d24h_pp": null,
-        "volume": 46968736.26,
-        "liquidity": 240148.74,
+        "volume": 46969030.38,
+        "liquidity": 233301.59,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027",
         "currencies": [
@@ -1563,7 +1473,7 @@
         "prob": 1.45,
         "d24h_pp": null,
         "volume": 17377189.56,
-        "liquidity": 325078.86,
+        "liquidity": 322917.8,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/xi-jinping-out-before-2027",
         "currencies": [
@@ -1579,8 +1489,8 @@
         "question": "Will China invade Taiwan by December 31, 2027?",
         "prob": 7.5,
         "d24h_pp": null,
-        "volume": 3839337.49,
-        "liquidity": 241665.15,
+        "volume": 3839342.38,
+        "liquidity": 235393.94,
         "end_date": "2028-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-by-december-31-2027",
         "currencies": [
@@ -1594,10 +1504,10 @@
         "theme": "CHINA_TAIWAN",
         "event_title": "China x Taiwan military clash before 2027?",
         "question": "China x Taiwan military clash before 2027?",
-        "prob": 2.45,
+        "prob": 4.55,
         "d24h_pp": null,
         "volume": 3559721.67,
-        "liquidity": 65908.99,
+        "liquidity": 52748.45,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/china-x-taiwan-military-clash-before-2027",
         "currencies": [
@@ -1614,7 +1524,7 @@
         "prob": 2.35,
         "d24h_pp": null,
         "volume": 1483348.79,
-        "liquidity": 42610.74,
+        "liquidity": 42415.22,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/china-x-japan-military-clash-before-2027",
         "currencies": [
@@ -1805,6 +1715,264 @@
     }
   },
   "items": [
+    {
+      "id": "4eef197badca4649e7ec09dbd2149e6dca63e80541d70b84efca53238e5aa9eb",
+      "sha256": "4eef197badca4649e7ec09dbd2149e6dca63e80541d70b84efca53238e5aa9eb",
+      "title": "ÚLTIMA HORA | EEUU va a por China: el congreso exige bloquear sus aviones y castigar a las empresas",
+      "url": "https://t.me/negociostv/60675",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-20T13:30:40.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "59a7af17624993e3ec302d0f2de4fefbe0fb32bd5e9dc48c44d4904c3f29c8a9",
+      "sha256": "59a7af17624993e3ec302d0f2de4fefbe0fb32bd5e9dc48c44d4904c3f29c8a9",
+      "title": "❗ CANADIAN RETAIL SALES MOM ACTUAL 0.8% (FORECAST 0.7%, PREVIOUS 1.2%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148972",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T13:30:35.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "0.8%",
+      "forecast": "0.7%",
+      "previous": "1.2%",
+      "calendar_title": "Retail Sales m/m",
+      "z": 0.7
+    },
+    {
+      "id": "3ed92a26ab4393c061a795a3cb0c8fe17ea795c132d2c5d49cfb22f6efdc22a5",
+      "sha256": "3ed92a26ab4393c061a795a3cb0c8fe17ea795c132d2c5d49cfb22f6efdc22a5",
+      "title": "CANADIAN CORE RETAIL SALES MOM ACTUAL 1.0% (FORECAST 0.7%, PREVIOUS 1.2%) $MACRO",
+      "url": "https://t.me/FinancialJuice/148973",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T13:30:35.000Z",
+      "currencies": [
+        "CAD"
+      ],
+      "divisas": [
+        "CAD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "1.0%",
+      "forecast": "0.7%",
+      "previous": "1.2%",
+      "calendar_title": "Core Retail Sales m/m",
+      "z": 2
+    },
+    {
+      "id": "77b2dd3aa342c3785b207a89b1d4515f946f874d1819bcc718c3ae85da87d999",
+      "sha256": "77b2dd3aa342c3785b207a89b1d4515f946f874d1819bcc718c3ae85da87d999",
+      "title": "The stock market s wealth effect why it matters even if you don t own stocks",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-20T13:30:31.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5b19b4373c4622c6b571ce96301c2d4e1fd10a53090768aa4d12466531f1e221",
+      "sha256": "5b19b4373c4622c6b571ce96301c2d4e1fd10a53090768aa4d12466531f1e221",
+      "title": "DIRECTO | IRASTORZA: NUEVO ORDEN TRUMP-XI-PUTIN, ULTIMÁTUM A EUROPA Y GASTO RÉCORD DE EEUU EN IRÁN",
+      "url": "https://t.me/negociostv/60674",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-20T13:29:13.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "31c89cecefabb2517b41b7e5e5cd11b9cd3a092898f8a8b3d1df45e96f2cf669",
+      "sha256": "31c89cecefabb2517b41b7e5e5cd11b9cd3a092898f8a8b3d1df45e96f2cf669",
+      "title": "Anthropic shares slide 10% as fears over AI boom dominate",
+      "url": "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-markets",
+      "source_type": "agencia",
+      "published_at": "2026-11-20T13:29:02.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c7e10fe4f4d749767a70c78ee178bb56e6e1dc9524e41eb044c961e503099417",
+      "sha256": "c7e10fe4f4d749767a70c78ee178bb56e6e1dc9524e41eb044c961e503099417",
+      "title": "ECB's Nagel: Then we're in slightly restrictive territory.",
+      "url": "https://t.me/FinancialJuice/148971",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T13:26:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "eb3b801b66b94bc113870c70077cf1b05f5c19327be3d5afff67f94cfe0b42a5",
+      "sha256": "eb3b801b66b94bc113870c70077cf1b05f5c19327be3d5afff67f94cfe0b42a5",
+      "title": "Fed's Waller does not comment on monetary policy or economic outlook in prepared remarks to Fed college competition",
+      "url": "https://t.me/FinancialJuice/148970",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T13:25:37.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6f5a4a0d8d41f8ef2a326ccfefe178ea3b1b689234d17ecf73b81c3985c9d111",
+      "sha256": "6f5a4a0d8d41f8ef2a326ccfefe178ea3b1b689234d17ecf73b81c3985c9d111",
+      "title": "ECB's Nagel: I believe ECB has to do something at december meeting.",
+      "url": "https://t.me/FinancialJuice/148969",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-20T13:25:34.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "36a3bfa279171926f050dfac476938d2653a3ed5b8f032849d5752c949e374d6",
       "sha256": "36a3bfa279171926f050dfac476938d2653a3ed5b8f032849d5752c949e374d6",
@@ -10410,7 +10578,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-19T21:13:10.000Z",
+      "published_at": "2026-11-19T21:13:04.000Z",
       "currencies": [
         "CAD"
       ],
@@ -15140,32 +15308,6 @@
       "z": null
     },
     {
-      "id": "16008c1d2b60ba9b94d4e70d2840c23a8dbdb1fc2300a2b0523b3078762efaea",
-      "sha256": "16008c1d2b60ba9b94d4e70d2840c23a8dbdb1fc2300a2b0523b3078762efaea",
-      "title": "Governance - the cornerstone of a credible financial sector",
-      "url": "https://www.bis.org/speeches/20261119-governance-cornerstone-credible-financial-sector",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-19T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "c4d809d7289ea9b263f5275d95cde70df1dc1c137aa50a70227129e68d508648",
       "sha256": "c4d809d7289ea9b263f5275d95cde70df1dc1c137aa50a70227129e68d508648",
       "title": "New technology, old questions: productivity puzzles and the macroeconomy",
@@ -15501,6 +15643,32 @@
       "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "16008c1d2b60ba9b94d4e70d2840c23a8dbdb1fc2300a2b0523b3078762efaea",
+      "sha256": "16008c1d2b60ba9b94d4e70d2840c23a8dbdb1fc2300a2b0523b3078762efaea",
+      "title": "Governance - the cornerstone of a credible financial sector",
+      "url": "https://www.bis.org/speeches/20261119-governance-cornerstone-credible-financial-sector",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-19T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -37447,156 +37615,6 @@
       "z": null
     },
     {
-      "id": "b774067dc877e54726a0d53e8c4568b364250f029ae7fe2fabd3f3581150c2ab",
-      "sha256": "b774067dc877e54726a0d53e8c4568b364250f029ae7fe2fabd3f3581150c2ab",
-      "title": "US EXPORT PRICES MOM ACTUAL 1.1% (FORECAST 0.5%, PREVIOUS 2.2%) $MACRO",
-      "url": "https://t.me/FinancialJuice/147837",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-17T13:30:41.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "1.1%",
-      "forecast": "0.5%",
-      "previous": "2.2%",
-      "calendar_title": null,
-      "z": 4
-    },
-    {
-      "id": "d738b85a86e9a1d6e02c056c29c2c7963b89276c294dc861f8e45e3552ccb092",
-      "sha256": "d738b85a86e9a1d6e02c056c29c2c7963b89276c294dc861f8e45e3552ccb092",
-      "title": "US IMPORT PRICES MOM ACTUAL 1.1% (FORECAST 0.7%, PREVIOUS 1.1%) $MACRO",
-      "url": "https://t.me/FinancialJuice/147836",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-17T13:30:36.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": "1.1%",
-      "forecast": "0.7%",
-      "previous": "1.1%",
-      "calendar_title": "Import Prices m/m",
-      "z": 2.7
-    },
-    {
-      "id": "a90fb4d0940639668224b797d230dde39834bf55e7e87a70794892c8876fa85b",
-      "sha256": "a90fb4d0940639668224b797d230dde39834bf55e7e87a70794892c8876fa85b",
-      "title": "US CORE RETAIL SALES MOM ACTUAL 0.6% (FORECAST 0.4%, PREVIOUS 0.9%) $MACRO",
-      "url": "https://t.me/FinancialJuice/147835",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-17T13:30:29.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "A5",
-      "mmt_lens": "EXPANSION_REAL_A5",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 4,
-      "actual": "0.6%",
-      "forecast": "0.4%",
-      "previous": "0.9%",
-      "calendar_title": "Core Retail Sales m/m",
-      "z": 1.3
-    },
-    {
-      "id": "e746af6cd587e9a2a5bcf004af4f6463f3cc1c4edfeb886fd1732abb330a3fc6",
-      "sha256": "e746af6cd587e9a2a5bcf004af4f6463f3cc1c4edfeb886fd1732abb330a3fc6",
-      "title": "‼ BREAKING: US RETAIL SALES MOM ACTUAL 0.2% (FORECAST 0.1%, PREVIOUS 0.8%) $MACRO",
-      "url": "https://t.me/FinancialJuice/147834",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-17T13:30:27.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "A5",
-      "mmt_lens": "EXPANSION_REAL_A5",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 4,
-      "actual": "0.2%",
-      "forecast": "0.1%",
-      "previous": "0.8%",
-      "calendar_title": "Retail Sales m/m",
-      "z": 0.7
-    },
-    {
-      "id": "803347f809062783c80474228f5f7b2348fbff28151e30a1741bd747eb953dac",
-      "sha256": "803347f809062783c80474228f5f7b2348fbff28151e30a1741bd747eb953dac",
-      "title": "New Zealand Central Bank Warns of Rising Global Risks, Rising Private Credit Exposure - Insurance Journal",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Kd3JYTWx4M0MzeDFGcUxrWUxFU01TSlN4LW1FZDN2RDhoYXpYNGdhaUt5VG1ieXctTkw3bEU5UG1BLXluZTNNOWlxTG1oZFFvdmFCZXdFQVF1LXN4YnlvT3BDLTRzR0l1VDZUMlFiUThNcHVMUGt2QVd0TzNXdw?oc=5",
-      "source": "Prensa NZ",
-      "source_id": "nz-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-17T13:29:23.000Z",
-      "currencies": [
-        "NZD"
-      ],
-      "divisas": [
-        "NZD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "25ed24663af3d526c6a2b1a792f9089f3c530cd3bb7cce44ca8c287d95c6ac68",
       "sha256": "25ed24663af3d526c6a2b1a792f9089f3c530cd3bb7cce44ca8c287d95c6ac68",
       "title": "Australia hosts major UK pension funds to boost investment and cooperation - Treasury.gov.au",
@@ -41871,32 +41889,6 @@
       "z": null
     },
     {
-      "id": "b274eadf4f1fabb3240089e89e2cabca98bbe8c81c36f6d147d5e71b3c3eacac",
-      "sha256": "b274eadf4f1fabb3240089e89e2cabca98bbe8c81c36f6d147d5e71b3c3eacac",
-      "title": "Opening remarks - Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks",
-      "url": "https://www.bis.org/speeches/20261112-opening-remarks-joint-central-bank-kuwait-and-global-finance-magazine-roundtable-discussion-kuwait-banks",
-      "source": "BIS",
-      "source_id": "bis-speeches",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T00:00:00.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "098d93fbc24aacb09d1a0c1dd4c60e3574f2d6023a9d9a6074daf6ef9bfb5ecf",
       "sha256": "098d93fbc24aacb09d1a0c1dd4c60e3574f2d6023a9d9a6074daf6ef9bfb5ecf",
       "title": "Foundations for innovative and resilient capital markets",
@@ -42219,6 +42211,32 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b274eadf4f1fabb3240089e89e2cabca98bbe8c81c36f6d147d5e71b3c3eacac",
+      "sha256": "b274eadf4f1fabb3240089e89e2cabca98bbe8c81c36f6d147d5e71b3c3eacac",
+      "title": "Opening remarks - Joint Central Bank of Kuwait and Global Finance Magazine Roundtable Discussion with Kuwait Banks",
+      "url": "https://www.bis.org/speeches/20261112-opening-remarks-joint-central-bank-kuwait-and-global-finance-magazine-roundtable-discussion-kuwait-banks",
+      "source": "BIS",
+      "source_id": "bis-speeches",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T00:00:00.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
