@@ -2,6 +2,7 @@ import { selectEvidence, evidenceContract } from './evidence.js';
 import { randomUUID } from 'node:crypto';
 import { SOURCES, WINDOWS, UA, ENGINE_NAME } from './config.js';
 import { enrichRaw, isRelevant, parseRss, parseTelegram, parseHtmlList } from './enrich.js';
+import { isSnbBillsFallback, parseIssuedSnbBillsPdf, parseIssuedSnbBillsText } from './snbBills.js';
 import {
   insertNewsWithStatus,
   recentNews,
@@ -29,11 +30,20 @@ import { fetchCalendar, linkNewsToCalendar, duePrealerts } from './calendar.js';
 
 async function fetchText(url) {
   const res = await fetch(url, {
-    headers: { 'User-Agent': UA, Accept: 'application/rss+xml, application/xml, text/html, */*' },
+    headers: { 'User-Agent': UA, Accept: 'application/rss+xml, application/xml, text/html, application/pdf, */*' },
     signal: AbortSignal.timeout(WINDOWS.fetchTimeoutMs),
     redirect: 'follow',
   });
-  const text = await res.text();
+  const contentType = (res.headers && typeof res.headers.get === 'function' && res.headers.get('content-type')) || '';
+  const isPdf = /pdf/i.test(contentType) || String(url).toLowerCase().includes('.pdf');
+  let text;
+  let buf;
+  if (isPdf && typeof res.arrayBuffer === 'function') {
+    buf = new Uint8Array(await res.arrayBuffer());
+    text = new TextDecoder('utf-8').decode(buf);
+  } else {
+    text = await res.text();
+  }
   if (!res.ok) {
     const err = new Error(`HTTP ${res.status}`);
     err.httpStatus = res.status;
@@ -41,16 +51,25 @@ async function fetchText(url) {
   }
   return {
     text,
+    buf,
     finalUrl: res.url,
     httpStatus: res.status,
-    contentType: res.headers.get('content-type') || '',
+    contentType,
   };
 }
 
 function parseSource(source, text) {
   if (source.kind === 'telegram') return parseTelegram(text);
   if (source.kind === 'html') return parseHtmlList(text, source.url);
+  if (source.kind === 'snb_bills_results') return parseIssuedSnbBillsText(text, source.url);
   return parseRss(text);
+}
+
+async function parseFallback(source, fetched) {
+  if (isSnbBillsFallback(source) || source.fallbackKind === 'snb_bills_results') {
+    return parseIssuedSnbBillsPdf(fetched.buf || fetched.text);
+  }
+  return parseSource({ ...source, kind: source.fallbackKind || source.kind, url: source.fallbackUrl }, fetched.text);
 }
 
 /**
@@ -101,12 +120,10 @@ export async function pullSource(source, now = Date.now(), prevState = null) {
     if (raw.length === 0 && source.fallbackUrl) {
       try {
         const fb = await fetchText(source.fallbackUrl);
-        if (fb.text) {
-          const fbItems = parseSource({ ...source, url: source.fallbackUrl }, fb.text);
-          if (fbItems.length > 0) {
-            raw = fbItems;
-            health.http_status = fb.httpStatus;
-          }
+        const fbItems = await parseFallback(source, fb);
+        if (fbItems.length > 0) {
+          raw = fbItems;
+          health.http_status = fb.httpStatus;
         }
       } catch {
         // Si el fallback falla, mantener el resultado de la URL principal

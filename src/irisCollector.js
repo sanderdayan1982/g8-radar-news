@@ -193,19 +193,28 @@ async function fetchFeedWithTimeout(url, timeoutMs = 4000, retries = 1) {
       const res = await fetch(url, {
         headers: {
           'User-Agent': UA,
-          Accept: 'application/rss+xml, application/xml, text/xml, application/atom+xml, text/html, */*',
+          Accept: 'application/rss+xml, application/xml, text/xml, application/atom+xml, text/html, application/pdf, */*',
           'Accept-Language': 'en-US,en;q=0.9',
         },
         signal: AbortSignal.timeout(timeoutMs),
         redirect: 'follow',
       });
-      const text = await res.text();
+      const contentType = (res.headers && typeof res.headers.get === 'function' && res.headers.get('content-type')) || '';
+      const isPdf = /pdf/i.test(contentType) || String(url).toLowerCase().includes('.pdf');
+      let text;
+      let buf;
+      if (isPdf && typeof res.arrayBuffer === 'function') {
+        buf = new Uint8Array(await res.arrayBuffer());
+        text = new TextDecoder('utf-8').decode(buf);
+      } else {
+        text = await res.text();
+      }
       if (!res.ok) {
         const err = new Error(`HTTP ${res.status}`);
         err.httpStatus = res.status;
         throw err;
       }
-      return { text, finalUrl: res.url, httpStatus: res.status };
+      return { text, buf, finalUrl: res.url, httpStatus: res.status };
     } catch (err) {
       lastErr = err;
     }
@@ -267,7 +276,9 @@ export async function pullSingleSourceFast(source, nowMs = Date.now(), timeoutMs
     if ((raw.length === 0 || primaryStale) && source.fallbackUrl) {
       try {
         const fb = await fetchFeedWithTimeout(source.fallbackUrl, timeoutMs);
-        const fbItems = parseByKind({ ...source, kind: 'rss', url: source.fallbackUrl }, fb.text);
+        const fbItems = (isSnbBillsFallback(source) || source.fallbackKind === 'snb_bills_results')
+          ? await parseIssuedSnbBillsPdf(fb.buf || fb.text)
+          : parseByKind({ ...source, kind: source.fallbackKind || 'rss', url: source.fallbackUrl }, fb.text);
         if (fbItems.length > 0) {
           raw = fbItems;
           finalUrl = fb.finalUrl;
