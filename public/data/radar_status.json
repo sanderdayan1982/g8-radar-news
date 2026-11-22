@@ -1,14 +1,14 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-22T11:08:30.014Z",
-  "feed_generated_at": "2026-11-22T11:08:29.956Z",
+  "last_check_at": "2026-11-22T11:09:33.254Z",
+  "feed_generated_at": "2026-11-22T11:09:33.189Z",
   "wrote_full_feed": true,
   "new_items": 0,
   "sources": {
-    "ok": 34,
+    "ok": 25,
     "cached": 0,
     "empty": 1,
-    "error": 0,
+    "error": 9,
     "total": 35
   },
   "failing_sources": [
@@ -17,7 +17,70 @@
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 2101
+      "consecutive_failures": 2102
+    },
+    {
+      "id": "us-treasury",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "us-bls-bea",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "eurostat",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "uk-ons-hmt",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "jp-mof",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "au-abs-treasury",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "nz-press",
+      "status": "error",
+      "last_error": "HTTP 503",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "ch-press",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
+    },
+    {
+      "id": "au-press",
+      "status": "error",
+      "last_error": "The operation was aborted due to timeout",
+      "last_success_at": "2026-11-22T11:08:27.008Z",
+      "consecutive_failures": 1
     }
   ],
   "calendar_events": 73,
