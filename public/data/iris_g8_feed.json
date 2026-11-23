@@ -3,13 +3,13 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T01:22:55.640Z",
+  "generated_at": "2026-11-23T01:23:45.840Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 33,
+    "sources_live": 33,
     "sources_cached": 0,
     "sources_total": 35,
-    "sources_empty": 1,
+    "sources_empty": 2,
     "sources_error": 0,
     "agenda_events_count": 73,
     "status": "DEGRADED"
@@ -35,7 +35,7 @@
       "count_72h": 42,
       "count_official_45d": 109,
       "last_item_at": "2026-11-22T12:02:25.000Z",
-      "hours_since_last": 13.3,
+      "hours_since_last": 13.4,
       "hours_since_last_business": 1.4,
       "silence": false
     },
@@ -58,7 +58,7 @@
     "CAD": {
       "count_72h": 26,
       "count_official_45d": 8,
-      "last_item_at": "2026-11-23T00:55:03.000Z",
+      "last_item_at": "2026-11-23T00:55:05.000Z",
       "hours_since_last": 0.5,
       "hours_since_last_business": 0.5,
       "silence": false
@@ -67,8 +67,8 @@
       "count_72h": 76,
       "count_official_45d": 90,
       "last_item_at": "2026-11-23T00:38:20.000Z",
-      "hours_since_last": 0.7,
-      "hours_since_last_business": 0.7,
+      "hours_since_last": 0.8,
+      "hours_since_last_business": 0.8,
       "silence": false
     },
     "NZD": {
@@ -1431,7 +1431,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 46.5,
+      "hours_from_now": 46.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2135,7 +2135,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-23T00:55:03.000Z",
+      "published_at": "2026-11-23T00:55:05.000Z",
       "currencies": [
         "CAD"
       ],
@@ -2711,36 +2711,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "509910205343afffd9ae3249252a5d5f7678035021cc0e3d90b199065dc9e93e",
-      "sha256": "509910205343afffd9ae3249252a5d5f7678035021cc0e3d90b199065dc9e93e",
-      "title": "Confused about the economy? So is the divided RBA board - The Nightly",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNei0xWGxTRU92SnBtQV8xLTN1cGFsWndJc1JhdUdyQWJHVmVBR1BiN3VuMlNQU3ZlRWxTTzlSSUtxSDVka3YxZXF5R2pBajJyUXpMSnZiMV8tVko4MXZFaTFUR2xRZXhLNWpoLWJuamlHMmpvQTQ4dlpWTnRVQjV0cW5TU0ZHdDNuV0lHZ0N0V3pPQUthRE50ajU0TjJ6cVBpU2dnV2Y4cHd5dEd2YjBrZFpaUktBel93TkRXVXVsT05NQWFXMEhRdThrRTBzc2pqT0Iyc2RobndGXzA1V2Qw?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-22T23:14:51.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -5908,6 +5878,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "509910205343afffd9ae3249252a5d5f7678035021cc0e3d90b199065dc9e93e",
+      "sha256": "509910205343afffd9ae3249252a5d5f7678035021cc0e3d90b199065dc9e93e",
+      "title": "Confused about the economy? So is the divided RBA board - The Nightly",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNei0xWGxTRU92SnBtQV8xLTN1cGFsWndJc1JhdUdyQWJHVmVBR1BiN3VuMlNQU3ZlRWxTTzlSSUtxSDVka3YxZXF5R2pBajJyUXpMSnZiMV8tVko4MXZFaTFUR2xRZXhLNWpoLWJuamlHMmpvQTQ4dlpWTnRVQjV0cW5TU0ZHdDNuV0lHZ0N0V3pPQUthRE50ajU0TjJ6cVBpU2dnV2Y4cHd5dEd2YjBrZFpaUktBel93TkRXVXVsT05NQWFXMEhRdThrRTBzc2pqT0Iyc2RobndGXzA1V2Qw?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-22T03:21:49.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -27136,36 +27136,6 @@
       "z": null
     },
     {
-      "id": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
-      "sha256": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
-      "title": "Economic forecast for Cyprus - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeE43ZHpfdllKckVscXBvQXBMa19KOV9HTEdhbFVhRVJqUk01NWRZVHByMi1TVlFodmZwVkhUV3lvVVlYYl90bGlJZ005U3QxZHhyZ2EzUG1MR3ZCYXIyV2hubmUxQkllcDM1cEttUTdnRjAyR0hEZDByMDBEUXdYX2d4QXlFU0ZoLXRfRzZJSnA1LWJ6ZzRxcnVwWmxIdENIV2pIVVV0LXg2SXVIRHN1cHpRdnRQLUlCYjdXTjgtOTYwTm10ZDlHN1VseGt6UnVoOHhTcHZ3RkEzanBNeEZHM1hFZXE?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "13faeff3d9262b33d47a55bc8e55796dc453eca8c4d895362fbcf4ff2e389339",
       "sha256": "13faeff3d9262b33d47a55bc8e55796dc453eca8c4d895362fbcf4ff2e389339",
       "title": "Economic forecast for Croatia - economy-finance.ec.europa.eu",
@@ -27430,6 +27400,36 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
+      "sha256": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
+      "title": "Economic forecast for Cyprus - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeE43ZHpfdllKckVscXBvQXBMa19KOV9HTEdhbFVhRVJqUk01NWRZVHByMi1TVlFodmZwVkhUV3lvVVlYYl90bGlJZ005U3QxZHhyZ2EzUG1MR3ZCYXIyV2hubmUxQkllcDM1cEttUTdnRjAyR0hEZDByMDBEUXdYX2d4QXlFU0ZoLXRfRzZJSnA1LWJ6ZzRxcnVwWmxIdENIV2pIVVV0LXg2SXVIRHN1cHpRdnRQLUlCYjdXTjgtOTYwTm10ZDlHN1VseGt6UnVoOHhTcHZ3RkEzanBNeEZHM1hFZXE?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -30441,36 +30441,6 @@
       "z": null
     },
     {
-      "id": "c6b80fb227814627209890e7abcc1ce5da4ebab3706f70d25e04fcc8bbb78bb6",
-      "sha256": "c6b80fb227814627209890e7abcc1ce5da4ebab3706f70d25e04fcc8bbb78bb6",
-      "title": "CPI Commodities and Services Survey response rates: outlets, percent - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQTc4b3ltQl9YX0I3eTFuY0pkVTZxMDRnQkNVSXZCT01TZVJTelgxOUU5aHFfVlBYN0wyS2JKVjYzQXFucnJ1REZGYmdvM0NnQXgtc2s0UUI1U3dxdmd2UjJJb1RFbjJUT3hnVmFjdk41TzNBMjVIUWEybFZXY05hTzMtcGJrdw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "beacabb08887a01476a321f4e3f5e1bee4d2efe4ae936e9821446c3be00544bf",
       "sha256": "beacabb08887a01476a321f4e3f5e1bee4d2efe4ae936e9821446c3be00544bf",
       "title": "Upcoming Consumer Price Index Publication Changes - Bureau of Labor Statistics (.gov)",
@@ -31185,6 +31155,36 @@
       "legacy_category": "otro",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c6b80fb227814627209890e7abcc1ce5da4ebab3706f70d25e04fcc8bbb78bb6",
+      "sha256": "c6b80fb227814627209890e7abcc1ce5da4ebab3706f70d25e04fcc8bbb78bb6",
+      "title": "CPI Commodities and Services Survey response rates: outlets, percent - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOQTc4b3ltQl9YX0I3eTFuY0pkVTZxMDRnQkNVSXZCT01TZVJTelgxOUU5aHFfVlBYN0wyS2JKVjYzQXFucnJ1REZGYmdvM0NnQXgtc2s0UUI1U3dxdmd2UjJJb1RFbjJUT3hnVmFjdk41TzNBMjVIUWEybFZXY05hTzMtcGJrdw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T03:27:46.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -32874,310 +32874,10 @@
       "z": null
     },
     {
-      "id": "68f8e19eea89e0a7757ec4df9150f17662ccd3a4ffb6f51742d013584410f22e",
-      "sha256": "68f8e19eea89e0a7757ec4df9150f17662ccd3a4ffb6f51742d013584410f22e",
-      "title": "October 2026 12-Month Percent Changes - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9FNXczNDYtZDhHbTBaNVBMVG1IMnFFZW40NHRNVWowVWxHbnN5a0VqZVhHdkpsb3B6bGhIS0hMS3dwQjNvcVZSS1lOdHRyOUxSbHlJNnBpcHZIa1ljYXpPQkRUdWl6WTQwaVZv?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "96635c9cb485de6a908d3eb9066516f9fff7bff73b72bdcda906d55e0b638f97",
       "sha256": "96635c9cb485de6a908d3eb9066516f9fff7bff73b72bdcda906d55e0b638f97",
       "title": "Consumer Price Index, Phoenix area — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNnhVb0RReUM3ODZCSjlpR1J3eTJuZkV1RTlXUnJlUGFTRkV0a2RTWnJVV1lXOVVTTzU4NnVERkRFcmNwLS1Ya2U2bnFLVXY3cWZFRWI0dElRZGktU0VxM1VxTlZGdWw5VzhuLWU0ZFdTbUp5NDhxeVVQa3V3c2dyRkpR?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "40fdbccb384739a78b5095c1b38e2b169d9ab9abe8a41789f1c87e6873469907",
-      "sha256": "40fdbccb384739a78b5095c1b38e2b169d9ab9abe8a41789f1c87e6873469907",
-      "title": "Consumer Price Index, Northeast region — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2lPN2JNZ19uSTZtbGJmMWZhUWRjVU5Mc3NTdnBDdHI4ejRYM1BRRU9DUTJ2Um5MLVV0RGFiMVN4NmlaYjJiWnBwSkVkNGNqX1MxeTlodkh4WUNpQ2dUZXZTLWZqRjlqd3FZZVNlVkl5QjFhaEhkaHFyTWdOSGx4bnhYUjlNNGdWSnQySGZ0TQ?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e1f9112227ba27fd0478a84a6f6b0b34a0c28a76e822398612008c2649bcdca1",
-      "sha256": "e1f9112227ba27fd0478a84a6f6b0b34a0c28a76e822398612008c2649bcdca1",
-      "title": "Consumer Price Index, South Region — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYlhCV0tpY0w2S3NxcGRueU03eklLLUVnLTRUUGUyeW1aZ25BUkhKTlVnRm03U1UyUDN2a1FsOW14eWtQMGhNamJ0Y296ZF9RamxBYW1yQktMbVhJZ004VWxjUzN6enFwTmV3ektPMG9WdF9Ka2UtekpMTWFUZjZHdWMwdVRkdw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
-      "sha256": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
-      "title": "Consumer Price Index, Detroit-Warren-Dearborn area – October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYk1saDNkWlM1alhiUjZHSjliV0w2RktGbDhLZzNkeUZZaUdFZmd3TTYxTXE0VUxrc0VVZU1laWwtQ0F1QzN6QThKUUpTUmdDV2hEYUx1RTZCNlBjcnlCaXR5TUE4R01qeHFkd0Y1b3FfakZNRkduMUltWVhtVVV1dUZuSnpHdw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
-      "sha256": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
-      "title": "Consumer Price Index, West Region — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YdTNMX2E3REJVeDFfR1lpTW1DMENvX0NySVhvQlBWUlBHR3RZSnM3cUd6NE1fNTc3LWJwVGdwdno1NXZNa1Z5T3p1SGw1eFk1ek9YMGotOXFYbnlwMWxCRHVZN3ZSQWFfSnJtWTJIRmR1bllUc2V5N2MtT3R0dw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "08f5ee7305f8fc5e43b33f83adf8c2bce945c6da24100579ea6865142fdb2075",
-      "sha256": "08f5ee7305f8fc5e43b33f83adf8c2bce945c6da24100579ea6865142fdb2075",
-      "title": "Consumer Price Index, Baltimore-Columbia-Towson — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQXzJhSWJOdWFMX0t1eG4yZTh0Smhub3ExX2s1ZENYSEZVM1N2bnRRQTdqdWZYd2F0OEIxVTlKTGc5SDIxYS1tUEpEYlhlNGViZ1R0VG5Sd3ctYUZta3I0bzYyUXQyU1ExU2NEZmo1WnhsWGw1VllhSFZwaWtJSnpBdjJkckRTanJ3TXk0LVd0SQ?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b942563d3d679fff258ee663947a8e1fcecce2fdeb92c56339d82056ed79fe40",
-      "sha256": "b942563d3d679fff258ee663947a8e1fcecce2fdeb92c56339d82056ed79fe40",
-      "title": "Consumer Price Index, Philadelphia-Camden-Wilmington — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMDE2UjJEeWNjenBtRTQtYW1RSXRET3d3QnNzXzlEUExfQ2s5UUNRX1Q2cXFaOG92Q1pIZUlFUzhFamhUQktFTG9SS3QwTlk2cVBoOV9ldTdHbUdoS2dpRU9mcGtCOF85eGx4MnZLLWVHZ0hDS1FiTjBrZTd5OGxacWVuVUlxQUZVUDFVVzhockNGN28?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
-      "sha256": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
-      "title": "Consumer Price Index, Atlanta-Sandy Springs-Roswell — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaGpxRGVNeGllWVJqcnJnRzVvakFWSzRxNE9VUmJXNjA0dFkxWEZfVmxyOVF6eTVvSHE3M192ODVWcmhxRU5FS3dYanBacmxTemdqa3pqb1AtTE93UlhoWmhpRlhDTFVZdjFYUW5uUVA2VWNxY2QwcDBnUW82R1NlSXdobU5lVUh5?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ed60641a6aa996b5e577e3dc316f553a1dc4f2114d51a414d04f0617e720808e",
-      "sha256": "ed60641a6aa996b5e577e3dc316f553a1dc4f2114d51a414d04f0617e720808e",
-      "title": "Consumer Price Index, Houston-The Woodlands-Sugar Land area — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaDRMWVk2RTVCRUxUNS1pQ2RSWmVRRFB0MGVBWk1mYXpJR0QtQ01sMDBLTDRxdG1wcVBUU2JlaU51dDVrRVVMeGhZR1k5UFhsTFJmNzZrZVlMV2tfSUxrVktIUldpcnRhbmpMVFF3RGl2U1lKcTRZMUtNa1Q4QmZDZHBmV0xpcnFC?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
-      "sha256": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
-      "title": "Consumer Price Index, St. Louis area — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVkJpWkRUUGlRcE9URlptcWhOZ2Zwb3lBRTlPeXVETTYtc3ZlQm9WcXYyaVMzbFhtU3RGU19IQndGQUR1MWNRMWh2d3ZabWI0eDVMWU4xSzczaER5QjJSOHo3S0NrUUpVN2tpQmZvdU5mNUQ1SUxBaWtBZk9vUUphY25BdTRSSkE2eUFWM0ZXU1I?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
@@ -33234,6 +32934,96 @@
       "z": null
     },
     {
+      "id": "2047aa1ad495ff1d6093e1684aa280d653d6280faa45cee687725610c70169e2",
+      "sha256": "2047aa1ad495ff1d6093e1684aa280d653d6280faa45cee687725610c70169e2",
+      "title": "Consumer Price Index, Los Angeles area — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVmJvaUdnSnExSmNTbDFYVTR6VmRvUFZoc25mRnFCM1didmVBSU1HRVFoY1VlTk9hR2hpcC1mRzBOMkw0Z1VtejBadWVUeGxPTWtTY2c4YUxaZjVZRlZQSXVuQzFJcGRwc1ZZZktRQXo2NUF0SVM0QzFpTzFwY24ySHVOTGVCQQ?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
+      "sha256": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
+      "title": "Consumer Price Index, West Region — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YdTNMX2E3REJVeDFfR1lpTW1DMENvX0NySVhvQlBWUlBHR3RZSnM3cUd6NE1fNTc3LWJwVGdwdno1NXZNa1Z5T3p1SGw1eFk1ek9YMGotOXFYbnlwMWxCRHVZN3ZSQWFfSnJtWTJIRmR1bllUc2V5N2MtT3R0dw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "40fdbccb384739a78b5095c1b38e2b169d9ab9abe8a41789f1c87e6873469907",
+      "sha256": "40fdbccb384739a78b5095c1b38e2b169d9ab9abe8a41789f1c87e6873469907",
+      "title": "Consumer Price Index, Northeast region — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2lPN2JNZ19uSTZtbGJmMWZhUWRjVU5Mc3NTdnBDdHI4ejRYM1BRRU9DUTJ2Um5MLVV0RGFiMVN4NmlaYjJiWnBwSkVkNGNqX1MxeTlodkh4WUNpQ2dUZXZTLWZqRjlqd3FZZVNlVkl5QjFhaEhkaHFyTWdOSGx4bnhYUjlNNGdWSnQySGZ0TQ?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "25c82b087fd095e8291d42539aa8abb1938415c2969cc5f2e72b1281086eae76",
       "sha256": "25c82b087fd095e8291d42539aa8abb1938415c2969cc5f2e72b1281086eae76",
       "title": "Consumer Price Index, New York-Newark-Jersey City — October 2026 - Bureau of Labor Statistics (.gov)",
@@ -33264,10 +33054,10 @@
       "z": null
     },
     {
-      "id": "2047aa1ad495ff1d6093e1684aa280d653d6280faa45cee687725610c70169e2",
-      "sha256": "2047aa1ad495ff1d6093e1684aa280d653d6280faa45cee687725610c70169e2",
-      "title": "Consumer Price Index, Los Angeles area — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVmJvaUdnSnExSmNTbDFYVTR6VmRvUFZoc25mRnFCM1didmVBSU1HRVFoY1VlTk9hR2hpcC1mRzBOMkw0Z1VtejBadWVUeGxPTWtTY2c4YUxaZjVZRlZQSXVuQzFJcGRwc1ZZZktRQXo2NUF0SVM0QzFpTzFwY24ySHVOTGVCQQ?oc=5",
+      "id": "e1f9112227ba27fd0478a84a6f6b0b34a0c28a76e822398612008c2649bcdca1",
+      "sha256": "e1f9112227ba27fd0478a84a6f6b0b34a0c28a76e822398612008c2649bcdca1",
+      "title": "Consumer Price Index, South Region — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYlhCV0tpY0w2S3NxcGRueU03eklLLUVnLTRUUGUyeW1aZ25BUkhKTlVnRm03U1UyUDN2a1FsOW14eWtQMGhNamJ0Y296ZF9RamxBYW1yQktMbVhJZ004VWxjUzN6enFwTmV3ektPMG9WdF9Ka2UtekpMTWFUZjZHdWMwdVRkdw?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
@@ -33324,6 +33114,36 @@
       "z": null
     },
     {
+      "id": "b942563d3d679fff258ee663947a8e1fcecce2fdeb92c56339d82056ed79fe40",
+      "sha256": "b942563d3d679fff258ee663947a8e1fcecce2fdeb92c56339d82056ed79fe40",
+      "title": "Consumer Price Index, Philadelphia-Camden-Wilmington — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMDE2UjJEeWNjenBtRTQtYW1RSXRET3d3QnNzXzlEUExfQ2s5UUNRX1Q2cXFaOG92Q1pIZUlFUzhFamhUQktFTG9SS3QwTlk2cVBoOV9ldTdHbUdoS2dpRU9mcGtCOF85eGx4MnZLLWVHZ0hDS1FiTjBrZTd5OGxacWVuVUlxQUZVUDFVVzhockNGN28?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "7baa8ed12c156c97120a4c68536c1f0e883e76ea020f543a1fc576d518df1460",
       "sha256": "7baa8ed12c156c97120a4c68536c1f0e883e76ea020f543a1fc576d518df1460",
       "title": "Consumer Price Index, Midwest region — October 2026 - Bureau of Labor Statistics (.gov)",
@@ -33354,10 +33174,190 @@
       "z": null
     },
     {
+      "id": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
+      "sha256": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
+      "title": "Consumer Price Index, Atlanta-Sandy Springs-Roswell — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaGpxRGVNeGllWVJqcnJnRzVvakFWSzRxNE9VUmJXNjA0dFkxWEZfVmxyOVF6eTVvSHE3M192ODVWcmhxRU5FS3dYanBacmxTemdqa3pqb1AtTE93UlhoWmhpRlhDTFVZdjFYUW5uUVA2VWNxY2QwcDBnUW82R1NlSXdobU5lVUh5?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
       "sha256": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
       "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ed60641a6aa996b5e577e3dc316f553a1dc4f2114d51a414d04f0617e720808e",
+      "sha256": "ed60641a6aa996b5e577e3dc316f553a1dc4f2114d51a414d04f0617e720808e",
+      "title": "Consumer Price Index, Houston-The Woodlands-Sugar Land area — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaDRMWVk2RTVCRUxUNS1pQ2RSWmVRRFB0MGVBWk1mYXpJR0QtQ01sMDBLTDRxdG1wcVBUU2JlaU51dDVrRVVMeGhZR1k5UFhsTFJmNzZrZVlMV2tfSUxrVktIUldpcnRhbmpMVFF3RGl2U1lKcTRZMUtNa1Q4QmZDZHBmV0xpcnFC?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
+      "sha256": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
+      "title": "Consumer Price Index, Detroit-Warren-Dearborn area – October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYk1saDNkWlM1alhiUjZHSjliV0w2RktGbDhLZzNkeUZZaUdFZmd3TTYxTXE0VUxrc0VVZU1laWwtQ0F1QzN6QThKUUpTUmdDV2hEYUx1RTZCNlBjcnlCaXR5TUE4R01qeHFkd0Y1b3FfakZNRkduMUltWVhtVVV1dUZuSnpHdw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "08f5ee7305f8fc5e43b33f83adf8c2bce945c6da24100579ea6865142fdb2075",
+      "sha256": "08f5ee7305f8fc5e43b33f83adf8c2bce945c6da24100579ea6865142fdb2075",
+      "title": "Consumer Price Index, Baltimore-Columbia-Towson — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQXzJhSWJOdWFMX0t1eG4yZTh0Smhub3ExX2s1ZENYSEZVM1N2bnRRQTdqdWZYd2F0OEIxVTlKTGc5SDIxYS1tUEpEYlhlNGViZ1R0VG5Sd3ctYUZta3I0bzYyUXQyU1ExU2NEZmo1WnhsWGw1VllhSFZwaWtJSnpBdjJkckRTanJ3TXk0LVd0SQ?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
+      "sha256": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
+      "title": "Consumer Price Index, St. Louis area — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVkJpWkRUUGlRcE9URlptcWhOZ2Zwb3lBRTlPeXVETTYtc3ZlQm9WcXYyaVMzbFhtU3RGU19IQndGQUR1MWNRMWh2d3ZabWI0eDVMWU4xSzczaER5QjJSOHo3S0NrUUpVN2tpQmZvdU5mNUQ1SUxBaWtBZk9vUUphY25BdTRSSkE2eUFWM0ZXU1I?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "68f8e19eea89e0a7757ec4df9150f17662ccd3a4ffb6f51742d013584410f22e",
+      "sha256": "68f8e19eea89e0a7757ec4df9150f17662ccd3a4ffb6f51742d013584410f22e",
+      "title": "October 2026 12-Month Percent Changes - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9FNXczNDYtZDhHbTBaNVBMVG1IMnFFZW40NHRNVWowVWxHbnN5a0VqZVhHdkpsb3B6bGhIS0hMS3dwQjNvcVZSS1lOdHRyOUxSbHlJNnBpcHZIa1ljYXpPQkRUdWl6WTQwaVZv?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
