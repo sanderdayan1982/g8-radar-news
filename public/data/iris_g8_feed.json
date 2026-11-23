@@ -3,48 +3,48 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T03:06:37.940Z",
+  "generated_at": "2026-11-23T03:11:43.089Z",
   "health": {
-    "sources_active": 33,
-    "sources_live": 33,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 1,
+    "sources_error": 0,
     "agenda_events_count": 73,
     "status": "DEGRADED"
   },
   "coverage": {
     "USD": {
-      "count_72h": 265,
+      "count_72h": 264,
       "count_official_45d": 333,
       "last_item_at": "2026-11-23T02:35:53.000Z",
-      "hours_since_last": 0.5,
-      "hours_since_last_business": 0.5,
+      "hours_since_last": 0.6,
+      "hours_since_last_business": 0.6,
       "silence": false
     },
     "EUR": {
       "count_72h": 65,
       "count_official_45d": 189,
       "last_item_at": "2026-11-22T22:07:25.000Z",
-      "hours_since_last": 5,
-      "hours_since_last_business": 3.1,
+      "hours_since_last": 5.1,
+      "hours_since_last_business": 3.2,
       "silence": false
     },
     "GBP": {
       "count_72h": 42,
       "count_official_45d": 109,
       "last_item_at": "2026-11-22T12:02:25.000Z",
-      "hours_since_last": 15.1,
-      "hours_since_last_business": 3.1,
+      "hours_since_last": 15.2,
+      "hours_since_last_business": 3.2,
       "silence": false
     },
     "JPY": {
-      "count_72h": 38,
+      "count_72h": 37,
       "count_official_45d": 94,
       "last_item_at": "2026-11-22T21:15:28.000Z",
       "hours_since_last": 5.9,
-      "hours_since_last_business": 3.1,
+      "hours_since_last_business": 3.2,
       "silence": false
     },
     "CHF": {
@@ -59,20 +59,20 @@
       "count_72h": 25,
       "count_official_45d": 8,
       "last_item_at": "2026-11-23T00:55:03.000Z",
-      "hours_since_last": 2.2,
-      "hours_since_last_business": 2.2,
+      "hours_since_last": 2.3,
+      "hours_since_last_business": 2.3,
       "silence": false
     },
     "AUD": {
       "count_72h": 65,
       "count_official_45d": 90,
       "last_item_at": "2026-11-23T02:25:42.000Z",
-      "hours_since_last": 0.7,
-      "hours_since_last_business": 0.7,
+      "hours_since_last": 0.8,
+      "hours_since_last_business": 0.8,
       "silence": false
     },
     "NZD": {
-      "count_72h": 66,
+      "count_72h": 68,
       "count_official_45d": 80,
       "last_item_at": "2026-11-23T10:45:00.000Z",
       "hours_since_last": 0,
@@ -83,8 +83,8 @@
       "count_72h": 7,
       "count_official_45d": 0,
       "last_item_at": "2026-11-23T01:40:52.000Z",
-      "hours_since_last": 1.4,
-      "hours_since_last_business": 1.4
+      "hours_since_last": 1.5,
+      "hours_since_last_business": 1.5
     }
   },
   "risk_map": [
@@ -392,7 +392,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 38.3,
+          "hours_until": 38.2,
           "retirar_limitadas": false
         }
       ],
@@ -439,21 +439,21 @@
           "lock_class": "TIER1_DATO",
           "title": "CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 45.4,
+          "hours_until": 45.3,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "CPI y/y",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 45.4,
+          "hours_until": 45.3,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Trimmed Mean CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 45.4,
+          "hours_until": 45.3,
           "retirar_limitadas": false
         }
       ],
@@ -959,7 +959,7 @@
       "actual": "48.7",
       "forecast": null,
       "previous": "49.7",
-      "hours_from_now": -5.1,
+      "hours_from_now": -5.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -974,7 +974,7 @@
       "actual": "46.2",
       "forecast": null,
       "previous": "47.8",
-      "hours_from_now": -5.1,
+      "hours_from_now": -5.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -989,7 +989,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -3.1,
+      "hours_from_now": -3.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1034,7 +1034,7 @@
       "actual": null,
       "forecast": "54.1",
       "previous": "54.2",
-      "hours_from_now": 5.4,
+      "hours_from_now": 5.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1049,7 +1049,7 @@
       "actual": null,
       "forecast": "52.4",
       "previous": "51.7",
-      "hours_from_now": 5.4,
+      "hours_from_now": 5.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1064,7 +1064,7 @@
       "actual": null,
       "forecast": "52.7",
       "previous": "52.4",
-      "hours_from_now": 5.9,
+      "hours_from_now": 5.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1079,7 +1079,7 @@
       "actual": null,
       "forecast": "51.8",
       "previous": "51.7",
-      "hours_from_now": 5.9,
+      "hours_from_now": 5.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1094,7 +1094,7 @@
       "actual": null,
       "forecast": "53.0",
       "previous": "52.8",
-      "hours_from_now": 6.4,
+      "hours_from_now": 6.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1109,7 +1109,7 @@
       "actual": null,
       "forecast": "53.0",
       "previous": "53.1",
-      "hours_from_now": 6.4,
+      "hours_from_now": 6.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1124,7 +1124,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 9.9,
+      "hours_from_now": 9.8,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1139,7 +1139,7 @@
       "actual": null,
       "forecast": null,
       "previous": "8.7%",
-      "hours_from_now": 10.4,
+      "hours_from_now": 10.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1184,7 +1184,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.9,
+      "hours_from_now": 17.8,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1199,7 +1199,7 @@
       "actual": null,
       "forecast": "53.5",
       "previous": "53.3",
-      "hours_from_now": 21.4,
+      "hours_from_now": 21.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1214,7 +1214,7 @@
       "actual": null,
       "forecast": "90.6",
       "previous": "90.2",
-      "hours_from_now": 29.9,
+      "hours_from_now": 29.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1229,7 +1229,7 @@
       "actual": null,
       "forecast": "-24",
       "previous": "-10",
-      "hours_from_now": 31.9,
+      "hours_from_now": 31.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1244,7 +1244,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.4,
+      "hours_from_now": 33.3,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1274,7 +1274,7 @@
       "actual": null,
       "forecast": "-9.3",
       "previous": "-9.8",
-      "hours_from_now": 34.9,
+      "hours_from_now": 34.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1289,7 +1289,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 34.9,
+      "hours_from_now": 34.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1304,7 +1304,7 @@
       "actual": null,
       "forecast": "2.7%",
       "previous": "2.7%",
-      "hours_from_now": 34.9,
+      "hours_from_now": 34.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1319,7 +1319,7 @@
       "actual": null,
       "forecast": "92.1",
       "previous": "91.7",
-      "hours_from_now": 35.9,
+      "hours_from_now": 35.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1334,7 +1334,7 @@
       "actual": null,
       "forecast": "-3",
       "previous": "-2",
-      "hours_from_now": 35.9,
+      "hours_from_now": 35.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1349,7 +1349,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.3,
+      "hours_from_now": 38.2,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1364,7 +1364,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 42.4,
+      "hours_from_now": 42.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1379,7 +1379,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 44.7,
+      "hours_from_now": 44.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1394,7 +1394,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.8%",
-      "hours_from_now": 45.4,
+      "hours_from_now": 45.3,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1409,7 +1409,7 @@
       "actual": null,
       "forecast": "4.8%",
       "previous": "4.3%",
-      "hours_from_now": 45.4,
+      "hours_from_now": 45.3,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1424,7 +1424,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.3%",
-      "hours_from_now": 45.4,
+      "hours_from_now": 45.3,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1439,7 +1439,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "-2.1%",
-      "hours_from_now": 45.4,
+      "hours_from_now": 45.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2024,6 +2024,36 @@
       "z": null
     },
     {
+      "id": "93ba0994f69f4738649a5785f96b6d08a847370e6e3ffe5ff8b7134425af5d97",
+      "sha256": "93ba0994f69f4738649a5785f96b6d08a847370e6e3ffe5ff8b7134425af5d97",
+      "title": "Mercury cuts ribbon on Northland's $287m Kaiwaikawe Wind Farm",
+      "url": "https://www.rnz.co.nz/news/business/2750898/mercury-cuts-ribbon-on-northland-s-287m-kaiwaikawe-wind-farm",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T03:02:53.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "d49400a4b30a62f95ac1feb0f7d15cc2cea94b0abe92332662ad0122d508d459",
       "sha256": "d49400a4b30a62f95ac1feb0f7d15cc2cea94b0abe92332662ad0122d508d459",
       "title": "California widens nvidia probe to criminal law a bigger deal than huang return talk",
@@ -2034,6 +2064,36 @@
       "published_at": "2026-11-23T03:01:05.000Z",
       "currencies": [],
       "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6e7d4098b4edd47c40a9925a8583fed47b054b8292309950759ea641ec809c04",
+      "sha256": "6e7d4098b4edd47c40a9925a8583fed47b054b8292309950759ea641ec809c04",
+      "title": "Pay equity law changes exert a 'dystopian' effect over low-paid women, says union for teacher aides",
+      "url": "https://www.rnz.co.nz/news/education/2750839/pay-equity-law-changes-exert-a-dystopian-effect-over-low-paid-women-says-union-for-teacher-aides",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T02:58:59.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -2885,38 +2945,6 @@
       "z": null
     },
     {
-      "id": "c73d8f7912c278fc36a1a9a8f2b20d6e429a08bed81ff189640061805e68630c",
-      "sha256": "c73d8f7912c278fc36a1a9a8f2b20d6e429a08bed81ff189640061805e68630c",
-      "title": "New Zealand Dollar gains traction above 0.5450 on strong Retail Sales data - www.tmgm.com",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOLUpCblU5T1RrT1pMUnFzcGswTVRETXBPeUxJemhmTWlDVHBYZ2tlLVlLbjdEaFdTdHFtQnk3LUU2ZndWZjFsZ0xMdjVmdXpfdTl1aTdGa3VEa2hJSTYzdWJmSmpUZXpIeWp3QThoSTRFeEVIdS1XOEJqRlYxM0VxU2VGcFA3YTB3QV9KRHFPOXliank1Q0hHSkhOemhMbXdtYlB3SDB5cGRSa2p1dnA5SUo0V0RZcEc0TWlwV3ZISGdyU3B3Q1M4RzRYUVhTVWRnTk9CcHh3?oc=5",
-      "source": "Prensa NZ",
-      "source_id": "nz-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T00:01:46.000Z",
-      "currencies": [
-        "USD",
-        "NZD"
-      ],
-      "divisas": [
-        "USD",
-        "NZD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "d6a8f0232f4cf9abba01a23c368a45c9375c4a7ced3e4788badca77b6c262e2e",
       "sha256": "d6a8f0232f4cf9abba01a23c368a45c9375c4a7ced3e4788badca77b6c262e2e",
       "title": "Gold sinks 9 in a week as margin calls and fed hike bets override its haven role",
@@ -2962,6 +2990,38 @@
         "NZD"
       ],
       "divisas": [
+        "NZD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c5934462f327cd50885258f74f1e0a83fe99e3248f24ffd4ce9ee76288b05c1b",
+      "sha256": "c5934462f327cd50885258f74f1e0a83fe99e3248f24ffd4ce9ee76288b05c1b",
+      "title": "New Zealand Dollar gains traction above 0.5450 on strong Retail Sales data - www.tmgm.com",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPNFlESjFHSFpRM3lWZ2pJOGRVbXdYY2JDZllFQ1ZCclVLWU9CZGFWcExhY0JadnJuS19oeEthMWhvNkRrOFk2R01TbnFSV3hFbUhxc3g5SjA0aUpGQ2hDZC1abXFuVzhMczRQZFNVeUhjWGl2V3doTWRtRGc1Wm9XeEJXbDMxUDFCVWdBNWtLdlJLVE9jU3hFemlOS0FGbmhDZEdESVB4WDk5S0JEMTZleXJiRzNwUjhSNUZOWnkwSEp5ZkpNakRqQlBXTy11M0Y2NkhkRGxtX0dLQQ?oc=5",
+      "source": "Prensa NZ",
+      "source_id": "nz-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T00:00:24.000Z",
+      "currencies": [
+        "USD",
+        "NZD"
+      ],
+      "divisas": [
+        "USD",
         "NZD"
       ],
       "category": "Inflacion_Empleo",
@@ -20674,36 +20734,6 @@
       "z": null
     },
     {
-      "id": "5f6f789f0cbf507ae1ed15a7c02598f2e35bae16882c2bdf48dfcdee7953a0a4",
-      "sha256": "5f6f789f0cbf507ae1ed15a7c02598f2e35bae16882c2bdf48dfcdee7953a0a4",
-      "title": "RBA Rate Hike November 2026: Home Loan Announcements - Savings.com.au",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9nSkp5S002SDNPVlNEeVFhR1psMzBJdEs1XzM4RHp0QUNYcmVaYkVvVkpfWlNJall3NEQ3WG93VXB4WFpPOVE2a2ZfVDZVcENqM3VUU0s4SE1rNlJvNTVoS253?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-20T08:00:00.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "46a329cfa8cd466bbde800df1d589e2c5ea7976d27f5687ffca9e836d48628be",
       "sha256": "46a329cfa8cd466bbde800df1d589e2c5ea7976d27f5687ffca9e836d48628be",
       "title": "Live Platinum Price in Swiss Franc (CHF) - GoldBroker",
@@ -20727,6 +20757,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5f6f789f0cbf507ae1ed15a7c02598f2e35bae16882c2bdf48dfcdee7953a0a4",
+      "sha256": "5f6f789f0cbf507ae1ed15a7c02598f2e35bae16882c2bdf48dfcdee7953a0a4",
+      "title": "RBA Rate Hike November 2026: Home Loan Announcements - Savings.com.au",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9nSkp5S002SDNPVlNEeVFhR1psMzBJdEs1XzM4RHp0QUNYcmVaYkVvVkpfWlNJall3NEQ3WG93VXB4WFpPOVE2a2ZfVDZVcENqM3VUU0s4SE1rNlJvNTVoS253?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-20T08:00:00.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -23752,66 +23812,6 @@
       "z": null
     },
     {
-      "id": "86e1956280e19ea39d9039be14087a38ea6679f042d7231b106f3fb916c0c385",
-      "sha256": "86e1956280e19ea39d9039be14087a38ea6679f042d7231b106f3fb916c0c385",
-      "title": "A december boj hike may not be enough why a fuzzy endpoint keeps yen bears circling",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
-      "source_type": "agencia",
-      "published_at": "2026-11-20T03:10:02.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6c78c78a25c000baf5b8ff469fba27a5d608a3a6a854701d36033311dd74d001",
-      "sha256": "6c78c78a25c000baf5b8ff469fba27a5d608a3a6a854701d36033311dd74d001",
-      "title": "US Senate approves bipartisan energy permitting bill with 62-33 vote",
-      "url": "https://t.me/FinancialJuice/148899",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-20T03:09:34.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "79afcab4e05882e3bd184abfdf90b0a2999b42cd240f81a8fdc514486846fe62",
       "sha256": "79afcab4e05882e3bd184abfdf90b0a2999b42cd240f81a8fdc514486846fe62",
       "title": "Announcement of 2-year JGBs to Be Issued in December 2026 : Ministry of Finance - 財務省",
@@ -25464,38 +25464,6 @@
       "z": null
     },
     {
-      "id": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
-      "sha256": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
-      "title": "Housing prices in Eastbourne - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9KMWtDMnFDYUw3ZDBpMGVWWHBDVTJMQ1Z6VkNLcnJJU1dCWXYwbWtkdU5qeEpMUkF3Ri1IcjN1cGRVdDEyNzZWT3pGWmR1QWQ5VEtIMm83WUJpZHpqU2tGRFQxTlV1Sk9TZE9vaTlCSVZCUXdqQkE?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-18T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
       "sha256": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
       "title": "Australian National Accounts: State Accounts, 2025-26 financial year - Australian Bureau of Statistics",
@@ -25517,6 +25485,38 @@
         "Fiscal"
       ],
       "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
+      "sha256": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
+      "title": "Housing prices in Eastbourne - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9KMWtDMnFDYUw3ZDBpMGVWWHBDVTJMQ1Z6VkNLcnJJU1dCWXYwbWtkdU5qeEpMUkF3Ri1IcjN1cGRVdDEyNzZWT3pGWmR1QWQ5VEtIMm83WUJpZHpqU2tGRFQxTlV1Sk9TZE9vaTlCSVZCUXdqQkE?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-18T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -29165,6 +29165,70 @@
       "z": null
     },
     {
+      "id": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
+      "sha256": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
+      "title": "Regional gross value added (balanced) by industry: all ITL regions - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbTg5R0RCcUg3cWFneWM4R29uLTVhSXZrZTJSdE51eHF1Zkk0MVlfSTZGSTZkN2lKODZ5a1pMSXMwbWFETmp6Wkt0Uzh3NG5fbzhmTXRrTFBBMENNeUk5U1Fpc1BSejVJVXFyNXVqUkRrVEdxc2puUGptTXQtMDVRVXV0UzhoU3lpdXBzVnhnYkdPSFUwWGhTcnNQaGd0UmVwN1ZobXBwX2tGREZoM0V5bmVVUFA?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
+      "sha256": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
+      "title": "Regional gross value added (balanced) per head and income components - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNakRfdFRmSjZqWVVDWmlkQjNiZXg5b1gyWWkxUUNycUN1Q2xGLWpPQTB6eTNDZmc0QjhJOXg1emFqYXdjZHBCbzVtSjNoRHN5SFdLMllUc0RDOHY3NmJ6ckctUS1mM3gxcUpTRFBFZzB1VG9lU3RhZE9rVTllZmItdXJFVWFqUkpnTmZBNTBDMENHSk43SnJZMFdPTFgzRDhHQzlUUEJzY2ZOWFhsdEJ5cGFWMjgtTkpQNmJGSWtMU0o?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4c246f5f2df5ebae2b00ab2582e3dc706d4149b2f9fd13f6784dcd2a2d263bd7",
       "sha256": "4c246f5f2df5ebae2b00ab2582e3dc706d4149b2f9fd13f6784dcd2a2d263bd7",
       "title": "Announcement of Liquidity Enhancement Auction on November 20, 2026: Ministry of Finance - 財務省",
@@ -29242,70 +29306,6 @@
       ],
       "divisas": [
         "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
-      "sha256": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
-      "title": "Regional gross value added (balanced) by industry: all ITL regions - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbTg5R0RCcUg3cWFneWM4R29uLTVhSXZrZTJSdE51eHF1Zkk0MVlfSTZGSTZkN2lKODZ5a1pMSXMwbWFETmp6Wkt0Uzh3NG5fbzhmTXRrTFBBMENNeUk5U1Fpc1BSejVJVXFyNXVqUkRrVEdxc2puUGptTXQtMDVRVXV0UzhoU3lpdXBzVnhnYkdPSFUwWGhTcnNQaGd0UmVwN1ZobXBwX2tGREZoM0V5bmVVUFA?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
-      "sha256": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
-      "title": "Regional gross value added (balanced) per head and income components - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNakRfdFRmSjZqWVVDWmlkQjNiZXg5b1gyWWkxUUNycUN1Q2xGLWpPQTB6eTNDZmc0QjhJOXg1emFqYXdjZHBCbzVtSjNoRHN5SFdLMllUc0RDOHY3NmJ6ckctUS1mM3gxcUpTRFBFZzB1VG9lU3RhZE9rVTllZmItdXJFVWFqUkpnTmZBNTBDMENHSk43SnJZMFdPTFgzRDhHQzlUUEJzY2ZOWFhsdEJ5cGFWMjgtTkpQNmJGSWtMU0o?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
         "USD"
       ],
       "category": "Fiscal",
@@ -30307,70 +30307,6 @@
       "z": null
     },
     {
-      "id": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
-      "sha256": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
-      "title": "UK trade: September 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcnR4dHNzYndVZVpBTEE5RXhGYWFlLXFESjE3dkhUNUl5bTN6OGpiQkNIaklRSzNpLVlWU0tCSTdLdHFVbUxRcTR6ODBqbWlkTUFES2RjakdwWElRaEpaZ3FZRlRzRlY1eUhSX3JYMmUyMDJxQXNZOEk0SUlqcTh1RTdSZXV5dFM2V3hQdWZOU2l4amdDeW4xMVp5RHlwdw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
-      "sha256": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
-      "title": "UK resident population mid-year estimates - real-time database - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMXVNQTMyc2tCakZTSVJIRFlNeC1xV2VGZkJYazFmV1NRbDNtT2U3VHMwTXJzbkdXTktEQWtvZ09oay1nMjlxQzU4UXpWOXFoU2ZIMXJMekJjR2IwQmFwLTVrQUdsZExqS1R4WW9ac1FZSDN2aFB2bVlNRE1kdWtRNHc4bDdwYXJmZERSNXhSTzJNaFJaSDBOVnpVbkdKSm95ZWhoLXZBNXNlTkNTcmF6YnJ2T2NrV0k?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "094e28ea624354ac2aa91473db22a296fe8c498bf8135c66cb0e99338ca985c4",
       "sha256": "094e28ea624354ac2aa91473db22a296fe8c498bf8135c66cb0e99338ca985c4",
       "title": "Index of Production, UK: September 2026 - Office for National Statistics",
@@ -30407,38 +30343,6 @@
       "sha256": "1596f54e790dd2f413cee0d396c28b3be75fa6d06070fb3c0995763951bec64a",
       "title": "UK trade: goods and services publication tables - Office for National Statistics",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTzJMSUlKVXB2ZGJOYUN5VFdIa2kxcTc5azdJelRnaDhpTE05cVFqdnNrMkJBQ2d3MjdORWVjN2tCNHpyTm1PcnI5ajVEWWdDWWlhamlPTTlSVGZtNzVvZmFvQnYtRy1UQW5YbkRmOXo5T0dsVThVYkYyR2E0R3FnN3lpeWlMWUdNVWFpVzVoOUFmWFBTcVFpODJUb1lZUmpJanQtUWJ4N0xUbFl0X3pPaS1aS21ZQQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
-      "sha256": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
-      "title": "Quarterly Stocks Survey (QSS) and Quarterly Acquisitions and Disposals of Capital Assets Survey (QCAS) textual data analysis - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFAzQ1hUdUR6aFR2MjhZTkwxVzBVaHBiRjI3dlUzS2xoSXpIblpDMkFpdmhKVDAtQjVfNU5FdUVTM0xWUVJ6TTJDLWJDU2NtSW40cE00UzJTdHVZVWNMbndaMkx2MUdxd1BMU1dkYmNEVmpRZURBZUI5MkowNWFYTlNpb0xKX2N2dVlIRWV1blBvX1FZa1ctVEZ4STZWRGVmZlViSE9wR2F6ZkFGRTNyQW5oY252X2JPdFhFQ1R0Z21ScHN4algya0hUdnhUdw?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -30552,6 +30456,102 @@
       "legacy_category": "otro",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
+      "sha256": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
+      "title": "UK trade: September 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcnR4dHNzYndVZVpBTEE5RXhGYWFlLXFESjE3dkhUNUl5bTN6OGpiQkNIaklRSzNpLVlWU0tCSTdLdHFVbUxRcTR6ODBqbWlkTUFES2RjakdwWElRaEpaZ3FZRlRzRlY1eUhSX3JYMmUyMDJxQXNZOEk0SUlqcTh1RTdSZXV5dFM2V3hQdWZOU2l4amdDeW4xMVp5RHlwdw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
+      "sha256": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
+      "title": "UK resident population mid-year estimates - real-time database - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMXVNQTMyc2tCakZTSVJIRFlNeC1xV2VGZkJYazFmV1NRbDNtT2U3VHMwTXJzbkdXTktEQWtvZ09oay1nMjlxQzU4UXpWOXFoU2ZIMXJMekJjR2IwQmFwLTVrQUdsZExqS1R4WW9ac1FZSDN2aFB2bVlNRE1kdWtRNHc4bDdwYXJmZERSNXhSTzJNaFJaSDBOVnpVbkdKSm95ZWhoLXZBNXNlTkNTcmF6YnJ2T2NrV0k?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
+      "sha256": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
+      "title": "Quarterly Stocks Survey (QSS) and Quarterly Acquisitions and Disposals of Capital Assets Survey (QCAS) textual data analysis - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFAzQ1hUdUR6aFR2MjhZTkwxVzBVaHBiRjI3dlUzS2xoSXpIblpDMkFpdmhKVDAtQjVfNU5FdUVTM0xWUVJ6TTJDLWJDU2NtSW40cE00UzJTdHVZVWNMbndaMkx2MUdxd1BMU1dkYmNEVmpRZURBZUI5MkowNWFYTlNpb0xKX2N2dVlIRWV1blBvX1FZa1ctVEZ4STZWRGVmZlViSE9wR2F6ZkFGRTNyQW5oY252X2JPdFhFQ1R0Z21ScHN4algya0hUdnhUdw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
