@@ -3,13 +3,13 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T02:19:59.491Z",
+  "generated_at": "2026-11-23T02:20:50.010Z",
   "health": {
-    "sources_active": 33,
-    "sources_live": 33,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
-    "sources_empty": 2,
+    "sources_empty": 1,
     "sources_error": 0,
     "agenda_events_count": 73,
     "status": "DEGRADED"
@@ -58,7 +58,7 @@
     "CAD": {
       "count_72h": 26,
       "count_official_45d": 8,
-      "last_item_at": "2026-11-23T00:55:05.000Z",
+      "last_item_at": "2026-11-23T00:55:03.000Z",
       "hours_since_last": 1.4,
       "hours_since_last_business": 1.4,
       "silence": false
@@ -2324,7 +2324,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-23T00:55:05.000Z",
+      "published_at": "2026-11-23T00:55:03.000Z",
       "currencies": [
         "CAD"
       ],
@@ -27060,36 +27060,6 @@
       "z": null
     },
     {
-      "id": "aa1f0ba838765c529263613ce2fae06c1da03914cf4a337b8c2fe16fe44f9334",
-      "sha256": "aa1f0ba838765c529263613ce2fae06c1da03914cf4a337b8c2fe16fe44f9334",
-      "title": "Economic forecast for Denmark - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOcWxSWjZZRmU2VmVIb3I0NFlRbDZzWUdyY25wcFhSUG1BaE1kYzNaRlV1VU9HWHkxNlNDRlJwZWtZMy01bE1sdkVtbXgwS052MWc3WC1sLURQdzhPZWxtMUVyNE5rbnYtemEwclRIQmZrZnRNaW4yWmJlWGFFZXFzYlB5NUlkcXd1UUpLRXhlZWstMTFHb1hyUFQ0TnUwZU9kcWM1TEExZHNWclR1TVpJQVpDVkMxNWRUUkROdkV3cDlQUTlwcWlsZVFkVG1HQXRhNUxLa2hBSEdlSnZBZnZzNzZ4WnZqQ0U?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "13faeff3d9262b33d47a55bc8e55796dc453eca8c4d895362fbcf4ff2e389339",
       "sha256": "13faeff3d9262b33d47a55bc8e55796dc453eca8c4d895362fbcf4ff2e389339",
       "title": "Economic forecast for Croatia - economy-finance.ec.europa.eu",
@@ -27387,6 +27357,36 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "aa1f0ba838765c529263613ce2fae06c1da03914cf4a337b8c2fe16fe44f9334",
+      "sha256": "aa1f0ba838765c529263613ce2fae06c1da03914cf4a337b8c2fe16fe44f9334",
+      "title": "Economic forecast for Denmark - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOcWxSWjZZRmU2VmVIb3I0NFlRbDZzWUdyY25wcFhSUG1BaE1kYzNaRlV1VU9HWHkxNlNDRlJwZWtZMy01bE1sdkVtbXgwS052MWc3WC1sLURQdzhPZWxtMUVyNE5rbnYtemEwclRIQmZrZnRNaW4yWmJlWGFFZXFzYlB5NUlkcXd1UUpLRXhlZWstMTFHb1hyUFQ0TnUwZU9kcWM1TEExZHNWclR1TVpJQVpDVkMxNWRUUkROdkV3cDlQUTlwcWlsZVFkVG1HQXRhNUxLa2hBSEdlSnZBZnZzNzZ4WnZqQ0U?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
