@@ -3,24 +3,24 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T19:23:17.924Z",
+  "generated_at": "2026-11-23T19:28:24.240Z",
   "health": {
-    "sources_active": 33,
-    "sources_live": 33,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
-    "sources_empty": 2,
+    "sources_empty": 1,
     "sources_error": 0,
     "agenda_events_count": 73,
     "status": "DEGRADED"
   },
   "coverage": {
     "USD": {
-      "count_72h": 225,
+      "count_72h": 224,
       "count_official_45d": 339,
       "last_item_at": "2026-11-23T19:10:28.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "hours_since_last": 0.3,
+      "hours_since_last_business": 0.3,
       "silence": false
     },
     "EUR": {
@@ -35,16 +35,16 @@
       "count_72h": 33,
       "count_official_45d": 112,
       "last_item_at": "2026-11-23T16:36:05.000Z",
-      "hours_since_last": 2.8,
-      "hours_since_last_business": 2.8,
+      "hours_since_last": 2.9,
+      "hours_since_last_business": 2.9,
       "silence": false
     },
     "JPY": {
       "count_72h": 34,
       "count_official_45d": 95,
       "last_item_at": "2026-11-23T18:51:37.000Z",
-      "hours_since_last": 0.5,
-      "hours_since_last_business": 0.5,
+      "hours_since_last": 0.6,
+      "hours_since_last_business": 0.6,
       "silence": false
     },
     "CHF": {
@@ -59,32 +59,32 @@
       "count_72h": 17,
       "count_official_45d": 8,
       "last_item_at": "2026-11-23T14:24:11.000Z",
-      "hours_since_last": 5,
-      "hours_since_last_business": 5,
+      "hours_since_last": 5.1,
+      "hours_since_last_business": 5.1,
       "silence": false
     },
     "AUD": {
       "count_72h": 80,
       "count_official_45d": 93,
       "last_item_at": "2026-11-23T17:30:02.000Z",
-      "hours_since_last": 1.9,
-      "hours_since_last_business": 1.9,
+      "hours_since_last": 2,
+      "hours_since_last_business": 2,
       "silence": false
     },
     "NZD": {
       "count_72h": 77,
       "count_official_45d": 80,
       "last_item_at": "2026-11-23T19:09:34.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "hours_since_last": 0.3,
+      "hours_since_last_business": 0.3,
       "silence": false
     },
     "XAU": {
       "count_72h": 7,
       "count_official_45d": 0,
       "last_item_at": "2026-11-23T19:10:28.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2
+      "hours_since_last": 0.3,
+      "hours_since_last_business": 0.3
     }
   },
   "risk_map": [
@@ -97,14 +97,14 @@
           "lock_class": "TIER1_DATO",
           "title": "Core PCE Price Index m/m",
           "time": "2026-11-25T13:30:00.000Z",
-          "hours_until": 42.1,
+          "hours_until": 42,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Prelim GDP q/q",
           "time": "2026-11-25T13:30:00.000Z",
-          "hours_until": 42.1,
+          "hours_until": 42,
           "retirar_limitadas": false
         }
       ],
@@ -416,7 +416,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 22,
+          "hours_until": 21.9,
           "retirar_limitadas": false
         }
       ],
@@ -464,21 +464,21 @@
           "lock_class": "TIER1_DATO",
           "title": "CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 29.1,
+          "hours_until": 29,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "CPI y/y",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 29.1,
+          "hours_until": 29,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Trimmed Mean CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 29.1,
+          "hours_until": 29,
           "retirar_limitadas": false
         }
       ],
@@ -1004,7 +1004,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "0.7%",
-      "hours_from_now": -21.6,
+      "hours_from_now": -21.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1019,7 +1019,7 @@
       "actual": "2.2%",
       "forecast": "0.5%",
       "previous": "-0.5%",
-      "hours_from_now": -21.6,
+      "hours_from_now": -21.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1034,7 +1034,7 @@
       "actual": "48.7",
       "forecast": null,
       "previous": "49.7",
-      "hours_from_now": -21.4,
+      "hours_from_now": -21.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1049,7 +1049,7 @@
       "actual": "46.2",
       "forecast": null,
       "previous": "47.8",
-      "hours_from_now": -21.4,
+      "hours_from_now": -21.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1064,7 +1064,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -19.4,
+      "hours_from_now": -19.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1079,7 +1079,7 @@
       "actual": "47.9",
       "forecast": "49.8",
       "previous": "49.3",
-      "hours_from_now": -11.1,
+      "hours_from_now": -11.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1094,7 +1094,7 @@
       "actual": "46.6",
       "forecast": "47.4",
       "previous": "48.4",
-      "hours_from_now": -11.1,
+      "hours_from_now": -11.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1109,7 +1109,7 @@
       "actual": "55",
       "forecast": "54.1",
       "previous": "54.2",
-      "hours_from_now": -10.9,
+      "hours_from_now": -11,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1124,7 +1124,7 @@
       "actual": "54",
       "forecast": "52.4",
       "previous": "51.7",
-      "hours_from_now": -10.9,
+      "hours_from_now": -11,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1139,7 +1139,7 @@
       "actual": "52.9",
       "forecast": "52.7",
       "previous": "52.4",
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1154,7 +1154,7 @@
       "actual": "51.2",
       "forecast": "51.8",
       "previous": "51.7",
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1169,7 +1169,7 @@
       "actual": "52.7",
       "forecast": "53.0",
       "previous": "52.8",
-      "hours_from_now": -9.9,
+      "hours_from_now": -10,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1184,7 +1184,7 @@
       "actual": "52",
       "forecast": "53.0",
       "previous": "53.1",
-      "hours_from_now": -9.9,
+      "hours_from_now": -10,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1199,7 +1199,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -6.4,
+      "hours_from_now": -6.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1229,7 +1229,7 @@
       "actual": "54.5",
       "forecast": "54.5",
       "previous": "56.0",
-      "hours_from_now": -4.6,
+      "hours_from_now": -4.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1244,7 +1244,7 @@
       "actual": "54.7",
       "forecast": "55.6",
       "previous": "57.9",
-      "hours_from_now": -4.6,
+      "hours_from_now": -4.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1259,7 +1259,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1274,7 +1274,7 @@
       "actual": null,
       "forecast": "53.5",
       "previous": "53.3",
-      "hours_from_now": 5.1,
+      "hours_from_now": 5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1289,7 +1289,7 @@
       "actual": null,
       "forecast": "90.6",
       "previous": "90.2",
-      "hours_from_now": 13.6,
+      "hours_from_now": 13.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1304,7 +1304,7 @@
       "actual": null,
       "forecast": "-24",
       "previous": "-10",
-      "hours_from_now": 15.6,
+      "hours_from_now": 15.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1319,7 +1319,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 17.1,
+      "hours_from_now": 17,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1334,7 +1334,7 @@
       "actual": null,
       "forecast": null,
       "previous": "23.8K",
-      "hours_from_now": 17.9,
+      "hours_from_now": 17.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1349,7 +1349,7 @@
       "actual": null,
       "forecast": "-9.3",
       "previous": "-9.8",
-      "hours_from_now": 18.6,
+      "hours_from_now": 18.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1364,7 +1364,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 18.6,
+      "hours_from_now": 18.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1379,7 +1379,7 @@
       "actual": null,
       "forecast": "2.7%",
       "previous": "2.7%",
-      "hours_from_now": 18.6,
+      "hours_from_now": 18.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1394,7 +1394,7 @@
       "actual": null,
       "forecast": "92.1",
       "previous": "91.7",
-      "hours_from_now": 19.6,
+      "hours_from_now": 19.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1409,7 +1409,7 @@
       "actual": null,
       "forecast": "-3",
       "previous": "-2",
-      "hours_from_now": 19.6,
+      "hours_from_now": 19.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1424,7 +1424,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 22,
+      "hours_from_now": 21.9,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1439,7 +1439,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 26.1,
+      "hours_from_now": 26,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1469,7 +1469,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.8%",
-      "hours_from_now": 29.1,
+      "hours_from_now": 29,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1484,7 +1484,7 @@
       "actual": null,
       "forecast": "4.8%",
       "previous": "4.3%",
-      "hours_from_now": 29.1,
+      "hours_from_now": 29,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1499,7 +1499,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.3%",
-      "hours_from_now": 29.1,
+      "hours_from_now": 29,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1514,7 +1514,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "-2.1%",
-      "hours_from_now": 29.1,
+      "hours_from_now": 29,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1529,7 +1529,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "2.4%",
-      "hours_from_now": 33.6,
+      "hours_from_now": 33.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1544,7 +1544,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.2%",
-      "hours_from_now": 35.6,
+      "hours_from_now": 35.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1559,7 +1559,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-15.3",
-      "hours_from_now": 37.6,
+      "hours_from_now": 37.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1574,7 +1574,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.37|1.1",
-      "hours_from_now": 39.3,
+      "hours_from_now": 39.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1589,7 +1589,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.3%",
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1604,7 +1604,7 @@
       "actual": null,
       "forecast": "3.5%",
       "previous": "3.4%",
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1619,7 +1619,7 @@
       "actual": null,
       "forecast": "2.3%",
       "previous": "2.3%",
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1634,7 +1634,7 @@
       "actual": null,
       "forecast": "0.5%",
       "previous": "0.5%",
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1649,7 +1649,7 @@
       "actual": null,
       "forecast": "0.5%",
       "previous": "1.8%",
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1664,7 +1664,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.2%",
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1679,7 +1679,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.5%",
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1694,7 +1694,7 @@
       "actual": null,
       "forecast": "201K",
       "previous": "203K",
-      "hours_from_now": 42.1,
+      "hours_from_now": 42,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1709,7 +1709,7 @@
       "actual": null,
       "forecast": "649K",
       "previous": "676K",
-      "hours_from_now": 43.6,
+      "hours_from_now": 43.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1724,7 +1724,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.4M",
-      "hours_from_now": 44.1,
+      "hours_from_now": 44,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1739,7 +1739,7 @@
       "actual": null,
       "forecast": null,
       "previous": "20B",
-      "hours_from_now": 45.6,
+      "hours_from_now": 45.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1754,7 +1754,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 47.6,
+      "hours_from_now": 47.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -22088,36 +22088,6 @@
       "z": null
     },
     {
-      "id": "9d8fa62e9b09dad3f1a98581e38aafb970f337a22d43131b8f9e961651f62462",
-      "sha256": "9d8fa62e9b09dad3f1a98581e38aafb970f337a22d43131b8f9e961651f62462",
-      "title": "NOTICIAS DEL DÍA: Ucrania en la OTAN, ¿A cambio de territorio?, Golpe de Trump a Irán y Putin avisa",
-      "url": "https://t.me/negociostv/60701",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-20T19:26:30.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "17abee8069b6f411c5d93f58fb01914d1b15a6550d72b6e92eb91d7d699f5603",
       "sha256": "17abee8069b6f411c5d93f58fb01914d1b15a6550d72b6e92eb91d7d699f5603",
       "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
@@ -24158,6 +24128,39 @@
       "z": null
     },
     {
+      "id": "ceaea3ba9caf9e5211ef3ad5ddc83a88c7d26fc28ca899d5846209cedc86ab36",
+      "sha256": "ceaea3ba9caf9e5211ef3ad5ddc83a88c7d26fc28ca899d5846209cedc86ab36",
+      "title": "Consumer price inflation, UK: October 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMi1tamgxZUpnR2RmODcwZmF2M1dudXV2RjV1MHpsOU5yb2Jnazl3RnM1UFBsb3lwb2t1SkN6RnVUd0hpOFNSZzI0dUwyM050YVBLR24yVXhwM2dsSU1PTWlKSGJGbDZTdWpYRGkwWGZCZjZnZWlxZFFRS09XY1pQem1LUlByN0hHd2FqcUxxV2RWVWpGVFlYRkItNWhtV0Jid1E?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-18T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "90b22e324b16e1a1424606288e27897eff8b12dc225b96de3bda5ad679c97c67",
       "sha256": "90b22e324b16e1a1424606288e27897eff8b12dc225b96de3bda5ad679c97c67",
       "title": "Producer price inflation, UK: October 2026 - Office for National Statistics",
@@ -24311,39 +24314,6 @@
       "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1236824312d1231fec2c21264283b4f1f37c920457147074734a32b6e5ed5ea2",
-      "sha256": "1236824312d1231fec2c21264283b4f1f37c920457147074734a32b6e5ed5ea2",
-      "title": "Consumer price inflation, UK: October 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9UTDk0MEVXNFlCQUFVMm1peWlmYUpUaXdyQUtxOGJSZGEzSEVxdVVhbjc4SVF5RkZKSFBkVFJqWGhGRTlibGtRLXcxQjlsQy1INnFtQlZDblk5QWt2N1FISjhJb0dUYmlwM0VZZUdZUE5FWWx3OHc?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-18T07:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo",
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -25252,6 +25222,36 @@
       "z": null
     },
     {
+      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "c37093e5a6db51beb94420cec42ad60dfd784ddf65b611d86d9c7fc7716b6fd1",
       "sha256": "c37093e5a6db51beb94420cec42ad60dfd784ddf65b611d86d9c7fc7716b6fd1",
       "title": "Economic forecast for Spain - economy-finance.ec.europa.eu",
@@ -26001,36 +26001,6 @@
       "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -27989,10 +27959,10 @@
       "z": null
     },
     {
-      "id": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
-      "sha256": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
-      "title": "Regional gross domestic product: local authorities - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaUo0MjBRQXdUZ2xVRzR0VXgtSlc0bFdHcXQwRmdpSlRKOW9kTUJtd3BIVzVyWUZacWEtUTVlV09UMkN4cnBZcXVWUkJCajNLZFZ5azZEMDJUVHhhaGg2UDdYbmJhYVY4d25JaEhucW5oaHJQeXhTbHdtOW9Fcy1RbEI1VkhJU3hKWEo1S0p5YVFrLTJLN19aa2VaSVppcTdlcGFMNm9CYVhLOXlQ?oc=5",
+      "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
+      "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
+      "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -28244,6 +28214,38 @@
       "z": null
     },
     {
+      "id": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
+      "sha256": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
+      "title": "Regional gross domestic product: local authorities - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaUo0MjBRQXdUZ2xVRzR0VXgtSlc0bFdHcXQwRmdpSlRKOW9kTUJtd3BIVzVyWUZacWEtUTVlV09UMkN4cnBZcXVWUkJCajNLZFZ5azZEMDJUVHhhaGg2UDdYbmJhYVY4d25JaEhucW5oaHJQeXhTbHdtOW9Fcy1RbEI1VkhJU3hKWEo1S0p5YVFrLTJLN19aa2VaSVppcTdlcGFMNm9CYVhLOXlQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
       "sha256": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
       "title": "Auction Result of Treasury Discount Bills on November 13, 2026 : Ministry of Finance - 財務省",
@@ -28267,38 +28269,6 @@
       "legacy_category": "mercado",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
-      "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
-      "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -31412,10 +31382,10 @@
       "z": null
     },
     {
-      "id": "a2bc9509ebf47845b3adbc9f0db1eb35c2243e131a38efbeaa96d48c4161d555",
-      "sha256": "a2bc9509ebf47845b3adbc9f0db1eb35c2243e131a38efbeaa96d48c4161d555",
-      "title": "Archived Consumer Price Index Supplemental Files - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FWHhlZXdOdUNoSjdaRWxMRER0X0xSdk1TVnBUdmg2MkRrSFFWdnBMRXZJWngySnZ5c290Q0pycTZaV3F5M01jV0NDcDNnYk5TRnpWR1BtUHNLVE5XUDhB?oc=5",
+      "id": "68f8e19eea89e0a7757ec4df9150f17662ccd3a4ffb6f51742d013584410f22e",
+      "sha256": "68f8e19eea89e0a7757ec4df9150f17662ccd3a4ffb6f51742d013584410f22e",
+      "title": "October 2026 12-Month Percent Changes - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9FNXczNDYtZDhHbTBaNVBMVG1IMnFFZW40NHRNVWowVWxHbnN5a0VqZVhHdkpsb3B6bGhIS0hMS3dwQjNvcVZSS1lOdHRyOUxSbHlJNnBpcHZIa1ljYXpPQkRUdWl6WTQwaVZv?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
@@ -31446,6 +31416,276 @@
       "sha256": "96635c9cb485de6a908d3eb9066516f9fff7bff73b72bdcda906d55e0b638f97",
       "title": "Consumer Price Index, Phoenix area — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNnhVb0RReUM3ODZCSjlpR1J3eTJuZkV1RTlXUnJlUGFTRkV0a2RTWnJVV1lXOVVTTzU4NnVERkRFcmNwLS1Ya2U2bnFLVXY3cWZFRWI0dElRZGktU0VxM1VxTlZGdWw5VzhuLWU0ZFdTbUp5NDhxeVVQa3V3c2dyRkpR?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
+      "sha256": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
+      "title": "Consumer Price Index, Detroit-Warren-Dearborn area – October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYk1saDNkWlM1alhiUjZHSjliV0w2RktGbDhLZzNkeUZZaUdFZmd3TTYxTXE0VUxrc0VVZU1laWwtQ0F1QzN6QThKUUpTUmdDV2hEYUx1RTZCNlBjcnlCaXR5TUE4R01qeHFkd0Y1b3FfakZNRkduMUltWVhtVVV1dUZuSnpHdw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "08f5ee7305f8fc5e43b33f83adf8c2bce945c6da24100579ea6865142fdb2075",
+      "sha256": "08f5ee7305f8fc5e43b33f83adf8c2bce945c6da24100579ea6865142fdb2075",
+      "title": "Consumer Price Index, Baltimore-Columbia-Towson — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQXzJhSWJOdWFMX0t1eG4yZTh0Smhub3ExX2s1ZENYSEZVM1N2bnRRQTdqdWZYd2F0OEIxVTlKTGc5SDIxYS1tUEpEYlhlNGViZ1R0VG5Sd3ctYUZta3I0bzYyUXQyU1ExU2NEZmo1WnhsWGw1VllhSFZwaWtJSnpBdjJkckRTanJ3TXk0LVd0SQ?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
+      "sha256": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
+      "title": "Consumer Price Index, Atlanta-Sandy Springs-Roswell — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaGpxRGVNeGllWVJqcnJnRzVvakFWSzRxNE9VUmJXNjA0dFkxWEZfVmxyOVF6eTVvSHE3M192ODVWcmhxRU5FS3dYanBacmxTemdqa3pqb1AtTE93UlhoWmhpRlhDTFVZdjFYUW5uUVA2VWNxY2QwcDBnUW82R1NlSXdobU5lVUh5?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6e80602df891d582338416d7714697d6a2b8cc13df266820e8adbcbec19223bf",
+      "sha256": "6e80602df891d582338416d7714697d6a2b8cc13df266820e8adbcbec19223bf",
+      "title": "Consumer Price Index, Anchorage area — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZjluVTFmXzg2eER2RFJnOUE3aDFGVC1MeXVJSXkzR2ZBMU9yeHg1WVVUVWp2NnRLVVYzRGJWU3NPX1lLOThnR2ktSkdpQWxzYjV2NGpBR091S1h6ZnY4eVIxTktPaEhiblpjLVdUWFA1MWpNVXZwcHJ6X2dFVnh1NU1IdXA?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ed60641a6aa996b5e577e3dc316f553a1dc4f2114d51a414d04f0617e720808e",
+      "sha256": "ed60641a6aa996b5e577e3dc316f553a1dc4f2114d51a414d04f0617e720808e",
+      "title": "Consumer Price Index, Houston-The Woodlands-Sugar Land area — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaDRMWVk2RTVCRUxUNS1pQ2RSWmVRRFB0MGVBWk1mYXpJR0QtQ01sMDBLTDRxdG1wcVBUU2JlaU51dDVrRVVMeGhZR1k5UFhsTFJmNzZrZVlMV2tfSUxrVktIUldpcnRhbmpMVFF3RGl2U1lKcTRZMUtNa1Q4QmZDZHBmV0xpcnFC?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a2bc9509ebf47845b3adbc9f0db1eb35c2243e131a38efbeaa96d48c4161d555",
+      "sha256": "a2bc9509ebf47845b3adbc9f0db1eb35c2243e131a38efbeaa96d48c4161d555",
+      "title": "Archived Consumer Price Index Supplemental Files - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9FWHhlZXdOdUNoSjdaRWxMRER0X0xSdk1TVnBUdmg2MkRrSFFWdnBMRXZJWngySnZ5c290Q0pycTZaV3F5M01jV0NDcDNnYk5TRnpWR1BtUHNLVE5XUDhB?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
+      "sha256": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
+      "title": "Consumer Price Index, St. Louis area — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVkJpWkRUUGlRcE9URlptcWhOZ2Zwb3lBRTlPeXVETTYtc3ZlQm9WcXYyaVMzbFhtU3RGU19IQndGQUR1MWNRMWh2d3ZabWI0eDVMWU4xSzczaER5QjJSOHo3S0NrUUpVN2tpQmZvdU5mNUQ1SUxBaWtBZk9vUUphY25BdTRSSkE2eUFWM0ZXU1I?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
+      "sha256": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
+      "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
@@ -31716,276 +31956,6 @@
       "sha256": "7baa8ed12c156c97120a4c68536c1f0e883e76ea020f543a1fc576d518df1460",
       "title": "Consumer Price Index, Midwest region — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWEQxVVI5WDhnXzg4MjFyeC01cnRnNWZrTnBITzl5dHJwbFo1aG5VSFhjelFienpUYUZwRzBsM1RxMDNXbU9VV0JCWnlqOGNGVVFlaDhxN2wzMENxS2NHS3hYaU9MUF9wa3RvUXltVElsaUFHaEVvY3RwbnltTkxQSng3Z3hZaERPVEJVOElXNXU?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
-      "sha256": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
-      "title": "Consumer Price Index, Atlanta-Sandy Springs-Roswell — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaGpxRGVNeGllWVJqcnJnRzVvakFWSzRxNE9VUmJXNjA0dFkxWEZfVmxyOVF6eTVvSHE3M192ODVWcmhxRU5FS3dYanBacmxTemdqa3pqb1AtTE93UlhoWmhpRlhDTFVZdjFYUW5uUVA2VWNxY2QwcDBnUW82R1NlSXdobU5lVUh5?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
-      "sha256": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
-      "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ed60641a6aa996b5e577e3dc316f553a1dc4f2114d51a414d04f0617e720808e",
-      "sha256": "ed60641a6aa996b5e577e3dc316f553a1dc4f2114d51a414d04f0617e720808e",
-      "title": "Consumer Price Index, Houston-The Woodlands-Sugar Land area — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaDRMWVk2RTVCRUxUNS1pQ2RSWmVRRFB0MGVBWk1mYXpJR0QtQ01sMDBLTDRxdG1wcVBUU2JlaU51dDVrRVVMeGhZR1k5UFhsTFJmNzZrZVlMV2tfSUxrVktIUldpcnRhbmpMVFF3RGl2U1lKcTRZMUtNa1Q4QmZDZHBmV0xpcnFC?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
-      "sha256": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
-      "title": "Consumer Price Index, Detroit-Warren-Dearborn area – October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNYk1saDNkWlM1alhiUjZHSjliV0w2RktGbDhLZzNkeUZZaUdFZmd3TTYxTXE0VUxrc0VVZU1laWwtQ0F1QzN6QThKUUpTUmdDV2hEYUx1RTZCNlBjcnlCaXR5TUE4R01qeHFkd0Y1b3FfakZNRkduMUltWVhtVVV1dUZuSnpHdw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "08f5ee7305f8fc5e43b33f83adf8c2bce945c6da24100579ea6865142fdb2075",
-      "sha256": "08f5ee7305f8fc5e43b33f83adf8c2bce945c6da24100579ea6865142fdb2075",
-      "title": "Consumer Price Index, Baltimore-Columbia-Towson — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQXzJhSWJOdWFMX0t1eG4yZTh0Smhub3ExX2s1ZENYSEZVM1N2bnRRQTdqdWZYd2F0OEIxVTlKTGc5SDIxYS1tUEpEYlhlNGViZ1R0VG5Sd3ctYUZta3I0bzYyUXQyU1ExU2NEZmo1WnhsWGw1VllhSFZwaWtJSnpBdjJkckRTanJ3TXk0LVd0SQ?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
-      "sha256": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
-      "title": "Consumer Price Index, St. Louis area — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVkJpWkRUUGlRcE9URlptcWhOZ2Zwb3lBRTlPeXVETTYtc3ZlQm9WcXYyaVMzbFhtU3RGU19IQndGQUR1MWNRMWh2d3ZabWI0eDVMWU4xSzczaER5QjJSOHo3S0NrUUpVN2tpQmZvdU5mNUQ1SUxBaWtBZk9vUUphY25BdTRSSkE2eUFWM0ZXU1I?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "68f8e19eea89e0a7757ec4df9150f17662ccd3a4ffb6f51742d013584410f22e",
-      "sha256": "68f8e19eea89e0a7757ec4df9150f17662ccd3a4ffb6f51742d013584410f22e",
-      "title": "October 2026 12-Month Percent Changes - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9FNXczNDYtZDhHbTBaNVBMVG1IMnFFZW40NHRNVWowVWxHbnN5a0VqZVhHdkpsb3B6bGhIS0hMS3dwQjNvcVZSS1lOdHRyOUxSbHlJNnBpcHZIa1ljYXpPQkRUdWl6WTQwaVZv?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6e80602df891d582338416d7714697d6a2b8cc13df266820e8adbcbec19223bf",
-      "sha256": "6e80602df891d582338416d7714697d6a2b8cc13df266820e8adbcbec19223bf",
-      "title": "Consumer Price Index, Anchorage area — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZjluVTFmXzg2eER2RFJnOUE3aDFGVC1MeXVJSXkzR2ZBMU9yeHg1WVVUVWp2NnRLVVYzRGJWU3NPX1lLOThnR2ktSkdpQWxzYjV2NGpBR091S1h6ZnY4eVIxTktPaEhiblpjLVdUWFA1MWpNVXZwcHJ6X2dFVnh1NU1IdXA?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
