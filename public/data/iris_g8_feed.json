@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T08:21:59.445Z",
+  "generated_at": "2026-11-23T08:27:06.973Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -19,24 +19,24 @@
       "count_72h": 260,
       "count_official_45d": 334,
       "last_item_at": "2026-11-23T08:16:39.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "EUR": {
-      "count_72h": 58,
+      "count_72h": 59,
       "count_official_45d": 189,
-      "last_item_at": "2026-11-23T08:15:36.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "last_item_at": "2026-11-23T08:25:54.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "GBP": {
       "count_72h": 23,
       "count_official_45d": 110,
       "last_item_at": "2026-11-23T08:01:56.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "hours_since_last": 0.4,
+      "hours_since_last_business": 0.4,
       "silence": false
     },
     "JPY": {
@@ -51,24 +51,24 @@
       "count_72h": 104,
       "count_official_45d": 17,
       "last_item_at": "2026-11-23T08:16:39.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "CAD": {
       "count_72h": 25,
       "count_official_45d": 8,
       "last_item_at": "2026-11-23T08:01:56.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "hours_since_last": 0.4,
+      "hours_since_last_business": 0.4,
       "silence": false
     },
     "AUD": {
       "count_72h": 69,
       "count_official_45d": 91,
       "last_item_at": "2026-11-23T08:01:56.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "hours_since_last": 0.4,
+      "hours_since_last_business": 0.4,
       "silence": false
     },
     "NZD": {
@@ -83,14 +83,14 @@
       "count_72h": 7,
       "count_official_45d": 0,
       "last_item_at": "2026-11-23T01:40:52.000Z",
-      "hours_since_last": 6.7,
-      "hours_since_last_business": 6.7
+      "hours_since_last": 6.8,
+      "hours_since_last_business": 6.8
     }
   },
   "risk_map": [
     {
       "currency": "USD",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -109,12 +109,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 5
+          "d24h_pp": 4
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 2.05
+          "d24h_pp": 1.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -124,7 +124,7 @@
         {
           "theme": "WASHINGTON",
           "question": "Will Trump be impeached by December 31, 2026?",
-          "d24h_pp": -0.15
+          "d24h_pp": -0.2
         },
         {
           "theme": "WASHINGTON",
@@ -158,13 +158,11 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "currency": "EUR",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -183,12 +181,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 5
+          "d24h_pp": 4
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 2.05
+          "d24h_pp": 1.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -222,9 +220,7 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "currency": "GBP",
@@ -265,7 +261,7 @@
     },
     {
       "currency": "JPY",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -284,12 +280,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 5
+          "d24h_pp": 4
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 2.05
+          "d24h_pp": 1.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -323,13 +319,11 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "currency": "CHF",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -348,12 +342,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 5
+          "d24h_pp": 4
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 2.05
+          "d24h_pp": 1.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -387,9 +381,7 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "currency": "CAD",
@@ -400,7 +392,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 33.1,
+          "hours_until": 33,
           "retirar_limitadas": false
         }
       ],
@@ -420,12 +412,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 5
+          "d24h_pp": 4
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 2.05
+          "d24h_pp": 1.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -435,7 +427,6 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -448,21 +439,21 @@
           "lock_class": "TIER1_DATO",
           "title": "CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 40.1,
+          "hours_until": 40,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "CPI y/y",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 40.1,
+          "hours_until": 40,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Trimmed Mean CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 40.1,
+          "hours_until": 40,
           "retirar_limitadas": false
         }
       ],
@@ -539,7 +530,7 @@
     },
     {
       "currency": "XAU",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -557,12 +548,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 5
+          "d24h_pp": 4
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 2.05
+          "d24h_pp": 1.75
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -597,7 +588,7 @@
         {
           "theme": "WASHINGTON",
           "question": "Will Trump be impeached by December 31, 2026?",
-          "d24h_pp": -0.15
+          "d24h_pp": -0.2
         },
         {
           "theme": "WASHINGTON",
@@ -606,59 +597,49 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     }
   ],
   "pair_risk": [
     {
       "pair": "EURUSD",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "USD"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "GBPUSD",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "USD"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "USDJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "USD",
         "quote": "JPY"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "USDCHF",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "USD",
         "quote": "CHF"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "USDCAD",
@@ -669,7 +650,6 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -682,57 +662,48 @@
         "quote": "USD"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h",
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+        "dato de primer nivel entre 24 y 48 h"
       ]
     },
     {
       "pair": "NZDUSD",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "USD"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "EURGBP",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "GBP"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "EURJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "JPY"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "EURCHF",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "CHF"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "EURCAD",
@@ -743,7 +714,6 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -756,45 +726,38 @@
         "quote": "AUD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "dato de primer nivel entre 24 y 48 h"
       ]
     },
     {
       "pair": "EURNZD",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "NZD"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "GBPJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "JPY"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "GBPCHF",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "CHF"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "GBPCAD",
@@ -805,7 +768,6 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -840,8 +802,7 @@
         "quote": "JPY"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h",
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+        "dato de primer nivel entre 24 y 48 h"
       ]
     },
     {
@@ -853,8 +814,7 @@
         "quote": "CHF"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h",
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+        "dato de primer nivel entre 24 y 48 h"
       ]
     },
     {
@@ -867,7 +827,6 @@
       },
       "reasons": [
         "dato de primer nivel entre 24 y 48 h",
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -885,27 +844,23 @@
     },
     {
       "pair": "NZDJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "JPY"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "NZDCHF",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "CHF"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "NZDCAD",
@@ -916,7 +871,6 @@
         "quote": "CAD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -929,7 +883,6 @@
         "quote": "JPY"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -942,33 +895,28 @@
         "quote": "CHF"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
     {
       "pair": "CHFJPY",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "CHF",
         "quote": "JPY"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     },
     {
       "pair": "XAUUSD",
-      "risk_level": "MEDIO",
+      "risk_level": "BAJO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "XAU",
         "quote": "USD"
       },
-      "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
-      ]
+      "reasons": []
     }
   ],
   "agenda_window": [
@@ -981,7 +929,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "0.7%",
-      "hours_from_now": -10.6,
+      "hours_from_now": -10.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -996,7 +944,7 @@
       "actual": "2.2%",
       "forecast": "0.5%",
       "previous": "-0.5%",
-      "hours_from_now": -10.6,
+      "hours_from_now": -10.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1011,7 +959,7 @@
       "actual": "48.7",
       "forecast": null,
       "previous": "49.7",
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1026,7 +974,7 @@
       "actual": "46.2",
       "forecast": null,
       "previous": "47.8",
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1041,7 +989,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.4,
+      "hours_from_now": -8.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1056,7 +1004,7 @@
       "actual": "47.9",
       "forecast": "49.8",
       "previous": "49.3",
-      "hours_from_now": -0.1,
+      "hours_from_now": -0.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1071,7 +1019,7 @@
       "actual": "46.6",
       "forecast": "47.4",
       "previous": "48.4",
-      "hours_from_now": -0.1,
+      "hours_from_now": -0.2,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1086,7 +1034,7 @@
       "actual": null,
       "forecast": "54.1",
       "previous": "54.2",
-      "hours_from_now": 0.1,
+      "hours_from_now": 0,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1101,7 +1049,7 @@
       "actual": null,
       "forecast": "52.4",
       "previous": "51.7",
-      "hours_from_now": 0.1,
+      "hours_from_now": 0,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1116,7 +1064,7 @@
       "actual": null,
       "forecast": "52.7",
       "previous": "52.4",
-      "hours_from_now": 0.6,
+      "hours_from_now": 0.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1131,7 +1079,7 @@
       "actual": null,
       "forecast": "51.8",
       "previous": "51.7",
-      "hours_from_now": 0.6,
+      "hours_from_now": 0.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1146,7 +1094,7 @@
       "actual": null,
       "forecast": "53.0",
       "previous": "52.8",
-      "hours_from_now": 1.1,
+      "hours_from_now": 1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1161,7 +1109,7 @@
       "actual": null,
       "forecast": "53.0",
       "previous": "53.1",
-      "hours_from_now": 1.1,
+      "hours_from_now": 1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1176,7 +1124,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 4.6,
+      "hours_from_now": 4.5,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1191,7 +1139,7 @@
       "actual": null,
       "forecast": null,
       "previous": "8.7%",
-      "hours_from_now": 5.1,
+      "hours_from_now": 5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1206,7 +1154,7 @@
       "actual": null,
       "forecast": "54.5",
       "previous": "56.0",
-      "hours_from_now": 6.4,
+      "hours_from_now": 6.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1221,7 +1169,7 @@
       "actual": null,
       "forecast": "55.6",
       "previous": "57.9",
-      "hours_from_now": 6.4,
+      "hours_from_now": 6.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1236,7 +1184,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 12.6,
+      "hours_from_now": 12.5,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1251,7 +1199,7 @@
       "actual": null,
       "forecast": "53.5",
       "previous": "53.3",
-      "hours_from_now": 16.1,
+      "hours_from_now": 16,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1266,7 +1214,7 @@
       "actual": null,
       "forecast": "90.6",
       "previous": "90.2",
-      "hours_from_now": 24.6,
+      "hours_from_now": 24.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1281,7 +1229,7 @@
       "actual": null,
       "forecast": "-24",
       "previous": "-10",
-      "hours_from_now": 26.6,
+      "hours_from_now": 26.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1296,7 +1244,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 28.1,
+      "hours_from_now": 28,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1311,7 +1259,7 @@
       "actual": null,
       "forecast": null,
       "previous": "23.8K",
-      "hours_from_now": 28.9,
+      "hours_from_now": 28.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1326,7 +1274,7 @@
       "actual": null,
       "forecast": "-9.3",
       "previous": "-9.8",
-      "hours_from_now": 29.6,
+      "hours_from_now": 29.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1341,7 +1289,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 29.6,
+      "hours_from_now": 29.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1356,7 +1304,7 @@
       "actual": null,
       "forecast": "2.7%",
       "previous": "2.7%",
-      "hours_from_now": 29.6,
+      "hours_from_now": 29.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1371,7 +1319,7 @@
       "actual": null,
       "forecast": "92.1",
       "previous": "91.7",
-      "hours_from_now": 30.6,
+      "hours_from_now": 30.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1386,7 +1334,7 @@
       "actual": null,
       "forecast": "-3",
       "previous": "-2",
-      "hours_from_now": 30.6,
+      "hours_from_now": 30.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1401,7 +1349,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 33.1,
+      "hours_from_now": 33,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1416,7 +1364,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.1,
+      "hours_from_now": 37,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1431,7 +1379,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 39.5,
+      "hours_from_now": 39.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1446,7 +1394,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.8%",
-      "hours_from_now": 40.1,
+      "hours_from_now": 40,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1461,7 +1409,7 @@
       "actual": null,
       "forecast": "4.8%",
       "previous": "4.3%",
-      "hours_from_now": 40.1,
+      "hours_from_now": 40,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1476,7 +1424,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.3%",
-      "hours_from_now": 40.1,
+      "hours_from_now": 40,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1491,7 +1439,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "-2.1%",
-      "hours_from_now": 40.1,
+      "hours_from_now": 40,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1506,7 +1454,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "2.4%",
-      "hours_from_now": 44.6,
+      "hours_from_now": 44.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1521,7 +1469,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.2%",
-      "hours_from_now": 46.6,
+      "hours_from_now": 46.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1530,7 +1478,7 @@
   ],
   "polymarket_geo": {
     "status": "OK",
-    "updated_at": "2026-11-23T07:55:39.483Z",
+    "updated_at": "2026-11-23T08:27:01.726Z",
     "markets": [
       {
         "theme": "IRAN_ORIENTE_MEDIO",
@@ -1538,8 +1486,8 @@
         "question": "Will the U.S. invade Iran before 2027?",
         "prob": 5.5,
         "d24h_pp": 0,
-        "volume": 81357923.94,
-        "liquidity": 279026.59,
+        "volume": 81359155.83,
+        "liquidity": 276461.23,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
         "currencies": [
@@ -1558,7 +1506,7 @@
         "prob": 2.85,
         "d24h_pp": -0.1,
         "volume": 77740288.41,
-        "liquidity": 175644.37,
+        "liquidity": 172035.04,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/kharg-island-no-longer-under-iranian-control-by-march-31",
         "currencies": [
@@ -1575,9 +1523,9 @@
         "event_title": "Israel x Iran ceasefire continues through...?",
         "question": "Israel x Iran ceasefire continues through December 31?",
         "prob": 69.5,
-        "d24h_pp": 5,
-        "volume": 61586994.87,
-        "liquidity": 344705.11,
+        "d24h_pp": 4,
+        "volume": 61591347.05,
+        "liquidity": 346865.04,
         "end_date": "2026-12-31T20:29:00Z",
         "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
         "currencies": [
@@ -1593,10 +1541,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "US announces end of Iranian blockade by...?",
         "question": "US announces end of Iranian blockade by December 31, 2026?",
-        "prob": 16.1,
-        "d24h_pp": 2.05,
-        "volume": 54765589.5,
-        "liquidity": 496980.72,
+        "prob": 15.8,
+        "d24h_pp": 1.75,
+        "volume": 54765859.15,
+        "liquidity": 530460.67,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
         "currencies": [
@@ -1614,8 +1562,8 @@
         "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
         "prob": 93.05,
         "d24h_pp": 0.1,
-        "volume": 41169495.83,
-        "liquidity": 1705702.7,
+        "volume": 41169512.2,
+        "liquidity": 1685355.87,
         "end_date": "2026-12-31T17:00:00Z",
         "url": "https://polymarket.com/event/iran-leader-end-of-2026",
         "currencies": [
@@ -1633,8 +1581,8 @@
         "question": "Putin out as President of Russia by December 31, 2026?",
         "prob": 1.25,
         "d24h_pp": 0,
-        "volume": 33019264.82,
-        "liquidity": 496537.33,
+        "volume": 33019375.93,
+        "liquidity": 483903.83,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/putin-out-before-2027",
         "currencies": [
@@ -1651,7 +1599,7 @@
         "prob": 12,
         "d24h_pp": 0.5,
         "volume": 13736060.95,
-        "liquidity": 46752.96,
+        "liquidity": 44592.33,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/nato-x-russia-military-clash-in-2025",
         "currencies": [
@@ -1667,8 +1615,8 @@
         "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
         "prob": 8.5,
         "d24h_pp": -1,
-        "volume": 11448047.82,
-        "liquidity": 1284162.03,
+        "volume": 11448053.94,
+        "liquidity": 1284153.12,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by",
         "currencies": [
@@ -1685,7 +1633,7 @@
         "prob": 0.8,
         "d24h_pp": 0,
         "volume": 6398822.63,
-        "liquidity": 83398.13,
+        "liquidity": 84674.4,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-us-withdraw-from-nato-before-2027",
         "currencies": [
@@ -1702,7 +1650,7 @@
         "prob": 1.9,
         "d24h_pp": -0.05,
         "volume": 6255435.23,
-        "liquidity": 40397.26,
+        "liquidity": 40330.16,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/russia-nuclear-test-by",
         "currencies": [
@@ -1717,9 +1665,9 @@
         "event_title": "Will Trump be impeached by...?",
         "question": "Will Trump be impeached by December 31, 2026?",
         "prob": 0.9,
-        "d24h_pp": -0.15,
+        "d24h_pp": -0.2,
         "volume": 1407266.51,
-        "liquidity": 275296.07,
+        "liquidity": 270724.53,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026",
         "currencies": [
@@ -1733,8 +1681,8 @@
         "question": "Pete Hegseth impeached by December 31, 2026?",
         "prob": 1.15,
         "d24h_pp": -0.8,
-        "volume": 960179.73,
-        "liquidity": 84859.7,
+        "volume": 960196.97,
+        "liquidity": 85150.12,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/pete-hegseth-impeached-by-june-30",
         "currencies": [
@@ -1748,8 +1696,8 @@
         "question": "Will China invade Taiwan by end of 2026?",
         "prob": 1.55,
         "d24h_pp": 0,
-        "volume": 47450029.36,
-        "liquidity": 249789.17,
+        "volume": 47450146.48,
+        "liquidity": 247999.97,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027",
         "currencies": [
@@ -1766,7 +1714,7 @@
         "prob": 1.45,
         "d24h_pp": -0.2,
         "volume": 17440624.46,
-        "liquidity": 296715.66,
+        "liquidity": 300666.34,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/xi-jinping-out-before-2027",
         "currencies": [
@@ -1783,7 +1731,7 @@
         "prob": 7.5,
         "d24h_pp": -1,
         "volume": 3935647.66,
-        "liquidity": 229615.66,
+        "liquidity": 229168.63,
         "end_date": "2028-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-by-december-31-2027",
         "currencies": [
@@ -2104,6 +2052,36 @@
       "previous": null,
       "calendar_title": null,
       "z": null
+    },
+    {
+      "id": "7b25070fafaadcf54cabaefe90a7cd5fe92929bd47399bda8351a15a7ab6c655",
+      "sha256": "7b25070fafaadcf54cabaefe90a7cd5fe92929bd47399bda8351a15a7ab6c655",
+      "title": "France november flash services pmi 46.6 vs 47.5 expected",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T08:25:54.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "B2",
+      "mmt_lens": "PMI_CONTRACCION_SUB50",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 4,
+      "actual": "46.6",
+      "forecast": "47.5",
+      "previous": null,
+      "calendar_title": "French Flash Services PMI",
+      "z": -0.5
     },
     {
       "id": "ef09ed7dedaeed8ad0844e858cf0f79749000c7cd2f0dad90cf2faca5ea9a585",
@@ -3762,37 +3740,6 @@
       "z": null
     },
     {
-      "id": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
-      "sha256": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
-      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLTYzclN6U3ZjQ28xdVZhWTFXZE9kX05keFNoZDhwYWxrdENweXB5akNpQTRjQkJFWnRrNmxObnVENE10ZVFTSGF5WmNmYWxIdnNUS3gxQVA2RGM3aHpnTWpoNFdoVWwwdUVDQmZDemNKRGhqQTk0NmlQRzdSdXQ3ckY4ZzVadWVJcHZZMWpZSGtsSTVoTG9nRVhjamZJZHVydllmc0lhajDSAagBQVVfeXFMUC02M3JTelN2Y0NvMXVWYVkxV2RPZF9OZHhTaGQ4cGFsa3RDcHlweWpDaUE0Y0JCRVp0azZsTm51RDRNdGVRU0hheVpjZmFsSHZzVEt4MUFQNkRjN2h6Z01qaDRXaFVsMHVFQ0JmQ3pjSkRoakE5NDZpUEc3UnV0N3JGOGc1WnVlSXB2WTFqWUhrbEk1aExvZ0VYY2pmSWR1cnZZZnNJYWow?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T03:29:27.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "sha256": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "title": "Tech stock sell-off deepens in Asia",
@@ -3900,6 +3847,37 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
+      "sha256": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
+      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV29PRzI1OHpIQ0pxMTNhS0MxbGF0RUdRb1MwTlI1NmZzaUNqckdzNW5lekd6aFZ4S3hkb2VYLU1HNmQ3OWlPZTgzaTRfMFdONkVEa0pncHVWanNxY01NTl9UTkg3SVlJNC1RdVpYbkFmNFpmem56ejB1cmEzYkpJcXl6cmZwRFVySGRKZnc2ZzQwbElzTmlaSU1HRXItdWt0Y2F30gGoAUFVX3lxTFAtNjNyU3pTdmNDbzF1VmFZMVdkT2RfTmR4U2hkOHBhbGt0Q3B5cHlqQ2lBNGNCQkVadGs2bE5udUQ0TXRlUVNIYXlaY2ZhbEh2c1RLeDFBUDZEYzdoemdNamg0V2hVbDB1RUNCZkN6Y0pEaGpBOTQ2aVBHN1J1dDdyRjhnNVp1ZUlwdlkxallIa2xJNWhMb2dFWGNqZklkdXJ2WWZzSWFqMA?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T02:29:00.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -23241,10 +23219,10 @@
       "z": null
     },
     {
-      "id": "a20cced66c4cb881e0e2a4f244146ed2a296c505dbbe5fe289d417c6c1779f5b",
-      "sha256": "a20cced66c4cb881e0e2a4f244146ed2a296c505dbbe5fe289d417c6c1779f5b",
-      "title": "Labour Force, Australia methodology, October 2026 - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQTVlMi1VYTg3WjRfLW9SLTVPemJuSUVEZ3ZNWE1fWEdJcUtHNWV6ZFpJOVlvX3d3Y0VNbzB2TWc2ME9rMEJTZnliQlpnVkRHTkl2ZkZEQVdoX1RtbW83MjFvVWVUWEVsUE1DajNKcjh6TUJfMG1IYmU2UmFlVWZYaEZGa1ZiOUU?oc=5",
+      "id": "a907d0e025347f5f8e4b1d87f7ef2cb6b6a15ac223ad9dff628222d6ea386517",
+      "sha256": "a907d0e025347f5f8e4b1d87f7ef2cb6b6a15ac223ad9dff628222d6ea386517",
+      "title": "Enquiries - Australian Bureau of Statistics - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPODdXbUllNGpMcFh3dkNPQnNqa28wbHh6RU1aMFcwMERHbzl5SDVQdC1LbGUwaktGVTFCQklZc1k1OXJ4Z0U0eTNuR0JxdGJwRVp3dWNVbGNtUnU5X0VkaERqdGkzbmhJUTVjc2ppSVIyVFgxX2QxMnVuVzJ5ekNtNjF5M1ptemVsalU4d2t4bmd5cFptNFN3elRWbEIxOG16YmNuS0p1WGc3b2lldElpcW1WNllyM0dLU3c?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -23273,10 +23251,10 @@
       "z": null
     },
     {
-      "id": "a907d0e025347f5f8e4b1d87f7ef2cb6b6a15ac223ad9dff628222d6ea386517",
-      "sha256": "a907d0e025347f5f8e4b1d87f7ef2cb6b6a15ac223ad9dff628222d6ea386517",
-      "title": "Enquiries - Australian Bureau of Statistics - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPODdXbUllNGpMcFh3dkNPQnNqa28wbHh6RU1aMFcwMERHbzl5SDVQdC1LbGUwaktGVTFCQklZc1k1OXJ4Z0U0eTNuR0JxdGJwRVp3dWNVbGNtUnU5X0VkaERqdGkzbmhJUTVjc2ppSVIyVFgxX2QxMnVuVzJ5ekNtNjF5M1ptemVsalU4d2t4bmd5cFptNFN3elRWbEIxOG16YmNuS0p1WGc3b2lldElpcW1WNllyM0dLU3c?oc=5",
+      "id": "a20cced66c4cb881e0e2a4f244146ed2a296c505dbbe5fe289d417c6c1779f5b",
+      "sha256": "a20cced66c4cb881e0e2a4f244146ed2a296c505dbbe5fe289d417c6c1779f5b",
+      "title": "Labour Force, Australia methodology, October 2026 - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQTVlMi1VYTg3WjRfLW9SLTVPemJuSUVEZ3ZNWE1fWEdJcUtHNWV6ZFpJOVlvX3d3Y0VNbzB2TWc2ME9rMEJTZnliQlpnVkRHTkl2ZkZEQVdoX1RtbW83MjFvVWVUWEVsUE1DajNKcjh6TUJfMG1IYmU2UmFlVWZYaEZGa1ZiOUU?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -25991,36 +25969,6 @@
       "z": null
     },
     {
-      "id": "285282c4f8dc36e25d4bc55ea880efd17a7210c4d2fe612c366499d2cb9142d5",
-      "sha256": "285282c4f8dc36e25d4bc55ea880efd17a7210c4d2fe612c366499d2cb9142d5",
-      "title": "Economic forecast for Malta - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPY0NJZm1Ua292SXFTanFEeVFwMnNmcnk5dG0zM2ppbDE5X25ZWUgwVnQwS3Z4WGxCYmtsSTc4LXRiWVdOTWdkXzI5X1JVR2V3ZnBZZjhJNlZzVmx1azdpSzhCSnQ4YTJId3hZX293U1Z2ajRPX09CNEU0YnRkRDZILTZoTVJCZWpmWHlHUFE1ei1ORDFsYnp0cXJQMjRlTmVUTE1oZzZlOHlNNnVfc0V0WEM2OV9fbFFOMDJiZ1VpbWJtaFQ4b0FocUU1bHpTUXJuNldKTnQ2bE1mSGpyNjZoUjB3?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "6bd6e2d1034903a93b190ead3843cf8381694a61a9490c09ebb578b873a938ec",
       "sha256": "6bd6e2d1034903a93b190ead3843cf8381694a61a9490c09ebb578b873a938ec",
       "title": "Labour productivity, UK: July to September 2026 - Office for National Statistics",
@@ -26045,6 +25993,36 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "285282c4f8dc36e25d4bc55ea880efd17a7210c4d2fe612c366499d2cb9142d5",
+      "sha256": "285282c4f8dc36e25d4bc55ea880efd17a7210c4d2fe612c366499d2cb9142d5",
+      "title": "Economic forecast for Malta - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPY0NJZm1Ua292SXFTanFEeVFwMnNmcnk5dG0zM2ppbDE5X25ZWUgwVnQwS3Z4WGxCYmtsSTc4LXRiWVdOTWdkXzI5X1JVR2V3ZnBZZjhJNlZzVmx1azdpSzhCSnQ4YTJId3hZX293U1Z2ajRPX09CNEU0YnRkRDZILTZoTVJCZWpmWHlHUFE1ei1ORDFsYnp0cXJQMjRlTmVUTE1oZzZlOHlNNnVfc0V0WEM2OV9fbFFOMDJiZ1VpbWJtaFQ4b0FocUU1bHpTUXJuNldKTnQ2bE1mSGpyNjZoUjB3?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -30453,6 +30431,36 @@
       "z": null
     },
     {
+      "id": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
+      "sha256": "f386c1afda63d0d0e9d09bbae2f595651e5b6113af53dc9f4812badae92eccd0",
+      "title": "[sdg_08_10] Real GDP per capita - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0bDdrSXBtVUdsZWJmOEJxSmJ4Z1ZTRU1YbWJ1eWZweGZjdmJ2WnFiZzN5S0FMQUlEU1FVQ0x2R0ZuOE9rbEpNOFhiTXhCN3RfSVhldi1TNWZOWGxGNC04UWFLdHM3NG5LX1N0dmw1Wmtub0xOQTVuTHhzeGRTVVk?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T19:18:36.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "f49ed5a7c56fe2fe53d46fa4a78fdf857a4404791b7fd887261166525cd70be1",
       "sha256": "f49ed5a7c56fe2fe53d46fa4a78fdf857a4404791b7fd887261166525cd70be1",
       "title": "Top Picks - BLS Data - Bureau of Labor Statistics - Bureau of Labor Statistics (.gov)",
@@ -30695,36 +30703,6 @@
       "z": null
     },
     {
-      "id": "a7b7d7175a31c7c03a365042f8308212facf8945816b4bf03688bff13591d382",
-      "sha256": "a7b7d7175a31c7c03a365042f8308212facf8945816b4bf03688bff13591d382",
-      "title": "[sdg_08_10] Real GDP per capita - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUlI4RWVaTzRPc3VIaHVJOEVsZ3FqZml6ZWNVMGdkZFFzdjVCSGRrM1pNTlBVajRTMlc3ZFU3dEtTOUluemNNeGxpR1l3WTRhc3FNa0hkRUZjMGFwb01zczJkZG5HbF9sVXUtVkZCZnVsRjFGQjlIeUt5ZjYyZ0JpWWs5Q3M?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "sha256": "71bb20e9b6f715b9271990bab539e3741197ea42ecb788c15df5f138442d8924",
       "title": "[nama_10_a10] Gross value added and income by main industry (NACE Rev.2 ) - annual data - European Commission",
@@ -30747,38 +30725,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "107cda82e466df3844e262ce60f92428a9735f589ddbe57a4788321fcdbd511f",
-      "sha256": "107cda82e466df3844e262ce60f92428a9735f589ddbe57a4788321fcdbd511f",
-      "title": "Lending indicators, September Quarter 2026 - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ3VQbXZyWEpLX0VwN0Z2UUs3TlZUQjZCU1BqWjZiQVBhRkdCT1Q4RF90RUl1TFNTdlFpYVkyVGxqUmw5WXhkNjB3dkdvaWhWbjFtRWFjdmJLWVllLThVaHpfX0h3cnY3dFBrWlVORlpnNUhZUkhxOTVoYmp5YUg5dmJva25xVmltOHAw?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-11T08:00:00.000Z",
-      "currencies": [
-        "AUD",
-        "USD"
-      ],
-      "divisas": [
-        "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -30819,10 +30765,10 @@
       "z": null
     },
     {
-      "id": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
-      "sha256": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
-      "title": "2026 Census Employment Collection Notice - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbHgyVzlLYkg2OW5WSXh5T1M1N1p1VVliZnBxcWhCSmlJSXJMdWlvdFRoN0tDUy1KTF9uM1ZPU01jem5Na3J0UUQ2bVRfZ1F6OTN2V3BJalZuNDViOHlPYTJuT3Z0NDBoVENIeGVxWFRYcGpsaS1yMTVjYVo4NkRMWGVDb2FUUlg2bWRfR18zN09fZlZIQkdkNUVRaDBIbFRrb1MzNHA4QVk2cjB6cm5Rb3hUMTVWZkRFNGNv?oc=5",
+      "id": "107cda82e466df3844e262ce60f92428a9735f589ddbe57a4788321fcdbd511f",
+      "sha256": "107cda82e466df3844e262ce60f92428a9735f589ddbe57a4788321fcdbd511f",
+      "title": "Lending indicators, September Quarter 2026 - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ3VQbXZyWEpLX0VwN0Z2UUs3TlZUQjZCU1BqWjZiQVBhRkdCT1Q4RF90RUl1TFNTdlFpYVkyVGxqUmw5WXhkNjB3dkdvaWhWbjFtRWFjdmJLWVllLThVaHpfX0h3cnY3dFBrWlVORlpnNUhZUkhxOTVoYmp5YUg5dmJva25xVmltOHAw?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -30835,12 +30781,11 @@
         "AUD",
         "USD"
       ],
-      "category": "Inflacion_Empleo",
+      "category": "Fiscal",
       "categories": [
-        "Inflacion_Empleo",
         "Fiscal"
       ],
-      "legacy_category": "dato_macro",
+      "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -30873,6 +30818,39 @@
         "Fiscal"
       ],
       "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
+      "sha256": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
+      "title": "2026 Census Employment Collection Notice - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbHgyVzlLYkg2OW5WSXh5T1M1N1p1VVliZnBxcWhCSmlJSXJMdWlvdFRoN0tDUy1KTF9uM1ZPU01jem5Na3J0UUQ2bVRfZ1F6OTN2V3BJalZuNDViOHlPYTJuT3Z0NDBoVENIeGVxWFRYcGpsaS1yMTVjYVo4NkRMWGVDb2FUUlg2bWRfR18zN09fZlZIQkdkNUVRaDBIbFRrb1MzNHA4QVk2cjB6cm5Rb3hUMTVWZkRFNGNv?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-11T08:00:00.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
