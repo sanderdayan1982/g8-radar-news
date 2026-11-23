@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T21:42:41.775Z",
+  "generated_at": "2026-11-23T21:47:47.380Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -18,37 +18,37 @@
     "USD": {
       "count_72h": 232,
       "count_official_45d": 339,
-      "last_item_at": "2026-11-23T21:40:24.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "last_item_at": "2026-11-23T21:43:05.000Z",
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "EUR": {
       "count_72h": 48,
       "count_official_45d": 193,
       "last_item_at": "2026-11-23T19:08:04.000Z",
-      "hours_since_last": 2.6,
-      "hours_since_last_business": 2.6,
+      "hours_since_last": 2.7,
+      "hours_since_last_business": 2.7,
       "silence": false
     },
     "GBP": {
       "count_72h": 32,
       "count_official_45d": 112,
       "last_item_at": "2026-11-23T16:36:05.000Z",
-      "hours_since_last": 5.1,
-      "hours_since_last_business": 5.1,
+      "hours_since_last": 5.2,
+      "hours_since_last_business": 5.2,
       "silence": false
     },
     "JPY": {
       "count_72h": 31,
       "count_official_45d": 95,
       "last_item_at": "2026-11-23T21:30:29.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "hours_since_last": 0.3,
+      "hours_since_last_business": 0.3,
       "silence": false
     },
     "CHF": {
-      "count_72h": 110,
+      "count_72h": 111,
       "count_official_45d": 16,
       "last_item_at": "2026-11-23T21:03:12.000Z",
       "hours_since_last": 0.7,
@@ -59,16 +59,16 @@
       "count_72h": 18,
       "count_official_45d": 8,
       "last_item_at": "2026-11-23T21:14:26.000Z",
-      "hours_since_last": 0.5,
-      "hours_since_last_business": 0.5,
+      "hours_since_last": 0.6,
+      "hours_since_last_business": 0.6,
       "silence": false
     },
     "AUD": {
       "count_72h": 83,
       "count_official_45d": 93,
       "last_item_at": "2026-11-23T19:16:42.000Z",
-      "hours_since_last": 2.4,
-      "hours_since_last_business": 2.4,
+      "hours_since_last": 2.5,
+      "hours_since_last_business": 2.5,
       "silence": false
     },
     "NZD": {
@@ -83,8 +83,8 @@
       "count_72h": 7,
       "count_official_45d": 0,
       "last_item_at": "2026-11-23T19:10:28.000Z",
-      "hours_since_last": 2.5,
-      "hours_since_last_business": 2.5
+      "hours_since_last": 2.6,
+      "hours_since_last_business": 2.6
     }
   },
   "risk_map": [
@@ -97,14 +97,14 @@
           "lock_class": "TIER1_DATO",
           "title": "Core PCE Price Index m/m",
           "time": "2026-11-25T13:30:00.000Z",
-          "hours_until": 39.8,
+          "hours_until": 39.7,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Prelim GDP q/q",
           "time": "2026-11-25T13:30:00.000Z",
-          "hours_until": 39.8,
+          "hours_until": 39.7,
           "retirar_limitadas": false
         }
       ],
@@ -409,7 +409,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 19.7,
+          "hours_until": 19.6,
           "retirar_limitadas": false
         }
       ],
@@ -456,21 +456,21 @@
           "lock_class": "TIER1_DATO",
           "title": "CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 26.8,
+          "hours_until": 26.7,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "CPI y/y",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 26.8,
+          "hours_until": 26.7,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Trimmed Mean CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 26.8,
+          "hours_until": 26.7,
           "retirar_limitadas": false
         }
       ],
@@ -951,21 +951,6 @@
   ],
   "agenda_window": [
     {
-      "id": "88fc68b0886b6568",
-      "currency": "NZD",
-      "title": "Core Retail Sales q/q",
-      "event_at": "2026-11-22T21:45:00.000Z",
-      "impact": "Low",
-      "actual": null,
-      "forecast": "0.8%",
-      "previous": "0.7%",
-      "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
-      "lock_class": null,
-      "lock_level": "NINGUNO",
-      "retirar_limitadas": false
-    },
-    {
       "id": "f1c02bd46b04d2e9",
       "currency": "NZD",
       "title": "Retail Sales q/q",
@@ -975,7 +960,7 @@
       "forecast": "0.5%",
       "previous": "-0.5%",
       "hours_from_now": -24,
-      "window_status": "✓ POST-EVENTO",
+      "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
       "retirar_limitadas": false
@@ -989,7 +974,7 @@
       "actual": "48.7",
       "forecast": null,
       "previous": "49.7",
-      "hours_from_now": -23.7,
+      "hours_from_now": -23.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1004,7 +989,7 @@
       "actual": "46.2",
       "forecast": null,
       "previous": "47.8",
-      "hours_from_now": -23.7,
+      "hours_from_now": -23.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1019,7 +1004,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -21.7,
+      "hours_from_now": -21.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1064,7 +1049,7 @@
       "actual": "55",
       "forecast": "54.1",
       "previous": "54.2",
-      "hours_from_now": -13.2,
+      "hours_from_now": -13.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1079,7 +1064,7 @@
       "actual": "54",
       "forecast": "52.4",
       "previous": "51.7",
-      "hours_from_now": -13.2,
+      "hours_from_now": -13.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1094,7 +1079,7 @@
       "actual": "52.9",
       "forecast": "52.7",
       "previous": "52.4",
-      "hours_from_now": -12.7,
+      "hours_from_now": -12.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1109,7 +1094,7 @@
       "actual": "51.2",
       "forecast": "51.8",
       "previous": "51.7",
-      "hours_from_now": -12.7,
+      "hours_from_now": -12.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1124,7 +1109,7 @@
       "actual": "52.7",
       "forecast": "53.0",
       "previous": "52.8",
-      "hours_from_now": -12.2,
+      "hours_from_now": -12.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1139,7 +1124,7 @@
       "actual": "52",
       "forecast": "53.0",
       "previous": "53.1",
-      "hours_from_now": -12.2,
+      "hours_from_now": -12.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1154,7 +1139,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -8.7,
+      "hours_from_now": -8.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1169,7 +1154,7 @@
       "actual": null,
       "forecast": null,
       "previous": "8.7%",
-      "hours_from_now": -8.2,
+      "hours_from_now": -8.3,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1214,7 +1199,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.7,
+      "hours_from_now": -0.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1229,7 +1214,7 @@
       "actual": null,
       "forecast": "53.5",
       "previous": "53.3",
-      "hours_from_now": 2.8,
+      "hours_from_now": 2.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1244,7 +1229,7 @@
       "actual": null,
       "forecast": "90.5",
       "previous": "90.2",
-      "hours_from_now": 11.3,
+      "hours_from_now": 11.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1259,7 +1244,7 @@
       "actual": null,
       "forecast": "-27",
       "previous": "-10",
-      "hours_from_now": 13.3,
+      "hours_from_now": 13.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1274,7 +1259,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 14.8,
+      "hours_from_now": 14.7,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1304,7 +1289,7 @@
       "actual": null,
       "forecast": "-9.4",
       "previous": "-9.8",
-      "hours_from_now": 16.3,
+      "hours_from_now": 16.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1319,7 +1304,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 16.3,
+      "hours_from_now": 16.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1334,7 +1319,7 @@
       "actual": null,
       "forecast": "2.7%",
       "previous": "2.7%",
-      "hours_from_now": 16.3,
+      "hours_from_now": 16.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1349,7 +1334,7 @@
       "actual": null,
       "forecast": "92.4",
       "previous": "91.7",
-      "hours_from_now": 17.3,
+      "hours_from_now": 17.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1364,7 +1349,7 @@
       "actual": null,
       "forecast": "-2",
       "previous": "-2",
-      "hours_from_now": 17.3,
+      "hours_from_now": 17.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1379,7 +1364,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 19.7,
+      "hours_from_now": 19.6,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1394,7 +1379,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 23.8,
+      "hours_from_now": 23.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1409,7 +1394,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 26.1,
+      "hours_from_now": 26,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1424,7 +1409,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.8%",
-      "hours_from_now": 26.8,
+      "hours_from_now": 26.7,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1439,7 +1424,7 @@
       "actual": null,
       "forecast": "4.7%",
       "previous": "4.3%",
-      "hours_from_now": 26.8,
+      "hours_from_now": 26.7,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1454,7 +1439,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.3%",
-      "hours_from_now": 26.8,
+      "hours_from_now": 26.7,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1469,7 +1454,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "-2.1%",
-      "hours_from_now": 26.8,
+      "hours_from_now": 26.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1484,7 +1469,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "2.4%",
-      "hours_from_now": 31.3,
+      "hours_from_now": 31.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1499,7 +1484,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.2%",
-      "hours_from_now": 33.3,
+      "hours_from_now": 33.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1514,7 +1499,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-15.3",
-      "hours_from_now": 35.3,
+      "hours_from_now": 35.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1529,7 +1514,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.37|1.1",
-      "hours_from_now": 37,
+      "hours_from_now": 36.9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1544,7 +1529,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.3%",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1559,7 +1544,7 @@
       "actual": null,
       "forecast": "3.5%",
       "previous": "3.4%",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1574,7 +1559,7 @@
       "actual": null,
       "forecast": "2.3%",
       "previous": "2.3%",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1589,7 +1574,7 @@
       "actual": null,
       "forecast": "0.5%",
       "previous": "0.5%",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1604,7 +1589,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "1.8%",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1619,7 +1604,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.2%",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1634,7 +1619,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.5%",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1649,7 +1634,7 @@
       "actual": null,
       "forecast": "201K",
       "previous": "203K",
-      "hours_from_now": 39.8,
+      "hours_from_now": 39.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1664,7 +1649,7 @@
       "actual": null,
       "forecast": "650K",
       "previous": "676K",
-      "hours_from_now": 41.3,
+      "hours_from_now": 41.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1679,7 +1664,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.4M",
-      "hours_from_now": 41.8,
+      "hours_from_now": 41.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1694,7 +1679,7 @@
       "actual": null,
       "forecast": "-19B",
       "previous": "20B",
-      "hours_from_now": 43.3,
+      "hours_from_now": 43.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1709,7 +1694,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.3,
+      "hours_from_now": 45.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2263,6 +2248,36 @@
     }
   },
   "items": [
+    {
+      "id": "bd0018f1092ba9d997ddb5d30fdb99626d2d2a6f929298cb27e99f296cd536e5",
+      "sha256": "bd0018f1092ba9d997ddb5d30fdb99626d2d2a6f929298cb27e99f296cd536e5",
+      "title": "DIRECTO TRUMP: AMENAZA CON ATACAR IRÁN EN 2027, HABLA CON ISRAEL Y VUELTA DE JENSEN HUANG A NVIDIA",
+      "url": "https://t.me/negociostv/60739",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T21:43:05.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "9db4e64c13bdcaee0809a19a2165f8be6f3febc2893d7290ce8de5faee56d8f1",
       "sha256": "9db4e64c13bdcaee0809a19a2165f8be6f3febc2893d7290ce8de5faee56d8f1",
@@ -12864,6 +12879,37 @@
       "z": null
     },
     {
+      "id": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
+      "sha256": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
+      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLTYzclN6U3ZjQ28xdVZhWTFXZE9kX05keFNoZDhwYWxrdENweXB5akNpQTRjQkJFWnRrNmxObnVENE10ZVFTSGF5WmNmYWxIdnNUS3gxQVA2RGM3aHpnTWpoNFdoVWwwdUVDQmZDemNKRGhqQTk0NmlQRzdSdXQ3ckY4ZzVadWVJcHZZMWpZSGtsSTVoTG9nRVhjamZJZHVydllmc0lhajDSAagBQVVfeXFMUC02M3JTelN2Y0NvMXVWYVkxV2RPZF9OZHhTaGQ4cGFsa3RDcHlweWpDaUE0Y0JCRVp0azZsTm51RDRNdGVRU0hheVpjZmFsSHZzVEt4MUFQNkRjN2h6Z01qaDRXaFVsMHVFQ0JmQ3pjSkRoakE5NDZpUEc3UnV0N3JGOGc1WnVlSXB2WTFqWUhrbEk1aExvZ0VYY2pmSWR1cnZZZnNJYWow?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T03:29:27.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "sha256": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "title": "Tech stock sell-off deepens in Asia",
@@ -13098,37 +13144,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
-      "sha256": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
-      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV29PRzI1OHpIQ0pxMTNhS0MxbGF0RUdRb1MwTlI1NmZzaUNqckdzNW5lekd6aFZ4S3hkb2VYLU1HNmQ3OWlPZTgzaTRfMFdONkVEa0pncHVWanNxY01NTl9UTkg3SVlJNC1RdVpYbkFmNFpmem56ejB1cmEzYkpJcXl6cmZwRFVySGRKZnc2ZzQwbElzTmlaSU1HRXItdWt0Y2F30gGoAUFVX3lxTFAtNjNyU3pTdmNDbzF1VmFZMVdkT2RfTmR4U2hkOHBhbGt0Q3B5cHlqQ2lBNGNCQkVadGs2bE5udUQ0TXRlUVNIYXlaY2ZhbEh2c1RLeDFBUDZEYzdoemdNamg0V2hVbDB1RUNCZkN6Y0pEaGpBOTQ2aVBHN1J1dDdyRjhnNVp1ZUlwdlkxallIa2xJNWhMb2dFWGNqZklkdXJ2WWZzSWFqMA?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T02:29:00.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -14097,10 +14112,10 @@
       "z": null
     },
     {
-      "id": "eed9fb793003e33a1bb24f66abc2d6226668bfee371a1e1f8d2462f9ca70d80c",
-      "sha256": "eed9fb793003e33a1bb24f66abc2d6226668bfee371a1e1f8d2462f9ca70d80c",
-      "title": "Convert 50 CHF (Swiss Franc) to F (SynFutures) - Bybit",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MbnVhUHJQc1FRaVpuUklZczVYNUJ4VGF4cUVCTVVtcTQzU0VWZ2xCQWIwU0pqd1o3dVZ0TDJRRDJwQ1NqZ3JPczZJaFVzdjZFZC1kb2JuV0o?oc=5",
+      "id": "f59b9713855b466f4fa5ff7f604eb36001a536d4be253446cd719f03de235947",
+      "sha256": "f59b9713855b466f4fa5ff7f604eb36001a536d4be253446cd719f03de235947",
+      "title": "Convert 1 NIGHT (Midnight) to CHF (Swiss Franc) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VbFEycUxkYnpqQ25POEUybFhxV2M0eUM0QXlZRVJMd191RUQwdTdBck9NM3VjcE9PcDJERlpIYUxrNEtERzNScTB1VGVuUnppTnh2MDgtVEpCQQ?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
@@ -14148,6 +14163,36 @@
       "legacy_category": "mercado",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "eed9fb793003e33a1bb24f66abc2d6226668bfee371a1e1f8d2462f9ca70d80c",
+      "sha256": "eed9fb793003e33a1bb24f66abc2d6226668bfee371a1e1f8d2462f9ca70d80c",
+      "title": "Convert 50 CHF (Swiss Franc) to F (SynFutures) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9MbnVhUHJQc1FRaVpuUklZczVYNUJ4VGF4cUVCTVVtcTQzU0VWZ2xCQWIwU0pqd1o3dVZ0TDJRRDJwQ1NqZ3JPczZJaFVzdjZFZC1kb2JuV0o?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T00:00:00.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
       "actual": null,
@@ -15988,6 +16033,36 @@
       "z": null
     },
     {
+      "id": "5cc1fc49d0d877c358f128993607c86437ceba5bd30aaf663ddb05adba1d521f",
+      "sha256": "5cc1fc49d0d877c358f128993607c86437ceba5bd30aaf663ddb05adba1d521f",
+      "title": "Convert 1 CHF (Swiss Franc) to TRX (TRON) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8zN2JTVU5nenZndVdBWF8ycHpaVS1iT2tvX3BsdkdLVmFCbmE5TUhGbFZZWnFRSDFzX2x1OGRaR25Jd3BKbFZSZy14bndfSFFhblNQaWZMdw?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-22T15:26:44.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "3ab8287d53df0f657642cbafe5b1b2a6d18e798f97a569dfcc4b47bde6f19410",
       "sha256": "3ab8287d53df0f657642cbafe5b1b2a6d18e798f97a569dfcc4b47bde6f19410",
       "title": "Convert 1 TRX (TRON) to CHF (Swiss Franc) - Bybit",
@@ -16560,6 +16635,38 @@
       "z": null
     },
     {
+      "id": "4f11d711b10ad3e30583fa06215b838fcdeb5db705b6bd7f8daf03b3a0100512",
+      "sha256": "4f11d711b10ad3e30583fa06215b838fcdeb5db705b6bd7f8daf03b3a0100512",
+      "title": "Convert 1 CHF (Swiss Franc) to PYUSD (PayPal USD) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ka01NNW5zY01ScjJWLVNEZHlPSW5CYU92MUVXZXRKNHhsZlpDbnNUU053MFgzZi1oWDQ5R09vMHZRejh0R0I1Tko4am5EamtkMUt0ekRKdEJIdw?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-22T10:40:05.000Z",
+      "currencies": [
+        "USD",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "1482ea4bf25163f9c5d8b230c4eeee1ca937fa21af4bfee1c6313473c15cd71d",
       "sha256": "1482ea4bf25163f9c5d8b230c4eeee1ca937fa21af4bfee1c6313473c15cd71d",
       "title": "Swiss Inflation Edges Higher; SNB Signals Watchful Pause - Briefs Finance",
@@ -16676,36 +16783,6 @@
       "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "facc669740a58ddac15663be5c8f930a8402c366bcc5b5f7bcddabdfef089e3b",
-      "sha256": "facc669740a58ddac15663be5c8f930a8402c366bcc5b5f7bcddabdfef089e3b",
-      "title": "Convert 1 CHF (Swiss Franc) to BTC (Bitcoin) - Bybit",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NcmlxOGd4LWx0RzlIczFhRXFHRmI0NVZwbGdWX2k3cXM5cmpDQkxHOVJEUTNCT09HckFxUXo4LUFlQXFDM0FvYmF3ZGVtbjRHTjV4Tml1TQ?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-22T10:01:20.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -17659,36 +17736,6 @@
       ],
       "divisas": [
         "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f59b9713855b466f4fa5ff7f604eb36001a536d4be253446cd719f03de235947",
-      "sha256": "f59b9713855b466f4fa5ff7f604eb36001a536d4be253446cd719f03de235947",
-      "title": "Convert 1 NIGHT (Midnight) to CHF (Swiss Franc) - Bybit",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5VbFEycUxkYnpqQ25POEUybFhxV2M0eUM0QXlZRVJMd191RUQwdTdBck9NM3VjcE9PcDJERlpIYUxrNEtERzNScTB1VGVuUnppTnh2MDgtVEpCQQ?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-22T05:00:52.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
       ],
       "category": "BC",
       "categories": [
@@ -18879,38 +18926,6 @@
       "z": null
     },
     {
-      "id": "4f11d711b10ad3e30583fa06215b838fcdeb5db705b6bd7f8daf03b3a0100512",
-      "sha256": "4f11d711b10ad3e30583fa06215b838fcdeb5db705b6bd7f8daf03b3a0100512",
-      "title": "Convert 1 CHF (Swiss Franc) to PYUSD (PayPal USD) - Bybit",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9ka01NNW5zY01ScjJWLVNEZHlPSW5CYU92MUVXZXRKNHhsZlpDbnNUU053MFgzZi1oWDQ5R09vMHZRejh0R0I1Tko4am5EamtkMUt0ekRKdEJIdw?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-21T19:33:55.000Z",
-      "currencies": [
-        "USD",
-        "CHF"
-      ],
-      "divisas": [
-        "USD",
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "797fd734b31600b6d0deeda340512cb06a547ecefeaa20610b6ac6ccf3f3232a",
       "sha256": "797fd734b31600b6d0deeda340512cb06a547ecefeaa20610b6ac6ccf3f3232a",
       "title": "Iran's Revolutionary Guards say they struck two US bases in Bahrain, Fars News Agency reports citing its correspondent",
@@ -18934,6 +18949,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "facc669740a58ddac15663be5c8f930a8402c366bcc5b5f7bcddabdfef089e3b",
+      "sha256": "facc669740a58ddac15663be5c8f930a8402c366bcc5b5f7bcddabdfef089e3b",
+      "title": "Convert 1 CHF (Swiss Franc) to BTC (Bitcoin) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NcmlxOGd4LWx0RzlIczFhRXFHRmI0NVZwbGdWX2k3cXM5cmpDQkxHOVJEUTNCT09HckFxUXo4LUFlQXFDM0FvYmF3ZGVtbjRHTjV4Tml1TQ?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-21T19:23:56.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -22286,88 +22331,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b4df956bc8bf6073cb010ce4efbb561ba82247567c7190bb438855203df8e661",
-      "sha256": "b4df956bc8bf6073cb010ce4efbb561ba82247567c7190bb438855203df8e661",
-      "title": "Iran’s Foreign Minister Araghchi: Iran's red lines include enriched uranium not leaving the country, but I believe a fair solution can be reached.",
-      "url": "https://t.me/FinancialJuice/149132",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-20T21:47:40.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "24416357286c0b9249ee2f6d13a31282b9ebaf01d63633350383318da25379c9",
-      "sha256": "24416357286c0b9249ee2f6d13a31282b9ebaf01d63633350383318da25379c9",
-      "title": "Iran’s Foreign Minister Araghchi: Iran's first demand is for Trump to explicitly state that he wants an agreement.",
-      "url": "https://t.me/FinancialJuice/149131",
-      "source": "FinancialJuice",
-      "source_id": "financialjuice",
-      "source_type": "breaking",
-      "published_at": "2026-11-20T21:46:46.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Riesgo_Sistemico",
-      "categories": [
-        "Riesgo_Sistemico"
-      ],
-      "legacy_category": "geopolitica",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "7d337512e029225b57099b23195db0de508f3e87499c4e5cef4fc3eb5c52a528",
-      "sha256": "7d337512e029225b57099b23195db0de508f3e87499c4e5cef4fc3eb5c52a528",
-      "title": "\"Lo ocurrido en Polonia no es accidental: es guerra híbrida y provocación a la OTAN\". Uriarte",
-      "url": "https://t.me/negociostv/60709",
-      "source": "Negocios TV",
-      "source_id": "negociostv",
-      "source_type": "agencia",
-      "published_at": "2026-11-20T21:43:12.000Z",
-      "currencies": [],
-      "divisas": [],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -28437,38 +28400,6 @@
       "z": null
     },
     {
-      "id": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
-      "sha256": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
-      "title": "Regional gross value added (balanced) per head and income components - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNakRfdFRmSjZqWVVDWmlkQjNiZXg5b1gyWWkxUUNycUN1Q2xGLWpPQTB6eTNDZmc0QjhJOXg1emFqYXdjZHBCbzVtSjNoRHN5SFdLMllUc0RDOHY3NmJ6ckctUS1mM3gxcUpTRFBFZzB1VG9lU3RhZE9rVTllZmItdXJFVWFqUkpnTmZBNTBDMENHSk43SnJZMFdPTFgzRDhHQzlUUEJzY2ZOWFhsdEJ5cGFWMjgtTkpQNmJGSWtMU0o?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "4c246f5f2df5ebae2b00ab2582e3dc706d4149b2f9fd13f6784dcd2a2d263bd7",
       "sha256": "4c246f5f2df5ebae2b00ab2582e3dc706d4149b2f9fd13f6784dcd2a2d263bd7",
       "title": "Announcement of Liquidity Enhancement Auction on November 20, 2026: Ministry of Finance - 財務省",
@@ -28546,6 +28477,38 @@
       ],
       "divisas": [
         "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
+      "sha256": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
+      "title": "Regional gross value added (balanced) per head and income components - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNakRfdFRmSjZqWVVDWmlkQjNiZXg5b1gyWWkxUUNycUN1Q2xGLWpPQTB6eTNDZmc0QjhJOXg1emFqYXdjZHBCbzVtSjNoRHN5SFdLMllUc0RDOHY3NmJ6ckctUS1mM3gxcUpTRFBFZzB1VG9lU3RhZE9rVTllZmItdXJFVWFqUkpnTmZBNTBDMENHSk43SnJZMFdPTFgzRDhHQzlUUEJzY2ZOWFhsdEJ5cGFWMjgtTkpQNmJGSWtMU0o?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
         "USD"
       ],
       "category": "Fiscal",
@@ -31912,36 +31875,6 @@
       "z": null
     },
     {
-      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
       "sha256": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
       "title": "Consumer Price Index, West Region — October 2026 - Bureau of Labor Statistics (.gov)",
@@ -32306,6 +32239,36 @@
       "sha256": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
       "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
