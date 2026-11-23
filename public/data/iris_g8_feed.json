@@ -3,13 +3,13 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T15:34:01.327Z",
+  "generated_at": "2026-11-23T15:34:54.388Z",
   "health": {
-    "sources_active": 33,
-    "sources_live": 33,
+    "sources_active": 34,
+    "sources_live": 34,
     "sources_cached": 0,
     "sources_total": 35,
-    "sources_empty": 2,
+    "sources_empty": 1,
     "sources_error": 0,
     "agenda_events_count": 73,
     "status": "DEGRADED"
@@ -59,8 +59,8 @@
       "count_72h": 23,
       "count_official_45d": 8,
       "last_item_at": "2026-11-23T13:31:08.000Z",
-      "hours_since_last": 2,
-      "hours_since_last_business": 2,
+      "hours_since_last": 2.1,
+      "hours_since_last_business": 2.1,
       "silence": false
     },
     "AUD": {
@@ -83,8 +83,8 @@
       "count_72h": 7,
       "count_official_45d": 0,
       "last_item_at": "2026-11-23T09:55:22.000Z",
-      "hours_since_last": 5.6,
-      "hours_since_last_business": 5.6
+      "hours_since_last": 5.7,
+      "hours_since_last_business": 5.7
     }
   },
   "risk_map": [
@@ -420,7 +420,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 25.9,
+          "hours_until": 25.8,
           "retirar_limitadas": false
         }
       ],
@@ -1449,7 +1449,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.9,
+      "hours_from_now": 25.8,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -4691,7 +4691,7 @@
       "source": "BoC",
       "source_id": "boc",
       "source_type": "oficial",
-      "published_at": "2026-11-23T13:25:21.000Z",
+      "published_at": "2026-11-23T13:25:01.000Z",
       "currencies": [
         "CAD"
       ],
@@ -25242,6 +25242,39 @@
       "z": null
     },
     {
+      "id": "ceaea3ba9caf9e5211ef3ad5ddc83a88c7d26fc28ca899d5846209cedc86ab36",
+      "sha256": "ceaea3ba9caf9e5211ef3ad5ddc83a88c7d26fc28ca899d5846209cedc86ab36",
+      "title": "Consumer price inflation, UK: October 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMi1tamgxZUpnR2RmODcwZmF2M1dudXV2RjV1MHpsOU5yb2Jnazl3RnM1UFBsb3lwb2t1SkN6RnVUd0hpOFNSZzI0dUwyM050YVBLR24yVXhwM2dsSU1PTWlKSGJGbDZTdWpYRGkwWGZCZjZnZWlxZFFRS09XY1pQem1LUlByN0hHd2FqcUxxV2RWVWpGVFlYRkItNWhtV0Jid1E?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-18T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "90b22e324b16e1a1424606288e27897eff8b12dc225b96de3bda5ad679c97c67",
       "sha256": "90b22e324b16e1a1424606288e27897eff8b12dc225b96de3bda5ad679c97c67",
       "title": "Producer price inflation, UK: October 2026 - Office for National Statistics",
@@ -25395,39 +25428,6 @@
       "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1236824312d1231fec2c21264283b4f1f37c920457147074734a32b6e5ed5ea2",
-      "sha256": "1236824312d1231fec2c21264283b4f1f37c920457147074734a32b6e5ed5ea2",
-      "title": "Consumer price inflation, UK: October 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9UTDk0MEVXNFlCQUFVMm1peWlmYUpUaXdyQUtxOGJSZGEzSEVxdVVhbjc4SVF5RkZKSFBkVFJqWGhGRTlibGtRLXcxQjlsQy1INnFtQlZDblk5QWt2N1FISjhJb0dUYmlwM0VZZUdZUE5FWWx3OHc?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-18T07:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo",
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -29043,10 +29043,10 @@
       "z": null
     },
     {
-      "id": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
-      "sha256": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
-      "title": "Regional gross domestic product: local authorities - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaUo0MjBRQXdUZ2xVRzR0VXgtSlc0bFdHcXQwRmdpSlRKOW9kTUJtd3BIVzVyWUZacWEtUTVlV09UMkN4cnBZcXVWUkJCajNLZFZ5azZEMDJUVHhhaGg2UDdYbmJhYVY4d25JaEhucW5oaHJQeXhTbHdtOW9Fcy1RbEI1VkhJU3hKWEo1S0p5YVFrLTJLN19aa2VaSVppcTdlcGFMNm9CYVhLOXlQ?oc=5",
+      "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
+      "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
+      "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -29298,6 +29298,38 @@
       "z": null
     },
     {
+      "id": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
+      "sha256": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
+      "title": "Regional gross domestic product: local authorities - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaUo0MjBRQXdUZ2xVRzR0VXgtSlc0bFdHcXQwRmdpSlRKOW9kTUJtd3BIVzVyWUZacWEtUTVlV09UMkN4cnBZcXVWUkJCajNLZFZ5azZEMDJUVHhhaGg2UDdYbmJhYVY4d25JaEhucW5oaHJQeXhTbHdtOW9Fcy1RbEI1VkhJU3hKWEo1S0p5YVFrLTJLN19aa2VaSVppcTdlcGFMNm9CYVhLOXlQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4cb1a3d477aff6c3eea38689d409bc3e280333a7f694e0765b79469ad540d6bf",
       "sha256": "4cb1a3d477aff6c3eea38689d409bc3e280333a7f694e0765b79469ad540d6bf",
       "title": "EU economy greenhouse gas emissions: -0.5% in Q2 2026 - European Commission",
@@ -29441,38 +29473,6 @@
       "legacy_category": "mercado",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
-      "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
-      "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
