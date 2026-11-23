@@ -1,30 +1,37 @@
 {
   "schema": "radar-status/v1",
-  "last_check_at": "2026-11-23T14:53:08.462Z",
-  "feed_generated_at": "2026-11-23T14:53:08.404Z",
+  "last_check_at": "2026-11-23T14:58:17.557Z",
+  "feed_generated_at": "2026-11-23T14:58:17.502Z",
   "wrote_full_feed": true,
-  "new_items": 2,
+  "new_items": 5,
   "sources": {
-    "ok": 33,
+    "ok": 32,
     "cached": 0,
     "empty": 2,
-    "error": 0,
+    "error": 1,
     "total": 35
   },
   "failing_sources": [
+    {
+      "id": "fed",
+      "status": "error",
+      "last_error": "HTTP 404",
+      "last_success_at": "2026-11-23T14:53:04.854Z",
+      "consecutive_failures": 1
+    },
     {
       "id": "nz-treasury",
       "status": "empty_feed",
       "last_error": "HTTP null con 0 titulares extraídos",
       "last_success_at": "2026-11-23T14:36:49.768Z",
-      "consecutive_failures": 4
+      "consecutive_failures": 5
     },
     {
       "id": "snb-bills",
       "status": "empty_feed",
       "last_error": "HTTP 200 con 0 titulares extraídos",
       "last_success_at": "2026-11-13T16:57:08.173Z",
-      "consecutive_failures": 2449
+      "consecutive_failures": 2450
     }
   ],
   "calendar_events": 73,
