@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T07:09:55.019Z",
+  "generated_at": "2026-11-23T07:15:00.219Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -16,19 +16,19 @@
   },
   "coverage": {
     "USD": {
-      "count_72h": 262,
+      "count_72h": 261,
       "count_official_45d": 334,
       "last_item_at": "2026-11-23T07:08:57.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "EUR": {
       "count_72h": 59,
       "count_official_45d": 189,
       "last_item_at": "2026-11-23T06:58:56.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "hours_since_last": 0.3,
+      "hours_since_last_business": 0.3,
       "silence": false
     },
     "GBP": {
@@ -48,23 +48,23 @@
       "silence": false
     },
     "CHF": {
-      "count_72h": 106,
+      "count_72h": 107,
       "count_official_45d": 17,
       "last_item_at": "2026-11-23T06:20:15.000Z",
-      "hours_since_last": 0.8,
-      "hours_since_last_business": 0.8,
+      "hours_since_last": 0.9,
+      "hours_since_last_business": 0.9,
       "silence": false
     },
     "CAD": {
       "count_72h": 25,
       "count_official_45d": 8,
       "last_item_at": "2026-11-23T00:55:03.000Z",
-      "hours_since_last": 6.2,
-      "hours_since_last_business": 6.2,
+      "hours_since_last": 6.3,
+      "hours_since_last_business": 6.3,
       "silence": false
     },
     "AUD": {
-      "count_72h": 67,
+      "count_72h": 65,
       "count_official_45d": 91,
       "last_item_at": "2026-11-23T06:54:14.000Z",
       "hours_since_last": 0.3,
@@ -83,8 +83,8 @@
       "count_72h": 7,
       "count_official_45d": 0,
       "last_item_at": "2026-11-23T01:40:52.000Z",
-      "hours_since_last": 5.5,
-      "hours_since_last_business": 5.5
+      "hours_since_last": 5.6,
+      "hours_since_last_business": 5.6
     }
   },
   "risk_map": [
@@ -400,7 +400,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 34.3,
+          "hours_until": 34.2,
           "retirar_limitadas": false
         }
       ],
@@ -981,7 +981,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "0.7%",
-      "hours_from_now": -9.4,
+      "hours_from_now": -9.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -996,7 +996,7 @@
       "actual": "2.2%",
       "forecast": "0.5%",
       "previous": "-0.5%",
-      "hours_from_now": -9.4,
+      "hours_from_now": -9.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1056,7 +1056,7 @@
       "actual": null,
       "forecast": "49.8",
       "previous": "49.3",
-      "hours_from_now": 1.1,
+      "hours_from_now": 1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1071,7 +1071,7 @@
       "actual": null,
       "forecast": "47.4",
       "previous": "48.4",
-      "hours_from_now": 1.1,
+      "hours_from_now": 1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1206,7 +1206,7 @@
       "actual": null,
       "forecast": "54.5",
       "previous": "56.0",
-      "hours_from_now": 7.6,
+      "hours_from_now": 7.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1221,7 +1221,7 @@
       "actual": null,
       "forecast": "55.6",
       "previous": "57.9",
-      "hours_from_now": 7.6,
+      "hours_from_now": 7.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1311,7 +1311,7 @@
       "actual": null,
       "forecast": null,
       "previous": "23.8K",
-      "hours_from_now": 30.1,
+      "hours_from_now": 30,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1401,7 +1401,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 34.3,
+      "hours_from_now": 34.2,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1431,7 +1431,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 40.7,
+      "hours_from_now": 40.6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -3310,6 +3310,37 @@
       "z": null
     },
     {
+      "id": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
+      "sha256": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
+      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLTYzclN6U3ZjQ28xdVZhWTFXZE9kX05keFNoZDhwYWxrdENweXB5akNpQTRjQkJFWnRrNmxObnVENE10ZVFTSGF5WmNmYWxIdnNUS3gxQVA2RGM3aHpnTWpoNFdoVWwwdUVDQmZDemNKRGhqQTk0NmlQRzdSdXQ3ckY4ZzVadWVJcHZZMWpZSGtsSTVoTG9nRVhjamZJZHVydllmc0lhajDSAagBQVVfeXFMUC02M3JTelN2Y0NvMXVWYVkxV2RPZF9OZHhTaGQ4cGFsa3RDcHlweWpDaUE0Y0JCRVp0azZsTm51RDRNdGVRU0hheVpjZmFsSHZzVEt4MUFQNkRjN2h6Z01qaDRXaFVsMHVFQ0JmQ3pjSkRoakE5NDZpUEc3UnV0N3JGOGc1WnVlSXB2WTFqWUhrbEk1aExvZ0VYY2pmSWR1cnZZZnNJYWow?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T03:29:27.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "sha256": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "title": "Tech stock sell-off deepens in Asia",
@@ -3417,37 +3448,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
-      "sha256": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
-      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV29PRzI1OHpIQ0pxMTNhS0MxbGF0RUdRb1MwTlI1NmZzaUNqckdzNW5lekd6aFZ4S3hkb2VYLU1HNmQ3OWlPZTgzaTRfMFdONkVEa0pncHVWanNxY01NTl9UTkg3SVlJNC1RdVpYbkFmNFpmem56ejB1cmEzYkpJcXl6cmZwRFVySGRKZnc2ZzQwbElzTmlaSU1HRXItdWt0Y2F30gGoAUFVX3lxTFAtNjNyU3pTdmNDbzF1VmFZMVdkT2RfTmR4U2hkOHBhbGt0Q3B5cHlqQ2lBNGNCQkVadGs2bE5udUQ0TXRlUVNIYXlaY2ZhbEh2c1RLeDFBUDZEYzdoemdNamg0V2hVbDB1RUNCZkN6Y0pEaGpBOTQ2aVBHN1J1dDdyRjhnNVp1ZUlwdlkxallIa2xJNWhMb2dFWGNqZklkdXJ2WWZzSWFqMA?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T02:29:00.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -7807,6 +7807,36 @@
       "z": null
     },
     {
+      "id": "5d9fc80668d413c666c6f691bb7b2e65eebedfa1e48aef9d11c59dd49f318d04",
+      "sha256": "5d9fc80668d413c666c6f691bb7b2e65eebedfa1e48aef9d11c59dd49f318d04",
+      "title": "Convert 1 TOKEN (TokenFi) to CHF (Swiss Franc) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5TOUhGLWplYUpzT1lnZmlfNTBFMWo1NlI3MkR4cGRfLXQ1ZXlCUDI3TzE2ZXQyWlNYd09GWkltNFV3X2h6aFFXTmdRY3Q3Q3dtdFVoNWpFLWhlQQ?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-22T02:47:26.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "6219e484e4915c25d3518984857d2a9e9f6a82a2c7e1a243b95d712cca98c11a",
       "sha256": "6219e484e4915c25d3518984857d2a9e9f6a82a2c7e1a243b95d712cca98c11a",
       "title": "Australia’s Economy Faces Rising Recession Risk as Joblessness Hits 4.9% - JournalArta",
@@ -8106,18 +8136,20 @@
       "z": null
     },
     {
-      "id": "76a0080d441cce9395964b62d1cbd3bb96f51aab6f8b97a3ad693fdb0e8ba658",
-      "sha256": "76a0080d441cce9395964b62d1cbd3bb96f51aab6f8b97a3ad693fdb0e8ba658",
-      "title": "Convert 1 CHF (Swiss Franc) to USDT (Tether USDT) - Bybit",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lNDBmZGktWWliajU0RV9nMmlzRXNZOFA0eVRUU3F1X1lKNW5xclVnZ3hFeUVyaG5iMEstUXBMU0RUMlhtQzRUOGk3YUNqTGNVWnhSNXlCdkx6blk?oc=5",
+      "id": "ec8f9bdf25a97de210ee0ea8cfbdcab039192adcffb11d919654f6b2a9aba673",
+      "sha256": "ec8f9bdf25a97de210ee0ea8cfbdcab039192adcffb11d919654f6b2a9aba673",
+      "title": "Convert 100 CHF (Swiss Franc) to PYUSD (PayPal USD) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAzd3pncEhGTXhuODVxSzJMRENBVWRHOXpfYWktbGVyMW16eTVrb3RFWkNTVGczbEg5dWExNkZScVRoakpkV09faE15Z1hhRmpuMG91QUtRODVKVi1HTWhz?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
       "published_at": "2026-11-22T00:00:00.000Z",
       "currencies": [
+        "USD",
         "CHF"
       ],
       "divisas": [
+        "USD",
         "CHF"
       ],
       "category": "BC",
@@ -8136,10 +8168,10 @@
       "z": null
     },
     {
-      "id": "f6c3b00b9a5e1acc000ceaba5e99471466367166dc03ed799ec011672d6e3f55",
-      "sha256": "f6c3b00b9a5e1acc000ceaba5e99471466367166dc03ed799ec011672d6e3f55",
-      "title": "Convert 1 CHF (Swiss Franc) to BTC (Bitcoin) - Bybit",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CRktVTE9YRDE4RTA1ZkcwSS11RXh4V0FmRW9oUlJTZFZid1dGVXk2SENWcmtZQjVmZ0VyZ0Y3ZlZERXBjdjlweUx6OEhjU2t0eHp1WXpvdVRXZw?oc=5",
+      "id": "76a0080d441cce9395964b62d1cbd3bb96f51aab6f8b97a3ad693fdb0e8ba658",
+      "sha256": "76a0080d441cce9395964b62d1cbd3bb96f51aab6f8b97a3ad693fdb0e8ba658",
+      "title": "Convert 1 CHF (Swiss Franc) to USDT (Tether USDT) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9lNDBmZGktWWliajU0RV9nMmlzRXNZOFA0eVRUU3F1X1lKNW5xclVnZ3hFeUVyaG5iMEstUXBMU0RUMlhtQzRUOGk3YUNqTGNVWnhSNXlCdkx6blk?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
@@ -8777,6 +8809,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "facc669740a58ddac15663be5c8f930a8402c366bcc5b5f7bcddabdfef089e3b",
+      "sha256": "facc669740a58ddac15663be5c8f930a8402c366bcc5b5f7bcddabdfef089e3b",
+      "title": "Convert 1 CHF (Swiss Franc) to BTC (Bitcoin) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1NcmlxOGd4LWx0RzlIczFhRXFHRmI0NVZwbGdWX2k3cXM5cmpDQkxHOVJEUTNCT09HckFxUXo4LUFlQXFDM0FvYmF3ZGVtbjRHTjV4Tml1TQ?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-21T19:23:56.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -11315,38 +11377,6 @@
         "CHF"
       ],
       "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ec8f9bdf25a97de210ee0ea8cfbdcab039192adcffb11d919654f6b2a9aba673",
-      "sha256": "ec8f9bdf25a97de210ee0ea8cfbdcab039192adcffb11d919654f6b2a9aba673",
-      "title": "Convert 100 CHF (Swiss Franc) to PYUSD (PayPal USD) - Bybit",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAzd3pncEhGTXhuODVxSzJMRENBVWRHOXpfYWktbGVyMW16eTVrb3RFWkNTVGczbEg5dWExNkZScVRoakpkV09faE15Z1hhRmpuMG91QUtRODVKVi1HTWhz?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-21T00:00:00.000Z",
-      "currencies": [
-        "USD",
-        "CHF"
-      ],
-      "divisas": [
-        "USD",
         "CHF"
       ],
       "category": "BC",
@@ -22853,69 +22883,6 @@
       "z": 3.5
     },
     {
-      "id": "430849a157ee48fc7dd7819e9d658c99180d779a968d3cd5f212829107ed407d",
-      "sha256": "430849a157ee48fc7dd7819e9d658c99180d779a968d3cd5f212829107ed407d",
-      "title": "RBA’s Rate Pause: Premature Victory for Inflation? - Finance News Network",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNdDdOVktTczVIbm9mbEZlMFFCNDljMkxVZ2Y5Zm5ZTHlmV1ZfbWM1dUI0NDk2R25zRE5IaF94VDV1TUcwek9YRkZ6ZjUyZEtwWjFkaVdFWEFiV2VZN3paTTFjeXZHeVBDX1YtMUplYklPa1JMUnhPdThmcUJ4NFg1bg?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-20T07:14:09.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "C2",
-      "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "c22109c86f4a65bfe4df9d56d5731e0526ef90801c33ee96857ffb25ab72ad38",
-      "sha256": "c22109c86f4a65bfe4df9d56d5731e0526ef90801c33ee96857ffb25ab72ad38",
-      "title": "Steady China rates and stable US Dollar keep Australian Dollar subdued - www.tmgm.com",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxObjc2dFREdFRrVi1BczJFaDg0aE5OQWlWaWdTRF9DSHQzcXZPMUFUbjlLc3ctbXd2TFE4QjJkdG1WTnBRcXZfV3E0VnNSNS1XbkVwekxoSUNZQlVmWjR5NjU2Wi1rNzJhOVoxQjFfVW5BZG9MY0hNZFk3WF9Jd21Bc0NYeUE5dGRHT1Nyc1RGTjk5LWQ2VTh4ZjhtcFZ1aTBNNUE4VTJ3T0dNNmt0Tnh2X1ZsV0g2VEowNXZiSE1UX1lZMFlMaHk5SENNWC1kQ2dVUHMycVJ5OUtGaVU?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-20T07:10:31.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "79afcab4e05882e3bd184abfdf90b0a2999b42cd240f81a8fdc514486846fe62",
       "sha256": "79afcab4e05882e3bd184abfdf90b0a2999b42cd240f81a8fdc514486846fe62",
       "title": "Announcement of 2-year JGBs to Be Issued in December 2026 : Ministry of Finance - 財務省",
@@ -28173,10 +28140,10 @@
       "z": null
     },
     {
-      "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
-      "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
-      "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
+      "id": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
+      "sha256": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
+      "title": "Regional gross domestic product: local authorities - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaUo0MjBRQXdUZ2xVRzR0VXgtSlc0bFdHcXQwRmdpSlRKOW9kTUJtd3BIVzVyWUZacWEtUTVlV09UMkN4cnBZcXVWUkJCajNLZFZ5azZEMDJUVHhhaGg2UDdYbmJhYVY4d25JaEhucW5oaHJQeXhTbHdtOW9Fcy1RbEI1VkhJU3hKWEo1S0p5YVFrLTJLN19aa2VaSVppcTdlcGFMNm9CYVhLOXlQ?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -28428,10 +28395,10 @@
       "z": null
     },
     {
-      "id": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
-      "sha256": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
-      "title": "Regional gross domestic product: local authorities - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaUo0MjBRQXdUZ2xVRzR0VXgtSlc0bFdHcXQwRmdpSlRKOW9kTUJtd3BIVzVyWUZacWEtUTVlV09UMkN4cnBZcXVWUkJCajNLZFZ5azZEMDJUVHhhaGg2UDdYbmJhYVY4d25JaEhucW5oaHJQeXhTbHdtOW9Fcy1RbEI1VkhJU3hKWEo1S0p5YVFrLTJLN19aa2VaSVppcTdlcGFMNm9CYVhLOXlQ?oc=5",
+      "id": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
+      "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
+      "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -31806,6 +31773,36 @@
       "z": null
     },
     {
+      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
       "sha256": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
       "title": "Consumer Price Index, West Region — October 2026 - Bureau of Labor Statistics (.gov)",
@@ -32140,36 +32137,6 @@
       "sha256": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
       "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
