@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-23T00:26:57.267Z",
+  "generated_at": "2026-11-23T00:32:03.140Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -18,57 +18,57 @@
     "USD": {
       "count_72h": 264,
       "count_official_45d": 333,
-      "last_item_at": "2026-11-23T00:01:04.000Z",
-      "hours_since_last": 0.4,
-      "hours_since_last_business": 0.4,
+      "last_item_at": "2026-11-23T00:29:57.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "EUR": {
       "count_72h": 65,
       "count_official_45d": 189,
       "last_item_at": "2026-11-22T22:07:25.000Z",
-      "hours_since_last": 2.3,
-      "hours_since_last_business": 0.4,
+      "hours_since_last": 2.4,
+      "hours_since_last_business": 0.5,
       "silence": false
     },
     "GBP": {
       "count_72h": 42,
       "count_official_45d": 109,
       "last_item_at": "2026-11-22T12:02:25.000Z",
-      "hours_since_last": 12.4,
-      "hours_since_last_business": 0.4,
+      "hours_since_last": 12.5,
+      "hours_since_last_business": 0.5,
       "silence": false
     },
     "JPY": {
       "count_72h": 48,
       "count_official_45d": 94,
       "last_item_at": "2026-11-22T21:15:28.000Z",
-      "hours_since_last": 3.2,
-      "hours_since_last_business": 0.4,
+      "hours_since_last": 3.3,
+      "hours_since_last_business": 0.5,
       "silence": false
     },
     "CHF": {
-      "count_72h": 106,
+      "count_72h": 107,
       "count_official_45d": 17,
-      "last_item_at": "2026-11-23T00:15:52.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "last_item_at": "2026-11-23T00:29:57.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "CAD": {
       "count_72h": 26,
       "count_official_45d": 8,
       "last_item_at": "2026-11-22T16:36:06.000Z",
-      "hours_since_last": 7.8,
-      "hours_since_last_business": 0.4,
+      "hours_since_last": 7.9,
+      "hours_since_last_business": 0.5,
       "silence": false
     },
     "AUD": {
       "count_72h": 76,
       "count_official_45d": 90,
       "last_item_at": "2026-11-23T00:21:00.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "NZD": {
@@ -83,8 +83,8 @@
       "count_72h": 6,
       "count_official_45d": 0,
       "last_item_at": "2026-11-23T00:01:04.000Z",
-      "hours_since_last": 0.4,
-      "hours_since_last_business": 0.4
+      "hours_since_last": 0.5,
+      "hours_since_last_business": 0.5
     }
   },
   "risk_map": [
@@ -400,7 +400,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 41,
+          "hours_until": 40.9,
           "retirar_limitadas": false
         }
       ],
@@ -441,9 +441,31 @@
     },
     {
       "currency": "AUD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
-      "lock_events": [],
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
+      "lock_events": [
+        {
+          "lock_class": "TIER1_DATO",
+          "title": "CPI m/m",
+          "time": "2026-11-25T00:30:00.000Z",
+          "hours_until": 48,
+          "retirar_limitadas": false
+        },
+        {
+          "lock_class": "TIER1_DATO",
+          "title": "CPI y/y",
+          "time": "2026-11-25T00:30:00.000Z",
+          "hours_until": 48,
+          "retirar_limitadas": false
+        },
+        {
+          "lock_class": "TIER1_DATO",
+          "title": "Trimmed Mean CPI m/m",
+          "time": "2026-11-25T00:30:00.000Z",
+          "hours_until": 48,
+          "retirar_limitadas": false
+        }
+      ],
       "retirar_limitadas": false,
       "silence": false,
       "polymarket": [
@@ -474,7 +496,9 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "currency": "NZD",
@@ -652,12 +676,13 @@
     {
       "pair": "AUDUSD",
       "risk_level": "MEDIO",
-      "lock_level": "NINGUNO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "AUD",
         "quote": "USD"
       },
       "reasons": [
+        "dato de primer nivel entre 24 y 48 h",
         "geopolítica IRAN_ORIENTE_MEDIO 7 pp"
       ]
     },
@@ -725,13 +750,14 @@
     {
       "pair": "EURAUD",
       "risk_level": "MEDIO",
-      "lock_level": "NINGUNO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "EUR",
         "quote": "AUD"
       },
       "reasons": [
-        "geopolítica IRAN_ORIENTE_MEDIO 7 pp"
+        "geopolítica IRAN_ORIENTE_MEDIO 7 pp",
+        "dato de primer nivel entre 24 y 48 h"
       ]
     },
     {
@@ -785,13 +811,15 @@
     },
     {
       "pair": "GBPAUD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "GBP",
         "quote": "AUD"
       },
-      "reasons": []
+      "reasons": [
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "GBPNZD",
@@ -806,49 +834,54 @@
     {
       "pair": "AUDJPY",
       "risk_level": "MEDIO",
-      "lock_level": "NINGUNO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "AUD",
         "quote": "JPY"
       },
       "reasons": [
+        "dato de primer nivel entre 24 y 48 h",
         "geopolítica IRAN_ORIENTE_MEDIO 7 pp"
       ]
     },
     {
       "pair": "AUDCHF",
       "risk_level": "MEDIO",
-      "lock_level": "NINGUNO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "AUD",
         "quote": "CHF"
       },
       "reasons": [
+        "dato de primer nivel entre 24 y 48 h",
         "geopolítica IRAN_ORIENTE_MEDIO 7 pp"
       ]
     },
     {
       "pair": "AUDCAD",
       "risk_level": "MEDIO",
-      "lock_level": "NO_AMPLIAR",
+      "lock_level": "TIER1",
       "legs": {
         "base": "AUD",
         "quote": "CAD"
       },
       "reasons": [
+        "dato de primer nivel entre 24 y 48 h",
         "geopolítica IRAN_ORIENTE_MEDIO 7 pp",
         "discurso"
       ]
     },
     {
       "pair": "AUDNZD",
-      "risk_level": "BAJO",
-      "lock_level": "NINGUNO",
+      "risk_level": "MEDIO",
+      "lock_level": "TIER1",
       "legs": {
         "base": "AUD",
         "quote": "NZD"
       },
-      "reasons": []
+      "reasons": [
+        "dato de primer nivel entre 24 y 48 h"
+      ]
     },
     {
       "pair": "NZDJPY",
@@ -948,7 +981,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "0.7%",
-      "hours_from_now": -2.7,
+      "hours_from_now": -2.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -963,7 +996,7 @@
       "actual": "2.2%",
       "forecast": "0.5%",
       "previous": "-0.5%",
-      "hours_from_now": -2.7,
+      "hours_from_now": -2.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -978,7 +1011,7 @@
       "actual": "48.7",
       "forecast": null,
       "previous": "49.7",
-      "hours_from_now": -2.4,
+      "hours_from_now": -2.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -993,7 +1026,7 @@
       "actual": "46.2",
       "forecast": null,
       "previous": "47.8",
-      "hours_from_now": -2.4,
+      "hours_from_now": -2.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1008,7 +1041,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -0.4,
+      "hours_from_now": -0.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1023,7 +1056,7 @@
       "actual": null,
       "forecast": "49.8",
       "previous": "49.3",
-      "hours_from_now": 7.8,
+      "hours_from_now": 7.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1038,7 +1071,7 @@
       "actual": null,
       "forecast": "47.4",
       "previous": "48.4",
-      "hours_from_now": 7.8,
+      "hours_from_now": 7.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1053,7 +1086,7 @@
       "actual": null,
       "forecast": "54.1",
       "previous": "54.2",
-      "hours_from_now": 8.1,
+      "hours_from_now": 8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1068,7 +1101,7 @@
       "actual": null,
       "forecast": "52.4",
       "previous": "51.7",
-      "hours_from_now": 8.1,
+      "hours_from_now": 8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1083,7 +1116,7 @@
       "actual": null,
       "forecast": "52.7",
       "previous": "52.4",
-      "hours_from_now": 8.6,
+      "hours_from_now": 8.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1098,7 +1131,7 @@
       "actual": null,
       "forecast": "51.8",
       "previous": "51.7",
-      "hours_from_now": 8.6,
+      "hours_from_now": 8.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1113,7 +1146,7 @@
       "actual": null,
       "forecast": "53.0",
       "previous": "52.8",
-      "hours_from_now": 9.1,
+      "hours_from_now": 9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1128,7 +1161,7 @@
       "actual": null,
       "forecast": "53.0",
       "previous": "53.1",
-      "hours_from_now": 9.1,
+      "hours_from_now": 9,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1143,7 +1176,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 12.6,
+      "hours_from_now": 12.5,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1158,7 +1191,7 @@
       "actual": null,
       "forecast": null,
       "previous": "8.7%",
-      "hours_from_now": 13.1,
+      "hours_from_now": 13,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1173,7 +1206,7 @@
       "actual": null,
       "forecast": "54.5",
       "previous": "56.0",
-      "hours_from_now": 14.3,
+      "hours_from_now": 14.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1188,7 +1221,7 @@
       "actual": null,
       "forecast": "55.6",
       "previous": "57.9",
-      "hours_from_now": 14.3,
+      "hours_from_now": 14.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1203,7 +1236,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20.6,
+      "hours_from_now": 20.5,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1218,7 +1251,7 @@
       "actual": null,
       "forecast": "53.5",
       "previous": "53.3",
-      "hours_from_now": 24.1,
+      "hours_from_now": 24,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1233,7 +1266,7 @@
       "actual": null,
       "forecast": "90.6",
       "previous": "90.2",
-      "hours_from_now": 32.6,
+      "hours_from_now": 32.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1248,7 +1281,7 @@
       "actual": null,
       "forecast": "-24",
       "previous": "-10",
-      "hours_from_now": 34.6,
+      "hours_from_now": 34.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1263,7 +1296,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 36.1,
+      "hours_from_now": 36,
       "window_status": null,
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1278,7 +1311,7 @@
       "actual": null,
       "forecast": null,
       "previous": "23.8K",
-      "hours_from_now": 36.8,
+      "hours_from_now": 36.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1293,7 +1326,7 @@
       "actual": null,
       "forecast": "-9.3",
       "previous": "-9.8",
-      "hours_from_now": 37.6,
+      "hours_from_now": 37.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1308,7 +1341,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": 37.6,
+      "hours_from_now": 37.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1323,7 +1356,7 @@
       "actual": null,
       "forecast": "2.7%",
       "previous": "2.7%",
-      "hours_from_now": 37.6,
+      "hours_from_now": 37.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1338,7 +1371,7 @@
       "actual": null,
       "forecast": "92.1",
       "previous": "91.7",
-      "hours_from_now": 38.6,
+      "hours_from_now": 38.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1353,7 +1386,7 @@
       "actual": null,
       "forecast": "-3",
       "previous": "-2",
-      "hours_from_now": 38.6,
+      "hours_from_now": 38.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1368,7 +1401,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 41,
+      "hours_from_now": 40.9,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1383,7 +1416,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 45.1,
+      "hours_from_now": 45,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1398,7 +1431,67 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 47.4,
+      "hours_from_now": 47.3,
+      "window_status": null,
+      "lock_class": null,
+      "lock_level": "NINGUNO",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "b280badf40b3d204",
+      "currency": "AUD",
+      "title": "CPI m/m",
+      "event_at": "2026-11-25T00:30:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": "0.4%",
+      "previous": "0.8%",
+      "hours_from_now": 48,
+      "window_status": "TIER1",
+      "lock_class": "TIER1_DATO",
+      "lock_level": "TIER1",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "7d27d77005590890",
+      "currency": "AUD",
+      "title": "CPI y/y",
+      "event_at": "2026-11-25T00:30:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": "4.8%",
+      "previous": "4.3%",
+      "hours_from_now": 48,
+      "window_status": "TIER1",
+      "lock_class": "TIER1_DATO",
+      "lock_level": "TIER1",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "99d6a8f7e62fb61f",
+      "currency": "AUD",
+      "title": "Trimmed Mean CPI m/m",
+      "event_at": "2026-11-25T00:30:00.000Z",
+      "impact": "High",
+      "actual": null,
+      "forecast": "0.3%",
+      "previous": "0.3%",
+      "hours_from_now": 48,
+      "window_status": "TIER1",
+      "lock_class": "TIER1_DATO",
+      "lock_level": "TIER1",
+      "retirar_limitadas": false
+    },
+    {
+      "id": "570f2dc9c1ed8a0b",
+      "currency": "AUD",
+      "title": "Construction Work Done q/q",
+      "event_at": "2026-11-25T00:30:00.000Z",
+      "impact": "Low",
+      "actual": null,
+      "forecast": "0.8%",
+      "previous": "-2.1%",
+      "hours_from_now": 48,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1983,6 +2076,95 @@
       "z": null
     },
     {
+      "id": "095bd0e0ad371f95a3ef3661d3db5b23204101be59aca88ac1ad44098b255813",
+      "sha256": "095bd0e0ad371f95a3ef3661d3db5b23204101be59aca88ac1ad44098b255813",
+      "title": "The ai winners may not exist yet j p morgan warns as mega ipos flood the market",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T00:30:52.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "Riesgo_Sistemico",
+      "categories": [
+        "Riesgo_Sistemico"
+      ],
+      "legacy_category": "geopolitica",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "ef09ed7dedaeed8ad0844e858cf0f79749000c7cd2f0dad90cf2faca5ea9a585",
+      "sha256": "ef09ed7dedaeed8ad0844e858cf0f79749000c7cd2f0dad90cf2faca5ea9a585",
+      "title": "Swiss Franc Technical Outlook: USD/CHF Sharp Rebound Breaks October Downtrend - StoneX",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMGN6Zjcza2RUNm1vM3V5TlhQSkNEVkhCbFVJamNEYTA0akhUV1JSamplUTJYczVNaVNxdE42UWVMWnBETDRxODZaMlFRcG0zQjlsR0tqUGloYUVhTDhzeUlqMFNOT2VtaE1JYndzZkVjbHNSNmJQWHlmZy05T1RUNFByWXNYMEdDU2lVQ3RuejZ2anlIZUl2NzdsbkJDOWlJYkxWYjdzbElJZlo4bkxPSHZSZnpqTlp0YTMwV0ROWE9BUQ?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T00:29:57.000Z",
+      "currencies": [
+        "USD",
+        "CHF"
+      ],
+      "divisas": [
+        "USD",
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "analisis",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "0e502e41ab09e225107d14775497dad5df03ea459bbb0f97da71a9bf95a80ffa",
+      "sha256": "0e502e41ab09e225107d14775497dad5df03ea459bbb0f97da71a9bf95a80ffa",
+      "title": "SNB’s Martin: Closely watching for second-round inflation effects - FXStreet",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQVl6UjFJZzNWbDlQZHBrY0xXRTdlOG1MYW9DMlROVVM3Y0VEb1pNLUxYVF9DV0lMY1dDVFIyRVdXdlUxeXhYSnhval9KT29DZ3ZZSUFYR1ZaQ1ZWOG1pVXZ2VlpPZ3BnOVczZGRmTEQzV1hpcU8zUkp5MFRSNWVMSWJJSFZqVDJhZ01fLWVfMG52ZkxVbkZiQmFsWFRXWWdtNEFKQ3kwdTZFdw?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T00:25:26.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "C2",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "9a63972d9cbee020fcc60011154837fb6b495981e4239217beb117037c90630a",
       "sha256": "9a63972d9cbee020fcc60011154837fb6b495981e4239217beb117037c90630a",
       "title": "RBA modelling shows Labor’s CGT changes could boost inflation - AFR",
@@ -2181,38 +2363,6 @@
         "BC"
       ],
       "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ef09ed7dedaeed8ad0844e858cf0f79749000c7cd2f0dad90cf2faca5ea9a585",
-      "sha256": "ef09ed7dedaeed8ad0844e858cf0f79749000c7cd2f0dad90cf2faca5ea9a585",
-      "title": "Swiss Franc Technical Outlook: USD/CHF Sharp Rebound Breaks October Downtrend - StoneX",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMGN6Zjcza2RUNm1vM3V5TlhQSkNEVkhCbFVJamNEYTA0akhUV1JSamplUTJYczVNaVNxdE42UWVMWnBETDRxODZaMlFRcG0zQjlsR0tqUGloYUVhTDhzeUlqMFNOT2VtaE1JYndzZkVjbHNSNmJQWHlmZy05T1RUNFByWXNYMEdDU2lVQ3RuejZ2anlIZUl2NzdsbkJDOWlJYkxWYjdzbElJZlo4bkxPSHZSZnpqTlp0YTMwV0ROWE9BUQ?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-22T23:31:38.000Z",
-      "currencies": [
-        "USD",
-        "CHF"
-      ],
-      "divisas": [
-        "USD",
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "analisis",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -25869,10 +26019,10 @@
       "z": null
     },
     {
-      "id": "0bffbb13e193151fcdf5ed30e238236023a6f62660d90b6fbf5837aa794f3561",
-      "sha256": "0bffbb13e193151fcdf5ed30e238236023a6f62660d90b6fbf5837aa794f3561",
+      "id": "c00d642543fa64332efa0f252d828e4a779ab2616a7de65c74d1a6f9330b9a44",
+      "sha256": "c00d642543fa64332efa0f252d828e4a779ab2616a7de65c74d1a6f9330b9a44",
       "title": "Keynote address to Association of Superannuation Funds of Australia (ASFA) Conference, Melbourne - Treasury.gov.au",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNd3V0ZTJ4NU9ZY1NMZzNhaEwxY0xkbU84QzZveFZLdkZuUXd1SDhIcmh3anFOMlVCOXMtZUtlcWJHTkViRkViSzFnS2hZajg3eHoxT01XWnhfN0pZdC1Hd194TzNydHdaRWgxVEkxdDEtSDJUR2Q0S2U0eUhCU0phclVzdFJ0TjlXQ3JUSkVNVkZxdUNySUpfSEhEWkRxZkRMNU5aYlF4Mk5zYkQ0Wm5xYjdtT2w3ZXFlbk1taUF0dlJtNWNGTHotMw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNdjNQQmY1QlZsaGM0U2l4WV9iSUNIVU9MdUtkbDljVGdnbXhVdVVQN24wbUFITjBOb2FXX2hGQ1dramRGMXBVd3EwYVBZVDhPUXdIcUhfR1pvaXFvZC01cHBsV0JkU2N0SWttdUdIbzU1cW1QXzNHSHZGUnI0UUVMV19fZnpONmFEdjdJc3JWVmMwOTJ6WENySWZad1NiQzlKVkctMFVHaWhFYWZDRXpERzN5SGZGYUpNZk84aE9ySHVvWHo2cG9J?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -32916,36 +33066,6 @@
       "z": null
     },
     {
-      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
       "sha256": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
       "title": "Consumer Price Index, West Region — October 2026 - Bureau of Labor Statistics (.gov)",
@@ -33280,6 +33400,36 @@
       "sha256": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
       "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
