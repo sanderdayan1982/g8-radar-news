@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-24T11:21:20.602Z",
+  "generated_at": "2026-11-24T11:26:26.445Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -16,11 +16,11 @@
   },
   "coverage": {
     "USD": {
-      "count_72h": 245,
+      "count_72h": 244,
       "count_official_45d": 346,
       "last_item_at": "2026-11-24T11:15:48.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "EUR": {
@@ -34,9 +34,9 @@
     "GBP": {
       "count_72h": 38,
       "count_official_45d": 114,
-      "last_item_at": "2026-11-24T11:00:26.000Z",
-      "hours_since_last": 0.3,
-      "hours_since_last_business": 0.3,
+      "last_item_at": "2026-11-24T11:21:08.000Z",
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "JPY": {
@@ -67,24 +67,24 @@
       "count_72h": 121,
       "count_official_45d": 94,
       "last_item_at": "2026-11-24T09:38:03.000Z",
-      "hours_since_last": 1.7,
-      "hours_since_last_business": 1.7,
+      "hours_since_last": 1.8,
+      "hours_since_last_business": 1.8,
       "silence": false
     },
     "NZD": {
       "count_72h": 103,
       "count_official_45d": 81,
       "last_item_at": "2026-11-24T08:01:14.000Z",
-      "hours_since_last": 3.3,
-      "hours_since_last_business": 3.3,
+      "hours_since_last": 3.4,
+      "hours_since_last_business": 3.4,
       "silence": false
     },
     "XAU": {
       "count_72h": 10,
       "count_official_45d": 0,
       "last_item_at": "2026-11-24T08:45:47.000Z",
-      "hours_since_last": 2.6,
-      "hours_since_last_business": 2.6
+      "hours_since_last": 2.7,
+      "hours_since_last_business": 2.7
     }
   },
   "risk_map": [
@@ -124,17 +124,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 4
+          "d24h_pp": 5
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -0.9
+          "d24h_pp": -1.6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.5
+          "d24h_pp": 0.55
         },
         {
           "theme": "WASHINGTON",
@@ -144,7 +144,7 @@
         {
           "theme": "WASHINGTON",
           "question": "Pete Hegseth impeached by December 31, 2026?",
-          "d24h_pp": 0.2
+          "d24h_pp": 0.45
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -154,7 +154,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Xi Jinping out before 2027?",
-          "d24h_pp": 0.25
+          "d24h_pp": 0.3
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -174,12 +174,13 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
       ]
     },
     {
       "currency": "EUR",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -198,17 +199,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 4
+          "d24h_pp": 5
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -0.9
+          "d24h_pp": -1.6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.5
+          "d24h_pp": 0.55
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -228,16 +229,18 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Will US withdraw from NATO before 2027?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Will Russia test a nuclear weapon by December 31 2026?",
-          "d24h_pp": 2.7
+          "d24h_pp": 1.35
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "currency": "GBP",
@@ -265,12 +268,12 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Will US withdraw from NATO before 2027?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Will Russia test a nuclear weapon by December 31 2026?",
-          "d24h_pp": 2.7
+          "d24h_pp": 1.35
         }
       ],
       "ea4_24h": false,
@@ -278,7 +281,7 @@
     },
     {
       "currency": "JPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -297,17 +300,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 4
+          "d24h_pp": 5
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -0.9
+          "d24h_pp": -1.6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.5
+          "d24h_pp": 0.55
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -317,7 +320,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Xi Jinping out before 2027?",
-          "d24h_pp": 0.25
+          "d24h_pp": 0.3
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -336,11 +339,13 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "currency": "CHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -359,17 +364,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 4
+          "d24h_pp": 5
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -0.9
+          "d24h_pp": -1.6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.5
+          "d24h_pp": 0.55
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -389,16 +394,18 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Will US withdraw from NATO before 2027?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Will Russia test a nuclear weapon by December 31 2026?",
-          "d24h_pp": 2.7
+          "d24h_pp": 1.35
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "currency": "CAD",
@@ -409,7 +416,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 6.1,
+          "hours_until": 6,
           "retirar_limitadas": false
         }
       ],
@@ -429,21 +436,22 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 4
+          "d24h_pp": 5
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -0.9
+          "d24h_pp": -1.6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.5
+          "d24h_pp": 0.55
         }
       ],
       "ea4_24h": false,
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -485,7 +493,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Xi Jinping out before 2027?",
-          "d24h_pp": 0.25
+          "d24h_pp": 0.3
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -524,7 +532,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Xi Jinping out before 2027?",
-          "d24h_pp": 0.25
+          "d24h_pp": 0.3
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -547,7 +555,7 @@
     },
     {
       "currency": "XAU",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -565,17 +573,17 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": 4
+          "d24h_pp": 5
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": -0.9
+          "d24h_pp": -1.6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-          "d24h_pp": 0.5
+          "d24h_pp": 0.55
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -595,12 +603,12 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Will US withdraw from NATO before 2027?",
-          "d24h_pp": 0.05
+          "d24h_pp": 0.1
         },
         {
           "theme": "RUSIA_UCRANIA",
           "question": "Will Russia test a nuclear weapon by December 31 2026?",
-          "d24h_pp": 2.7
+          "d24h_pp": 1.35
         },
         {
           "theme": "WASHINGTON",
@@ -610,11 +618,13 @@
         {
           "theme": "WASHINGTON",
           "question": "Pete Hegseth impeached by December 31, 2026?",
-          "d24h_pp": 0.2
+          "d24h_pp": 0.45
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     }
   ],
   "pair_risk": [
@@ -627,6 +637,7 @@
         "quote": "USD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "dato de primer nivel entre 24 y 48 h"
       ]
     },
@@ -639,7 +650,8 @@
         "quote": "USD"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
       ]
     },
     {
@@ -651,7 +663,8 @@
         "quote": "JPY"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
       ]
     },
     {
@@ -663,7 +676,8 @@
         "quote": "CHF"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
       ]
     },
     {
@@ -676,6 +690,7 @@
       },
       "reasons": [
         "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -689,7 +704,8 @@
       },
       "reasons": [
         "dato de primer nivel en 24 h",
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
       ]
     },
     {
@@ -701,38 +717,45 @@
         "quote": "USD"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
       ]
     },
     {
       "pair": "EURGBP",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "GBP"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "EURJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "EURCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "EURCAD",
@@ -743,6 +766,7 @@
         "quote": "CAD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -755,38 +779,45 @@
         "quote": "AUD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "dato de primer nivel en 24 h"
       ]
     },
     {
       "pair": "EURNZD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "NZD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "GBPJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "GBPCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "GBPCAD",
@@ -797,6 +828,7 @@
         "quote": "CAD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -831,7 +863,8 @@
         "quote": "JPY"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "dato de primer nivel en 24 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
       ]
     },
     {
@@ -843,7 +876,8 @@
         "quote": "CHF"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "dato de primer nivel en 24 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
       ]
     },
     {
@@ -856,6 +890,7 @@
       },
       "reasons": [
         "dato de primer nivel en 24 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -873,23 +908,27 @@
     },
     {
       "pair": "NZDJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "NZDCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "NZDCAD",
@@ -900,6 +939,7 @@
         "quote": "CAD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -912,6 +952,7 @@
         "quote": "JPY"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
@@ -924,18 +965,21 @@
         "quote": "CHF"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "discurso"
       ]
     },
     {
       "pair": "CHFJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "CHF",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp"
+      ]
     },
     {
       "pair": "XAUUSD",
@@ -946,6 +990,7 @@
         "quote": "USD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 5 pp",
         "dato de primer nivel entre 24 y 48 h"
       ]
     }
@@ -960,7 +1005,7 @@
       "actual": "2.2%",
       "forecast": "0.5%",
       "previous": "-0.5%",
-      "hours_from_now": -37.6,
+      "hours_from_now": -37.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1005,7 +1050,7 @@
       "actual": "47.9",
       "forecast": "49.8",
       "previous": "49.3",
-      "hours_from_now": -27.1,
+      "hours_from_now": -27.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1020,7 +1065,7 @@
       "actual": "46.6",
       "forecast": "47.4",
       "previous": "48.4",
-      "hours_from_now": -27.1,
+      "hours_from_now": -27.2,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1140,7 +1185,7 @@
       "actual": null,
       "forecast": null,
       "previous": "8.7%",
-      "hours_from_now": -21.8,
+      "hours_from_now": -21.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1155,7 +1200,7 @@
       "actual": "54.5",
       "forecast": "54.5",
       "previous": "56.0",
-      "hours_from_now": -20.6,
+      "hours_from_now": -20.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1170,7 +1215,7 @@
       "actual": "54.7",
       "forecast": "55.6",
       "previous": "57.9",
-      "hours_from_now": -20.6,
+      "hours_from_now": -20.7,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1260,7 +1305,7 @@
       "actual": null,
       "forecast": null,
       "previous": "23.8K",
-      "hours_from_now": 1.9,
+      "hours_from_now": 1.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1350,7 +1395,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 6.1,
+      "hours_from_now": 6,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1380,7 +1425,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 12.5,
+      "hours_from_now": 12.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1809,7 +1854,7 @@
   ],
   "polymarket_geo": {
     "status": "OK",
-    "updated_at": "2026-11-24T10:55:45.179Z",
+    "updated_at": "2026-11-24T11:26:23.418Z",
     "markets": [
       {
         "theme": "IRAN_ORIENTE_MEDIO",
@@ -1817,8 +1862,8 @@
         "question": "Will the U.S. invade Iran before 2027?",
         "prob": 5.5,
         "d24h_pp": 0,
-        "volume": 81602224.35,
-        "liquidity": 306607.37,
+        "volume": 81602522.76,
+        "liquidity": 307547.41,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
         "currencies": [
@@ -1837,7 +1882,7 @@
         "prob": 3.15,
         "d24h_pp": 0.3,
         "volume": 77764778.4,
-        "liquidity": 170068.7,
+        "liquidity": 169813.46,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/kharg-island-no-longer-under-iranian-control-by-march-31",
         "currencies": [
@@ -1853,10 +1898,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "Israel x Iran ceasefire continues through...?",
         "question": "Israel x Iran ceasefire continues through December 31?",
-        "prob": 73.5,
-        "d24h_pp": 4,
-        "volume": 62244854.33,
-        "liquidity": 275407.29,
+        "prob": 74.5,
+        "d24h_pp": 5,
+        "volume": 62245454.53,
+        "liquidity": 277707.85,
         "end_date": "2026-12-31T20:29:00Z",
         "url": "https://polymarket.com/event/israel-x-iran-ceasefire-continues-throughptptpt-20260716224448963",
         "currencies": [
@@ -1872,10 +1917,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "US announces end of Iranian blockade by...?",
         "question": "US announces end of Iranian blockade by December 31, 2026?",
-        "prob": 15.15,
-        "d24h_pp": -0.9,
-        "volume": 55074985.61,
-        "liquidity": 532199.99,
+        "prob": 14.45,
+        "d24h_pp": -1.6,
+        "volume": 55075185.61,
+        "liquidity": 520151.71,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/us-announces-end-of-iranian-blockade-byptptpt-20260713152715080",
         "currencies": [
@@ -1891,10 +1936,10 @@
         "theme": "IRAN_ORIENTE_MEDIO",
         "event_title": "Iran leader end of 2026?",
         "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-        "prob": 93.55,
-        "d24h_pp": 0.5,
-        "volume": 41182522.72,
-        "liquidity": 2051909.95,
+        "prob": 93.6,
+        "d24h_pp": 0.55,
+        "volume": 41182636.1,
+        "liquidity": 2058460.72,
         "end_date": "2026-12-31T17:00:00Z",
         "url": "https://polymarket.com/event/iran-leader-end-of-2026",
         "currencies": [
@@ -1912,8 +1957,8 @@
         "question": "Putin out as President of Russia by December 31, 2026?",
         "prob": 1.25,
         "d24h_pp": 0,
-        "volume": 33054701.85,
-        "liquidity": 499941.25,
+        "volume": 33054735.19,
+        "liquidity": 499266.54,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/putin-out-before-2027",
         "currencies": [
@@ -1930,7 +1975,7 @@
         "prob": 14.5,
         "d24h_pp": 3,
         "volume": 13771186.61,
-        "liquidity": 44992.22,
+        "liquidity": 47547.9,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/nato-x-russia-military-clash-in-2025",
         "currencies": [
@@ -1946,8 +1991,8 @@
         "question": "Russia x Ukraine ceasefire agreement by December 31, 2026?",
         "prob": 10.5,
         "d24h_pp": 2,
-        "volume": 11533140.08,
-        "liquidity": 1317639.41,
+        "volume": 11533346.57,
+        "liquidity": 1343059.75,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/russia-x-ukraine-ceasefire-agreement-by",
         "currencies": [
@@ -1961,10 +2006,10 @@
         "theme": "RUSIA_UCRANIA",
         "event_title": "Will US withdraw from NATO by...?",
         "question": "Will US withdraw from NATO before 2027?",
-        "prob": 0.85,
-        "d24h_pp": 0.05,
+        "prob": 0.9,
+        "d24h_pp": 0.1,
         "volume": 6402047.54,
-        "liquidity": 91062.38,
+        "liquidity": 78206.5,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-us-withdraw-from-nato-before-2027",
         "currencies": [
@@ -1978,10 +2023,10 @@
         "theme": "RUSIA_UCRANIA",
         "event_title": "Russia nuclear test by...?",
         "question": "Will Russia test a nuclear weapon by December 31 2026?",
-        "prob": 4.6,
-        "d24h_pp": 2.7,
+        "prob": 3.25,
+        "d24h_pp": 1.35,
         "volume": 6265561.24,
-        "liquidity": 44659.16,
+        "liquidity": 44697.65,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/russia-nuclear-test-by",
         "currencies": [
@@ -1998,7 +2043,7 @@
         "prob": 0.8,
         "d24h_pp": -0.1,
         "volume": 1409341.99,
-        "liquidity": 264167.89,
+        "liquidity": 264448.79,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026",
         "currencies": [
@@ -2010,10 +2055,10 @@
         "theme": "WASHINGTON",
         "event_title": "Pete Hegseth impeached by...?",
         "question": "Pete Hegseth impeached by December 31, 2026?",
-        "prob": 1.3,
-        "d24h_pp": 0.2,
+        "prob": 1.55,
+        "d24h_pp": 0.45,
         "volume": 962192.74,
-        "liquidity": 80894.93,
+        "liquidity": 81024.23,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/pete-hegseth-impeached-by-june-30",
         "currencies": [
@@ -2028,7 +2073,7 @@
         "prob": 1.45,
         "d24h_pp": -0.1,
         "volume": 47489049.06,
-        "liquidity": 207402.54,
+        "liquidity": 208030.86,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-before-2027",
         "currencies": [
@@ -2042,10 +2087,10 @@
         "theme": "CHINA_TAIWAN",
         "event_title": "Xi Jinping out before 2027?",
         "question": "Xi Jinping out before 2027?",
-        "prob": 1.7,
-        "d24h_pp": 0.25,
-        "volume": 17484263.85,
-        "liquidity": 301615.42,
+        "prob": 1.75,
+        "d24h_pp": 0.3,
+        "volume": 17484392.18,
+        "liquidity": 300656.91,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/xi-jinping-out-before-2027",
         "currencies": [
@@ -2062,7 +2107,7 @@
         "prob": 8.5,
         "d24h_pp": 1,
         "volume": 4011631.42,
-        "liquidity": 270854.42,
+        "liquidity": 266723.52,
         "end_date": "2028-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/will-china-invade-taiwan-by-december-31-2027",
         "currencies": [
@@ -2078,8 +2123,8 @@
         "question": "China x Taiwan military clash before 2027?",
         "prob": 2.7,
         "d24h_pp": -0.55,
-        "volume": 3569325.18,
-        "liquidity": 57781.12,
+        "volume": 3569373.79,
+        "liquidity": 57934.85,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/china-x-taiwan-military-clash-before-2027",
         "currencies": [
@@ -2096,7 +2141,7 @@
         "prob": 2.4,
         "d24h_pp": -0.35,
         "volume": 1484255.22,
-        "liquidity": 29925.95,
+        "liquidity": 31146.13,
         "end_date": "2027-01-01T04:59:00Z",
         "url": "https://polymarket.com/event/china-x-japan-military-clash-before-2027",
         "currencies": [
@@ -2366,6 +2411,62 @@
   },
   "items": [
     {
+      "id": "b92ad4782e98237dcfa5e553c55f20399232185923af86c232b1f2dc093feabe",
+      "sha256": "b92ad4782e98237dcfa5e553c55f20399232185923af86c232b1f2dc093feabe",
+      "title": "DIRECTO | CONSEJO DE MINISTROS CON EL 29N EN LA MIRA: LÍO EN LOS CONSULADOS Y ÚLTIMAS ENCUESTAS",
+      "url": "https://t.me/negociostv/60747",
+      "source": "Negocios TV",
+      "source_id": "negociostv",
+      "source_type": "agencia",
+      "published_at": "2026-11-24T11:25:03.000Z",
+      "currencies": [],
+      "divisas": [],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "156686a1c623a4d9d306d4640d7548c2cf5efa6f09c6af56323a6b0ef4aa44b7",
+      "sha256": "156686a1c623a4d9d306d4640d7548c2cf5efa6f09c6af56323a6b0ef4aa44b7",
+      "title": "FirstFT: Investors welcome Jensen Huang’s return",
+      "url": "https://www.ft.com/content/5fd14979-e239-4eaf-bbfb-cde969afb514?syn-25a6b1a6=1",
+      "source": "FT",
+      "source_id": "ft-economy",
+      "source_type": "agencia",
+      "published_at": "2026-11-24T11:21:08.000Z",
+      "currencies": [
+        "GBP"
+      ],
+      "divisas": [
+        "GBP"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "dba966414ef85fff073827dede1b0f763a20e5cad984fb2a0124b3413be7f904",
       "sha256": "dba966414ef85fff073827dede1b0f763a20e5cad984fb2a0124b3413be7f904",
       "title": "Markets didn t stay down for long",
@@ -2594,38 +2695,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "156686a1c623a4d9d306d4640d7548c2cf5efa6f09c6af56323a6b0ef4aa44b7",
-      "sha256": "156686a1c623a4d9d306d4640d7548c2cf5efa6f09c6af56323a6b0ef4aa44b7",
-      "title": "FirstFT: Investors welcome Jensen Huang’s return",
-      "url": "https://www.ft.com/content/5fd14979-e239-4eaf-bbfb-cde969afb514?syn-25a6b1a6=1",
-      "source": "FT",
-      "source_id": "ft-economy",
-      "source_type": "agencia",
-      "published_at": "2026-11-24T10:56:02.000Z",
-      "currencies": [
-        "USD",
-        "GBP"
-      ],
-      "divisas": [
-        "USD",
-        "GBP"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -5713,36 +5782,6 @@
       "z": null
     },
     {
-      "id": "bce17d80e46ac9086c1e02d6fe9a26753ba7b9cf9ffec326c92b9a7abc939930",
-      "sha256": "bce17d80e46ac9086c1e02d6fe9a26753ba7b9cf9ffec326c92b9a7abc939930",
-      "title": "ANZ forecasts first RBA rate cut in June 2027 - grafa.com",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSWJMVk1IWGVMS25HdWljZV9uUmxMS1RhVUs2MmJNSnktUVpQbEszY3J1b25KNURpZ1dXTmpRYmhMeUUxQVFpV1kwOUdIZ2hwQ2dLbVAzb0I5MmxibV9JWVdHcHBCMlRKRUt5V2VkM3JqUUh1dlpGZEJuU3ByUVpJUjlZNlI?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-24T02:37:10.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "116978752d75996f9b17014be6b50d3ab5422b501118cd941151a3f4e960ded0",
       "sha256": "116978752d75996f9b17014be6b50d3ab5422b501118cd941151a3f4e960ded0",
       "title": "Cftc staff let exchanges count bitcoin and ether toward reserves after a 20 haircut",
@@ -5762,6 +5801,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c4f397f25a7b6714f2e7a9670f460b2401a0100f54d6d3a0bd0500fc7aee2cc0",
+      "sha256": "c4f397f25a7b6714f2e7a9670f460b2401a0100f54d6d3a0bd0500fc7aee2cc0",
+      "title": "ANZ forecasts first RBA rate cut in June 2027 - grafa.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVXVZaW41Q2FzM25WejVidElHYkEzOG8yZ3dmVVZKbDRoOUpSUmxpUjVwS09ReUZ4bGFscmt6ZUpKWF82ekRicWJfMXRQMjBoWkNfM2lFRXdGTlpqeHRQQWlrZld5X0trZUhZbEFrNktCSHVGTXczNURxcE9Rb0EyZWUxU3NWTm1CeWd0d0ZKMHFVcjBxUllnU1IzUUlqd0daYUprTGZkZ2dnNVAtQVgwQU13?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-24T02:35:11.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -25870,6 +25939,36 @@
       "z": null
     },
     {
+      "id": "3af9ce55e8c5778b267acd5e5921979c3c41cc3430a5b7b9998a5e1db3177130",
+      "sha256": "3af9ce55e8c5778b267acd5e5921979c3c41cc3430a5b7b9998a5e1db3177130",
+      "title": "Remarks by Commissioner Šefčovič at the signature of the EU-Indonesia EPA and IPA - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xWHkzNldTeFM4Wjl6N3hleHBiWENsU0xKRlhzcWh0RlM0RWxabnVoTThWWlJJSUZSUjZYRFAzVFF1dG5VR1JRX2Exbm5XVjF4clMzVGhUU1VIa0k0NmNjYkw5OEo0V0lsVTZyREdwZTBMdVlRdVVfNmtfMA?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-21T08:29:22.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "8e055c61fa0a95a4dc770a195610feb48cc64afa90a3508b9a6069c815239d6e",
       "sha256": "8e055c61fa0a95a4dc770a195610feb48cc64afa90a3508b9a6069c815239d6e",
       "title": "Children in the EU – Infographic – 2026 version - European Commission",
@@ -26447,10 +26546,10 @@
       "z": null
     },
     {
-      "id": "7f6147e9a8d627041c035e7dcb480af19a7d848f6611888cbb92420c02df9af5",
-      "sha256": "7f6147e9a8d627041c035e7dcb480af19a7d848f6611888cbb92420c02df9af5",
+      "id": "97aedb9ac3249747318c39cb618358d25c9e8c44bc0c59bb19160f4c2550894b",
+      "sha256": "97aedb9ac3249747318c39cb618358d25c9e8c44bc0c59bb19160f4c2550894b",
       "title": "EU and Indonesia sign ambitious trade and investment agreements - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZGZHVXFOQm1CWVRqUkE2eU15NlZTR0xOdXdRN2FjTDQ1LW5hUnpxV2NYOWNoQTFQUzR3QVRyd0VhYmxkNjVWWjVXbmRpTGdYSGE3MUxPbFhCNzREVVVVdFdzbVZENmhRTWtqMXgzOExpYWZXRVZLVjNWemROckJ5RDc0S3hkN0M3Zno3SFRzOWpnTVM4MDFCbkgtMXgxdlZ3VGdxb28wSTdmNXNyRC15UFM3ZUl4cmc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE01eGFRbG5CWVMxcUlZZEtIQkR6NGJySnIzVUIzVGk5em5LazBvZDJfaDNDZUdLUjhRT0xWV0x6MjVWVlpVRlNMdTNaUkhNdkJVbUZuUUpmdHRMOFZCRXV2MDlSTDQ4aldJRTBsbzREUC1ndw?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -26567,66 +26666,6 @@
       "z": null
     },
     {
-      "id": "57cb4bd8efd7fd0d30f753b4eca24238729ecdbf9c7e85a60f612ea1ee7b9f18",
-      "sha256": "57cb4bd8efd7fd0d30f753b4eca24238729ecdbf9c7e85a60f612ea1ee7b9f18",
-      "title": "Remarks by Commissioner Šefčovič at the signature of the EU-Indonesia EPA and IPA - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9vWm95T1hLSkViLXltT0RFRUpZM0c4Y3JCMFg3MFIzOTFOOFZ2dnRrU0RpREtLRFJLUVdtYTdGaVVqdDBadU5TcF90OXZJVzhVR2Rhb0tycThIYmRqcm5qNi1iWWtiQURscTRLSllJUkx5Rmprd2s1OTJmbw?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-20T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "80b0bcc8b42e0df5792d219617afb0c85901ae1cf81816c726082239fcc73529",
-      "sha256": "80b0bcc8b42e0df5792d219617afb0c85901ae1cf81816c726082239fcc73529",
-      "title": "Quality conferences - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTbE5aMUY2TG5GUHNkVzdpdGc5ODJmbTRaM3Uyb1lUZ2NXVE0xRDR1VzNHNkJSS1NySmxuRGlTY1lXTkFqYUFmYjI1RmxVNVBJRE9BQy1ZM3VfNDA2YWwxWlYxLXItQ3F5UjNkRWl3?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-20T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "a712f734759bfc9792ceee1405189766dc488dfc5feb1c20b77a7df0dc9ff21d",
       "sha256": "a712f734759bfc9792ceee1405189766dc488dfc5feb1c20b77a7df0dc9ff21d",
       "title": "Public sector finances, UK: October 2026 - Office for National Statistics",
@@ -26716,6 +26755,36 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "80b0bcc8b42e0df5792d219617afb0c85901ae1cf81816c726082239fcc73529",
+      "sha256": "80b0bcc8b42e0df5792d219617afb0c85901ae1cf81816c726082239fcc73529",
+      "title": "Quality conferences - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBTbE5aMUY2TG5GUHNkVzdpdGc5ODJmbTRaM3Uyb1lUZ2NXVE0xRDR1VzNHNkJSS1NySmxuRGlTY1lXTkFqYUFmYjI1RmxVNVBJRE9BQy1ZM3VfNDA2YWwxWlYxLXItQ3F5UjNkRWl3?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-20T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -27216,10 +27285,10 @@
       "z": null
     },
     {
-      "id": "a907d0e025347f5f8e4b1d87f7ef2cb6b6a15ac223ad9dff628222d6ea386517",
-      "sha256": "a907d0e025347f5f8e4b1d87f7ef2cb6b6a15ac223ad9dff628222d6ea386517",
-      "title": "Enquiries - Australian Bureau of Statistics - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPODdXbUllNGpMcFh3dkNPQnNqa28wbHh6RU1aMFcwMERHbzl5SDVQdC1LbGUwaktGVTFCQklZc1k1OXJ4Z0U0eTNuR0JxdGJwRVp3dWNVbGNtUnU5X0VkaERqdGkzbmhJUTVjc2ppSVIyVFgxX2QxMnVuVzJ5ekNtNjF5M1ptemVsalU4d2t4bmd5cFptNFN3elRWbEIxOG16YmNuS0p1WGc3b2lldElpcW1WNllyM0dLU3c?oc=5",
+      "id": "a20cced66c4cb881e0e2a4f244146ed2a296c505dbbe5fe289d417c6c1779f5b",
+      "sha256": "a20cced66c4cb881e0e2a4f244146ed2a296c505dbbe5fe289d417c6c1779f5b",
+      "title": "Labour Force, Australia methodology, October 2026 - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQTVlMi1VYTg3WjRfLW9SLTVPemJuSUVEZ3ZNWE1fWEdJcUtHNWV6ZFpJOVlvX3d3Y0VNbzB2TWc2ME9rMEJTZnliQlpnVkRHTkl2ZkZEQVdoX1RtbW83MjFvVWVUWEVsUE1DajNKcjh6TUJfMG1IYmU2UmFlVWZYaEZGa1ZiOUU?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -27248,10 +27317,10 @@
       "z": null
     },
     {
-      "id": "a20cced66c4cb881e0e2a4f244146ed2a296c505dbbe5fe289d417c6c1779f5b",
-      "sha256": "a20cced66c4cb881e0e2a4f244146ed2a296c505dbbe5fe289d417c6c1779f5b",
-      "title": "Labour Force, Australia methodology, October 2026 - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQTVlMi1VYTg3WjRfLW9SLTVPemJuSUVEZ3ZNWE1fWEdJcUtHNWV6ZFpJOVlvX3d3Y0VNbzB2TWc2ME9rMEJTZnliQlpnVkRHTkl2ZkZEQVdoX1RtbW83MjFvVWVUWEVsUE1DajNKcjh6TUJfMG1IYmU2UmFlVWZYaEZGa1ZiOUU?oc=5",
+      "id": "a907d0e025347f5f8e4b1d87f7ef2cb6b6a15ac223ad9dff628222d6ea386517",
+      "sha256": "a907d0e025347f5f8e4b1d87f7ef2cb6b6a15ac223ad9dff628222d6ea386517",
+      "title": "Enquiries - Australian Bureau of Statistics - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPODdXbUllNGpMcFh3dkNPQnNqa28wbHh6RU1aMFcwMERHbzl5SDVQdC1LbGUwaktGVTFCQklZc1k1OXJ4Z0U0eTNuR0JxdGJwRVp3dWNVbGNtUnU5X0VkaERqdGkzbmhJUTVjc2ppSVIyVFgxX2QxMnVuVzJ5ekNtNjF5M1ptemVsalU4d2t4bmd5cFptNFN3elRWbEIxOG16YmNuS0p1WGc3b2lldElpcW1WNllyM0dLU3c?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -28343,38 +28412,6 @@
       "z": null
     },
     {
-      "id": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
-      "sha256": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
-      "title": "Housing prices in Eastbourne - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9KMWtDMnFDYUw3ZDBpMGVWWHBDVTJMQ1Z6VkNLcnJJU1dCWXYwbWtkdU5qeEpMUkF3Ri1IcjN1cGRVdDEyNzZWT3pGWmR1QWQ5VEtIMm83WUJpZHpqU2tGRFQxTlV1Sk9TZE9vaTlCSVZCUXdqQkE?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-18T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
       "sha256": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
       "title": "Australian National Accounts: State Accounts, 2025-26 financial year - Australian Bureau of Statistics",
@@ -28396,6 +28433,38 @@
         "Fiscal"
       ],
       "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
+      "sha256": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
+      "title": "Housing prices in Eastbourne - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9KMWtDMnFDYUw3ZDBpMGVWWHBDVTJMQ1Z6VkNLcnJJU1dCWXYwbWtkdU5qeEpMUkF3Ri1IcjN1cGRVdDEyNzZWT3pGWmR1QWQ5VEtIMm83WUJpZHpqU2tGRFQxTlV1Sk9TZE9vaTlCSVZCUXdqQkE?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-18T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -29519,36 +29588,6 @@
       "z": null
     },
     {
-      "id": "a3d144920fb8fb5858f2a240a2cf4a3c2c6869c81dd7ca6f5756fcb34b386d8d",
-      "sha256": "a3d144920fb8fb5858f2a240a2cf4a3c2c6869c81dd7ca6f5756fcb34b386d8d",
-      "title": "From Pandemic to Energy Crises : Price developments, Consumption Adjustment and cost of living differentials across income groups in the EU - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPTlJMYXh2S1l4cjJhLXUwdHQ2REo1bWduN3FGZjk4UXI3V01CUHpBMjdBbnlpaGxVd1lmSDNDYVRqVDZsaXBOaVVuOFVEOXVrdm9XZlp5LV9SVEZfVFZsdkJKdm1WSlY0cmJ1c3dzaTcyUVY4MUJpb05fd1pTbVpzck5maEdBdEljWHhKR0h0U0lzQWhlU3M2ZnhQZGk2UUJqaEQzWlQ3S29ibDFaLWp5WUJKQUpVQ19faU5QTDBKMGxYeU41ZkM0SHNEcEdoSzY4SUNkUlNJNTFXNzRXUk52akdnbFFrY3lnejF4M3F4UjJfR3BjV1dGbjZGODBvYXEyWlpRRTcxR2pvNkhqR2RwSjdZRVJweEpMRXpLTG5UWllmNGh5YkZPbDlxdFhCR0JoWmdqWTJsTDRLVmt2R3JkaHNEWDVtdmd3Q2gyYldoR3g1SW1tbU41N3FPVTJDVWNUa1VWa3UyWlBHS2Zucm5vdFNNRGY?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "ee348dd610a72ab1c52d5b646d54cf5e19a7ff1a87599ed601f1ea0f0d4fe510",
       "sha256": "ee348dd610a72ab1c52d5b646d54cf5e19a7ff1a87599ed601f1ea0f0d4fe510",
       "title": "Economic forecast for Poland - economy-finance.ec.europa.eu",
@@ -29639,6 +29678,36 @@
       "z": null
     },
     {
+      "id": "58591bb37fd947f54c391e9aaea1351c5b7e8a4d7b8f9cbb2dcacac751a97dc7",
+      "sha256": "58591bb37fd947f54c391e9aaea1351c5b7e8a4d7b8f9cbb2dcacac751a97dc7",
+      "title": "Economic forecast for Lithuania - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOeHpZak1tcVJEUXpHWTFha1BHUHg5dVdZYlYzVnU2QkFVM25YLW1xQmI2NXZnQ214N0ZlV09ZVmtCRVdPamg1blR4MUxkaVh1LVJnS1pvZ0h0RjlxYWwyc1l1OHMwZTkyUXVrOWJURWlvT0E3ajVXQmdrNmp5NTZkM1hYYjdGQ0NlUWxHb0M5Z1FiSUZXeU4tZmkzMXhBM3QtUksyeG5jMHhuUXdON21qYThvbmkySHdONm0wUzdXdThQUWpaei0zQi1GVVY1WU5GR2Rpdzk0M1lCNERyQkVtNzRtU0h2YjZnbWhzTg?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4a225035d64fc3de87f0babbca9837d1ea54a5f258b109b8a588367b0f6a675e",
       "sha256": "4a225035d64fc3de87f0babbca9837d1ea54a5f258b109b8a588367b0f6a675e",
       "title": "Economic forecast for Czechia - economy-finance.ec.europa.eu",
@@ -29669,10 +29738,100 @@
       "z": null
     },
     {
+      "id": "0caa134a5f7a4825b0bdba2a17417d61c3faf726d771ffc1739d9e3645344aee",
+      "sha256": "0caa134a5f7a4825b0bdba2a17417d61c3faf726d771ffc1739d9e3645344aee",
+      "title": "Economic forecast for Finland - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQTEg0aEZfWE1HYUprZnplcFFGMjN1MnVaT1Izam1CWUh0b0N5MklMcjhWVUVQS2hiSTlXOW45akthSzM0MVpXRHp1YzF5ZXVsT1pzalgzV2hIQXIxbUp0T1IzWDdYVXp0MDNJX0p2Tzd0bDg3bFJwYzhxTF9MVW0zUlpnWDluNjNzanRFX0M4T01yOEo3UjRxa0FRY2pENFhaOGNrMFNBTlBnVm5jUXpNUUtWWTU1dzA2M3RrUlA1NU9MYVhNaDF6d3JWZUlOQkNlM2lNRVJJTWxFWlR6LTFUaXQwRU1iVHc?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "30bd4bc79b68638e77c6997ccee19cd12ecb5ebef6c0291ade017809c49cd046",
+      "sha256": "30bd4bc79b68638e77c6997ccee19cd12ecb5ebef6c0291ade017809c49cd046",
+      "title": "Economic forecast for Greece - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQnpEN2kyamlKWFNhdzk3SE9LVV9NbG03ZjZQRjdObVZZNlJZS3BTMGF1RDd6SjM1RWdBdGo5M0pMMk1wdTVSOVFEV24tdzJjZC14aHlMallHbEJRblpCc1lWLTlCVE9XV05EZVdTeXhRQmY0OE5RTzZuTnJxbDg0U1ZCVUoyS1l5R2FYMzdFUVZNZ2lyTmlIQzJQcHl5dU0xclpVM0ZGV2Y0Z2plVTFUZmtNckl3QkY3WTZtWmUtdFRJLXdKMXViQ2VibzFoaWdFU2VscVk5aW5fbnZEQ3dSNGFXV1E?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "df346188952d1cd66bbcd5851c0f764d5d1180dc7640426f20304ac71bf5fb1b",
       "sha256": "df346188952d1cd66bbcd5851c0f764d5d1180dc7640426f20304ac71bf5fb1b",
       "title": "Economic forecast for Romania - economy-finance.ec.europa.eu",
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbXBiU2VRSzNEU3B0MGVndzJ5ZE9vQ2psN1Bza2xzT2R1Z1BfVEF2b1ZkSnZMSzA1cXl0TDJTbXVtM1RfeGpJYnN0NGU5Z3FhQXVNcmVhY2E4alpGSTVnRTlxVHJLbjkxWU4yRVIyYXBrdVBVQ2Fmc0RIRV9wYWRLX2VBcVhYTlBBOEhtZmtiaVFJMDNqQXBNb0RqR3lRMkR3ek5qcmJ5blFjWEtrTDhCX1g4LWQ4ZHh2WTJGWWxzV2c2Y1VNNkhoRWZCSV91RklCWGZ6NVpISDFJYXNDaUx0ZkFHQ18zYk0?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
+      "sha256": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
+      "title": "Economic forecast for Cyprus - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeE43ZHpfdllKckVscXBvQXBMa19KOV9HTEdhbFVhRVJqUk01NWRZVHByMi1TVlFodmZwVkhUV3lvVVlYYl90bGlJZ005U3QxZHhyZ2EzUG1MR3ZCYXIyV2hubmUxQkllcDM1cEttUTdnRjAyR0hEZDByMDBEUXdYX2d4QXlFU0ZoLXRfRzZJSnA1LWJ6ZzRxcnVwWmxIdENIV2pIVVV0LXg2SXVIRHN1cHpRdnRQLUlCYjdXTjgtOTYwTm10ZDlHN1VseGt6UnVoOHhTcHZ3RkEzanBNeEZHM1hFZXE?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -29819,285 +29978,6 @@
       "z": null
     },
     {
-      "id": "c1e37ef6fce1acf6306aa413f515dbb0720c2094137f6bcbfb31aee52a98d2b7",
-      "sha256": "c1e37ef6fce1acf6306aa413f515dbb0720c2094137f6bcbfb31aee52a98d2b7",
-      "title": "Economic forecast for Austria - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQX3VyYkNYdTlxcktqWlhLWXd1N2JzaDBLdjZaMU9SS1JLOWVOcnYxZVl5dEctOFdvOW5oeTJKN0lORnF4M1cwVkRzdEFUQWtNcjdyRjBMYXFsem1EQlhLVjJ4NmZ3QVF0SVRmSEV3SGFvMWp1R3FCUUdIYzFVVEpVMjVEOTk2TkV1b2N0eW15YmFncHhPY2Yxa1RMVXVFYm5leGRfQXVSRTN5OFN0V0NhZkpQcjB1ZkR1S2pCTTRiN2xkTDR1OGlOakRaUkdvY080dzJrYmtpWndnS1czTUxTM3VIUVotREk?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8d01b0aaf93cc04236d92ccca806fbec3864e76bda085a50b81e14b278662457",
-      "sha256": "8d01b0aaf93cc04236d92ccca806fbec3864e76bda085a50b81e14b278662457",
-      "title": "Long-term labour market implications of demographic changes in the EU - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxONno3ZHZCMFRoSk8yQl9pZVlsY2xzTVdEZHpncXExNDR6MHlnMFktVFZhVkRYZmo3NFA3R201US1LREhSRTFnVk5KdHNvdFVTaFNPTGlIVnBrUTNDM0dyXzM4UC1hVC13enpOZnpaQVpKQ1J0bDVfbEdrU2NMUE41bFRsaGxBNHlGdW82YjFtVzZwaGIzRWRfZlI3anI0Wm5ldm0tS3NxcXMzR1NZM1JvNzk2Yi1OMHY4X3VESkJNS2NtS25USHNwYXNzZW1wMEY4dVVQYTdIWjN1UkxBVzA5N2E0elNGRXcycldpU24tb19ycDJGTG9pY0N3T1NxdDJ1YmkydmdQOGhqRWNpRnU4Nm9qZTZUcl9NLUxlVVRSUTIwWkVoS0hiaTZHcVZhdWxHTWt1cmE1ajdBRGoyWHZpUWtYanBYUQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5a7297a5f4e14a4947434319b8b0acd933a2dc82fc4636ba8fd2f2bc588f4af1",
-      "sha256": "5a7297a5f4e14a4947434319b8b0acd933a2dc82fc4636ba8fd2f2bc588f4af1",
-      "title": "China’s export and import performance amidst escalating US-China trade tensions - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPRFpWMVJjNS12UnVyZjRBQ3ZPdzBlUTZNTXlrZWdrN2lzZVJxQkhsM3lyNjVBX1RlRjdwTS02T1FrTFhYd0QwVjByYVJieFRTY0p2OW1yOTBXWjdQQmVKZ3AzcklOSm9XWVV3V1JSWURSeE1FOE1PX2Y5NXY2bUQxZnEweGY2bXl4THRHRU9LUXJxOXVaWFJyeVlTV29HNV94elZRT3hjVDBLX3FYX1htNlJjSC0wZ05KRGlfLVA2aEY0NkFXM2E0MnVaV0lOeVpuT1lROFNTUUgwb1pZLXQyMGs1WlpsV1JtVVZ5bFc4b0Vyd1YwLTVaY2Ric1duVlQxOE04eEpJdVBxSUh0STJtd3NnWmtvTEVmeEkxSWRyVW9nMVZLaEI0LXdaaWdoanJ5OVhQSW5Hb0d5MWZkY2luLVNkTWgxMlRFZTJwU3NXenVHbTFyUjhmalhGZTVYTDQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "USD",
-        "EUR"
-      ],
-      "divisas": [
-        "USD",
-        "EUR"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "6bd6e2d1034903a93b190ead3843cf8381694a61a9490c09ebb578b873a938ec",
-      "sha256": "6bd6e2d1034903a93b190ead3843cf8381694a61a9490c09ebb578b873a938ec",
-      "title": "Labour productivity, UK: July to September 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbFR0Q0VBSGpqTmZKbFRLWm1mVWEzNzJKa1NrT2J5VWxhVG1lcUMxZ2RadDRvZV9Ydi1qUUhnNVp2WXBIT29pTjY0dHFZVmhEaUZpR2p6OEMwZnNWbDRRbU9WTXBaR3RpU2dnNS1PeFZjbFRydWthdTZ1X1p1QnZOc1N1ZVQwdmlTeV9ZYlVKc25zM3Y5MXdrYkZXVzBYeXVLakR3THBqZjRPay1wcFpMMm0tWkYtR0RPSzJOeVdNT3cwRzVjUWtJd1E5N3RDNHZSaGc?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
-      "sha256": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
-      "title": "Quarterly personal well-being estimates – seasonally adjusted - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaEFGQllFNXJnc1k4WXRDWHlsSjNNYXZRZUo2QmVhRklLUUI1V1R2UlVaYm5wcGFPSGQtUmRwb01aM2Jndmh6M0RKWEVVMzJyR3dDaEdUbjJYS0Nhbm92RV9VTG9FdWloV1d4bldrN2kybnAwTzYtSTZQQ3RNQkRLWXhieVo4bUNSYUFMQW9Ga3pxOGNpNWJRekJiLXd2dHNxU3lLQlFXZXNxX1JFc2VrM3hVbldJbXFBcV9tNmQxUDc0Zw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b8031a2dd07d26f74d67d5995746b390394e314c7f2657d499162c4e3704856b",
-      "sha256": "b8031a2dd07d26f74d67d5995746b390394e314c7f2657d499162c4e3704856b",
-      "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: November 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMm9RaUxyS2drbzZuOXR6VHZLRTE2cWVsaDBFcTZRMDVybWp4WDBoZWxqZ3NnY09fU2kySjJoYUUxV1BnS3QteFplZWt4S2RrTVFGR01pTUQ5eXNkOWpTaEtPQjdKZ013cVdYXy1aeDBYcGJxbXUza1ZxR2FtUjJBUHFhV3NDSVhmVzh3ejIybXJCMHdVNXBNRkNrYkF2YzZ2R2V4d19NRU1OMEwySThISnh0enRwbllzdUNNZFJJdThtZ1VhN1ROOVJUdEpSZGVUanE2RnU2MTRvY0l4ZDZoRGdJNjZXZWZ3eUl5QlZNc0JvWjdLNm9fZUtuQQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo",
-        "Fiscal"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "58591bb37fd947f54c391e9aaea1351c5b7e8a4d7b8f9cbb2dcacac751a97dc7",
-      "sha256": "58591bb37fd947f54c391e9aaea1351c5b7e8a4d7b8f9cbb2dcacac751a97dc7",
-      "title": "Economic forecast for Lithuania - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOeHpZak1tcVJEUXpHWTFha1BHUHg5dVdZYlYzVnU2QkFVM25YLW1xQmI2NXZnQ214N0ZlV09ZVmtCRVdPamg1blR4MUxkaVh1LVJnS1pvZ0h0RjlxYWwyc1l1OHMwZTkyUXVrOWJURWlvT0E3ajVXQmdrNmp5NTZkM1hYYjdGQ0NlUWxHb0M5Z1FiSUZXeU4tZmkzMXhBM3QtUksyeG5jMHhuUXdON21qYThvbmkySHdONm0wUzdXdThQUWpaei0zQi1GVVY1WU5GR2Rpdzk0M1lCNERyQkVtNzRtU0h2YjZnbWhzTg?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "0caa134a5f7a4825b0bdba2a17417d61c3faf726d771ffc1739d9e3645344aee",
-      "sha256": "0caa134a5f7a4825b0bdba2a17417d61c3faf726d771ffc1739d9e3645344aee",
-      "title": "Economic forecast for Finland - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQTEg0aEZfWE1HYUprZnplcFFGMjN1MnVaT1Izam1CWUh0b0N5MklMcjhWVUVQS2hiSTlXOW45akthSzM0MVpXRHp1YzF5ZXVsT1pzalgzV2hIQXIxbUp0T1IzWDdYVXp0MDNJX0p2Tzd0bDg3bFJwYzhxTF9MVW0zUlpnWDluNjNzanRFX0M4T01yOEo3UjRxa0FRY2pENFhaOGNrMFNBTlBnVm5jUXpNUUtWWTU1dzA2M3RrUlA1NU9MYVhNaDF6d3JWZUlOQkNlM2lNRVJJTWxFWlR6LTFUaXQwRU1iVHc?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "30bd4bc79b68638e77c6997ccee19cd12ecb5ebef6c0291ade017809c49cd046",
-      "sha256": "30bd4bc79b68638e77c6997ccee19cd12ecb5ebef6c0291ade017809c49cd046",
-      "title": "Economic forecast for Greece - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNQnpEN2kyamlKWFNhdzk3SE9LVV9NbG03ZjZQRjdObVZZNlJZS3BTMGF1RDd6SjM1RWdBdGo5M0pMMk1wdTVSOVFEV24tdzJjZC14aHlMallHbEJRblpCc1lWLTlCVE9XV05EZVdTeXhRQmY0OE5RTzZuTnJxbDg0U1ZCVUoyS1l5R2FYMzdFUVZNZ2lyTmlIQzJQcHl5dU0xclpVM0ZGV2Y0Z2plVTFUZmtNckl3QkY3WTZtWmUtdFRJLXdKMXViQ2VibzFoaWdFU2VscVk5aW5fbnZEQ3dSNGFXV1E?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "39494504df5c9c39ea79f60f487c341f110e3041fd5b7d59bff725c0eceffe91",
       "sha256": "39494504df5c9c39ea79f60f487c341f110e3041fd5b7d59bff725c0eceffe91",
       "title": "Economic forecast for Portugal - economy-finance.ec.europa.eu",
@@ -30188,6 +30068,225 @@
       "z": null
     },
     {
+      "id": "c1e37ef6fce1acf6306aa413f515dbb0720c2094137f6bcbfb31aee52a98d2b7",
+      "sha256": "c1e37ef6fce1acf6306aa413f515dbb0720c2094137f6bcbfb31aee52a98d2b7",
+      "title": "Economic forecast for Austria - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQX3VyYkNYdTlxcktqWlhLWXd1N2JzaDBLdjZaMU9SS1JLOWVOcnYxZVl5dEctOFdvOW5oeTJKN0lORnF4M1cwVkRzdEFUQWtNcjdyRjBMYXFsem1EQlhLVjJ4NmZ3QVF0SVRmSEV3SGFvMWp1R3FCUUdIYzFVVEpVMjVEOTk2TkV1b2N0eW15YmFncHhPY2Yxa1RMVXVFYm5leGRfQXVSRTN5OFN0V0NhZkpQcjB1ZkR1S2pCTTRiN2xkTDR1OGlOakRaUkdvY080dzJrYmtpWndnS1czTUxTM3VIUVotREk?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6bd6e2d1034903a93b190ead3843cf8381694a61a9490c09ebb578b873a938ec",
+      "sha256": "6bd6e2d1034903a93b190ead3843cf8381694a61a9490c09ebb578b873a938ec",
+      "title": "Labour productivity, UK: July to September 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbFR0Q0VBSGpqTmZKbFRLWm1mVWEzNzJKa1NrT2J5VWxhVG1lcUMxZ2RadDRvZV9Ydi1qUUhnNVp2WXBIT29pTjY0dHFZVmhEaUZpR2p6OEMwZnNWbDRRbU9WTXBaR3RpU2dnNS1PeFZjbFRydWthdTZ1X1p1QnZOc1N1ZVQwdmlTeV9ZYlVKc25zM3Y5MXdrYkZXVzBYeXVLakR3THBqZjRPay1wcFpMMm0tWkYtR0RPSzJOeVdNT3cwRzVjUWtJd1E5N3RDNHZSaGc?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b8031a2dd07d26f74d67d5995746b390394e314c7f2657d499162c4e3704856b",
+      "sha256": "b8031a2dd07d26f74d67d5995746b390394e314c7f2657d499162c4e3704856b",
+      "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: November 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMm9RaUxyS2drbzZuOXR6VHZLRTE2cWVsaDBFcTZRMDVybWp4WDBoZWxqZ3NnY09fU2kySjJoYUUxV1BnS3QteFplZWt4S2RrTVFGR01pTUQ5eXNkOWpTaEtPQjdKZ013cVdYXy1aeDBYcGJxbXUza1ZxR2FtUjJBUHFhV3NDSVhmVzh3ejIybXJCMHdVNXBNRkNrYkF2YzZ2R2V4d19NRU1OMEwySThISnh0enRwbllzdUNNZFJJdThtZ1VhN1ROOVJUdEpSZGVUanE2RnU2MTRvY0l4ZDZoRGdJNjZXZWZ3eUl5QlZNc0JvWjdLNm9fZUtuQQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo",
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a3d144920fb8fb5858f2a240a2cf4a3c2c6869c81dd7ca6f5756fcb34b386d8d",
+      "sha256": "a3d144920fb8fb5858f2a240a2cf4a3c2c6869c81dd7ca6f5756fcb34b386d8d",
+      "title": "From Pandemic to Energy Crises : Price developments, Consumption Adjustment and cost of living differentials across income groups in the EU - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxPTlJMYXh2S1l4cjJhLXUwdHQ2REo1bWduN3FGZjk4UXI3V01CUHpBMjdBbnlpaGxVd1lmSDNDYVRqVDZsaXBOaVVuOFVEOXVrdm9XZlp5LV9SVEZfVFZsdkJKdm1WSlY0cmJ1c3dzaTcyUVY4MUJpb05fd1pTbVpzck5maEdBdEljWHhKR0h0U0lzQWhlU3M2ZnhQZGk2UUJqaEQzWlQ3S29ibDFaLWp5WUJKQUpVQ19faU5QTDBKMGxYeU41ZkM0SHNEcEdoSzY4SUNkUlNJNTFXNzRXUk52akdnbFFrY3lnejF4M3F4UjJfR3BjV1dGbjZGODBvYXEyWlpRRTcxR2pvNkhqR2RwSjdZRVJweEpMRXpLTG5UWllmNGh5YkZPbDlxdFhCR0JoWmdqWTJsTDRLVmt2R3JkaHNEWDVtdmd3Q2gyYldoR3g1SW1tbU41N3FPVTJDVWNUa1VWa3UyWlBHS2Zucm5vdFNNRGY?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8d01b0aaf93cc04236d92ccca806fbec3864e76bda085a50b81e14b278662457",
+      "sha256": "8d01b0aaf93cc04236d92ccca806fbec3864e76bda085a50b81e14b278662457",
+      "title": "Long-term labour market implications of demographic changes in the EU - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxONno3ZHZCMFRoSk8yQl9pZVlsY2xzTVdEZHpncXExNDR6MHlnMFktVFZhVkRYZmo3NFA3R201US1LREhSRTFnVk5KdHNvdFVTaFNPTGlIVnBrUTNDM0dyXzM4UC1hVC13enpOZnpaQVpKQ1J0bDVfbEdrU2NMUE41bFRsaGxBNHlGdW82YjFtVzZwaGIzRWRfZlI3anI0Wm5ldm0tS3NxcXMzR1NZM1JvNzk2Yi1OMHY4X3VESkJNS2NtS25USHNwYXNzZW1wMEY4dVVQYTdIWjN1UkxBVzA5N2E0elNGRXcycldpU24tb19ycDJGTG9pY0N3T1NxdDJ1YmkydmdQOGhqRWNpRnU4Nm9qZTZUcl9NLUxlVVRSUTIwWkVoS0hiaTZHcVZhdWxHTWt1cmE1ajdBRGoyWHZpUWtYanBYUQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5a7297a5f4e14a4947434319b8b0acd933a2dc82fc4636ba8fd2f2bc588f4af1",
+      "sha256": "5a7297a5f4e14a4947434319b8b0acd933a2dc82fc4636ba8fd2f2bc588f4af1",
+      "title": "China’s export and import performance amidst escalating US-China trade tensions - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPRFpWMVJjNS12UnVyZjRBQ3ZPdzBlUTZNTXlrZWdrN2lzZVJxQkhsM3lyNjVBX1RlRjdwTS02T1FrTFhYd0QwVjByYVJieFRTY0p2OW1yOTBXWjdQQmVKZ3AzcklOSm9XWVV3V1JSWURSeE1FOE1PX2Y5NXY2bUQxZnEweGY2bXl4THRHRU9LUXJxOXVaWFJyeVlTV29HNV94elZRT3hjVDBLX3FYX1htNlJjSC0wZ05KRGlfLVA2aEY0NkFXM2E0MnVaV0lOeVpuT1lROFNTUUgwb1pZLXQyMGs1WlpsV1JtVVZ5bFc4b0Vyd1YwLTVaY2Ric1duVlQxOE04eEpJdVBxSUh0STJtd3NnWmtvTEVmeEkxSWRyVW9nMVZLaEI0LXdaaWdoanJ5OVhQSW5Hb0d5MWZkY2luLVNkTWgxMlRFZTJwU3NXenVHbTFyUjhmalhGZTVYTDQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "EUR"
+      ],
+      "divisas": [
+        "USD",
+        "EUR"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
+      "sha256": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
+      "title": "Quarterly personal well-being estimates – seasonally adjusted - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaEFGQllFNXJnc1k4WXRDWHlsSjNNYXZRZUo2QmVhRklLUUI1V1R2UlVaYm5wcGFPSGQtUmRwb01aM2Jndmh6M0RKWEVVMzJyR3dDaEdUbjJYS0Nhbm92RV9VTG9FdWloV1d4bldrN2kybnAwTzYtSTZQQ3RNQkRLWXhieVo4bUNSYUFMQW9Ga3pxOGNpNWJRekJiLXd2dHNxU3lLQlFXZXNxX1JFc2VrM3hVbldJbXFBcV9tNmQxUDc0Zw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
       "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
       "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
@@ -30243,36 +30342,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
-      "sha256": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
-      "title": "Economic forecast for Cyprus - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeE43ZHpfdllKckVscXBvQXBMa19KOV9HTEdhbFVhRVJqUk01NWRZVHByMi1TVlFodmZwVkhUV3lvVVlYYl90bGlJZ005U3QxZHhyZ2EzUG1MR3ZCYXIyV2hubmUxQkllcDM1cEttUTdnRjAyR0hEZDByMDBEUXdYX2d4QXlFU0ZoLXRfRzZJSnA1LWJ6ZzRxcnVwWmxIdENIV2pIVVV0LXg2SXVIRHN1cHpRdnRQLUlCYjdXTjgtOTYwTm10ZDlHN1VseGt6UnVoOHhTcHZ3RkEzanBNeEZHM1hFZXE?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -32106,96 +32175,6 @@
       "z": null
     },
     {
-      "id": "e5217e00c65ade18c0da535e077c776a6f9344b0edd9edd4b84a81c71b1320d5",
-      "sha256": "e5217e00c65ade18c0da535e077c776a6f9344b0edd9edd4b84a81c71b1320d5",
-      "title": "EU consumption expenditure grows, alcohol & tobacco dip - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE56bl94ZGhmUGZJTG41Y2ZrN0VmQ2V0d1RFMEVmYldwd3Y0UC1xWnBDUTZ3RDV6OHdyaE9tV3BFZXRYV0pDc0pzU0NGRWRyZnZqZzRUTi1Ha0Z6Sl9WVWMzX1JiRkIzSG5GdkFNdEo0eG9FUVUyNzVSR1lSZm9iUQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "550ae0d40b4270e158449dd8f383ec8b6f8e5a150a58838edd4be7a4bd1ab287",
-      "sha256": "550ae0d40b4270e158449dd8f383ec8b6f8e5a150a58838edd4be7a4bd1ab287",
-      "title": "Harmonised index of consumer prices (HICP) - ECOICOP ver.2 - indices and rates of change, monthly data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTUxvTEdSRUhLcGNoYkFCSjd1OEJ1clFqU2VZN0NRMGZwYzJLMmhya01OSEozR0tUWjRiSmlRUzJKUzh6RkgxOTl2WWZhcUVYel9qdmpxUlM5aUszQnVYdGhQWTlaemVmOUNEek5ZWmhKS1JWbDQzS2lQUTBCRkF5S09BMFF6SlJ6cDVuamZKUnB0V0ZzaGRlVVVjd1hqX2xGakhYY29yQUNNY0RmblE3d3lUdWUyZW9EOWUyc1J1V2dhRDJC?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "4b91f0127509bbcb8ee85c4199920c7899306a53382546999ebee3742b464002",
-      "sha256": "4b91f0127509bbcb8ee85c4199920c7899306a53382546999ebee3742b464002",
-      "title": "Euro area international trade in goods deficit €10.3 bn - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1YZ0RiZ1h1U01LLV9KVFExSVFuZndxa01QQ19tdTZnTDZSSFBYQzg5WUVNWFpnc1VTVDUxbDRiREFQSnRURXdPM2NUTzhwSFB5bzlNVDNrN2lWNENWLUdCcWdzVGltczlaenoxOERRRmJNcV9GNWtlVW9paGtDTDQ?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "B12",
-      "mmt_lens": "B12_EUR_FRAG_RIESGO",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
       "sha256": "943f59c691e27a11459bee54283beebad82f98210a524518c4a7eae925a394eb",
       "title": "Regional gross domestic product: local authorities - Office for National Statistics",
@@ -32264,6 +32243,70 @@
       "sha256": "d8c7e800175b1547347ff5d4bbaadd0339ba406f7fd429e40f8cd965d338d888",
       "title": "Regional gross value added (balanced) by industry: local authorities by ITL1 region - Office for National Statistics",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTFJfNEp3SWw1Zi14NmdlYjNMbkFFdzhtbXdNVHdvSEc5N2swSEtBRkZSQzhnb3FBSlRzRUV2RWUyQ0Qwbk1adGt2aEIxX2tlWE1QU1ZIQ1QwSjI5dExBQ1psMGpzVW5hdFhnZWpYaWpJVExMT2pzOGhzSUh4eWdTT2l4QzNpWkJCQVpwdGVBSG9XQWxJQ3VMN2xCbVRaTVZDdjJfNlYzQ3U4U3I3Tl95YW9mSXRTUVJOa1RyNWdZTElkZjhSdmc0SDE1WlhmQQ?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
+      "sha256": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
+      "title": "Regional gross value added (balanced) by industry: all ITL regions - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbTg5R0RCcUg3cWFneWM4R29uLTVhSXZrZTJSdE51eHF1Zkk0MVlfSTZGSTZkN2lKODZ5a1pMSXMwbWFETmp6Wkt0Uzh3NG5fbzhmTXRrTFBBMENNeUk5U1Fpc1BSejVJVXFyNXVqUkRrVEdxc2puUGptTXQtMDVRVXV0UzhoU3lpdXBzVnhnYkdPSFUwWGhTcnNQaGd0UmVwN1ZobXBwX2tGREZoM0V5bmVVUFA?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
+      "sha256": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
+      "title": "Regional gross value added (balanced) per head and income components - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNakRfdFRmSjZqWVVDWmlkQjNiZXg5b1gyWWkxUUNycUN1Q2xGLWpPQTB6eTNDZmc0QjhJOXg1emFqYXdjZHBCbzVtSjNoRHN5SFdLMllUc0RDOHY3NmJ6ckctUS1mM3gxcUpTRFBFZzB1VG9lU3RhZE9rVTllZmItdXJFVWFqUkpnTmZBNTBDMENHSk43SnJZMFdPTFgzRDhHQzlUUEJzY2ZOWFhsdEJ5cGFWMjgtTkpQNmJGSWtMU0o?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -32387,6 +32430,96 @@
       "z": null
     },
     {
+      "id": "e5217e00c65ade18c0da535e077c776a6f9344b0edd9edd4b84a81c71b1320d5",
+      "sha256": "e5217e00c65ade18c0da535e077c776a6f9344b0edd9edd4b84a81c71b1320d5",
+      "title": "EU consumption expenditure grows, alcohol & tobacco dip - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE56bl94ZGhmUGZJTG41Y2ZrN0VmQ2V0d1RFMEVmYldwd3Y0UC1xWnBDUTZ3RDV6OHdyaE9tV3BFZXRYV0pDc0pzU0NGRWRyZnZqZzRUTi1Ha0Z6Sl9WVWMzX1JiRkIzSG5GdkFNdEo0eG9FUVUyNzVSR1lSZm9iUQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "550ae0d40b4270e158449dd8f383ec8b6f8e5a150a58838edd4be7a4bd1ab287",
+      "sha256": "550ae0d40b4270e158449dd8f383ec8b6f8e5a150a58838edd4be7a4bd1ab287",
+      "title": "Harmonised index of consumer prices (HICP) - ECOICOP ver.2 - indices and rates of change, monthly data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTUxvTEdSRUhLcGNoYkFCSjd1OEJ1clFqU2VZN0NRMGZwYzJLMmhya01OSEozR0tUWjRiSmlRUzJKUzh6RkgxOTl2WWZhcUVYel9qdmpxUlM5aUszQnVYdGhQWTlaemVmOUNEek5ZWmhKS1JWbDQzS2lQUTBCRkF5S09BMFF6SlJ6cDVuamZKUnB0V0ZzaGRlVVVjd1hqX2xGakhYY29yQUNNY0RmblE3d3lUdWUyZW9EOWUyc1J1V2dhRDJC?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4b91f0127509bbcb8ee85c4199920c7899306a53382546999ebee3742b464002",
+      "sha256": "4b91f0127509bbcb8ee85c4199920c7899306a53382546999ebee3742b464002",
+      "title": "Euro area international trade in goods deficit €10.3 bn - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1YZ0RiZ1h1U01LLV9KVFExSVFuZndxa01QQ19tdTZnTDZSSFBYQzg5WUVNWFpnc1VTVDUxbDRiREFQSnRURXdPM2NUTzhwSFB5bzlNVDNrN2lWNENWLUdCcWdzVGltczlaenoxOERRRmJNcV9GNWtlVW9paGtDTDQ?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "B12",
+      "mmt_lens": "B12_EUR_FRAG_RIESGO",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
       "sha256": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
       "title": "Auction Result of Treasury Discount Bills on November 13, 2026 : Ministry of Finance - 財務省",
@@ -32423,70 +32556,6 @@
       "sha256": "6f111c2340ed0f372306679f8d8e7ddfd7f40158abb796fa24fc73ddd1c46227",
       "title": "Regional gross domestic product: all ITL regions - Office for National Statistics",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXNBNFY3WUdjaW9RMm42NnNzc0s5NXY3dUNLVGt0ZXNoZmpiLTlzZl80Y3BYa3BtMERyNU5PUDJiREJJSUM0R1lvT0kwdGZwamloYzI1TnNiZFEtbVQ1d3hUUDAxZWJLeVpET0RmMGdsemV6d2NXcllhWHQ5Z1Z2b2hiT1NNQ2NneVFIUXlDYVduU3pyOXRXZXRRWUt6bXBqN3NtYVh1eGl3bnJQSU41NQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
-      "sha256": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
-      "title": "Regional gross value added (balanced) by industry: all ITL regions - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbTg5R0RCcUg3cWFneWM4R29uLTVhSXZrZTJSdE51eHF1Zkk0MVlfSTZGSTZkN2lKODZ5a1pMSXMwbWFETmp6Wkt0Uzh3NG5fbzhmTXRrTFBBMENNeUk5U1Fpc1BSejVJVXFyNXVqUkRrVEdxc2puUGptTXQtMDVRVXV0UzhoU3lpdXBzVnhnYkdPSFUwWGhTcnNQaGd0UmVwN1ZobXBwX2tGREZoM0V5bmVVUFA?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
-      "sha256": "f5def24630c539e36c04f13cd4819a83e31516bd8cf8ffa2b66a6b22232b3b0b",
-      "title": "Regional gross value added (balanced) per head and income components - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNakRfdFRmSjZqWVVDWmlkQjNiZXg5b1gyWWkxUUNycUN1Q2xGLWpPQTB6eTNDZmc0QjhJOXg1emFqYXdjZHBCbzVtSjNoRHN5SFdLMllUc0RDOHY3NmJ6ckctUS1mM3gxcUpTRFBFZzB1VG9lU3RhZE9rVTllZmItdXJFVWFqUkpnTmZBNTBDMENHSk43SnJZMFdPTFgzRDhHQzlUUEJzY2ZOWFhsdEJ5cGFWMjgtTkpQNmJGSWtMU0o?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -33216,36 +33285,6 @@
       "z": null
     },
     {
-      "id": "72f8b9d46ee6db62d9cf34b7ad204f5511900cced3fab936f1f2402ac90c6f5f",
-      "sha256": "72f8b9d46ee6db62d9cf34b7ad204f5511900cced3fab936f1f2402ac90c6f5f",
-      "title": "[gov_10q_ggdebt] Quarterly government debt - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNWFubzJUSUNxNGZEazBIOVp4VjNEQXYtcmZJZ0hlZDlYd2I1Rl9EamM2d0xWUC10MkFSa0kyRlF3YmdCQzdHWUJCLVNEVVoxOUVnZE1pRUhFNFA3MHVNVFVrNW5uNFc5UmVZVG9FMkxfSjhJSzB3SzBsNE15SVdud0kyOGxuS3F1OGNsSFNfeWJocG1pbjJR?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "ae8b8f631fe61c5463241660e1184be7b6e160070f7c02e0f07db840d038714f",
       "sha256": "ae8b8f631fe61c5463241660e1184be7b6e160070f7c02e0f07db840d038714f",
       "title": "GDP first quarterly estimate, UK: July to September 2026 - Office for National Statistics",
@@ -33344,70 +33383,6 @@
       "z": null
     },
     {
-      "id": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
-      "sha256": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
-      "title": "UK trade: September 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcnR4dHNzYndVZVpBTEE5RXhGYWFlLXFESjE3dkhUNUl5bTN6OGpiQkNIaklRSzNpLVlWU0tCSTdLdHFVbUxRcTR6ODBqbWlkTUFES2RjakdwWElRaEpaZ3FZRlRzRlY1eUhSX3JYMmUyMDJxQXNZOEk0SUlqcTh1RTdSZXV5dFM2V3hQdWZOU2l4amdDeW4xMVp5RHlwdw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
-      "sha256": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
-      "title": "UK resident population mid-year estimates - real-time database - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMXVNQTMyc2tCakZTSVJIRFlNeC1xV2VGZkJYazFmV1NRbDNtT2U3VHMwTXJzbkdXTktEQWtvZ09oay1nMjlxQzU4UXpWOXFoU2ZIMXJMekJjR2IwQmFwLTVrQUdsZExqS1R4WW9ac1FZSDN2aFB2bVlNRE1kdWtRNHc4bDdwYXJmZERSNXhSTzJNaFJaSDBOVnpVbkdKSm95ZWhoLXZBNXNlTkNTcmF6YnJ2T2NrV0k?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "094e28ea624354ac2aa91473db22a296fe8c498bf8135c66cb0e99338ca985c4",
       "sha256": "094e28ea624354ac2aa91473db22a296fe8c498bf8135c66cb0e99338ca985c4",
       "title": "Index of Production, UK: September 2026 - Office for National Statistics",
@@ -33444,38 +33419,6 @@
       "sha256": "1596f54e790dd2f413cee0d396c28b3be75fa6d06070fb3c0995763951bec64a",
       "title": "UK trade: goods and services publication tables - Office for National Statistics",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTzJMSUlKVXB2ZGJOYUN5VFdIa2kxcTc5azdJelRnaDhpTE05cVFqdnNrMkJBQ2d3MjdORWVjN2tCNHpyTm1PcnI5ajVEWWdDWWlhamlPTTlSVGZtNzVvZmFvQnYtRy1UQW5YbkRmOXo5T0dsVThVYkYyR2E0R3FnN3lpeWlMWUdNVWFpVzVoOUFmWFBTcVFpODJUb1lZUmpJanQtUWJ4N0xUbFl0X3pPaS1aS21ZQQ?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
-      "sha256": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
-      "title": "Quarterly Stocks Survey (QSS) and Quarterly Acquisitions and Disposals of Capital Assets Survey (QCAS) textual data analysis - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFAzQ1hUdUR6aFR2MjhZTkwxVzBVaHBiRjI3dlUzS2xoSXpIblpDMkFpdmhKVDAtQjVfNU5FdUVTM0xWUVJ6TTJDLWJDU2NtSW40cE00UzJTdHVZVWNMbndaMkx2MUdxd1BMU1dkYmNEVmpRZURBZUI5MkowNWFYTlNpb0xKX2N2dVlIRWV1blBvX1FZa1ctVEZ4STZWRGVmZlViSE9wR2F6ZkFGRTNyQW5oY252X2JPdFhFQ1R0Z21ScHN4algya0hUdnhUdw?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -33589,6 +33532,132 @@
       "legacy_category": "otro",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "72f8b9d46ee6db62d9cf34b7ad204f5511900cced3fab936f1f2402ac90c6f5f",
+      "sha256": "72f8b9d46ee6db62d9cf34b7ad204f5511900cced3fab936f1f2402ac90c6f5f",
+      "title": "[gov_10q_ggdebt] Quarterly government debt - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNWFubzJUSUNxNGZEazBIOVp4VjNEQXYtcmZJZ0hlZDlYd2I1Rl9EamM2d0xWUC10MkFSa0kyRlF3YmdCQzdHWUJCLVNEVVoxOUVnZE1pRUhFNFA3MHVNVFVrNW5uNFc5UmVZVG9FMkxfSjhJSzB3SzBsNE15SVdud0kyOGxuS3F1OGNsSFNfeWJocG1pbjJR?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
+      "sha256": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
+      "title": "UK trade: September 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcnR4dHNzYndVZVpBTEE5RXhGYWFlLXFESjE3dkhUNUl5bTN6OGpiQkNIaklRSzNpLVlWU0tCSTdLdHFVbUxRcTR6ODBqbWlkTUFES2RjakdwWElRaEpaZ3FZRlRzRlY1eUhSX3JYMmUyMDJxQXNZOEk0SUlqcTh1RTdSZXV5dFM2V3hQdWZOU2l4amdDeW4xMVp5RHlwdw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
+      "sha256": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
+      "title": "UK resident population mid-year estimates - real-time database - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMXVNQTMyc2tCakZTSVJIRFlNeC1xV2VGZkJYazFmV1NRbDNtT2U3VHMwTXJzbkdXTktEQWtvZ09oay1nMjlxQzU4UXpWOXFoU2ZIMXJMekJjR2IwQmFwLTVrQUdsZExqS1R4WW9ac1FZSDN2aFB2bVlNRE1kdWtRNHc4bDdwYXJmZERSNXhSTzJNaFJaSDBOVnpVbkdKSm95ZWhoLXZBNXNlTkNTcmF6YnJ2T2NrV0k?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
+      "sha256": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
+      "title": "Quarterly Stocks Survey (QSS) and Quarterly Acquisitions and Disposals of Capital Assets Survey (QCAS) textual data analysis - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFAzQ1hUdUR6aFR2MjhZTkwxVzBVaHBiRjI3dlUzS2xoSXpIblpDMkFpdmhKVDAtQjVfNU5FdUVTM0xWUVJ6TTJDLWJDU2NtSW40cE00UzJTdHVZVWNMbndaMkx2MUdxd1BMU1dkYmNEVmpRZURBZUI5MkowNWFYTlNpb0xKX2N2dVlIRWV1blBvX1FZa1ctVEZ4STZWRGVmZlViSE9wR2F6ZkFGRTNyQW5oY252X2JPdFhFQ1R0Z21ScHN4algya0hUdnhUdw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -34825,28 +34894,30 @@
       "z": null
     },
     {
-      "id": "92d5efd295e09631958776e2d67d72025b939f6ac99965e1fc8028864bcd61b6",
-      "sha256": "92d5efd295e09631958776e2d67d72025b939f6ac99965e1fc8028864bcd61b6",
-      "title": "[tipsna70] Labour productivity per hour worked - annual data - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQanlIWHRXYktxOFNpeW9nNGZraGhKSlRmV3d4dUlXS2dpQTAwSW9hZlZQblJEQkJZajQtSnRDTDFWV0IxczBDeE5RMzR1YmNycGlqWnY1NEJjVjhhVExodzI4ZFZrV1d5NEhKYkt0QjZ0ZE5aSDBLQVhzTlJZdVBkd3k3eHZ0Y2xnMWxCR25tNA?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
+      "id": "107cda82e466df3844e262ce60f92428a9735f589ddbe57a4788321fcdbd511f",
+      "sha256": "107cda82e466df3844e262ce60f92428a9735f589ddbe57a4788321fcdbd511f",
+      "title": "Lending indicators, September Quarter 2026 - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ3VQbXZyWEpLX0VwN0Z2UUs3TlZUQjZCU1BqWjZiQVBhRkdCT1Q4RF90RUl1TFNTdlFpYVkyVGxqUmw5WXhkNjB3dkdvaWhWbjFtRWFjdmJLWVllLThVaHpfX0h3cnY3dFBrWlVORlpnNUhZUkhxOTVoYmp5YUg5dmJva25xVmltOHAw?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
       "source_type": "oficial",
       "published_at": "2026-11-11T08:00:00.000Z",
       "currencies": [
-        "EUR"
+        "AUD",
+        "USD"
       ],
       "divisas": [
-        "EUR"
+        "AUD",
+        "USD"
       ],
-      "category": "BC",
+      "category": "Fiscal",
       "categories": [
-        "BC"
+        "Fiscal"
       ],
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -34887,10 +34958,10 @@
       "z": null
     },
     {
-      "id": "107cda82e466df3844e262ce60f92428a9735f589ddbe57a4788321fcdbd511f",
-      "sha256": "107cda82e466df3844e262ce60f92428a9735f589ddbe57a4788321fcdbd511f",
-      "title": "Lending indicators, September Quarter 2026 - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZ3VQbXZyWEpLX0VwN0Z2UUs3TlZUQjZCU1BqWjZiQVBhRkdCT1Q4RF90RUl1TFNTdlFpYVkyVGxqUmw5WXhkNjB3dkdvaWhWbjFtRWFjdmJLWVllLThVaHpfX0h3cnY3dFBrWlVORlpnNUhZUkhxOTVoYmp5YUg5dmJva25xVmltOHAw?oc=5",
+      "id": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
+      "sha256": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
+      "title": "2026 Census Employment Collection Notice - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbHgyVzlLYkg2OW5WSXh5T1M1N1p1VVliZnBxcWhCSmlJSXJMdWlvdFRoN0tDUy1KTF9uM1ZPU01jem5Na3J0UUQ2bVRfZ1F6OTN2V3BJalZuNDViOHlPYTJuT3Z0NDBoVENIeGVxWFRYcGpsaS1yMTVjYVo4NkRMWGVDb2FUUlg2bWRfR18zN09fZlZIQkdkNUVRaDBIbFRrb1MzNHA4QVk2cjB6cm5Rb3hUMTVWZkRFNGNv?oc=5",
       "source": "ABS / Australian Treasury",
       "source_id": "au-abs-treasury",
       "source_type": "oficial",
@@ -34903,11 +34974,12 @@
         "AUD",
         "USD"
       ],
-      "category": "Fiscal",
+      "category": "Inflacion_Empleo",
       "categories": [
+        "Inflacion_Empleo",
         "Fiscal"
       ],
-      "legacy_category": "otro",
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -34951,31 +35023,28 @@
       "z": null
     },
     {
-      "id": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
-      "sha256": "7830dbf2e5d0701eb2e93fbab35911a8d046ad41d8cad5d7a0bcd8c922f381c3",
-      "title": "2026 Census Employment Collection Notice - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbHgyVzlLYkg2OW5WSXh5T1M1N1p1VVliZnBxcWhCSmlJSXJMdWlvdFRoN0tDUy1KTF9uM1ZPU01jem5Na3J0UUQ2bVRfZ1F6OTN2V3BJalZuNDViOHlPYTJuT3Z0NDBoVENIeGVxWFRYcGpsaS1yMTVjYVo4NkRMWGVDb2FUUlg2bWRfR18zN09fZlZIQkdkNUVRaDBIbFRrb1MzNHA4QVk2cjB6cm5Rb3hUMTVWZkRFNGNv?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
+      "id": "92d5efd295e09631958776e2d67d72025b939f6ac99965e1fc8028864bcd61b6",
+      "sha256": "92d5efd295e09631958776e2d67d72025b939f6ac99965e1fc8028864bcd61b6",
+      "title": "[tipsna70] Labour productivity per hour worked - annual data - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQanlIWHRXYktxOFNpeW9nNGZraGhKSlRmV3d4dUlXS2dpQTAwSW9hZlZQblJEQkJZajQtSnRDTDFWV0IxczBDeE5RMzR1YmNycGlqWnY1NEJjVjhhVExodzI4ZFZrV1d5NEhKYkt0QjZ0ZE5aSDBLQVhzTlJZdVBkd3k3eHZ0Y2xnMWxCR25tNA?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
       "source_type": "oficial",
       "published_at": "2026-11-11T08:00:00.000Z",
       "currencies": [
-        "AUD",
-        "USD"
+        "EUR"
       ],
       "divisas": [
-        "AUD",
-        "USD"
+        "EUR"
       ],
-      "category": "Inflacion_Empleo",
+      "category": "BC",
       "categories": [
-        "Inflacion_Empleo",
-        "Fiscal"
+        "BC"
       ],
-      "legacy_category": "dato_macro",
+      "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
