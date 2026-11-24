@@ -3,88 +3,88 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-24T22:56:55.021Z",
+  "generated_at": "2026-11-24T23:02:00.662Z",
   "health": {
-    "sources_active": 34,
-    "sources_live": 34,
+    "sources_active": 33,
+    "sources_live": 33,
     "sources_cached": 0,
     "sources_total": 35,
     "sources_empty": 1,
-    "sources_error": 0,
+    "sources_error": 1,
     "agenda_events_count": 73,
     "status": "DEGRADED"
   },
   "coverage": {
     "USD": {
-      "count_72h": 308,
+      "count_72h": 309,
       "count_official_45d": 353,
-      "last_item_at": "2026-11-24T22:42:35.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "last_item_at": "2026-11-24T23:00:45.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "EUR": {
       "count_72h": 57,
       "count_official_45d": 205,
       "last_item_at": "2026-11-24T17:20:05.000Z",
-      "hours_since_last": 5.6,
-      "hours_since_last_business": 5.6,
+      "hours_since_last": 5.7,
+      "hours_since_last_business": 5.7,
       "silence": false
     },
     "GBP": {
       "count_72h": 57,
       "count_official_45d": 116,
       "last_item_at": "2026-11-24T16:00:00.000Z",
-      "hours_since_last": 6.9,
-      "hours_since_last_business": 6.9,
+      "hours_since_last": 7,
+      "hours_since_last_business": 7,
       "silence": false
     },
     "JPY": {
       "count_72h": 39,
       "count_official_45d": 95,
       "last_item_at": "2026-11-24T22:15:50.000Z",
-      "hours_since_last": 0.7,
-      "hours_since_last_business": 0.7,
+      "hours_since_last": 0.8,
+      "hours_since_last_business": 0.8,
       "silence": false
     },
     "CHF": {
       "count_72h": 151,
       "count_official_45d": 18,
       "last_item_at": "2026-11-24T22:15:50.000Z",
-      "hours_since_last": 0.7,
-      "hours_since_last_business": 0.7,
+      "hours_since_last": 0.8,
+      "hours_since_last_business": 0.8,
       "silence": false
     },
     "CAD": {
       "count_72h": 57,
       "count_official_45d": 8,
       "last_item_at": "2026-11-24T21:09:43.000Z",
-      "hours_since_last": 1.8,
-      "hours_since_last_business": 1.8,
+      "hours_since_last": 1.9,
+      "hours_since_last_business": 1.9,
       "silence": false
     },
     "AUD": {
       "count_72h": 131,
       "count_official_45d": 95,
       "last_item_at": "2026-11-24T22:52:30.000Z",
-      "hours_since_last": 0.1,
-      "hours_since_last_business": 0.1,
+      "hours_since_last": 0.2,
+      "hours_since_last_business": 0.2,
       "silence": false
     },
     "NZD": {
-      "count_72h": 123,
+      "count_72h": 124,
       "count_official_45d": 83,
-      "last_item_at": "2026-11-24T22:42:35.000Z",
-      "hours_since_last": 0.2,
-      "hours_since_last_business": 0.2,
+      "last_item_at": "2026-11-24T22:54:04.000Z",
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "XAU": {
       "count_72h": 11,
       "count_official_45d": 0,
       "last_item_at": "2026-11-24T20:50:06.000Z",
-      "hours_since_last": 2.1,
-      "hours_since_last_business": 2.1
+      "hours_since_last": 2.2,
+      "hours_since_last_business": 2.2
     }
   },
   "risk_map": [
@@ -97,14 +97,14 @@
           "lock_class": "TIER1_DATO",
           "title": "Core PCE Price Index m/m",
           "time": "2026-11-25T13:30:00.000Z",
-          "hours_until": 14.6,
+          "hours_until": 14.5,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Prelim GDP q/q",
           "time": "2026-11-25T13:30:00.000Z",
-          "hours_until": 14.6,
+          "hours_until": 14.5,
           "retirar_limitadas": false
         }
       ],
@@ -452,21 +452,21 @@
           "lock_class": "TIER1_DATO",
           "title": "CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 1.6,
+          "hours_until": 1.5,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "CPI y/y",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 1.6,
+          "hours_until": 1.5,
           "retirar_limitadas": false
         },
         {
           "lock_class": "TIER1_DATO",
           "title": "Trimmed Mean CPI m/m",
           "time": "2026-11-25T00:30:00.000Z",
-          "hours_until": 1.6,
+          "hours_until": 1.5,
           "retirar_limitadas": false
         }
       ],
@@ -976,7 +976,7 @@
       "actual": "47.9",
       "forecast": "49.8",
       "previous": "49.3",
-      "hours_from_now": -38.7,
+      "hours_from_now": -38.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -991,7 +991,7 @@
       "actual": "46.6",
       "forecast": "47.4",
       "previous": "48.4",
-      "hours_from_now": -38.7,
+      "hours_from_now": -38.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1006,7 +1006,7 @@
       "actual": "55",
       "forecast": "54.1",
       "previous": "54.2",
-      "hours_from_now": -38.4,
+      "hours_from_now": -38.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1021,7 +1021,7 @@
       "actual": "54",
       "forecast": "52.4",
       "previous": "51.7",
-      "hours_from_now": -38.4,
+      "hours_from_now": -38.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1036,7 +1036,7 @@
       "actual": "52.9",
       "forecast": "52.7",
       "previous": "52.4",
-      "hours_from_now": -37.9,
+      "hours_from_now": -38,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1051,7 +1051,7 @@
       "actual": "51.2",
       "forecast": "51.8",
       "previous": "51.7",
-      "hours_from_now": -37.9,
+      "hours_from_now": -38,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1066,7 +1066,7 @@
       "actual": "52.7",
       "forecast": "53.0",
       "previous": "52.8",
-      "hours_from_now": -37.4,
+      "hours_from_now": -37.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1081,7 +1081,7 @@
       "actual": "52",
       "forecast": "53.0",
       "previous": "53.1",
-      "hours_from_now": -37.4,
+      "hours_from_now": -37.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1096,7 +1096,7 @@
       "actual": "54.5",
       "forecast": "54.5",
       "previous": "56.0",
-      "hours_from_now": -32.2,
+      "hours_from_now": -32.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1111,7 +1111,7 @@
       "actual": "54.7",
       "forecast": "55.6",
       "previous": "57.9",
-      "hours_from_now": -32.2,
+      "hours_from_now": -32.3,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1126,7 +1126,7 @@
       "actual": "53.7",
       "forecast": "53.5",
       "previous": "53.3",
-      "hours_from_now": -22.4,
+      "hours_from_now": -22.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1141,7 +1141,7 @@
       "actual": "90.6",
       "forecast": "90.5",
       "previous": "90.2",
-      "hours_from_now": -13.9,
+      "hours_from_now": -14,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1156,7 +1156,7 @@
       "actual": "9",
       "forecast": "-27",
       "previous": "-10",
-      "hours_from_now": -11.9,
+      "hours_from_now": -12,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1171,7 +1171,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -10.4,
+      "hours_from_now": -10.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1186,7 +1186,7 @@
       "actual": "21K",
       "forecast": null,
       "previous": "23.8K",
-      "hours_from_now": -9.7,
+      "hours_from_now": -9.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1201,7 +1201,7 @@
       "actual": null,
       "forecast": "-9.4",
       "previous": "-9.8",
-      "hours_from_now": -8.9,
+      "hours_from_now": -9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1216,7 +1216,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.3%",
-      "hours_from_now": -8.9,
+      "hours_from_now": -9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1231,7 +1231,7 @@
       "actual": null,
       "forecast": "2.7%",
       "previous": "2.7%",
-      "hours_from_now": -8.9,
+      "hours_from_now": -9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1246,7 +1246,7 @@
       "actual": "103.3",
       "forecast": "92.4",
       "previous": "91.7",
-      "hours_from_now": -7.9,
+      "hours_from_now": -8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1261,7 +1261,7 @@
       "actual": "3",
       "forecast": "-2",
       "previous": "-2",
-      "hours_from_now": -7.9,
+      "hours_from_now": -8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1276,7 +1276,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -5.5,
+      "hours_from_now": -5.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": "DISCURSO",
       "lock_level": "NINGUNO",
@@ -1291,7 +1291,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": -1.4,
+      "hours_from_now": -1.5,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1306,7 +1306,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 0.9,
+      "hours_from_now": 0.8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1321,7 +1321,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.8%",
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1336,7 +1336,7 @@
       "actual": null,
       "forecast": "4.7%",
       "previous": "4.3%",
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1351,7 +1351,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.3%",
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1366,7 +1366,7 @@
       "actual": null,
       "forecast": "0.8%",
       "previous": "-2.1%",
-      "hours_from_now": 1.6,
+      "hours_from_now": 1.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1381,7 +1381,7 @@
       "actual": null,
       "forecast": "2.5%",
       "previous": "2.4%",
-      "hours_from_now": 6.1,
+      "hours_from_now": 6,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1396,7 +1396,7 @@
       "actual": null,
       "forecast": "0.2%",
       "previous": "0.2%",
-      "hours_from_now": 8.1,
+      "hours_from_now": 8,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1411,7 +1411,7 @@
       "actual": null,
       "forecast": null,
       "previous": "-15.3",
-      "hours_from_now": 10.1,
+      "hours_from_now": 10,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1426,7 +1426,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.37|1.1",
-      "hours_from_now": 11.8,
+      "hours_from_now": 11.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1441,7 +1441,7 @@
       "actual": null,
       "forecast": "0.3%",
       "previous": "0.3%",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1456,7 +1456,7 @@
       "actual": null,
       "forecast": "3.5%",
       "previous": "3.4%",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": "TIER1",
       "lock_class": "TIER1_DATO",
       "lock_level": "TIER1",
@@ -1471,7 +1471,7 @@
       "actual": null,
       "forecast": "2.3%",
       "previous": "2.3%",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1486,7 +1486,7 @@
       "actual": null,
       "forecast": "0.5%",
       "previous": "0.5%",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1501,7 +1501,7 @@
       "actual": null,
       "forecast": "0.7%",
       "previous": "1.8%",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1516,7 +1516,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.2%",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1531,7 +1531,7 @@
       "actual": null,
       "forecast": "0.4%",
       "previous": "0.5%",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1546,7 +1546,7 @@
       "actual": null,
       "forecast": "201K",
       "previous": "203K",
-      "hours_from_now": 14.6,
+      "hours_from_now": 14.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1561,7 +1561,7 @@
       "actual": null,
       "forecast": "650K",
       "previous": "676K",
-      "hours_from_now": 16.1,
+      "hours_from_now": 16,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1576,7 +1576,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.4M",
-      "hours_from_now": 16.6,
+      "hours_from_now": 16.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1591,7 +1591,7 @@
       "actual": null,
       "forecast": "-19B",
       "previous": "20B",
-      "hours_from_now": 18.1,
+      "hours_from_now": 18,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1606,7 +1606,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 20.1,
+      "hours_from_now": 20,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1621,7 +1621,7 @@
       "actual": null,
       "forecast": "4.5%",
       "previous": "-3.6%",
-      "hours_from_now": 25.6,
+      "hours_from_now": 25.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1636,7 +1636,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 25.6,
+      "hours_from_now": 25.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1651,7 +1651,7 @@
       "actual": null,
       "forecast": "-29.4",
       "previous": "-30.8",
-      "hours_from_now": 32.1,
+      "hours_from_now": 32,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1666,7 +1666,7 @@
       "actual": null,
       "forecast": "3.5%",
       "previous": "3.5%",
-      "hours_from_now": 34.1,
+      "hours_from_now": 34,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1681,7 +1681,7 @@
       "actual": null,
       "forecast": "3.2%",
       "previous": "3.1%",
-      "hours_from_now": 34.1,
+      "hours_from_now": 34,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1696,7 +1696,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.6,
+      "hours_from_now": 35.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1711,7 +1711,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.6,
+      "hours_from_now": 35.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1726,7 +1726,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 35.6,
+      "hours_from_now": 35.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1741,7 +1741,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 37.6,
+      "hours_from_now": 37.5,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1756,7 +1756,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 38.1,
+      "hours_from_now": 38,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -2067,127 +2067,6 @@
   "execution_windows": {
     "tz": "Africa/Malabo",
     "analysis": {
-      "date": "2026-11-24",
-      "eom": false,
-      "qend_window": false,
-      "yend_window": false,
-      "gotobi": false,
-      "fix_tokyo": {
-        "wat": "01:55",
-        "gotobi": false
-      },
-      "fix_london": {
-        "wat": "17:00"
-      },
-      "nyc_cut": {
-        "wat": "16:00"
-      },
-      "blocked_entry": [],
-      "fx_roll": {
-        "mode": "SHADOW",
-        "status": "OK",
-        "reason": null,
-        "start": "2026-12-07",
-        "end": "2026-12-19",
-        "active": false,
-        "state": "BEFORE"
-      },
-      "imm": {
-        "mode": "SHADOW",
-        "status": "OK",
-        "reason": null,
-        "date": "2026-12-16"
-      },
-      "opex": {
-        "mode": "SHADOW",
-        "status": "OK",
-        "reason": null,
-        "note": "exp1 es el vencimiento del modelo (DTE >= 7), no todos los vencimientos",
-        "currencies": {
-          "EUR": {
-            "exp1": "2026-12-04",
-            "dte1": 10
-          },
-          "JPY": {
-            "exp1": "2026-12-04",
-            "dte1": 10
-          },
-          "GBP": {
-            "exp1": "2026-12-04",
-            "dte1": 10
-          },
-          "AUD": {
-            "exp1": "2026-12-04",
-            "dte1": 10
-          },
-          "CAD": {
-            "exp1": "2026-12-04",
-            "dte1": 10
-          },
-          "CHF": {
-            "exp1": "2026-12-04",
-            "dte1": 10
-          },
-          "NZD": {
-            "exp1": null,
-            "dte1": null
-          }
-        },
-        "earliest": {
-          "exp1": "2026-12-04",
-          "currencies": [
-            "EUR",
-            "JPY",
-            "GBP",
-            "AUD",
-            "CAD",
-            "CHF"
-          ]
-        }
-      },
-      "fiscal_jp": {
-        "mode": "SHADOW",
-        "status": "OK",
-        "start": "2026-04-01",
-        "end": "2027-03-31",
-        "state": "INSIDE"
-      },
-      "fiscal_us": {
-        "mode": "SHADOW",
-        "status": "OK",
-        "start": "2026-10-01",
-        "end": "2027-09-30",
-        "state": "INSIDE",
-        "baseline": [
-          {
-            "date": "2026-12-15",
-            "scope": "BASELINE",
-            "effect": "TGA/reserves"
-          },
-          {
-            "date": "2027-01-15",
-            "scope": "BASELINE",
-            "effect": "TGA/reserves"
-          },
-          {
-            "date": "2027-04-15",
-            "scope": "BASELINE",
-            "effect": "TGA/reserves"
-          },
-          {
-            "date": "2027-06-15",
-            "scope": "BASELINE",
-            "effect": "TGA/reserves"
-          },
-          {
-            "date": "2027-09-15",
-            "scope": "BASELINE",
-            "effect": "TGA/reserves"
-          }
-        ]
-      }
-    },
-    "next_business_day": {
       "date": "2026-11-25",
       "eom": false,
       "qend_window": false,
@@ -2318,9 +2197,191 @@
           }
         ]
       }
+    },
+    "next_business_day": {
+      "date": "2026-11-27",
+      "eom": false,
+      "qend_window": false,
+      "yend_window": false,
+      "gotobi": false,
+      "fix_tokyo": {
+        "wat": "01:55",
+        "gotobi": false
+      },
+      "fix_london": {
+        "wat": "17:00"
+      },
+      "nyc_cut": {
+        "wat": "16:00"
+      },
+      "blocked_entry": [],
+      "fx_roll": {
+        "mode": "SHADOW",
+        "status": "OK",
+        "reason": null,
+        "start": "2026-12-07",
+        "end": "2026-12-19",
+        "active": false,
+        "state": "BEFORE"
+      },
+      "imm": {
+        "mode": "SHADOW",
+        "status": "OK",
+        "reason": null,
+        "date": "2026-12-16"
+      },
+      "opex": {
+        "mode": "SHADOW",
+        "status": "OK",
+        "reason": null,
+        "note": "exp1 es el vencimiento del modelo (DTE >= 7), no todos los vencimientos",
+        "currencies": {
+          "EUR": {
+            "exp1": "2026-12-04",
+            "dte1": 7
+          },
+          "JPY": {
+            "exp1": "2026-12-04",
+            "dte1": 7
+          },
+          "GBP": {
+            "exp1": "2026-12-04",
+            "dte1": 7
+          },
+          "AUD": {
+            "exp1": "2026-12-04",
+            "dte1": 7
+          },
+          "CAD": {
+            "exp1": "2026-12-04",
+            "dte1": 7
+          },
+          "CHF": {
+            "exp1": "2026-12-04",
+            "dte1": 7
+          },
+          "NZD": {
+            "exp1": null,
+            "dte1": null
+          }
+        },
+        "earliest": {
+          "exp1": "2026-12-04",
+          "currencies": [
+            "EUR",
+            "JPY",
+            "GBP",
+            "AUD",
+            "CAD",
+            "CHF"
+          ]
+        }
+      },
+      "fiscal_jp": {
+        "mode": "SHADOW",
+        "status": "OK",
+        "start": "2026-04-01",
+        "end": "2027-03-31",
+        "state": "INSIDE"
+      },
+      "fiscal_us": {
+        "mode": "SHADOW",
+        "status": "OK",
+        "start": "2026-10-01",
+        "end": "2027-09-30",
+        "state": "INSIDE",
+        "baseline": [
+          {
+            "date": "2026-12-15",
+            "scope": "BASELINE",
+            "effect": "TGA/reserves"
+          },
+          {
+            "date": "2027-01-15",
+            "scope": "BASELINE",
+            "effect": "TGA/reserves"
+          },
+          {
+            "date": "2027-04-15",
+            "scope": "BASELINE",
+            "effect": "TGA/reserves"
+          },
+          {
+            "date": "2027-06-15",
+            "scope": "BASELINE",
+            "effect": "TGA/reserves"
+          },
+          {
+            "date": "2027-09-15",
+            "scope": "BASELINE",
+            "effect": "TGA/reserves"
+          }
+        ]
+      }
     }
   },
   "items": [
+    {
+      "id": "36982f97dab003ef118b58bbfd9af869b6b84f0270090143e2be4dfa9a3816d1",
+      "sha256": "36982f97dab003ef118b58bbfd9af869b6b84f0270090143e2be4dfa9a3816d1",
+      "title": "Us pce preview inflation seen near 3.8 in the fed s last read before a december hike",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
+      "source_type": "agencia",
+      "published_at": "2026-11-24T23:00:45.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "7ad60c034d90302ba910abf294a34e0503f07a159d7cbfbacd54e3226e11da9a",
+      "sha256": "7ad60c034d90302ba910abf294a34e0503f07a159d7cbfbacd54e3226e11da9a",
+      "title": "KMD Brands pulls back from talks on possible takeover",
+      "url": "https://www.rnz.co.nz/news/business/2770861/kmd-brands-pulls-back-from-talks-on-possible-takeover",
+      "source": "RNZ",
+      "source_id": "rnz-business",
+      "source_type": "agencia",
+      "published_at": "2026-11-24T22:54:04.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
     {
       "id": "23f6c8364916ae3ea504c8a258968b9fa6964aa1b82c08e4bef57246224d689d",
       "sha256": "23f6c8364916ae3ea504c8a258968b9fa6964aa1b82c08e4bef57246224d689d",
@@ -2384,16 +2445,20 @@
       "z": null
     },
     {
-      "id": "c78b55cd1ddb7dad207f9f3b9b03b85eb789e427e3954dff553e3a444b453578",
-      "sha256": "c78b55cd1ddb7dad207f9f3b9b03b85eb789e427e3954dff553e3a444b453578",
-      "title": "Deutsche bank sees s p 500 at 9.000 by end 2027.25 upside on ai driven earnings",
-      "url": "",
-      "source": "InvestingLive",
-      "source_id": "investinglive",
+      "id": "7969a286fbf73c7b42f35ac0617af4497b5dca926d97d8796e7314b52044a6fb",
+      "sha256": "7969a286fbf73c7b42f35ac0617af4497b5dca926d97d8796e7314b52044a6fb",
+      "title": "RNZ investigating potential cyber breach",
+      "url": "https://www.rnz.co.nz/news/political/2770474/rnz-investigating-potential-cyber-breach",
+      "source": "RNZ",
+      "source_id": "rnz-business",
       "source_type": "agencia",
-      "published_at": "2026-11-24T22:40:34.000Z",
-      "currencies": [],
-      "divisas": [],
+      "published_at": "2026-11-24T22:41:46.000Z",
+      "currencies": [
+        "NZD"
+      ],
+      "divisas": [
+        "NZD"
+      ],
       "category": "BC",
       "categories": [
         "BC"
@@ -2410,20 +2475,16 @@
       "z": null
     },
     {
-      "id": "7969a286fbf73c7b42f35ac0617af4497b5dca926d97d8796e7314b52044a6fb",
-      "sha256": "7969a286fbf73c7b42f35ac0617af4497b5dca926d97d8796e7314b52044a6fb",
-      "title": "RNZ investigating potential cyber breach",
-      "url": "https://www.rnz.co.nz/news/political/2770474/rnz-investigating-potential-cyber-breach",
-      "source": "RNZ",
-      "source_id": "rnz-business",
+      "id": "c78b55cd1ddb7dad207f9f3b9b03b85eb789e427e3954dff553e3a444b453578",
+      "sha256": "c78b55cd1ddb7dad207f9f3b9b03b85eb789e427e3954dff553e3a444b453578",
+      "title": "Deutsche bank sees s p 500 at 9.000 by end 2027.25 upside on ai driven earnings",
+      "url": "",
+      "source": "InvestingLive",
+      "source_id": "investinglive",
       "source_type": "agencia",
-      "published_at": "2026-11-24T22:38:34.000Z",
-      "currencies": [
-        "NZD"
-      ],
-      "divisas": [
-        "NZD"
-      ],
+      "published_at": "2026-11-24T22:40:34.000Z",
+      "currencies": [],
+      "divisas": [],
       "category": "BC",
       "categories": [
         "BC"
@@ -13537,36 +13598,6 @@
       "z": null
     },
     {
-      "id": "bce17d80e46ac9086c1e02d6fe9a26753ba7b9cf9ffec326c92b9a7abc939930",
-      "sha256": "bce17d80e46ac9086c1e02d6fe9a26753ba7b9cf9ffec326c92b9a7abc939930",
-      "title": "ANZ forecasts first RBA rate cut in June 2027 - grafa.com",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSWJMVk1IWGVMS25HdWljZV9uUmxMS1RhVUs2MmJNSnktUVpQbEszY3J1b25KNURpZ1dXTmpRYmhMeUUxQVFpV1kwOUdIZ2hwQ2dLbVAzb0I5MmxibV9JWVdHcHBCMlRKRUt5V2VkM3JqUUh1dlpGZEJuU3ByUVpJUjlZNlI?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-24T02:37:10.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "116978752d75996f9b17014be6b50d3ab5422b501118cd941151a3f4e960ded0",
       "sha256": "116978752d75996f9b17014be6b50d3ab5422b501118cd941151a3f4e960ded0",
       "title": "Cftc staff let exchanges count bitcoin and ether toward reserves after a 20 haircut",
@@ -13586,6 +13617,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c4f397f25a7b6714f2e7a9670f460b2401a0100f54d6d3a0bd0500fc7aee2cc0",
+      "sha256": "c4f397f25a7b6714f2e7a9670f460b2401a0100f54d6d3a0bd0500fc7aee2cc0",
+      "title": "ANZ forecasts first RBA rate cut in June 2027 - grafa.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVXVZaW41Q2FzM25WejVidElHYkEzOG8yZ3dmVVZKbDRoOUpSUmxpUjVwS09ReUZ4bGFscmt6ZUpKWF82ekRicWJfMXRQMjBoWkNfM2lFRXdGTlpqeHRQQWlrZld5X0trZUhZbEFrNktCSHVGTXczNURxcE9Rb0EyZWUxU3NWTm1CeWd0d0ZKMHFVcjBxUllnU1IzUUlqd0daYUprTGZkZ2dnNVAtQVgwQU13?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-24T02:35:11.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -14622,7 +14683,7 @@
       "id": "215d1176d27bcff662d77164eeace19e556571d8f61d2b7cd3fae5de2e20b866",
       "sha256": "215d1176d27bcff662d77164eeace19e556571d8f61d2b7cd3fae5de2e20b866",
       "title": "Statistics on Securities Financing Transactions in Japan",
-      "url": "http://www.boj.or.jp/en/statistics/bis/repo/index.htm",
+      "url": "https://www.boj.or.jp/en/statistics/bis/repo/index.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -16051,10 +16112,10 @@
       "z": null
     },
     {
-      "id": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
-      "sha256": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
-      "title": "A post from Tina Schlegel in Palm Grove. - WKMG",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1Tm41ZEk5aFkyR1pQeTU0dEZIUmxDTkxDaWhjejBfQThWcWRaZ25aeElITjdpYS1jZFlScV8xdVFkdm40Q1hLVTB4U1hsYmpOQ21iN0xoNTV2SFBjWlFuOEU5aGN5VENBazYyQTRtSVp1bjVrbktyd3FIbEc?oc=5",
+      "id": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
+      "sha256": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
+      "title": "A post from Tina Schlegel in Palm Grove. - News4JAX",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VZmRfazUtMTdQcEVnWHowMWU1SmFTRXZITTQ2TXRTSTFqcUM1NXVkNUxReVUxWjFMaE9sd0Mzd3BFczNsR3lTUktjZ241aFBMeTZadXlqRkh6S01vS0RFZ0w2NEU0aEJmd2F6bUJ2WmFqX1Q2WGVZ?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
@@ -16081,10 +16142,10 @@
       "z": null
     },
     {
-      "id": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
-      "sha256": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
-      "title": "A post from Tina Schlegel in Palm Grove. - News4JAX",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VZmRfazUtMTdQcEVnWHowMWU1SmFTRXZITTQ2TXRTSTFqcUM1NXVkNUxReVUxWjFMaE9sd0Mzd3BFczNsR3lTUktjZ241aFBMeTZadXlqRkh6S01vS0RFZ0w2NEU0aEJmd2F6bUJ2WmFqX1Q2WGVZ?oc=5",
+      "id": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
+      "sha256": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
+      "title": "A post from Tina Schlegel in Palm Grove. - WKMG",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1Tm41ZEk5aFkyR1pQeTU0dEZIUmxDTkxDaWhjejBfQThWcWRaZ25aeElITjdpYS1jZFlScV8xdVFkdm40Q1hLVTB4U1hsYmpOQ21iN0xoNTV2SFBjWlFuOEU5aGN5VENBazYyQTRtSVp1bjVrbktyd3FIbEc?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
@@ -23037,10 +23098,10 @@
       "z": null
     },
     {
-      "id": "f46bf92edba38d538694b262e7129318b89da01f429f0432d7c69b858d549a9d",
-      "sha256": "f46bf92edba38d538694b262e7129318b89da01f429f0432d7c69b858d549a9d",
-      "title": "How the RBA Is Using AI to Read 25 Years of Business Conversations - Kalkine",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZk4zVklBZHFUVW1EM0tITXBsM1h1eGY2Y0F1VEtqTVd1SVdhSkRWbC1MSFhLZzU4NUlPS1gtakRlT0lKb2lWSE8wbjd3Q2Zha1JzN0dtandqOUJTVDRtZjFfcTdVU2JnaExVMExBVkZXd09SYUl1cm9rSGZkZlhJYlRJc2NySHNBOVVUblF3bTBDeVhacUl5U1loU0tpU2YtRFJjeS11NlpJUS1B?oc=5",
+      "id": "05dd9e3cd0f85757a5701a4fc74bc895dadec5a802dba06584e480099c43b4c2",
+      "sha256": "05dd9e3cd0f85757a5701a4fc74bc895dadec5a802dba06584e480099c43b4c2",
+      "title": "When AI Handles Checkout, the RBA Wants Merchants to Keep Their Debit Routing Choice - Kalkine",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcTg3emtLNHZmbFRpRGNIbnl2S3h3UzlDVC1aOE5JZ0RtMGszeTNJeHhUYzlkY2tQSHRtaWtuZ096LUU1Uk5senh1VDRxODJydUVfWm9LZ1BSbDZMeUJEUHp6UjNKZ2RTSWFiWnZ3N2NfckxyVk1PdDFSSjBJalJoSEwzdWpDUGVFY1NyVk5uLUMtZkEyVzdpV2tjbXZoMGJTbTc2Q2pMOXFGbV9pUTZ6ZElVUkNXSTJEQWpYbjdnbmUybG8?oc=5",
       "source": "Prensa AU",
       "source_id": "au-press",
       "source_type": "agencia",
@@ -23067,10 +23128,10 @@
       "z": null
     },
     {
-      "id": "05dd9e3cd0f85757a5701a4fc74bc895dadec5a802dba06584e480099c43b4c2",
-      "sha256": "05dd9e3cd0f85757a5701a4fc74bc895dadec5a802dba06584e480099c43b4c2",
-      "title": "When AI Handles Checkout, the RBA Wants Merchants to Keep Their Debit Routing Choice - Kalkine",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcTg3emtLNHZmbFRpRGNIbnl2S3h3UzlDVC1aOE5JZ0RtMGszeTNJeHhUYzlkY2tQSHRtaWtuZ096LUU1Uk5senh1VDRxODJydUVfWm9LZ1BSbDZMeUJEUHp6UjNKZ2RTSWFiWnZ3N2NfckxyVk1PdDFSSjBJalJoSEwzdWpDUGVFY1NyVk5uLUMtZkEyVzdpV2tjbXZoMGJTbTc2Q2pMOXFGbV9pUTZ6ZElVUkNXSTJEQWpYbjdnbmUybG8?oc=5",
+      "id": "f46bf92edba38d538694b262e7129318b89da01f429f0432d7c69b858d549a9d",
+      "sha256": "f46bf92edba38d538694b262e7129318b89da01f429f0432d7c69b858d549a9d",
+      "title": "How the RBA Is Using AI to Read 25 Years of Business Conversations - Kalkine",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZk4zVklBZHFUVW1EM0tITXBsM1h1eGY2Y0F1VEtqTVd1SVdhSkRWbC1MSFhLZzU4NUlPS1gtakRlT0lKb2lWSE8wbjd3Q2Zha1JzN0dtandqOUJTVDRtZjFfcTdVU2JnaExVMExBVkZXd09SYUl1cm9rSGZkZlhJYlRJc2NySHNBOVVUblF3bTBDeVhacUl5U1loU0tpU2YtRFJjeS11NlpJUS1B?oc=5",
       "source": "Prensa AU",
       "source_id": "au-press",
       "source_type": "agencia",
@@ -26615,37 +26676,6 @@
       "z": null
     },
     {
-      "id": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
-      "sha256": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
-      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLTYzclN6U3ZjQ28xdVZhWTFXZE9kX05keFNoZDhwYWxrdENweXB5akNpQTRjQkJFWnRrNmxObnVENE10ZVFTSGF5WmNmYWxIdnNUS3gxQVA2RGM3aHpnTWpoNFdoVWwwdUVDQmZDemNKRGhqQTk0NmlQRzdSdXQ3ckY4ZzVadWVJcHZZMWpZSGtsSTVoTG9nRVhjamZJZHVydllmc0lhajDSAagBQVVfeXFMUC02M3JTelN2Y0NvMXVWYVkxV2RPZF9OZHhTaGQ4cGFsa3RDcHlweWpDaUE0Y0JCRVp0azZsTm51RDRNdGVRU0hheVpjZmFsSHZzVEt4MUFQNkRjN2h6Z01qaDRXaFVsMHVFQ0JmQ3pjSkRoakE5NDZpUEc3UnV0N3JGOGc1WnVlSXB2WTFqWUhrbEk1aExvZ0VYY2pmSWR1cnZZZnNJYWow?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T03:29:27.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "sha256": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "title": "Tech stock sell-off deepens in Asia",
@@ -26910,6 +26940,37 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
+      "sha256": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
+      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV29PRzI1OHpIQ0pxMTNhS0MxbGF0RUdRb1MwTlI1NmZzaUNqckdzNW5lekd6aFZ4S3hkb2VYLU1HNmQ3OWlPZTgzaTRfMFdONkVEa0pncHVWanNxY01NTl9UTkg3SVlJNC1RdVpYbkFmNFpmem56ejB1cmEzYkpJcXl6cmZwRFVySGRKZnc2ZzQwbElzTmlaSU1HRXItdWt0Y2F30gGoAUFVX3lxTFAtNjNyU3pTdmNDbzF1VmFZMVdkT2RfTmR4U2hkOHBhbGt0Q3B5cHlqQ2lBNGNCQkVadGs2bE5udUQ0TXRlUVNIYXlaY2ZhbEh2c1RLeDFBUDZEYzdoemdNamg0V2hVbDB1RUNCZkN6Y0pEaGpBOTQ2aVBHN1J1dDdyRjhnNVp1ZUlwdlkxallIa2xJNWhMb2dFWGNqZklkdXJ2WWZzSWFqMA?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T02:29:00.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -33421,7 +33482,7 @@
       "id": "558f6fa52dd5cf6bf93f6d804fd2d1756969950883cc6d3e2d28cd5809ceb309",
       "sha256": "558f6fa52dd5cf6bf93f6d804fd2d1756969950883cc6d3e2d28cd5809ceb309",
       "title": "Monetary and Economic Studies (2026)",
-      "url": "http://www.boj.or.jp/en/research/imes/mes/mes26.htm",
+      "url": "https://www.boj.or.jp/en/research/imes/mes/mes26.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -33665,7 +33726,7 @@
       "id": "067d08d81162986fab0281f4666f48001d5616e5ab252c808e6be7f299e7f21f",
       "sha256": "067d08d81162986fab0281f4666f48001d5616e5ab252c808e6be7f299e7f21f",
       "title": "Developments in Real Exports and Real Imports",
-      "url": "http://www.boj.or.jp/en/research/research_data/reri/index.htm",
+      "url": "https://www.boj.or.jp/en/research/research_data/reri/index.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -34816,36 +34877,6 @@
       "z": null
     },
     {
-      "id": "395e7ee44ed7d867f7b1274a74aec1b2f3373ae9cedabe834568bb98257d55c1",
-      "sha256": "395e7ee44ed7d867f7b1274a74aec1b2f3373ae9cedabe834568bb98257d55c1",
-      "title": "Archived News Releases - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1YWjVCM3BHMDRDalltTWFyWmE3LTVNZkVnYVc4TUhLYVgyZ3BmUUctOXpMd01WS3pFc0xrSk5BYlNKRGZoQTg1aVVHOFV4UQ?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-18T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "90b22e324b16e1a1424606288e27897eff8b12dc225b96de3bda5ad679c97c67",
       "sha256": "90b22e324b16e1a1424606288e27897eff8b12dc225b96de3bda5ad679c97c67",
       "title": "Producer price inflation, UK: October 2026 - Office for National Statistics",
@@ -34977,38 +35008,6 @@
       "z": null
     },
     {
-      "id": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
-      "sha256": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
-      "title": "Housing prices in Eastbourne - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9KMWtDMnFDYUw3ZDBpMGVWWHBDVTJMQ1Z6VkNLcnJJU1dCWXYwbWtkdU5qeEpMUkF3Ri1IcjN1cGRVdDEyNzZWT3pGWmR1QWQ5VEtIMm83WUJpZHpqU2tGRFQxTlV1Sk9TZE9vaTlCSVZCUXdqQkE?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-18T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
       "sha256": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
       "title": "Australian National Accounts: State Accounts, 2025-26 financial year - Australian Bureau of Statistics",
@@ -35030,6 +35029,68 @@
         "Fiscal"
       ],
       "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "395e7ee44ed7d867f7b1274a74aec1b2f3373ae9cedabe834568bb98257d55c1",
+      "sha256": "395e7ee44ed7d867f7b1274a74aec1b2f3373ae9cedabe834568bb98257d55c1",
+      "title": "Archived News Releases - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1YWjVCM3BHMDRDalltTWFyWmE3LTVNZkVnYVc4TUhLYVgyZ3BmUUctOXpMd01WS3pFc0xrSk5BYlNKRGZoQTg1aVVHOFV4UQ?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-18T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
+      "sha256": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
+      "title": "Housing prices in Eastbourne - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9KMWtDMnFDYUw3ZDBpMGVWWHBDVTJMQ1Z6VkNLcnJJU1dCWXYwbWtkdU5qeEpMUkF3Ri1IcjN1cGRVdDEyNzZWT3pGWmR1QWQ5VEtIMm83WUJpZHpqU2tGRFQxTlV1Sk9TZE9vaTlCSVZCUXdqQkE?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-18T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -36005,36 +36066,6 @@
       "z": null
     },
     {
-      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "c37093e5a6db51beb94420cec42ad60dfd784ddf65b611d86d9c7fc7716b6fd1",
       "sha256": "c37093e5a6db51beb94420cec42ad60dfd784ddf65b611d86d9c7fc7716b6fd1",
       "title": "Economic forecast for Spain - economy-finance.ec.europa.eu",
@@ -36760,38 +36791,6 @@
       "z": null
     },
     {
-      "id": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
-      "sha256": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
-      "title": "Quarterly personal well-being estimates – seasonally adjusted - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaEFGQllFNXJnc1k4WXRDWHlsSjNNYXZRZUo2QmVhRklLUUI1V1R2UlVaYm5wcGFPSGQtUmRwb01aM2Jndmh6M0RKWEVVMzJyR3dDaEdUbjJYS0Nhbm92RV9VTG9FdWloV1d4bldrN2kybnAwTzYtSTZQQ3RNQkRLWXhieVo4bUNSYUFMQW9Ga3pxOGNpNWJRekJiLXd2dHNxU3lLQlFXZXNxX1JFc2VrM3hVbldJbXFBcV9tNmQxUDc0Zw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "b8031a2dd07d26f74d67d5995746b390394e314c7f2657d499162c4e3704856b",
       "sha256": "b8031a2dd07d26f74d67d5995746b390394e314c7f2657d499162c4e3704856b",
       "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: November 2026 - Office for National Statistics",
@@ -36814,6 +36813,68 @@
         "Fiscal"
       ],
       "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
+      "sha256": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
+      "title": "Quarterly personal well-being estimates – seasonally adjusted - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaEFGQllFNXJnc1k4WXRDWHlsSjNNYXZRZUo2QmVhRklLUUI1V1R2UlVaYm5wcGFPSGQtUmRwb01aM2Jndmh6M0RKWEVVMzJyR3dDaEdUbjJYS0Nhbm92RV9VTG9FdWloV1d4bldrN2kybnAwTzYtSTZQQ3RNQkRLWXhieVo4bUNSYUFMQW9Ga3pxOGNpNWJRekJiLXd2dHNxU3lLQlFXZXNxX1JFc2VrM3hVbldJbXFBcV9tNmQxUDc0Zw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -37321,7 +37382,7 @@
       "id": "ea8501124139b9e72d3a6859f70953f1329e9c6f42fa6a83577e9c6bdaa0526f",
       "sha256": "ea8501124139b9e72d3a6859f70953f1329e9c6f42fa6a83577e9c6bdaa0526f",
       "title": "Release of Latest \"Loans and Bills Discounted by Sector\" and \"Loans to Households\" Data",
-      "url": "http://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm",
+      "url": "https://www.boj.or.jp/en/statistics/outline/notice_2026/not261117a.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -37784,7 +37845,7 @@
       "id": "c4d59b11c62a77b31bfa9e005c1a54bb47ecea28f1415014fe3a896970e83242",
       "sha256": "c4d59b11c62a77b31bfa9e005c1a54bb47ecea28f1415014fe3a896970e83242",
       "title": "Highlights of the Outlook for Economic Activity and Prices (October 2026)",
-      "url": "http://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm",
+      "url": "https://www.boj.or.jp/en/mopo/outlook/highlight/ten202610.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -37814,7 +37875,7 @@
       "id": "18cc5d467af4d83e10c54e59c0c087c2ecb87d4bcec18e0fb883191b99905c12",
       "sha256": "18cc5d467af4d83e10c54e59c0c087c2ecb87d4bcec18e0fb883191b99905c12",
       "title": "BOJ Current Account Balances by Sector (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/cabs/cabs.xlsx",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/cabs/cabs.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -37834,36 +37895,6 @@
       "mmt_lens": "TOT_COMMODITIES_EA1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "5d23eeab1971effaff0aabebb77ade182d853a12d65b12cc2cca0dab54794a87",
-      "sha256": "5d23eeab1971effaff0aabebb77ade182d853a12d65b12cc2cca0dab54794a87",
-      "title": "A decade of employment trends in retail trade, 2016–25 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQejRxcmdFR3VRQmxVMGFPMG9adDZRbFhDenpuWW43MzFvZG9pQjdtQ29yQVNudXRDRk1vY0JKeFVRVzVxZFE3T2xfUXVReGM4UE1iUGNHdm9WSGoyTlg0MlQxTnk2NmQxUjJvaGZVcUlQYkhKcEQtdEkwMzJ6OUUyV0JQYk9IQ2g2S3l6RVdwM014UmtJU2d2eUY5ZXR1cTQ2?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-16T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Inflacion_Empleo",
-      "categories": [
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "dato_macro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -37892,6 +37923,36 @@
         "Fiscal"
       ],
       "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5d23eeab1971effaff0aabebb77ade182d853a12d65b12cc2cca0dab54794a87",
+      "sha256": "5d23eeab1971effaff0aabebb77ade182d853a12d65b12cc2cca0dab54794a87",
+      "title": "A decade of employment trends in retail trade, 2016–25 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQejRxcmdFR3VRQmxVMGFPMG9adDZRbFhDenpuWW43MzFvZG9pQjdtQ29yQVNudXRDRk1vY0JKeFVRVzVxZFE3T2xfUXVReGM4UE1iUGNHdm9WSGoyTlg0MlQxTnk2NmQxUjJvaGZVcUlQYkhKcEQtdEkwMzJ6OUUyV0JQYk9IQ2g2S3l6RVdwM014UmtJU2d2eUY5ZXR1cTQ2?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-16T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -38001,7 +38062,7 @@
       "id": "0b196a20026f7a20163671e4917a840b63c731e265b26bffccd4443d0f82e3fe",
       "sha256": "0b196a20026f7a20163671e4917a840b63c731e265b26bffccd4443d0f82e3fe",
       "title": "Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)",
-      "url": "http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -38622,36 +38683,6 @@
       "z": null
     },
     {
-      "id": "13aa4156a5d033eeee75727eb82cc57e445410d0e6918a27fe457fd8671d081e",
-      "sha256": "13aa4156a5d033eeee75727eb82cc57e445410d0e6918a27fe457fd8671d081e",
-      "title": "Producer Price Indexes - October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1WLUtfRGU5ZUVDUDByWWI2Qm1XMTFyNDlIQi00d2ZOVHhFMGZUNzJtVlNsN3N4X1hvU2lGbVNQY2xvMkJXSjZSNTA2LWhDN2V1SkpDMkFqcw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "5f97fd6564821985199dfd38e37f260863ef740d53e23504f084f1836bb6f45f",
       "sha256": "5f97fd6564821985199dfd38e37f260863ef740d53e23504f084f1836bb6f45f",
       "title": "GDP up by 0.4% and employment stable in the euro area - European Commission",
@@ -38838,6 +38869,132 @@
       "z": null
     },
     {
+      "id": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
+      "sha256": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
+      "title": "Regional gross value added (balanced) by industry: all ITL regions - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbTg5R0RCcUg3cWFneWM4R29uLTVhSXZrZTJSdE51eHF1Zkk0MVlfSTZGSTZkN2lKODZ5a1pMSXMwbWFETmp6Wkt0Uzh3NG5fbzhmTXRrTFBBMENNeUk5U1Fpc1BSejVJVXFyNXVqUkRrVEdxc2puUGptTXQtMDVRVXV0UzhoU3lpdXBzVnhnYkdPSFUwWGhTcnNQaGd0UmVwN1ZobXBwX2tGREZoM0V5bmVVUFA?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
+      "sha256": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
+      "title": "Auction Result of Treasury Discount Bills on November 13, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdFBpRGhydDVXS0Z3cy1Bd3pBV2hSWHRVYlpsbGV5QmliNWd2bVgta3YzREhJTlh0Q0hoMVRsUE93ZmtNN0UzYllLSk82RWJMaUgxR2QwQUFLVWstRmNTWEt2TVhOV3J4RmE3RXBCWmx6SDljeU5UMW1aVkswbm1TRGdUdTRRcmtWWU56eGZTeXN0d1BXcC1OSEJQcXg?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
+      "sha256": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
+      "title": "Increasing your safety online - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS1ZZelc5WjU1RE94UzlqVlhqbE1CUS1mcVlxNFpOMy1NVTB6UVpIdV9zd0d0c2FvRE03RUFCTFJfN3UxbnVCcmJxa1YxWk9xVUNzeXBRams3RE0xVTZxYkFWUDRjY2tIOW53SnNGdnZDVVNTWVlrYmxROUZVTEZScEhFVl9kZ3JIOFRTVWlfT3A3a2Rqa1ZoQjQzME8?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "13aa4156a5d033eeee75727eb82cc57e445410d0e6918a27fe457fd8671d081e",
+      "sha256": "13aa4156a5d033eeee75727eb82cc57e445410d0e6918a27fe457fd8671d081e",
+      "title": "Producer Price Indexes - October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1WLUtfRGU5ZUVDUDByWWI2Qm1XMTFyNDlIQi00d2ZOVHhFMGZUNzJtVlNsN3N4X1hvU2lGbVNQY2xvMkJXSjZSNTA2LWhDN2V1SkpDMkFqcw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "4c246f5f2df5ebae2b00ab2582e3dc706d4149b2f9fd13f6784dcd2a2d263bd7",
       "sha256": "4c246f5f2df5ebae2b00ab2582e3dc706d4149b2f9fd13f6784dcd2a2d263bd7",
       "title": "Announcement of Liquidity Enhancement Auction on November 20, 2026: Ministry of Finance - 財務省",
@@ -38892,38 +39049,6 @@
       "legacy_category": "otro",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
-      "sha256": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
-      "title": "Increasing your safety online - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS1ZZelc5WjU1RE94UzlqVlhqbE1CUS1mcVlxNFpOMy1NVTB6UVpIdV9zd0d0c2FvRE03RUFCTFJfN3UxbnVCcmJxa1YxWk9xVUNzeXBRams3RE0xVTZxYkFWUDRjY2tIOW53SnNGdnZDVVNTWVlrYmxROUZVTEZScEhFVl9kZ3JIOFRTVWlfT3A3a2Rqa1ZoQjQzME8?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "AUD",
-        "USD"
-      ],
-      "divisas": [
-        "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -39015,70 +39140,6 @@
       "ficha_v6": "B12",
       "mmt_lens": "B12_EUR_FRAG_RIESGO",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
-      "sha256": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
-      "title": "Regional gross value added (balanced) by industry: all ITL regions - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbTg5R0RCcUg3cWFneWM4R29uLTVhSXZrZTJSdE51eHF1Zkk0MVlfSTZGSTZkN2lKODZ5a1pMSXMwbWFETmp6Wkt0Uzh3NG5fbzhmTXRrTFBBMENNeUk5U1Fpc1BSejVJVXFyNXVqUkRrVEdxc2puUGptTXQtMDVRVXV0UzhoU3lpdXBzVnhnYkdPSFUwWGhTcnNQaGd0UmVwN1ZobXBwX2tGREZoM0V5bmVVUFA?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
-      "sha256": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
-      "title": "Auction Result of Treasury Discount Bills on November 13, 2026 : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdFBpRGhydDVXS0Z3cy1Bd3pBV2hSWHRVYlpsbGV5QmliNWd2bVgta3YzREhJTlh0Q0hoMVRsUE93ZmtNN0UzYllLSk82RWJMaUgxR2QwQUFLVWstRmNTWEt2TVhOV3J4RmE3RXBCWmx6SDljeU5UMW1aVkswbm1TRGdUdTRRcmtWWU56eGZTeXN0d1BXcC1OSEJQcXg?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "USD",
-        "JPY"
-      ],
-      "divisas": [
-        "USD",
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -39735,7 +39796,7 @@
       "id": "a5f1685c69785117ef29a96eaa801dc50162adb9e49bf718e2b20a5d58de0953",
       "sha256": "a5f1685c69785117ef29a96eaa801dc50162adb9e49bf718e2b20a5d58de0953",
       "title": "Japanese Government Bonds Held by the Bank of Japan",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261110.xlsx",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261110.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -39745,36 +39806,6 @@
       ],
       "divisas": [
         "JPY"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "beacabb08887a01476a321f4e3f5e1bee4d2efe4ae936e9821446c3be00544bf",
-      "sha256": "beacabb08887a01476a321f4e3f5e1bee4d2efe4ae936e9821446c3be00544bf",
-      "title": "Upcoming Consumer Price Index Publication Changes - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vYVpYYkZ6LV9wVEJtZ2JVWEFucUlvZ1NfRWc5X18teXF2dklmc0U0WE1mYWlpU2lKOXlTMHVXX1VqR1dsb19nYTIzd2lSUXJqNWxZamQ5aXBZaUpkYjZJZURhSWNIYVBPeXJSYTVnY0I4V2M?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
       ],
       "category": "BC",
       "categories": [
@@ -39888,74 +39919,10 @@
       "z": null
     },
     {
-      "id": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
-      "sha256": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
-      "title": "UK trade: September 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcnR4dHNzYndVZVpBTEE5RXhGYWFlLXFESjE3dkhUNUl5bTN6OGpiQkNIaklRSzNpLVlWU0tCSTdLdHFVbUxRcTR6ODBqbWlkTUFES2RjakdwWElRaEpaZ3FZRlRzRlY1eUhSX3JYMmUyMDJxQXNZOEk0SUlqcTh1RTdSZXV5dFM2V3hQdWZOU2l4amdDeW4xMVp5RHlwdw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "90bd94f99327986b6dfb4ecd5f1102aab5a299e0cae165f6d66ba3ccbcc9cff9",
       "sha256": "90bd94f99327986b6dfb4ecd5f1102aab5a299e0cae165f6d66ba3ccbcc9cff9",
       "title": "Construction output in Great Britain - Office for National Statistics",
       "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOeldqaENSNnBhWW90dWFYY2wwLWRsUFVrelV4a1R5ZGdxVUwwMXYteUNFVFU0Tk1NY1NOdE1vamoxdUQyemhMNUt3NkZRb3ByeHFVUnhNaXZEYklyMEZaV2c2X3JMQ1NJMC16eVkzV1Z3Z2Y2dUdsQjJXVDA5RDJTNnRxTFdaSVdYWGtRa0tHOXJhQ1YwV1YycVZyb2FKdHZYT1ltOUFkMGpaTmJTZUxtc1VNMVFtVFJKUWZyUThlN2l3ZWtIb3ViMkZGUENpbUZseGhHOXNzbGd4eFdSOVRpbHh5SlBMcHVCTm1KaUFlQWJ4UE9mQTNEMFo1UXQ3X0FIc1VjbXphUi1oM2o4NTNRREtIdFE?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
-      "sha256": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
-      "title": "UK resident population mid-year estimates - real-time database - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMXVNQTMyc2tCakZTSVJIRFlNeC1xV2VGZkJYazFmV1NRbDNtT2U3VHMwTXJzbkdXTktEQWtvZ09oay1nMjlxQzU4UXpWOXFoU2ZIMXJMekJjR2IwQmFwLTVrQUdsZExqS1R4WW9ac1FZSDN2aFB2bVlNRE1kdWtRNHc4bDdwYXJmZERSNXhSTzJNaFJaSDBOVnpVbkdKSm95ZWhoLXZBNXNlTkNTcmF6YnJ2T2NrV0k?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -40080,68 +40047,6 @@
       "z": null
     },
     {
-      "id": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
-      "sha256": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
-      "title": "Quarterly Stocks Survey (QSS) and Quarterly Acquisitions and Disposals of Capital Assets Survey (QCAS) textual data analysis - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFAzQ1hUdUR6aFR2MjhZTkwxVzBVaHBiRjI3dlUzS2xoSXpIblpDMkFpdmhKVDAtQjVfNU5FdUVTM0xWUVJ6TTJDLWJDU2NtSW40cE00UzJTdHVZVWNMbndaMkx2MUdxd1BMU1dkYmNEVmpRZURBZUI5MkowNWFYTlNpb0xKX2N2dVlIRWV1blBvX1FZa1ctVEZ4STZWRGVmZlViSE9wR2F6ZkFGRTNyQW5oY252X2JPdFhFQ1R0Z21ScHN4algya0hUdnhUdw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
-      "sha256": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
-      "title": "Auction Result of 5-Year JGBs on November 12, 2026 (For JGB Market Special Participants) : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTXpxY0JTU21BVzIxZ2E2elQxdC0wc0tXZkU3eFpyTGJZX3RlQzhNb2lTWnlYZWdZdHBDeXJGVEt3SDRPY0VUWmJmVTY5RVZ1ZXZUNDRCVHdzdVdnQWJFWXJYWE9IeVJTdkZsdnEyRzhmd0xkanExbi1nWFFMR01jMndDWkpuTG0yd3lNUjhB?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "499502c53aad6b65de02f3c524f1b8a4e4053d99197c63ac8d52202b31a7ce9f",
       "sha256": "499502c53aad6b65de02f3c524f1b8a4e4053d99197c63ac8d52202b31a7ce9f",
       "title": "Water Account, Australia, 2024-25 financial year - Australian Bureau of Statistics",
@@ -40195,6 +40100,162 @@
         "Fiscal"
       ],
       "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "beacabb08887a01476a321f4e3f5e1bee4d2efe4ae936e9821446c3be00544bf",
+      "sha256": "beacabb08887a01476a321f4e3f5e1bee4d2efe4ae936e9821446c3be00544bf",
+      "title": "Upcoming Consumer Price Index Publication Changes - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9vYVpYYkZ6LV9wVEJtZ2JVWEFucUlvZ1NfRWc5X18teXF2dklmc0U0WE1mYWlpU2lKOXlTMHVXX1VqR1dsb19nYTIzd2lSUXJqNWxZamQ5aXBZaUpkYjZJZURhSWNIYVBPeXJSYTVnY0I4V2M?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
+      "sha256": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
+      "title": "UK trade: September 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcnR4dHNzYndVZVpBTEE5RXhGYWFlLXFESjE3dkhUNUl5bTN6OGpiQkNIaklRSzNpLVlWU0tCSTdLdHFVbUxRcTR6ODBqbWlkTUFES2RjakdwWElRaEpaZ3FZRlRzRlY1eUhSX3JYMmUyMDJxQXNZOEk0SUlqcTh1RTdSZXV5dFM2V3hQdWZOU2l4amdDeW4xMVp5RHlwdw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
+      "sha256": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
+      "title": "UK resident population mid-year estimates - real-time database - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMXVNQTMyc2tCakZTSVJIRFlNeC1xV2VGZkJYazFmV1NRbDNtT2U3VHMwTXJzbkdXTktEQWtvZ09oay1nMjlxQzU4UXpWOXFoU2ZIMXJMekJjR2IwQmFwLTVrQUdsZExqS1R4WW9ac1FZSDN2aFB2bVlNRE1kdWtRNHc4bDdwYXJmZERSNXhSTzJNaFJaSDBOVnpVbkdKSm95ZWhoLXZBNXNlTkNTcmF6YnJ2T2NrV0k?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
+      "sha256": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
+      "title": "Quarterly Stocks Survey (QSS) and Quarterly Acquisitions and Disposals of Capital Assets Survey (QCAS) textual data analysis - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFAzQ1hUdUR6aFR2MjhZTkwxVzBVaHBiRjI3dlUzS2xoSXpIblpDMkFpdmhKVDAtQjVfNU5FdUVTM0xWUVJ6TTJDLWJDU2NtSW40cE00UzJTdHVZVWNMbndaMkx2MUdxd1BMU1dkYmNEVmpRZURBZUI5MkowNWFYTlNpb0xKX2N2dVlIRWV1blBvX1FZa1ctVEZ4STZWRGVmZlViSE9wR2F6ZkFGRTNyQW5oY252X2JPdFhFQ1R0Z21ScHN4algya0hUdnhUdw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
+      "sha256": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
+      "title": "Auction Result of 5-Year JGBs on November 12, 2026 (For JGB Market Special Participants) : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTXpxY0JTU21BVzIxZ2E2elQxdC0wc0tXZkU3eFpyTGJZX3RlQzhNb2lTWnlYZWdZdHBDeXJGVEt3SDRPY0VUWmJmVTY5RVZ1ZXZUNDRCVHdzdVdnQWJFWXJYWE9IeVJTdkZsdnEyRzhmd0xkanExbi1nWFFMR01jMndDWkpuTG0yd3lNUjhB?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -40488,7 +40549,7 @@
       "id": "268d8eeadbaa6e05b166c03324a92d7a6eebc7bb0983c2b64cdc2850123e4faf",
       "sha256": "268d8eeadbaa6e05b166c03324a92d7a6eebc7bb0983c2b64cdc2850123e4faf",
       "title": "Basic Figures on Fails (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/set/bffail/sjgb2610.pdf",
+      "url": "https://www.boj.or.jp/en/statistics/set/bffail/sjgb2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -40650,7 +40711,7 @@
       "id": "8babba9d78ce4e47e950c7f853866d485cdc265700109488587821d756bce59a",
       "sha256": "8babba9d78ce4e47e950c7f853866d485cdc265700109488587821d756bce59a",
       "title": "Bank of Japan Accounts (November 10)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261110.htm",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261110.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -41037,7 +41098,7 @@
       "id": "da3c8840f588aacdc2bedec186b82496d005508bc0dfefd22867a8e05de116ef",
       "sha256": "da3c8840f588aacdc2bedec186b82496d005508bc0dfefd22867a8e05de116ef",
       "title": "Corporate Goods Price Index (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2610.pdf",
+      "url": "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -41067,7 +41128,7 @@
       "id": "0fb6e9ae188fdfd4d4630d284c16d838b03e5e2d2fcf4df1967daa950c201964",
       "sha256": "0fb6e9ae188fdfd4d4630d284c16d838b03e5e2d2fcf4df1967daa950c201964",
       "title": "Release of Latest \"Amounts Outstanding of Deposits by Depositor\" Data",
-      "url": "http://www.boj.or.jp/en/statistics/outline/notice_2026/not261112a.htm",
+      "url": "https://www.boj.or.jp/en/statistics/outline/notice_2026/not261112a.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -41777,7 +41838,7 @@
       "id": "e6ffc4173dbd6e2704c9beb9f058a7a920601175836aced22eff92c88a993cb7",
       "sha256": "e6ffc4173dbd6e2704c9beb9f058a7a920601175836aced22eff92c88a993cb7",
       "title": "Money Stock (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/money/ms/ms2610.pdf",
+      "url": "https://www.boj.or.jp/en/statistics/money/ms/ms2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -43419,7 +43480,7 @@
       "id": "a3f9f8b1d92b218bb708626598ad33ec587864182b53bcef7cd19bd77974fdac",
       "sha256": "a3f9f8b1d92b218bb708626598ad33ec587864182b53bcef7cd19bd77974fdac",
       "title": "Principal Figures of Financial Institutions (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2610.pdf",
+      "url": "https://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -43449,7 +43510,7 @@
       "id": "610fa2a4b2af1ab514b7c6fe0745258a031aea4dda4c38a92752e1cf92673609",
       "sha256": "610fa2a4b2af1ab514b7c6fe0745258a031aea4dda4c38a92752e1cf92673609",
       "title": "Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026",
-      "url": "http://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -43943,7 +44004,7 @@
       "id": "1b81bb18a7b60cd2bef5aff4e506b85337bfd0206271d8729ece8dde14e62961",
       "sha256": "1b81bb18a7b60cd2bef5aff4e506b85337bfd0206271d8729ece8dde14e62961",
       "title": "Amounts Outstanding in the Call Money Market (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
+      "url": "https://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -43973,7 +44034,7 @@
       "id": "78dae62664edf58560c8068ef90550e498d1392168fa404b5c0731220ce2be6d",
       "sha256": "78dae62664edf58560c8068ef90550e498d1392168fa404b5c0731220ce2be6d",
       "title": "Consumption Activity Index",
-      "url": "http://www.boj.or.jp/en/research/research_data/cai/index.htm",
+      "url": "https://www.boj.or.jp/en/research/research_data/cai/index.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -44262,7 +44323,7 @@
       "id": "b9b7f7c872701b0314ff7aa57fbc5657635e18e9aae3a3e7d710aaa460b3d6f2",
       "sha256": "b9b7f7c872701b0314ff7aa57fbc5657635e18e9aae3a3e7d710aaa460b3d6f2",
       "title": "Market Operations by the Bank of Japan (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2610.xlsx",
+      "url": "https://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2610.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -44292,7 +44353,7 @@
       "id": "ae32e24cc6e9dd19850adaaa470b93a1912d254cfb159d23173ff65b5dfbb8e8",
       "sha256": "ae32e24cc6e9dd19850adaaa470b93a1912d254cfb159d23173ff65b5dfbb8e8",
       "title": "Monetary Base and the Bank of Japan's Transactions (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2610.pdf",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/mbt/mbt2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -44322,7 +44383,7 @@
       "id": "5a016016cd55d665014a453e0264df37fc4c8e3c8459797dcb8aabf0d37ab470",
       "sha256": "5a016016cd55d665014a453e0264df37fc4c8e3c8459797dcb8aabf0d37ab470",
       "title": "Bank of Japan's Transactions with the Government (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/tseifu/release/2026/seifu2610.pdf",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/tseifu/release/2026/seifu2610.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -45717,7 +45778,7 @@
       "id": "0e43a9d226ddd1057157f80076720ac2b3d68a44d6d77cb12a7c0c0ca755dc0b",
       "sha256": "0e43a9d226ddd1057157f80076720ac2b3d68a44d6d77cb12a7c0c0ca755dc0b",
       "title": "(IMES Newsletter) 2026 BoC - Philadelphia Fed - BOJ Joint Workshop",
-      "url": "http://www.boj.or.jp/en/about/release_2026/rel261106b.htm",
+      "url": "https://www.boj.or.jp/en/about/release_2026/rel261106b.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -45817,7 +45878,7 @@
       "id": "b2d3c13af1a1cca64967efcf9a2c138dcef64bb3a54a4540db8703928ace4de1",
       "sha256": "b2d3c13af1a1cca64967efcf9a2c138dcef64bb3a54a4540db8703928ace4de1",
       "title": "IMES Discussion Paper Series (2026)",
-      "url": "http://www.boj.or.jp/en/research/imes/dps/dps26.htm",
+      "url": "https://www.boj.or.jp/en/research/imes/dps/dps26.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -46660,7 +46721,7 @@
       "id": "1dbf1d2dfff6ac2a32c2a82d3f3d5648d510af7797d4eeaff31d022ab7eb32bb",
       "sha256": "1dbf1d2dfff6ac2a32c2a82d3f3d5648d510af7797d4eeaff31d022ab7eb32bb",
       "title": "Holding the Twenty-fifth Round of the \"Bond Market Group\" Meetings",
-      "url": "http://www.boj.or.jp/en/paym/bond/mbond_list/mbond261105.pdf",
+      "url": "https://www.boj.or.jp/en/paym/bond/mbond_list/mbond261105.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -46782,7 +46843,7 @@
       "id": "b3b223da123265e8d112964f3201b9482aee1772156b8a32da029fb0dae3b353",
       "sha256": "b3b223da123265e8d112964f3201b9482aee1772156b8a32da029fb0dae3b353",
       "title": "Sources of Changes in Current Account Balances (Projections for Nov.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/fm/juqp/juqp2611.xlsx",
+      "url": "https://www.boj.or.jp/en/statistics/boj/fm/juqp/juqp2611.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -46812,7 +46873,7 @@
       "id": "7e68d5ed33a066cd9f1c488ebc659a4f6c72bb5c73f2b1a179baad6305c71cd8",
       "sha256": "7e68d5ed33a066cd9f1c488ebc659a4f6c72bb5c73f2b1a179baad6305c71cd8",
       "title": "Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
-      "url": "http://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -47029,7 +47090,7 @@
       "id": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
       "sha256": "84b8336664177acfbfbd302338dadd34760956eae2b2cbc68d18fdd2f7525bf8",
       "title": "Collateral Accepted by the Bank of Japan (End of Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/col/col2610.xlsx",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/col/col2610.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -47588,7 +47649,7 @@
       "id": "43607a1674b4f4188744a7fcd2ab787de9881d014bbcbf6c41a69953f04c5875",
       "sha256": "43607a1674b4f4188744a7fcd2ab787de9881d014bbcbf6c41a69953f04c5875",
       "title": "Bank of Japan Accounts (October 31)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261031.htm",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261031.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -47681,7 +47742,7 @@
       "id": "6c7354bb2783f0f3124a540b6977ac169d81ebdea4868fce3fb2a779826686aa",
       "sha256": "6c7354bb2783f0f3124a540b6977ac169d81ebdea4868fce3fb2a779826686aa",
       "title": "Monetary Base (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/other/mb/mb.htm",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/mb/mb.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -48856,7 +48917,7 @@
       "id": "56a933facf4ae9602da6a9cb40b68a2f35e895c81aa3abb16961b43fb79d4245",
       "sha256": "56a933facf4ae9602da6a9cb40b68a2f35e895c81aa3abb16961b43fb79d4245",
       "title": "Outlook for Economic Activity and Prices (October 2026, full text)",
-      "url": "http://www.boj.or.jp/en/mopo/outlook/gor2610b.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/outlook/gor2610b.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -48886,7 +48947,7 @@
       "id": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
       "sha256": "2a10f714b6cc8c3c96d73530a19b981d0c0623916cce5ca009af4720b51689e5",
       "title": "Sources of Changes in Current Account Balances and Market Operations (Oct.)",
-      "url": "http://www.boj.or.jp/en/statistics/boj/fm/juqf/juqf10.xlsx",
+      "url": "https://www.boj.or.jp/en/statistics/boj/fm/juqf/juqf10.xlsx",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -49623,7 +49684,7 @@
       "id": "2f3b5391d588e2c7960b9f8458c099210c96bc32c062a85ea37969ea59009928",
       "sha256": "2f3b5391d588e2c7960b9f8458c099210c96bc32c062a85ea37969ea59009928",
       "title": "Quarterly Schedule of Outright Purchases of Japanese Government Bonds (Competitive Auction Method) (October-December 2026) (Schedule Updates)",
-      "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030c.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030c.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -49654,7 +49715,7 @@
       "id": "55f7ad224c098f37ab0e374b71a54d8ffebea7cb5f842d0ed4819250c07dde8e",
       "sha256": "55f7ad224c098f37ab0e374b71a54d8ffebea7cb5f842d0ed4819250c07dde8e",
       "title": "Timetable and Schedule of U.S. Dollar Funds-Supplying Operations (November 2026-March 2027)",
-      "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030b.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030b.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -50491,7 +50552,7 @@
       "id": "c532e7b2e204e4b8df0f5e99feb1d6fc5ae79785861f3e4057b6919988158b57",
       "sha256": "c532e7b2e204e4b8df0f5e99feb1d6fc5ae79785861f3e4057b6919988158b57",
       "title": "Amendment to \"Basic Principles for Disposal of ETFs and J-REITs\"",
-      "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030a.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030a.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -50521,7 +50582,7 @@
       "id": "72043433904add6dade17c08e0adc78c7502e799c999c89e00926f51923e1512",
       "sha256": "72043433904add6dade17c08e0adc78c7502e799c999c89e00926f51923e1512",
       "title": "Outlook for Economic Activity and Prices (October 2026, The Bank's View)",
-      "url": "http://www.boj.or.jp/en/mopo/outlook/gor2610a.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/outlook/gor2610a.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -50551,7 +50612,7 @@
       "id": "fe7e047f05a1f5fbdbe0422ebc7b8e6b2f583e718f8568848242ab22f8913bda",
       "sha256": "fe7e047f05a1f5fbdbe0422ebc7b8e6b2f583e718f8568848242ab22f8913bda",
       "title": "Statement on Monetary Policy",
-      "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -50581,7 +50642,7 @@
       "id": "0d182c2edcbec014f2d14f4c84024317c2c1d54c9b085ac4bb40643b042f28fa",
       "sha256": "0d182c2edcbec014f2d14f4c84024317c2c1d54c9b085ac4bb40643b042f28fa",
       "title": "(Reference) Decisions regarding a Change in the Pace of Sales of ETFs (October 2026)",
-      "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030c.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -50611,7 +50672,7 @@
       "id": "3a60d808f3e2b5b4e193a9372d38830fa4f4b02cf7d5d23b7d338988f600c5b8",
       "sha256": "3a60d808f3e2b5b4e193a9372d38830fa4f4b02cf7d5d23b7d338988f600c5b8",
       "title": "(Reference) Outlook Report and Indicators Related to Underlying Inflation",
-      "url": "http://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030b.pdf",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030b.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -50674,7 +50735,7 @@
       "id": "79c758f50c2edc5ff39aa39a600717606c7547819e640798f63a4b0490c809c3",
       "sha256": "79c758f50c2edc5ff39aa39a600717606c7547819e640798f63a4b0490c809c3",
       "title": "Payment and Settlement Statistics (Sept.)",
-      "url": "http://www.boj.or.jp/en/statistics/set/kess/release/2026/kess2609.pdf",
+      "url": "https://www.boj.or.jp/en/statistics/set/kess/release/2026/kess2609.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -52366,7 +52427,7 @@
       "id": "c238f36f3a2b16f4417d31fc1d93c689ce721d4eca4ba86331e02bdfc736e0c8",
       "sha256": "c238f36f3a2b16f4417d31fc1d93c689ce721d4eca4ba86331e02bdfc736e0c8",
       "title": "Indicators for Core CPI",
-      "url": "http://www.boj.or.jp/en/research/research_data/cpi/index.htm",
+      "url": "https://www.boj.or.jp/en/research/research_data/cpi/index.htm",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
@@ -52707,7 +52768,7 @@
       "id": "1d2e862443a4088fbba7855013b53eece5d2f36b30b303d092640164da80f349",
       "sha256": "1d2e862443a4088fbba7855013b53eece5d2f36b30b303d092640164da80f349",
       "title": "Services Producer Price Index (Sept.)",
-      "url": "http://www.boj.or.jp/en/statistics/pi/cspi_release/sppi2609.pdf",
+      "url": "https://www.boj.or.jp/en/statistics/pi/cspi_release/sppi2609.pdf",
       "source": "BoJ",
       "source_id": "boj",
       "source_type": "oficial",
