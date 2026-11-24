@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-24T05:03:32.361Z",
+  "generated_at": "2026-11-24T05:08:38.492Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -19,16 +19,16 @@
       "count_72h": 227,
       "count_official_45d": 341,
       "last_item_at": "2026-11-24T01:45:43.000Z",
-      "hours_since_last": 3.3,
-      "hours_since_last_business": 3.3,
+      "hours_since_last": 3.4,
+      "hours_since_last_business": 3.4,
       "silence": false
     },
     "EUR": {
       "count_72h": 47,
       "count_official_45d": 193,
       "last_item_at": "2026-11-23T19:08:06.000Z",
-      "hours_since_last": 9.9,
-      "hours_since_last_business": 9.9,
+      "hours_since_last": 10,
+      "hours_since_last_business": 10,
       "silence": false
     },
     "GBP": {
@@ -43,24 +43,24 @@
       "count_72h": 31,
       "count_official_45d": 95,
       "last_item_at": "2026-11-24T00:30:31.000Z",
-      "hours_since_last": 4.5,
-      "hours_since_last_business": 4.5,
+      "hours_since_last": 4.6,
+      "hours_since_last_business": 4.6,
       "silence": false
     },
     "CHF": {
       "count_72h": 107,
       "count_official_45d": 16,
       "last_item_at": "2026-11-24T03:44:26.000Z",
-      "hours_since_last": 1.3,
-      "hours_since_last_business": 1.3,
+      "hours_since_last": 1.4,
+      "hours_since_last_business": 1.4,
       "silence": false
     },
     "CAD": {
       "count_72h": 14,
       "count_official_45d": 8,
       "last_item_at": "2026-11-23T21:14:26.000Z",
-      "hours_since_last": 7.8,
-      "hours_since_last_business": 7.8,
+      "hours_since_last": 7.9,
+      "hours_since_last_business": 7.9,
       "silence": false
     },
     "AUD": {
@@ -75,16 +75,16 @@
       "count_72h": 99,
       "count_official_45d": 81,
       "last_item_at": "2026-11-24T04:39:23.000Z",
-      "hours_since_last": 0.4,
-      "hours_since_last_business": 0.4,
+      "hours_since_last": 0.5,
+      "hours_since_last_business": 0.5,
       "silence": false
     },
     "XAU": {
       "count_72h": 8,
       "count_official_45d": 0,
       "last_item_at": "2026-11-24T01:45:43.000Z",
-      "hours_since_last": 3.3,
-      "hours_since_last_business": 3.3
+      "hours_since_last": 3.4,
+      "hours_since_last_business": 3.4
     }
   },
   "risk_map": [
@@ -114,7 +114,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": -1
+          "d24h_pp": 0
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -124,12 +124,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": null
+          "d24h_pp": 6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 1.2
+          "d24h_pp": 0.65
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -144,12 +144,12 @@
         {
           "theme": "WASHINGTON",
           "question": "Pete Hegseth impeached by December 31, 2026?",
-          "d24h_pp": -0.05
+          "d24h_pp": 0
         },
         {
           "theme": "CHINA_TAIWAN",
           "question": "Will China invade Taiwan by end of 2026?",
-          "d24h_pp": -0.1
+          "d24h_pp": -0.2
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -159,12 +159,12 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Will China invade Taiwan by December 31, 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Taiwan military clash before 2027?",
-          "d24h_pp": -0.1
+          "d24h_pp": -0.05
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -174,12 +174,13 @@
       ],
       "ea4_24h": false,
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
       ]
     },
     {
       "currency": "EUR",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -188,7 +189,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": -1
+          "d24h_pp": 0
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -198,12 +199,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": null
+          "d24h_pp": 6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 1.2
+          "d24h_pp": 0.65
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -218,7 +219,7 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "NATO x Russia military clash by December 31, 2026?",
-          "d24h_pp": 2.5
+          "d24h_pp": 3
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -237,7 +238,9 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "currency": "GBP",
@@ -255,7 +258,7 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "NATO x Russia military clash by December 31, 2026?",
-          "d24h_pp": 2.5
+          "d24h_pp": 3
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -278,7 +281,7 @@
     },
     {
       "currency": "JPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -287,7 +290,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": -1
+          "d24h_pp": 0
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -297,12 +300,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": null
+          "d24h_pp": 6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 1.2
+          "d24h_pp": 0.65
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -312,7 +315,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Will China invade Taiwan by end of 2026?",
-          "d24h_pp": -0.1
+          "d24h_pp": -0.2
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -322,12 +325,12 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Will China invade Taiwan by December 31, 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Taiwan military clash before 2027?",
-          "d24h_pp": -0.1
+          "d24h_pp": -0.05
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -336,11 +339,13 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "currency": "CHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -349,7 +354,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": -1
+          "d24h_pp": 0
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -359,12 +364,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": null
+          "d24h_pp": 6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 1.2
+          "d24h_pp": 0.65
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -379,7 +384,7 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "NATO x Russia military clash by December 31, 2026?",
-          "d24h_pp": 2.5
+          "d24h_pp": 3
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -398,7 +403,9 @@
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "currency": "CAD",
@@ -409,7 +416,7 @@
           "lock_class": "DISCURSO",
           "title": "BOC Gov Macklem Speaks",
           "time": "2026-11-24T17:25:00.000Z",
-          "hours_until": 12.4,
+          "hours_until": 12.3,
           "retirar_limitadas": false
         }
       ],
@@ -419,7 +426,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": -1
+          "d24h_pp": 0
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -429,12 +436,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": null
+          "d24h_pp": 6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 1.2
+          "d24h_pp": 0.65
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -444,6 +451,7 @@
       ],
       "ea4_24h": false,
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "discurso"
       ]
     },
@@ -480,7 +488,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Will China invade Taiwan by end of 2026?",
-          "d24h_pp": -0.1
+          "d24h_pp": -0.2
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -490,12 +498,12 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Will China invade Taiwan by December 31, 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Taiwan military clash before 2027?",
-          "d24h_pp": -0.1
+          "d24h_pp": -0.05
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -519,7 +527,7 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Will China invade Taiwan by end of 2026?",
-          "d24h_pp": -0.1
+          "d24h_pp": -0.2
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -529,12 +537,12 @@
         {
           "theme": "CHINA_TAIWAN",
           "question": "Will China invade Taiwan by December 31, 2027?",
-          "d24h_pp": 0
+          "d24h_pp": 1
         },
         {
           "theme": "CHINA_TAIWAN",
           "question": "China x Taiwan military clash before 2027?",
-          "d24h_pp": -0.1
+          "d24h_pp": -0.05
         },
         {
           "theme": "CHINA_TAIWAN",
@@ -547,7 +555,7 @@
     },
     {
       "currency": "XAU",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "lock_events": [],
       "retirar_limitadas": false,
@@ -555,7 +563,7 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Will the U.S. invade Iran before 2027?",
-          "d24h_pp": -1
+          "d24h_pp": 0
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -565,12 +573,12 @@
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "Israel x Iran ceasefire continues through December 31?",
-          "d24h_pp": null
+          "d24h_pp": 6
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
           "question": "US announces end of Iranian blockade by December 31, 2026?",
-          "d24h_pp": 1.2
+          "d24h_pp": 0.65
         },
         {
           "theme": "IRAN_ORIENTE_MEDIO",
@@ -585,7 +593,7 @@
         {
           "theme": "RUSIA_UCRANIA",
           "question": "NATO x Russia military clash by December 31, 2026?",
-          "d24h_pp": 2.5
+          "d24h_pp": 3
         },
         {
           "theme": "RUSIA_UCRANIA",
@@ -610,11 +618,13 @@
         {
           "theme": "WASHINGTON",
           "question": "Pete Hegseth impeached by December 31, 2026?",
-          "d24h_pp": -0.05
+          "d24h_pp": 0
         }
       ],
       "ea4_24h": false,
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     }
   ],
   "pair_risk": [
@@ -627,6 +637,7 @@
         "quote": "USD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "dato de primer nivel entre 24 y 48 h"
       ]
     },
@@ -639,7 +650,8 @@
         "quote": "USD"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
       ]
     },
     {
@@ -651,7 +663,8 @@
         "quote": "JPY"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
       ]
     },
     {
@@ -663,7 +676,8 @@
         "quote": "CHF"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
       ]
     },
     {
@@ -676,6 +690,7 @@
       },
       "reasons": [
         "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "discurso"
       ]
     },
@@ -689,7 +704,8 @@
       },
       "reasons": [
         "dato de primer nivel en 24 h",
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
       ]
     },
     {
@@ -701,38 +717,45 @@
         "quote": "USD"
       },
       "reasons": [
-        "dato de primer nivel entre 24 y 48 h"
+        "dato de primer nivel entre 24 y 48 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
       ]
     },
     {
       "pair": "EURGBP",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "GBP"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "EURJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "EURCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "EURCAD",
@@ -743,6 +766,7 @@
         "quote": "CAD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "discurso"
       ]
     },
@@ -755,38 +779,45 @@
         "quote": "AUD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "dato de primer nivel en 24 h"
       ]
     },
     {
       "pair": "EURNZD",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "EUR",
         "quote": "NZD"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "GBPJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "GBPCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "GBP",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "GBPCAD",
@@ -797,6 +828,7 @@
         "quote": "CAD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "discurso"
       ]
     },
@@ -831,7 +863,8 @@
         "quote": "JPY"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "dato de primer nivel en 24 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
       ]
     },
     {
@@ -843,7 +876,8 @@
         "quote": "CHF"
       },
       "reasons": [
-        "dato de primer nivel en 24 h"
+        "dato de primer nivel en 24 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
       ]
     },
     {
@@ -856,6 +890,7 @@
       },
       "reasons": [
         "dato de primer nivel en 24 h",
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "discurso"
       ]
     },
@@ -873,23 +908,27 @@
     },
     {
       "pair": "NZDJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "NZDCHF",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "NZD",
         "quote": "CHF"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "NZDCAD",
@@ -900,6 +939,7 @@
         "quote": "CAD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "discurso"
       ]
     },
@@ -912,6 +952,7 @@
         "quote": "JPY"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "discurso"
       ]
     },
@@ -924,18 +965,21 @@
         "quote": "CHF"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "discurso"
       ]
     },
     {
       "pair": "CHFJPY",
-      "risk_level": "BAJO",
+      "risk_level": "MEDIO",
       "lock_level": "NINGUNO",
       "legs": {
         "base": "CHF",
         "quote": "JPY"
       },
-      "reasons": []
+      "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp"
+      ]
     },
     {
       "pair": "XAUUSD",
@@ -946,6 +990,7 @@
         "quote": "USD"
       },
       "reasons": [
+        "geopolítica IRAN_ORIENTE_MEDIO 6 pp",
         "dato de primer nivel entre 24 y 48 h"
       ]
     }
@@ -960,7 +1005,7 @@
       "actual": "2.2%",
       "forecast": "0.5%",
       "previous": "-0.5%",
-      "hours_from_now": -31.3,
+      "hours_from_now": -31.4,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1005,7 +1050,7 @@
       "actual": "47.9",
       "forecast": "49.8",
       "previous": "49.3",
-      "hours_from_now": -20.8,
+      "hours_from_now": -20.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1020,7 +1065,7 @@
       "actual": "46.6",
       "forecast": "47.4",
       "previous": "48.4",
-      "hours_from_now": -20.8,
+      "hours_from_now": -20.9,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1140,7 +1185,7 @@
       "actual": null,
       "forecast": null,
       "previous": "8.7%",
-      "hours_from_now": -15.5,
+      "hours_from_now": -15.6,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1155,7 +1200,7 @@
       "actual": "54.5",
       "forecast": "54.5",
       "previous": "56.0",
-      "hours_from_now": -14.3,
+      "hours_from_now": -14.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1170,7 +1215,7 @@
       "actual": "54.7",
       "forecast": "55.6",
       "previous": "57.9",
-      "hours_from_now": -14.3,
+      "hours_from_now": -14.4,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1260,7 +1305,7 @@
       "actual": null,
       "forecast": null,
       "previous": "23.8K",
-      "hours_from_now": 8.2,
+      "hours_from_now": 8.1,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1350,7 +1395,7 @@
       "actual": null,
       "forecast": null,
       "previous": null,
-      "hours_from_now": 12.4,
+      "hours_from_now": 12.3,
       "window_status": "NO_AMPLIAR",
       "lock_class": "DISCURSO",
       "lock_level": "NO_AMPLIAR",
@@ -1380,7 +1425,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": 18.8,
+      "hours_from_now": 18.7,
       "window_status": null,
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1726,7 +1771,7 @@
         "event_title": "Will the U.S. invade Iran before 2027?",
         "question": "Will the U.S. invade Iran before 2027?",
         "prob": 5.5,
-        "d24h_pp": -1,
+        "d24h_pp": 0,
         "volume": 81600618.12,
         "liquidity": 291457.2,
         "end_date": "2027-01-01T04:59:00Z",
@@ -1764,7 +1809,7 @@
         "event_title": "Israel x Iran ceasefire continues through...?",
         "question": "Israel x Iran ceasefire continues through December 31?",
         "prob": 75.5,
-        "d24h_pp": null,
+        "d24h_pp": 6,
         "volume": 62162026.24,
         "liquidity": 254523.93,
         "end_date": "2026-12-31T20:29:00Z",
@@ -1783,7 +1828,7 @@
         "event_title": "US announces end of Iranian blockade by...?",
         "question": "US announces end of Iranian blockade by December 31, 2026?",
         "prob": 15.25,
-        "d24h_pp": 1.2,
+        "d24h_pp": 0.65,
         "volume": 55012320.68,
         "liquidity": 471227.19,
         "end_date": "2027-01-01T04:59:00Z",
@@ -1838,7 +1883,7 @@
         "event_title": "NATO x Russia military clash by...?",
         "question": "NATO x Russia military clash by December 31, 2026?",
         "prob": 14.5,
-        "d24h_pp": 2.5,
+        "d24h_pp": 3,
         "volume": 13769256.88,
         "liquidity": 48330.86,
         "end_date": "2027-01-01T04:59:00Z",
@@ -1921,7 +1966,7 @@
         "event_title": "Pete Hegseth impeached by...?",
         "question": "Pete Hegseth impeached by December 31, 2026?",
         "prob": 1.25,
-        "d24h_pp": -0.05,
+        "d24h_pp": 0,
         "volume": 961872.54,
         "liquidity": 72774.16,
         "end_date": "2027-01-01T04:59:00Z",
@@ -1936,7 +1981,7 @@
         "event_title": "Will China invade Taiwan by end of 2026?",
         "question": "Will China invade Taiwan by end of 2026?",
         "prob": 1.45,
-        "d24h_pp": -0.1,
+        "d24h_pp": -0.2,
         "volume": 47479828.11,
         "liquidity": 208146.82,
         "end_date": "2027-01-01T04:59:00Z",
@@ -1970,7 +2015,7 @@
         "event_title": "Will China invade Taiwan by December 31, 2027?",
         "question": "Will China invade Taiwan by December 31, 2027?",
         "prob": 8.5,
-        "d24h_pp": 0,
+        "d24h_pp": 1,
         "volume": 3999530.01,
         "liquidity": 248688.89,
         "end_date": "2028-01-01T04:59:00Z",
@@ -1987,7 +2032,7 @@
         "event_title": "China x Taiwan military clash before 2027?",
         "question": "China x Taiwan military clash before 2027?",
         "prob": 2.75,
-        "d24h_pp": -0.1,
+        "d24h_pp": -0.05,
         "volume": 3569155.97,
         "liquidity": 50016.37,
         "end_date": "2027-01-01T04:59:00Z",
@@ -2620,10 +2665,10 @@
       "z": null
     },
     {
-      "id": "c201d7a2757192992329d73696b180b17156820b74bd3a1721fc2d2c4eb18b59",
-      "sha256": "c201d7a2757192992329d73696b180b17156820b74bd3a1721fc2d2c4eb18b59",
+      "id": "1e5b629155505e71712ddcf12f018eecffe6c9aa07b64639f6731ad3221fd8d0",
+      "sha256": "1e5b629155505e71712ddcf12f018eecffe6c9aa07b64639f6731ad3221fd8d0",
       "title": "Why savers REALLY need the RBNZ to tackle inflation successfully - Forex Factory",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWHl0VU05WU9qWXNUSTU4MWFOQ1VHbkxHeXMzRDZIRGlPME5TcWJaMXE3MDhvR2xvbmZyWm81QXlPLWoyLUVTOUVsd0dBUXVLY2QweDNvc0tBc3JuXy12dW0tbEdVcFN5Zy05djNKdlZoU2JrNy1uZ2xXZC16WVJoanpmZnV3UDBCY2dYQ9IBkAFBVV95cUxPNXJ6Sks3bVJRNjVyWGRlRUZpdDY2MC1qU19wSEVVY1h6UUN4b1VKVnhJUXBFaThhU2xFWUQ5VmNrSWF2N0YxOFNXRG5fSzVlS3hKOGhuRzc4TlpFbTFfcnFQZnZ4N01Xa1hicGQ3dVJzdG5xUmwtOTVqQVBHSS1tcTdaRFJnS0w1a1VpZVRvTGI?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTWN3SXVhU2g3UDMwVTZmWkEwME1yek13ZDBCNGRsT3BYTEF4cEVjZ2xvT2ZTTjZMSDUyTk96T3EzYk1WLXVTaGZ4bGhfR2I1ck5tMEJjY3g4a012cjc2RW44Wlg5X2VUVFc4WHZ5cFFBRXg1XzFMNzN2cFVLdS14Mkt0MkhNb2huOG5n0gGQAUFVX3lxTE81cnpKSzdtUlE2NXJYZGVFRml0NjYwLWpTX3BIRVVjWHpRQ3hvVUpWeElRcEVpOGFTbEVZRDlWY2tJYXY3RjE4U1dEbl9LNWVLeEo4aG5HNzhOWkVtMV9ycVBmdng3TVdrWGJwZDd1UnN0bnFSbC05NWpBUEdJLW1xN1pEUmdLTDVrVWllVG9MYg?oc=5",
       "source": "Prensa NZ",
       "source_id": "nz-press",
       "source_type": "agencia",
@@ -2857,36 +2902,6 @@
       "z": null
     },
     {
-      "id": "bce17d80e46ac9086c1e02d6fe9a26753ba7b9cf9ffec326c92b9a7abc939930",
-      "sha256": "bce17d80e46ac9086c1e02d6fe9a26753ba7b9cf9ffec326c92b9a7abc939930",
-      "title": "ANZ forecasts first RBA rate cut in June 2027 - grafa.com",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSWJMVk1IWGVMS25HdWljZV9uUmxMS1RhVUs2MmJNSnktUVpQbEszY3J1b25KNURpZ1dXTmpRYmhMeUUxQVFpV1kwOUdIZ2hwQ2dLbVAzb0I5MmxibV9JWVdHcHBCMlRKRUt5V2VkM3JqUUh1dlpGZEJuU3ByUVpJUjlZNlI?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-24T02:37:10.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_B2",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "116978752d75996f9b17014be6b50d3ab5422b501118cd941151a3f4e960ded0",
       "sha256": "116978752d75996f9b17014be6b50d3ab5422b501118cd941151a3f4e960ded0",
       "title": "Cftc staff let exchanges count bitcoin and ether toward reserves after a 20 haircut",
@@ -2906,6 +2921,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "c4f397f25a7b6714f2e7a9670f460b2401a0100f54d6d3a0bd0500fc7aee2cc0",
+      "sha256": "c4f397f25a7b6714f2e7a9670f460b2401a0100f54d6d3a0bd0500fc7aee2cc0",
+      "title": "ANZ forecasts first RBA rate cut in June 2027 - grafa.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVXVZaW41Q2FzM25WejVidElHYkEzOG8yZ3dmVVZKbDRoOUpSUmxpUjVwS09ReUZ4bGFscmt6ZUpKWF82ekRicWJfMXRQMjBoWkNfM2lFRXdGTlpqeHRQQWlrZld5X0trZUhZbEFrNktCSHVGTXczNURxcE9Rb0EyZWUxU3NWTm1CeWd0d0ZKMHFVcjBxUllnU1IzUUlqd0daYUprTGZkZ2dnNVAtQVgwQU13?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-24T02:35:11.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_B2",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -12999,10 +13044,10 @@
       "z": null
     },
     {
-      "id": "6a5734adac3546f03d41668bd958fd2b448efcbb978494a8ff6e571a042ad8e0",
-      "sha256": "6a5734adac3546f03d41668bd958fd2b448efcbb978494a8ff6e571a042ad8e0",
-      "title": "New insights on labour market dynamics from UK Linked Employer-Employee Data (LEED): 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOTkphMG43cE90WGo5dE9EbU9ySUZCMlN0T0sxWXl0Mm5vMml4R2hjVDBLSU4weU5Wc1RDajRRdFdiTVFpd0phaTJBYlRKQjhHc3BKZWdWMk5QaVVwZGVDVEhSdUVSNm9Pc3VwTDF6M052SUpvR1NZYzRVblpaZU9WYllCcl9oME1NZElncDBodndFMkRKZmdQdmFBVUMxT2tHOU1XTVY3SHp2VmhtcFpOMlVzYzRabWpHWlM4WXdXcnVHSVlOOGdTT25zamU2Y2tqUUZEaDZqX0FDQWRjYTRCRjBkUEdnWHFmTEt5YkhHakNYMGhIR3hvYldpYjhRc3VWRVE?oc=5",
+      "id": "38cd8004739c6ce3157c03f4ddf7ec874738be7e1537bd4f90d4b43439d182f7",
+      "sha256": "38cd8004739c6ce3157c03f4ddf7ec874738be7e1537bd4f90d4b43439d182f7",
+      "title": "Labour market transformation – update on progress and plans: November 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOS3VqMkNHNTJqcnBWMTYzbGlMRFg3VDIyTFgxU1FJSVJLMi1JZExtSEFUaEJXUXR5b1pmTkdKZ2tLQ0lPSXJtcXpra3pGWldVT21ZRmtPR2Jlb09FcWNlbnFvdU1GVVdjT3NGcVpkeG15WGt4V2pscndKSjdzWVVJUmNTQUw4NlR0OTJHcGF1WE1xLTRtNGVaODNjSllrVW80U3hLVEMxS0RSZDYxOGJIaFVoYm8tSEpLNnM4VXFxeHlmZEE5TzJFZGpaSmF2TGtxVUlIbGNLZDdjVzl3STBSbDJ2MEUyOF91bU43WXVqQm5VcVU?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -13032,10 +13077,10 @@
       "z": null
     },
     {
-      "id": "38cd8004739c6ce3157c03f4ddf7ec874738be7e1537bd4f90d4b43439d182f7",
-      "sha256": "38cd8004739c6ce3157c03f4ddf7ec874738be7e1537bd4f90d4b43439d182f7",
-      "title": "Labour market transformation – update on progress and plans: November 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOS3VqMkNHNTJqcnBWMTYzbGlMRFg3VDIyTFgxU1FJSVJLMi1JZExtSEFUaEJXUXR5b1pmTkdKZ2tLQ0lPSXJtcXpra3pGWldVT21ZRmtPR2Jlb09FcWNlbnFvdU1GVVdjT3NGcVpkeG15WGt4V2pscndKSjdzWVVJUmNTQUw4NlR0OTJHcGF1WE1xLTRtNGVaODNjSllrVW80U3hLVEMxS0RSZDYxOGJIaFVoYm8tSEpLNnM4VXFxeHlmZEE5TzJFZGpaSmF2TGtxVUlIbGNLZDdjVzl3STBSbDJ2MEUyOF91bU43WXVqQm5VcVU?oc=5",
+      "id": "6a5734adac3546f03d41668bd958fd2b448efcbb978494a8ff6e571a042ad8e0",
+      "sha256": "6a5734adac3546f03d41668bd958fd2b448efcbb978494a8ff6e571a042ad8e0",
+      "title": "New insights on labour market dynamics from UK Linked Employer-Employee Data (LEED): 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOTkphMG43cE90WGo5dE9EbU9ySUZCMlN0T0sxWXl0Mm5vMml4R2hjVDBLSU4weU5Wc1RDajRRdFdiTVFpd0phaTJBYlRKQjhHc3BKZWdWMk5QaVVwZGVDVEhSdUVSNm9Pc3VwTDF6M052SUpvR1NZYzRVblpaZU9WYllCcl9oME1NZElncDBodndFMkRKZmdQdmFBVUMxT2tHOU1XTVY3SHp2VmhtcFpOMlVzYzRabWpHWlM4WXdXcnVHSVlOOGdTT25zamU2Y2tqUUZEaDZqX0FDQWRjYTRCRjBkUEdnWHFmTEt5YkhHakNYMGhIR3hvYldpYjhRc3VWRVE?oc=5",
       "source": "HM Treasury / ONS",
       "source_id": "uk-ons-hmt",
       "source_type": "oficial",
@@ -25957,38 +26002,6 @@
       "z": null
     },
     {
-      "id": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
-      "sha256": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
-      "title": "Australian National Accounts: State Accounts, 2025-26 financial year - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTnNORVpUTXFyMmVpVjR5akJNb3dtREhqaVYyVE01MmJqQUgxSkZSTEZ2YVp0OVloTlgzV3NoczBuUEpYaldCTkp2NjZIS1VoWS1oWmFfMm9MYmVEcy1mbFJoVTJIbjVJRWNvQmVxWm84WHA0elNKTlpGbTdhdWhvVnZJT1lmcjZDQ29RbWNGMFVYVWM0TVJrTUo0NHYyVDcwcmVMWXItd1lVWERCWm9yT2F4V0Jkei10c3c?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-18T08:00:00.000Z",
-      "currencies": [
-        "AUD",
-        "USD"
-      ],
-      "divisas": [
-        "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
       "sha256": "39591fadf940494d4c90a59f534eb8f6c47e7d8e403a19eeb3e077a64ab85495",
       "title": "Housing prices in Eastbourne - Office for National Statistics",
@@ -26010,6 +26023,38 @@
         "Fiscal"
       ],
       "legacy_category": "dato_macro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
+      "sha256": "5c8269a0314f88068abfe3d39dd51f462d7642c2e71c0fc894807f2f29e8a4e0",
+      "title": "Australian National Accounts: State Accounts, 2025-26 financial year - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTnNORVpUTXFyMmVpVjR5akJNb3dtREhqaVYyVE01MmJqQUgxSkZSTEZ2YVp0OVloTlgzV3NoczBuUEpYaldCTkp2NjZIS1VoWS1oWmFfMm9MYmVEcy1mbFJoVTJIbjVJRWNvQmVxWm84WHA0elNKTlpGbTdhdWhvVnZJT1lmcjZDQ29RbWNGMFVYVWM0TVJrTUo0NHYyVDcwcmVMWXItd1lVWERCWm9yT2F4V0Jkei10c3c?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-18T08:00:00.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -26923,36 +26968,6 @@
       "z": null
     },
     {
-      "id": "d19f14c6d1795a0581ef7b36a0fcd7b8236d2903f128132a3bb3ae114a77a7e1",
-      "sha256": "d19f14c6d1795a0581ef7b36a0fcd7b8236d2903f128132a3bb3ae114a77a7e1",
-      "title": "Commission reinforces the European Sport Model - European Commission",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wckhJMmZyaUFxQTBldGhMM1ZiN0xYZHZwcWlaMGdFVlk0bFpZR19vc3JMYll5MGd0azRTZUk4WGdFZWdjbmIzSk1GRVh6TktXQm1UV0ZHd3NXcV9DeHY0U2Rza0FNLVZ1Qm5DcG9rY2Jjdw?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:03:59.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "a564cbf6ad7d17c0519c005441fc6307534a59517ff614c268d62a37f8e9da05",
       "sha256": "a564cbf6ad7d17c0519c005441fc6307534a59517ff614c268d62a37f8e9da05",
       "title": "Remarks by Commissioner Dombrovskis at the press conference presenting the Autumn 2026 Economic Forecast - European Commission",
@@ -26975,36 +26990,6 @@
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
       "forecast": null,
@@ -27620,6 +27605,38 @@
       "z": null
     },
     {
+      "id": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
+      "sha256": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
+      "title": "Quarterly personal well-being estimates – seasonally adjusted - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaEFGQllFNXJnc1k4WXRDWHlsSjNNYXZRZUo2QmVhRklLUUI1V1R2UlVaYm5wcGFPSGQtUmRwb01aM2Jndmh6M0RKWEVVMzJyR3dDaEdUbjJYS0Nhbm92RV9VTG9FdWloV1d4bldrN2kybnAwTzYtSTZQQ3RNQkRLWXhieVo4bUNSYUFMQW9Ga3pxOGNpNWJRekJiLXd2dHNxU3lLQlFXZXNxX1JFc2VrM3hVbldJbXFBcV9tNmQxUDc0Zw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "b8031a2dd07d26f74d67d5995746b390394e314c7f2657d499162c4e3704856b",
       "sha256": "b8031a2dd07d26f74d67d5995746b390394e314c7f2657d499162c4e3704856b",
       "title": "Earnings and employment from Pay As You Earn Real Time Information, UK: November 2026 - Office for National Statistics",
@@ -27653,29 +27670,27 @@
       "z": null
     },
     {
-      "id": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
-      "sha256": "e2985f4192ac9f65a874c874e623a37976a93d8a80c4429d79de774f1708a1a0",
-      "title": "Quarterly personal well-being estimates – seasonally adjusted - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNaEFGQllFNXJnc1k4WXRDWHlsSjNNYXZRZUo2QmVhRklLUUI1V1R2UlVaYm5wcGFPSGQtUmRwb01aM2Jndmh6M0RKWEVVMzJyR3dDaEdUbjJYS0Nhbm92RV9VTG9FdWloV1d4bldrN2kybnAwTzYtSTZQQ3RNQkRLWXhieVo4bUNSYUFMQW9Ga3pxOGNpNWJRekJiLXd2dHNxU3lLQlFXZXNxX1JFc2VrM3hVbldJbXFBcV9tNmQxUDc0Zw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
+      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
       "source_type": "oficial",
       "published_at": "2026-11-17T08:00:00.000Z",
       "currencies": [
-        "GBP",
         "USD"
       ],
       "divisas": [
-        "GBP",
         "USD"
       ],
-      "category": "Fiscal",
+      "category": "Commodities_ToT",
       "categories": [
-        "Fiscal"
+        "Commodities_ToT"
       ],
       "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -28849,6 +28864,36 @@
       "z": null
     },
     {
+      "id": "d19f14c6d1795a0581ef7b36a0fcd7b8236d2903f128132a3bb3ae114a77a7e1",
+      "sha256": "d19f14c6d1795a0581ef7b36a0fcd7b8236d2903f128132a3bb3ae114a77a7e1",
+      "title": "Commission reinforces the European Sport Model - European Commission",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wckhJMmZyaUFxQTBldGhMM1ZiN0xYZHZwcWlaMGdFVlk0bFpZR19vc3JMYll5MGd0azRTZUk4WGdFZWdjbmIzSk1GRVh6TktXQm1UV0ZHd3NXcV9DeHY0U2Rza0FNLVZ1Qm5DcG9rY2Jjdw?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
+      "source_type": "oficial",
+      "published_at": "2026-11-16T08:00:00.000Z",
+      "currencies": [
+        "EUR"
+      ],
+      "divisas": [
+        "EUR"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "f1a7bb6ead486998ed46101888dad9fed16daa6388eee94c1ca9220c025e269b",
       "sha256": "f1a7bb6ead486998ed46101888dad9fed16daa6388eee94c1ca9220c025e269b",
       "title": "Compare data services - Australian Bureau of Statistics",
@@ -29906,6 +29951,70 @@
       "z": null
     },
     {
+      "id": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
+      "sha256": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
+      "title": "Auction Result of Treasury Discount Bills on November 13, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdFBpRGhydDVXS0Z3cy1Bd3pBV2hSWHRVYlpsbGV5QmliNWd2bVgta3YzREhJTlh0Q0hoMVRsUE93ZmtNN0UzYllLSk82RWJMaUgxR2QwQUFLVWstRmNTWEt2TVhOV3J4RmE3RXBCWmx6SDljeU5UMW1aVkswbm1TRGdUdTRRcmtWWU56eGZTeXN0d1BXcC1OSEJQcXg?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
+      "sha256": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
+      "title": "Increasing your safety online - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS1ZZelc5WjU1RE94UzlqVlhqbE1CUS1mcVlxNFpOMy1NVTB6UVpIdV9zd0d0c2FvRE03RUFCTFJfN3UxbnVCcmJxa1YxWk9xVUNzeXBRams3RE0xVTZxYkFWUDRjY2tIOW53SnNGdnZDVVNTWVlrYmxROUZVTEZScEhFVl9kZ3JIOFRTVWlfT3A3a2Rqa1ZoQjQzME8?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
       "sha256": "e70f2ed81e7b18d61a40cf94def886289eb4afd89ea25bd346222c5177ccf2eb",
       "title": "Regional gross value added (balanced) by industry: all ITL regions - Office for National Statistics",
@@ -30022,70 +30131,6 @@
         "Fiscal"
       ],
       "legacy_category": "otro",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
-      "sha256": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
-      "title": "Increasing your safety online - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS1ZZelc5WjU1RE94UzlqVlhqbE1CUS1mcVlxNFpOMy1NVTB6UVpIdV9zd0d0c2FvRE03RUFCTFJfN3UxbnVCcmJxa1YxWk9xVUNzeXBRams3RE0xVTZxYkFWUDRjY2tIOW53SnNGdnZDVVNTWVlrYmxROUZVTEZScEhFVl9kZ3JIOFRTVWlfT3A3a2Rqa1ZoQjQzME8?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "AUD",
-        "USD"
-      ],
-      "divisas": [
-        "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
-      "sha256": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
-      "title": "Auction Result of Treasury Discount Bills on November 13, 2026 : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdFBpRGhydDVXS0Z3cy1Bd3pBV2hSWHRVYlpsbGV5QmliNWd2bVgta3YzREhJTlh0Q0hoMVRsUE93ZmtNN0UzYllLSk82RWJMaUgxR2QwQUFLVWstRmNTWEt2TVhOV3J4RmE3RXBCWmx6SDljeU5UMW1aVkswbm1TRGdUdTRRcmtWWU56eGZTeXN0d1BXcC1OSEJQcXg?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "USD",
-        "JPY"
-      ],
-      "divisas": [
-        "USD",
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -30958,6 +31003,70 @@
       "z": null
     },
     {
+      "id": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
+      "sha256": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
+      "title": "UK trade: September 2026 - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcnR4dHNzYndVZVpBTEE5RXhGYWFlLXFESjE3dkhUNUl5bTN6OGpiQkNIaklRSzNpLVlWU0tCSTdLdHFVbUxRcTR6ODBqbWlkTUFES2RjakdwWElRaEpaZ3FZRlRzRlY1eUhSX3JYMmUyMDJxQXNZOEk0SUlqcTh1RTdSZXV5dFM2V3hQdWZOU2l4amdDeW4xMVp5RHlwdw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
+      "sha256": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
+      "title": "UK resident population mid-year estimates - real-time database - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMXVNQTMyc2tCakZTSVJIRFlNeC1xV2VGZkJYazFmV1NRbDNtT2U3VHMwTXJzbkdXTktEQWtvZ09oay1nMjlxQzU4UXpWOXFoU2ZIMXJMekJjR2IwQmFwLTVrQUdsZExqS1R4WW9ac1FZSDN2aFB2bVlNRE1kdWtRNHc4bDdwYXJmZERSNXhSTzJNaFJaSDBOVnpVbkdKSm95ZWhoLXZBNXNlTkNTcmF6YnJ2T2NrV0k?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "GBP",
+        "USD"
+      ],
+      "divisas": [
+        "GBP",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "094e28ea624354ac2aa91473db22a296fe8c498bf8135c66cb0e99338ca985c4",
       "sha256": "094e28ea624354ac2aa91473db22a296fe8c498bf8135c66cb0e99338ca985c4",
       "title": "Index of Production, UK: September 2026 - Office for National Statistics",
@@ -31022,27 +31131,29 @@
       "z": null
     },
     {
-      "id": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
-      "sha256": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
-      "title": "Auction Result of 5-Year JGBs on November 12, 2026 (For JGB Market Special Participants) : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTXpxY0JTU21BVzIxZ2E2elQxdC0wc0tXZkU3eFpyTGJZX3RlQzhNb2lTWnlYZWdZdHBDeXJGVEt3SDRPY0VUWmJmVTY5RVZ1ZXZUNDRCVHdzdVdnQWJFWXJYWE9IeVJTdkZsdnEyRzhmd0xkanExbi1nWFFMR01jMndDWkpuTG0yd3lNUjhB?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
+      "id": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
+      "sha256": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
+      "title": "Quarterly Stocks Survey (QSS) and Quarterly Acquisitions and Disposals of Capital Assets Survey (QCAS) textual data analysis - Office for National Statistics",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFAzQ1hUdUR6aFR2MjhZTkwxVzBVaHBiRjI3dlUzS2xoSXpIblpDMkFpdmhKVDAtQjVfNU5FdUVTM0xWUVJ6TTJDLWJDU2NtSW40cE00UzJTdHVZVWNMbndaMkx2MUdxd1BMU1dkYmNEVmpRZURBZUI5MkowNWFYTlNpb0xKX2N2dVlIRWV1blBvX1FZa1ctVEZ4STZWRGVmZlViSE9wR2F6ZkFGRTNyQW5oY252X2JPdFhFQ1R0Z21ScHN4algya0hUdnhUdw?oc=5",
+      "source": "HM Treasury / ONS",
+      "source_id": "uk-ons-hmt",
       "source_type": "oficial",
       "published_at": "2026-11-12T08:00:00.000Z",
       "currencies": [
-        "JPY"
+        "GBP",
+        "USD"
       ],
       "divisas": [
-        "JPY"
+        "GBP",
+        "USD"
       ],
       "category": "Fiscal",
       "categories": [
         "Fiscal"
       ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -31116,93 +31227,27 @@
       "z": null
     },
     {
-      "id": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
-      "sha256": "3d4a751608cdfb1bc9f11eff6b36d4ef8508900bd717165b764aa0c92008b823",
-      "title": "UK trade: September 2026 - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcnR4dHNzYndVZVpBTEE5RXhGYWFlLXFESjE3dkhUNUl5bTN6OGpiQkNIaklRSzNpLVlWU0tCSTdLdHFVbUxRcTR6ODBqbWlkTUFES2RjakdwWElRaEpaZ3FZRlRzRlY1eUhSX3JYMmUyMDJxQXNZOEk0SUlqcTh1RTdSZXV5dFM2V3hQdWZOU2l4amdDeW4xMVp5RHlwdw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
+      "id": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
+      "sha256": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
+      "title": "Auction Result of 5-Year JGBs on November 12, 2026 (For JGB Market Special Participants) : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTXpxY0JTU21BVzIxZ2E2elQxdC0wc0tXZkU3eFpyTGJZX3RlQzhNb2lTWnlYZWdZdHBDeXJGVEt3SDRPY0VUWmJmVTY5RVZ1ZXZUNDRCVHdzdVdnQWJFWXJYWE9IeVJTdkZsdnEyRzhmd0xkanExbi1nWFFMR01jMndDWkpuTG0yd3lNUjhB?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
       "source_type": "oficial",
       "published_at": "2026-11-12T08:00:00.000Z",
       "currencies": [
-        "GBP",
-        "USD"
+        "JPY"
       ],
       "divisas": [
-        "GBP",
-        "USD"
+        "JPY"
       ],
       "category": "Fiscal",
       "categories": [
         "Fiscal"
       ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
-      "sha256": "1db46f0625684ac7b8a4fd876ffbcb1ad34ec934741341f6d35059230cbac09b",
-      "title": "UK resident population mid-year estimates - real-time database - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMXVNQTMyc2tCakZTSVJIRFlNeC1xV2VGZkJYazFmV1NRbDNtT2U3VHMwTXJzbkdXTktEQWtvZ09oay1nMjlxQzU4UXpWOXFoU2ZIMXJMekJjR2IwQmFwLTVrQUdsZExqS1R4WW9ac1FZSDN2aFB2bVlNRE1kdWtRNHc4bDdwYXJmZERSNXhSTzJNaFJaSDBOVnpVbkdKSm95ZWhoLXZBNXNlTkNTcmF6YnJ2T2NrV0k?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
-      "sha256": "510ef26a8b0fe6449f665c95f4f0fddfd516e5656c038c662f6cde915894179d",
-      "title": "Quarterly Stocks Survey (QSS) and Quarterly Acquisitions and Disposals of Capital Assets Survey (QCAS) textual data analysis - Office for National Statistics",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcFAzQ1hUdUR6aFR2MjhZTkwxVzBVaHBiRjI3dlUzS2xoSXpIblpDMkFpdmhKVDAtQjVfNU5FdUVTM0xWUVJ6TTJDLWJDU2NtSW40cE00UzJTdHVZVWNMbndaMkx2MUdxd1BMU1dkYmNEVmpRZURBZUI5MkowNWFYTlNpb0xKX2N2dVlIRWV1blBvX1FZa1ctVEZ4STZWRGVmZlViSE9wR2F6ZkFGRTNyQW5oY252X2JPdFhFQ1R0Z21ScHN4algya0hUdnhUdw?oc=5",
-      "source": "HM Treasury / ONS",
-      "source_id": "uk-ons-hmt",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "GBP",
-        "USD"
-      ],
-      "divisas": [
-        "GBP",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -33203,6 +33248,66 @@
       "z": null
     },
     {
+      "id": "40fdbccb384739a78b5095c1b38e2b169d9ab9abe8a41789f1c87e6873469907",
+      "sha256": "40fdbccb384739a78b5095c1b38e2b169d9ab9abe8a41789f1c87e6873469907",
+      "title": "Consumer Price Index, Northeast region — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2lPN2JNZ19uSTZtbGJmMWZhUWRjVU5Mc3NTdnBDdHI4ejRYM1BRRU9DUTJ2Um5MLVV0RGFiMVN4NmlaYjJiWnBwSkVkNGNqX1MxeTlodkh4WUNpQ2dUZXZTLWZqRjlqd3FZZVNlVkl5QjFhaEhkaHFyTWdOSGx4bnhYUjlNNGdWSnQySGZ0TQ?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e1f9112227ba27fd0478a84a6f6b0b34a0c28a76e822398612008c2649bcdca1",
+      "sha256": "e1f9112227ba27fd0478a84a6f6b0b34a0c28a76e822398612008c2649bcdca1",
+      "title": "Consumer Price Index, South Region — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYlhCV0tpY0w2S3NxcGRueU03eklLLUVnLTRUUGUyeW1aZ25BUkhKTlVnRm03U1UyUDN2a1FsOW14eWtQMGhNamJ0Y296ZF9RamxBYW1yQktMbVhJZ004VWxjUzN6enFwTmV3ektPMG9WdF9Ka2UtekpMTWFUZjZHdWMwdVRkdw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
       "sha256": "6d3d2c40075bc3c7c54a7ce8baf536a92aef1d28a573519c0abde85c90fa5604",
       "title": "Consumer Price Index, Detroit-Warren-Dearborn area – October 2026 - Bureau of Labor Statistics (.gov)",
@@ -33226,6 +33331,36 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
+      "sha256": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
+      "title": "Consumer Price Index, West Region — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YdTNMX2E3REJVeDFfR1lpTW1DMENvX0NySVhvQlBWUlBHR3RZSnM3cUd6NE1fNTc3LWJwVGdwdno1NXZNa1Z5T3p1SGw1eFk1ek9YMGotOXFYbnlwMWxCRHVZN3ZSQWFfSnJtWTJIRmR1bllUc2V5N2MtT3R0dw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -33263,10 +33398,10 @@
       "z": null
     },
     {
-      "id": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
-      "sha256": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
-      "title": "Consumer Price Index, Atlanta-Sandy Springs-Roswell — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaGpxRGVNeGllWVJqcnJnRzVvakFWSzRxNE9VUmJXNjA0dFkxWEZfVmxyOVF6eTVvSHE3M192ODVWcmhxRU5FS3dYanBacmxTemdqa3pqb1AtTE93UlhoWmhpRlhDTFVZdjFYUW5uUVA2VWNxY2QwcDBnUW82R1NlSXdobU5lVUh5?oc=5",
+      "id": "b942563d3d679fff258ee663947a8e1fcecce2fdeb92c56339d82056ed79fe40",
+      "sha256": "b942563d3d679fff258ee663947a8e1fcecce2fdeb92c56339d82056ed79fe40",
+      "title": "Consumer Price Index, Philadelphia-Camden-Wilmington — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMDE2UjJEeWNjenBtRTQtYW1RSXRET3d3QnNzXzlEUExfQ2s5UUNRX1Q2cXFaOG92Q1pIZUlFUzhFamhUQktFTG9SS3QwTlk2cVBoOV9ldTdHbUdoS2dpRU9mcGtCOF85eGx4MnZLLWVHZ0hDS1FiTjBrZTd5OGxacWVuVUlxQUZVUDFVVzhockNGN28?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
@@ -33293,10 +33428,10 @@
       "z": null
     },
     {
-      "id": "6e80602df891d582338416d7714697d6a2b8cc13df266820e8adbcbec19223bf",
-      "sha256": "6e80602df891d582338416d7714697d6a2b8cc13df266820e8adbcbec19223bf",
-      "title": "Consumer Price Index, Anchorage area — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZjluVTFmXzg2eER2RFJnOUE3aDFGVC1MeXVJSXkzR2ZBMU9yeHg1WVVUVWp2NnRLVVYzRGJWU3NPX1lLOThnR2ktSkdpQWxzYjV2NGpBR091S1h6ZnY4eVIxTktPaEhiblpjLVdUWFA1MWpNVXZwcHJ6X2dFVnh1NU1IdXA?oc=5",
+      "id": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
+      "sha256": "1f49dcab2cf5eacdca6c63944ce0944e60c2a8ef4aeb8d5d7bda2f342d12b7af",
+      "title": "Consumer Price Index, Atlanta-Sandy Springs-Roswell — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaGpxRGVNeGllWVJqcnJnRzVvakFWSzRxNE9VUmJXNjA0dFkxWEZfVmxyOVF6eTVvSHE3M192ODVWcmhxRU5FS3dYanBacmxTemdqa3pqb1AtTE93UlhoWmhpRlhDTFVZdjFYUW5uUVA2VWNxY2QwcDBnUW82R1NlSXdobU5lVUh5?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
@@ -33387,186 +33522,6 @@
       "sha256": "aebccd248f4bc286b2a137838e1c61bb33f5c28c21782cf02baafd1a641e4b9c",
       "title": "Consumer Price Index, St. Louis area — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVkJpWkRUUGlRcE9URlptcWhOZ2Zwb3lBRTlPeXVETTYtc3ZlQm9WcXYyaVMzbFhtU3RGU19IQndGQUR1MWNRMWh2d3ZabWI0eDVMWU4xSzczaER5QjJSOHo3S0NrUUpVN2tpQmZvdU5mNUQ1SUxBaWtBZk9vUUphY25BdTRSSkE2eUFWM0ZXU1I?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
-      "sha256": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
-      "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
-      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "40fdbccb384739a78b5095c1b38e2b169d9ab9abe8a41789f1c87e6873469907",
-      "sha256": "40fdbccb384739a78b5095c1b38e2b169d9ab9abe8a41789f1c87e6873469907",
-      "title": "Consumer Price Index, Northeast region — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZ2lPN2JNZ19uSTZtbGJmMWZhUWRjVU5Mc3NTdnBDdHI4ejRYM1BRRU9DUTJ2Um5MLVV0RGFiMVN4NmlaYjJiWnBwSkVkNGNqX1MxeTlodkh4WUNpQ2dUZXZTLWZqRjlqd3FZZVNlVkl5QjFhaEhkaHFyTWdOSGx4bnhYUjlNNGdWSnQySGZ0TQ?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "e1f9112227ba27fd0478a84a6f6b0b34a0c28a76e822398612008c2649bcdca1",
-      "sha256": "e1f9112227ba27fd0478a84a6f6b0b34a0c28a76e822398612008c2649bcdca1",
-      "title": "Consumer Price Index, South Region — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOYlhCV0tpY0w2S3NxcGRueU03eklLLUVnLTRUUGUyeW1aZ25BUkhKTlVnRm03U1UyUDN2a1FsOW14eWtQMGhNamJ0Y296ZF9RamxBYW1yQktMbVhJZ004VWxjUzN6enFwTmV3ektPMG9WdF9Ka2UtekpMTWFUZjZHdWMwdVRkdw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
-      "sha256": "92a15390ae705108f024bc267e070c9c2f41f51184e574fc68f2433b32e12ed5",
-      "title": "Consumer Price Index, West Region — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YdTNMX2E3REJVeDFfR1lpTW1DMENvX0NySVhvQlBWUlBHR3RZSnM3cUd6NE1fNTc3LWJwVGdwdno1NXZNa1Z5T3p1SGw1eFk1ek9YMGotOXFYbnlwMWxCRHVZN3ZSQWFfSnJtWTJIRmR1bllUc2V5N2MtT3R0dw?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-10T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b942563d3d679fff258ee663947a8e1fcecce2fdeb92c56339d82056ed79fe40",
-      "sha256": "b942563d3d679fff258ee663947a8e1fcecce2fdeb92c56339d82056ed79fe40",
-      "title": "Consumer Price Index, Philadelphia-Camden-Wilmington — October 2026 - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMDE2UjJEeWNjenBtRTQtYW1RSXRET3d3QnNzXzlEUExfQ2s5UUNRX1Q2cXFaOG92Q1pIZUlFUzhFamhUQktFTG9SS3QwTlk2cVBoOV9ldTdHbUdoS2dpRU9mcGtCOF85eGx4MnZLLWVHZ0hDS1FiTjBrZTd5OGxacWVuVUlxQUZVUDFVVzhockNGN28?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
@@ -33717,6 +33672,96 @@
       "sha256": "7baa8ed12c156c97120a4c68536c1f0e883e76ea020f543a1fc576d518df1460",
       "title": "Consumer Price Index, Midwest region — October 2026 - Bureau of Labor Statistics (.gov)",
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWEQxVVI5WDhnXzg4MjFyeC01cnRnNWZrTnBITzl5dHJwbFo1aG5VSFhjelFienpUYUZwRzBsM1RxMDNXbU9VV0JCWnlqOGNGVVFlaDhxN2wzMENxS2NHS3hYaU9MUF9wa3RvUXltVElsaUFHaEVvY3RwbnltTkxQSng3Z3hZaERPVEJVOElXNXU?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
+      "sha256": "66a266bc79f56bd9e2933303055dbafeac3b787dd2d7431678738172648663e1",
+      "title": "Consumer Price Index, Miami-Fort Lauderdale-West Palm Beach — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFU4MGNOYjg2UUoyMUl5OEZCWWNQR0x0VW8yS3NTV0Y2SVNjR2x2a0lIZlROTGtEcVduM3paSVE3UE9PXzVjSlRudkZDN3pMeG1veXU5NlNCckN5YWRGYWpyYXA4R3dSNUV6RmV4SzF6ME5HTDRuQzFZblpiaG13UGtLZ2FnZw?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "sha256": "be6a49c02967322b550027ed091291f9f6f3c470aff0d2a90a951c768a91cd85",
+      "title": "Updated seasonal factors to be introduced February 11, 2027 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1UNUVwSmVCYUI3Q1JNd21BNkYwcmlydVFTUmdwQkZHajBnMF9CTVJNY1kwcWxMVXd1SG9GTWRMN2xLTjltblppS3lHU2Q5YlBxM2dlcTRCRXZLbS10c0pkRlFPNTltODYwU0pWdlYwY0dkV1E?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-10T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "6e80602df891d582338416d7714697d6a2b8cc13df266820e8adbcbec19223bf",
+      "sha256": "6e80602df891d582338416d7714697d6a2b8cc13df266820e8adbcbec19223bf",
+      "title": "Consumer Price Index, Anchorage area — October 2026 - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZjluVTFmXzg2eER2RFJnOUE3aDFGVC1MeXVJSXkzR2ZBMU9yeHg1WVVUVWp2NnRLVVYzRGJWU3NPX1lLOThnR2ktSkdpQWxzYjV2NGpBR091S1h6ZnY4eVIxTktPaEhiblpjLVdUWFA1MWpNVXZwcHJ6X2dFVnh1NU1IdXA?oc=5",
       "source": "BLS / BEA",
       "source_id": "us-bls-bea",
       "source_type": "oficial",
