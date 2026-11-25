@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-25T00:30:08.030Z",
+  "generated_at": "2026-11-25T00:31:13.461Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -16,11 +16,11 @@
   },
   "coverage": {
     "USD": {
-      "count_72h": 312,
+      "count_72h": 314,
       "count_official_45d": 353,
-      "last_item_at": "2026-11-24T23:37:21.000Z",
-      "hours_since_last": 0.9,
-      "hours_since_last_business": 0.9,
+      "last_item_at": "2026-11-25T00:30:37.000Z",
+      "hours_since_last": 0,
+      "hours_since_last_business": 0,
       "silence": false
     },
     "EUR": {
@@ -51,22 +51,22 @@
       "count_72h": 151,
       "count_official_45d": 18,
       "last_item_at": "2026-11-24T22:15:50.000Z",
-      "hours_since_last": 2.2,
-      "hours_since_last_business": 2.2,
+      "hours_since_last": 2.3,
+      "hours_since_last_business": 2.3,
       "silence": false
     },
     "CAD": {
       "count_72h": 57,
       "count_official_45d": 8,
       "last_item_at": "2026-11-24T21:09:43.000Z",
-      "hours_since_last": 3.3,
-      "hours_since_last_business": 3.3,
+      "hours_since_last": 3.4,
+      "hours_since_last_business": 3.4,
       "silence": false
     },
     "AUD": {
-      "count_72h": 143,
+      "count_72h": 146,
       "count_official_45d": 95,
-      "last_item_at": "2026-11-25T00:27:11.000Z",
+      "last_item_at": "2026-11-25T00:30:37.000Z",
       "hours_since_last": 0,
       "hours_since_last_business": 0,
       "silence": false
@@ -1258,7 +1258,7 @@
       "title": "CPI y/y",
       "event_at": "2026-11-25T00:30:00.000Z",
       "impact": "High",
-      "actual": null,
+      "actual": "4.9%",
       "forecast": "4.7%",
       "previous": "4.3%",
       "hours_from_now": 0,
@@ -1288,7 +1288,7 @@
       "title": "Construction Work Done q/q",
       "event_at": "2026-11-25T00:30:00.000Z",
       "impact": "Low",
-      "actual": null,
+      "actual": "0.9%",
       "forecast": "0.8%",
       "previous": "-2.1%",
       "hours_from_now": 0,
@@ -2276,6 +2276,100 @@
     }
   },
   "items": [
+    {
+      "id": "91bd05daaa1b0ed4c5e8ffbde88fa99a45f0f32a8bf7ef80d078b7065a8104ea",
+      "sha256": "91bd05daaa1b0ed4c5e8ffbde88fa99a45f0f32a8bf7ef80d078b7065a8104ea",
+      "title": "‼ BREAKING: AUSTRALIAN CPI YOY NSA ACTUAL 4.9% (FORECAST 4.7%, PREVIOUS 4.3%) $MACRO",
+      "url": "https://t.me/FinancialJuice/149617",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-25T00:30:37.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "4.9%",
+      "forecast": "4.7%",
+      "previous": "4.3%",
+      "calendar_title": "CPI y/y",
+      "z": 1.1
+    },
+    {
+      "id": "f56644df8b18456417296bf96a5372acef8b26218a087e0bab127c38879e4d26",
+      "sha256": "f56644df8b18456417296bf96a5372acef8b26218a087e0bab127c38879e4d26",
+      "title": "AUSTRALIAN CONSTRUCTION WORK DONE QOQ ACTUAL 0.9% (FORECAST 0.7%, PREVIOUS -2.1%) $MACRO",
+      "url": "https://t.me/FinancialJuice/149616",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-25T00:30:36.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "A5",
+      "mmt_lens": "EXPANSION_REAL_A5",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": "0.9%",
+      "forecast": "0.7%",
+      "previous": "-2.1%",
+      "calendar_title": "Construction Work Done q/q",
+      "z": 1.3
+    },
+    {
+      "id": "810d5f0fe12a8b4ca01725c269c2d8653356725a9fbc4b95d8fd3ef79d682278",
+      "sha256": "810d5f0fe12a8b4ca01725c269c2d8653356725a9fbc4b95d8fd3ef79d682278",
+      "title": "❗ AUSTRALIAN CPI TRIMMED MEAN YOY ACTUAL 3.8% (FORECAST 3.6%, PREVIOUS 3.6%) $MACRO",
+      "url": "https://t.me/FinancialJuice/149615",
+      "source": "FinancialJuice",
+      "source_id": "financialjuice",
+      "source_type": "breaking",
+      "published_at": "2026-11-25T00:30:25.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "Inflacion_Empleo",
+      "categories": [
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "dato_macro",
+      "ficha_v6": "A1",
+      "mmt_lens": "INFLATION_PRINT",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 4,
+      "actual": "3.8%",
+      "forecast": "3.6%",
+      "previous": "3.6%",
+      "calendar_title": null,
+      "z": 1.3
+    },
     {
       "id": "cfcc665d88cbdede19a70af7678e7808641b340d17e883cc5998cc6c56c786cf",
       "sha256": "cfcc665d88cbdede19a70af7678e7808641b340d17e883cc5998cc6c56c786cf",
@@ -16906,10 +17000,10 @@
       "z": null
     },
     {
-      "id": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
-      "sha256": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
-      "title": "A post from Tina Schlegel in Palm Grove. - News4JAX",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VZmRfazUtMTdQcEVnWHowMWU1SmFTRXZITTQ2TXRTSTFqcUM1NXVkNUxReVUxWjFMaE9sd0Mzd3BFczNsR3lTUktjZ241aFBMeTZadXlqRkh6S01vS0RFZ0w2NEU0aEJmd2F6bUJ2WmFqX1Q2WGVZ?oc=5",
+      "id": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
+      "sha256": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
+      "title": "A post from Tina Schlegel in Palm Grove. - WKMG",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1Tm41ZEk5aFkyR1pQeTU0dEZIUmxDTkxDaWhjejBfQThWcWRaZ25aeElITjdpYS1jZFlScV8xdVFkdm40Q1hLVTB4U1hsYmpOQ21iN0xoNTV2SFBjWlFuOEU5aGN5VENBazYyQTRtSVp1bjVrbktyd3FIbEc?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
@@ -16936,10 +17030,10 @@
       "z": null
     },
     {
-      "id": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
-      "sha256": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
-      "title": "A post from Tina Schlegel in Palm Grove. - WKMG",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1Tm41ZEk5aFkyR1pQeTU0dEZIUmxDTkxDaWhjejBfQThWcWRaZ25aeElITjdpYS1jZFlScV8xdVFkdm40Q1hLVTB4U1hsYmpOQ21iN0xoNTV2SFBjWlFuOEU5aGN5VENBazYyQTRtSVp1bjVrbktyd3FIbEc?oc=5",
+      "id": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
+      "sha256": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
+      "title": "A post from Tina Schlegel in Palm Grove. - News4JAX",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VZmRfazUtMTdQcEVnWHowMWU1SmFTRXZITTQ2TXRTSTFqcUM1NXVkNUxReVUxWjFMaE9sd0Mzd3BFczNsR3lTUktjZ241aFBMeTZadXlqRkh6S01vS0RFZ0w2NEU0aEJmd2F6bUJ2WmFqX1Q2WGVZ?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
@@ -27530,6 +27624,37 @@
       "z": null
     },
     {
+      "id": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
+      "sha256": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
+      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLTYzclN6U3ZjQ28xdVZhWTFXZE9kX05keFNoZDhwYWxrdENweXB5akNpQTRjQkJFWnRrNmxObnVENE10ZVFTSGF5WmNmYWxIdnNUS3gxQVA2RGM3aHpnTWpoNFdoVWwwdUVDQmZDemNKRGhqQTk0NmlQRzdSdXQ3ckY4ZzVadWVJcHZZMWpZSGtsSTVoTG9nRVhjamZJZHVydllmc0lhajDSAagBQVVfeXFMUC02M3JTelN2Y0NvMXVWYVkxV2RPZF9OZHhTaGQ4cGFsa3RDcHlweWpDaUE0Y0JCRVp0azZsTm51RDRNdGVRU0hheVpjZmFsSHZzVEt4MUFQNkRjN2h6Z01qaDRXaFVsMHVFQ0JmQ3pjSkRoakE5NDZpUEc3UnV0N3JGOGc1WnVlSXB2WTFqWUhrbEk1aExvZ0VYY2pmSWR1cnZZZnNJYWow?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T03:29:27.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "sha256": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "title": "Tech stock sell-off deepens in Asia",
@@ -27826,37 +27951,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
-      "sha256": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
-      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV29PRzI1OHpIQ0pxMTNhS0MxbGF0RUdRb1MwTlI1NmZzaUNqckdzNW5lekd6aFZ4S3hkb2VYLU1HNmQ3OWlPZTgzaTRfMFdONkVEa0pncHVWanNxY01NTl9UTkg3SVlJNC1RdVpYbkFmNFpmem56ejB1cmEzYkpJcXl6cmZwRFVySGRKZnc2ZzQwbElzTmlaSU1HRXItdWt0Y2F30gGoAUFVX3lxTFAtNjNyU3pTdmNDbzF1VmFZMVdkT2RfTmR4U2hkOHBhbGt0Q3B5cHlqQ2lBNGNCQkVadGs2bE5udUQ0TXRlUVNIYXlaY2ZhbEh2c1RLeDFBUDZEYzdoemdNamg0V2hVbDB1RUNCZkN6Y0pEaGpBOTQ2aVBHN1J1dDdyRjhnNVp1ZUlwdlkxallIa2xJNWhMb2dFWGNqZklkdXJ2WWZzSWFqMA?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T02:29:00.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -36769,6 +36863,36 @@
       "z": null
     },
     {
+      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "c37093e5a6db51beb94420cec42ad60dfd784ddf65b611d86d9c7fc7716b6fd1",
       "sha256": "c37093e5a6db51beb94420cec42ad60dfd784ddf65b611d86d9c7fc7716b6fd1",
       "title": "Economic forecast for Spain - economy-finance.ec.europa.eu",
@@ -37103,36 +37227,6 @@
       "sha256": "df346188952d1cd66bbcd5851c0f764d5d1180dc7640426f20304ac71bf5fb1b",
       "title": "Economic forecast for Romania - economy-finance.ec.europa.eu",
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbXBiU2VRSzNEU3B0MGVndzJ5ZE9vQ2psN1Bza2xzT2R1Z1BfVEF2b1ZkSnZMSzA1cXl0TDJTbXVtM1RfeGpJYnN0NGU5Z3FhQXVNcmVhY2E4alpGSTVnRTlxVHJLbjkxWU4yRVIyYXBrdVBVQ2Fmc0RIRV9wYWRLX2VBcVhYTlBBOEhtZmtiaVFJMDNqQXBNb0RqR3lRMkR3ek5qcmJ5blFjWEtrTDhCX1g4LWQ4ZHh2WTJGWWxzV2c2Y1VNNkhoRWZCSV91RklCWGZ6NVpISDFJYXNDaUx0ZkFHQ18zYk0?oc=5",
-      "source": "Eurostat",
-      "source_id": "eurostat",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "EUR"
-      ],
-      "divisas": [
-        "EUR"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "USUARIO_MONEDA",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
-      "sha256": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
-      "title": "Economic forecast for Cyprus - economy-finance.ec.europa.eu",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeE43ZHpfdllKckVscXBvQXBMa19KOV9HTEdhbFVhRVJqUk01NWRZVHByMi1TVlFodmZwVkhUV3lvVVlYYl90bGlJZ005U3QxZHhyZ2EzUG1MR3ZCYXIyV2hubmUxQkllcDM1cEttUTdnRjAyR0hEZDByMDBEUXdYX2d4QXlFU0ZoLXRfRzZJSnA1LWJ6ZzRxcnVwWmxIdENIV2pIVVV0LXg2SXVIRHN1cHpRdnRQLUlCYjdXTjgtOTYwTm10ZDlHN1VseGt6UnVoOHhTcHZ3RkEzanBNeEZHM1hFZXE?oc=5",
       "source": "Eurostat",
       "source_id": "eurostat",
       "source_type": "oficial",
@@ -37557,28 +37651,28 @@
       "z": null
     },
     {
-      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
+      "id": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
+      "sha256": "874679fcad39bb23afd842f2fc802140d1cc37dc07bd1b7bf2d5f47c10be2082",
+      "title": "Economic forecast for Cyprus - economy-finance.ec.europa.eu",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNeE43ZHpfdllKckVscXBvQXBMa19KOV9HTEdhbFVhRVJqUk01NWRZVHByMi1TVlFodmZwVkhUV3lvVVlYYl90bGlJZ005U3QxZHhyZ2EzUG1MR3ZCYXIyV2hubmUxQkllcDM1cEttUTdnRjAyR0hEZDByMDBEUXdYX2d4QXlFU0ZoLXRfRzZJSnA1LWJ6ZzRxcnVwWmxIdENIV2pIVVV0LXg2SXVIRHN1cHpRdnRQLUlCYjdXTjgtOTYwTm10ZDlHN1VseGt6UnVoOHhTcHZ3RkEzanBNeEZHM1hFZXE?oc=5",
+      "source": "Eurostat",
+      "source_id": "eurostat",
       "source_type": "oficial",
       "published_at": "2026-11-17T08:00:00.000Z",
       "currencies": [
-        "USD"
+        "EUR"
       ],
       "divisas": [
-        "USD"
+        "EUR"
       ],
-      "category": "Commodities_ToT",
+      "category": "BC",
       "categories": [
-        "Commodities_ToT"
+        "BC"
       ],
       "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "USUARIO_MONEDA",
       "impact": 2,
       "actual": null,
       "forecast": null,
