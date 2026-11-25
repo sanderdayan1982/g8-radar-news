@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "engine_version": "mmt-agent-op-v4.1-G8",
   "llm_calls": 0,
-  "generated_at": "2026-11-25T13:34:19.613Z",
+  "generated_at": "2026-11-25T13:35:25.693Z",
   "health": {
     "sources_active": 34,
     "sources_live": 34,
@@ -19,8 +19,8 @@
       "count_72h": 382,
       "count_official_45d": 365,
       "last_item_at": "2026-11-25T13:31:22.000Z",
-      "hours_since_last": 0,
-      "hours_since_last_business": 0,
+      "hours_since_last": 0.1,
+      "hours_since_last_business": 0.1,
       "silence": false
     },
     "EUR": {
@@ -83,8 +83,8 @@
       "count_72h": 17,
       "count_official_45d": 0,
       "last_item_at": "2026-11-25T12:55:42.000Z",
-      "hours_since_last": 0.6,
-      "hours_since_last_business": 0.6
+      "hours_since_last": 0.7,
+      "hours_since_last_business": 0.7
     }
   },
   "risk_map": [
@@ -1063,7 +1063,7 @@
       "actual": null,
       "forecast": "3.6%",
       "previous": "3.7%",
-      "hours_from_now": -13.7,
+      "hours_from_now": -13.8,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -1183,7 +1183,7 @@
       "actual": null,
       "forecast": null,
       "previous": "3.37|1.1",
-      "hours_from_now": -3,
+      "hours_from_now": -3.1,
       "window_status": "✓ POST-EVENTO",
       "lock_class": null,
       "lock_level": "NINGUNO",
@@ -5469,6 +5469,36 @@
       "z": null
     },
     {
+      "id": "aed74d27fac2eba720773c9a5981a87248b66c84c3baecb8f6c8f1d96a86b040",
+      "sha256": "aed74d27fac2eba720773c9a5981a87248b66c84c3baecb8f6c8f1d96a86b040",
+      "title": "Australia's financial conditions are clearly restrictive, RBA's Jacobs says - Forex Factory",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZnZ2M2NsV29xQ1BjS3J3eUVTVWU3R09CRERPUGN6MmtGbTJiZEJqR2RLbl9zLXNOaTJ4OXVjT0ZzQmc2bU1lbWlLV1ZpNHdnSmFnR3FnQlRkRDFPdFBteEpvaEM3VmxOTUgyWWVYRVViNnpQX0J6ckk4OWhqQUxWRjdINHJpQXFFUnVhQmxIZlhSTmZYR0UxbGk0LWVYNEdvRzhSX1NTWExiM3RENU5BQ2t1MNIBswFBVV95cUxNZnZ2M2NsV29xQ1BjS3J3eUVTVWU3R09CRERPUGN6MmtGbTJiZEJqR2RLbl9zLXNOaTJ4OXVjT0ZzQmc2bU1lbWlLV1ZpNHdnSmFnR3FnQlRkRDFPdFBteEpvaEM3VmxOTUgyWWVYRVViNnpQX0J6ckk4OWhqQUxWRjdINHJpQXFFUnVhQmxIZlhSTmZYR0UxbGk0LWVYNEdvRzhSX1NTWExiM3RENU5BQ2t1MA?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-25T07:52:49.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "ed75f8afa124cbd2403e6ab5f4eabfd5f711ef9098123762d32307aaf5621be9",
       "sha256": "ed75f8afa124cbd2403e6ab5f4eabfd5f711ef9098123762d32307aaf5621be9",
       "title": "What are the main events for today 93",
@@ -6095,36 +6125,6 @@
       "actual": "11.8%",
       "forecast": null,
       "previous": "11.2%",
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "decb265efba49ce70c2076524b09a7651b0a9e05e56a76665bd1339dadbe3f55",
-      "sha256": "decb265efba49ce70c2076524b09a7651b0a9e05e56a76665bd1339dadbe3f55",
-      "title": "Australia's financial conditions are clearly restrictive, RBA's Jacobs says - Forex Factory",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQR1lwbVU2NWtaLTBhZzdma1NxT2dLWjAxVlhrdVVUSHRJT1EyOWh3akF3UmxqV1FGUTRlYlgwSHRyeVkwemVoR2stMV9vR2FhdlN1TUI3OGxjQUlZbmVEdUg0blVqYk9jNUVkR1lXQ0d6SGo5bjlYbTFrRElvZElTRUl5SWx1SzJlQUxCSDVQaFVzTVZocUpxT0RvaEtiR2tWQ19kNFIzM2RiZl9yWkHSAbMBQVVfeXFMTWZ2djNjbFdvcUNQY0tyd3lFU1VlN0dPQkRET1BjejJrRm0yYmRCakdkS25fcy1zTmkyeDl1Y09Gc0JnNm1NZW1pS1dWaTR3Z0phZ0dxZ0JUZEQxT3RQbXhKb2hDN1ZsTk1IMlllWEVVYjZ6UF9CenJJODloakFMVkY3SDRyaUFxRVJ1YUJsSGZYUk5mWEdFMWxpNC1lWDRHb0c4Ul9TU1hMYjN0RDVOQUNrdTA?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-25T06:52:00.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
       "calendar_title": null,
       "z": null
     },
@@ -6839,6 +6839,38 @@
         "NZD"
       ],
       "divisas": [
+        "NZD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "e72aec86402336c6af44c22e49797c44e92b6178e6203b68556e9a215a99da99",
+      "sha256": "e72aec86402336c6af44c22e49797c44e92b6178e6203b68556e9a215a99da99",
+      "title": "NZD/USD Forecast: Kiwi faces historic breakdown as RBNZ survey looms - FOREX.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSDlPUTJrQXdFeHllaVI3a0ZxdnZ0LWdFd3hVNU53N0s2ZXA1dWlVVFU1WHFPNGNPRGY3M1FTQWdjQkRUZUVIc0VidDc4VG1nX1J2RVZWVEx5ZXQ1SV93dkp2NHNEVGdTY1M5cHZGZUloU0NPSDF6UTcwaVJBZU5iMjFXd1BYSGcwNjRpb24waDk5QmpnVnh3ZzkzVlZMSjdvZ0NpVFJfcmZzNzZaX1l2T29PMTM?oc=5",
+      "source": "Prensa NZ",
+      "source_id": "nz-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-25T05:48:08.000Z",
+      "currencies": [
+        "USD",
+        "NZD"
+      ],
+      "divisas": [
+        "USD",
         "NZD"
       ],
       "category": "BC",
@@ -22957,36 +22989,6 @@
       "z": null
     },
     {
-      "id": "4b16c6c35d7dc7dd5be92df080b310e346e2f8d73549959063814f8f902254cb",
-      "sha256": "4b16c6c35d7dc7dd5be92df080b310e346e2f8d73549959063814f8f902254cb",
-      "title": "Convert 5 FF (Falcon Finance) to CHF (Swiss Franc) - Bybit",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBLZjNycS1adlFoWVYtUVE2ejMwMmowaGdqSVIxalU3OEpSSFBRRV9vcGdmOUl0ZkRWcUpQeHdZSWhaanJJb1JPMjFxSU9WdGlNZEk5cWxIeXg?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-24T00:29:45.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "d0d6920313bf17300a43b6d06d4ecc962db68c079635b2a8b1c91c6570f99d69",
       "sha256": "d0d6920313bf17300a43b6d06d4ecc962db68c079635b2a8b1c91c6570f99d69",
       "title": "ANZ pulls first RBA rate cut forward to June 2027, sees three cuts by early 2028 - Forex Factory",
@@ -23272,10 +23274,10 @@
       "z": null
     },
     {
-      "id": "613bd05e9df87f39a84c74f2613ee1155eeb60beb48c910e845ac6fe668d41d2",
-      "sha256": "613bd05e9df87f39a84c74f2613ee1155eeb60beb48c910e845ac6fe668d41d2",
-      "title": "Australia faces 50% recession risk as unemployment surges - Proactive financial news",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcFVseTBrelZDQkJTVkRtd2VTZFQ1Wk1QMEYzZVl1UkF6UEszZDNua3hBS2NVQWhyVE1IWktPeDFkSGtMY3JhLVhjUmYxc1N3SW1UMG01U1cyRTRqQ1BHVk5VSWk3LTQ1VGlDbzJMdVR3SzhPbzFTQVVuakp4NU1GT0w1NUxmaEl3NWxRdVZEWloyZmNxY2RnajlWaUYyTmkwa21fcGNUMkg1MXJIUjNSRUg0SHJWOHVMcThrNHp0MkREOEZwc1E?oc=5",
+      "id": "113deb68f9782efde9a6e6847016d15419dbc9faa372f55bdb959f9451fe2b02",
+      "sha256": "113deb68f9782efde9a6e6847016d15419dbc9faa372f55bdb959f9451fe2b02",
+      "title": "Australia faces 50% recession risk as unemployment surges - Yahoo Finance Australia",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcVdlSkFKV2VVZVpyZ3lobTQ2UXBZLXBjbGtSY0VaS2xiclVhM2Izb2JSMnpsREhDT2kydEttQkpYRnJfQnpIdzFvZzFtenpxQzkteGlSdlF4Rlktd3RFMmpncUxIZ2V6U0ZUOUVGeDJYMDhWSW1nSGdNQzZPVUQzQjhpRng0V0xMcUE?oc=5",
       "source": "Prensa AU",
       "source_id": "au-press",
       "source_type": "agencia",
@@ -23302,10 +23304,10 @@
       "z": null
     },
     {
-      "id": "113deb68f9782efde9a6e6847016d15419dbc9faa372f55bdb959f9451fe2b02",
-      "sha256": "113deb68f9782efde9a6e6847016d15419dbc9faa372f55bdb959f9451fe2b02",
-      "title": "Australia faces 50% recession risk as unemployment surges - Yahoo Finance Australia",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcVdlSkFKV2VVZVpyZ3lobTQ2UXBZLXBjbGtSY0VaS2xiclVhM2Izb2JSMnpsREhDT2kydEttQkpYRnJfQnpIdzFvZzFtenpxQzkteGlSdlF4Rlktd3RFMmpncUxIZ2V6U0ZUOUVGeDJYMDhWSW1nSGdNQzZPVUQzQjhpRng0V0xMcUE?oc=5",
+      "id": "613bd05e9df87f39a84c74f2613ee1155eeb60beb48c910e845ac6fe668d41d2",
+      "sha256": "613bd05e9df87f39a84c74f2613ee1155eeb60beb48c910e845ac6fe668d41d2",
+      "title": "Australia faces 50% recession risk as unemployment surges - Proactive financial news",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcFVseTBrelZDQkJTVkRtd2VTZFQ1Wk1QMEYzZVl1UkF6UEszZDNua3hBS2NVQWhyVE1IWktPeDFkSGtMY3JhLVhjUmYxc1N3SW1UMG01U1cyRTRqQ1BHVk5VSWk3LTQ1VGlDbzJMdVR3SzhPbzFTQVVuakp4NU1GT0w1NUxmaEl3NWxRdVZEWloyZmNxY2RnajlWaUYyTmkwa21fcGNUMkg1MXJIUjNSRUg0SHJWOHVMcThrNHp0MkREOEZwc1E?oc=5",
       "source": "Prensa AU",
       "source_id": "au-press",
       "source_type": "agencia",
@@ -23417,6 +23419,38 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "8951c1b55fe966c89f93b34329ad0d8bb8d80418a9c80215ac68df0934ae1925",
+      "sha256": "8951c1b55fe966c89f93b34329ad0d8bb8d80418a9c80215ac68df0934ae1925",
+      "title": "Australian Dollar Extends Slump as RBA Rate Hikes Look Dead and Buried - FOREX.com",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSDRKOEpwanI0WnFIQlpOOHo1SWJuVW9aY3BVRUpILTJ3SkprVmVsUkFHYzlkc1dCd3JUSHdnXzh3cTBac29ocEsxTzdFdS0ycU9LbVBZYm5nWlRYM1hIbG1oSmc2c04yaFZYWnA1NjNwNk9uUHhiTkhXOUdZdy1vMTZZUXJDUFFRSVY5Y1pKQ0hGU2tOT19CLWo2VlJRUmdQOHp6dDFlUEpVcDhRS2JrOHlDbXhLYlVo?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T23:49:00.000Z",
+      "currencies": [
+        "USD",
+        "AUD"
+      ],
+      "divisas": [
+        "USD",
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -24794,10 +24828,10 @@
       "z": null
     },
     {
-      "id": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
-      "sha256": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
-      "title": "A post from Tina Schlegel in Palm Grove. - News4JAX",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VZmRfazUtMTdQcEVnWHowMWU1SmFTRXZITTQ2TXRTSTFqcUM1NXVkNUxReVUxWjFMaE9sd0Mzd3BFczNsR3lTUktjZ241aFBMeTZadXlqRkh6S01vS0RFZ0w2NEU0aEJmd2F6bUJ2WmFqX1Q2WGVZ?oc=5",
+      "id": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
+      "sha256": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
+      "title": "A post from Tina Schlegel in Palm Grove. - WKMG",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1Tm41ZEk5aFkyR1pQeTU0dEZIUmxDTkxDaWhjejBfQThWcWRaZ25aeElITjdpYS1jZFlScV8xdVFkdm40Q1hLVTB4U1hsYmpOQ21iN0xoNTV2SFBjWlFuOEU5aGN5VENBazYyQTRtSVp1bjVrbktyd3FIbEc?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
@@ -24824,10 +24858,10 @@
       "z": null
     },
     {
-      "id": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
-      "sha256": "602d9f450319697b7ca3772503489ea96bc23a29ee504d4c9ec4afbd48998cdb",
-      "title": "A post from Tina Schlegel in Palm Grove. - WKMG",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1Tm41ZEk5aFkyR1pQeTU0dEZIUmxDTkxDaWhjejBfQThWcWRaZ25aeElITjdpYS1jZFlScV8xdVFkdm40Q1hLVTB4U1hsYmpOQ21iN0xoNTV2SFBjWlFuOEU5aGN5VENBazYyQTRtSVp1bjVrbktyd3FIbEc?oc=5",
+      "id": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
+      "sha256": "3a39047d1ef6846a930c46954c2adf8700979a31ff7c7a8cc8d2f3e6462f2e5f",
+      "title": "A post from Tina Schlegel in Palm Grove. - News4JAX",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VZmRfazUtMTdQcEVnWHowMWU1SmFTRXZITTQ2TXRTSTFqcUM1NXVkNUxReVUxWjFMaE9sd0Mzd3BFczNsR3lTUktjZ241aFBMeTZadXlqRkh6S01vS0RFZ0w2NEU0aEJmd2F6bUJ2WmFqX1Q2WGVZ?oc=5",
       "source": "Prensa CH",
       "source_id": "ch-press",
       "source_type": "agencia",
@@ -31720,36 +31754,6 @@
       "z": null
     },
     {
-      "id": "05dd9e3cd0f85757a5701a4fc74bc895dadec5a802dba06584e480099c43b4c2",
-      "sha256": "05dd9e3cd0f85757a5701a4fc74bc895dadec5a802dba06584e480099c43b4c2",
-      "title": "When AI Handles Checkout, the RBA Wants Merchants to Keep Their Debit Routing Choice - Kalkine",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcTg3emtLNHZmbFRpRGNIbnl2S3h3UzlDVC1aOE5JZ0RtMGszeTNJeHhUYzlkY2tQSHRtaWtuZ096LUU1Uk5senh1VDRxODJydUVfWm9LZ1BSbDZMeUJEUHp6UjNKZ2RTSWFiWnZ3N2NfckxyVk1PdDFSSjBJalJoSEwzdWpDUGVFY1NyVk5uLUMtZkEyVzdpV2tjbXZoMGJTbTc2Q2pMOXFGbV9pUTZ6ZElVUkNXSTJEQWpYbjdnbmUybG8?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T11:36:00.000Z",
-      "currencies": [
-        "AUD"
-      ],
-      "divisas": [
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "7c778857f7ed4274e79e57fd3ba60fdeabdaebe8812b3f763f2b4bfb25a8ddbe",
       "sha256": "7c778857f7ed4274e79e57fd3ba60fdeabdaebe8812b3f763f2b4bfb25a8ddbe",
       "title": "How the RBA Tested Its Forecast Against Two Energy Shock Scenarios - Kalkine",
@@ -31784,6 +31788,36 @@
       "sha256": "f46bf92edba38d538694b262e7129318b89da01f429f0432d7c69b858d549a9d",
       "title": "How the RBA Is Using AI to Read 25 Years of Business Conversations - Kalkine",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNZk4zVklBZHFUVW1EM0tITXBsM1h1eGY2Y0F1VEtqTVd1SVdhSkRWbC1MSFhLZzU4NUlPS1gtakRlT0lKb2lWSE8wbjd3Q2Zha1JzN0dtandqOUJTVDRtZjFfcTdVU2JnaExVMExBVkZXd09SYUl1cm9rSGZkZlhJYlRJc2NySHNBOVVUblF3bTBDeVhacUl5U1loU0tpU2YtRFJjeS11NlpJUS1B?oc=5",
+      "source": "Prensa AU",
+      "source_id": "au-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T11:36:00.000Z",
+      "currencies": [
+        "AUD"
+      ],
+      "divisas": [
+        "AUD"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "05dd9e3cd0f85757a5701a4fc74bc895dadec5a802dba06584e480099c43b4c2",
+      "sha256": "05dd9e3cd0f85757a5701a4fc74bc895dadec5a802dba06584e480099c43b4c2",
+      "title": "When AI Handles Checkout, the RBA Wants Merchants to Keep Their Debit Routing Choice - Kalkine",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcTg3emtLNHZmbFRpRGNIbnl2S3h3UzlDVC1aOE5JZ0RtMGszeTNJeHhUYzlkY2tQSHRtaWtuZ096LUU1Uk5senh1VDRxODJydUVfWm9LZ1BSbDZMeUJEUHp6UjNKZ2RTSWFiWnZ3N2NfckxyVk1PdDFSSjBJalJoSEwzdWpDUGVFY1NyVk5uLUMtZkEyVzdpV2tjbXZoMGJTbTc2Q2pMOXFGbV9pUTZ6ZElVUkNXSTJEQWpYbjdnbmUybG8?oc=5",
       "source": "Prensa AU",
       "source_id": "au-press",
       "source_type": "agencia",
@@ -33691,38 +33725,6 @@
       "z": null
     },
     {
-      "id": "8e473f215950b1a83382d6622cc539ecb547f42dba9be5abfa1cd79bb12d759b",
-      "sha256": "8e473f215950b1a83382d6622cc539ecb547f42dba9be5abfa1cd79bb12d759b",
-      "title": "Australian Dollar Extends Slump as RBA Rate Hikes Look Dead and Buried - FOREX.com",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdWRFWFV5UmRNVmowVHlUbDlWNGVWNmdjazVMTUhuQjRXc0tBTWJQNmdTLUcyUHFRbVZEUTQtU2x4amxYSGZoOEpUYlVBOEhiV3ViNWJxbW9CZklNWk5sR2xTckpKNEh6MHp0Sml1S0Y4MGl6WFpzVEY4dkRnR1k0ZUo5Q3VyQ1FaekZBVVJ5eFRkUTN5VnMtd2c5RWpsdURyZm9DMkJ3cDZid0tJWGRScHF6dzNDblM1?oc=5",
-      "source": "Prensa AU",
-      "source_id": "au-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T07:46:15.000Z",
-      "currencies": [
-        "USD",
-        "AUD"
-      ],
-      "divisas": [
-        "USD",
-        "AUD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "165ddab2a8c03db17677b5f40b41236f31e9c7827b39810638a6a0fbb9215312",
       "sha256": "165ddab2a8c03db17677b5f40b41236f31e9c7827b39810638a6a0fbb9215312",
       "title": "SNB’s Martin Flags Second-Round Inflation Risks Ahead of December Policy Decision; Franc Steady - VT Markets",
@@ -33762,6 +33764,36 @@
       "source_id": "ch-press",
       "source_type": "agencia",
       "published_at": "2026-11-23T07:39:44.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 1,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "4b16c6c35d7dc7dd5be92df080b310e346e2f8d73549959063814f8f902254cb",
+      "sha256": "4b16c6c35d7dc7dd5be92df080b310e346e2f8d73549959063814f8f902254cb",
+      "title": "Convert 5 FF (Falcon Finance) to CHF (Swiss Franc) - Bybit",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBLZjNycS1adlFoWVYtUVE2ejMwMmowaGdqSVIxalU3OEpSSFBRRV9vcGdmOUl0ZkRWcUpQeHdZSWhaanJJb1JPMjFxSU9WdGlNZEk5cWxIeXg?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T07:38:20.000Z",
       "currencies": [
         "CHF"
       ],
@@ -35424,6 +35456,37 @@
       "z": null
     },
     {
+      "id": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
+      "sha256": "6e22e92f6f3e7187731034c812c633103d11b1bc84de47842ddb14e59fe2f8c4",
+      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQLTYzclN6U3ZjQ28xdVZhWTFXZE9kX05keFNoZDhwYWxrdENweXB5akNpQTRjQkJFWnRrNmxObnVENE10ZVFTSGF5WmNmYWxIdnNUS3gxQVA2RGM3aHpnTWpoNFdoVWwwdUVDQmZDemNKRGhqQTk0NmlQRzdSdXQ3ckY4ZzVadWVJcHZZMWpZSGtsSTVoTG9nRVhjamZJZHVydllmc0lhajDSAagBQVVfeXFMUC02M3JTelN2Y0NvMXVWYVkxV2RPZF9OZHhTaGQ4cGFsa3RDcHlweWpDaUE0Y0JCRVp0azZsTm51RDRNdGVRU0hheVpjZmFsSHZzVEt4MUFQNkRjN2h6Z01qaDRXaFVsMHVFQ0JmQ3pjSkRoakE5NDZpUEc3UnV0N3JGOGc1WnVlSXB2WTFqWUhrbEk1aExvZ0VYY2pmSWR1cnZZZnNJYWow?oc=5",
+      "source": "Prensa CH",
+      "source_id": "ch-press",
+      "source_type": "agencia",
+      "published_at": "2026-11-23T03:29:27.000Z",
+      "currencies": [
+        "CHF"
+      ],
+      "divisas": [
+        "CHF"
+      ],
+      "category": "BC",
+      "categories": [
+        "BC",
+        "Inflacion_Empleo"
+      ],
+      "legacy_category": "banco_central",
+      "ficha_v6": "A1 / B2",
+      "mmt_lens": "REPRICING_MONETARIO_A1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 3,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "sha256": "5fab11dc4fac1c4fb2b3ab3229cea9c465cddd2843a0b9b478a8b947ddec6779",
       "title": "Tech stock sell-off deepens in Asia",
@@ -35684,37 +35747,6 @@
       "legacy_category": "banco_central",
       "ficha_v6": "C2",
       "mmt_lens": "INFLATION_PRINT",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
-      "sha256": "8ba1c8412a582493c6b7de7d63c647a88490e482bf5b81de56227b1ba226a60a",
-      "title": "SNB's Martin eyes second-round effects after inflation jumps to 1.5%, hike in view - Forex Factory",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV29PRzI1OHpIQ0pxMTNhS0MxbGF0RUdRb1MwTlI1NmZzaUNqckdzNW5lekd6aFZ4S3hkb2VYLU1HNmQ3OWlPZTgzaTRfMFdONkVEa0pncHVWanNxY01NTl9UTkg3SVlJNC1RdVpYbkFmNFpmem56ejB1cmEzYkpJcXl6cmZwRFVySGRKZnc2ZzQwbElzTmlaSU1HRXItdWt0Y2F30gGoAUFVX3lxTFAtNjNyU3pTdmNDbzF1VmFZMVdkT2RfTmR4U2hkOHBhbGt0Q3B5cHlqQ2lBNGNCQkVadGs2bE5udUQ0TXRlUVNIYXlaY2ZhbEh2c1RLeDFBUDZEYzdoemdNamg0V2hVbDB1RUNCZkN6Y0pEaGpBOTQ2aVBHN1J1dDdyRjhnNVp1ZUlwdlkxallIa2xJNWhMb2dFWGNqZklkdXJ2WWZzSWFqMA?oc=5",
-      "source": "Prensa CH",
-      "source_id": "ch-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-23T02:29:00.000Z",
-      "currencies": [
-        "CHF"
-      ],
-      "divisas": [
-        "CHF"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC",
-        "Inflacion_Empleo"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO_A1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 3,
       "actual": null,
@@ -37286,38 +37318,6 @@
       "mmt_lens": "CONTEXTO_GENERAL",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 1,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "ae3321534ca2b803669de0aae15bec5f27ee5813cb3cccae6b97bccedb53e0a6",
-      "sha256": "ae3321534ca2b803669de0aae15bec5f27ee5813cb3cccae6b97bccedb53e0a6",
-      "title": "NZD/USD Forecast: Kiwi faces historic breakdown as RBNZ survey looms - FOREX.com",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbTk2U2Z2cWJNeURtM0hxMkZ6cjZrc3A0RDNmS1J4LVBfd2I4aE1Wb0hKaDYyelc3ZklKOGpNaWdoWm1RWHdMM2JUNG82MUZfaGp5SDhtMTliMHd0Um1GeWNybG5UUER4c2hUSFZ4WjBjSEFRTUF2ak4zMkhhQ3hJVnRIbndYR1o5b3dqb1BuNFJtUGxtLUJUUmZvakxwOWFzVEk2X3pxMm45eU1GVng3Vw?oc=5",
-      "source": "Prensa NZ",
-      "source_id": "nz-press",
-      "source_type": "agencia",
-      "published_at": "2026-11-22T22:07:26.000Z",
-      "currencies": [
-        "USD",
-        "NZD"
-      ],
-      "divisas": [
-        "USD",
-        "NZD"
-      ],
-      "category": "BC",
-      "categories": [
-        "BC"
-      ],
-      "legacy_category": "banco_central",
-      "ficha_v6": "A1 / B2",
-      "mmt_lens": "REPRICING_MONETARIO",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 3,
       "actual": null,
       "forecast": null,
       "previous": null,
@@ -42554,6 +42554,36 @@
       "z": null
     },
     {
+      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
+      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
+      "source": "BLS / BEA",
+      "source_id": "us-bls-bea",
+      "source_type": "oficial",
+      "published_at": "2026-11-17T08:00:00.000Z",
+      "currencies": [
+        "USD"
+      ],
+      "divisas": [
+        "USD"
+      ],
+      "category": "Commodities_ToT",
+      "categories": [
+        "Commodities_ToT"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": "EA-1",
+      "mmt_lens": "TOT_COMMODITIES_EA1",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "53912f7f060853db024107d6f2f6b8f2acb31f8105c5f116017bc01030755021",
       "sha256": "53912f7f060853db024107d6f2f6b8f2acb31f8105c5f116017bc01030755021",
       "title": "Autumn 2026 Economic Forecast shows continued growth amid higher inflation - economy-finance.ec.europa.eu",
@@ -43277,36 +43307,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "sha256": "fa2c1fee67181aaf6ffecadccf40f1cdc1d53acf1b4c16e0acc653db3d951dcf",
-      "title": "U.S. Import and Export Price Indexes News Release - Bureau of Labor Statistics (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VRVpneWtKeGRyZGhPRS0xbnI0R1JsZVVEZDdLaFdmSFhZaF9OSEdDdThIU1pWQW5NeUxsOGlsTEJ0SHd1ejNTWFNWVkhMUG9sYTZ3bUV3?oc=5",
-      "source": "BLS / BEA",
-      "source_id": "us-bls-bea",
-      "source_type": "oficial",
-      "published_at": "2026-11-17T08:00:00.000Z",
-      "currencies": [
-        "USD"
-      ],
-      "divisas": [
-        "USD"
-      ],
-      "category": "Commodities_ToT",
-      "categories": [
-        "Commodities_ToT"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": "EA-1",
-      "mmt_lens": "TOT_COMMODITIES_EA1",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
@@ -45599,70 +45599,6 @@
       "z": null
     },
     {
-      "id": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
-      "sha256": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
-      "title": "Auction Result of Treasury Discount Bills on November 13, 2026 : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdFBpRGhydDVXS0Z3cy1Bd3pBV2hSWHRVYlpsbGV5QmliNWd2bVgta3YzREhJTlh0Q0hoMVRsUE93ZmtNN0UzYllLSk82RWJMaUgxR2QwQUFLVWstRmNTWEt2TVhOV3J4RmE3RXBCWmx6SDljeU5UMW1aVkswbm1TRGdUdTRRcmtWWU56eGZTeXN0d1BXcC1OSEJQcXg?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "USD",
-        "JPY"
-      ],
-      "divisas": [
-        "USD",
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
-      "sha256": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
-      "title": "Increasing your safety online - Australian Bureau of Statistics",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS1ZZelc5WjU1RE94UzlqVlhqbE1CUS1mcVlxNFpOMy1NVTB6UVpIdV9zd0d0c2FvRE03RUFCTFJfN3UxbnVCcmJxa1YxWk9xVUNzeXBRams3RE0xVTZxYkFWUDRjY2tIOW53SnNGdnZDVVNTWVlrYmxROUZVTEZScEhFVl9kZ3JIOFRTVWlfT3A3a2Rqa1ZoQjQzME8?oc=5",
-      "source": "ABS / Australian Treasury",
-      "source_id": "au-abs-treasury",
-      "source_type": "oficial",
-      "published_at": "2026-11-13T08:00:00.000Z",
-      "currencies": [
-        "AUD",
-        "USD"
-      ],
-      "divisas": [
-        "AUD",
-        "USD"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "otro",
-      "ficha_v6": null,
-      "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
       "id": "4c246f5f2df5ebae2b00ab2582e3dc706d4149b2f9fd13f6784dcd2a2d263bd7",
       "sha256": "4c246f5f2df5ebae2b00ab2582e3dc706d4149b2f9fd13f6784dcd2a2d263bd7",
       "title": "Announcement of Liquidity Enhancement Auction on November 20, 2026: Ministry of Finance - 財務省",
@@ -45715,6 +45651,70 @@
         "Fiscal"
       ],
       "legacy_category": "otro",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
+      "sha256": "fd720b6a181c68350b2acea431fb1e0429c213e946d795c4ba64d6f5627495a9",
+      "title": "Increasing your safety online - Australian Bureau of Statistics",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOS1ZZelc5WjU1RE94UzlqVlhqbE1CUS1mcVlxNFpOMy1NVTB6UVpIdV9zd0d0c2FvRE03RUFCTFJfN3UxbnVCcmJxa1YxWk9xVUNzeXBRams3RE0xVTZxYkFWUDRjY2tIOW53SnNGdnZDVVNTWVlrYmxROUZVTEZScEhFVl9kZ3JIOFRTVWlfT3A3a2Rqa1ZoQjQzME8?oc=5",
+      "source": "ABS / Australian Treasury",
+      "source_id": "au-abs-treasury",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "AUD",
+        "USD"
+      ],
+      "divisas": [
+        "AUD",
+        "USD"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "otro",
+      "ficha_v6": null,
+      "mmt_lens": "CONTEXTO_GENERAL",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
+      "id": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
+      "sha256": "a84ab5bb17e6a1c94404beae93064ecc529f8081daa21a3e5238e55e99072bbc",
+      "title": "Auction Result of Treasury Discount Bills on November 13, 2026 : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdFBpRGhydDVXS0Z3cy1Bd3pBV2hSWHRVYlpsbGV5QmliNWd2bVgta3YzREhJTlh0Q0hoMVRsUE93ZmtNN0UzYllLSk82RWJMaUgxR2QwQUFLVWstRmNTWEt2TVhOV3J4RmE3RXBCWmx6SDljeU5UMW1aVkswbm1TRGdUdTRRcmtWWU56eGZTeXN0d1BXcC1OSEJQcXg?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-13T08:00:00.000Z",
+      "currencies": [
+        "USD",
+        "JPY"
+      ],
+      "divisas": [
+        "USD",
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
       "ficha_v6": "A12 / B10 / C3",
       "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
@@ -46685,6 +46685,36 @@
       "z": null
     },
     {
+      "id": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
+      "sha256": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
+      "title": "Auction Result of 5-Year JGBs on November 12, 2026 (For JGB Market Special Participants) : Ministry of Finance - 財務省",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTXpxY0JTU21BVzIxZ2E2elQxdC0wc0tXZkU3eFpyTGJZX3RlQzhNb2lTWnlYZWdZdHBDeXJGVEt3SDRPY0VUWmJmVTY5RVZ1ZXZUNDRCVHdzdVdnQWJFWXJYWE9IeVJTdkZsdnEyRzhmd0xkanExbi1nWFFMR01jMndDWkpuTG0yd3lNUjhB?oc=5",
+      "source": "Japan MoF",
+      "source_id": "jp-mof",
+      "source_type": "oficial",
+      "published_at": "2026-11-12T08:00:00.000Z",
+      "currencies": [
+        "JPY"
+      ],
+      "divisas": [
+        "JPY"
+      ],
+      "category": "Fiscal",
+      "categories": [
+        "Fiscal"
+      ],
+      "legacy_category": "mercado",
+      "ficha_v6": "A12 / B10 / C3",
+      "mmt_lens": "FLUJO_FISCAL_NFA",
+      "sovereignty_mmt": "SOBERANO_EMISOR",
+      "impact": 2,
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "calendar_title": null,
+      "z": null
+    },
+    {
       "id": "499502c53aad6b65de02f3c524f1b8a4e4053d99197c63ac8d52202b31a7ce9f",
       "sha256": "499502c53aad6b65de02f3c524f1b8a4e4053d99197c63ac8d52202b31a7ce9f",
       "title": "Water Account, Australia, 2024-25 financial year - Australian Bureau of Statistics",
@@ -46836,36 +46866,6 @@
       "legacy_category": "otro",
       "ficha_v6": null,
       "mmt_lens": "CONTEXTO_GENERAL",
-      "sovereignty_mmt": "SOBERANO_EMISOR",
-      "impact": 2,
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "calendar_title": null,
-      "z": null
-    },
-    {
-      "id": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
-      "sha256": "b13fbca1be4b0eae1be48bc38f94caa2b6715203a58dbd80f07f54e240388963",
-      "title": "Auction Result of 5-Year JGBs on November 12, 2026 (For JGB Market Special Participants) : Ministry of Finance - 財務省",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOTXpxY0JTU21BVzIxZ2E2elQxdC0wc0tXZkU3eFpyTGJZX3RlQzhNb2lTWnlYZWdZdHBDeXJGVEt3SDRPY0VUWmJmVTY5RVZ1ZXZUNDRCVHdzdVdnQWJFWXJYWE9IeVJTdkZsdnEyRzhmd0xkanExbi1nWFFMR01jMndDWkpuTG0yd3lNUjhB?oc=5",
-      "source": "Japan MoF",
-      "source_id": "jp-mof",
-      "source_type": "oficial",
-      "published_at": "2026-11-12T08:00:00.000Z",
-      "currencies": [
-        "JPY"
-      ],
-      "divisas": [
-        "JPY"
-      ],
-      "category": "Fiscal",
-      "categories": [
-        "Fiscal"
-      ],
-      "legacy_category": "mercado",
-      "ficha_v6": "A12 / B10 / C3",
-      "mmt_lens": "FLUJO_FISCAL_NFA",
       "sovereignty_mmt": "SOBERANO_EMISOR",
       "impact": 2,
       "actual": null,
