@@ -2,7 +2,9 @@
   publish = "public"
   functions = "netlify/functions"
   command = "echo 'Static + Serverless Functions deploy (0 build minutes)'"
-  ignore = "git log -1 --pretty=%B | grep -Fq '[skip netlify]'"
+  # t389u: mismo criterio que h8-h15-monitor #6 y dts-tracker #15.
+  # Solo se publica si cambia código/HTML/funciones/netlify.toml, no public/data.
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- 'public/**' ':!public/data/**' 'netlify/**' netlify.toml SPEC.md"
 
 [functions]
   node_bundler = "esbuild"
