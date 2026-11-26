@@ -1,6 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { execFileSync, spawnSync } from 'node:child_process';
+import { mkdtempSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { classifyIrisItem, computeItemSha256, deduplicateAndFilterWindow } from '../src/irisCollector.js';
 import { classifyAgent, MMT_SOVEREIGNTY, computeCalendarLock } from '../src/classifyCurrencies.js';
 import { OP_VERSION } from '../src/shadowCalibration.js';
@@ -103,14 +106,69 @@ test('Deduplicación estricta sha256(url || title) y ventana limpia de 72 horas'
 });
 
 test('Candado Anti-Cobro Netlify ([skip netlify]) presente en workflow y netlify.toml', () => {
+  // orden Sander 26-nov t395u: RadarNews ignora public/data en netlify.toml
   const wf = readFileSync(new URL('../.github/workflows/update_radar_news.yml', import.meta.url), 'utf8');
   const toml = readFileSync(new URL('../netlify.toml', import.meta.url), 'utf8');
   assert.match(wf, /cron:\s*'\*\/5 \* \* \* \*'/);
   const loop = readFileSync(new URL('../scripts/sync_loop.sh', import.meta.url), 'utf8');
   assert.match(loop, /chore\(feed\): sync radar news \[skip netlify\]/);
-  assert.match(toml, /\[skip netlify\]/);
   assert.match(toml, /\/api\/iris-feed/);
   assert.match(toml, /\/api\/radar-full/);
+
+  const ignoreMatch = toml.match(/^\s*ignore\s*=\s*"([^"]+)"/m);
+  assert.ok(ignoreMatch, 'netlify.toml debe definir una regla ignore');
+  const ignoreCmd = ignoreMatch[1];
+  assert.match(ignoreCmd, /git diff --quiet \$CACHED_COMMIT_REF \$COMMIT_REF/);
+  assert.match(ignoreCmd, /'public\/\*\*'/);
+  assert.match(ignoreCmd, /':!public\/data\/\*\*'/);
+  assert.match(ignoreCmd, /'netlify\/\*\*'/);
+  assert.match(ignoreCmd, /netlify\.toml/);
+  assert.match(ignoreCmd, /SPEC\.md/);
+
+  const tmp = mkdtempSync(join(tmpdir(), 't395u-ignore-'));
+  const gitEnv = {
+    ...process.env,
+    GIT_AUTHOR_NAME: 't395u',
+    GIT_AUTHOR_EMAIL: 't395u@test',
+    GIT_COMMITTER_NAME: 't395u',
+    GIT_COMMITTER_EMAIL: 't395u@test',
+  };
+  const git = (...args) => execFileSync('git', args, { cwd: tmp, env: gitEnv, encoding: 'utf8' });
+  const runIgnore = (cached, commit) => spawnSync('bash', ['-c', ignoreCmd], {
+    cwd: tmp,
+    env: { ...gitEnv, CACHED_COMMIT_REF: cached, COMMIT_REF: commit },
+    encoding: 'utf8',
+  });
+
+  try {
+    git('init', '-q', '-b', 'main');
+    mkdirSync(join(tmp, 'public', 'data'), { recursive: true });
+    mkdirSync(join(tmp, 'netlify'), { recursive: true });
+    writeFileSync(join(tmp, 'public/index.html'), 'v1\n');
+    writeFileSync(join(tmp, 'public/data/feed.json'), '{"n":1}\n');
+    writeFileSync(join(tmp, 'netlify.toml'), 'placeholder\n');
+    writeFileSync(join(tmp, 'SPEC.md'), 'spec\n');
+    git('add', '.');
+    git('commit', '-qm', 'base');
+    const base = git('rev-parse', 'HEAD').trim();
+
+    writeFileSync(join(tmp, 'public/data/feed.json'), '{"n":2}\n');
+    git('add', 'public/data/feed.json');
+    git('commit', '-qm', 'data only');
+    const dataSha = git('rev-parse', 'HEAD').trim();
+    const dataRun = runIgnore(base, dataSha);
+    assert.equal(dataRun.status, 0, 'commit solo public/data debe ignorarse (exit 0 = no publicar)');
+
+    git('checkout', '-q', '-B', 'code', base);
+    writeFileSync(join(tmp, 'public/index.html'), 'v2-code\n');
+    git('add', 'public/index.html');
+    git('commit', '-qm', 'code');
+    const codeSha = git('rev-parse', 'HEAD').trim();
+    const codeRun = runIgnore(base, codeSha);
+    assert.equal(codeRun.status, 1, 'commit de código debe publicar (exit 1)');
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
 });
 
 test('mmt-agent-op-v4.1-G8: Regla 1 (PMI < 50 + AiG AUD) y Ajustes v4.1 (Freno B12 EUR, CONTEXTO_GENERAL sin A1/B2 por defecto, Contracción Laboral NZD)', () => {
