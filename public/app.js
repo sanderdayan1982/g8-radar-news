@@ -231,7 +231,7 @@ function renderStatus() {
   band.classList.toggle('warn', !d.error && !stale && cov.degraded);
   if (ui.connectionError) {
     band.hidden=false;
-    band.textContent="Sin conexión. Se conserva la última lectura; los datos no se están actualizando.";
+    band.textContent=formatFuenteNoResponde(lastDataIso(d));
   } else if (d.error) {
     band.hidden = false;
     band.textContent = `Error de sincronización: ${d.error}`;
@@ -1005,15 +1005,38 @@ function renderAll() {
 
 const GITHUB_RAW_FALLBACK = 'https://raw.githubusercontent.com/sanderdayan1982/g8-radar-news/main/public/data/radar_news_full.json';
 
+// t387u: nunca servir la copia estática empaquetada (/data/radar_news_full.json) como si fuera de hoy.
+export function formatFuenteNoResponde(lastIso) {
+  if (!lastIso) {
+    return 'Fuente no responde. No hay un dato previo en esta sesión.';
+  }
+  const dt = new Date(lastIso);
+  if (Number.isNaN(dt.getTime())) {
+    return 'Fuente no responde. No hay un dato previo en esta sesión.';
+  }
+  const fmt = new Intl.DateTimeFormat('es-ES', {
+    timeZone: 'Africa/Malabo',
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+  });
+  return `Fuente no responde. Último dato: ${fmt.format(dt)} WAT.`;
+}
+
+function lastDataIso(data) {
+  return data?.generated_at || data?.last_sync?.finished_at || data?.health?.base_published_at || null;
+}
+
 async function fetchDashboardState() {
   try {
     return await api('/api/radar-full');
   } catch {
-    try {
-      const r = await fetch(`${GITHUB_RAW_FALLBACK}?t=${Date.now()}`, { cache: 'no-store' });
-      if (r.ok) return await r.json();
-    } catch { /* fallback to local static */ }
-    return await api(`/data/radar_news_full.json?t=${Date.now()}`);
+    const r = await fetch(`${GITHUB_RAW_FALLBACK}?t=${Date.now()}`, { cache: 'no-store' });
+    if (!r.ok) throw new Error('Fuente no responde');
+    return await r.json();
   }
 }
 
@@ -1033,9 +1056,9 @@ function load() {
     } catch(err) {
       ui.connectionError=err.message;
       $('#error-band').hidden=false;
-      $('#error-band').textContent=ui.data ? 'Sin conexión. Mostrando la última lectura; reintentamos automáticamente.' : 'No se pudo cargar la mesa. Comprueba tu conexión y pulsa Actualizar.';
+      $('#error-band').textContent=formatFuenteNoResponde(lastDataIso(ui.data));
       $('#refresh').disabled=false;
-      if (!ui.data) for (const id of ['board','calendar','tape']) $('#'+id).textContent='Datos no disponibles. Esperando conexión segura.';
+      if (!ui.data) for (const id of ['board','calendar','tape']) $('#'+id).textContent='Fuente no responde. Datos no disponibles.';
       renderLive();
     }
   })().finally(()=>{pendingLoad=null;});
